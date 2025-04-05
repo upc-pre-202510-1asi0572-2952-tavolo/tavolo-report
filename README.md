@@ -631,7 +631,8 @@ A continuación, se detallan las hipótesis formuladas para abordar la problemá
     **Sabremos** que hemos tenido éxito. 
     <br>
 
-    **Cuando** al menos el 75% de estos usuarios informen una mejora en la eficiencia operativa y una reducción del 30% en incidencias por sobreaforo. <br>
+    **Cuando** al menos el 75% de estos usuarios informen una mejora en la eficiencia operativa y una reducción del 30% en incidencias por sobreaforo.
+    <br>
 
 - **Hypothesis Statement 2:** <br>
     **Creemos que** los clientes valorarán disponer de información actualizada sobre la disponibilidad de mesas a través de una aplicación móvil y web. 
@@ -640,7 +641,8 @@ A continuación, se detallan las hipótesis formuladas para abordar la problemá
     **Sabremos** que hemos tenido éxito. 
     <br>
 
-    **Cuando** el 80% de los clientes reporten una experiencia mejorada y una disminución notable en los tiempos de espera al llegar al establecimiento. <br>
+    **Cuando** el 80% de los clientes reporten una experiencia mejorada y una disminución notable en los tiempos de espera al llegar al establecimiento.
+    <br>
 
 - **Hypothesis Statement 3:** <br>
     **Creemos que** la implementación de sensores IoT integrados en las mesas, que transmitan datos en tiempo real a una plataforma centralizada, facilitará la gestión del aforo y optimizará el flujo de clientes. 
@@ -649,14 +651,17 @@ A continuación, se detallan las hipótesis formuladas para abordar la problemá
     **Sabremos** que hemos tenido éxito. 
     <br>
 
-    **Cuando** los establecimientos vean un incremento del 25% en la eficiencia en la asignación de mesas y una recuperación de la inversión en menos de 12 meses. <br>
+    **Cuando** los establecimientos vean un incremento del 25% en la eficiencia en la asignación de mesas y una recuperación de la inversión en menos de 12 meses. 
+    <br>
 
 - **Hypothesis Statement 4:** <br>
-    **Creemos que** una interfaz intuitiva y amigable en la aplicación digital fomentará la adopción tanto por parte de administradores como de clientes, simplificando el proceso de toma de decisiones y la planificación de visitas. <br>
+    **Creemos que** una interfaz intuitiva y amigable en la aplicación digital fomentará la adopción tanto por parte de administradores como de clientes, simplificando el proceso de toma de decisiones y la planificación de visitas. 
+    <br>
+    **Sabremos** que hemos tenido éxito. 
+    <br>
 
-    **Sabremos** que hemos tenido éxito. <br>
-
-    **Cuando** el 80% de los usuarios completen tareas básicas en la aplicación sin necesidad de asistencia y se mantenga un alto nivel de satisfacción en encuestas posteriores a su experiencia. <br>
+    **Cuando** el 80% de los usuarios completen tareas básicas en la aplicación sin necesidad de asistencia y se mantenga un alto nivel de satisfacción en encuestas posteriores a su experiencia. 
+    <br>
 
 #### 1.2.2.4. Lean UX Canvas
 
