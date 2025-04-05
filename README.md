@@ -298,12 +298,226 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
 
 ## 1.1. Startup Profile
 
-### 1.1.1. Descripción de la Startup  
+### 1.1.1. Descripción de la Startup 
+
+**Nombre startup** es una empresa dedicada a la implementación de soluciones IoT para la gestión inteligente del aforo de restaurantes, cafeterías y otros establecimientos de hostelería. Nuestro sistema permitirá a los establecimientos monitorizar en tiempo real la ocupación de mesas y ofrecer a los clientes información actualizada a través de una aplicación móvil y web, mejorando la experiencia del usuario y la eficiencia operativa. 
+
+**Mision:**<br>
+Brindar una solución IoT innovadora que permita a restaurantes, cafeterías y locales similares gestionar su foro de forma eficiente y segura, ofreciendo una experiencia de usuario intuitiva y facilitando la toma de decisiones operativas en tiempo real.
+
+**Visión:**<br>
+Ser la plataforma líder en gestión inteligente de aforo para el sector de la hostelería en el Perú, reconocida por la innovación, la eficiencia operativa y el impacto positivo en la experiencia del cliente.
+
+
 ### 1.1.2. Perfiles de integrantes del equipo  
+
+<table>
+  <tr align="center">
+    <td rowspan="4">
+      <img src="./images/profile_images/aldo_profile.jpg" alt="Aldo's profile image" min-width="400" max-width="900"/>
+    </td>
+    <td align="left">
+      <b>Nombre y Apellido:</b>
+      <br>            
+      Aldo Alberto Baldeon Fabian
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Código:</b>
+    <br>
+    U202122633
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Carrera:</b>
+    <br>
+    Ingeniería de Software
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Acerca de:</b>
+    <br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi. In hac habitasse platea dictumst. Aenean euismod neque vitae diam venenatis rutrum. Vivamus lobortis iaculis blandit. Nunc tempus accumsan nibh nec sagittis. Vivamus accumsan augue sed leo imperdiet efficitur. Aliquam laoreet in eros vitae dapibus. In et aliquet mauris. Etiam in ex varius, sodales purus in, euismod tellus. Aliquam vel enim turpis. In dignissim mauris ut ante euismod, a maximus eros ultricies. Etiam sit amet porttitor mi. Aliquam erat volutpat. Aliquam erat volutpat.
+    </td>
+  </tr>
+  </tr>
+
+  <tr align="center">
+    <td rowspan="4">
+      <img src="./images/profile_images/barbara_profile.jpg" alt="Barbara's profile image" min-width="400" max-width="900"/>
+    </td>
+    <td align="left">
+      <b>Nombre y Apellido:</b>
+      <br>            
+      Barbara Susana Quezada Portalatino
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Código:</b>
+    <br>
+    U202211800
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Carrera:</b>
+    <br>
+    Ingeniería de Software
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Acerca de:</b>
+    <br>
+    Barbara Susana Quezada Portalatino, cursando el séptimo ciclo de la carrera de software, trabajo mayormente bajo un rol de líder que me ayuda a poder organizar no solo la ideas de mi grupo sino que las ideas aterricen en la ejecución. Soy una persona muy disciplinada y detallista.
+    </td>
+  </tr>
+  </tr>
+   <tr align="center">
+    <td rowspan="4">
+      <img src="./images/profile_images/jimena_profile.jpg" alt="Jimena's profile image" min-width="400" max-width="900"/>
+    </td>
+    <td align="left">
+      <b>Nombre y Apellido:</b>
+      <br>            
+      Jimena Tamara Cama Salvatierra
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Código:</b>
+    <br>
+    U2022210778
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Carrera:</b>
+    <br>
+    Ingeniería de Software
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Acerca de:</b>
+    <br>
+     Soy estudiante de la carrera de Ingeniería de Software en la UPC y actualmente estoy cursando el 7mo ciclo. Me considero una persona curiosa, determinada y organizada. Con la experiencia en proyectos de startup y trabajos en equipo, trabajaré junto a mis compañeros para lograr un óptimo resultado del proyecto.
+    </td>
+  </tr>
+  </tr>
+
+<tr align="center">
+    <td rowspan="4">
+      <img src="./images/profile_images/jair_profile.jpg" alt="Jair's profile image" min-width="400" max-width="900"/>
+    </td>
+    <td align="left">
+      <b>Nombre y Apellido:</b>
+      <br>            
+      Jair Alexander Castillo Castillo
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Código:</b>
+    <br>
+    U202211390
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Carrera:</b>
+    <br>
+    Ingeniería de Software
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Acerca de:</b>
+    <br>
+    Soy estudiante de la carrera de Ingeniería de Software en la UPC y me encuentro en el 7to ciclo. Me considero una persona dedicada, comprensiva y metódica. Con mis habilidades de liderazgo y mi capacidad para trabajar en equipo en un ambiente de respeto, estoy segura de que podré dirigir la implementación de la startup de nuestro proyecto de manera exitosa.
+    </td>
+  </tr>
+  </tr>
+  
+<tr align="center">
+    <td rowspan="4">
+      <img src="./assets/profile_images/Fabio_image.jpg" alt="Franz's profile image" min-width="400" max-width="900"/>
+    </td>
+    <td align="left">
+      <b>Nombre y Apellido:</b>
+      <br>            
+      Franz Jair La Torre Valle
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Código:</b>
+    <br>
+    U202012378
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Carrera:</b>
+    <br>
+    Ingeniería de Software
+    </td>
+  </tr>
+  <tr>
+    <td align="left">
+    <b>Acerca de:</b>
+    <br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi. In hac habitasse platea dictumst. Aenean euismod neque vitae diam venenatis rutrum. Vivamus lobortis iaculis blandit. Nunc tempus accumsan nibh nec sagittis. Vivamus accumsan augue sed leo imperdiet efficitur. Aliquam laoreet in eros vitae dapibus. In et aliquet mauris. Etiam in ex varius, sodales purus in, euismod tellus. Aliquam vel enim turpis. In dignissim mauris ut ante euismod, a maximus eros ultricies. Etiam sit amet porttitor mi. Aliquam erat volutpat. Aliquam erat volutpat.
+    </td>
+  </tr>
+
+</table>
+
 
 ## 1.2. Solution Profile
 
+Nuestra propuesta consiste en el desarrollo de una solución IoT que permita la automatización en el control de aforo de establecimientos mediante la detección de ocupación de mesas a través de sensores de peso. La solución se integra con aplicaciones móviles y web, facilitando a los clientes conocer la disponibilidad de mesas y a los administradores del local gestionar el flujo de personas.
+
 ### 1.2.1. Antecedentes y problemática  
+
+El sector gastronómico peruano consolida su posición como motor clave de la economía, registrando un crecimiento sostenido en los últimos años. Según datos del INEI (citados por la Oficina General de Evaluación de Impacto y Estudios Económicos, 2025), Lima concentró el 41.6% del gasto anual en restaurantes durante 2024, evidenciando su liderazgo en el consumo nacional. Sin embargo, este dinamismo enfrenta desafíos críticos: la ocupación en establecimientos varía según temporada y tipo de negocio, mientras que los tiempos de espera prolongados impactan directamente en la satisfacción del cliente y la rentabilidad.
+
+En este contexto, la tecnología emerge como aliada estratégica. López-Chau et al. (2022) destacan en su estudio publicado en Estudios Gerenciales que herramientas como el software de gestión de mesas mitigan estos problemas, optimizando el flujo de clientes. Avanzando en esta línea, soluciones innovadoras como sensores IoT integrados en mesas representan el siguiente paso: no solo reducirían tiempos de espera, sino que mejorarían la experiencia mediante datos en tiempo real, potenciando la competitividad del sector.
+
+**What? - ¿Qué?** <br>
+La problemática actual en muchos restaurantes y cafeterías es la falta de un sistema en tiempo real que permita conocer el estado de ocupación de sus mesas. La ausencia de esta tecnología dificulta la gestión del aforo, especialmente en horas pico o durante eventos especiales, lo cual puede afectar la experiencia del cliente.
+
+**When? - ¿Cuándo?**<br>
+El problema se vuelve crítico en momentos de alta afluencia, como durante almuerzos, cenas, fines de semana o eventos especiales, en los cuales la ocupación irregular de las mesas puede generar aglomeraciones y una mala experiencia para los clientes.
+
+**Where? - ¿Dónde?**<br>
+El desafío se presenta en restaurantes, cafeterías y otros establecimientos de hostelería, tanto en grandes ciudades como en zonas turísticas, donde la demanda y el flujo de clientes varían constantemente.
+
+**Who? - ¿Quién?** <br>
+Los principales afectados son los propietarios y administradores de locales de hostelería, así como los clientes que buscan una experiencia cómoda y segura. Además, las autoridades sanitarias y de seguridad pueden verse beneficiadas al contar con datos en tiempo real para el control de aforo.
+
+**Why? - ¿Por qué?** <br>
+La falta de información precisa sobre la ocupación de mesas puede generar problemas de sobreaforo, dificultades en la atención al cliente y riesgos en el cumplimiento de protocolos de seguridad. La integración de tecnologías IoT permite automatizar y optimizar estos procesos, reduciendo errores humanos y mejorando la eficiencia operativa.
+
+**How? - ¿Cómo?** <br>
+La solución se implementará instalando sensores de peso en cada mesa, conectados a una red IoT que transmite datos en tiempo real a una plataforma centralizada. A través de una aplicación móvil y web, los usuarios podrán visualizar la disponibilidad de mesas y, a su vez, el personal del establecimiento podrá gestionar la ocupación de manera óptima y recibir alertas en caso de anomalías.
+
+**How much? - ¿Cuánto?** <br>
+_¿Cuánto afecta este problema?_ <br>
+La falta de control de aforo puede traducirse en pérdidas económicas para los establecimientos debido a la ineficiencia en la asignación de mesas, así como en sanciones por incumplimiento de normativas de seguridad.
+
+_¿Cuánto costará resolver este problema?_ <br>
+El costo de implementación dependerá del número de mesas y la infraestructura necesaria para la conexión y mantenimiento de los sensores, así como del desarrollo de la plataforma digital. Se estima que la inversión inicial se recuperará rápidamente mediante la optimización del uso del espacio y el incremento en la satisfacción del cliente.
+
+_¿Cuántas personas se beneficiarán?_ <br>
+Esta solución beneficiará directamente a los clientes y al personal de los establecimientos, con un impacto indirecto en el sector de la hostelería en general. Se estima que, en establecimientos de tamaño mediano, la adopción de la tecnología podría mejorar la eficiencia operativa en un 30-40%, beneficiando a cientos de usuarios diarios.
+
+**Conclusiones de 5W's y 2H's:** <br>
+La implementación de la solución IoT para el control de aforo permite identificar y abordar de manera efectiva los problemas relacionados con la ocupación ineficiente de mesas. Al automatizar la detección y gestión del aforo, se optimiza el uso del espacio en los establecimientos, se mejora la experiencia del cliente y se aseguran protocolos de seguridad que contribuyen a la sostenibilidad operativa.
 
 ### 1.2.2. Lean UX Process
 
