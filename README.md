@@ -131,6 +131,12 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
     - [1.2.2. Lean UX Process](#122-lean-ux-process)
       - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
       - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+          - [**Business Outcomes:**](#business-outcomes)
+          - [**Users:**](#users)
+          - [**User Outcomes \& Benefits:**](#user-outcomes--benefits)
+          - [**Feature Assumptions:**](#feature-assumptions)
+          - [**Business Assumptions:**](#business-assumptions)
+          - [**User Assumptions:**](#user-assumptions)
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
@@ -521,9 +527,102 @@ La implementación de la solución IoT para el control de aforo permite identifi
 
 ### 1.2.2. Lean UX Process
 
-#### 1.2.2.1. Lean UX Problem Statements  
+#### 1.2.2.1. Lean UX Problem Statements 
+
+En **nombre startup** sabemos que el sector de la hostelería en Perú es vital para la economía nacional y que la experiencia del cliente es fundamental para el éxito de cada establecimiento. Sin embargo, muchos restaurantes, cafeterías y locales de hostelería enfrentan un reto crítico: la ausencia de un sistema en tiempo real que permita conocer la ocupación exacta de sus mesas. <br>
+
+**Problema:** La falta de información precisa y actualizada sobre la disponibilidad de mesas provoca una gestión ineficiente del aforo. Esto se traduce en aglomeraciones durante las horas pico, tiempos de espera prolongados para los clientes y, en algunos casos, incumplimiento de protocolos de seguridad que pueden acarrear sanciones. <br>
+
+**Impacto:** Esta problemática afecta directamente la rentabilidad y la imagen del establecimiento, generando pérdidas económicas y deteriorando la experiencia del cliente. Al implementar una solución IoT basada en sensores de peso integrados en las mesas y conectados a una plataforma digital, los locales podrán optimizar la asignación de asientos, reducir los tiempos de espera y mejorar tanto la eficiencia operativa como la satisfacción del usuario, permitiendo así transformar un desafío en una ventaja competitiva. <br>
 
 #### 1.2.2.2. Lean UX Assumptions  
+
+###### **Business Outcomes:**
+
+- Aumento del 25% en la eficiencia operativa de los establecimientos que adopten la solución.
+- Reducción del 30% en incidencias por sobreaforo y problemas de asignación de mesas.
+- Incremento del 20% en la satisfacción de los clientes, medido a través de encuestas de experiencia.
+- Incremento del 15% en el flujo de clientes al evitar tiempos de espera prolongados.
+- Mejora en el cumplimiento de protocolos de seguridad y normativas vigentes.
+
+###### **Users:**
+
+Los usuarios primarios son:
+- Propietarios y administradores de restaurantes y cafeterías: Interesados en optimizar el uso del espacio y garantizar la seguridad en el establecimiento. <br>
+  
+- Clientes: Usuarios que buscan información en tiempo real sobre la disponibilidad de mesas para planificar su visita de manera eficiente. <br>
+
+###### **User Outcomes & Benefits:**
+
+- Propietarios/Administradores:
+  - Control en tiempo real del aforo y asignación de mesas.
+  - Reducción de errores manuales en la gestión de espacios.
+  - Acceso a estadísticas e informes que faciliten la toma de decisiones.
+
+- Clientes:
+  - Información precisa sobre la disponibilidad de mesas.
+  - Reducción de tiempos de espera al llegar al local.
+  - Mejora en la experiencia y comodidad al planificar su visita.
+
+###### **Feature Assumptions:**
+
+- Detección en tiempo real: Uso de sensores de peso para determinar la ocupación de cada mesa.
+
+- Aplicación móvil y web: Interfaz intuitiva que permita a los usuarios conocer la disponibilidad en tiempo real.
+
+- Alertas y notificaciones: Envío de notificaciones al personal del local en caso de ocupación irregular o sobreaforo.
+
+- Reportes y análisis: Generación de informes históricos y en tiempo real para facilitar la toma de decisiones y mejorar la gestión operativa.
+
+
+###### **Business Assumptions:**
+
+1.  **Creemos que nuestros usuarios necesitan** un sistema automatizado y en tiempo real que facilite la gestión del aforo en establecimientos de hostelería.
+
+2. **Estas necesidades se pueden satisfacer** mediante la implementación de sensores IoT y el desarrollo de una plataforma digital accesible desde dispositivos móviles y computadoras.
+
+3. **Nuestros clientes serán** restaurantes, cafeterías y otros locales de hostelería que buscan mejorar la eficiencia en la gestión de sus espacios y la experiencia de sus clientes.
+
+4. **El valor más importante que un cliente quiere de nuestros servicios es** la capacidad de optimizar la ocupación de mesas en tiempo real, garantizando tanto la seguridad como la eficiencia operativa.
+
+5. **El cliente también va obtener** beneficios adicionales como la recopilación de datos para análisis futuros.
+
+6. **Vamos a obtener la mayoría de nuestros clientes mediante** estrategias de marketing digital, participación en ferias de tecnología y colaboraciones con asociaciones del sector de hostelería.
+
+7. **Vamos a obtener ingresos mediante** la venta de la solución IoT como hardware y software.
+
+8. **Nuestra competencia principal** son los sistemas tradicionales de control de aforo y soluciones de monitoreo manual.
+
+9. **Vamos a tener ventaja frente a nuestra competencia debido a** la automatización en tiempo real, la facilidad de uso y la capacidad de integración con otras plataformas, lo que mejora significativamente la eficiencia operativa.
+
+10. **El mayor riesgo del servicio es** la posible resistencia de los establecimientos a la adopción de nuevas tecnologías y la integración con sistemas ya existentes.
+
+11. **Lo resolveremos mediante** demostraciones prácticas, pruebas piloto y estrategias de capacitación para asegurar una transición suave y una rápida adopción de la tecnología.
+
+###### **User Assumptions:**
+
+**¿Quién es el usuario?** <br>
+Los usuarios son propietarios, administradores y clientes de restaurantes, cafeterías y otros locales de hostelería, que buscan una solución tecnológica para gestionar de manera eficiente la ocupación de mesas.<br>
+
+**¿Qué problemas tiene nuestro producto? ¿Resolver?** <br>
+El principal problema es la falta de información en tiempo real sobre la disponibilidad de mesas, lo que genera tiempos de espera, errores en la asignación de asientos y riesgos en el cumplimiento de normativas de seguridad. Nuestra solución automatiza este proceso, reduciendo la incertidumbre y mejorando la experiencia del usuario. <br>
+
+**¿Qué características son importantes?** <br>
+- Monitoreo en tiempo real de la ocupación mediante sensores de peso.
+- Interfaz intuitiva y amigable en la aplicación móvil y web.
+- Alertas y notificaciones automáticas para el personal del local.
+- Reportes históricos y en tiempo real para el análisis del uso del espacio.
+- Integración con otros sistemas de gestión interna del establecimiento.
+<br>
+
+**¿Dónde encaja nuestro producto en su trabajo o vida?** <br>
+La solución se integra en la operación diaria de los establecimientos de hostelería, facilitando tanto la gestión interna (para administradores) como la experiencia del cliente al planificar su visita. <br>
+
+**¿Cuándo y cómo es nuestro producto? ¿Usado?** <br>
+El producto es utilizado en tiempo real, especialmente durante horas pico y en momentos de alta afluencia, permitiendo a los establecimientos gestionar el aforo de forma continua y los clientes verificar la disponibilidad antes de llegar. <br>
+
+**¿Cómo debe verse nuestro productoo y cómo debe comportarse?** <br>
+La interfaz visual debe ser moderna, limpia e intuitiva, con gráficos y datos en tiempo real que faciliten la rápida comprensión del estado de ocupación. Además, el sistema debe ser ágil, confiable y accesible desde múltiples dispositivos, garantizando una experiencia fluida y sin complicaciones. <br>
 
 #### 1.2.2.3. Lean UX Hypothesis Statements  
 
