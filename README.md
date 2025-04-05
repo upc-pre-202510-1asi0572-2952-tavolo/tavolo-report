@@ -340,7 +340,7 @@ Ser la plataforma líder en gestión inteligente de aforo para el sector de la h
     <td align="left">
     <b>Acerca de:</b>
     <br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi. In hac habitasse platea dictumst. Aenean euismod neque vitae diam venenatis rutrum. Vivamus lobortis iaculis blandit. Nunc tempus accumsan nibh nec sagittis. Vivamus accumsan augue sed leo imperdiet efficitur. Aliquam laoreet in eros vitae dapibus. In et aliquet mauris. Etiam in ex varius, sodales purus in, euismod tellus. Aliquam vel enim turpis. In dignissim mauris ut ante euismod, a maximus eros ultricies. Etiam sit amet porttitor mi. Aliquam erat volutpat. Aliquam erat volutpat.
+    Soy Aldo Alberto Baldeon Fabian, estudio la carrera de Ingeniería de Software en la UPC. Escogí esta carrera porque me interesó el desarrollo de aplicaciones. Soy responsable y me gusta trabajar en equipo. Poseo conocimientos básicos en C#, java, JavaScript, HTML y CSS. También, poseo conocimientos intermedios en C + +, SQL y MongoDB, además de contar con experiencia en Git y GitHub.
     </td>
   </tr>
   </tr>
@@ -445,7 +445,7 @@ Ser la plataforma líder en gestión inteligente de aforo para el sector de la h
   
 <tr align="center">
     <td rowspan="4">
-      <img src="./assets/profile_images/Fabio_image.jpg" alt="Franz's profile image" min-width="400" max-width="900"/>
+      <img src="./images/profile_images/franz_profile.jpg" alt="Franz's profile image" min-width="400" max-width="900"/>
     </td>
     <td align="left">
       <b>Nombre y Apellido:</b>
@@ -471,7 +471,7 @@ Ser la plataforma líder en gestión inteligente de aforo para el sector de la h
     <td align="left">
     <b>Acerca de:</b>
     <br>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi. In hac habitasse platea dictumst. Aenean euismod neque vitae diam venenatis rutrum. Vivamus lobortis iaculis blandit. Nunc tempus accumsan nibh nec sagittis. Vivamus accumsan augue sed leo imperdiet efficitur. Aliquam laoreet in eros vitae dapibus. In et aliquet mauris. Etiam in ex varius, sodales purus in, euismod tellus. Aliquam vel enim turpis. In dignissim mauris ut ante euismod, a maximus eros ultricies. Etiam sit amet porttitor mi. Aliquam erat volutpat. Aliquam erat volutpat.
+    Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Mi compromiso con el equipo se basa en mantener una participación activa en todas las actividades, estar siempre disponible para resolver dudas y contribuir de manera significativa al desarrollo del proyecto. Busco aportar con soluciones innovadoras, apoyo constante y un aprendizaje continuo para alcanzar los objetivos propuestos.
     </td>
   </tr>
 
