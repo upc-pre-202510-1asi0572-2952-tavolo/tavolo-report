@@ -140,10 +140,6 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
       - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-    - [Perfil Demográfico](#perfil-demográfico)
-    - [Perfil Psicográfico](#perfil-psicográfico)
-    - [Hábitos y necesidades clave](#hábitos-y-necesidades-clave)
-    - [Ejemplos de usuarios tipo](#ejemplos-de-usuarios-tipo)
 
 ### [Capítulo II: Requirements Elicitation & Analysis](#capc3adtulo-ii-requirements-elicitation--analysis-1)
 
@@ -626,59 +622,58 @@ La interfaz visual debe ser moderna, limpia e intuitiva, con gráficos y datos e
 
 #### 1.2.2.3. Lean UX Hypothesis Statements  
 
-**Supuesto:**  
-Creemos que permitir a los usuarios ver en tiempo real la disponibilidad de asientos en nuestras sedes mejorará su experiencia de planificación y reducirá la frustración por llegar a un lugar lleno.
+A continuación, se detallan las hipótesis formuladas para abordar la problemática mediante las funcionalidades incluidas en nuestra propuesta de solución IoT. Cada hipótesis está diseñada para ser clara, cuantificable y permitir una evaluación objetiva de su éxito.
 
-**Para:**  
-Usuarios que trabajan o estudian fuera de casa y buscan un lugar tranquilo para sentarse con su laptop o tomar café.
+- **Hypothesis Statement 1:** <br>
+    **Creemos que** los propietarios y administradores de restaurantes y cafeterías necesitan una herramienta en tiempo real que les permita monitorear la ocupación de mesas de forma automatizada. 
+    <br>
 
-**Nuestro producto/servicio:**  
-Es una aplicación web y móvil que muestra la disponibilidad de asientos en tiempo real gracias a sensores IoT, además del menú del café y la opción de reservar.
+    **Sabremos** que hemos tenido éxito. 
+    <br>
 
-**Nos ayudará a lograr:**  
-Mejorar la organización de los usuarios y optimizar el uso de los espacios en las sedes, evitando aglomeraciones y maximizando la rotación de clientes satisfechos.
+    **Cuando** al menos el 75% de estos usuarios informen una mejora en la eficiencia operativa y una reducción del 30% en incidencias por sobreaforo. <br>
 
-**Mediremos el éxito a través de:**  
-- Número de reservas realizadas desde la app.  
-- Disminución de quejas por falta de espacio.  
-- Aumento de visitas a sedes menos concurridas gracias a la recomendación automática.  
+- **Hypothesis Statement 2:** <br>
+    **Creemos que** los clientes valorarán disponer de información actualizada sobre la disponibilidad de mesas a través de una aplicación móvil y web. 
+    <br>
+
+    **Sabremos** que hemos tenido éxito. 
+    <br>
+
+    **Cuando** el 80% de los clientes reporten una experiencia mejorada y una disminución notable en los tiempos de espera al llegar al establecimiento. <br>
+
+- **Hypothesis Statement 3:** <br>
+    **Creemos que** la implementación de sensores IoT integrados en las mesas, que transmitan datos en tiempo real a una plataforma centralizada, facilitará la gestión del aforo y optimizará el flujo de clientes. 
+    <br>
+
+    **Sabremos** que hemos tenido éxito. 
+    <br>
+
+    **Cuando** los establecimientos vean un incremento del 25% en la eficiencia en la asignación de mesas y una recuperación de la inversión en menos de 12 meses. <br>
+
+- **Hypothesis Statement 4:** <br>
+    **Creemos que** una interfaz intuitiva y amigable en la aplicación digital fomentará la adopción tanto por parte de administradores como de clientes, simplificando el proceso de toma de decisiones y la planificación de visitas. <br>
+
+    **Sabremos** que hemos tenido éxito. <br>
+
+    **Cuando** el 80% de los usuarios completen tareas básicas en la aplicación sin necesidad de asistencia y se mantenga un alto nivel de satisfacción en encuestas posteriores a su experiencia. <br>
 
 #### 1.2.2.4. Lean UX Canvas
 
-| **Sección**                | **Contenido para TAVOLO**                                                                 |
-|---------------------------|-------------------------------------------------------------------------------------------|
-| 1. Business Problem        | Muchos clientes llegan a las sedes y no encuentran asientos disponibles, lo que genera frustración y pérdida de clientes. |
-| 2. Business Outcomes       | - Aumentar la rotación eficiente de clientes.<br>- Mejorar la experiencia de visita.<br>- Promover otras sedes con menor aforo. |
-| 3. Users and Customers     | - Estudiantes, trabajadores remotos, freelancers.<br>- Personas que buscan un lugar cómodo para pasar tiempo. |
-| 4. User Benefits           | - Ahorran tiempo y frustración.<br>- Pueden planificar mejor sus visitas.<br>- Pueden revisar el menú antes de llegar. |
-| 5. Solutions Ideas         | - Ver aforo en tiempo real con sensores IoT.<br>- Reserva de asientos.<br>- Sugerencia automática de otras sedes. |                                                      |
-| 6. Key Assumptions         | - Los usuarios realmente desean saber el aforo antes de ir.<br>- Usarán la app para hacer reservas.<br>- Los sensores IoT funcionarán de forma confiable. |
-| 7. Experimentation         | - Medir reservas vs. aforo real.<br>- Encuestas a usuarios después del uso de la app. |
+<img src="./images/lean_ux_canvas/LEAN_UX_CANVAS.svg" alt="Lean UX Canvas"/>
 
 
 ## 1.3. Segmentos objetivo
 
-### Perfil Demográfico
-- Jóvenes adultos entre 18 y 35 años.  
-- Estudiantes universitarios y profesionales jóvenes.  
-- Principalmente ubicados en zonas urbanas con acceso a tecnología y múltiples sedes del café.
+Nuestros segmentos objetivo se centran en aquellos actores que se beneficiarán directamente del control automatizado del aforo y la optimización del flujo de clientes:
 
-### Perfil Psicográfico
-- Personas que valoran su tiempo y organización personal.  
-- Tienen un estilo de vida activo, flexible y con movilidad constante.  
-- Están familiarizados con el uso de apps para planificar, reservar y tomar decisiones rápidas.
+- **Propietarios y Administradores de Restaurantes y Cafeterías:** <br>
+ Este segmento es clave, ya que busca herramientas que faciliten la gestión en tiempo real de la ocupación de mesas, reduzcan errores manuales y optimicen la operación del negocio. Son usuarios que valoran la eficiencia operativa y la posibilidad de obtener estadísticas precisas para la toma de decisiones. 
+ <br>
 
-### Hábitos y necesidades clave
-- Buscan lugares tranquilos y cómodos para trabajar, estudiar o socializar.  
-- Prefieren evitar la incertidumbre de encontrar espacios disponibles.  
-- Desean información clara antes de desplazarse (aforo, menú, ubicación).  
-- Valoran la posibilidad de reservar o planificar con antelación desde su smartphone.
+- **Clientes de Establecimientos de Hostelería** <br>
+Los clientes se benefician al contar con información actualizada sobre la disponibilidad de mesas, lo que les permite planificar su visita de manera eficiente, evitar largos tiempos de espera y disfrutar de una experiencia más cómoda y agradable.
 
-### Ejemplos de usuarios tipo
--  Estudiante universitaria que necesita un lugar para estudiar con su laptop entre clases.  
--  Freelancer o trabajador remoto que busca un lugar productivo con buena conexión.  
--  Creativo independiente que rota entre cafés para inspirarse y trabajar.  
--  Amigos que planean reunirse a tomar café y quieren saber dónde hay espacio libre.
 
 
 
