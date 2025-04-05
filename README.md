@@ -121,6 +121,7 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
     - [Conclusiones](#conclusiones)
     - [Bibliografía](#bibliografía)
     - [Anexos](#anexos)
+- [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción-1)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
@@ -226,6 +227,72 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
 ### [Bibliografía](#bibliografía)
 
 ### [Anexos](#anexos)
+
+# Student Outcome
+
+El curso contribuye al cumplimiento del Student Outcome ABET:
+**ABET – EAC - Student Outcome 5**
+**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros
+juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo,
+establecen objetivos, planifican tareas y cumplen objetivos.
+En el siguiente cuadro se describe las acciones realizadas y enunciados de
+conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.
+
+<!-- Cambiamos el rowspan="1" por rowspan="n" cuando agregamos más de una acción realizada por criterio específico. (TB1, TP1, TB2, TF1)-->
+
+<table>
+    <tr>
+        <th><b>Criterio específico</b></th>
+        <th><b>Acciones realizadas</b></th>
+        <th><b>Conclusiones</b></th>
+    </tr>
+    <tr>
+        <td rowspan="1"><b>Trabaja en equipo para proporcionar liderazgo en forma conjunta</b></td>
+        <td>TB1<br><br>
+            <b>Baldeon Fabian, Aldo Alberto</b><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            <br><br> 
+            <b>Cama Salvatierra, Jimena Tamara</b><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            <br><br>
+            <b>Castillo Castillo, Jair Alexander</b><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            <br><br>
+            <b>La Torre Valle, Franz Jair</b><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            <br><br>
+            <b>Quezada Portalatino, Barbara Susana</b><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            <br><br>
+        </td>
+        <td>TB1<br><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="1"><b>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</b></td>
+        <td>TB1<br><br>
+            <b>Baldeon Fabian, Aldo Alberto</b><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            <br><br> 
+            <b>Cama Salvatierra, Jimena Tamara</b><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            <br><br>
+            <b>Castillo Castillo, Jair Alexander</b><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            <br><br>
+            <b>La Torre Valle, Franz Jair</b><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            <br><br>
+            <b>Quezada Portalatino, Barbara Susana</b><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            <br><br>
+        </td>
+        <td>TB1<br><br>
+            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+        </td>
+    </tr>
+</table>
 
 # Capítulo I: Introducción
 
