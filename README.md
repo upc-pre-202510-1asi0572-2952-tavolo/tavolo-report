@@ -57,6 +57,40 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
   </tbody>
 </table>
 
+## Project Report Collaboration Insights
+
+Para desarrollar el proyecto, se empleó GitHub como herramienta para gestionar versiones y facilitar la colaboración en tiempo real. A continuación, se proporciona el enlace al repositorio del proyecto:
+
+| **Descripción**            | **Enlace**                                                                 |
+| :-------------------------: | :------------------------------------------------------------------------: |
+| Repositorio del Proyecto    | https://github.com/IoT-Solutions-SW71-Grupo-4/HidroBots-Report.git         |
+| Link de la Organización     | https://github.com/upc-pre-202510-1asi0572-2952-tavolo                    |
+
+**TB1:**
+
+Para el TB1, se asignaron responsabilidades específicas a cada integrante, las cuales se detallan a continuación:
+
+| Miembro del Equipo | Tarea Asignada |
+|       :---:        |      :---:     |
+| Aldo Baldeon       |        -       |
+| Barbara Quezada    |        -       |
+| Franz La Torre     |        -       |
+| Jimena Cama        |        -       |
+| Jair Castillo      |        -       |
+
+Cabe destacar que, durante la creación del informe, se realizaron commits específicos para cada tarea asignada, lo que permitió garantizar un control de versiones y una colaboración efectiva en tiempo real.
+
+Miembros
+
+- Aldo Baldeon    (CodAress)
+- Barbara Quezada (BarbaraQP15)
+- Franz La Torre  (FranzJairLTV)
+- Jimena Cama     (AkSoon-ie)
+- Jair Castillo   (U202211390)
+  
+El uso de GitHub ha permitido gestionar versiones y fomentar la colaboración en tiempo real, facilitando que los integrantes del equipo trabajen tanto de forma asincrónica como sincrónica en el proyecto. Asimismo, la metodología Gitflow ha posibilitado la creación de diversas ramas para el desarrollo de las tareas asignadas, promoviendo un trabajo autónomo y colaborativo entre los miembros.
+
+La rama "develop" se utilizó como un entorno para integrar las tareas de cada miembro de manera estructurada y organizada, mientras que la rama "main" se destinó a la entrega de la versión final del proyecto.
 
 # Capítulo I: Introducción
 
