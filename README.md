@@ -674,11 +674,11 @@ A continuación, se detallan las hipótesis formuladas para abordar la problemá
 
 Nuestros segmentos objetivo se centran en aquellos actores que se beneficiarán directamente del control automatizado del aforo y la optimización del flujo de clientes:
 
-- **Propietarios y Administradores de Restaurantes y Cafeterías:** <br>
+- **Propietarios de Cafeterías:** <br>
  Este segmento es clave, ya que busca herramientas que faciliten la gestión en tiempo real de la ocupación de mesas, reduzcan errores manuales y optimicen la operación del negocio. Son usuarios que valoran la eficiencia operativa y la posibilidad de obtener estadísticas precisas para la toma de decisiones. 
  <br>
 
-- **Clientes de Establecimientos de Hostelería** <br>
+- **Clientes del Establecimientos ** <br>
 Los clientes se benefician al contar con información actualizada sobre la disponibilidad de mesas, lo que les permite planificar su visita de manera eficiente, evitar largos tiempos de espera y disfrutar de una experiencia más cómoda y agradable.
 
 
