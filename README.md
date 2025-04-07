@@ -127,6 +127,8 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 | US014 | Acceder a todos los módulos del sistema | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. | EPIC-SUPERADMIN-004 | Superadmin | **Escenario 1:**<br>Dado que el superadmin accede al sistema<br>Cuando desea visualizar sedes o usuarios<br>Entonces el sistema debe permitirle ver toda la información<br><br>**Escenario 2:**<br>Dado que el superadmin crea un nuevo admin o sede<br>Cuando registra los datos<br>Entonces el sistema debe almacenarlos y mostrar confirmación |
 
 
+## 3.3. Impact mapping.
+<img src="./images/impact_mapping/Impact_Mapping.png" alt="Impact Mapping"/><br>
 
 
 
