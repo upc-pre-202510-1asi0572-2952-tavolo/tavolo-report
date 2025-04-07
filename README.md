@@ -62,11 +62,13 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 ### ¿Qué hace el Dueño del Café?
 
-| Phases | Registro del local | Configuración del sistema de sensores | Monitoreo del local | Análisis de datos de ocupación |
-|--------|-------------------|-------------------------------------|-------------------|------------------------------|
-| **Doing** | • Instala la app Tavolo.<br>• Crea su cuenta como dueño de local. | • Registra la distribución de mesas en el sistema.<br>• Conecta los sensores IoT con la aplicación. | • Entra a la sección de Monitoreo en tiempo real.<br>• Verifica el estatus de ocupación de su local. | • Revisa el resumen diario de ocupación.<br>• Consulta los momentos más concurridos de la semana. |
-| **Thinking** | "Qué fácil es crear un perfil para mi café." | "El sistema de sensores se integra perfectamente con la app." | "Puedo ver exactamente qué mesas están ocupadas." | "Estos datos me ayudarán a mejorar la distribución y optimizar mi negocio." |
-| **Feeling** | Satisfacción | Confianza | Tranquilidad | Entusiasmo |
+| **Phases**                     | **Doing**                                                                                          | **Thinking**                                           | **Feeling**               |
+|-------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------|---------------------------|
+| **Registro del local**        | • Instala la app Tavolo.  <br> • Crea su cuenta como dueño de local.  <br> • Registra su cafetería y sedes. | • “Qué bueno que puedo registrar todas mis sedes fácil.” <br> • “Ahora tengo visibilidad online.” | • Aliviado <br> • Organizado |
+| **Gestión del aforo**         | • Consulta la ocupación en tiempo real de su sede. <br> • Revisa cada sede desde su celular o computadora.                    | • “Qué fácil es ver cuántas mesas están ocupadas.” <br> • “Ya no dependo del personal para esto.” <br>• “Qué accesible que pueda ver desde cualquier dispositivo la app de Tavolo.” | • En control <br> • Eficiente  |
+| **Gestión del tiempo de espera** | • Ve cómo los clientes reservan online. <br> • Evita colas en la entrada.                             | • “Qué bueno que ya no hay filas innecesarias.” <br> • “Mis clientes llegan más contentos.”      | • Relajado <br> • Optimista   |
+| **Monitoreo de mesas**        | • Agrega o elimina mesas. <br> • Coordina instalación de sensores IoT.                              | • “Wow, es sencillo gestionar las mesas con ayuda.” <br> • “No imaginé tanta flexibilidad.”      | • Empoderado <br> • Innovador  |
+| **Visibilidad en Google Maps**| • Permite que los clientes lo busquen por nombre. <br> • Revisa su sede en la app de Tavolo.          | • “Qué útil que aparezcamos en Google con mis datos.” <br> • “Nos encuentran más rápido.”        | • Conectado <br> • Satisfecho  |
 
 ### ¿Qué hace el Usuario?
 
