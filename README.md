@@ -126,24 +126,29 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 |----------|--------|-------------|---------|---------|------------------------|
 | US014 | Acceder a todos los módulos del sistema | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. | EPIC-SUPERADMIN-004 | Superadmin | **Escenario 1:**<br>Dado que el superadmin accede al sistema<br>Cuando desea visualizar sedes o usuarios<br>Entonces el sistema debe permitirle ver toda la información<br><br>**Escenario 2:**<br>Dado que el superadmin crea un nuevo admin o sede<br>Cuando registra los datos<br>Entonces el sistema debe almacenarlos y mostrar confirmación |
 
+
+
+
+
 ## 3.4. Product Backlog.
 
-| # | User Story Id | Título | Descripción | Story Points |
-|---|--------------|--------|-------------|--------------|
-| 1 | US015 | Registro de cuenta de comensal | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de Tavolo. | 5 |
-| 2 | US016 | Login de cuenta de comensal | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas o visualizar la disponibilidad y el menú de una sede en específico. | 5 |
-| 3 | US017 | Login de administrador | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas como: usuario y contraseña, para acceder al panel de administración de mi sede. | 2 |
-| 4 | US001 | Ver sección "¿Qué es Tavolo?" | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería. | 2 |
-| 5 | US002 | Ver sección "Características clave" | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador. | 2 |
-| 6 | US003 | Ver la galería virtual | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción. | 2 |
-| 7 | US004 | Usar el formulario de contacto | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo. | 3 |
-| 8 | US005 | Ver menú digital de una sede | Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir. | 3 |
-| 9 | US012 | Ver la sede asignada | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta. | 5 |
-| 10 | US010 | Agregar nuevas mesas | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación. | 8 |
-| 11 | US013 | Eliminar mesas | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas. | 5 |
-| 12 | US007 | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería. | 5 |
-| 13 | US009 | Visualizar más sedes en un mapa | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano. | 8 |
-| 14 | US008 | Reservar una mesa | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería. | 5 |
-| 15 | US006 | Visualizar reserva activa | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería. | 5 |
-| 16 | US011 | Visualizar reservas realizadas | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio. | 3 |
-| 17 | US014 | Acceder a todos los módulos del sistema | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. | 8 |
+| #  | User Story Id | Título                                     | Descripción                                                                                                                                                                    | Story Points |
+|----|---------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+|  1 | US014         | Acceder a todos los módulos del sistema    | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins.                                                      |            8 |
+|  2 | US010         | Agregar nuevas mesas                       | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación.                                                                            |            8 |
+|  3 | US009         | Visualizar más sedes en un mapa            | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano.                                                                                    |            8 |
+|  4 | US015         | Registro de cuenta de comensal             | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de Tavolo.                                                |            5 |
+|  5 | US016         | Login de cuenta de comensal                | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas o visualizar la disponibilidad y el menú de una sede en específico.            |            5 |
+|  6 | US012         | Ver la sede asignada                       | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta.                                                                         |            5 |
+|  7 | US008         | Reservar una mesa                          | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería.                                                                                     |            5 |
+|  8 | US013         | Eliminar mesas                             | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas.                     |            5 |
+|  9 | US006         | Visualizar reserva activa                  | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería.    |            5 |
+| 10 | US007         | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería.                                                                        |            5 |
+| 11 | US004         | Usar el formulario de contacto             | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo.                                     |            3 |
+| 12 | US005         | Ver menú digital de una sede               | Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir.                                                              |            3 |
+| 13 | US011         | Visualizar reservas realizadas             | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio.                                                                                |            3 |
+| 14 | US003         | Ver la galería virtual                     | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción.                                           |            2 |
+| 15 | US002         | Ver sección "Características clave"        | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador.                    |            2 |
+| 16 | US001         | Ver sección "¿Qué es Tavolo?"              | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería.   |            2 |
+| 17 | US017         | Login de administrador                     | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas como: usuario y contraseña, para acceder al panel de administración de mi sede. |            2 |
+
