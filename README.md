@@ -58,7 +58,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 
 ## 1.3. Segmentos objetivo
 
-## To-Be Scenario Mapping
+## 3.1. To-Be Scenario Mapping
 
 ### ¿Qué hace el Dueño del Café?
 
@@ -75,3 +75,54 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
 | **Doing** | • Descarga Tavolo desde la tienda de aplicaciones.<br>• Explora las funcionalidades principales. | • Registra sus datos en Tavolo.<br>• Configura sus cafeterias favoritas. | • Utiliza la función de búsqueda por ubicación.<br>• Revisa la disponibilidad en tiempo real. | • Selecciona una mesa disponible.<br>• Confirma la reserva para una hora específica. |
 | **Thinking** | "Esta app me ayudará a no perder tiempo buscando lugares disponibles." | "El proceso de registro es rápido." | "Me encanta poder ver exactamente dónde hay espacio antes de ir." | "La reserva fue sencilla y ahora tengo mi lugar asegurado." |
 | **Feeling** | Curiosidad | Comodidad | Alivio | Satisfacción |
+
+
+## 3.2. User Stories.
+
+# Épicas de Tavolo
+
+| Epic ID | Nombre |
+|---------|--------|
+| EPIC-LANDING-001 | Funcionalidades landing page |
+| EPIC-CLIENT-002 | Funcionalidades user comensal |
+| EPIC-ADMIN-003 | Funcionalidades user administrador |
+| EPIC-SUPERADMIN-004 | Funcionalidades user superadmin |
+
+# User Stories
+
+## Landing Page (EPIC-LANDING-001)
+
+| ID | Título | Descripción | Criterios de aceptación |
+|----|--------|------------|------------------------|
+| US001 | Ver sección "¿Qué es Tavolo?" | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería. | Given que el visitante accede a la landing page<br>When hace scroll o clic en "¿Qué es Tavolo?"<br>Then debe mostrarse una sección que describa claramente el objetivo de la solución |
+| US002 | Ver sección "Características clave" | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador. | Given que el usuario navega la landing<br>When accede a la sección "Características clave"<br>Then debe ver un resumen de las funcionalidades más importantes del sistema |
+| US003 | Ver la galería virtual | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción. | Given que el usuario accede a la sección "Galería Virtual"<br>When visualiza las imágenes o videos<br>Then debe ver contenido visual real o ilustrativo del sistema en uso |
+| US004 | Usar el formulario de contacto | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo. | Given que el visitante accede a "Contáctanos"<br>When completa el formulario con sus datos<br>Then el sistema debe confirmar el envío y notificar al equipo de Tavolo |
+
+## Usuario Comensal (EPIC-CLIENT-002)
+
+| ID | Título | Descripción | Criterios de aceptación |
+|----|--------|------------|------------------------|
+| US005 | Ver menú digital de una sede | Como comensal, quiero visualizar el menú de una sede específica para conocer los productos disponibles antes de asistir. | Given que el comensal accede a la app<br>When selecciona una sede<br>Then el sistema debe mostrar el menú completo de esa sede |
+| US006 | Visualizar reserva activa | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería. | Given que el comensal ha iniciado sesión en la aplicación<br>And tiene al menos una reserva activa<br>When accede a la sección principal<br>Then debe visualizar la información de la reserva actual incluyendo horario, sede y número de mesa |
+| US007 | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir si visitar o no la cafetería. | Given que el comensal visualiza el estado de las mesas<br>When hay una actualización desde los sensores<br>Then el sistema debe reflejar el nuevo estado en menos de 5 segundos<br>Given que todas las mesas están ocupadas<br>When el comensal visualiza la disponibilidad<br>Then el sistema debe informar que no hay mesas disponibles actualmente |
+| US008 | Reservar una mesa | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería. | Given que el comensal selecciona sede, hora y estadía aproximada<br>When hay mesas disponibles<br>Then el sistema debe permitir realizar la reserva<br>Given que el comensal ya tiene una reserva activa<br>When intenta crear una nueva<br>Then el sistema debe evitarlo e informar que ya tiene una reserva activa |
+| US009 | Visualizar más sedes en un mapa | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano. | Given que el comensal quiere ver más sedes<br>When elige ver sedes<br>Then el sistema debe mostrar todas las sedes de la cafetería en el mapa. |
+| US015 | Registro de cuenta de comensal | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de reserva y visualización de mesas. | Given que un visitante accede a la aplicación<br>When completa el formulario de registro con nombre, correo y contraseña<br>And acepta los términos y condiciones<br>Then el sistema debe crear una cuenta nueva<br>And permitir el acceso a las funcionalidades de comensal |
+| US016 | Login de cuenta de comensal | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas y funcionalidades personalizadas. | Given que un comensal registrado accede a la pantalla de login<br>When ingresa sus credenciales correctas (email y contraseña)<br>Then el sistema debe autenticarlo<br>And redirigirlo al dashboard principal<br>Given que un usuario ingresa credenciales incorrectas<br>When intenta iniciar sesión<br>Then el sistema debe mostrar un mensaje de error<br>And permitir reintentar |
+
+## Usuario Administrador (EPIC-ADMIN-003)
+
+| ID | Título | Descripción | Criterios de aceptación |
+|----|--------|------------|------------------------|
+| US010 | Agregar nuevas mesas | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación. | Given que el admin accede al panel de su sede<br>When registra una nueva mesa<br>Then el sistema debe guardarla con su identificador y estado inicial |
+| US011 | Visualizar reservas realizadas | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio. | Given que el admin accede a su sede<br>When solicita ver las reservas<br>Then el sistema debe mostrar las reservas activas y pasadas con usuario, fecha y hora |
+| US012 | Ver la sede asignada | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta. | Given que el admin inicia sesión<br>When accede a su información<br>Then el sistema debe mostrar la sede asociada a su cuenta |
+| US013 | Eliminar mesas | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas. | Given que el administrador ha iniciado sesión<br>And se encuentra en la sección "Ver Mesas"<br>When selecciona una mesa existente y confirma su eliminación<br>Then la mesa es eliminada del sistema y deja de aparecer en la lista |
+| US017 | Login de administrador | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas para acceder al panel de administración de mi sede. | Given que un administrador accede a la pantalla de login<br>When ingresa sus credenciales válidas<br>Then el sistema debe autenticarlo<br>And mostrar el panel de administración con las funcionalidades asociadas a su sede<br>Given que un administrador ingresa credenciales incorrectas<br>When intenta acceder<br>Then el sistema debe mostrar un mensaje de error<br>And registrar el intento fallido por seguridad |
+
+## Usuario Superadmin (EPIC-SUPERADMIN-004)
+
+| ID | Título | Descripción | Criterios de aceptación |
+|----|--------|------------|------------------------|
+| US014 | Acceder a todos los módulos del sistema | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. | Given que el superadmin accede al sistema<br>When desea visualizar sedes o usuarios<br>Then el sistema debe permitirle ver toda la información<br>Given que el superadmin crea un nuevo admin o sede<br>When registra los datos<br>Then el sistema debe almacenarlos y mostrar confirmación |
