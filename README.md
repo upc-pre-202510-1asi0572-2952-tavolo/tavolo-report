@@ -113,3 +113,52 @@ Tavolo impulsa una estrategia de posicionamiento de marca basada en innovación 
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
+
+### Propietarios de cafeterías
+
+**Preguntas de presentación:**
+
+1. ¿Podrías indicarnos tu nombre y el de tu cafetería?
+2. ¿Qué puesto ocupas dentro de la empresa?
+3. ¿Desde cuándo está funcionando tu cafetería?
+
+**Propósito:** Queremos entender tus necesidades y retos para mejorar la gestión del aforo en tu cafetería.
+
+**Entrevista:**
+
+1. ¿Cómo gestionas actualmente las reservas y la disponibilidad de mesas?
+2. ¿Qué problemas enfrentas con el tiempo de espera de los clientes?
+3. ¿Estarías interesado en una solución tecnológica para gestionar las mesas en tiempo real?
+4. ¿Qué características consideras más importantes en una plataforma de gestión de aforo?
+5. ¿Qué tan importante es para ti la facilidad de instalación y el soporte técnico?
+6. ¿Cómo crees que la tecnología puede mejorar la experiencia del cliente y optimizar la operación de tu cafetería?
+7. ¿Algo más que te gustaría agregar sobre tus necesidades o expectativas?
+
+### Clientes de establecimiento
+
+**Preguntas de presentación:**
+
+1. ¿Podrías indicarnos tu nombre?
+2. ¿Con qué frecuencia sueles visitar cafeterías?
+3. ¿Qué tipo de cafeterías prefieres (por ejemplo, locales, cadenas, cafeterías gourmet)?
+
+**Propósito:** Queremos conocer tu experiencia como cliente en cafeterías y cómo la tecnología podría mejorarla.
+
+**Entrevista:**
+
+1. ¿Cómo sueles consultar la disponibilidad de mesas antes de ir a una cafetería?
+2. ¿Qué tan importante es para ti poder hacer reservas online para evitar esperas?
+3. ¿Te gustaría ver la disponibilidad de mesas en tiempo real a través de una app?
+4. ¿Qué características debería tener una app de cafetería para que la uses con frecuencia?
+5. ¿Cómo valoras la rapidez y facilidad de uso de una aplicación para gestionar tu experiencia en la cafetería?
+6. ¿Algo más que consideras importante para mejorar tu experiencia como cliente?
+
+### 2.2.2. Registro de entrevistas
+### Propietarios de cafeterías
+
+### Clientes de establecimiento
+
+### 2.2.3. Análisis de entrevistas
+### Propietarios de cafeterías
+
+### Clientes de establecimiento
