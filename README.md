@@ -102,15 +102,159 @@ Este diagrama muestra que el sistema Tavolo se despliega en tres entornos princi
 <img src="./images/c4-model/deployment-c4.png" alt="Deploymet Context en C4"/><br>
 ## 4.2. Tactical-Level Domain-Driven Design
 
-### 4.2.X. Bounded Context: <Bounded Context Name>
+### 4.2.1. Bounded Context: Menu Management
+Este contexto se encarga de la gestión del menú digital de las cafeterías. Permite al administrador crear, modificar y clasificar los productos que estarán disponibles para los comensales en cada sede.
 
-#### 4.2.X.1. Domain Layer.
+#### 4.2.1.1. Domain Layer.
+ `Producto` (Entity)
+- Propósito: Representa un ítem del menú (comida o bebida).
+- Atributos:
+  - `productoId: ProductoId`
+  - `nombre: String`
+  - `descripcion: String`
+  - `precio: double`
+- Métodos:
+  - `updatePrecio(nuevoPrecio: double)`
+  - `updateDescripcion(nuevaDescripcion: String)`
 
-#### 4.2.X.2. Interface Layer.
+ `Categoria` (Value Object)
+- Propósito: Clasifica un conjunto de productos.
+- Atributos:
+  - `productos: List<Producto>`
+  - `horario: String` (ej. desayuno, almuerzo)
+  - `visible: boolean`
 
-#### 4.2.X.3. Application Layer.
+ `Menu` (Aggregate Root)
+- Propósito: Actúa como agregado principal que agrupa productos y define operaciones sobre ellos.
+- Métodos:
+  - `crearProducto(command: CrearMenuCommand)`
+  - `actualizarProducto(command: ActualizarProductoCommand)`
 
-#### 4.2.X.4. Infrastructure Layer.
+#### 4.2.1.2. Application Layer.
+ `CrearMenu` (Command Handler)
+- Propósito: Ejecuta el proceso de creación de un nuevo producto en el menú.
+ `AdministrarProductoCommandHandler` (Service)
+- Propósito: Apoya la orquestación de operaciones de mantenimiento del menú.
+- Métodos:
+  - `crearMenu()`
+  - `actualizarProducto()`
+
+#### 4.2.1.3. Interface Layer.
+ `CrearMenuCommand` (Command)
+- Propósito: Representa la solicitud para agregar un nuevo producto al menú.
+ `MenuController` (Controller)
+- Métodos:
+  - `crearMenu()`
+  - `actualizarProducto()`
+
+
+#### 4.2.1.4. Infrastructure Layer.
+ `MenuRepository` (Interface)
+- Propósito: Contrato definido para almacenar objetos `Menu`.
+- Métodos:
+  - `save(menu: Menu)`
+ `MenuRepositoryImpl` (Repository)
+- Propósito: Implementación concreta de `MenuRepository`, encargada de interactuar con la base de datos.
+- Métodos:
+  - `crearMenu()`
+  - `actualizarProducto()`
+
+### 4.2.2. Bounded Context: Table Management
+Este contexto se encarga del registro y configuración de las mesas en cada sede.
+
+#### 4.2.2.1. Domain Layer.
+ `Mesa` (Entity)
+- Atributos:
+  - `mesaId: UUID`
+  - `cantidadSillas: int`
+  - `estado: Estado`
+  - `sedeId: UUID`
+  - `reservaActiva: boolean`
+ `Estado` (Value Object)
+- Atributos:
+  - `estadoId: UUID`
+  - `nombre: String`
+
+#### 4.2.2.2. Application Layer.
+ `MesaService`
+- Métodos:
+  - `registrarMesa(command: RegistrarMesaCommand)`
+  - `cambiarEstadoMesa(command: CambiarEstadoCommand)`
+
+#### 4.2.2.3. Interface Layer.
+ `MesaController`
+- Métodos:
+  - `POST /mesas`
+  - `PUT /mesas/{id}/estado`
+ `RegistrarMesaCommand`
+
+#### 4.2.2.4. Infrastructure Layer.
+ `MesaRepository`
+- Métodos:
+  - `save(mesa)`
+  - `findBySede(sedeId)`
+
+### 4.2.3. Bounded Context: Headquarter Management
+Administra la información de cada sede del negocio: ubicación, contacto y horarios.
+
+#### 4.2.3.1. Domain Layer.
+ `Sede` (Aggregate Root)
+- Atributos:
+  - `sedeId: UUID`
+  - `usuarioAdminId: UUID`
+  - `nombre: String`
+  - `latitud: double`
+  - `longitud: double`
+  - `telefono: String`
+  - `horaApertura: LocalTime`
+  - `horaCierre: LocalTime`
+
+#### 4.2.3.2. Application Layer.
+ `SedeService`
+- Métodos:
+  - `crearSede(command: CrearSedeCommand)`
+  - `editarHorario(command: EditarHorarioCommand)`
+
+#### 4.2.3.3. Interface Layer.
+ `SedeController`
+- Métodos:
+  - `POST /sedes`
+  - `PUT /sedes/{id}/horarios`
+
+#### 4.2.3.4. Infrastructure Layer.
+ `SedeRepository`
+- Métodos:
+  - `save(sede)`
+  - `findById(sedeId)`
+
+### 4.2.4. Bounded Context:  IoT Monitoring (Mesa Ocupada)
+Este contexto se encarga de monitorear la ocupación de las mesas mediante sensores.
+
+#### 4.2.4.1. Domain Layer.
+ `Sensor` (Entity)
+- Atributos:
+  - `sensorId: UUID`
+  - `mesaId: UUID`
+  - `estado: boolean` (ocupado/libre)
+  - `ultimaLectura: LocalDateTime`
+
+#### 4.2.4.2. Application Layer.
+ `MonitoreoOcupacionService`
+- Métodos:
+  - `actualizarEstadoSensor(sensorId, estado)`
+  - `obtenerEstadoMesa(mesaId)`
+
+#### 4.2.4.3. Interface Layer.
+ `SensorController`
+- Métodos:
+  - `PUT /sensores/{id}`
+  - `GET /sensores/mesa/{mesaId}`
+
+#### 4.2.4.4. Infrastructure Layer.
+ `SensorRepository`
+- Métodos:
+  - `save(sensor)`
+  - `findByMesaId(mesaId)`
 
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams.
 
