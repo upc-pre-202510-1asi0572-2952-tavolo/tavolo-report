@@ -78,6 +78,8 @@ Se diferenciaron los actores como: comensal, administrador, superadmin, visitant
 
 - Evidencia de lo relizado en la reunion
 
+<img src="images/event_storming/Event_storming.png">
+
 #### 4.1.1.1 Candidate Context Discovery.
 
 #### 4.1.1.2 Domain Message Flows Modeling.
