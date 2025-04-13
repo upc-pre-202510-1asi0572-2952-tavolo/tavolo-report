@@ -81,8 +81,14 @@ Se diferenciaron los actores como: comensal, administrador, superadmin, visitant
 <img src="images/event_storming/Event_storming.png">
 
 #### 4.1.1.1 Candidate Context Discovery.
+Identificar contextos candidatos es un paso clave para gestionar la complejidad en el desarrollo de sistemas. Se trata de un análisis minucioso que busca entender los elementos centrales del sistema y sus interconexiones. A partir de ahí, se procede a agrupar estos elementos en 'contextos delimitados' lógicos y coherentes. Esta separación no solo facilita el diseño y la implementación, sino que también tiene como meta principal potenciar la escalabilidad, el desempeño y la mantenibilidad del sistema resultante.
+
+<img src="images/Candidate-Context-Discovery/Candidate Context Discovery.png">
 
 #### 4.1.1.2 Domain Message Flows Modeling.
+Para analizar y diseñar sistemas de software, se usa el Modelado de Flujos de Mensajes de Dominio, un método que ilustra la transferencia de información entre componentes mediante mensajes. Este proceso se centra en especificar los mensajes enviados y recibidos por los diferentes actores del sistema y en descifrar sus relaciones. El uso de esta metodología aporta claridad para entender y representar las vías de información del sistema, permitiendo detectar problemas potenciales más fácilmente y optimizar la estructura del diseño. A modo de ejemplo, mostraremos a continuación algunos diagramas aplicados a nuestro sistema.
+
+<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
 
 #### 4.1.1.3 Bounded Context Canvases.
 
