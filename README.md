@@ -92,6 +92,31 @@ Para analizar y diseñar sistemas de software, se usa el Modelado de Flujos de M
 
 #### 4.1.1.3 Bounded Context Canvases.
 
+### Booking Management
+<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
+
+
+
+### Table Management
+<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
+<br>
+
+
+### Menu Management
+<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
+
+
+
+### IoT Monitoring
+<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
+<br>
+
+
+### Headquarter Management
+<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
+
+
+
 ### 4.1.2. Context Mapping.
 En esta sección desarrollamos un conjunto de *context maps* para visualizar las relaciones entre los *bounded contexts* del sistema. A partir de la información recolectada, exploramos distintas alternativas de diseño, cuestionando cómo cambiaría la estructura si reubicamos, dividimos o agrupamos *capabilities*. Finalmente, evaluamos cada propuesta considerando patrones como *Anti-corruption Layer*, *Conformist*, *Customer/Supplier* y *Shared Kernel*, con el fin de definir la mejor aproximación para la arquitectura del dominio. A continucación presentaremos las opciones que contemplamos para Tavolo y la estructura final.
 
