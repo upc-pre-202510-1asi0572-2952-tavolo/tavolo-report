@@ -171,3 +171,35 @@ Tavolo impulsa una estrategia de posicionamiento de marca basada en innovación 
 ### Propietarios de cafeterías
 
 ### Clientes de establecimiento
+
+## 2.3. Needfinding
+### 2.3.1. User Personas
+Propietarios de cafeterías
+
+![Propietarios](./images/needfinding/UserStoryPropietario.png)
+
+Clientes de establecimiento
+
+![Clientes](./images/needfinding/UserStoryCliente.png)
+
+### 2.3.2. User Task Matrix
+Propietarios de cafeterías
+
+| Tarea |   Importancia   | Frecuencia |
+|:------|:------|:----------|
+|Consultar el estado de ocupación de mesas|Alta|Alta|
+|Agregar/modificar mesas desde el panel administrativo|Media|Media|
+|Gestionar reservas desde el panel|Media|Media|
+|Configurar parámetros iniciales (sede, nombre, etc.)|Media|Baja|
+|Supervisar que el sistema esté funcionando correctamente|Alta|Alta|
+|Ver reportes o estadísticas de uso (futura función)|Alta|Media|
+
+Clientes de establecimiento
+
+| Tarea |   Importancia   | Frecuencia |
+|:------|:------|:----------|
+|Consultar disponibilidad de mesas en tiempo real|Alta|Alta|
+|Acceder rápidamente desde el celular|Alta|Alta|
+|Buscar cafeterías cercanas con disponibilidad|Alta|Media|
+|Guardar su cafetería favorita (opcional futuro)|Media|Baja|
+|Compartir o recomendar la cafetería con amigos|Media|Media|
