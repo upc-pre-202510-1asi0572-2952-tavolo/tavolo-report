@@ -93,27 +93,24 @@ Para analizar y diseñar sistemas de software, se usa el Modelado de Flujos de M
 #### 4.1.1.3 Bounded Context Canvases.
 
 ### Booking Management
-<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
-
+<a href="https://ibb.co/ksNTRqh0"><img src="https://i.ibb.co/Ndcq8WLp/Bounded-Context-Canvases-Booking-Management.jpg" alt="Bounded-Context-Canvases-Booking-Management" border="0"></a>
 
 
 ### Table Management
-<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
-<br>
+<a href="https://ibb.co/W4LMXJrP"><img src="https://i.ibb.co/q3vc8QHW/Bounded-Context-Canvases-Table-Management.jpg" alt="Bounded-Context-Canvases-Table-Management" border="0"></a>
 
 
 ### Menu Management
-<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
+<a href="https://ibb.co/Cs0Yj13W"><img src="https://i.ibb.co/2YKCzn15/Bounded-Context-Canvases-Menu-Management.jpg" alt="Bounded-Context-Canvases-Menu-Management" border="0"></a>
 
 
 
 ### IoT Monitoring
-<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
-<br>
+<a href="https://ibb.co/MxjxwgWw"><img src="https://i.ibb.co/Txnxjwpj/Bounded-Context-Canvases-Iot-Monitoring.jpg" alt="Bounded-Context-Canvases-Iot-Monitoring" border="0"></a><br>
 
 
 ### Headquarter Management
-<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
+<a href="https://ibb.co/HTX3nqcQ"><img src="https://i.ibb.co/ZzN7WxQC/Bounded-Context-Canvases-Headquarter-Management.jpg" alt="Bounded-Context-Canvases-Headquarter-Management" border="0"></a><br>
 
 
 
