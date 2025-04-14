@@ -158,6 +158,15 @@ Tavolo impulsa una estrategia de posicionamiento de marca basada en innovación 
 
 ### Clientes de establecimiento
 
+**Link:** [https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing](https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing) 
+
+**Entrevistado:** Elias Yauri Paucar<br>
+**Duración:** 3:18
+
+<img src="images/entrevistas/elias.png"><br>
+
+**Resumen:** El entrevistado indica que acostumbra visitar diferentes tipos de cafeterías, incluyendo tanto establecimientos gourmet como cadenas comerciales. Cuando tiene la opción, verifica la disponibilidad de espacio antes de ir, aunque no siempre lo hace. Expresa interés en poder acceder a información sobre disponibilidad y otros detalles similares. <br>Respecto a aplicaciones, valora principalmente tres aspectos: una interfaz intuitiva, facilidad de uso y funcionalidades relevantes. Finalmente, para el entrevistado es fundamental que la navegación dentro de la aplicación sea sencilla de comprender y que ofrezca una experiencia fluida.
+
 ### 2.2.3. Análisis de entrevistas
 ### Propietarios de cafeterías
 
