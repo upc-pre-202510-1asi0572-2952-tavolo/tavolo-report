@@ -203,3 +203,52 @@ Clientes de establecimiento
 |Buscar cafeterías cercanas con disponibilidad|Alta|Media|
 |Guardar su cafetería favorita (opcional futuro)|Media|Baja|
 |Compartir o recomendar la cafetería con amigos|Media|Media|
+
+### 2.3.3. User Journey Mapping
+Propietarios de cafeterías
+
+![Propietarios](./images/needfinding/UserJourneyMappingPropietario.png)
+
+Clientes de establecimiento
+
+![Clientes](./images/needfinding/UserJourneyMappingCliente.png)
+
+### 2.3.4. Empathy Mapping
+Propietarios de cafeterías
+
+![Propietarios](./images/needfinding/EmpathyMappingPropietario.png)
+
+Clientes de establecimiento
+
+![Clientes](./images/needfinding/EmpathyMappingCliente.png)
+
+### 2.3.5. As-is Scenario Mapping
+Propietarios de cafeterías
+
+| FASES | Apertura del local | Horas pico | Tiempos muertos o baja rotación | Cierre y evaluación |
+|-------|--------------------|------------|---------------------------------|---------------------|
+| **DOING** | Llego temprano a preparar el salón y reviso la limpieza <br><br> Organizo al personal según la estimación de flujo del día <br><br> Activo los pedidos de proveedores y abro caja | Superviso el movimiento del salón y doy indicaciones rápidas <br><br> Coordino con el personal para liberar mesas <br><br> Intento gestionar manualmente el flujo de comensales | Trato de motivar al personal a optimizar ocupación <br><br> Me enfoco en redes, promociones o planificación de eventos | Reviso la caja, analizo el desempeño del día <br><br> Comento con el equipo los problemas que se presentaron |
+| **THINKING** | “¿Cómo puedo organizar mejor al equipo si se llena?” | “¿Hay alguien esperando afuera? ¿Ya se fue esa mesa del fondo?” <br><br> “Estamos perdiendo ventas por no rotar bien las mesas” | “¿Se estará yendo gente por no ver mesas disponibles?” <br><br> “¿Debemos reducir el horario de atención?” | “Hoy podríamos haber ganado más si organizábamos mejor” <br><br> “¿Y si hubiera una forma de saber cuántas mesas se usan realmente?” |
+| **FEELING** | Expectativa positiva <br><br> Ligera ansiedad por la incertidumbre del día | Estrés por la carga simultánea de tareas <br><br> Frustración al ver ineficiencia en la atención | Impotencia por no tener visibilidad clara del flujo <br><br> Curiosidad por probar nuevas soluciones, pero con dudas | Frustración al no tener datos para tomar decisiones <br><br> Motivación parcial por mejorar, pero sin claridad sobre el cómo |
+
+Clientes de establecimiento
+
+| FASES | Decisión de salir | Camino al local | Llegada y evaluación del lugar | Cambio de plan o espera |
+|-------|-------------------|-----------------|--------------------------------|-------------------------|
+| **DOING** | Consulto Google Maps o redes sociales para elegir una cafetería <br><br> Pregunto a amigos si conocen un lugar con espacio <br><br> Busco una opción con buen ambiente y sin demasiada gente | Voy caminando o en transporte mientras reviso reseñas <br><br> Consulto stories o publicaciones recientes del local | Me asomo o entro para ver si hay mesas <br><br> Hablo con un mozo o espero que me asignen espacio <br><br> Evalúo el ambiente | Decido esperar de pie, buscar otro local o cancelar mi plan <br><br> Dejo una reseña o me quejo en redes si tuve mala experiencia |
+| **THINKING** | “¿Estará lleno ese lugar que me gusta?” <br><br> “Sería genial saber desde casa si hay mesas” | “No tengo ganas de andar buscando otro lugar” <br><br> “Si llego y no hay lugar, capaz me vuelvo a casa” | “No hay lugar, otra vez” <br><br> “¿Por qué no hay una app para esto?” | “No vuelvo más a este lugar sin saber si hay lugar antes” |
+| **FEELING** | Entusiasmo por salir a tomar algo o trabajar fuera <br><br> Inseguridad por no saber si encontrará lugar | Expectativa mezclada con incertidumbre <br><br> Poca paciencia, sobre todo si va con tiempo limitado | Decepción si no encuentra lugar <br><br> Irritación si ve mesas vacías sin uso | Frustración, molestia, desilusión <br><br> Sensación de que no valoraron su tiempo |
+
+## 2.4. Ubiquitous Language
+Estos son los términos y conceptos comunes utilizados en nuestro proyecto:
+
+- **Sede:** Unidad donde opera una cafetería. Cada sede puede tener múltiples mesas y su propio panel administrativo.
+- **Mesa:** Elemento disponible para ser ocupado por los clientes. Puede ser activada o desactivada desde el panel.
+- **Silla con sensor:** Elemento equipado con un sensor de peso que detecta si está siendo utilizada. Su estado ayuda a determinar la ocupación de la mesa.
+- **Sensor:** Dispositivo IoT instalado en cada silla que detecta cambios de peso para determinar si hay una persona sentada.
+- **Ocupación:** Estado de una mesa, determinado por la detección de presencia en una o más sillas asociadas.
+- **Panel administrativo:** Interfaz web usada por el propietario o administrador para gestionar mesas, consultar disponibilidad y visualizar estadísticas.
+- **Administrador:** Usuario con control sobre una sede, encargado de gestionar mesas, configuraciones y visualización de datos.
+- **Cliente:** Persona que visita la cafetería. Puede usar la app para ver disponibilidad de mesas en tiempo real.
+- **Actualización de estado:** Proceso automático mediante el cual el sistema recibe datos de los sensores en las sillas y actualiza la información visible para clientes y administradores.
+- **Rotación de mesas:** Número de veces que una mesa es ocupada en un período determinado. Métrica usada para medir eficiencia.
