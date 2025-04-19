@@ -567,10 +567,10 @@ TAVOLO responde a esta necesidad con una plataforma sincronizada con sensores em
 En cafeterías de tamaño mediano en Lima, la falta de automatización genera pérdidas operativas y afecta la experiencia del cliente. Según datos internos y análisis del sector, **la eficiencia puede incrementarse en un 30–40 % con tecnologías de digitalización inteligente**.  
 TAVOLO busca transformar este escenario mediante un panel de administración en la nube, que unifica la gestión de sedes, mesas y reservas en una interfaz intuitiva con datos en tiempo real.
 
-#### 1.2.2.2. Lean UX Assumptions  
+#### 1.2.2.2. Lean UX Assumptions
+A partir del análisis del contexto y las necesidades identificadas en los distintos perfiles de usuario, se establecen los siguientes supuestos iniciales que guían el diseño y validación del producto TAVOLO. Estos supuestos serán **contrastados durante el desarrollo iterativo** del proyecto para asegurar que el producto responda realmente a los objetivos planteados.
 
 ###### **Business Outcomes:**
-
 - Aumento del 25% en la eficiencia operativa de los establecimientos que adopten la solución.
 - Reducción del 30% en incidencias por sobreaforo y problemas de asignación de mesas.
 - Incremento del 20% en la satisfacción de los clientes, medido a través de encuestas de experiencia.
@@ -578,14 +578,11 @@ TAVOLO busca transformar este escenario mediante un panel de administración en 
 - Mejora en el cumplimiento de protocolos de seguridad y normativas vigentes.
 
 ###### **Users:**
-
 Los usuarios primarios son:
 - Propietarios y administradores cafeterías: Interesados en optimizar el uso del espacio y garantizar la seguridad en el establecimiento. <br>
-  
 - Clientes: Usuarios que buscan información en tiempo real sobre la disponibilidad de mesas para planificar su visita de manera eficiente. <br>
 
 ###### **User Outcomes & Benefits:**
-
 - Propietarios/Administradores:
   - Control en tiempo real del aforo y asignación de mesas.
   - Reducción de errores manuales en la gestión de espacios.
@@ -597,14 +594,14 @@ Los usuarios primarios son:
   - Mejora en la experiencia y comodidad al planificar su visita.
 
 ###### **Feature Assumptions:**
-
-- Detección en tiempo real: Uso de sensores de peso para determinar la ocupación de cada mesa.
-
-- Aplicación móvil y web: Interfaz intuitiva que permita a los usuarios conocer la disponibilidad en tiempo real.
-
+- Visualización en tiempo real del estado de ocupación de las mesas.
+- Funcionalidad de reservas digitales.
+- Menú accesible por sede desde la aplicación.
+- Gestión de mesas y reservas para administradores.
+- Acceso completo a la plataforma para superadministradores.
+- Seguridad basada en autenticación por roles.
 
 ###### **Business Assumptions:**
-
 1.  **Creemos que nuestros usuarios necesitan** un sistema automatizado y en tiempo real que facilite la gestión del aforo en establecimientos de hostelería.
 
 2. **Estas necesidades se pueden satisfacer** mediante la implementación de sensores IoT y el desarrollo de una plataforma digital accesible desde dispositivos móviles y computadoras.
