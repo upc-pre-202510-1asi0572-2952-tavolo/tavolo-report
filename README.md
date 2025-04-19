@@ -487,9 +487,9 @@ Consolidarse como la **solución de referencia en el Perú** para la digitalizac
 
 ## 1.2. Solution Profile
 
-TAVOLO es una solución tecnológica integral basada en IoT que transforma la forma en que los comensales interactúan con las cafeterías. El sistema utiliza sensores de peso (con un margen de error inferior al 5 %) para detectar en tiempo real la ocupación de las mesas. Esta información se transmite automáticamente a una aplicación web y móvil dirigida a los comensales, permitiéndoles consultar la disponibilidad de mesas desde sus dispositivos personales antes de llegar al establecimiento.
+**TAVOLO es una solución tecnológica integral basada en IoT** que transforma la forma en que los comensales interactúan con las cafeterías. El sistema utiliza sensores de peso (con un margen de error inferior al 5 %) para detectar en tiempo real la ocupación de las mesas. Esta información se transmite automáticamente a una aplicación web y móvil dirigida a los comensales, permitiéndoles consultar la disponibilidad de mesas desde sus dispositivos personales antes de llegar al establecimiento.
 
-El objetivo principal es minimizar los tiempos de espera, asegurando que el usuario final no espere más de 2 minutos para acceder a una mesa libre. Para ello, el sistema realiza actualizaciones cada 10 segundos y cuenta con una interfaz optimizada con tiempos de carga inferiores a 5 segundos. De este modo, se mejora significativamente la experiencia del cliente, brindándole información clara, precisa y en tiempo real que le facilite tomar decisiones sobre su visita.
+El objetivo principal es minimizar los tiempos de espera, asegurando que el **usuario final no espere más de 2 minutos para acceder a una mesa libre**. Para ello, el sistema realiza **actualizaciones cada 10 segundos** y cuenta con una interfaz optimizada con tiempos de carga inferiores a 5 segundos. De este modo, se mejora significativamente la experiencia del cliente, brindándole información clara, precisa y en tiempo real que le facilite tomar decisiones sobre su visita.
 
 Actualmente, la implementación del sistema, tanto a nivel físico como tecnológico, está a cargo del equipo de desarrollo, quienes conocen a fondo su funcionamiento. Sin embargo, contemplamos una fase de escalamiento en la que el personal de cada cafetería podrá instalar el sistema en menos de una hora, sin necesidad de asistencia técnica especializada.
 
@@ -539,78 +539,33 @@ La problemática identificada no requiere una transformación completa del model
 
 #### 1.2.2.1. Lean UX Problem Statements 
 
-**Problema de los Comensales**
+### Visitante
+**Para** los visitantes que desean informarse sobre soluciones tecnológicas aplicadas a cafeterías,  
+**que necesitan** comprender qué es TAVOLO, cómo funciona y qué valor ofrece,  
+**pero** actualmente no encuentran en el ecosistema digital peruano una presentación clara ni accesible que comunique efectivamente los beneficios de una solución basada en IoT para el sector gastronómico.  
+**Esto les impide** considerar su adopción, recomendarla o confiar en su utilidad real.
 
-Dominio<br>
-Sector gastronómico (cafeterías).
+El 35 % de las microempresas peruanas del sector servicios corresponde a negocios de alimentos y bebidas, pero más del 70 % de estas aún no cuenta con estrategias digitales de comunicación técnica o funcional.  
+**TAVOLO busca resolver** este vacío mediante una landing page visual, estructurada y orientada a comunicar desde el **primer contacto su propuesta de valor**, casos de uso y beneficios diferenciadores.
 
-Segmento de clientes<br>
-Comensales que desean disfrutar de una experiencia sin largas esperas.
+### Comensal
+**Para** comensales que frecuentan cafeterías en zonas urbanas del Perú,  
+**que necesitan** conocer en tiempo real la disponibilidad de mesas, visualizar el menú digital y reservar con antelación,  
+**pero** actualmente enfrentan esperas innecesarias, incertidumbre al llegar al local y una experiencia de consumo poco predecible,  
+**lo que afecta** su comodidad y decisión de volver a consumir en el mismo establecimiento.
 
-Punto de dolor<br>
-Los comensales a menudo se encuentran con la incertidumbre sobre la disponibilidad de mesas cuando llegan a la cafetería, lo que genera frustración y pérdida de tiempo.
+Según un estudio de Apoyo Consultoría (2023), **el 62 % de los consumidores limeños evitaría ingresar a un local si no puede verificar previamente su nivel de aforo**.  
+TAVOLO responde a esta necesidad con una plataforma sincronizada con sensores embebidos, que ofrece al comensal una app móvil para autogestión de su visita y planificación de su consumo con mínima fricción.
 
-Brecha<br>
-No existe una solución en tiempo real que permita a los clientes verificar la disponibilidad de mesas antes de llegar, lo que provoca una experiencia subóptima.
 
-Visión/Estrategia<br>
-Crear una experiencia de cliente sin estrés, permitiendo a los usuarios conocer la disponibilidad de mesas en tiempo real a través de una aplicación móvil o web, y hacer reservas directamente.
+### Administrador
+**Para** los administradores de cafeterías encargados de operar las sedes en tiempo real,  
+**que necesitan** gestionar la ocupación de mesas, controlar reservas y visualizar su sede asignada mediante una interfaz digital centralizada,  
+**pero** actualmente dependen de métodos manuales y no cuentan con herramientas que integren sensores físicos con flujos operativos,  
+**lo que genera** errores en la asignación, sobreaforo no controlado y decisiones reactivas.
 
-Problem Statement<br>
-**Para** los comensales que visitan cafeterías, **quienes** se enfrentan a la incertidumbre sobre la disponibilidad de mesas, **necesitan** una forma fácil y rápida de conocer en tiempo real qué mesas están disponibles antes de llegar, porque las largas esperas o la falta de mesas libres pueden generar frustración y afectar negativamente la experiencia de los clientes.
-
-Segmento Inicial<br>
-Comensales que visitan cafeterías de alta demanda en zonas urbanas como Lima.
-
-<br>
-
-**Problema de los Administradores de Cafeterías**
-
-Dominio<br>
-Gestión operativa y tecnológica en el sector gastronómico.
-
-Segmento de clientes<br>
-Administradores de cafeterías que gestionan la ocupación y las reservas de mesas.
-
-Punto de dolor<br>
-Los administradores tienen dificultades para gestionar la ocupación de las mesas de manera eficiente, lo que lleva a una asignación inadecuada de mesas, tiempos de espera largos y una experiencia insatisfactoria para los clientes.
-
-Brecha<br>
-Falta de una herramienta de gestión centralizada que permita monitorear la ocupación de mesas en tiempo real y optimizar el uso del espacio de manera automática.
-
-Visión/Estrategia<br>
-Brindar a los administradores una plataforma que permita gestionar las mesas y las reservas de manera eficiente y en tiempo real, mejorando la operatividad del establecimiento.
-
-Problem Statement<br>
-**Para** los administradores de cafeterías, **quienes** tienen dificultades para gestionar el aforo de mesas y coordinar las reservas, **necesitan** una herramienta centralizada para monitorear la ocupación de las mesas y gestionar las reservas de manera eficiente, **porque** la falta de control sobre la ocupación puede llevar a pérdidas de ingresos y una mala experiencia para los clientes.
-
-Segmento Inicial<br>
-Cafeterías urbanas con alta demanda y un volumen de clientes elevado.
-
-<br>
-
-**Problema de Eficiencia Operativa**
-
-Dominio<br>
-Operación y optimización de espacios en el sector gastronómico.
-
-Segmento de clientes<br>
-Establecimientos de cafeterías que buscan mejorar la eficiencia operativa y aumentar los ingresos.
-
-Punto de dolor<br>
-Los establecimientos no tienen visibilidad en tiempo real sobre el uso de las mesas, lo que limita su capacidad para gestionar el flujo de clientes y optimizar el uso del espacio disponible.
-
-Brecha<br>
-Falta de herramientas automatizadas que proporcionen datos precisos sobre la ocupación de mesas y permitan tomar decisiones rápidas para mejorar la eficiencia operativa.
-
-Visión/Estrategia<br>
-Proporcionar una solución integral que permita la gestión de la ocupación de mesas en tiempo real, reduciendo los tiempos de espera y mejorando la rotación de mesas.
-
-Problem Statement<br>
-**Para** los establecimientos de cafeterías, **quienes** no tienen visibilidad en tiempo real sobre el flujo de comensales y el uso del espacio, **necesitan** un sistema automatizado que actualice continuamente la disponibilidad de mesas, **porque** esto les permitirá optimizar el uso del espacio, reducir tiempos de espera, y mejorar la rotación de mesas, lo que aumentará los ingresos y la satisfacción del cliente.
-
-Segmento Inicial<br>
-Cafeterías de tamaño mediano en zonas urbanas con alta demanda de clientes.
+En cafeterías de tamaño mediano en Lima, la falta de automatización genera pérdidas operativas y afecta la experiencia del cliente. Según datos internos y análisis del sector, **la eficiencia puede incrementarse en un 30–40 % con tecnologías de digitalización inteligente**.  
+TAVOLO busca transformar este escenario mediante un panel de administración en la nube, que unifica la gestión de sedes, mesas y reservas en una interfaz intuitiva con datos en tiempo real.
 
 #### 1.2.2.2. Lean UX Assumptions  
 
