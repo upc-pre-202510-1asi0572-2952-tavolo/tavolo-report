@@ -698,18 +698,13 @@ A continuación, se detallan las hipótesis formuladas para abordar la problemá
 
 
 ## 1.3. Segmentos objetivo
+TAVOLO está diseñado para atender las necesidades reales de usuarios que interactúan directamente con el sistema dentro del entorno de atención y operación en cafeterías. A partir del análisis funcional y del levantamiento de requisitos, se identifican dos segmentos objetivos clave, sobre los cuales se construye y valida el producto.
+**1. Comensales recurrentes en zonas urbanas de alta afluencia**
+Este segmento está compuesto por usuarios finales que visitan frecuentemente cafeterías ubicadas en distritos con alto tránsito peatonal, como San Isidro, Miraflores, Surco y San Miguel. Se trata principalmente de estudiantes universitarios, trabajadores de oficina y profesionales jóvenes que priorizan la optimización de su tiempo durante el desayuno, el almuerzo o reuniones breves. Son usuarios digitales familiarizados con el uso de aplicaciones móviles y esperan poder visualizar la disponibilidad de mesas, hacer reservas y consultar el menú digital desde sus dispositivos personales. Este segmento es fundamental para validar la propuesta de valor del producto y su utilidad en entornos reales de consumo.
+**2. Administradores operativos de cafeterías**
+Este grupo corresponde a los encargados de gestionar el funcionamiento de una sede física. Tienen bajo su responsabilidad el control del aforo, la gestión de mesas y la administración de reservas. También requieren saber qué sede tienen asignada y mantener el sistema actualizado según los cambios del local. Este segmento valida la funcionalidad del panel de gestión administrativa, que incluye herramientas visuales, control de datos en tiempo real y facilidad de uso en entornos dinámicos como una cafetería con alta rotación.
 
-Nuestros segmentos objetivo se centran en aquellos actores que se beneficiarán directamente del control automatizado del aforo y la optimización del flujo de clientes:
-
-- **Propietarios de Cafeterías:** <br>
- Este segmento es clave, ya que busca herramientas que faciliten la gestión en tiempo real de la ocupación de mesas, reduzcan errores manuales y optimicen la operación del negocio. Son usuarios que valoran la eficiencia operativa y la posibilidad de obtener estadísticas precisas para la toma de decisiones. 
- <br>
-
-- **Clientes del Establecimientos** <br>
-Los clientes se benefician al contar con información actualizada sobre la disponibilidad de mesas, lo que les permite planificar su visita de manera eficiente, evitar largos tiempos de espera y disfrutar de una experiencia más cómoda y agradable.
-
-
-
+Cabe precisar que, si bien el sistema contempla un **rol de superadministrador** con acceso total a las funcionalidades, este **no representa un segmento objetivo del producto**, sino que corresponde exclusivamente al equipo de desarrollo encargado de configurar el sistema, realizar pruebas y brindar soporte técnico al propietario del negocio.
 
 
 
