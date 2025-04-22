@@ -85,7 +85,7 @@ Miembros
 - Aldo Baldeon    (CodAress)
 - Barbara Quezada (BarbaraQP15)
 - Franz La Torre  (FranzJairLTV)
-- Jimena Cama     (AkSoon-ie)
+- Jimena Cama     (aksonie)
 - Jair Castillo   (U202211390)
   
 El uso de GitHub ha permitido gestionar versiones y fomentar la colaboración en tiempo real, facilitando que los integrantes del equipo trabajen tanto de forma asincrónica como sincrónica en el proyecto. Asimismo, la metodología Gitflow ha posibilitado la creación de diversas ramas para el desarrollo de las tareas asignadas, promoviendo un trabajo autónomo y colaborativo entre los miembros.
@@ -255,7 +255,7 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
             - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
             <br><br> 
             <b>Cama Salvatierra, Jimena Tamara</b><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            - He demostrado la capacidad de trabajar eficazmente en equipos multidisciplinarios, asumiendo roles de liderazgo compartido para la toma de decisiones y el logro de objetivos comunes. En el desarrollo de proyectos, fomenté un entorno inclusivo donde cada integrante pudo aportar sus fortalezas, promoviendo la comunicación abierta, la planificación conjunta de tareas y la adaptación ante cambios.
             <br><br>
             <b>Castillo Castillo, Jair Alexander</b><br>
             - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
@@ -278,7 +278,7 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
             - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
             <br><br> 
             <b>Cama Salvatierra, Jimena Tamara</b><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            - He demostrado la capacidad de crear un entorno de trabajo colaborativo e inclusivo, en el que se valora la participación activa de todos los integrantes del equipo. A lo largo del desarrollo del proyecto, trabajé en la definición de metas comunes, la planificación de tareas con enfoque estratégico y el cumplimiento de los objetivos establecidos, asegurando una gestión eficiente del tiempo y los recursos.
             <br><br>
             <b>Castillo Castillo, Jair Alexander</b><br>
             - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
@@ -302,14 +302,19 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
 
 ### 1.1.1. Descripción de la Startup 
 
-**Nombre startup** es una empresa dedicada a la implementación de soluciones IoT para la gestión inteligente del aforo de restaurantes, cafeterías y otros establecimientos de hostelería. Nuestro sistema permitirá a los establecimientos monitorizar en tiempo real la ocupación de mesas y ofrecer a los clientes información actualizada a través de una aplicación móvil y web, mejorando la experiencia del usuario y la eficiencia operativa. 
+**TAVOLO** es una solución tecnológica desarrollada para **optimizar la experiencia en cafeterías peruanas** mediante el uso de **dispositivos IoT** integrados a un sistema web y móvil. Su propuesta se enfoca exclusivamente en resolver los problemas relacionados con la ocupación de mesas, la gestión de reservas y la visualización de información relevante para los comensales, administradores y usuarios superadministradores.
+
+Para los comensales, TAVOLO permite visualizar el menú digital de una sede, conocer la disponibilidad de mesas en tiempo real, realizar reservas y consultar detalles de las mismas. También se ofrece la posibilidad de visualizar la ubicación de todas las sedes en un mapa interactivo, registrarse como nuevo usuario o iniciar sesión para acceder a funcionalidades personalizadas. Estas características permiten al usuario planificar su visita con antelación y evitar tiempos de espera innecesarios. Un estudio reciente de Apoyo Consultoría (2023) reveló que el 62 % de los limeños evita acudir a locales con alta concurrencia si no puede consultar previamente la disponibilidad, lo cual respalda la utilidad de este enfoque preventivo basado en datos en tiempo real.
+
+Desde el panel de administración, los administradores pueden gestionar la sede que se les ha asignado. Esto incluye agregar nuevas mesas, eliminar aquellas que ya no estén en uso, visualizar todas las reservas registradas en su local y confirmar que están gestionando la sede correcta. Esta funcionalidad permite a los encargados mantener un control actualizado del aforo, planificar la atención de manera eficiente y optimizar la logística operativa. La digitalización de estas tareas manuales no solo mejora la precisión en la gestión, sino que también incrementa la productividad del personal administrativo.
+
+TAVOLO se presenta así como una respuesta concreta y realista a los desafíos cotidianos que enfrentan las cafeterías en Perú. No pretende cubrir todo el ciclo de negocio de un restaurante, sino **centrarse exclusivamente en la mejora del proceso de aforo, reservas y atención al cliente**. Este enfoque especializado y realista busca generar impacto directo en la experiencia del usuario y en la eficiencia del negocio, con una implementación que puede ser gradual, asequible y con bajo nivel de complejidad técnica.
 
 **Mision:**<br>
-Brindar una solución IoT innovadora que permita a restaurantes, cafeterías y locales similares gestionar su foro de forma eficiente y segura, ofreciendo una experiencia de usuario intuitiva y facilitando la toma de decisiones operativas en tiempo real.
+Brindar una solución tecnológica eficiente y accesible para la gestión de aforo en cafeterías peruanas, utilizando dispositivos IoT y plataformas digitales que permitan a los comensales acceder a información en tiempo real, y a los administradores optimizar la ocupación de mesas y las reservas, **mejorando así la experiencia del cliente y la operación del negocio.**
 
 **Visión:**<br>
-Ser la plataforma líder en gestión inteligente de aforo para el sector de la hostelería en el Perú, reconocida por la innovación, la eficiencia operativa y el impacto positivo en la experiencia del cliente.
-
+Consolidarse como la **solución de referencia en el Perú** para la digitalización de procesos de atención en cafeterías, mediante el uso de tecnología embebida, edge computing y sistemas en la nube, promoviendo una experiencia de consumo más ordenada, rápida y satisfactoria para los comensales, y una gestión más eficiente para los negocios del sector gastronómico.
 
 ### 1.1.2. Perfiles de integrantes del equipo  
 
@@ -482,28 +487,36 @@ Ser la plataforma líder en gestión inteligente de aforo para el sector de la h
 
 ## 1.2. Solution Profile
 
-Nuestra propuesta consiste en el desarrollo de una solución IoT que permita la automatización en el control de aforo de establecimientos mediante la detección de ocupación de mesas a través de sensores de peso. La solución se integra con aplicaciones móviles y web, facilitando a los clientes conocer la disponibilidad de mesas y a los administradores del local gestionar el flujo de personas.
+**TAVOLO es una solución tecnológica integral basada en IoT** que transforma la forma en que los comensales interactúan con las cafeterías. El sistema utiliza sensores de peso (con un margen de error inferior al 5 %) para detectar en tiempo real la ocupación de las mesas. Esta información se transmite automáticamente a una aplicación web y móvil dirigida a los comensales, permitiéndoles consultar la disponibilidad de mesas desde sus dispositivos personales antes de llegar al establecimiento.
+
+El objetivo principal es minimizar los tiempos de espera, asegurando que el **usuario final no espere más de 2 minutos para acceder a una mesa libre**. Para ello, el sistema realiza **actualizaciones cada 10 segundos** y cuenta con una interfaz optimizada con tiempos de carga inferiores a 5 segundos. De este modo, se mejora significativamente la experiencia del cliente, brindándole información clara, precisa y en tiempo real que le facilite tomar decisiones sobre su visita.
+
+Actualmente, la implementación del sistema, tanto a nivel físico como tecnológico, está a cargo del equipo de desarrollo, quienes conocen a fondo su funcionamiento. Sin embargo, contemplamos una fase de escalamiento en la que el personal de cada cafetería podrá instalar el sistema en menos de una hora, sin necesidad de asistencia técnica especializada.
+
+Además, TAVOLO incluye una interfaz administrativa exclusiva para cada sede, donde los administradores pueden agregar mesas, consultar la sede asignada, visualizar reservas y, próximamente estadísticas. Esta funcionalidad permitirá optimizar la rotación de mesas y mejorar la gestión del flujo de comensales.
 
 ### 1.2.1. Antecedentes y problemática  
 
-El sector gastronómico peruano consolida su posición como motor clave de la economía, registrando un crecimiento sostenido en los últimos años. Según datos del INEI (citados por la Oficina General de Evaluación de Impacto y Estudios Económicos, 2025), Lima concentró el 41.6% del gasto anual en restaurantes durante 2024, evidenciando su liderazgo en el consumo nacional. Sin embargo, este dinamismo enfrenta desafíos críticos: la ocupación en establecimientos varía según temporada y tipo de negocio, mientras que los tiempos de espera prolongados impactan directamente en la satisfacción del cliente y la rentabilidad.
+En los últimos años, el sector gastronómico en el Perú ha mostrado un crecimiento sostenido, especialmente en ciudades como Lima, Arequipa y Cusco, donde las cafeterías han ganado popularidad como espacios de encuentro social y laboral. Según el Ministerio de la Producción (2022), **los negocios relacionados con alimentos y bebidas representaron más del 35 % del total de microempresas en el sector servicios**. Sin embargo, la mayoría de estos establecimientos aún carece de tecnologías que les permitan gestionar de forma eficiente su aforo y rotación de clientes, especialmente en horas pico. Pese al avance de la digitalización en otros rubros, la implementación de tecnologías inteligentes, como sensores IoT o aplicaciones móviles personalizadas, aún es limitada en el sector gastronómico peruano (INEI, 2021).
 
-En este contexto, la tecnología emerge como aliada estratégica. López-Chau et al. (2022) destacan en su estudio publicado en Estudios Gerenciales que herramientas como el software de gestión de mesas mitigan estos problemas, optimizando el flujo de clientes. Avanzando en esta línea, soluciones innovadoras como sensores IoT integrados en mesas representan el siguiente paso: no solo reducirían tiempos de espera, sino que mejorarían la experiencia mediante datos en tiempo real, potenciando la competitividad del sector.
+Actualmente, uno de los principales desafíos para los clientes de cafeterías en el Perú es la incertidumbre sobre la disponibilidad de mesas, lo que genera pérdidas de tiempo, experiencias insatisfactorias y, en algunos casos, la decisión de no ingresar al local. Esta problemática se intensifica en zonas urbanas con alta demanda, donde la falta de sistemas de gestión en tiempo real impide una distribución óptima del aforo. Según un estudio de Apoyo Consultoría (2023), **más del 60 % de los consumidores en Lima indicaron que evitarían acudir a locales concurridos si tuvieran una alternativa digital que les informe sobre la disponibilidad antes de salir de casa.** Esta situación representa no solo una oportunidad de mejora para la experiencia del cliente, sino también una necesidad de transformación digital en la industria.
+
+Aplicando la técnica de las 5 W y 2 H:
 
 **What? - ¿Qué?** <br>
-La problemática actual en muchos restaurantes y cafeterías es la falta de un sistema en tiempo real que permita conocer el estado de ocupación de sus mesas. La ausencia de esta tecnología dificulta la gestión del aforo, especialmente en horas pico o durante eventos especiales, lo cual puede afectar la experiencia del cliente.
+TAVOLO es una solución tecnológica integrada con IoT que permite **monitorear en tiempo real la ocupación de mesas en cafeterías**, proporcionando a los clientes información precisa sobre la disponibilidad antes de llegar al establecimiento. Además, ofrece a los administradores la posibilidad de **gestionar las mesas** y **reservas de comensales** mediante una interfaz intuitiva.
 
-**When? - ¿Cuándo?**<br>
+**Why? - ¿Por qué?**<br>
 El problema se vuelve crítico en momentos de alta afluencia, como durante almuerzos, cenas, fines de semana o eventos especiales, en los cuales la ocupación irregular de las mesas puede generar aglomeraciones y una mala experiencia para los clientes.
 
 **Where? - ¿Dónde?**<br>
-El desafío se presenta en restaurantes, cafeterías y otros establecimientos de hostelería, tanto en grandes ciudades como en zonas turísticas, donde la demanda y el flujo de clientes varían constantemente.
+El sistema está destinado a **cafeterías ubicadas en áreas urbanas** de alta demanda, comenzando con Lima, y se proyecta expandir a otras ciudades del Perú y eventualmente a Latinoamérica. La interfaz web y móvil estará disponible para clientes en cualquier lugar, mientras que la instalación física de los sensores de ocupación será realizada dentro de las cafeterías.
+
+**When? - ¿Cuando?** <br>
+La implementación inicial del sistema se desarrollará en un corto plazo, con un escalamiento proyectado a futuro para permitir la instalación por parte del personal de las cafeterías sin soporte técnico especializado.
 
 **Who? - ¿Quién?** <br>
-Los principales afectados son los propietarios y administradores de locales de hostelería, así como los clientes que buscan una experiencia cómoda y segura. Además, las autoridades sanitarias y de seguridad pueden verse beneficiadas al contar con datos en tiempo real para el control de aforo.
-
-**Why? - ¿Por qué?** <br>
-La falta de información precisa sobre la ocupación de mesas puede generar problemas de sobreaforo, dificultades en la atención al cliente y riesgos en el cumplimiento de protocolos de seguridad. La integración de tecnologías IoT permite automatizar y optimizar estos procesos, reduciendo errores humanos y mejorando la eficiencia operativa.
+El sistema está dirigido a comensales y administradores de cafeterías. Los comensales utilizan la aplicación para verificar la disponibilidad de mesas y realizar reservas. Los administradores gestionan las mesas y reservas.
 
 **How? - ¿Cómo?** <br>
 La solución se implementará instalando sensores de peso en cada mesa, conectados a una red IoT que transmite datos en tiempo real a una plataforma centralizada. A través de una aplicación móvil y web, los usuarios podrán visualizar la disponibilidad de mesas y, a su vez, el personal del establecimiento podrá gestionar la ocupación de manera óptima y recibir alertas en caso de anomalías.
@@ -516,25 +529,48 @@ _¿Cuánto costará resolver este problema?_ <br>
 El costo de implementación dependerá del número de mesas y la infraestructura necesaria para la conexión y mantenimiento de los sensores, así como del desarrollo de la plataforma digital. Se estima que la inversión inicial se recuperará rápidamente mediante la optimización del uso del espacio y el incremento en la satisfacción del cliente.
 
 _¿Cuántas personas se beneficiarán?_ <br>
-Esta solución beneficiará directamente a los clientes y al personal de los establecimientos, con un impacto indirecto en el sector de la hostelería en general. Se estima que, en establecimientos de tamaño mediano, la adopción de la tecnología podría mejorar la eficiencia operativa en un 30-40%, beneficiando a cientos de usuarios diarios.
+Esta solución beneficiará directamente a los clientes y al personal de los establecimientos, con un impacto indirecto en el sector gatronómico en general. Se estima que, en establecimientos de tamaño mediano, la adopción de la tecnología podría mejorar la eficiencia operativa en un 30-40%, beneficiando a cientos de usuarios diarios.
 
-**Conclusiones de 5W's y 2H's:** <br>
-La implementación de la solución IoT para el control de aforo permite identificar y abordar de manera efectiva los problemas relacionados con la ocupación ineficiente de mesas. Al automatizar la detección y gestión del aforo, se optimiza el uso del espacio en los establecimientos, se mejora la experiencia del cliente y se aseguran protocolos de seguridad que contribuyen a la sostenibilidad operativa.
+La problemática identificada no requiere una transformación completa del modelo de negocio de las cafeterías, sino una **intervención técnica puntual** que resuelva los cuellos de botella más frecuentes: **el acceso a información de disponibilidad, la planificación anticipada y la gestión eficiente del espacio físico**. En ese sentido, **TAVOLO no busca reemplazar los procesos tradicionales**, sino complementarlos con herramientas tecnológicas que permitan a las cafeterías peruanas operar con mayor previsibilidad, rapidez y satisfacción del cliente.
+
+
 
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements 
 
-En **nombre startup** sabemos que el sector de la hostelería en Perú es vital para la economía nacional y que la experiencia del cliente es fundamental para el éxito de cada establecimiento. Sin embargo, muchos restaurantes, cafeterías y locales de hostelería enfrentan un reto crítico: la ausencia de un sistema en tiempo real que permita conocer la ocupación exacta de sus mesas. <br>
+### Visitante
+**Para** los visitantes que desean informarse sobre soluciones tecnológicas aplicadas a cafeterías,  
+**que necesitan** comprender qué es TAVOLO, cómo funciona y qué valor ofrece,  
+**pero** actualmente no encuentran en el ecosistema digital peruano una presentación clara ni accesible que comunique efectivamente los beneficios de una solución basada en IoT para el sector gastronómico.  
+**Esto les impide** considerar su adopción, recomendarla o confiar en su utilidad real.
 
-**Problema:** La falta de información precisa y actualizada sobre la disponibilidad de mesas provoca una gestión ineficiente del aforo. Esto se traduce en aglomeraciones durante las horas pico, tiempos de espera prolongados para los clientes y, en algunos casos, incumplimiento de protocolos de seguridad que pueden acarrear sanciones. <br>
+El 35 % de las microempresas peruanas del sector servicios corresponde a negocios de alimentos y bebidas, pero más del 70 % de estas aún no cuenta con estrategias digitales de comunicación técnica o funcional.  
+**TAVOLO busca resolver** este vacío mediante una landing page visual, estructurada y orientada a comunicar desde el **primer contacto su propuesta de valor**, casos de uso y beneficios diferenciadores.
 
-**Impacto:** Esta problemática afecta directamente la rentabilidad y la imagen del establecimiento, generando pérdidas económicas y deteriorando la experiencia del cliente. Al implementar una solución IoT basada en sensores de peso integrados en las mesas y conectados a una plataforma digital, los locales podrán optimizar la asignación de asientos, reducir los tiempos de espera y mejorar tanto la eficiencia operativa como la satisfacción del usuario, permitiendo así transformar un desafío en una ventaja competitiva. <br>
+### Comensal
+**Para** comensales que frecuentan cafeterías en zonas urbanas del Perú,  
+**que necesitan** conocer en tiempo real la disponibilidad de mesas, visualizar el menú digital y reservar con antelación,  
+**pero** actualmente enfrentan esperas innecesarias, incertidumbre al llegar al local y una experiencia de consumo poco predecible,  
+**lo que afecta** su comodidad y decisión de volver a consumir en el mismo establecimiento.
 
-#### 1.2.2.2. Lean UX Assumptions  
+Según un estudio de Apoyo Consultoría (2023), **el 62 % de los consumidores limeños evitaría ingresar a un local si no puede verificar previamente su nivel de aforo**.  
+TAVOLO responde a esta necesidad con una plataforma sincronizada con sensores embebidos, que ofrece al comensal una app móvil para autogestión de su visita y planificación de su consumo con mínima fricción.
+
+
+### Administrador
+**Para** los administradores de cafeterías encargados de operar las sedes en tiempo real,  
+**que necesitan** gestionar la ocupación de mesas, controlar reservas y visualizar su sede asignada mediante una interfaz digital centralizada,  
+**pero** actualmente dependen de métodos manuales y no cuentan con herramientas que integren sensores físicos con flujos operativos,  
+**lo que genera** errores en la asignación, sobreaforo no controlado y decisiones reactivas.
+
+En cafeterías de tamaño mediano en Lima, la falta de automatización genera pérdidas operativas y afecta la experiencia del cliente. Según datos internos y análisis del sector, **la eficiencia puede incrementarse en un 30–40 % con tecnologías de digitalización inteligente**.  
+TAVOLO busca transformar este escenario mediante un panel de administración en la nube, que unifica la gestión de sedes, mesas y reservas en una interfaz intuitiva con datos en tiempo real.
+
+#### 1.2.2.2. Lean UX Assumptions
+A partir del análisis del contexto y las necesidades identificadas en los distintos perfiles de usuario, se establecen los siguientes supuestos iniciales que guían el diseño y validación del producto TAVOLO. Estos supuestos serán **contrastados durante el desarrollo iterativo** del proyecto para asegurar que el producto responda realmente a los objetivos planteados.
 
 ###### **Business Outcomes:**
-
 - Aumento del 25% en la eficiencia operativa de los establecimientos que adopten la solución.
 - Reducción del 30% en incidencias por sobreaforo y problemas de asignación de mesas.
 - Incremento del 20% en la satisfacción de los clientes, medido a través de encuestas de experiencia.
@@ -542,14 +578,11 @@ En **nombre startup** sabemos que el sector de la hostelería en Perú es vital 
 - Mejora en el cumplimiento de protocolos de seguridad y normativas vigentes.
 
 ###### **Users:**
-
 Los usuarios primarios son:
-- Propietarios y administradores de restaurantes y cafeterías: Interesados en optimizar el uso del espacio y garantizar la seguridad en el establecimiento. <br>
-  
+- Propietarios y administradores cafeterías: Interesados en optimizar el uso del espacio y garantizar la seguridad en el establecimiento. <br>
 - Clientes: Usuarios que buscan información en tiempo real sobre la disponibilidad de mesas para planificar su visita de manera eficiente. <br>
 
 ###### **User Outcomes & Benefits:**
-
 - Propietarios/Administradores:
   - Control en tiempo real del aforo y asignación de mesas.
   - Reducción de errores manuales en la gestión de espacios.
@@ -561,29 +594,25 @@ Los usuarios primarios son:
   - Mejora en la experiencia y comodidad al planificar su visita.
 
 ###### **Feature Assumptions:**
-
-- Detección en tiempo real: Uso de sensores de peso para determinar la ocupación de cada mesa.
-
-- Aplicación móvil y web: Interfaz intuitiva que permita a los usuarios conocer la disponibilidad en tiempo real.
-
-- Alertas y notificaciones: Envío de notificaciones al personal del local en caso de ocupación irregular o sobreaforo.
-
-- Reportes y análisis: Generación de informes históricos y en tiempo real para facilitar la toma de decisiones y mejorar la gestión operativa.
-
+- Visualización en tiempo real del estado de ocupación de las mesas.
+- Funcionalidad de reservas digitales.
+- Menú accesible por sede desde la aplicación.
+- Gestión de mesas y reservas para administradores.
+- Acceso completo a la plataforma para superadministradores.
+- Seguridad basada en autenticación por roles.
 
 ###### **Business Assumptions:**
-
 1.  **Creemos que nuestros usuarios necesitan** un sistema automatizado y en tiempo real que facilite la gestión del aforo en establecimientos de hostelería.
 
 2. **Estas necesidades se pueden satisfacer** mediante la implementación de sensores IoT y el desarrollo de una plataforma digital accesible desde dispositivos móviles y computadoras.
 
-3. **Nuestros clientes serán** restaurantes, cafeterías y otros locales de hostelería que buscan mejorar la eficiencia en la gestión de sus espacios y la experiencia de sus clientes.
+3. **Nuestros clientes serán** cafeterías que buscan mejorar la eficiencia en la gestión de sus espacios y la experiencia de sus clientes.
 
 4. **El valor más importante que un cliente quiere de nuestros servicios es** la capacidad de optimizar la ocupación de mesas en tiempo real, garantizando tanto la seguridad como la eficiencia operativa.
 
 5. **El cliente también va obtener** beneficios adicionales como la recopilación de datos para análisis futuros.
 
-6. **Vamos a obtener la mayoría de nuestros clientes mediante** estrategias de marketing digital, participación en ferias de tecnología y colaboraciones con asociaciones del sector de hostelería.
+6. **Vamos a obtener la mayoría de nuestros clientes mediante** estrategias de marketing digital, participación en ferias de tecnología y colaboraciones con asociaciones del sector de gastronomía.
 
 7. **Vamos a obtener ingresos mediante** la venta de la solución IoT como hardware y software.
 
@@ -612,7 +641,7 @@ El principal problema es la falta de información en tiempo real sobre la dispon
 <br>
 
 **¿Dónde encaja nuestro producto en su trabajo o vida?** <br>
-La solución se integra en la operación diaria de los establecimientos de hostelería, facilitando tanto la gestión interna (para administradores) como la experiencia del cliente al planificar su visita. <br>
+La solución se integra en la operación diaria de las cafeterías, facilitando tanto la gestión interna (para administradores) como la experiencia del cliente al planificar su visita.<br>
 
 **¿Cuándo y cómo es nuestro producto? ¿Usado?** <br>
 El producto es utilizado en tiempo real, especialmente durante horas pico y en momentos de alta afluencia, permitiendo a los establecimientos gestionar el aforo de forma continua y los clientes verificar la disponibilidad antes de llegar. <br>
@@ -625,7 +654,7 @@ La interfaz visual debe ser moderna, limpia e intuitiva, con gráficos y datos e
 A continuación, se detallan las hipótesis formuladas para abordar la problemática mediante las funcionalidades incluidas en nuestra propuesta de solución IoT. Cada hipótesis está diseñada para ser clara, cuantificable y permitir una evaluación objetiva de su éxito.
 
 - **Hypothesis Statement 1:** <br>
-    **Creemos que** los propietarios y administradores de restaurantes y cafeterías necesitan una herramienta en tiempo real que les permita monitorear la ocupación de mesas de forma automatizada. 
+    **Creemos que** los propietarios y administradores de cafeterías necesitan una herramienta en tiempo real que les permita monitorear la ocupación de mesas de forma automatizada. 
     <br>
 
     **Sabremos** que hemos tenido éxito. 
@@ -669,18 +698,13 @@ A continuación, se detallan las hipótesis formuladas para abordar la problemá
 
 
 ## 1.3. Segmentos objetivo
+TAVOLO está diseñado para atender las necesidades reales de usuarios que interactúan directamente con el sistema dentro del entorno de atención y operación en cafeterías. A partir del análisis funcional y del levantamiento de requisitos, se identifican dos segmentos objetivos clave, sobre los cuales se construye y valida el producto.
+**1. Comensales recurrentes en zonas urbanas de alta afluencia**
+Este segmento está compuesto por usuarios finales que visitan frecuentemente cafeterías ubicadas en distritos con alto tránsito peatonal, como San Isidro, Miraflores, Surco y San Miguel. Se trata principalmente de estudiantes universitarios, trabajadores de oficina y profesionales jóvenes que priorizan la optimización de su tiempo durante el desayuno, el almuerzo o reuniones breves. Son usuarios digitales familiarizados con el uso de aplicaciones móviles y esperan poder visualizar la disponibilidad de mesas, hacer reservas y consultar el menú digital desde sus dispositivos personales. Este segmento es fundamental para validar la propuesta de valor del producto y su utilidad en entornos reales de consumo.
+**2. Administradores operativos de cafeterías**
+Este grupo corresponde a los encargados de gestionar el funcionamiento de una sede física. Tienen bajo su responsabilidad el control del aforo, la gestión de mesas y la administración de reservas. También requieren saber qué sede tienen asignada y mantener el sistema actualizado según los cambios del local. Este segmento valida la funcionalidad del panel de gestión administrativa, que incluye herramientas visuales, control de datos en tiempo real y facilidad de uso en entornos dinámicos como una cafetería con alta rotación.
 
-Nuestros segmentos objetivo se centran en aquellos actores que se beneficiarán directamente del control automatizado del aforo y la optimización del flujo de clientes:
-
-- **Propietarios y Administradores de Restaurantes y Cafeterías:** <br>
- Este segmento es clave, ya que busca herramientas que faciliten la gestión en tiempo real de la ocupación de mesas, reduzcan errores manuales y optimicen la operación del negocio. Son usuarios que valoran la eficiencia operativa y la posibilidad de obtener estadísticas precisas para la toma de decisiones. 
- <br>
-
-- **Clientes de Establecimientos de Hostelería** <br>
-Los clientes se benefician al contar con información actualizada sobre la disponibilidad de mesas, lo que les permite planificar su visita de manera eficiente, evitar largos tiempos de espera y disfrutar de una experiencia más cómoda y agradable.
-
-
-
+Cabe precisar que, si bien el sistema contempla un **rol de superadministrador** con acceso total a las funcionalidades, este **no representa un segmento objetivo del producto**, sino que corresponde exclusivamente al equipo de desarrollo encargado de configurar el sistema, realizar pruebas y brindar soporte técnico al propietario del negocio.
 
 
 
