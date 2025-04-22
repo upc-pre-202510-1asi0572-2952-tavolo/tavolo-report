@@ -57,6 +57,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
   </tbody>
 </table>
 
+
 ## Project Report Collaboration Insights
 
 Para desarrollar el proyecto, se empleó GitHub como herramienta para gestionar versiones y facilitar la colaboración en tiempo real. A continuación, se proporciona el enlace al repositorio del proyecto:
@@ -105,24 +106,6 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
 ### [Student Outcomes](#student-outcome)
 
 ### [Capítulo I: Introducción](#capítulo-i-introducción)
-
-- [Contenido](#contenido)
-  - [Tabla de Contenidos](#tabla-de-contenidos)
-    - [Registro de Versiones del Informe](#registro-de-versiones-del-informe-1)
-    - [Project Report Collaboration Insights](#project-report-collaboration-insights-1)
-    - [Contenido](#contenido-1)
-    - [Student Outcomes](#student-outcomes)
-    - [Capítulo I: Introducción](#capítulo-i-introducción)
-    - [Capítulo II: Requirements Elicitation \& Analysis](#capítulo-ii-requirements-elicitation--analysis)
-    - [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-    - [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-    - [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
-    - [Capítulo VI: Product Implementation, Validation \& Deployment](#capítulo-vi-product-implementation-validation--deployment)
-    - [Conclusiones](#conclusiones)
-    - [Bibliografía](#bibliografía)
-    - [Anexos](#anexos)
-- [Student Outcome](#student-outcome)
-- [Capítulo I: Introducción](#capítulo-i-introducción-1)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
@@ -142,7 +125,6 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
 ### [Capítulo II: Requirements Elicitation & Analysis](#capc3adtulo-ii-requirements-elicitation--analysis-1)
-
 - [2.1. Competidores](#21-competidores)
   - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
   - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
@@ -159,14 +141,12 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
 - [2.4. Ubiquitous Language](#24-ubiquitous-language)
 
 ### [Capítulo III: Requirements Specification](#capc3adtulo-iii-requirements-specification)
-
 - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
 - [3.2. User Stories](#32-user-stories)
 - [3.3. Impact Mapping](#33-impact-mapping)
 - [3.4. Product Backlog](#34-product-backlog)
 
 ### [Capítulo IV: Solution Software Design](#capc3adtulo-iv-solution-software-design)
-
 - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
   - [4.1.1. Event Storming](#411-event-storming)
     - [4.1.1.1 Candidate Context Discovery](#4111-candidate-context-discovery)
@@ -223,13 +203,10 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
 
 
 ### [Conclusiones](#conclusiones)
-
-- [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-
 ### [Bibliografía](#bibliografía)
-
 ### [Anexos](#anexos)
-
+  
+  
 # Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
@@ -240,7 +217,6 @@ establecen objetivos, planifican tareas y cumplen objetivos.
 En el siguiente cuadro se describe las acciones realizadas y enunciados de
 conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.
 
-<!-- Cambiamos el rowspan="1" por rowspan="n" cuando agregamos más de una acción realizada por criterio específico. (TB1, TP1, TB2, TF1)-->
 
 <table>
     <tr>
@@ -707,4 +683,215 @@ Este grupo corresponde a los encargados de gestionar el funcionamiento de una se
 Cabe precisar que, si bien el sistema contempla un **rol de superadministrador** con acceso total a las funcionalidades, este **no representa un segmento objetivo del producto**, sino que corresponde exclusivamente al equipo de desarrollo encargado de configurar el sistema, realizar pruebas y brindar soporte técnico al propietario del negocio.
 
 
+# Capítulo II: Requirements Elicitation & Analysis
+## 2.1. Competidores
+Algunos de los competidores a los que Tavolo podría enfrentarse son:
+<ul>
+    <li>
+        <b>Eat App: </b>Plataforma de gestión de reservas y mesas que permite a los restaurantes automatizar la asignación de mesas, mejorar la experiencia del cliente y analizar datos de comportamiento. Eat App se destaca por su CRM integrado y herramientas de marketing, aunque su sistema depende de reservas manuales y no detecta la ocupación en tiempo real.
+    </li>
+    <li>
+        <b>OpenTable: </b>Uno de los líderes globales en reservas en línea para restaurantes. Ofrece una experiencia fluida para los usuarios al permitir reservas anticipadas y gestionar la disponibilidad de mesas. Sin embargo, su enfoque está más orientado a restaurantes formales y no cuenta con integración de sensores ni monitoreo automático de mesas.
+    </li>
+    <li>
+        <b>Waitlist Me: </b>Aplicación que digitaliza la lista de espera tradicional, permitiendo a los clientes apuntarse desde sus teléfonos y recibir notificaciones cuando su mesa esté lista. Aunque mejora la organización y reduce aglomeraciones, depende de la actualización manual por parte del personal y no ofrece información en tiempo real sobre la ocupación real del local.
+    </li>
+</ul>
 
+### 2.1.1. Análisis competitivo
+
+<table><tr><th colspan="16" valign="top"><b>Competitive Analysis Landscape</b></th></tr>
+<tr><td colspan="9" valign="top">¿Por qué llevar a cabo este análisis?  </td><td colspan="7" valign="top">Este análisis se lleva a cabo para poder investigar, analizar y comparar el comportamiento de los competidores directos o indirectos en el mercado.</td></tr>
+<tr><td colspan="6" valign="top"><p><b>Nombre</b></p><p></p></td><td colspan="3" valign="top"><b>Tavolo</b></td><td colspan="3" valign="top"><b>Eat App</b></td><td colspan="3" valign="top"><b>OpenTable</b></td><td valign="top"><b>Waitlist Me</b></td></tr>
+<tr><td colspan="6" valign="top"><b>Logo</b> </td><td colspan="3" valign="top"><img src="./images/analisis_competitivo/tavolo.jpg"></td><td colspan="3" valign="top"><img src="./images/analisis_competitivo/EatApp.png"></td><td colspan="3" valign="top"><img src="./images/analisis_competitivo/OpenTable.png"><td valign="top"><img src="./images/analisis_competitivo/WaitlistMe.png"></tr>
+<tr><td colspan="3" rowspan="4" valign="top"><b>Perfil</b></td><td colspan="3" rowspan="2" valign="top"><b>Overview</b></td><td colspan="3" rowspan="2" valign="top">Es una solución tecnológica integral basada en IoT, diseñada específicamente para cafeterías. Utiliza sensores de peso para detectar automáticamente la ocupación de mesas y actualiza esta información cada 10 segundos en una app web y móvil. El sistema también ofrece una interfaz administrativa para la sede, facilitando la gestión del flujo de comensales y mejorando la rotación de mesas.</td><td colspan="3" rowspan="2" valign="top">Es una plataforma de gestión de restaurantes basada en la nube que permite manejar reservas, asignación de mesas, datos de clientes y campañas de marketing automatizadas. Su enfoque está en ofrecer una experiencia completa para restaurantes que desean profesionalizar la relación con sus clientes, utilizando herramientas de CRM, reportes y análisis de comportamiento.</td><td colspan="3" rowspan="2" valign="top">Es una de las plataformas más reconocidas a nivel mundial para reservas en restaurantes. Los usuarios pueden buscar establecimientos, ver disponibilidad en tiempo real, leer reseñas y reservar directamente desde la app o el sitio web. También ofrece herramientas para los restaurantes, aunque su enfoque principal está en mejorar la experiencia del comensal antes de llegar al lugar.</td><td rowspan="2" valign="top">Es una solución que digitaliza el proceso de espera en locales físicos, como restaurantes, cafeterías y tiendas. Los clientes pueden apuntarse a una lista desde sus dispositivos y reciben notificaciones cuando su turno se acerca. También permite al staff gestionar el flujo de clientes de forma más organizada, aunque depende de la intervención manual.</td></tr>
+<tr></tr>
+<tr><td colspan="3" rowspan="2" valign="top"><b>Ventaja competitiva ¿Qué valor ofrece a los clientes?</b></td><td colspan="3" rowspan="2" valign="top">Brinda información precisa y en tiempo real sobre la disponibilidad de mesas, ayudando a evitar esperas y optimizando su visita desde antes de llegar al local.</td><td colspan="3" rowspan="2" valign="top">Permite reservar mesas de forma sencilla y recibir un servicio más personalizado, gracias al uso de datos históricos y preferencias del cliente.</td><td colspan="3" rowspan="2" valign="top">Facilita la reserva anticipada en restaurantes de forma rápida y confiable, brindando acceso a una amplia variedad de opciones en una sola plataforma.</td><td rowspan="2" valign="top">Reduce la incertidumbre y el tiempo de espera físico, al permitirles ocupar su tiempo libremente mientras esperan su turno.</td></tr>
+<tr></tr>
+<tr><td colspan="3" rowspan="2" valign="top"><b>Perfil de Marketing</b></td><td colspan="3" valign="top"><b>Mercado objetivo</b></td><td colspan="3" valign="top">Cafeterías que buscan innovar en la gestión de mesas y mejorar la experiencia del cliente mediante tecnología avanzada.</td><td colspan="3" valign="top">Restaurantes que buscan mejorar su gestión de reservas y la experiencia del cliente. Su mercado abarca desde pequeños establecimientos hasta grandes cadenas hoteleras y restaurantes de alta gama.</td><td colspan="3" valign="top">Gama de restaurantes, desde pequeños locales hasta grandes cadenas internacionales, que buscan gestionar reservas en línea y mejorar la experiencia del cliente.</td><td valign="top">Restaurantes, cafeterías y otros establecimientos de servicio rápido que buscan gestionar eficientemente las listas de espera y mejorar la experiencia del cliente.</td></tr>
+<tr><td colspan="3" valign="top"><b>Estrategias de Marketing</b></td><td colspan="3" valign="top"><p>Demostraciones en vivo.</p><p>Alianzas estratégicas.</p><p>Publicidad en redes sociales.</p><p>Marketing de contenidos.</p></td><td colspan="3" valign="top"><p>Optimización de motores de búsqueda.</p><p>Publicidad de pago por clic.</p><p>Alianzas estratégicas.</p></td><td colspan="3" valign="top"><p>Publicidad y promoción.</p><p>Análisis de datos.</p><p>Segmentación de clientes.</p></td><td valign="top"><p>Pruebas gratuitas y demostraciones.</p><p>Testimonios y reseñas.</p><p></p></td></tr>
+<tr><td colspan="3" rowspan="3" valign="top"><b>Perfil de producto</b></td><td colspan="3" valign="top"><b>Productos y Servicios</b></td><td colspan="3" valign="top">Solución basada en IoT que utiliza sensores de peso para detectar la ocupación de las mesas en tiempo real. Esta información se refleja automáticamente en una app web y móvil, permitiendo a los comensales ver la disponibilidad de mesas antes de llegar. Además, incluye una interfaz administrativa para la gestión del flujo de comensales y optimización de la rotación de mesas.</td><td colspan="3" valign="top">Proporciona un sistema de reservas en línea, un CRM para gestionar relaciones con los clientes, herramientas de marketing automatizado, análisis de datos y reportes detallados, así como la integración con otros sistemas de restaurante como POS (punto de venta) y plataformas de pago.</td><td colspan="3" valign="top">Ofrece a los restaurantes herramientas para gestionar la disponibilidad de mesas, realizar reservas, y personalizar la experiencia del cliente. También proporciona servicios de marketing y publicidad, herramientas de CRM y análisis detallados del rendimiento del restaurante, como la ocupación y los tiempos de espera.</td><td valign="top">Ofrece una solución digital para gestionar las listas de espera en tiempo real. Los restaurantes pueden asignar mesas y notificar a los clientes mediante SMS o la app cuando su mesa esté lista. Además, la plataforma ofrece análisis sobre los tiempos de espera y la rotación de mesas para mejorar la eficiencia del establecimiento.</td></tr>
+<tr><td colspan="3" valign="top"><b>Precios y Costos</b></td><td colspan="3" valign="top">Ofrece un modelo de suscripción mensual, con precios que varían según el número de mesas y funcionalidades requeridas. A diferencia de sus competidores, no cobra comisiones por cada reserva, lo que lo convierte en una opción más rentable a largo plazo. Puede haber un costo inicial por la instalación de los sensores.</td><td colspan="3" valign="top">Sigue un modelo de suscripción mensual, con precios que empiezan desde $99 por mes dependiendo del tamaño del restaurante y las funcionalidades necesarias. Además, en algunos casos, cobran comisiones por cada reserva realizada a través de la plataforma.</td><td colspan="3" valign="top">Opera con un modelo basado en suscripción mensual, cuyo precio inicial ronda los $39 por mes. Además, cobra una comisión por cada reserva realizada a través de la plataforma, que varía entre el 1% y el 5%. También puede haber costos adicionales por servicios de promoción o características premium.</td><td valign="top">Opera con un modelo de suscripción mensual, comenzando desde $29 al mes para restaurantes pequeños. No cobra comisiones por reserva, lo que lo hace una opción más accesible en términos de costos continuos. Los precios varían según el tamaño del restaurante y las funcionalidades adicionales requeridas.</td></tr>
+<tr><td colspan="3" valign="top"><b>Canales de distribución</b></td><td colspan="3" valign="top"><p>- Página web</p><p>- Aplicaciones móviles en dispositivos iOS y Android.</p><p></p></td><td colspan="3" valign="top"><p>- Página web</p><p>- Aplicaciones móviles en dispositivos iOS y Android.</p></td><td colspan="3" valign="top"><p>- Página web</p><p>- Aplicaciones móviles en dispositivos iOS y Android.</p></td><td valign="top"><p>- Página web</p><p>- Aplicaciones móviles en dispositivos iOS y Android.</p></td></tr>
+<tr><td colspan="3" rowspan="4" valign="top"><b>Análisis FODA</b></td><td colspan="3" valign="top"><b>Fortalezas</b></td><td colspan="3" valign="top"><p>- Detección automática de ocupación en tiempo real.</p><p>- App ligera, actualizaciones rápidas (cada 10 segundos).</p><p>- Instalación simple sin técnicos.</p></td><td colspan="3" valign="top"><p>- Plataforma integral con CRM y analítica.</p><p>- Buena integración con otros sistemas.</p><p>- Funciona en móviles y tablets.</p></td><td colspan="3" valign="top"><p>- Marca reconocida globalmente.</p><p>- Gran base de usuarios y restaurantes.</p><p>- Interfaz amigable para el cliente.</p></td><td valign="top"><p>- Fácil de usar y configurar.</p><p>- Económico y accesible.</p><p>- Sin comisiones por cliente.</p></td></tr>
+<tr><td colspan="3" valign="top"><b>Debilidades</b></td><td colspan="3" valign="top"><p>- Requiere hardware (sensores).</p><p>- Etapa temprana de adopción y posicionamiento.</p></td><td colspan="3" valign="top"><p>- No detecta ocupación en tiempo real.</p><p>- Costos altos para pequeños restaurantes.</p></td><td colspan="3" valign="top"><p>- Comisiones por reserva.</p><p>- Menor personalización para negocios pequeños.</p></td><td valign="top"><p>- Dependencia del ingreso manual del personal.</p><p>- Sin monitoreo físico de mesas.</p></td></tr>
+<tr><td colspan="3" valign="top"><b>Oportunidades</b></td><td colspan="3" valign="top"><p>- Escalamiento a grandes cadenas de cafeterías.</p><p>- Expansión hacia restaurantes u hoteles.</p></td><td colspan="3" valign="top"><p>- Expansión en mercados emergentes.</p><p>- Alianzas con grandes cadenas.</p></td><td colspan="3" valign="top"><p>- Ampliar servicios para cafeterías o locales pequeños.</p><p>- Integración con experiencias gastronómicas.</p></td><td valign="top"><p>- Penetrar en mercados de comida rápida y cafeterías.</p><p>- Mejora con inteligencia artificial.</p></td></tr>
+<tr><td colspan="3" valign="top"><b>Amenazas</b></td><td colspan="3" valign="top"><p>- Copia del modelo por grandes competidores.</p><p>- Desconfianza inicial por ser una tecnología emergente.</p></td><td colspan="3" valign="top"><p>- Competencia con soluciones más automatizadas.</p><p>- Cambios en las tecnologías de reservas.</p></td><td colspan="3" valign="top"><p>- Nuevas plataformas sin comisiones.</p><p>- Desintermediación (restaurantes que prefieren sistemas propios).</p></td><td valign="top"><p>- Soluciones con detección automática.</p><p>- Apps integrales que lo superen en funcionalidades.</p></td></tr>
+</table>
+
+### 2.1.2. Estrategias y tácticas frente a competidores
+
+Hemos empleado un análisis FODA para identificar las posibilidades y desafíos en el mercado, así como para evaluar nuestras fortalezas y debilidades internas. Esta metodología nos ha permitido concebir estrategias y tácticas que se ajusten de manera coherente a nuestro entorno y a los recursos disponibles.
+
+**Estrategia de diferenciación tecnológica:**
+
+La principal estrategia de Tavolo es posicionarse como una solución única en el mercado al incorporar tecnología IoT para detectar en tiempo real la ocupación de mesas, eliminando por completo la necesidad de intervención humana o registro manual. Esto permite ofrecer al cliente final información confiable y constante, algo que sus competidores no alcanzan con precisión.
+
+**Estrategia de enfoque de nicho en cafeterías:**
+
+Otra estrategia clave es enfocarse en un nicho específico y muy definido: las cafeterías. A diferencia de otras plataformas que buscan abarcar todo tipo de restaurantes, Tavolo se especializa en un entorno donde la rotación rápida, la autogestión y la simplicidad son fundamentales. En línea con esto, la táctica es desarrollar un lenguaje de marca, interfaz y funcionalidades adaptadas a este tipo de negocio, además de lanzar campañas dirigidas a franquicias de cafeterías o locales independientes que no requieren una infraestructura compleja, pero sí soluciones eficientes.
+
+**Estrategia de escalabilidad y fácil instalación:**
+
+Pensando en el crecimiento, Tavolo adopta una estrategia de escalabilidad técnica, diseñando un sistema que puede instalarse sin necesidad de personal técnico, en menos de una hora, lo que facilita su expansión sin altos costos logísticos. Como táctica, se crean tutoriales paso a paso, videos cortos y documentación visual clara que permiten a cualquier miembro del personal ejecutar la instalación.
+
+**Estrategia de posicionamiento de marca y educación del mercado:**
+
+Tavolo impulsa una estrategia de posicionamiento de marca basada en innovación y liderazgo de pensamiento en el sector horeca. La táctica principal para esto es la generación de contenido educativo (blogs, infografías, webinars) que informan sobre la importancia del monitoreo en tiempo real, las pérdidas por esperas largas y cómo la tecnología puede resolverlo, posicionando a Tavolo como referente en soluciones inteligentes para la industria.
+
+## 2.2. Entrevistas
+### 2.2.1. Diseño de entrevistas
+
+### Propietarios de cafeterías
+
+**Preguntas de presentación:**
+
+1. ¿Podrías indicarnos tu nombre y el de tu cafetería?
+2. ¿Qué puesto ocupas dentro de la empresa?
+3. ¿Desde cuándo está funcionando tu cafetería?
+
+**Propósito:** Queremos entender tus necesidades y retos para mejorar la gestión del aforo en tu cafetería.
+
+**Entrevista:**
+
+1. ¿Cómo gestionas actualmente las reservas y la disponibilidad de mesas?
+2. ¿Qué problemas enfrentas con el tiempo de espera de los clientes?
+3. ¿Estarías interesado en una solución tecnológica para gestionar las mesas en tiempo real?
+4. ¿Qué características consideras más importantes en una plataforma de gestión de aforo?
+5. ¿Qué tan importante es para ti la facilidad de instalación y el soporte técnico?
+6. ¿Cómo crees que la tecnología puede mejorar la experiencia del cliente y optimizar la operación de tu cafetería?
+7. ¿Algo más que te gustaría agregar sobre tus necesidades o expectativas?
+
+### Clientes de establecimiento
+
+**Preguntas de presentación:**
+
+1. ¿Podrías indicarnos tu nombre?
+2. ¿Con qué frecuencia sueles visitar cafeterías?
+3. ¿Qué tipo de cafeterías prefieres (por ejemplo, locales, cadenas, cafeterías gourmet)?
+
+**Propósito:** Queremos conocer tu experiencia como cliente en cafeterías y cómo la tecnología podría mejorarla.
+
+**Entrevista:**
+
+1. ¿Cómo sueles consultar la disponibilidad de mesas antes de ir a una cafetería?
+2. ¿Qué tan importante es para ti poder hacer reservas online para evitar esperas?
+3. ¿Te gustaría ver la disponibilidad de mesas en tiempo real a través de una app?
+4. ¿Qué características debería tener una app de cafetería para que la uses con frecuencia?
+5. ¿Cómo valoras la rapidez y facilidad de uso de una aplicación para gestionar tu experiencia en la cafetería?
+6. ¿Algo más que consideras importante para mejorar tu experiencia como cliente?
+
+### 2.2.2. Registro de entrevistas
+### Propietarios de cafeterías
+**Entrevista #1**
+
+**Entrevista #2**
+
+### Clientes de establecimiento
+**Entrevista #1**
+
+**Link:** [https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing](https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing) 
+
+**Entrevistado:** Elias Yauri Paucar<br>
+**Duración:** 3:18
+
+<img src="images/entrevistas/elias.png"><br>
+
+**Resumen:** El entrevistado indica que acostumbra visitar diferentes tipos de cafeterías, incluyendo tanto establecimientos gourmet como cadenas comerciales. Cuando tiene la opción, verifica la disponibilidad de espacio antes de ir, aunque no siempre lo hace. Expresa interés en poder acceder a información sobre disponibilidad y otros detalles similares. <br>Respecto a aplicaciones, valora principalmente tres aspectos: una interfaz intuitiva, facilidad de uso y funcionalidades relevantes. Finalmente, para el entrevistado es fundamental que la navegación dentro de la aplicación sea sencilla de comprender y que ofrezca una experiencia fluida.
+
+**Entrevista #2**
+
+**Link:** [https://youtu.be/QGSisj7iF-k](https://youtu.be/QGSisj7iF-k)
+
+**Entrevistada:** Aleshka Fernández<br>
+**Duración:** 3:54
+
+<img src="images/entrevistas/Aleshka.png"><br>
+
+**Resumen:** La entrevistada menciona que suele visitar cafeterías locales que ofrezcan cafés artesanales o exclusivos del establecimiento. Destaca que, cuando tiene poco tiempo, valora poder reservar sus lugares favoritos. También muestra interés en conocer el aforo en tiempo real. Le gustaría que la aplicación fuera intuitiva, atractiva y visualmente llamativa. Además, considera ideal que la app le sugiera las mejores cafeterías cercanas, según su ubicación y el tipo de cafetería que prefiere. También desea encontrar fácilmente un buscador dentro de la aplicación, dejar calificaciones sobre los lugares visitados y recibir recomendaciones de cafeterías similares en caso de que el tiempo de espera en su lugar habitual sea muy largo.
+
+### 2.2.3. Análisis de entrevistas
+### Propietarios de cafeterías
+
+### Clientes de establecimiento
+
+## 2.3. Needfinding
+### 2.3.1. User Personas
+Propietarios de cafeterías
+
+![Propietarios](./images/needfinding/UserStoryPropietario.png)
+
+Clientes de establecimiento
+
+![Clientes](./images/needfinding/UserStoryCliente.png)
+
+### 2.3.2. User Task Matrix
+Propietarios de cafeterías
+
+| Tarea |   Importancia   | Frecuencia |
+|:------|:------|:----------|
+|Consultar el estado de ocupación de mesas|Alta|Alta|
+|Agregar/modificar mesas desde el panel administrativo|Media|Media|
+|Gestionar reservas desde el panel|Media|Media|
+|Configurar parámetros iniciales (sede, nombre, etc.)|Media|Baja|
+|Supervisar que el sistema esté funcionando correctamente|Alta|Alta|
+|Ver reportes o estadísticas de uso (futura función)|Alta|Media|
+
+Clientes de establecimiento
+
+| Tarea |   Importancia   | Frecuencia |
+|:------|:------|:----------|
+|Consultar disponibilidad de mesas en tiempo real|Alta|Alta|
+|Acceder rápidamente desde el celular|Alta|Alta|
+|Buscar cafeterías cercanas con disponibilidad|Alta|Media|
+|Guardar su cafetería favorita (opcional futuro)|Media|Baja|
+|Compartir o recomendar la cafetería con amigos|Media|Media|
+
+### 2.3.3. User Journey Mapping
+Propietarios de cafeterías
+
+![Propietarios](./images/needfinding/UserJourneyMappingPropietario.png)
+
+Clientes de establecimiento
+
+![Clientes](./images/needfinding/UserJourneyMappingCliente.png)
+
+### 2.3.4. Empathy Mapping
+Propietarios de cafeterías
+
+![Propietarios](./images/needfinding/EmpathyMappingPropietario.png)
+
+Clientes de establecimiento
+
+![Clientes](./images/needfinding/EmpathyMappingCliente.png)
+
+### 2.3.5. As-is Scenario Mapping
+Propietarios de cafeterías
+
+| FASES | Apertura del local | Horas pico | Tiempos muertos o baja rotación | Cierre y evaluación |
+|-------|--------------------|------------|---------------------------------|---------------------|
+| **DOING** | Llego temprano a preparar el salón y reviso la limpieza <br><br> Organizo al personal según la estimación de flujo del día <br><br> Activo los pedidos de proveedores y abro caja | Superviso el movimiento del salón y doy indicaciones rápidas <br><br> Coordino con el personal para liberar mesas <br><br> Intento gestionar manualmente el flujo de comensales | Trato de motivar al personal a optimizar ocupación <br><br> Me enfoco en redes, promociones o planificación de eventos | Reviso la caja, analizo el desempeño del día <br><br> Comento con el equipo los problemas que se presentaron |
+| **THINKING** | “¿Cómo puedo organizar mejor al equipo si se llena?” | “¿Hay alguien esperando afuera? ¿Ya se fue esa mesa del fondo?” <br><br> “Estamos perdiendo ventas por no rotar bien las mesas” | “¿Se estará yendo gente por no ver mesas disponibles?” <br><br> “¿Debemos reducir el horario de atención?” | “Hoy podríamos haber ganado más si organizábamos mejor” <br><br> “¿Y si hubiera una forma de saber cuántas mesas se usan realmente?” |
+| **FEELING** | Expectativa positiva <br><br> Ligera ansiedad por la incertidumbre del día | Estrés por la carga simultánea de tareas <br><br> Frustración al ver ineficiencia en la atención | Impotencia por no tener visibilidad clara del flujo <br><br> Curiosidad por probar nuevas soluciones, pero con dudas | Frustración al no tener datos para tomar decisiones <br><br> Motivación parcial por mejorar, pero sin claridad sobre el cómo |
+
+Clientes de establecimiento
+
+| FASES | Decisión de salir | Camino al local | Llegada y evaluación del lugar | Cambio de plan o espera |
+|-------|-------------------|-----------------|--------------------------------|-------------------------|
+| **DOING** | Consulto Google Maps o redes sociales para elegir una cafetería <br><br> Pregunto a amigos si conocen un lugar con espacio <br><br> Busco una opción con buen ambiente y sin demasiada gente | Voy caminando o en transporte mientras reviso reseñas <br><br> Consulto stories o publicaciones recientes del local | Me asomo o entro para ver si hay mesas <br><br> Hablo con un mozo o espero que me asignen espacio <br><br> Evalúo el ambiente | Decido esperar de pie, buscar otro local o cancelar mi plan <br><br> Dejo una reseña o me quejo en redes si tuve mala experiencia |
+| **THINKING** | “¿Estará lleno ese lugar que me gusta?” <br><br> “Sería genial saber desde casa si hay mesas” | “No tengo ganas de andar buscando otro lugar” <br><br> “Si llego y no hay lugar, capaz me vuelvo a casa” | “No hay lugar, otra vez” <br><br> “¿Por qué no hay una app para esto?” | “No vuelvo más a este lugar sin saber si hay lugar antes” |
+| **FEELING** | Entusiasmo por salir a tomar algo o trabajar fuera <br><br> Inseguridad por no saber si encontrará lugar | Expectativa mezclada con incertidumbre <br><br> Poca paciencia, sobre todo si va con tiempo limitado | Decepción si no encuentra lugar <br><br> Irritación si ve mesas vacías sin uso | Frustración, molestia, desilusión <br><br> Sensación de que no valoraron su tiempo |
+
+## 2.4. Ubiquitous Language
+Estos son los términos y conceptos comunes utilizados en nuestro proyecto:
+
+- **Sede:** Unidad donde opera una cafetería. Cada sede puede tener múltiples mesas y su propio panel administrativo.
+- **Mesa:** Elemento disponible para ser ocupado por los clientes. Puede ser activada o desactivada desde el panel.
+- **Silla con sensor:** Elemento equipado con un sensor de peso que detecta si está siendo utilizada. Su estado ayuda a determinar la ocupación de la mesa.
+- **Sensor:** Dispositivo IoT instalado en cada silla que detecta cambios de peso para determinar si hay una persona sentada.
+- **Ocupación:** Estado de una mesa, determinado por la detección de presencia en una o más sillas asociadas.
+- **Panel administrativo:** Interfaz web usada por el propietario o administrador para gestionar mesas, consultar disponibilidad y visualizar estadísticas.
+- **Administrador:** Usuario con control sobre una sede, encargado de gestionar mesas, configuraciones y visualización de datos.
+- **Cliente:** Persona que visita la cafetería. Puede usar la app para ver disponibilidad de mesas en tiempo real.
+- **Actualización de estado:** Proceso automático mediante el cual el sistema recibe datos de los sensores en las sillas y actualiza la información visible para clientes y administradores.
+- **Rotación de mesas:** Número de veces que una mesa es ocupada en un período determinado. Métrica usada para medir eficiencia.
