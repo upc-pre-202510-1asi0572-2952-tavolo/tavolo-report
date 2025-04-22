@@ -155,8 +155,12 @@ Tavolo impulsa una estrategia de posicionamiento de marca basada en innovación 
 
 ### 2.2.2. Registro de entrevistas
 ### Propietarios de cafeterías
+**Entrevista #1**
+
+**Entrevista #2**
 
 ### Clientes de establecimiento
+**Entrevista #1**
 
 **Link:** [https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing](https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing) 
 
@@ -166,6 +170,17 @@ Tavolo impulsa una estrategia de posicionamiento de marca basada en innovación 
 <img src="images/entrevistas/elias.png"><br>
 
 **Resumen:** El entrevistado indica que acostumbra visitar diferentes tipos de cafeterías, incluyendo tanto establecimientos gourmet como cadenas comerciales. Cuando tiene la opción, verifica la disponibilidad de espacio antes de ir, aunque no siempre lo hace. Expresa interés en poder acceder a información sobre disponibilidad y otros detalles similares. <br>Respecto a aplicaciones, valora principalmente tres aspectos: una interfaz intuitiva, facilidad de uso y funcionalidades relevantes. Finalmente, para el entrevistado es fundamental que la navegación dentro de la aplicación sea sencilla de comprender y que ofrezca una experiencia fluida.
+
+**Entrevista #2**
+
+**Link:** [https://youtu.be/QGSisj7iF-k](https://youtu.be/QGSisj7iF-k)
+
+**Entrevistada:** Aleshka Fernández<br>
+**Duración:** 3:54
+
+<img src="images/entrevistas/Aleshka.png"><br>
+
+**Resumen:** La entrevistada menciona que suele visitar cafeterías locales que ofrezcan cafés artesanales o exclusivos del establecimiento. Destaca que, cuando tiene poco tiempo, valora poder reservar sus lugares favoritos. También muestra interés en conocer el aforo en tiempo real. Le gustaría que la aplicación fuera intuitiva, atractiva y visualmente llamativa. Además, considera ideal que la app le sugiera las mejores cafeterías cercanas, según su ubicación y el tipo de cafetería que prefiere. También desea encontrar fácilmente un buscador dentro de la aplicación, dejar calificaciones sobre los lugares visitados y recibir recomendaciones de cafeterías similares en caso de que el tiempo de espera en su lugar habitual sea muy largo.
 
 ### 2.2.3. Análisis de entrevistas
 ### Propietarios de cafeterías
