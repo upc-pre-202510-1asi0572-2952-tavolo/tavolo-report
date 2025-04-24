@@ -784,6 +784,10 @@ Tavolo impulsa una estrategia de posicionamiento de marca basada en innovación 
 ### 2.2.2. Registro de entrevistas
 ### Propietarios de cafeterías
 **Entrevista #1**
+**Link:** [https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing](https://drive.google.com/file/d/1QeR3Ds2W3V0-4MHyfneMgFkaFLi7aG39/view?usp=sharing) 
+<img src="images/entrevistas/entrevista_diego.jpg"><br>
+**Resumen:** 
+La persona entrevistada señala que es un cliente frecuente de diversas cafeterías, desde locales con propuestas culinarias elaboradas hasta las más conocidas franquicias. Si las circunstancias lo permiten, suele consultar si hay mesas libres antes de dirigirse al lugar, aunque reconoce que no siempre sigue esta práctica. Manifiesta un deseo por contar con herramientas que le permitan conocer la ocupación y otros datos de interés de antemano.
 
 **Entrevista #2**
 
