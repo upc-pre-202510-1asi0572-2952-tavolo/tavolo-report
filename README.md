@@ -293,173 +293,15 @@ Brindar una solución tecnológica eficiente y accesible para la gestión de afo
 Consolidarse como la **solución de referencia en el Perú** para la digitalización de procesos de atención en cafeterías, mediante el uso de tecnología embebida, edge computing y sistemas en la nube, promoviendo una experiencia de consumo más ordenada, rápida y satisfactoria para los comensales, y una gestión más eficiente para los negocios del sector gastronómico.
 
 ### 1.1.2. Perfiles de integrantes del equipo  
+## 1.1.2. Perfiles de integrantes del equipo
 
-<table>
-  <tr align="center">
-    <td rowspan="4">
-      <img src="./images/profile_images/aldo_profile.jpg" alt="Aldo's profile image" min-width="400" max-width="900"/>
-    </td>
-    <td align="left">
-      <b>Nombre y Apellido:</b>
-      <br>            
-      Aldo Alberto Baldeon Fabian
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Código:</b>
-    <br>
-    U202122633
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Carrera:</b>
-    <br>
-    Ingeniería de Software
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Acerca de:</b>
-    <br>
-    Soy Aldo Alberto Baldeon Fabian, estudio la carrera de Ingeniería de Software en la UPC. Escogí esta carrera porque me interesó el desarrollo de aplicaciones. Soy responsable y me gusta trabajar en equipo. Poseo conocimientos básicos en C#, java, JavaScript, HTML y CSS. También, poseo conocimientos intermedios en C + +, SQL y MongoDB, además de contar con experiencia en Git y GitHub.
-    </td>
-  </tr>
-  </tr>
-
-  <tr align="center">
-    <td rowspan="4">
-      <img src="./images/profile_images/barbara_profile.jpg" alt="Barbara's profile image" min-width="400" max-width="900"/>
-    </td>
-    <td align="left">
-      <b>Nombre y Apellido:</b>
-      <br>            
-      Barbara Susana Quezada Portalatino
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Código:</b>
-    <br>
-    U202211800
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Carrera:</b>
-    <br>
-    Ingeniería de Software
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Acerca de:</b>
-    <br>
-    Barbara Susana Quezada Portalatino, cursando el séptimo ciclo de la carrera de software, trabajo mayormente bajo un rol de líder que me ayuda a poder organizar no solo la ideas de mi grupo sino que las ideas aterricen en la ejecución. Soy una persona muy disciplinada y detallista.
-    </td>
-  </tr>
-  </tr>
-   <tr align="center">
-    <td rowspan="4">
-      <img src="./images/profile_images/jimena_profile.jpg" alt="Jimena's profile image" min-width="400" max-width="900"/>
-    </td>
-    <td align="left">
-      <b>Nombre y Apellido:</b>
-      <br>            
-      Jimena Tamara Cama Salvatierra
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Código:</b>
-    <br>
-    U2022210778
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Carrera:</b>
-    <br>
-    Ingeniería de Software
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Acerca de:</b>
-    <br>
-     Soy estudiante de la carrera de Ingeniería de Software en la UPC y actualmente estoy cursando el 7mo ciclo. Me considero una persona curiosa, determinada y organizada. Con la experiencia en proyectos de startup y trabajos en equipo, trabajaré junto a mis compañeros para lograr un óptimo resultado del proyecto.
-    </td>
-  </tr>
-  </tr>
-
-<tr align="center">
-    <td rowspan="4">
-      <img src="./images/profile_images/jair_profile.jpg" alt="Jair's profile image" min-width="400" max-width="900"/>
-    </td>
-    <td align="left">
-      <b>Nombre y Apellido:</b>
-      <br>            
-      Jair Alexander Castillo Castillo
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Código:</b>
-    <br>
-    U202211390
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Carrera:</b>
-    <br>
-    Ingeniería de Software
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Acerca de:</b>
-    <br>
-    Soy estudiante de la carrera de Ingeniería de Software en la UPC y me encuentro en el 7to ciclo. Me considero una persona dedicada, comprensiva y metódica. Con mis habilidades de liderazgo y mi capacidad para trabajar en equipo en un ambiente de respeto, estoy segura de que podré dirigir la implementación de la startup de nuestro proyecto de manera exitosa.
-    </td>
-  </tr>
-  </tr>
-  
-<tr align="center">
-    <td rowspan="4">
-      <img src="./images/profile_images/franz_profile.jpg" alt="Franz's profile image" min-width="400" max-width="900"/>
-    </td>
-    <td align="left">
-      <b>Nombre y Apellido:</b>
-      <br>            
-      Franz Jair La Torre Valle
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Código:</b>
-    <br>
-    U202012378
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Carrera:</b>
-    <br>
-    Ingeniería de Software
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Acerca de:</b>
-    <br>
-    Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Mi compromiso con el equipo se basa en mantener una participación activa en todas las actividades, estar siempre disponible para resolver dudas y contribuir de manera significativa al desarrollo del proyecto. Busco aportar con soluciones innovadoras, apoyo constante y un aprendizaje continuo para alcanzar los objetivos propuestos.
-    </td>
-  </tr>
-
-</table>
-
+| Foto | Información |
+|------|-------------|
+| ![Perfil de Aldo](./images/profile_images/aldo_profile.jpg) | **Nombre y Apellido:** Aldo Alberto Baldeon Fabian<br>**Código:** U202122633<br>**Carrera:** Ingeniería de Software<br>**Acerca de:** Soy Aldo Alberto Baldeon Fabian, estudio la carrera de Ingeniería de Software en la UPC. Escogí esta carrera porque me interesó el desarrollo de aplicaciones. Soy responsable y me gusta trabajar en equipo. Poseo conocimientos básicos en C#, java, JavaScript, HTML y CSS. También, poseo conocimientos intermedios en C + +, SQL y MongoDB, además de contar con experiencia en Git y GitHub. |
+| ![Perfil de Barbara](./images/profile_images/barbara_profile.jpg) | **Nombre y Apellido:** Barbara Susana Quezada Portalatino<br>**Código:** U202211800<br>**Carrera:** Ingeniería de Software<br>**Acerca de:** Barbara Susana Quezada Portalatino, cursando el séptimo ciclo de la carrera de software, trabajo mayormente bajo un rol de líder que me ayuda a poder organizar no solo la ideas de mi grupo sino que las ideas aterricen en la ejecución. Soy una persona muy disciplinada y detallista. |
+| ![Perfil de Jimena](./images/profile_images/jimena_profile.jpg) | **Nombre y Apellido:** Jimena Tamara Cama Salvatierra<br>**Código:** U2022210778<br>**Carrera:** Ingeniería de Software<br>**Acerca de:** Soy estudiante de la carrera de Ingeniería de Software en la UPC y actualmente estoy cursando el 7mo ciclo. Me considero una persona curiosa, determinada y organizada. Con la experiencia en proyectos de startup y trabajos en equipo, trabajaré junto a mis compañeros para lograr un óptimo resultado del proyecto. |
+| ![Perfil de Jair](./images/profile_images/jair_profile.jpg) | **Nombre y Apellido:** Jair Alexander Castillo Castillo<br>**Código:** U202211390<br>**Carrera:** Ingeniería de Software<br>**Acerca de:** Soy estudiante de la carrera de Ingeniería de Software en la UPC y me encuentro en el 7to ciclo. Me considero una persona dedicada, comprensiva y metódica. Con mis habilidades de liderazgo y mi capacidad para trabajar en equipo en un ambiente de respeto, estoy segura de que podré dirigir la implementación de la startup de nuestro proyecto de manera exitosa. |
+| ![Perfil de Franz](./images/profile_images/franz_profile.jpg) | **Nombre y Apellido:** Franz Jair La Torre Valle<br>**Código:** U202012378<br>**Carrera:** Ingeniería de Software<br>**Acerca de:** Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Mi compromiso con el equipo se basa en mantener una participación activa en todas las actividades, estar siempre disponible para resolver dudas y contribuir de manera significativa al desarrollo del proyecto. Busco aportar con soluciones innovadoras, apoyo constante y un aprendizaje continuo para alcanzar los objetivos propuestos. |
 
 ## 1.2. Solution Profile
 
@@ -991,27 +833,29 @@ Este mapeo “To-Be” presenta el escenario ideal posterior a la implementació
 
 
 ## 3.4. Product Backlog.
-
-| #  | User Story Id | Título                                     | Descripción                                                                                                                                                                    | Story Points |
+| #  | Story ID      | Título                                     | Descripción                                                                                                                                                                    | Story Points |
 |----|---------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-|  1 | US014         | Acceder a todos los módulos del sistema    | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins.                                                      |            8 |
-|  2 | US010         | Agregar nuevas mesas                       | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación.                                                                            |            8 |
-|  3 | US009         | Visualizar más sedes en un mapa            | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano.                                                                                    |            8 |
-|  4 | US015         | Registro de cuenta de comensal             | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de Tavolo.                                                |            5 |
-|  5 | US016         | Login de cuenta de comensal                | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas o visualizar la disponibilidad y el menú de una sede en específico.            |            5 |
-|  6 | US012         | Ver la sede asignada                       | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta.                                                                         |            5 |
-|  7 | US008         | Reservar una mesa                          | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería.                                                                                     |            5 |
-|  8 | US013         | Eliminar mesas                             | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas.                     |            5 |
-|  9 | US006         | Visualizar reserva activa                  | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería.    |            5 |
-| 10 | US007         | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería.                                                                        |            5 |
-| 11 | US004         | Usar el formulario de contacto             | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo.                                     |            3 |
-| 12 | US005         | Ver menú digital de una sede               | Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir.                                                              |            3 |
-| 13 | US011         | Visualizar reservas realizadas             | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio.                                                                                |            3 |
-| 14 | US003         | Ver la galería virtual                     | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción.                                           |            2 |
-| 15 | US002         | Ver sección "Características clave"        | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador.                    |            2 |
-| 16 | US001         | Ver sección "¿Qué es Tavolo?"              | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería.   |            2 |
-| 17 | US017         | Login de administrador                     | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas como: usuario y contraseña, para acceder al panel de administración de mi sede. |            2 |
-
+| 1  | US014         | Acceder a todos los módulos del sistema    | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins.                                                          | 8            |
+| 2  | US010         | Agregar nuevas mesas                       | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación.                                                                            | 8            |
+| 3  | US009         | Visualizar más sedes en un mapa            | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano.                                                                                      | 8            |
+| 4  | US015         | Registro de cuenta de comensal             | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de Tavolo.                                                    | 5            |
+| 5  | US016         | Login de cuenta de comensal                | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas o visualizar la disponibilidad y el menú de una sede en específico.              | 5            |
+| 6  | US012         | Ver la sede asignada                       | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta.                                                                           | 5            |
+| 7  | US008         | Reservar una mesa                          | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería.                                                                                       | 5            |
+| 8  | US013         | Eliminar mesas                             | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas.                          | 5            |
+| 9  | US006         | Visualizar reserva activa                  | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería.        | 5            |
+| 10 | US007         | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería.                                                                            | 5            |
+| 11 | US004         | Usar el formulario de contacto             | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo.                                          | 3            |
+| 12 | US005         | Ver menú digital de una sede               | Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir.                                                                | 3            |
+| 13 | US011         | Visualizar reservas realizadas             | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio.                                                                                  | 3            |
+| 14 | US003         | Ver la galería virtual                     | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción.                                               | 2            |
+| 15 | US002         | Ver sección "Características clave"        | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador.                        | 2            |
+| 16 | US001         | Ver sección "¿Qué es Tavolo?"              | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería.       | 2            |
+| 17 | US017         | Login de administrador                     | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas como: usuario y contraseña, para acceder al panel de administración de mi sede.    | 2            |
+| 18 | TAVOLO-TS001 | Implementar Endpoint para Obtener Mesas | Como Developer, quiero implementar un endpoint de API que permita a las aplicaciones frontend obtener la lista de mesas disponibles en una sede específica, para que los usuarios puedan ver el estado de ocupación. | 5 |
+| 19 | TAVOLO-TS002 | Procesar Datos de Sensor de Ocupación | Como Developer, quiero implementar la lógica de backend para recibir y procesar los datos de ocupación enviados por los sensores IoT, para que el sistema actualice el estado de las mesas en tiempo real. | 5 |
+| 20 | TAVOLO-TS003 | Integrar con Google Maps API (Backend) | Como Developer, quiero implementar la integración con la API de Google Maps en el backend para obtener información geográfica de las sedes, para que las aplicaciones frontend puedan mostrar las ubicaciones en un mapa. | 5 |
+| 21 | TAVOLO-TS004 | Implementar Lógica de Reserva de Mesa API| Como Developer, quiero implementar la lógica de backend para gestionar el proceso de reserva de mesas a través de la API, asegurando la disponibilidad y registrando la reserva correctamente. | 5 |
 
 # Capítulo IV: Solution Software Design
 
@@ -2258,5 +2102,32 @@ El diseño de la base de datos para el **Booking Bounded Context** refleja la es
      - `start_time`: Hora de inicio del slot reservado.
      - `end_time`: Hora de fin del slot reservado.
 
+### Conclusiones Generales del Proyecto
 
-Este diseño asegura que las operaciones relacionadas con la gestión de reservas y mesas sean eficientes y consistentes, facilitando la integración con la lógica de negocio definida en la **Domain Layer**.
+* El proyecto TAVOLO se enfoca en optimizar la experiencia en cafeterías peruanas mediante una solución tecnológica IoT que gestiona la ocupación de mesas y reservas. Para los comensales, ofrece visualización del menú, disponibilidad de mesas en tiempo real y reservas; para los administradores, permite la gestión de mesas y reservas de la sede asignada. El objetivo es mejorar la experiencia del cliente y la eficiencia operativa del negocio.
+* La investigación y análisis de requerimientos identificaron la problemática de la incertidumbre sobre la disponibilidad de mesas en cafeterías, especialmente en horas pico, lo que afecta la experiencia del cliente. Se definieron segmentos objetivo claros (comensales y administradores) y se analizaron competidores como Eat App y OpenTable, destacando la ventaja de TAVOLO en la detección automática de ocupación en tiempo real mediante sensores IoT.
+* El equipo demostró un liderazgo compartido y colaborativo, asumiendo responsabilidades específicas en cada capítulo y utilizando herramientas como GitHub y metodologías como Gitflow para una gestión eficiente del proyecto. Se establecieron metas claras, se planificaron tareas según las fortalezas individuales y se mantuvo una comunicación constante, lo que permitió cumplir los objetivos y fortalecer la cohesión del equipo.
+
+### Bibliografía
+
+1.  **Ministerio de la Producción (2022):** El dato sobre que los negocios de alimentos y bebidas representaron más del 35% de las microempresas en el sector servicios en 2022. Posibles fuentes relevantes:
+    * **Las MIPYME en cifras 2022:** Publicado por la Oficina General de Evaluación de Impacto y Estudios Económicos (OGEIEE) de Produce. ([Ver publicación](https://ogeiee.produce.gob.pe/index.php/en/shortcode/oee-documentos-publicaciones/publicaciones-anuales/item/1170-las-mipyme-en-cifras-2022))
+    * **Memoria Institucional del Ministerio de la Producción 2022:** Documento oficial que resume las acciones y logros del ministerio en ese año. ([Ver Memoria](https://transparencia.produce.gob.pe/images/stories/Repositorio/transparencia/planeamiento/memoria-anual/2022.pdf))
+    * Informe de ComexPerú (basado en datos oficiales): **Las micro y pequeñas empresas en el Perú Resultados en 2022**. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
+
+2.  **INEI (2021):** La afirmación de que la implementación de tecnologías inteligentes (IoT, apps) es limitada en el sector gastronómico peruano según datos del INEI de 2021.
+    * La búsqueda **no localizó** un informe público específico del INEI de 2021 que se centre exclusivamente en la adopción tecnológica en el sector gastronómico. La información podría estar contenida en encuestas económicas más amplias o requerir una consulta directa a los repositorios del INEI.
+
+3.  **Apoyo Consultoría (2023):** El dato de que más del 60% de los consumidores en Lima evitarían locales concurridos si tuvieran información digital de disponibilidad, según un estudio de Apoyo Consultoría de 2023.
+   
+### Anexos
+* **Repositorio del Proyecto en GitHub:** `https://github.com/orgs/upc-pre-202510-1asi0572-2952-tavolo/repositories`
+* **Organización del Proyecto en GitHub:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo`
+* **Informe del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report`
+* **Backend del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend`
+* **Landing Page del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-landing-page`
+* **Fronten Web del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web`
+* **Fronten Movil del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-mobile`
+* **Registro de Entrevista #1 (Propietarios/Cliente - Diego Morales/Elias Yauri Paucar):** `https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing`
+* **Registro de Entrevista #2 (Propietarios - Jenna Vasquez):** `https://drive.google.com/file/d/1WTxiDxw4vaabZhFvibL8mHLINcrJR0_9/view?usp=sharing`
+* **Registro de Entrevista #2 (Clientes - Aleshka Fernández):** `https://youtu.be/QGSisj7iF-k`
