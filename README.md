@@ -812,8 +812,14 @@ Tavolo impulsa una estrategia de posicionamiento de marca basada en innovación 
 
 ### 2.2.3. Análisis de entrevistas
 ### Propietarios de cafeterías
+Los propietarios entrevistados son también usuarios frecuentes de cafeterías, lo que les permite empatizar con las necesidades del cliente. Aunque no siempre consultan la disponibilidad de mesas antes de asistir a un local, valoran contar con herramientas tecnológicas que les brinden información en tiempo real sobre la ocupación y otros datos operativos. Identifican como problemáticas la falta de visibilidad para anticiparse a la demanda y la toma de decisiones basada en intuiciones. Por ello, ven como una gran oportunidad integrar soluciones que mejoren la rotación de mesas, optimicen la operación y reduzcan el estrés, siempre y cuando sean fáciles de usar y autogestionables.
+
+![Propietarios](./images/entrevistas/analisis_propietario.png)
 
 ### Clientes de establecimiento
+Los clientes entrevistados visitan diversos tipos de cafeterías y, cuando tienen la oportunidad, valoran consultar la disponibilidad de mesas antes de llegar. Expresan interés en aplicaciones que ofrezcan una experiencia fluida, intuitiva y visualmente atractiva, que les permita ahorrar tiempo, reservar su lugar favorito o encontrar recomendaciones personalizadas según sus preferencias y ubicación. Las principales frustraciones se centran en no saber si encontrarán espacio y en apps poco claras o con funciones irrelevantes. Ven como ganancia una app que no solo informe disponibilidad en tiempo real, sino que también les permita planificar mejor y descubrir nuevas cafeterías fácilmente.
+
+![Clientes](./images/entrevistas/analisis_cliente.png)
 
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
