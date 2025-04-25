@@ -49,22 +49,75 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
   <tbody>
     <tr>
       <td>0.1</td>
-      <td>1.1</td>
-      <td>-</td>
-      <td>-</td>
+      <td>18/04/2025</td>
+      <td>Equipo completo</td>
+      <td>Creación inicial del informe con la estructura base y distribución de responsabilidades</td>
     </tr>
-    
+    <tr>
+      <td>0.2</td>
+      <td>19/04/2025</td>
+      <td>Aldo Baldeon, Jair Castillo</td>
+      <td>Desarrollo del Capítulo I: Introducción, Startup Profile y Solution Profile</td>
+    </tr>
+    <tr>
+      <td>0.3</td>
+      <td>20/04/2025</td>
+      <td>Franz La Torre</td>
+      <td>Desarrollo del Capítulo II: Análisis competitivo y diseño de entrevistas</td>
+    </tr>
+    <tr>
+      <td>0.4</td>
+      <td>20/04/2025</td>
+      <td>Barbara Quezada, Jimena Cama</td>
+      <td>Desarrollo inicial del Capítulo IV: Bounded Contexts y Domain-Driven Design</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>21/04/2025</td>
+      <td>Jair Castillo, Aldo Baldeon</td>
+      <td>Desarrollo del Capítulo III: To-Be Scenario Mapping e Impact Mapping</td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>22/04/2025</td>
+      <td>Franz La Torre</td>
+      <td>Realización y documentación de entrevistas, desarrollo del Needfinding</td>
+    </tr>
+    <tr>
+      <td>0.7</td>
+      <td>23/04/2025</td>
+      <td>Equipo completo</td>
+      <td>Revisión general del documento e integración de todas las secciones</td>
+    </tr>
+    <tr>
+      <td>0.8</td>
+      <td>24/04/2025</td>
+      <td>Barbara Quezada, Jimena Cama</td>
+      <td>Finalización de diagramas C4 y mejora de los diagramas de clase del dominio</td>
+    </tr>
+    <tr>
+      <td>0.9</td>
+      <td>24/04/2025</td>
+      <td>Aldo Baldeon</td>
+      <td>Desarrollo del Product Backlog y mejora de las User Stories</td>
+    </tr>
+    <tr>
+      <td>1.0</td>
+      <td>25/04/2025</td>
+      <td>Equipo completo</td>
+      <td>Revisión final, corrección de errores y entrega del documento para TB1</td>
+    </tr>
   </tbody>
 </table>
+<br>
 
+# Project Report Collaboration Insights
 
-## Project Report Collaboration Insights
-
-Para desarrollar el proyecto, se empleó GitHub como herramienta para gestionar versiones y facilitar la colaboración en tiempo real. A continuación, se proporciona el enlace al repositorio del proyecto:
+<br>Para desarrollar el proyecto, se empleó GitHub como herramienta para gestionar versiones y facilitar la colaboración en tiempo real. A continuación, se proporciona el enlace al repositorio del proyecto:
 
 | **Descripción**            | **Enlace**                                                                 |
 | :-------------------------: | :------------------------------------------------------------------------: |
-| Repositorio del Proyecto    | https://github.com/IoT-Solutions-SW71-Grupo-4/HidroBots-Report.git         |
+| Repositorio del Proyecto    | https://github.com/orgs/upc-pre-202510-1asi0572-2952-tavolo/repositories         |
 | Link de la Organización     | https://github.com/upc-pre-202510-1asi0572-2952-tavolo                    |
 
 **TB1:**
@@ -73,25 +126,26 @@ Para el TB1, se asignaron responsabilidades específicas a cada integrante, las 
 
 | Miembro del Equipo | Tarea Asignada |
 |       :---:        |      :---:     |
-| Aldo Baldeon       |        -       |
-| Barbara Quezada    |        -       |
-| Franz La Torre     |        -       |
-| Jimena Cama        |        -       |
-| Jair Castillo      |        -       |
+| Aldo Baldeon       | Desarrollo del Capítulo I (Startup Profile, Solution Profile, análisis de antecedentes y problemática) y Capítulo III (To-Be Scenario Mapping, Product Backlog) |
+| Barbara Quezada    | Desarrollo del Capítulo IV (Arquitectura del software, diseño estratégico y táctico de Domain-Driven Design, C4 Model) |
+| Franz La Torre     | Desarrollo del Capítulo II (Análisis de competidores, Needfinding, diseño y análisis de entrevistas) |
+| Jimena Cama        | Desarrollo del Capítulo IV (Diagramas de clase, diagramas de componentes, diseño de BD) |
+| Jair Castillo      | Desarrollo del Capítulo I (Lean UX Process, Lean UX Canvas) y Capítulo III (User Stories, Impact Mapping) |
 
-Cabe destacar que, durante la creación del informe, se realizaron commits específicos para cada tarea asignada, lo que permitió garantizar un control de versiones y una colaboración efectiva en tiempo real.
+Cabe destacar que, durante la creación del informe, se realizaron commits específicos para cada tarea asignada, lo que permitió garantizar un control de versiones y una colaboración efectiva en tiempo real. El equipo mantuvo reuniones semanales de sincronización para asegurar la coherencia entre los diferentes capítulos y compartir avances.
 
 Miembros
 
-- Aldo Baldeon    (CodAress)
-- Barbara Quezada (BarbaraQP15)
-- Franz La Torre  (FranzJairLTV)
-- Jimena Cama     (aksonie)
-- Jair Castillo   (U202211390)
+- Aldo Baldeon    (CodAress) - Responsable del análisis de la solución y estructuración del producto
+- Barbara Quezada (BarbaraQP15) - Responsable del diseño arquitectónico y modelado estratégico
+- Franz La Torre  (FranzJairLTV) - Responsable de la investigación de usuarios y análisis competitivo
+- Jimena Cama     (aksonie) - Responsable del modelado técnico y representación de componentes
+- Jair Castillo   (U202211390) - Responsable del marco metodológico y especificación de historias
   
 El uso de GitHub ha permitido gestionar versiones y fomentar la colaboración en tiempo real, facilitando que los integrantes del equipo trabajen tanto de forma asincrónica como sincrónica en el proyecto. Asimismo, la metodología Gitflow ha posibilitado la creación de diversas ramas para el desarrollo de las tareas asignadas, promoviendo un trabajo autónomo y colaborativo entre los miembros.
 
-La rama "develop" se utilizó como un entorno para integrar las tareas de cada miembro de manera estructurada y organizada, mientras que la rama "main" se destinó a la entrega de la versión final del proyecto.
+La rama "develop" se utilizó como un entorno para integrar las tareas de cada miembro de manera estructurada y organizada, mientras que la rama "main" se destinó a la entrega de la versión final del proyecto. Esta estrategia permitió una revisión conjunta del contenido antes de su integración final, reduciendo errores y asegurando la calidad del informe presentado.
+
 
 # Contenido
 
@@ -2111,9 +2165,10 @@ El diseño de la base de datos para el **Booking Bounded Context** refleja la es
 ### Bibliografía
 1.  **Las MIPYME en cifras 2022:** Publicado por la Oficina General de Evaluación de Impacto y Estudios Económicos (OGEIEE) de Produce. ([Ver publicación](https://ogeiee.produce.gob.pe/index.php/en/shortcode/oee-documentos-publicaciones/publicaciones-anuales/item/1170-las-mipyme-en-cifras-2022))
 2.  **Memoria Institucional del Ministerio de la Producción 2022:** Documento oficial que resume las acciones y logros del ministerio en ese año. ([Ver Memoria](https://transparencia.produce.gob.pe/images/stories/Repositorio/transparencia/planeamiento/memoria-anual/2022.pdf))
-3   **Informe de ComexPerú (basado en datos oficiales)**: Las micro y pequeñas empresas en el Perú Resultados en 2022. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
+3.   **Informe de ComexPerú (basado en datos oficiales)**: Las micro y pequeñas empresas en el Perú Resultados en 2022. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
    
 ### Anexos
+* **Video de Exposicion TB1:** `https://drive.google.com/drive/u/0/folders/1YN0UBGC28osxHvRTsBrLSjwX2CAVLHlt`
 * **Repositorio del Proyecto en GitHub:** `https://github.com/orgs/upc-pre-202510-1asi0572-2952-tavolo/repositories`
 * **Organización del Proyecto en GitHub:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo`
 * **Informe del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report`
