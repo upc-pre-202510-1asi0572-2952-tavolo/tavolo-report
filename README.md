@@ -1041,7 +1041,8 @@ Se diferenciaron los actores como: comensal, administrador, superadmin, visitant
 
 - Evidencia de lo relizado en la reunion
 
-<img src="images/event_storming/Event_storming.png">
+![image](https://github.com/user-attachments/assets/feab3a25-e18b-486b-aef5-5c6d58425142)
+
 
 #### 4.1.1.1 Candidate Context Discovery.
 Identificar contextos candidatos es un paso clave para gestionar la complejidad en el desarrollo de sistemas. Se trata de un análisis minucioso que busca entender los elementos centrales del sistema y sus interconexiones. A partir de ahí, se procede a agrupar estos elementos en 'contextos delimitados' lógicos y coherentes. Esta separación no solo facilita el diseño y la implementación, sino que también tiene como meta principal potenciar la escalabilidad, el desempeño y la mantenibilidad del sistema resultante.
