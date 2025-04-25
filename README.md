@@ -2109,16 +2109,9 @@ El diseño de la base de datos para el **Booking Bounded Context** refleja la es
 * El equipo demostró un liderazgo compartido y colaborativo, asumiendo responsabilidades específicas en cada capítulo y utilizando herramientas como GitHub y metodologías como Gitflow para una gestión eficiente del proyecto. Se establecieron metas claras, se planificaron tareas según las fortalezas individuales y se mantuvo una comunicación constante, lo que permitió cumplir los objetivos y fortalecer la cohesión del equipo.
 
 ### Bibliografía
-
-1.  **Ministerio de la Producción (2022):** El dato sobre que los negocios de alimentos y bebidas representaron más del 35% de las microempresas en el sector servicios en 2022. Posibles fuentes relevantes:
-    * **Las MIPYME en cifras 2022:** Publicado por la Oficina General de Evaluación de Impacto y Estudios Económicos (OGEIEE) de Produce. ([Ver publicación](https://ogeiee.produce.gob.pe/index.php/en/shortcode/oee-documentos-publicaciones/publicaciones-anuales/item/1170-las-mipyme-en-cifras-2022))
-    * **Memoria Institucional del Ministerio de la Producción 2022:** Documento oficial que resume las acciones y logros del ministerio en ese año. ([Ver Memoria](https://transparencia.produce.gob.pe/images/stories/Repositorio/transparencia/planeamiento/memoria-anual/2022.pdf))
-    * Informe de ComexPerú (basado en datos oficiales): **Las micro y pequeñas empresas en el Perú Resultados en 2022**. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
-
-2.  **INEI (2021):** La afirmación de que la implementación de tecnologías inteligentes (IoT, apps) es limitada en el sector gastronómico peruano según datos del INEI de 2021.
-    * La búsqueda **no localizó** un informe público específico del INEI de 2021 que se centre exclusivamente en la adopción tecnológica en el sector gastronómico. La información podría estar contenida en encuestas económicas más amplias o requerir una consulta directa a los repositorios del INEI.
-
-3.  **Apoyo Consultoría (2023):** El dato de que más del 60% de los consumidores en Lima evitarían locales concurridos si tuvieran información digital de disponibilidad, según un estudio de Apoyo Consultoría de 2023.
+1.  **Las MIPYME en cifras 2022:** Publicado por la Oficina General de Evaluación de Impacto y Estudios Económicos (OGEIEE) de Produce. ([Ver publicación](https://ogeiee.produce.gob.pe/index.php/en/shortcode/oee-documentos-publicaciones/publicaciones-anuales/item/1170-las-mipyme-en-cifras-2022))
+2.  **Memoria Institucional del Ministerio de la Producción 2022:** Documento oficial que resume las acciones y logros del ministerio en ese año. ([Ver Memoria](https://transparencia.produce.gob.pe/images/stories/Repositorio/transparencia/planeamiento/memoria-anual/2022.pdf))
+3   **Informe de ComexPerú (basado en datos oficiales)**: Las micro y pequeñas empresas en el Perú Resultados en 2022. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
    
 ### Anexos
 * **Repositorio del Proyecto en GitHub:** `https://github.com/orgs/upc-pre-202510-1asi0572-2952-tavolo/repositories`
