@@ -1396,6 +1396,8 @@ En este apartado se presentan los diagramas que ofrecen un mayor nivel de detall
 
 El diagrama de clases correspondiente a la **Domain Layer** del **IAM Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio. También se destacan las relaciones entre estos elementos, como asociaciones, composiciones y dependencias.
 
+<img src="./images/c4-model/class-diagram/IAM_domain_class_diagram.webp" alt="IAM BC Domain Layer Class Diagram"/><br>
+
 **Elementos principales del diagrama:**
 
 1. **Aggregates**:
@@ -1427,10 +1429,35 @@ El diagrama de clases correspondiente a la **Domain Layer** del **IAM Bounded Co
 - Los objetos de valor encapsulan datos inmutables y validaciones específicas, como la seguridad de contraseñas y la unicidad de roles.
 - La entidad `Role` define los permisos y responsabilidades que pueden ser asignados a los usuarios.
 
-<img src="./images/c4-model/class-diagram/IAM_domain_class_diagram.webp" alt="IAM BC Domain Layer Class Diagram"/><br>
-
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram.
 
+El diseño de la base de datos para el **IAM Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional. 
+
+<img src="./images/c4-model/bd/iam_bd.png" alt="IAM BC Data Base Diagram"/><br>
+
+**Este diseño incluye las siguientes tablas principales:**
+
+1. **Users**:
+   - Representa los usuarios registrados en el sistema.
+   - **Atributos principales**:
+     - `id`: Identificador único del usuario.
+     - `username`: Nombre de usuario único.
+     - `password`: Contraseña almacenada de forma segura.
+     - `created_at`: Fecha de creación del usuario.
+
+2. **Roles**:
+   - Representa los roles disponibles en el sistema.
+   - **Atributos principales**:
+     - `id`: Identificador único del rol.
+     - `name`: Nombre del rol.
+
+3. **UserRoles**:
+   - Representa la relación entre usuarios y roles.
+   - **Atributos principales**:
+     - `user_id`: Identificador del usuario.
+     - `role_id`: Identificador del rol.
+
+Este diseño asegura que las operaciones relacionadas con la autenticación y la gestión de usuarios sean eficientes y consistentes, facilitando la integración con la lógica de negocio definida en la **Domain Layer**.
 
 ### 4.2.3 Bounded Context: Branching Bounded Context
 
@@ -1644,6 +1671,8 @@ En esta sección se presenta el diagrama de componentes del **Branching Bounded 
 
 El propósito de este diagrama es proporcionar una visión clara y estructurada de cómo se organizan los componentes dentro del contexto, facilitando la comprensión de su arquitectura y permitiendo identificar puntos de integración y responsabilidades. 
 
+<img src="./images/c4-model/bc-component-diagram/IOT-Braching-BC-Component-Diagram.svg" alt="Branching BC Component Diagram"/><br>
+
 El **Branching Bounded Context** está compuesto por los siguientes módulos principales:
 
 1. **Application Layer**:
@@ -1663,7 +1692,6 @@ El **Branching Bounded Context** está compuesto por los siguientes módulos pri
    - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
    - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos.
 
-<img src="./images/c4-model/bc-component-diagram/IOT-Braching-BC-Component-Diagram.svg" alt="Branching BC Component Diagram"/><br>
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -1674,6 +1702,8 @@ En este apartado se presentan los diagramas que ofrecen un mayor nivel de detall
 El diagrama de clases correspondiente a la **Domain Layer** del **Branching Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio. También se destacan las relaciones entre estos elementos, como asociaciones, composiciones y dependencias.
 
 El objetivo de este diagrama es proporcionar una representación detallada de la lógica de negocio encapsulada en la capa del dominio, asegurando que las reglas del negocio estén claramente definidas y alineadas con los requisitos del sistema.
+
+<img src="./images/c4-model/class-diagram/branching_domain_class_diagram.webp" alt="Branching BC Domain Layer Class Diagram"/><br>
 
 **Elementos principales del diagrama:**
 
@@ -1695,9 +1725,44 @@ El objetivo de este diagrama es proporcionar una representación detallada de la
 - Los objetos de valor encapsulan datos inmutables y validaciones específicas, asegurando consistencia en el dominio.
 - La entidad `Schedule` permite modelar horarios complejos, incluyendo intervalos de tiempo entre reservas.
 
-<img src="./images/c4-model/class-diagram/branching_domain_class_diagram.webp" alt="Branching BC Domain Layer Class Diagram"/><br>
 
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram.
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram
+
+El diseño de la base de datos para el **Branching Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional. 
+
+<img src="./images/c4-model/bd/branching_bd.png" alt="Booking BC Data Base Diagram"/><br>
+
+
+**Este diseño incluye las siguientes tablas principales:**
+
+
+1. **Headquarters**
+   - **Propósito**: Representa las sedes registradas en el sistema.
+   - **Atributos principales**:
+     - `id`: Identificador único de la sede.
+     - `name`: Nombre de la sede.
+     - `landline_phone`: Número de teléfono fijo de la sede.
+     - `mobile_phone`: Número de teléfono móvil de la sede.
+     - `latitude`: Latitud de la ubicación de la sede.
+     - `longitude`: Longitud de la ubicación de la sede.
+     - `address_street`: Calle de la dirección de la sede.
+     - `address_number`: Número de la dirección.
+     - `address_city`: Ciudad donde se encuentra la sede.
+     - `address_postal_code`: Código postal de la sede.
+     - `address_country`: País donde se encuentra la sede.
+     - `schedule_id`: Relación con la tabla `Schedules`.
+
+2. **Schedules**
+   - **Propósito**: Representa los horarios de atención de las sedes.
+   - **Atributos principales**:
+     - `id`: Identificador único del horario.
+     - `opening_time`: Hora de apertura de la sede.
+     - `closing_time`: Hora de cierre de la sede.
+     - `interval_minutes`: Intervalo de tiempo en minutos entre reservas.
+
+Este diseño asegura que las operaciones relacionadas con la gestión de sedes sean eficientes y consistentes, facilitando la integración con la lógica de negocio definida en la **Domain Layer**.
 
 
 ### 4.2.4 Bounded Context: Booking Bounded Context
@@ -2087,6 +2152,8 @@ En esta sección se presenta el diagrama de componentes del **Booking Bounded Co
 
 El propósito de este diagrama es proporcionar una visión clara y estructurada de cómo se organizan los componentes dentro del contexto, facilitando la comprensión de su arquitectura y permitiendo identificar puntos de integración y responsabilidades.
 
+<img src="./images/c4-model/bc-component-diagram/IOT-Booking-BC-Component-Diagram.svg" alt="Booking BC Component Diagram"/><br>
+
 El **Booking Bounded Context** está compuesto por los siguientes módulos principales:
 
 1. **Application Layer**:
@@ -2106,7 +2173,6 @@ El **Booking Bounded Context** está compuesto por los siguientes módulos princ
    - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
    - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos.
 
-<img src="./images/c4-model/bc-component-diagram/IOT-Booking-BC-Component-Diagram.svg" alt="Booking BC Component Diagram"/><br>
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2115,6 +2181,8 @@ En este apartado se presentan los diagramas que ofrecen un mayor nivel de detall
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 
 El diagrama de clases correspondiente a la **Domain Layer** del **Booking Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio. También se destacan las relaciones entre estos elementos, como asociaciones, composiciones y dependencias.
+
+<img src="./images/c4-model/class-diagram/booking_domain_class_diagram.webp" alt="Booking BC Domain Layer Class Diagram"/><br>
 
 **Elementos principales del diagrama:**
 
@@ -2139,9 +2207,50 @@ El diagrama de clases correspondiente a la **Domain Layer** del **Booking Bounde
 - El agregado `Table` gestiona la generación y actualización de los slots de disponibilidad (`AvailabilitySlot`).
 - Los objetos de valor encapsulan datos inmutables y validaciones específicas, asegurando consistencia en el dominio.
 
-<img src="./images/c4-model/class-diagram/booking_domain_class_diagram.webp" alt="Booking BC Domain Layer Class Diagram"/><br>
 
 
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram.
 
+El diseño de la base de datos para el **Booking Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional. 
 
+<img src="./images/c4-model/bd/booking_bd.png" alt="Booking BC Data Base Diagram"/><br>
+
+**Este diseño incluye las siguientes tablas principales:**
+
+1. **Bookings**:
+   - Representa las reservas realizadas por los clientes.
+   - Atributos principales:
+     - `id`: Identificador único de la reserva.
+     - `user_id`: Identificador del cliente que realizó la reserva.
+     - `table_id`: Identificador de la mesa reservada.
+     - `booking_date`: Fecha de la reserva.
+
+2. **Tables**:
+   - Representa las mesas disponibles en las sedes.
+   - Atributos principales:
+     - `id`: Identificador único de la mesa.
+     - `headquarter_id`: Identificador de la sede a la que pertenece la mesa.
+     - `table_number`: Número de la mesa.
+     - `seats`: Cantidad de asientos.
+     - `status`: Estado actual de la mesa.
+
+3. **AvailabilitySlots**:
+   - Representa los slots de disponibilidad de las mesas.
+   - Atributos principales:
+     - `id`: Identificador único del slot.
+     - `table_id`: Identificador de la mesa asociada.
+     - `date_of_slot`: Fecha del slot.
+     - `start_time`: Hora de inicio del slot.
+     - `end_time`: Hora de fin del slot.
+     - `status`: Estado del slot (`AVAILABLE`, `RESERVED`).
+
+4. **BookingSlots**:
+   - Representa los slots reservados por los clientes.
+   - Atributos principales:
+     - `id`: Identificador único del slot reservado.
+     - `booking_id`: Identificador de la reserva asociada.
+     - `start_time`: Hora de inicio del slot reservado.
+     - `end_time`: Hora de fin del slot reservado.
+
+
+Este diseño asegura que las operaciones relacionadas con la gestión de reservas y mesas sean eficientes y consistentes, facilitando la integración con la lógica de negocio definida en la **Domain Layer**.
