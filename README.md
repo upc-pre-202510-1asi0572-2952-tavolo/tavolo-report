@@ -782,46 +782,34 @@ Tavolo impulsa una estrategia de posicionamiento de marca basada en innovación 
 6. ¿Algo más que consideras importante para mejorar tu experiencia como cliente?
 
 ### 2.2.2. Registro de entrevistas
-### Propietarios de cafeterías
-**Entrevista #1**
+### Propietarios de cafeterías<br>
+**Entrevista #1**<br>
 **Link:** [https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing](https://drive.google.com/file/d/1QeR3Ds2W3V0-4MHyfneMgFkaFLi7aG39/view?usp=sharing) 
 <img src="images/entrevistas/entrevista_diego.jpg"><br>
 **Entrevistado:** Diego Morales<br>
-**Duración:** 5:20
-**Resumen:** 
-La persona entrevistada señala que es un cliente frecuente de diversas cafeterías, desde locales con propuestas culinarias elaboradas hasta las más conocidas franquicias. Si las circunstancias lo permiten, suele consultar si hay mesas libres antes de dirigirse al lugar, aunque reconoce que no siempre sigue esta práctica. Manifiesta un deseo por contar con herramientas que le permitan conocer la ocupación y otros datos de interés de antemano.<br>
+**Duración:** 5:20<br>
+**Resumen:** La persona entrevistada señala que es un cliente frecuente de diversas cafeterías, desde locales con propuestas culinarias elaboradas hasta las más conocidas franquicias. Si las circunstancias lo permiten, suele consultar si hay mesas libres antes de dirigirse al lugar, aunque reconoce que no siempre sigue esta práctica. Manifiesta un deseo por contar con herramientas que le permitan conocer la ocupación y otros datos de interés de antemano.<br>
 
-**Entrevista #2**
+**Entrevista #2**<br>
 **Link:**[https://drive.google.com/file/d/1WTxiDxw4vaabZhFvibL8mHLINcrJR0_9/view?usp=sharing](https://drive.google.com/file/d/1WTxiDxw4vaabZhFvibL8mHLINcrJR0_9/view?usp=sharing)
 <img src="images/entrevistas/entrevista-barbara.png"><br>
 **Entrevistado:** Jenna Vasquez<br>
-**Duración:** 4:21
-**Resumen:** 
-En la entrevista, Jenna, dueña de una cafetería, destacó la necesidad crucial de implementar tecnología de fácil acceso y uso, específicamente sensores que no requieran una capacitación extensa del personal, lo que representaría un ahorro significativo de tiempo y recursos. Adicionalmente, expresó su frustración con el sistema actual de gestión manual de reservas, el cual es propenso a errores frecuentes que generan inconvenientes tanto para los clientes como para la operación del negocio, describiéndolo como un verdadero "dolor de cabeza". Jenna ve en una aplicación como TAVOLO una solución potencial que podría automatizar el proceso de reservas, reducir los errores humanos y aliviar la carga operativa de su personal.ReintentarClaude puede cometer errores. Verifique las respuestas.<br>
-
-**Entrevista #2**
+**Duración:** 4:21<br>
+**Resumen:** En la entrevista, Jenna, dueña de una cafetería, destacó la necesidad crucial de implementar tecnología de fácil acceso y uso, específicamente sensores que no requieran una capacitación extensa del personal, lo que representaría un ahorro significativo de tiempo y recursos. Adicionalmente, expresó su frustración con el sistema actual de gestión manual de reservas, el cual es propenso a errores frecuentes que generan inconvenientes tanto para los clientes como para la operación del negocio, describiéndolo como un verdadero "dolor de cabeza". Jenna ve en una aplicación como TAVOLO una solución potencial que podría automatizar el proceso de reservas, reducir los errores humanos y aliviar la carga operativa de su personal.ReintentarClaude puede cometer errores. Verifique las respuestas.<br>
 
 ### Clientes de establecimiento
-**Entrevista #1**
-
-**Link:** [https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing](https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing) 
-
+**Entrevista #1**<br>
+**Link:** [https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing](https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing) <br>
 **Entrevistado:** Elias Yauri Paucar<br>
-**Duración:** 3:18
-
+**Duración:** 3:18<br>
 <img src="images/entrevistas/elias.png"><br>
-
 **Resumen:** El entrevistado indica que acostumbra visitar diferentes tipos de cafeterías, incluyendo tanto establecimientos gourmet como cadenas comerciales. Cuando tiene la opción, verifica la disponibilidad de espacio antes de ir, aunque no siempre lo hace. Expresa interés en poder acceder a información sobre disponibilidad y otros detalles similares. <br>Respecto a aplicaciones, valora principalmente tres aspectos: una interfaz intuitiva, facilidad de uso y funcionalidades relevantes. Finalmente, para el entrevistado es fundamental que la navegación dentro de la aplicación sea sencilla de comprender y que ofrezca una experiencia fluida.<br>
 
 **Entrevista #2**
-
 **Link:** [https://youtu.be/QGSisj7iF-k](https://youtu.be/QGSisj7iF-k)
-
 **Entrevistada:** Aleshka Fernández<br>
-**Duración:** 3:54
-
+**Duración:** 3:54<br>
 <img src="images/entrevistas/Aleshka.png"><br>
-
 **Resumen:** La entrevistada menciona que suele visitar cafeterías locales que ofrezcan cafés artesanales o exclusivos del establecimiento. Destaca que, cuando tiene poco tiempo, valora poder reservar sus lugares favoritos. También muestra interés en conocer el aforo en tiempo real. Le gustaría que la aplicación fuera intuitiva, atractiva y visualmente llamativa. Además, considera ideal que la app le sugiera las mejores cafeterías cercanas, según su ubicación y el tipo de cafetería que prefiere. También desea encontrar fácilmente un buscador dentro de la aplicación, dejar calificaciones sobre los lugares visitados y recibir recomendaciones de cafeterías similares en caso de que el tiempo de espera en su lugar habitual sea muy largo.<br>
 
 ### 2.2.3. Análisis de entrevistas
