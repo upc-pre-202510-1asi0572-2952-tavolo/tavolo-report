@@ -49,7 +49,7 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
   <tbody>
     <tr>
       <td>0.1</td>
-      <td>-</td>
+      <td>1.1</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -105,7 +105,7 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
 
 ### [Student Outcomes](#student-outcome)
 
-[Capítulo I: Introducción](#capítulo-i-introducción)
+### [Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
     - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
     - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
@@ -124,7 +124,7 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
       - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
   - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
-[Capítulo II: Requirements Elicitation & Analysis](#capc3adtulo-ii-requirements-elicitation--analysis-1)
+### [Capítulo II: Requirements Elicitation & Analysis](#capc3adtulo-ii-requirements-elicitation--analysis-1)
 - [2.1. Competidores](#21-competidores)
   - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
   - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
@@ -140,13 +140,13 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
   - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
 - [2.4. Ubiquitous Language](#24-ubiquitous-language)
 
-[Capítulo III: Requirements Specification](#capc3adtulo-iii-requirements-specification)
+### [Capítulo III: Requirements Specification](#capc3adtulo-iii-requirements-specification)
 - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
 - [3.2. User Stories](#32-user-stories)
 - [3.3. Impact Mapping](#33-impact-mapping)
 - [3.4. Product Backlog](#34-product-backlog)
 
-[Capítulo IV: Solution Software Design](#capc3adtulo-iv-solution-software-design)
+### [Capítulo IV: Solution Software Design](#capc3adtulo-iv-solution-software-design)
 - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
   - [4.1.1. Event Storming](#411-event-storming)
     - [4.1.1.1 Candidate Context Discovery](#4111-candidate-context-discovery)
@@ -168,7 +168,7 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
       - [4.2.X.7.1. Bounded Context Domain Layer Class Diagrams](#42x71-bounded-context-domain-layer-class-diagrams)
       - [4.2.X.7.2. Bounded Context Database Design Diagram](#42x72-bounded-context-database-design-diagram)
 
-[Capítulo V: Solution UI/UX Design](#capc3adtulo-v-solution-uiux-design)
+### [Capítulo V: Solution UI/UX Design](#capc3adtulo-v-solution-uiux-design)
 - [5.1. Style Guidelines](#51-style-guidelines)
   - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
   - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
@@ -188,7 +188,7 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
   - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
 - [5.5. Applications Prototyping](#55-applications-prototyping)
 
-[Capítulo VI: Product Implementation, Validation & Deployment](#capitulo-vi-product-implementation-validation-deployment)
+### [Capítulo VI: Product Implementation, Validation & Deployment](#capitulo-vi-product-implementation-validation-deployment)
 - [6.1. Software Configuration Management](#61-software-configuration-management)
   - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
   - [6.1.2. Source Code Management](#612-source-code-management)
@@ -202,9 +202,9 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
 - [6.4. Video About-the-Product](#64-video-about-the-product)
 
 
-[Conclusiones](#conclusiones)
-[Bibliografía](#bibliografía)
-[Anexos](#anexos)
+### [Conclusiones](#conclusiones)
+### [Bibliografía](#bibliografía)
+### [Anexos](#anexos)
   
   
 # Student Outcome
@@ -228,46 +228,46 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
         <td rowspan="1"><b>Trabaja en equipo para proporcionar liderazgo en forma conjunta</b></td>
         <td>TB1<br><br>
             <b>Baldeon Fabian, Aldo Alberto</b><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            - He demostrado liderazgo colaborando activamente con Jair en el desarrollo del Capítulo I y en el diseño táctico de la solución. Asumí el liderazgo en la elaboración del perfil de la startup, la definición de los antecedentes, el desarrollo del Lean UX Process, y el diseño a nivel táctico del software con el enfoque de Domain-Driven Design. Esto ha permitido consolidar una visión común del proyecto.
             <br><br> 
             <b>Cama Salvatierra, Jimena Tamara</b><br>
             - He demostrado la capacidad de trabajar eficazmente en equipos multidisciplinarios, asumiendo roles de liderazgo compartido para la toma de decisiones y el logro de objetivos comunes. En el desarrollo de proyectos, fomenté un entorno inclusivo donde cada integrante pudo aportar sus fortalezas, promoviendo la comunicación abierta, la planificación conjunta de tareas y la adaptación ante cambios.
             <br><br>
             <b>Castillo Castillo, Jair Alexander</b><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            - He liderado en conjunto con Aldo el desarrollo del Capítulo I, enfocándome especialmente en la elaboración del Lean UX Canvas y la definición de hipótesis. Asimismo, tomé la iniciativa en la elaboración del To-Be Scenario Mapping y el Impact Mapping, consolidando así la visión futura del sistema.
             <br><br>
             <b>La Torre Valle, Franz Jair</b><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            - Asumí un rol de liderazgo en el Capítulo II, enfocándome en el análisis de requerimientos. Me encargué del análisis competitivo, diseño y evaluación de entrevistas, así como del Needfinding completo. Lideré la exploración profunda de las necesidades de los usuarios para alinear los requerimientos con la visión del producto.
             <br><br>
             <b>Quezada Portalatino, Barbara Susana</b><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            - He compartido el liderazgo del Capítulo IV con Jimena, asegurando que el diseño de alto nivel del sistema refleje la arquitectura definida y cumpla con las expectativas funcionales. También aporté activamente en la redacción del backlog y en las historias de usuario del sistema.
             <br><br>
         </td>
-        <td>TB1<br><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+        <td>TB1:
+            Hemos demostrado un liderazgo compartido al asumir responsabilidades clave en cada capítulo del proyecto, asegurando que cada integrante tome la iniciativa en distintas áreas. La colaboración entre Aldo y Jair en la introducción y conceptualización del problema, el liderazgo de Franz en la investigación de requerimientos, y la toma de decisiones técnicas y estratégicas por parte de Jimena y Bárbara reflejan un liderazgo distribuido y coherente. Esto ha permitido que el equipo avance con una visión unificada del proyecto y tome decisiones informadas en conjunto.
         </td>
     </tr>
     <tr>
         <td rowspan="1"><b>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</b></td>
         <td>TB1<br><br>
             <b>Baldeon Fabian, Aldo Alberto</b><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            - He contribuido a crear un entorno de trabajo participativo al compartir avances de forma constante, establecer cronogramas claros y ayudar a coordinar las entregas de los distintos capítulos. Me aseguré de cumplir los objetivos asignados dentro de los plazos, especialmente en los apartados de análisis y diseño de la solución.
             <br><br> 
             <b>Cama Salvatierra, Jimena Tamara</b><br>
             - He demostrado la capacidad de crear un entorno de trabajo colaborativo e inclusivo, en el que se valora la participación activa de todos los integrantes del equipo. A lo largo del desarrollo del proyecto, trabajé en la definición de metas comunes, la planificación de tareas con enfoque estratégico y el cumplimiento de los objetivos establecidos, asegurando una gestión eficiente del tiempo y los recursos.
             <br><br>
             <b>Castillo Castillo, Jair Alexander</b><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            - He aportado al trabajo grupal coordinando con los demás miembros la integración de los entregables del Capítulo III, asegurando que los insumos de análisis sean reflejados en las historias de usuario y el backlog. Mi planificación detallada ha permitido cumplir los entregables sin contratiempos.
             <br><br>
             <b>La Torre Valle, Franz Jair</b><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            - Organicé sesiones para compartir hallazgos con el equipo, facilitando un espacio abierto para retroalimentación. Además, establecí objetivos claros para cada sección del capítulo y cumplí con cada uno dentro del tiempo estimado.
             <br><br>
             <b>Quezada Portalatino, Barbara Susana</b><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+            - Promoví la colaboración mediante la constante retroalimentación con el equipo y la organización de sesiones de revisión conjunta. Gracias a una planificación ordenada y objetiva, logré cumplir con todos los entregables asignados, manteniendo una sinergia adecuada con Jimena y el resto del equipo.
             <br><br>
         </td>
-        <td>TB1<br><br>
-            - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel erat sit amet enim fringilla tincidunt ut ut mi.
+        <td> TB1:
+            A lo largo del desarrollo del proyecto, hemos construido un entorno de trabajo colaborativo y respetuoso, donde cada voz ha sido escuchada y valorada. La planificación de tareas se realizó en base a las fortalezas individuales, estableciendo metas claras para cada entrega. La comunicación constante entre los miembros del grupo permitió resolver dudas, alinear criterios y asegurar el cumplimiento de los objetivos establecidos. Esta dinámica no solo optimizó la ejecución del proyecto, sino que fortaleció la cohesión del equipo.
         </td>
     </tr>
 </table>
@@ -895,381 +895,3 @@ Estos son los términos y conceptos comunes utilizados en nuestro proyecto:
 - **Cliente:** Persona que visita la cafetería. Puede usar la app para ver disponibilidad de mesas en tiempo real.
 - **Actualización de estado:** Proceso automático mediante el cual el sistema recibe datos de los sensores en las sillas y actualiza la información visible para clientes y administradores.
 - **Rotación de mesas:** Número de veces que una mesa es ocupada en un período determinado. Métrica usada para medir eficiencia.
-
-
-
-## 3.1. To-Be Scenario Mapping
-
-### ¿Qué hace el Dueño del Café?
-
-| **Phases**                     | **Doing**                                                                                          | **Thinking**                                           | **Feeling**               |
-|-------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------|---------------------------|
-| **Registro del local**        | • Instala la app Tavolo.  <br> • Crea su cuenta como dueño de local.  <br> • Registra su cafetería y sedes. | • “Qué bueno que puedo registrar todas mis sedes fácil.” <br> • “Ahora tengo visibilidad online.” | • Aliviado <br> • Organizado |
-| **Gestión del aforo**         | • Consulta la ocupación en tiempo real de su sede. <br> • Revisa cada sede desde su celular o computadora.                    | • “Qué fácil es ver cuántas mesas están ocupadas.” <br> • “Ya no dependo del personal para esto.” <br>• “Qué accesible que pueda ver desde cualquier dispositivo la app de Tavolo.” | • En control <br> • Eficiente  |
-| **Gestión del tiempo de espera** | • Ve cómo los clientes reservan online. <br> • Evita colas en la entrada.                             | • “Qué bueno que ya no hay filas innecesarias.” <br> • “Mis clientes llegan más contentos.”      | • Relajado <br> • Optimista   |
-| **Monitoreo de mesas**        | • Agrega o elimina mesas. <br> • Coordina instalación de sensores IoT.                              | • “Wow, es sencillo gestionar las mesas con ayuda.” <br> • “No imaginé tanta flexibilidad.”      | • Empoderado <br> • Innovador  |
-| **Visibilidad en Google Maps**| • Permite que los clientes lo busquen por nombre. <br> • Revisa su sede en la app de Tavolo.          | • “Qué útil que aparezcamos en Google con mis datos.” <br> • “Nos encuentran más rápido.”        | • Conectado <br> • Satisfecho  |
-
-### ¿Qué hace el Usuario?
-
-| Phases | Descubrimiento de la aplicación | Registro de datos personales | Búsqueda de cafeterías | Reserva de asientos |
-|--------|-------------------------------|----------------------------|------------------------|-------------------|
-| **Doing** | • Descarga Tavolo desde la tienda de aplicaciones.<br>• Explora las funcionalidades principales. | • Registra sus datos en Tavolo.<br>• Configura sus cafeterias favoritas. | • Utiliza la función de búsqueda por ubicación.<br>• Revisa la disponibilidad en tiempo real. | • Selecciona una mesa disponible.<br>• Confirma la reserva para una hora específica. |
-| **Thinking** | "Esta app me ayudará a no perder tiempo buscando lugares disponibles." | "El proceso de registro es rápido." | "Me encanta poder ver exactamente dónde hay espacio antes de ir." | "La reserva fue sencilla y ahora tengo mi lugar asegurado." |
-| **Feeling** | Curiosidad | Comodidad | Alivio | Satisfacción |
-
-
-## 3.2. User Stories
-### Épicas de Tavolo
-
-| Epic ID | Nombre |
-|---------|--------|
-| EPIC-LANDING-001 | Funcionalidades landing page |
-| EPIC-CLIENT-002 | Funcionalidades user comensal |
-| EPIC-ADMIN-003 | Funcionalidades user administrador |
-| EPIC-SUPERADMIN-004 | Funcionalidades user superadmin |
-
-### Landing Page (EPIC-LANDING-001)
-
-| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
-|----------|--------|-------------|---------|---------|------------------------|
-| US001 | Ver sección "¿Qué es Tavolo?" | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería. | EPIC-LANDING-001 | Visitante landing page | **Escenario 1:**<br>Dado que el visitante accede a la landing page<br>Cuando hace scroll o clic en "¿Qué es Tavolo?"<br>Entonces el sistema le muestra la sección donde se describe claramente el objetivo de la solución |
-| US002 | Ver sección "Características clave" | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador. | EPIC-LANDING-001 | Visitante landing page | **Escenario 1:**<br>Dado que el usuario navega la landing<br>Cuando accede a la sección "Características clave"<br>Entonces el sistema le muestra un resumen de las funcionalidades más importantes del sistema |
-| US003 | Ver la galería virtual | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción. | EPIC-LANDING-001 | Visitante landing page | **Escenario 1:**<br>Dado que el usuario accede a la sección "Galería Virtual"<br>Cuando visualiza las imágenes o videos<br>Entonces el sistema le muestra el contenido visual ilustrativo del sistema en uso |
-| US004 | Usar el formulario de contacto | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo. | EPIC-LANDING-001 | Visitante landing page | **Escenario 1:**<br>Dado que el visitante accede a "Contáctanos"<br>Cuando completa el formulario con sus datos<br>Entonces el sistema debe notificar al equipo de Tavolo |
-
-### Usuario Comensal (EPIC-CLIENT-002)
-
-| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
-|----------|--------|-------------|---------|---------|------------------------|
-| US005 | Ver menú digital de una sede | Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir. | EPIC-CLIENT-002 | Comensal | **Escenario 1:**<br>Dado que el comensal accede a la app<br>Cuando le da click a la sección "Menú"<br>Entonces el sistema debe mostrar el menú completo de la cafetería |
-| US006 | Visualizar reserva activa | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería. | EPIC-CLIENT-002 | Comensal | **Escenario 1:**<br>Dado que el comensal ha iniciado sesión en la aplicación<br>Y tiene al menos una reserva activa<br>Cuando accede a la sección principal<br>Entonces el sistema le muestra la información de la reserva actual incluyendo horario, sede y número de mesa |
-| US007 | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería. | EPIC-CLIENT-002 | Comensal | **Escenario 1:**<br>Dado que el comensal accede a la app<br>Cuando le da click a la sección "Explorar Sedes"<br>Entonces el sistema debe mostrarle la información de la sedes con sus respectivos aforos disponibles<br><br> **Escenario 2:**<br>Dado que el comensal visualiza el estado de aforo de las sedes<br>Cuando hay una actualización desde los sensores<br>Entonces el sistema debe reflejar el nuevo estado en menos de 5 segundos<br><br>**Escenario 3:**<br>Dado que todas las mesas están ocupadas en una sede<br>Cuando el comensal visualiza la disponibilidad<br>Entonces el sistema debe informar que no hay mesas disponibles actualmente |
-| US008 | Reservar una mesa | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería. | EPIC-CLIENT-002 | Comensal | **Escenario 1:**<br>Dado que el comensal selecciona una sede en la sección "Explorar Sedes"<br>Cuando el comensal selecciona la hora aproximada de estadía<br>Y selecciona una mesa disponible<br>Entonces el sistema debe permitir realizar la reserva<br><br>**Escenario 2:**<br>Dado que el comensal ya tiene una reserva activa<br>Cuando intenta crear una nueva<br>Entonces el sistema debe evitarlo e informar que ya tiene una reserva activa |
-| US009 | Visualizar más sedes en un mapa | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano. | EPIC-CLIENT-002 | Comensal | **Escenario 1:**<br>Dado que el comensal quiere ver más sedes<br>Cuando le da click a la sección "Explorar sedes" <br>Y tipea el nombre de la sede en el buscador<br>Entonces el sistema debe mostrar todas las sedes de la cafetería en el mapa interactivo |
-| US015 | Registro de cuenta de comensal | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de reserva y visualización de mesas. | EPIC-CLIENT-002 | Visitante | **Escenario 1:**<br>Dado que un visitante accede a la aplicación<br>Cuando completa el formulario de registro con nombre, correo y contraseña<br>Y acepta los términos y condiciones<br>Entonces el sistema debe crear una cuenta nueva<br>Y permitir el acceso a las funcionalidades de comensal |
-| US016 | Login de cuenta de comensal | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas y funcionalidades personalizadas. | EPIC-CLIENT-002 | Comensal registrado | **Escenario 1:**<br>Dado que un comensal registrado accede a la pantalla de login<br>Cuando ingresa sus credenciales correctas (email y contraseña)<br>Entonces el sistema debe autenticarlo<br>Y redirigirlo al dashboard principal<br><br>**Escenario 2:**<br>Dado que un usuario ingresa credenciales incorrectas<br>Cuando intenta iniciar sesión<br>Entonces el sistema debe mostrar un mensaje de error<br>Y permitir reintentar |
-
-### Usuario Administrador (EPIC-ADMIN-003)
-
-| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
-|----------|--------|-------------|---------|---------|------------------------|
-| US010 | Agregar nuevas mesas | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación. | EPIC-ADMIN-003 | Administrador | **Escenario 1:**<br>Dado que el admin accede al panel de su sede<br>Cuando le da click a la sección "Gestión de Mesas"<br>Y posteriormente a la opción "Agregar una nueva mesa" <br> Entonces el sistema le brinda un formulario simple de registro de mesa. <br>**Escenario 2:** <br> Dado que el admin ingresa los datos correctos de la mesa como su identificador y capacidad de sillas <br>Y le da click al botón "Guardar"<br>Entonces el sistema guarda con su identificador y capacidad de sillas la mesa registrada |
-| US011 | Visualizar reservas realizadas | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio. | EPIC-ADMIN-003 | Administrador | **Escenario 1:**<br>Dado que el admin accede a su sede<br>Cuando le da clic a la sección "Visualizar Reservas"<br>Entonces el sistema debe mostrar las reservas con usuario, fecha y hora |
-| US012 | Ver la sede asignada | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta. | EPIC-ADMIN-003 | Administrador | **Escenario 1:**<br>Dado que el admin inicia sesión<br>Cuando accede a su información<br>Entonces el sistema debe mostrar la sede asociada a su cuenta |
-| US013 | Eliminar mesas | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas. | EPIC-ADMIN-003 | Administrador | **Escenario 1:**<br>Dado que el administrador ha iniciado sesión<br>Y se encuentra en la sección "Ver Mesas"<br>Cuando selecciona una mesa existente y confirma su eliminación<br>Entonces la mesa es eliminada del sistema y deja de aparecer en la lista |
-| US017 | Login de administrador | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas para acceder al panel de administración de mi sede. | EPIC-ADMIN-003 | Administrador | **Escenario 1:**<br>Dado que un administrador accede a la pantalla de login<br>Cuando ingresa sus credenciales válidas<br>Entonces el sistema debe autenticarlo<br>Y mostrar el panel de administración con las funcionalidades asociadas a su sede<br><br>**Escenario 2:**<br>Dado que un administrador ingresa credenciales incorrectas<br>Cuando intenta acceder<br>Entonces el sistema debe mostrar un mensaje de error<br>Y registrar el intento fallido por seguridad |
-
-### Usuario Superadmin (EPIC-SUPERADMIN-004)
-
-| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
-|----------|--------|-------------|---------|---------|------------------------|
-| US014 | Acceder a todos los módulos del sistema | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. | EPIC-SUPERADMIN-004 | Superadmin | **Escenario 1:**<br>Dado que el superadmin accede al sistema<br>Cuando desea visualizar sedes o usuarios<br>Entonces el sistema debe permitirle ver toda la información<br><br>**Escenario 2:**<br>Dado que el superadmin crea un nuevo admin o sede<br>Cuando registra los datos<br>Entonces el sistema debe almacenarlos y mostrar confirmación |
-
-
-## 3.3. Impact mapping.
-<img src="./images/impact_mapping/Impact_Mapping.png" alt="Impact Mapping"/><br>
-
-
-
-## 3.4. Product Backlog.
-
-| #  | User Story Id | Título                                     | Descripción                                                                                                                                                                    | Story Points |
-|----|---------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-|  1 | US014         | Acceder a todos los módulos del sistema    | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins.                                                      |            8 |
-|  2 | US010         | Agregar nuevas mesas                       | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación.                                                                            |            8 |
-|  3 | US009         | Visualizar más sedes en un mapa            | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano.                                                                                    |            8 |
-|  4 | US015         | Registro de cuenta de comensal             | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de Tavolo.                                                |            5 |
-|  5 | US016         | Login de cuenta de comensal                | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas o visualizar la disponibilidad y el menú de una sede en específico.            |            5 |
-|  6 | US012         | Ver la sede asignada                       | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta.                                                                         |            5 |
-|  7 | US008         | Reservar una mesa                          | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería.                                                                                     |            5 |
-|  8 | US013         | Eliminar mesas                             | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas.                     |            5 |
-|  9 | US006         | Visualizar reserva activa                  | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería.    |            5 |
-| 10 | US007         | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería.                                                                        |            5 |
-| 11 | US004         | Usar el formulario de contacto             | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo.                                     |            3 |
-| 12 | US005         | Ver menú digital de una sede               | Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir.                                                              |            3 |
-| 13 | US011         | Visualizar reservas realizadas             | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio.                                                                                |            3 |
-| 14 | US003         | Ver la galería virtual                     | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción.                                           |            2 |
-| 15 | US002         | Ver sección "Características clave"        | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador.                    |            2 |
-| 16 | US001         | Ver sección "¿Qué es Tavolo?"              | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería.   |            2 |
-| 17 | US017         | Login de administrador                     | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas como: usuario y contraseña, para acceder al panel de administración de mi sede. |            2 |
-
-
-## 4.1. Strategic-Level Domain-Driven Design.
-
-### 4.1.1. EventStorming.
-
-Con el objetivo de comprender en profundidad el dominio de Tavolo, se llevó a cabo una sesión de Event Storming de aproximadamente 1 hora. Esto permitió que nosotros como equipo organizaramos nuestras ideas y pensamientos sobre sistema desde múltiples perspectivas: negocio, usuario final, administración y experiencia. A través de esta dinámica, identificamos eventos clave, comandos, usuarios y agregados que nos ayudaron a esbozar una primera visión integral del sistema.
-
-<br>
-
-**Se vieron los siguientes puntos en la reunión:**
-
-- Exploración del dominio general
-
-Se partió desde la experiencia del visitante en la landing page, avanzando por el flujo de registro e inicio de sesión como comensal o administrador, hasta la reserva de mesas, visualización en tiempo real y gestión desde el panel administrativo.
-
-- Identificación de eventos y comandos clave
-
-Se colocaron notas naranjas para eventos, y se complementaron con comandos en azul. EL equipo seguío de las User Stories previamente realizadas, lo que aseguró la coherencia y el flujo de ña solución.<br>
-
-- Asignación de roles y responsables
-
-Se diferenciaron los actores como: comensal, administrador, superadmin, visitante, para asociar claramente qué parte del sistema controlan o en qué puntos interactúan. Al dividirlo de esta manera es más fácil detectar posibles conflictos o áreas de mejora en la experiencia.<br>
-
-- Evidencia de lo relizado en la reunion
-
-<img src="images/event_storming/Event_storming.png">
-
-#### 4.1.1.1 Candidate Context Discovery.
-Identificar contextos candidatos es un paso clave para gestionar la complejidad en el desarrollo de sistemas. Se trata de un análisis minucioso que busca entender los elementos centrales del sistema y sus interconexiones. A partir de ahí, se procede a agrupar estos elementos en 'contextos delimitados' lógicos y coherentes. Esta separación no solo facilita el diseño y la implementación, sino que también tiene como meta principal potenciar la escalabilidad, el desempeño y la mantenibilidad del sistema resultante.
-
-<img src="images/Candidate-Context-Discovery/Candidate Context Discovery.png">
-
-#### 4.1.1.2 Domain Message Flows Modeling.
-Para analizar y diseñar sistemas de software, se usa el Modelado de Flujos de Mensajes de Dominio, un método que ilustra la transferencia de información entre componentes mediante mensajes. Este proceso se centra en especificar los mensajes enviados y recibidos por los diferentes actores del sistema y en descifrar sus relaciones. El uso de esta metodología aporta claridad para entender y representar las vías de información del sistema, permitiendo detectar problemas potenciales más fácilmente y optimizar la estructura del diseño. A modo de ejemplo, mostraremos a continuación algunos diagramas aplicados a nuestro sistema.
-
-<img src="images/Domain Message Flows Modeling/Domain Message Flows Modeling.jpg">
-
-#### 4.1.1.3 Bounded Context Canvases.
-
-### Booking Management
-<a href="https://ibb.co/ksNTRqh0"><img src="https://i.ibb.co/Ndcq8WLp/Bounded-Context-Canvases-Booking-Management.jpg" alt="Bounded-Context-Canvases-Booking-Management" border="0"></a>
-
-
-### Table Management
-<a href="https://ibb.co/W4LMXJrP"><img src="https://i.ibb.co/q3vc8QHW/Bounded-Context-Canvases-Table-Management.jpg" alt="Bounded-Context-Canvases-Table-Management" border="0"></a>
-
-
-### Menu Management
-<a href="https://ibb.co/Cs0Yj13W"><img src="https://i.ibb.co/2YKCzn15/Bounded-Context-Canvases-Menu-Management.jpg" alt="Bounded-Context-Canvases-Menu-Management" border="0"></a>
-
-
-
-### IoT Monitoring
-<a href="https://ibb.co/MxjxwgWw"><img src="https://i.ibb.co/Txnxjwpj/Bounded-Context-Canvases-Iot-Monitoring.jpg" alt="Bounded-Context-Canvases-Iot-Monitoring" border="0"></a><br>
-
-
-### Headquarter Management
-<a href="https://ibb.co/HTX3nqcQ"><img src="https://i.ibb.co/ZzN7WxQC/Bounded-Context-Canvases-Headquarter-Management.jpg" alt="Bounded-Context-Canvases-Headquarter-Management" border="0"></a><br>
-
-
-
-### 4.1.2. Context Mapping.
-En esta sección desarrollamos un conjunto de *context maps* para visualizar las relaciones entre los *bounded contexts* del sistema. A partir de la información recolectada, exploramos distintas alternativas de diseño, cuestionando cómo cambiaría la estructura si reubicamos, dividimos o agrupamos *capabilities*. Finalmente, evaluamos cada propuesta considerando patrones como *Anti-corruption Layer*, *Conformist*, *Customer/Supplier* y *Shared Kernel*, con el fin de definir la mejor aproximación para la arquitectura del dominio. A continucación presentaremos las opciones que contemplamos para Tavolo y la estructura final.
-
-**Opción 1**
-
-En esta estructura mantenemos los cinco bounded contexts separados con relaciones claramente definidas. Las ventajas de este tipo de contexto son por un lado la clara separación de responsabilidades y por otro lado, se especifica que cada contexto se enfoca en una funcionalidad específica. Una de las principales desventajas es que hay una mayor complejidad en la sincronización entre contextos.
-
-<img src="images/context_diagrams/opcion1.png">
-
-<br>
-
-**Opción 2**
-
-Esta alternativa propone unir los contextos de IoT Monitoring y Table Management en un solo bounded context. Al hacerlo, se elimina la necesidad de sincronización externa entre ambos, manteniendo relaciones similares con los demás contextos del sistema. <br> Esta combinación presenta ventajas como la simplificación de la arquitectura al disminuir la cantidad de bounded contexts, una comunicación más directa entre la detección de ocupación y la gestión de mesas. <br> No obstante, una desventajas es la combinación de responsabilidades distintas, ya que una parte se enfoca en la infraestructura de sensores y la otra en procesos administrativos. Esto podría dificultar que el personal de cafetería realice la instalación del sistema en menos de una hora sin ayuda técnica, y además genera el riesgo de que un solo contexto asuma demasiadas funciones.
-
-<img src="images/context_diagrams/opcion2.png">
-
-<br>
-
-**Opcion 3** 
-
-Esta alternativa propone una arquitectura compuesta por cinco bounded contexts bien definidos, con relaciones claras entre ellos. La estructura busca equilibrar la separación de responsabilidades, para permitir que el sistema escale y se mantenga con facilidad. Además, facilita la instalación sin asistencia técnica y asegura tiempos de respuesta adecuados, lo que contribuye directamente a mejorar la experiencia del cliente en el uso del sistema Tavolo.
-
-* Headquarter Management se comunica con Menu Management y Table Management, proporcionando la información de las sedes. Menu Management adapta su contenido según cada sede, y Table Management utiliza la información organizativa que viene de Headquarter. En ambos casos, la relación es del tipo Customer/Supplier, donde Headquarter es el proveedor.
-
-* Table Management y Booking Management comparten el modelo de “mesa” y su disponibilidad. Por eso, tienen una relación de tipo Shared Kernel, lo que asegura que ambos usen los mismos conceptos para evitar errores o confusión.
-
-* Booking Management también se relaciona con Menu Management, pero en este caso la relación es Conformist. Booking utiliza información del menú, pero se adapta a su estructura sin modificarla.
-
-* IoT Monitoring se conecta con Table Management mediante una Anti-corruption Layer. Esta capa traduce los datos que vienen de los sensores a un formato que Table Management pueda entender. Así, se protege el sistema de los detalles técnicos del IoT y se facilita la instalación del sistema sin ayuda especializada.
-
-<img src="images/context_diagrams/opcion3.png">
-
-<br>
-
-**Elección** <br>
-Elegimos la **opción 3**, ya que proporciona el mejor equilibrio entre la separación de responsabilidades, la fácil de implementación y el cumplimiento de los requisitos del sistema. <br>
-Al definir cinco bounded contexts con relaciones claras, se facilita la evolución independiente de cada parte del sistema, lo que mejora su escalabilidad y mantenibilidad. Además, al separar gestiones, como la de gestión de IoT mediante una Anti-corruption Layer, se simplifica la instalación. Asimismo, esta estructura garantiza tiempos de respuesta rápidos y optimiza la gestión de mesas, reservas y menús, brindando una experiencia más fluida y eficiente para los usuarios y el personal.
-
-
-### 4.1.3. Software Architecture.
-En esta sección, se presenta y explica la representación de la arquitectura de software para Tavolo utilizando el C4 Model. A través de estos diagramas, se busca proporcionar una comprensión clara y accesible de la arquitectura de Tavolo, permitiendo a los miembros del equipo, stakeholders y futuros desarrolladores entiendan cómo se organiza y comunica el sistema a diferentes niveles.
-
-#### 4.1.3.1. Software Architecture System Landscape Diagram.
-Este diagrama muestra que Tavolo opera en un ecosistema compuesto por tres tipos de usuarios (Comensales, Administradores de Cafeterías y Super Administradores) que interactúan directamente con el sistema principal Tavolo App. El sistema se conecta con un servicio externo: Google Maps API para mostrar ubicaciones de cafeterías. Los Comensales usan Tavolo para reservar mesas y consultar menús, los Administradores de Cafeterías proporcionan información sobre menús y gestionan sus mesas, mientras que los Super Administradores (equipo de desarrollo) mantienen y actualizan el sistema.<br>
-<img src="./images/c4-model/landscape-c41.png" alt="Landscape en C4"/><br>
-#### 4.1.3.2. Software Architecture Context Level Diagrams.
-Este diagrama muestra que el sistema Tavolo (representado como una única entidad) interactúa con tres tipos de usuarios: Comensales que utilizan el sistema para encontrar cafeterías, ver menús y realizar reservas; Administradores de Cafeterías que actualizan la información de menús y mesas; y Super Administradores que gestionan el mantenimiento general del sistema. Tavolo también se comunica con dos sistemas externos: Google Maps para mostrar ubicaciones geográficas de cafeterías y un sistema de Sensores IoT que proporciona datos en tiempo real sobre la ocupación de mesas en los establecimientos.<br>
-<img src="./images/c4-model/structurizr-83807-SystemContext-001-001.png" alt="System Context en C4"/><br>
-#### 4.1.3.2. Software Architecture Container Level Diagrams.
-Este diagrama muestra que el sistema Tavolo está compuesto por cuatro contenedores principales: una aplicación web accesible desde navegadores, una aplicación móvil para dispositivos portátiles, una API que gestiona toda la lógica de negocio y una base de datos que almacena la información del sistema. Además, incluye un módulo de sensores encargado de procesar los datos provenientes de dispositivos Arduino ubicados en las mesas. Por último, la API también se conecta con Google Maps, una aplicación externa, permitiendo que el comensal acceda a un mapa interactivo con las ubicaciones de las distintas sedes de la cafetería.<br>
-<img src="./images/c4-model/container-c4.png" alt="Container en C4"/><br>
-#### 4.1.3.3. Software Architecture Deployment Diagrams.
-Este diagrama muestra que el sistema Tavolo se despliega en tres entornos principales: Microsoft Azure Cloud, Dispositivos Cliente y Cafeterías físicas. En Azure, el sistema utiliza App Service para alojar la aplicación web frontend (WebStorm), otro App Service para la API (Spring Boot/Java) con documentación Swagger, Azure Database for PostgreSQL para los datos, y Azure IoT Hub para gestionar comunicaciones con dispositivos IoT. Los usuarios acceden al sistema a través de navegadores web o dispositivos Android. En cada cafetería, se instalan sensores Arduino en las mesas que envían datos de ocupación a un Gateway Arduino local, el cual transmite esta información al IoT Hub en Azure. Todas las comunicaciones entre componentes utilizan protocolos seguros como HTTPS, MQTT/TLS o conexiones PostgreSQL.<br>
-<img src="./images/c4-model/deployment-c4.png" alt="Deploymet Context en C4"/><br>
-## 4.2. Tactical-Level Domain-Driven Design
-
-### 4.2.1. Bounded Context: Menu Management
-Este contexto se encarga de la gestión del menú digital de las cafeterías. Permite al administrador crear, modificar y clasificar los productos que estarán disponibles para los comensales en cada sede.
-
-#### 4.2.1.1. Domain Layer.
- `Producto` (Entity)
-- Propósito: Representa un ítem del menú (comida o bebida).
-- Atributos:
-  - `productoId: ProductoId`
-  - `nombre: String`
-  - `descripcion: String`
-  - `precio: double`
-- Métodos:
-  - `updatePrecio(nuevoPrecio: double)`
-  - `updateDescripcion(nuevaDescripcion: String)`
-
- `Categoria` (Value Object)
-- Propósito: Clasifica un conjunto de productos.
-- Atributos:
-  - `productos: List<Producto>`
-  - `horario: String` (ej. desayuno, almuerzo)
-  - `visible: boolean`
-
- `Menu` (Aggregate Root)
-- Propósito: Actúa como agregado principal que agrupa productos y define operaciones sobre ellos.
-- Métodos:
-  - `crearProducto(command: CrearMenuCommand)`
-  - `actualizarProducto(command: ActualizarProductoCommand)`
-
-#### 4.2.1.2. Application Layer.
- `CrearMenu` (Command Handler)
-- Propósito: Ejecuta el proceso de creación de un nuevo producto en el menú.
- `AdministrarProductoCommandHandler` (Service)
-- Propósito: Apoya la orquestación de operaciones de mantenimiento del menú.
-- Métodos:
-  - `crearMenu()`
-  - `actualizarProducto()`
-
-#### 4.2.1.3. Interface Layer.
- `CrearMenuCommand` (Command)
-- Propósito: Representa la solicitud para agregar un nuevo producto al menú.
- `MenuController` (Controller)
-- Métodos:
-  - `crearMenu()`
-  - `actualizarProducto()`
-
-
-#### 4.2.1.4. Infrastructure Layer.
- `MenuRepository` (Interface)
-- Propósito: Contrato definido para almacenar objetos `Menu`.
-- Métodos:
-  - `save(menu: Menu)`
- `MenuRepositoryImpl` (Repository)
-- Propósito: Implementación concreta de `MenuRepository`, encargada de interactuar con la base de datos.
-- Métodos:
-  - `crearMenu()`
-  - `actualizarProducto()`
-
-### 4.2.2. Bounded Context: Table Management
-Este contexto se encarga del registro y configuración de las mesas en cada sede.
-
-#### 4.2.2.1. Domain Layer.
- `Mesa` (Entity)
-- Atributos:
-  - `mesaId: UUID`
-  - `cantidadSillas: int`
-  - `estado: Estado`
-  - `sedeId: UUID`
-  - `reservaActiva: boolean`
- `Estado` (Value Object)
-- Atributos:
-  - `estadoId: UUID`
-  - `nombre: String`
-
-#### 4.2.2.2. Application Layer.
- `MesaService`
-- Métodos:
-  - `registrarMesa(command: RegistrarMesaCommand)`
-  - `cambiarEstadoMesa(command: CambiarEstadoCommand)`
-
-#### 4.2.2.3. Interface Layer.
- `MesaController`
-- Métodos:
-  - `POST /mesas`
-  - `PUT /mesas/{id}/estado`
- `RegistrarMesaCommand`
-
-#### 4.2.2.4. Infrastructure Layer.
- `MesaRepository`
-- Métodos:
-  - `save(mesa)`
-  - `findBySede(sedeId)`
-
-### 4.2.3. Bounded Context: Headquarter Management
-Administra la información de cada sede del negocio: ubicación, contacto y horarios.
-
-#### 4.2.3.1. Domain Layer.
- `Sede` (Aggregate Root)
-- Atributos:
-  - `sedeId: UUID`
-  - `usuarioAdminId: UUID`
-  - `nombre: String`
-  - `latitud: double`
-  - `longitud: double`
-  - `telefono: String`
-  - `horaApertura: LocalTime`
-  - `horaCierre: LocalTime`
-
-#### 4.2.3.2. Application Layer.
- `SedeService`
-- Métodos:
-  - `crearSede(command: CrearSedeCommand)`
-  - `editarHorario(command: EditarHorarioCommand)`
-
-#### 4.2.3.3. Interface Layer.
- `SedeController`
-- Métodos:
-  - `POST /sedes`
-  - `PUT /sedes/{id}/horarios`
-
-#### 4.2.3.4. Infrastructure Layer.
- `SedeRepository`
-- Métodos:
-  - `save(sede)`
-  - `findById(sedeId)`
-
-### 4.2.4. Bounded Context:  IoT Monitoring (Mesa Ocupada)
-Este contexto se encarga de monitorear la ocupación de las mesas mediante sensores.
-
-#### 4.2.4.1. Domain Layer.
- `Sensor` (Entity)
-- Atributos:
-  - `sensorId: UUID`
-  - `mesaId: UUID`
-  - `estado: boolean` (ocupado/libre)
-  - `ultimaLectura: LocalDateTime`
-
-#### 4.2.4.2. Application Layer.
- `MonitoreoOcupacionService`
-- Métodos:
-  - `actualizarEstadoSensor(sensorId, estado)`
-  - `obtenerEstadoMesa(mesaId)`
-
-#### 4.2.4.3. Interface Layer.
- `SensorController`
-- Métodos:
-  - `PUT /sensores/{id}`
-  - `GET /sensores/mesa/{mesaId}`
-
-#### 4.2.4.4. Infrastructure Layer.
- `SensorRepository`
-- Métodos:
-  - `save(sensor)`
-  - `findByMesaId(mesaId)`
-
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams.
-
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.
-
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.
-
-##### 4.2.X.6.2. Bounded Context Database Design Diagram.
