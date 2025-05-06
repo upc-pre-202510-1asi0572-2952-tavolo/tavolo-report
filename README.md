@@ -2159,7 +2159,28 @@ El diseño de la base de datos para el **Booking Bounded Context** refleja la es
 # Capítulo V: Solution UI/UX Design
 ## 5.1. Style Guidelines
 ### 5.1.1. General Style Guidelines
+
+En esta sección definimos los principios visuales y de interacción que rigen toda la experiencia Tavolo, asegurando coherencia entre plataformas. Establecemos una identidad visual clara mediante el uso de paleta de colores, tipografía, iconografía, espaciado y tono comunicacional unificado.
+
+![general_style_guideline](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/style_guideline/general_style.png?raw=true)
+
+
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
+
+Diseñamos interfaces web centradas en la claridad y eficiencia, priorizando la experiencia del usuario en pantallas grandes. Aplicamos estructuras responsivas, patrones de navegación consistentes y un uso óptimo del grid para garantizar accesibilidad y fluidez en entornos de escritorio.
+
+![web_style](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/style_guideline/web_style.png?raw=true)
+
+
+Adaptamos la experiencia Tavolo a dispositivos móviles optimizando la usabilidad táctil, la jerarquía visual y la agilidad en la navegación. Nos enfocamos en gestos intuitivos, tiempos de carga mínimos y transiciones suaves entre pantallas, respetando las limitaciones y ventajas del entorno móvil.
+
+![mobile_style](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/style_guideline/mobile_style.png?raw=true)
+
+
+Extendemos nuestros lineamientos a dispositivos IoT garantizando interfaces funcionales y simples. Diseñamos visuales claras y compactas, con códigos de color efectivos y elementos visuales que facilitan la comprensión.
+
+![iot_style](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/style_guideline/IOT_style.png?raw=true)
+
 ## 5.2. Information Architecture
 ### 5.2.1. Organization Systems
 ### 5.2.2. Labeling Systems
