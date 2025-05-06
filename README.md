@@ -2156,6 +2156,32 @@ El diseño de la base de datos para el **Booking Bounded Context** refleja la es
      - `start_time`: Hora de inicio del slot reservado.
      - `end_time`: Hora de fin del slot reservado.
 
+# Capítulo V: Solution UI/UX Design
+## 5.1. Style Guidelines
+### 5.1.1. General Style Guidelines
+### 5.1.2. Web, Mobile and IoT Style Guidelines
+## 5.2. Information Architecture
+### 5.2.1. Organization Systems
+### 5.2.2. Labeling Systems
+### 5.2.3. SEO Tags and Meta Tags
+### 5.2.4. Searching Systems
+### 5.2.5. Navigation Systems
+## 5.3. Landing Page UI Design
+### 5.3.1. Landing Page Wireframe
+### 5.3.2. Landing Page Mock-up
+## 5.4. Applications UX/UI Design
+### 5.4.1. Applications Wireframes
+### 5.4.2. Applications Wireflow Diagrams
+### 5.4.3. Applications Mock-ups
+### 5.4.4. Applications User Flow Diagrams
+## 5.5. Applications Prototyping
+# Capítulo VI: Product Implementation, Validation & Deployment
+## 6.1. Software Configuration Management
+### 6.1.1. Software Development Environment Configuration
+### 6.1.2. Source Code Management
+### 6.1.3. Source Code Style Guide & Conventions
+### 6.1.4. Software Deployment Configuration
+
 ### Conclusiones Generales del Proyecto
 
 * El proyecto TAVOLO se enfoca en optimizar la experiencia en cafeterías peruanas mediante una solución tecnológica IoT que gestiona la ocupación de mesas y reservas. Para los comensales, ofrece visualización del menú, disponibilidad de mesas en tiempo real y reservas; para los administradores, permite la gestión de mesas y reservas de la sede asignada. El objetivo es mejorar la experiencia del cliente y la eficiencia operativa del negocio.
