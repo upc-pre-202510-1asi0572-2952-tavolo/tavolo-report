@@ -2198,7 +2198,7 @@ En esta sección representamos una estructura funcional preliminar que organiza 
 
 Por otro lado, el mockup de la landing page de Tavolo muestra una versión visual refinada y casi final del diseño. Siguiendo el General Style Guidelines, respetamos la paleta de colores, la tipografía, etc. El contenido está organizado de manera clara y atractiva, destacando el valor principal de Tavolo: permitir a los usuarios monitorear el aforo en tiempo real y reservar su lugar en cafeterías de forma inteligente. Las secciones explican detalladamente cómo funciona la aplicación, sus beneficios para los usuarios y cafeterías, e incluyen botones de llamado a la acción, un tour virtual y un formulario de contacto. Este mockup transmite una experiencia profesional, acogedora y tecnológica.
 
-![landing_page_mockup](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/landing_page/LandingPage-Mockuos.png?raw=true)
+![landing_page_mockup](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/landing_page/LandingPage-Mockups.png?raw=true)
 
 ## 5.4. Applications UX/UI Design
 ### 5.4.1. Applications Wireframes
@@ -2208,6 +2208,29 @@ Por otro lado, el mockup de la landing page de Tavolo muestra una versión visua
 
 ## 5.5. Applications Prototyping
 
+**Web application prototyping**
+- Clientes<br>
+Se diseñaron prototipos que permiten a los clientes explorar restaurantes, realizar reservas de mesas, y visualizar menús digitales desde la plataforma web, con una interfaz intuitiva enfocada en la experiencia de usuario.<br>
+![web_prototype_cliente]()
+
+Evidencia: 
+[https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing](https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)
+
+- Administradores<br>
+Se diseñó una interfaz administrativa que facilita la gestión de reservas, control de disponibilidad de mesas y configuración de menús, permitiendo a cada sede de una cafetería tener un control completo desde la web.<br>
+![web_prototype_administrador]()
+
+Evidencia: 
+[https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link](https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link)
+
+
+**Mobile application prototyping**
+- Clientes<br>
+Se desarrollaron prototipos móviles que permiten a los usuarios buscar restaurantes cercanos, reservar mesas fácilmente, ver recomendaciones personalizadas y acceder a menús interactivos, priorizando la usabilidad en dispositivos móviles.<br>
+![mobile_prototype_cliente]()
+
+Evidencia: 
+[https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link](https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link)
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management
@@ -2239,3 +2262,7 @@ Por otro lado, el mockup de la landing page de Tavolo muestra una versión visua
 * **Registro de Entrevista #1 (Propietarios/Cliente - Diego Morales/Elias Yauri Paucar):** `https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing`
 * **Registro de Entrevista #2 (Propietarios - Jenna Vasquez):** `https://drive.google.com/file/d/1WTxiDxw4vaabZhFvibL8mHLINcrJR0_9/view?usp=sharing`
 * **Registro de Entrevista #2 (Clientes - Aleshka Fernández):** `https://youtu.be/QGSisj7iF-k`
+* **Video prototyping web cliente:** [https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing](https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)
+* **Video prototyping web administrador:**[https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link](https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link)
+* **Video prototyping mobile cliente:**[https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link](https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link)
+
