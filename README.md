@@ -2211,25 +2211,25 @@ Por otro lado, el mockup de la landing page de Tavolo muestra una versión visua
 **Web application prototyping**
 - Clientes<br>
 Se diseñaron prototipos que permiten a los clientes explorar restaurantes, realizar reservas de mesas, y visualizar menús digitales desde la plataforma web, con una interfaz intuitiva enfocada en la experiencia de usuario.<br>
-![web_prototype_cliente]()
+![web_prototype_cliente](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/prototyping/mobile_cliente.png?raw=true)
 
-Evidencia: 
+Video explicación: <br>
 [https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing](https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)
 
 - Administradores<br>
 Se diseñó una interfaz administrativa que facilita la gestión de reservas, control de disponibilidad de mesas y configuración de menús, permitiendo a cada sede de una cafetería tener un control completo desde la web.<br>
-![web_prototype_administrador]()
+![web_prototype_administrador](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/prototyping/web_administrador.png?raw=true)
 
-Evidencia: 
+Video explicación: <br>
 [https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link](https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link)
 
 
 **Mobile application prototyping**
 - Clientes<br>
 Se desarrollaron prototipos móviles que permiten a los usuarios buscar restaurantes cercanos, reservar mesas fácilmente, ver recomendaciones personalizadas y acceder a menús interactivos, priorizando la usabilidad en dispositivos móviles.<br>
-![mobile_prototype_cliente]()
+![mobile_prototype_cliente](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/prototyping/mobile_cliente.png?raw=true)
 
-Evidencia: 
+Video explicación:<br>
 [https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link](https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link)
 
 # Capítulo VI: Product Implementation, Validation & Deployment
