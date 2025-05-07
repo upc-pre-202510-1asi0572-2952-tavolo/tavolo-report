@@ -2189,13 +2189,26 @@ Extendemos nuestros lineamientos a dispositivos IoT garantizando interfaces func
 ### 5.2.5. Navigation Systems
 ## 5.3. Landing Page UI Design
 ### 5.3.1. Landing Page Wireframe
+
+En esta sección representamos una estructura funcional preliminar que organiza los principales bloques de contenido sin detalles visuales. Su objetivo es definir la jerarquía informativa y el flujo de navegación del usuario. Este diseño inicial se enfoca en la lógica y disposición del contenido, sin aplicar aún colores, imágenes o estilos gráficos.
+
+![landing_page_wireframe](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/landing_page/LandingPage-Wireframe.png?raw=true)
+
 ### 5.3.2. Landing Page Mock-up
+
+Por otro lado, el mockup de la landing page de Tavolo muestra una versión visual refinada y casi final del diseño. Siguiendo el General Style Guidelines, respetamos la paleta de colores, la tipografía, etc. El contenido está organizado de manera clara y atractiva, destacando el valor principal de Tavolo: permitir a los usuarios monitorear el aforo en tiempo real y reservar su lugar en cafeterías de forma inteligente. Las secciones explican detalladamente cómo funciona la aplicación, sus beneficios para los usuarios y cafeterías, e incluyen botones de llamado a la acción, un tour virtual y un formulario de contacto. Este mockup transmite una experiencia profesional, acogedora y tecnológica.
+
+![landing_page_mockup](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/landing_page/LandingPage-Mockuos.png?raw=true)
+
 ## 5.4. Applications UX/UI Design
 ### 5.4.1. Applications Wireframes
 ### 5.4.2. Applications Wireflow Diagrams
 ### 5.4.3. Applications Mock-ups
 ### 5.4.4. Applications User Flow Diagrams
+
 ## 5.5. Applications Prototyping
+
+
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management
 ### 6.1.1. Software Development Environment Configuration
