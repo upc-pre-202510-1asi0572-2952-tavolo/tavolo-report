@@ -2181,12 +2181,204 @@ Extendemos nuestros lineamientos a dispositivos IoT garantizando interfaces func
 
 ![iot_style](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/style_guideline/IOT_style.png?raw=true)
 
-## 5.2. Information Architecture
-### 5.2.1. Organization Systems
-### 5.2.2. Labeling Systems
-### 5.2.3. SEO Tags and Meta Tags
-### 5.2.4. Searching Systems
-### 5.2.5. Navigation Systems
+# 5.2. Information Architecture
+
+## 5.2.1. Organization Systems
+
+Para Tavolo, hemos implementado sistemas de organización que facilitan la navegación y acceso a la información tanto para comensales como para administradores. Estos sistemas están diseñados para proporcionar una experiencia de usuario intuitiva y eficiente.
+![Diagrama de Organization System de Tavolo](https://github.com/upc-pre-202510-1asi0572-2952-tavolotavolo-report/blob/feature/chapter-5/images/chapter-5/organization-system-iot.drawio.png?raw=true)
+<br>
+### Sistema jerárquico
+
+Organizamos la información en Tavolo siguiendo una estructura jerárquica clara:
+
+**Para comensales:**
+<br>El proceso comienza en la Landing Page, donde los usuarios son redirigidos a la aplicación web o móvil según su preferencia. Una vez allí, los comensales pueden registrarse o iniciar sesión con sus credenciales, accediendo a un panel principal que les muestra información relevante como reservas activas, sedes disponibles y menús de productos, incluyendo opciones de café y sandwiches. Para realizar una reserva, los comensales seleccionan una sede, visualizan las mesas disponibles y completan un formulario con los detalles de su reserva, como fecha, hora y número de personas. Además, pueden ubicar la sede en un mapa integrado para mayor comodidad.<br>
+
+**Para administradores:**
+<br>Por otro lado, los administradores acceden a un panel de gestión después de iniciar sesión. Desde allí, pueden administrar las mesas de las sedes, agregando nuevas o eliminando las existentes mediante un formulario sencillo. También tienen acceso a información detallada de las sedes y pueden visualizar las reservas de diferentes maneras: por mesa, por persona o en una lista completa. Esto les permite mantener un control eficiente sobre las operaciones del establecimiento.<br>
+
+### Sistema secuencial
+
+También implementamos una organización secuencial para procesos específicos:
+
+**Proceso de reserva:**
+1. Selección de sede
+2. Visualización de mesas disponibles
+3. Selección de mesa
+4. Selección de fecha y hora
+5. Confirmación de reserva
+
+**Proceso de gestión de mesas:**
+1. Visualización del inventario actual de las mesas
+2. Selección de acción (agregar/eliminar)
+3. Introducción de datos de la mesa
+4. Confirmación de la operación
+
+### Organización matricial
+
+Para la sección de exploración de sedes, utilizamos una organización matricial que permite filtrar por:
+- Ubicación
+- Disponibilidad inmediata
+- Horario de atención
+
+## 5.2.2. Labeling Systems
+Antes de implementar las etiquetas en nuestra plataforma, determinamos qué requisitos necesitamos cumplir. Las etiquetas nos permiten agregar información contextual a diferentes elementos de la plataforma Tavolo. A continuación, se detalla el sistema de etiquetado implementado:<br>
+
+### Etiquetas para mesas
+
+| Etiqueta | Descripción |
+|----------|-------------|
+| [DISPONIBLE] | Mesa que puede ser reservada en este momento |
+| [OCUPADA] | Mesa actualmente en uso por comensales |
+
+### Etiquetas para reservas
+
+| Etiqueta | Descripción |
+|----------|-------------|
+| [ACTIVA] | Reserva en curso (dentro del rango horario seleccionado) |
+
+### Etiquetas para productos en menú
+
+| Etiqueta | Descripción |
+|----------|-------------|
+| [CAFÉ] | Bebidas de café |
+| [REPOSTERÍA] | Pasteles, galletas y postres |
+| [SANDWICH] | Opciones de sándwiches y bocadillos |
+
+### Etiquetas para notificaciones de sistema
+
+| Etiqueta | Descripción |
+|----------|-------------|
+| [ÉXITO] | Confirmación de operación completada exitosamente |
+| [ERROR] | Problema durante una operación |
+
+Este sistema de etiquetas proporciona contexto visual inmediato y mejora la comprensión de la información presentada tanto para comensales como para administradores.<br>
+
+## 5.2.3. SEO Tags and Meta Tags
+
+La implementación adecuada de etiquetas SEO es crucial para mejorar la visibilidad de Tavolo en los motores de búsqueda. A continuación, detallamos las principales etiquetas implementadas:
+
+### Título
+Indica el tema de la página, debe ser corto y descriptivo, manteniéndose entre 55-60 caracteres.
+```html
+<title>Tavolo - Sistema de Gestión de Reservas y Ocupación para Cafeterías</title>
+```
+
+### Descripción
+Breve descripción del propósito de la plataforma.
+```html
+<meta name="description" content="Tavolo optimiza la experiencia en cafeterías con tecnología IoT, visualización en tiempo real de mesas disponibles y reservas digitales. ¡Mejora la experiencia de tus clientes!"/>
+```
+
+### Robots
+Indican a los motores de búsqueda qué hacer con la página.
+```html
+<meta name="robots" content="index, follow">
+```
+
+### Tipo de contenido
+Útil para que los motores de búsqueda identifiquen el idioma de la página.
+```html
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+```
+
+### Viewport Meta Tag
+Crucial para asegurar que el contenido se vea bien en dispositivos móviles.
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+### Open Graph Tags
+Para mejorar la apariencia cuando se comparte en redes sociales.
+```html
+<meta property="og:title" content="Tavolo - Gestión Inteligente para Cafeterías">
+<meta property="og:description" content="Sistema IoT para optimizar la ocupación de mesas en cafeterías">
+<meta property="og:image" content="https://tavolo.com/images/tavolo-preview.jpg">
+<meta property="og:url" content="https://tavolo.com">
+<meta property="og:type" content="website">
+```
+
+### Keywords
+Aunque tienen menor importancia actualmente, aún pueden ser útiles.
+```html
+<meta name="keywords" content="reservas cafeterías, mesas disponibles, IoT cafeterías, gestión restaurantes, sistema reservas tiempo real, ocupación mesas">
+```
+
+## 5.2.4. Searching Systems
+
+El sistema de búsqueda propuesto para Tavolo permitirá a los usuarios encontrar fácilmente información relevante según sus necesidades específicas. Este sistema está diseñado para facilitar tanto a comensales como a administradores la localización de sedes, reservas y disponibilidad de mesas.
+
+### Sistema de búsqueda para comensales
+
+| Nombre del filtro | Descripción |
+|-------------------|-------------|
+| Ubicación | El usuario podrá filtrar cafeterías por distrito o zona de la ciudad |
+| Disponibilidad inmediata | Muestra sólo las cafeterías con mesas disponibles en el momento actual |
+| Capacidad | Permite filtrar por mesas disponibles con capacidad específica (2, 4, 6 personas) |
+| Horario de atención | Filtra por cafeterías abiertas en un rango horario específico |
+| Distancia | Ordena los resultados desde la ubicación actual del usuario |
+
+### Sistema de búsqueda para administradores
+
+| Nombre del filtro | Descripción |
+|-------------------|-------------|
+| Búsqueda por número de mesa | Permite encontrar rápidamente información de una mesa específica |
+| Búsqueda por nombre de cliente | Localiza reservas realizadas por un cliente específico |
+| Historial de reservas | Busca en el histórico de reservas completadas |
+
+### Características adicionales del sistema de búsqueda
+
+- **Búsqueda en tiempo real**: Los resultados se actualizan automáticamente cada 10 segundos.
+- **Historial de búsquedas**: Mantiene un registro de búsquedas recientes.
+
+Este sistema de búsqueda está diseñado para ser intuitivo y proporcionar resultados precisos, mejorando así la experiencia del usuario y la eficiencia operativa de la plataforma Tavolo.
+
+## 5.2.5. Navigation Systems
+
+El sistema de navegación de la plataforma Tavolo guiará a los usuarios a través de las distintas secciones y pantallas, proporcionándoles acceso intuitivo a todas las funcionalidades. A continuación, se detallan los elementos que facilitan la navegación de los usuarios:
+
+### Navegación global
+
+| Nombre | Descripción |
+|--------|-------------|
+| Inicio | Página principal que muestra un resumen de la información relevante según el tipo de usuario |
+| Perfil | Permite al usuario gestionar su información personal y preferencias |
+
+### Navegación para comensales
+
+| Nombre | Descripción |
+|--------|-------------|
+| Explorar sedes | Muestra todas las cafeterías disponibles con información sobre su ubicación y disponibilidad |
+| Mis reservas | Permite al usuario ver sus reservas activas y su historial de reservas anteriores |
+| Ver menú | Acceso a los menús digitales de las diferentes cafeterías |
+| Mapa | Visualización geográfica de las sedes en un mapa interactivo |
+
+### Navegación para administradores
+
+| Nombre | Descripción |
+|--------|-------------|
+| Dashboard | Panel principal con indicadores clave sobre la operación de la sede |
+| Gestión de mesas | Interfaz para agregar, eliminar o modificar mesas en la sede asignada |
+| Reservas | Visualización y gestión de las reservas actuales y futuras |
+
+### Elementos de navegación
+
+- **Menú principal**: Barra de navegación fija en la parte superior que contiene los enlaces principales.
+- **Menú lateral desplegable**: Para acceso a funciones secundarias y configuraciones.
+- **Botones de acción flotantes**: Para acciones principales como "Realizar reserva" o "Agregar mesa".
+- **Gestos táctiles**: En la versión móvil, se implementan gestos como deslizar para ver más opciones o pinchar para ampliar el mapa.
+
+### Patrones de navegación
+
+- **Hub and spoke**: La pantalla principal actúa como centro desde donde se accede a las diferentes funcionalidades.
+- **Navegación por pestañas**: Para alternar entre diferentes vistas de una misma categoría.
+- **Navegación jerárquica**: Para profundizar en detalles (sede → mesas → reservas).
+- **Desplazamiento infinito**: En listados de sedes o mesas para cargar más resultados al desplazarse.
+
+Este sistema de navegación está diseñado para ser consistente, intuitivo y adaptable a diferentes dispositivos, asegurando que los usuarios puedan encontrar rápidamente la información o funcionalidad que necesitan sin esfuerzo excesivo.
+
 ## 5.3. Landing Page UI Design
 ### 5.3.1. Landing Page Wireframe
 
