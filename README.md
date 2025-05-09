@@ -2186,7 +2186,7 @@ Extendemos nuestros lineamientos a dispositivos IoT garantizando interfaces func
 ## 5.2.1. Organization Systems
 
 Para Tavolo, hemos implementado sistemas de organización que facilitan la navegación y acceso a la información tanto para comensales como para administradores. Estos sistemas están diseñados para proporcionar una experiencia de usuario intuitiva y eficiente.
-![Diagrama de Organization System de Tavolo](https://github.com/upc-pre-202510-1asi0572-2952-tavolotavolo-report/blob/feature/chapter-5/images/chapter-5/organization-system-iot.drawio.png?raw=true)
+![Diagrama de Organization System de Tavolo](https://raw.githubusercontent.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/feature/chapter-5/images/chapter-5/organization-system-iot.drawio.png)
 <br>
 ### Sistema jerárquico
 
@@ -2215,12 +2215,6 @@ También implementamos una organización secuencial para procesos específicos:
 3. Introducción de datos de la mesa
 4. Confirmación de la operación
 
-### Organización matricial
-
-Para la sección de exploración de sedes, utilizamos una organización matricial que permite filtrar por:
-- Ubicación
-- Disponibilidad inmediata
-- Horario de atención
 
 ## 5.2.2. Labeling Systems
 Antes de implementar las etiquetas en nuestra plataforma, determinamos qué requisitos necesitamos cumplir. Las etiquetas nos permiten agregar información contextual a diferentes elementos de la plataforma Tavolo. A continuación, se detalla el sistema de etiquetado implementado:<br>
@@ -2458,3 +2452,4 @@ Video explicación:<br>
 * **Video prototyping web administrador:**[https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link](https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link)
 * **Video prototyping mobile cliente:**[https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link](https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link)
 
+* **Diagrama de Organization System:**[https://drive.google.com/file/d/1OKUWtDfdjzkCRD_nNvbWuFwYXwBbUShL/view?usp=sharing](https://drive.google.com/file/d/1OKUWtDfdjzkCRD_nNvbWuFwYXwBbUShL/view?usp=sharing)
