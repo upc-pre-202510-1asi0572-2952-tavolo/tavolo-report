@@ -2193,6 +2193,45 @@ El diseño de la base de datos para el **Booking Bounded Context** refleja la es
 #### 6.2.1.3. Sprint Backlog 1.
 
 
+| Sprint # 	| Sprint 1 	|  	|  	|  	|  	|  	|  	|
+|---	|---	|---	|---	|---	|---	|---	|---	|
+| User Story 	|  	| Work-Item/Task 	|  	|  	|  	|  	|  	|
+| Id 	| Title 	| Id 	| Title 	| Description 	| Estimation (Hours) 	| Assigned To 	| Status 	|
+| US001 	| Ver sección "¿Qué es Tavolo?" 	| TA1 	| Crear componente informativo 	| Diseñar y codificar el componente de la sección “¿Qué es Tavolo?” 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+|  	|  	| TA2 	| Integrar contenido e imágenes 	| Subir textos e imágenes proporcionados al frontend 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+| US002 	| Ver sección "Características clave" 	| TA1 	| Crear layout de características 	| Maquetar y estilizar la sección de características 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+|  	|  	| TA2 	| Implementar íconos e interactividad 	| Asociar íconos representativos a cada característica con animaciones 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+| US003 	| Ver la galería virtual 	| TA1 	| Crear carrusel de imágenes 	| Implementar galería interactiva con carrusel 	| 1 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+|  	|  	| TA2 	| Integrar imágenes reales de sedes 	| Subir imágenes y validar visualización responsive 	| 1 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+| US004 	| Usar el formulario de contacto 	| TA1 	| Diseñar formulario 	| Maquetar campos necesarios y validaciones 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+|  	|  	| TA2 	| Configurar envío de datos 	| Configurar envío POST con mensajes de confirmación 	| 2 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+| US005 	| Ver menú digital de una sede 	| TA1 	| Crear vista para menú por sede 	| Diseñar vista filtrada por sede seleccionada 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+|  	|  	| TA2 	| Mostrar platos con categorías 	| Agregar cards por categoría con imagen, nombre y precio 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+| US006 	| Visualizar reserva activa 	| TA1 	| Crear vista de reservas activas 	| Mostrar reserva activa del usuario al iniciar sesión 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+|  	|  	| TA2 	| Agregar detalles de la reserva 	| Visualizar sede, horario, cantidad de personas y estado 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+| US007 	| Ver disponibilidad de mesas en tiempo real 	| TA1 	| Integrar disponibilidad con backend 	| Mostrar mesas libres en tiempo real según sede y horario 	| 4 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+|  	|  	| TA2 	| Mostrar visualmente mesas ocupadas/libres 	| Agregar colores o íconos para representar disponibilidad 	| 1 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+| US008 	| Reservar una mesa 	| TA1 	| Crear formulario de reserva 	| Formulario con sede, fecha, hora y cantidad de personas 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+|  	|  	| TA2 	| Enviar reserva al backend 	| Conexión con API para guardar reserva y mostrar confirmación 	| 1/2 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+| US010 	| Registro de cuenta de comensal 	| TA1 	| Maquetar formulario de registro 	| Campos: nombre, correo, contraseña 	| 1 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+|  	|  	| TA2 	| Validar datos e integrarlo con backend 	| Validar datos y enviar a API para crear cuenta 	| 1 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+| US011 	| Inicio de sesión de cuenta de comensal 	| TA1 	| Diseñar pantalla de login 	| Formulario de ingreso con validación 	| 2 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+|  	|  	| TA2 	| Manejo de sesión y redirección 	| Guardar token en localStorage y redirigir según rol 	| 2 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+| US012 	| Agregar nuevas mesas 	| TA1 	| Diseñar formulario de creación 	| Formulario para admins para añadir mesas 	| 2 	| Castillo Castillo, Jair Alexander 	| Done 	|
+|  	|  	| TA2 	| Enviar datos a backend 	| Validar y enviar datos de la nueva mesa al servidor 	| 2 	| Castillo Castillo, Jair Alexander 	| Done 	|
+| US013 	| Visualizar reservas realizadas 	| TA1 	| Listar reservas del comensal 	| Mostrar historial con fechas y estados 	| 2 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+|  	|  	| TA2 	| Agregar opciones de filtro por fecha/estado 	| Filtros por mes o estado (activa, cancelada, completada) 	| 1 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+| US014 	| Ver la sede asignada 	| TA1 	| Mostrar sede asignada en perfil 	| Mostrar sede que administra el usuario (admin) 	| 1/2 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+|  	|  	| TA2 	| Obtener sede desde el backend 	| Lógica para obtener sede del usuario y mostrarla 	| 1/2 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+| US015 	| Eliminar mesas 	| TA1 	| Crear botón de eliminación 	| Agregar ícono de papelera para eliminar mesa 	| 1 	| Castillo Castillo, Jair Alexander 	| Done 	|
+|  	|  	| TA2 	| Confirmar y eliminar en backend 	| Confirmación con modal y eliminación en API 	| 1 	| Castillo Castillo, Jair Alexander 	| Done 	|
+| US016 	| Inicio de sesión de administrador 	| TA1 	| Crear vista de login para admins 	| Vista distinta a la de comensales, con validación 	| 2 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+|  	|  	| TA2 	| Asignar token y redirigir a dashboard 	| Lógica de inicio de sesión y navegación hacia panel 	| 1 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+| US017 	| Registro de cuenta de administrador 	| TA1 	| Crear formulario con rol "admin" 	| Campos de registro con rol predefinido como admin 	| 1 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+|  	|  	| TA2 	| Validar correo corporativo 	| Validación de correo institucional para asegurar rol 	| 2 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+| US018 	| Acceder a todos los módulos del sistema 	| TA1 	| Mostrar menú de navegación 	| Menú para navegación entre módulos: reservas, mesas, reportes 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+|  	|  	| TA2 	| Proteger rutas con roles 	| Validar acceso solo para administradores 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+
 #### 6.2.1.4. Development Evidence for Sprint Review.
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 #### 6.2.1.6. Execution Evidence for Sprint Review.
