@@ -1218,6 +1218,7 @@ Este contexto se encarga del registro y configuración de las mesas en cada sede
   - `findBySede(sedeId)`
 
 ### 4.2.3. Bounded Context: Headquarter Management
+
 Administra la información de cada sede del negocio: ubicación, contacto y horarios.
 
 #### 4.2.3.1. Domain Layer.
@@ -1250,7 +1251,6 @@ Administra la información de cada sede del negocio: ubicación, contacto y hora
   - `save(sede)`
   - `findById(sedeId)`
 
-### 4.2.4. Bounded Context:  IoT Monitoring (Mesa Ocupada)
 Este contexto se encarga de monitorear la ocupación de las mesas mediante sensores.
 
 #### 4.2.4.1. Domain Layer.
@@ -1286,3 +1286,221 @@ Este contexto se encarga de monitorear la ocupación de las mesas mediante senso
 ##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.
 
 ##### 4.2.X.6.2. Bounded Context Database Design Diagram.
+
+### 4.2.4. Bounded Context: IoT Monitoring (Mesa Ocupada)
+Este contexto se encarga de monitorear la ocupación de las mesas mediante sensores IoT, procesando los datos en tiempo real para determinar si una mesa está ocupada o disponible. La información generada es utilizada por el Table Management Bounded Context para actualizar el estado de las mesas en el sistema.
+
+#### 4.2.4.1. Domain Layer
+
+`Sensor` (Entity)
+- Propósito: Representar un dispositivo físico de detección de peso instalado en una mesa.
+- Atributos:
+  - `sensorId: UUID` - Identificador único del sensor.
+  - `mesaId: UUID` - Identificador de la mesa a la que está asociado el sensor.
+  - `estado: boolean` - Estado actual del sensor (ocupado/libre).
+  - `ultimaLectura: LocalDateTime` - Momento en que se realizó la última lectura.
+  - `umbralPeso: double` - Valor mínimo de peso para considerar la mesa ocupada.
+  - `lecturasConsecutivas: int` - Número de lecturas con el mismo estado requeridas para confirmar un cambio.
+
+`LecturaSensor` (Value Object)
+- Propósito: Representar una medición individual realizada por el sensor.
+- Atributos:
+  - `valorPeso: double` - Valor numérico del peso detectado.
+  - `timestamp: LocalDateTime` - Momento exacto de la lectura.
+  - `estaOcupado: boolean` - Interpretación lógica del valor (ocupado o libre).
+
+`EstadoSensor` (Enumeration)
+- Propósito: Definir los posibles estados de un sensor.
+- Valores:
+  - `OCUPADO` - El sensor detecta peso suficiente para considerar la mesa ocupada.
+  - `LIBRE` - El sensor no detecta peso o está por debajo del umbral.
+  - `MANTENIMIENTO` - El sensor está temporalmente fuera de servicio.
+  - `DESCONECTADO` - El sensor no está enviando datos al sistema.
+
+`ConfiguracionSensor` (Value Object)
+- Propósito: Almacenar los parámetros de configuración del sensor.
+- Atributos:
+  - `frecuenciaLectura: int` - Intervalo en segundos entre lecturas.
+  - `umbralPeso: double` - Valor mínimo para detección de ocupación.
+  - `tiempoConfirmacion: int` - Tiempo mínimo para confirmar un cambio de estado.
+
+`SensorActivado` (Domain Event)
+- Propósito: Evento que se dispara cuando un sensor es activado en el sistema.
+- Atributos:
+  - `sensorId: UUID` - Identificador del sensor activado.
+  - `mesaId: UUID` - Identificador de la mesa asociada.
+  - `timestamp: LocalDateTime` - Momento de la activación.
+
+`CambioEstadoDetectado` (Domain Event)
+- Propósito: Evento que se dispara cuando un sensor detecta un cambio en la ocupación de una mesa.
+- Atributos:
+  - `sensorId: UUID` - Identificador del sensor que detectó el cambio.
+  - `mesaId: UUID` - Identificador de la mesa afectada.
+  - `estadoAnterior: EstadoSensor` - Estado previo al cambio.
+  - `estadoNuevo: EstadoSensor` - Estado detectado actualmente.
+  - `timestamp: LocalDateTime` - Momento en que se detectó el cambio.
+
+#### 4.2.4.2. Application Layer
+
+`MonitoreoOcupacionService` (Service)
+- Propósito: Orquestar la lógica de negocio relacionada con el monitoreo de ocupación.
+- Métodos:
+  - `actualizarEstadoSensor(UUID sensorId, boolean estado)` - Procesa una actualización de estado desde un sensor.
+  - `obtenerEstadoMesa(UUID mesaId)` - Recupera el estado actual de una mesa específica.
+  - `registrarNuevoSensor(UUID mesaId, ConfiguracionSensor configuracion)` - Añade un nuevo sensor al sistema.
+  - `calibrarSensor(UUID sensorId, double umbral)` - Ajusta la sensibilidad del sensor.
+  - `procesarLecturaCruda(UUID sensorId, double valorPeso)` - Interpreta los datos crudos del sensor.
+
+`SensorCommandService` (Service)
+- Propósito: Manejar comandos específicos para los sensores.
+- Métodos:
+  - `activarSensor(UUID sensorId)` - Activa un sensor previamente registrado.
+  - `desactivarSensor(UUID sensorId)` - Pone un sensor en modo inactivo.
+  - `resetearSensor(UUID sensorId)` - Reinicia un sensor que presenta problemas.
+  - `actualizarConfiguracion(UUID sensorId, ConfiguracionSensor configuracion)` - Modifica parámetros del sensor.
+
+`SensorQueryService` (Service)
+- Propósito: Manejar consultas relacionadas con los sensores.
+- Métodos:
+  - `obtenerHistorialLecturas(UUID sensorId, LocalDateTime inicio, LocalDateTime fin)` - Recupera lecturas históricas.
+  - `obtenerSensoresPorEstado(EstadoSensor estado)` - Lista sensores según su estado actual.
+  - `obtenerEstadisticasSensor(UUID sensorId)` - Genera métricas de funcionamiento del sensor.
+
+`CambioEstadoHandler` (Event Handler)
+- Propósito: Gestionar la reacción del sistema ante cambios de estado detectados.
+- Métodos:
+  - `on(CambioEstadoDetectado event)` - Reacciona a un evento de cambio de estado.
+  - `notificarTableManagement(UUID mesaId, boolean ocupada)` - Comunica el cambio al contexto de Table Management.
+
+#### 4.2.4.3. Interface Layer
+
+`SensorController` (Controller)
+- Propósito: Exponer endpoints REST para interactuar con los sensores.
+- Métodos:
+  - `PUT /api/v1/sensores/{sensorId}/estado` - Actualiza el estado de un sensor específico.
+  - `GET /api/v1/sensores/mesa/{mesaId}` - Obtiene el estado del sensor asociado a una mesa.
+  - `POST /api/v1/sensores` - Registra un nuevo sensor en el sistema.
+  - `GET /api/v1/sensores/{sensorId}/historial` - Recupera el historial de lecturas de un sensor.
+  - `PUT /api/v1/sensores/{sensorId}/calibrar` - Ajusta la calibración del sensor.
+  - `GET /api/v1/sensores/estado/{estado}` - Lista sensores con un estado específico.
+
+`MqttGateway` (Gateway)
+- Propósito: Gestionar la comunicación vía MQTT con los dispositivos IoT físicos.
+- Métodos:
+  - `recibir(String topic, byte[] payload)` - Procesa mensajes recibidos de los sensores.
+  - `enviar(String topic, byte[] payload)` - Envía comandos o configuraciones a los sensores.
+  - `suscribir(String topic)` - Registra interés en un canal de comunicación específico.
+
+`EstadoSensorDto` (DTO)
+- Propósito: Transferir información del estado del sensor entre capas.
+- Atributos:
+  - `sensorId: UUID` - Identificador del sensor.
+  - `mesaId: UUID` - Identificador de la mesa asociada.
+  - `ocupada: boolean` - Estado de ocupación.
+  - `ultimaActualizacion: LocalDateTime` - Momento de la última actualización.
+  - `nivelBateria: int` - Nivel de batería del dispositivo (0-100%).
+  - `intensidadSenal: int` - Calidad de la conexión inalámbrica.
+
+`SensorMapper` (Mapper)
+- Propósito: Transformar entre entidades de dominio y DTOs para la comunicación externa.
+- Métodos:
+  - `toDto(Sensor sensor)` - Convierte una entidad Sensor a DTO.
+  - `toEntity(EstadoSensorDto dto)` - Convierte un DTO a entidad Sensor.
+
+#### 4.2.4.4. Infrastructure Layer
+
+`SensorRepository` (Repository Interface)
+- Propósito: Definir el contrato para la persistencia de sensores.
+- Métodos:
+  - `save(Sensor sensor)` - Guarda o actualiza un sensor.
+  - `findByMesaId(UUID mesaId)` - Recupera un sensor por la mesa asociada.
+  - `findById(UUID sensorId)` - Recupera un sensor por su identificador.
+  - `findByEstado(EstadoSensor estado)` - Lista sensores según su estado.
+  - `deleteById(UUID sensorId)` - Elimina un sensor del sistema.
+
+`LecturaRepository` (Repository Interface)
+- Propósito: Gestionar la persistencia de las lecturas individuales de los sensores.
+- Métodos:
+  - `saveAll(List<LecturaSensor> lecturas)` - Guarda múltiples lecturas en lote.
+  - `findBySensorIdBetween(UUID sensorId, LocalDateTime inicio, LocalDateTime fin)` - Recupera lecturas de un período.
+  - `deleteOlderThan(LocalDateTime threshold)` - Elimina lecturas antiguas para mantenimiento.
+
+`MqttSensorAdapter` (Adapter)
+- Propósito: Implementar la comunicación específica con los sensores mediante MQTT.
+- Métodos:
+  - `configurarConexion(String brokerUrl, String clientId)` - Establece parámetros de conexión.
+  - `procesarMensajeEntrada(String topic, MqttMessage message)` - Maneja mensajes entrantes.
+  - `enviarComandoASensor(UUID sensorId, String comando, Object payload)` - Envía instrucciones a un sensor.
+
+`SensorDataCache` (Cache)
+- Propósito: Almacenar temporalmente datos de sensores para acceso rápido y reducir consultas a la base de datos.
+- Métodos:
+  - `getEstado(UUID mesaId)` - Recupera rápidamente el estado actual de una mesa.
+  - `actualizarEstado(UUID mesaId, boolean ocupada)` - Actualiza el caché con nueva información.
+  - `invalidarEntrada(UUID mesaId)` - Marca una entrada como inválida para forzar recarga.
+
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img src="./images/c4-model/bc-component-diagram/IOT-Monitoring-BC-Component-Diagram.png" alt="IoT Monitoring BC Component Diagram"/>
+
+El diagrama muestra la arquitectura de componentes del IoT Monitoring Bounded Context, ilustrando:
+
+1. **Interface Layer**: Incluye SensorController que expone endpoints REST y MqttGateway que se comunica con los dispositivos físicos.
+
+2. **Application Layer**: Contiene los servicios MonitoreoOcupacionService, SensorCommandService y SensorQueryService que implementan la lógica de negocio.
+
+3. **Domain Layer**: Define las entidades principales como Sensor, LecturaSensor y los eventos de dominio.
+
+4. **Infrastructure Layer**: Incluye los repositorios para persistencia y adaptadores para la comunicación IoT.
+
+5. **Integración**: Muestra la comunicación con el Table Management Bounded Context mediante eventos.
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+<img src="./images/c4-model/bc-component-diagram/iot_monitoring_domain_class_diagram.png" alt="IoT Monitoring Domain Layer Class Diagram"/>
+
+El diagrama de clases de dominio ilustra la estructura del IoT Monitoring Bounded Context, mostrando:
+
+- **Entidad Sensor**: Componente central que representa el dispositivo físico.
+- **Value Objects**: ConfiguracionSensor y LecturaSensor encapsulan conceptos inmutables.
+- **Enumeraciones**: EstadoSensor define los posibles estados de operación.
+- **Eventos de Dominio**: CambioEstadoDetectado y SensorActivado representan sucesos importantes.
+- **Relaciones**: Muestran cómo se conectan estos componentes para formar el modelo de dominio completo.
+
+##### 4.2.4.6.2. Bounded Context Database Design Diagram
+
+<img src="./images/c4-model/bc-component-diagram/iot_monitoring_bd.jpg" alt="IoT Monitoring Database Design"/>
+
+El diseño de la base de datos para el IoT Monitoring Bounded Context incluye:
+
+1. **Tabla Sensores**: Almacena información de los sensores físicos.
+   - `sensor_id` (PK): Identificador único del sensor.
+   - `mesa_id`: Relación con la mesa asociada.
+   - `estado`: Estado actual del sensor (ocupado/libre/mantenimiento).
+   - `ultima_lectura`: Timestamp de la última actualización.
+   - `umbral_peso`: Valor de calibración.
+   - `configuracion_id`: Relación con la configuración aplicada.
+
+2. **Tabla Lecturas**: Registra el historial de mediciones de cada sensor.
+   - `lectura_id` (PK): Identificador único de la lectura.
+   - `sensor_id` (FK): Sensor que generó la lectura.
+   - `valor_peso`: Medición numérica obtenida.
+   - `timestamp`: Momento exacto de la lectura.
+   - `ocupado`: Interpretación booleana del valor.
+
+3. **Tabla ConfiguracionSensores**: Almacena parámetros de operación de los sensores.
+   - `configuracion_id` (PK): Identificador único de la configuración.
+   - `frecuencia_lectura`: Intervalo entre lecturas en segundos.
+   - `umbral_peso`: Nivel mínimo para considerar ocupación.
+   - `tiempo_confirmacion`: Tiempo requerido para confirmar cambios.
+
+4. **Tabla EventosSensor**: Registra eventos significativos para análisis y auditoría.
+   - `evento_id` (PK): Identificador único del evento.
+   - `sensor_id` (FK): Sensor relacionado.
+   - `tipo_evento`: Categoría del evento (activación, cambio estado, error).
+   - `descripcion`: Detalles adicionales del evento.
+   - `timestamp`: Momento exacto del evento.
+
+El diseño implementa índices en los campos `sensor_id`, `mesa_id` y `timestamp` para optimizar las consultas frecuentes sobre el estado actual e histórico de cada sensor.
