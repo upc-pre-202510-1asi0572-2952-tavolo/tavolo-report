@@ -2441,7 +2441,7 @@ En esta sección se presenta el diagrama de componentes del **Booking Bounded Co
 
 El propósito de este diagrama es proporcionar una visión clara y estructurada de cómo se organizan los componentes dentro del contexto, facilitando la comprensión de su arquitectura y permitiendo identificar puntos de integración y responsabilidades.
 
-<img src="./images/c4-model/bc-component-diagram/IOT-Booking-BC-Component-Diagram.svg" alt="Booking BC Component Diagram"/><br>
+<img src="./images/c4-model/bc-component-diagram/IOT-Booking-BC-Component-Diagram.png" alt="Booking BC Component Diagram"/><br>
 
 El **Booking Bounded Context** está compuesto por los siguientes módulos principales:
 
@@ -2471,7 +2471,7 @@ En este apartado se presentan los diagramas que ofrecen un mayor nivel de detall
 
 El diagrama de clases correspondiente a la **Domain Layer** del **Booking Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio. También se destacan las relaciones entre estos elementos, como asociaciones, composiciones y dependencias.
 
-<img src="./images/c4-model/class-diagram/booking_domain_class_diagram.webp" alt="Booking BC Domain Layer Class Diagram"/><br>
+<img src="./images/c4-model/bc-component-diagram/booking_domain_class_diagram.png" alt="Booking BC Domain Layer Class Diagram"/><br>
 
 **Elementos principales del diagrama:**
 
@@ -2497,12 +2497,11 @@ El diagrama de clases correspondiente a la **Domain Layer** del **Booking Bounde
 - Los objetos de valor encapsulan datos inmutables y validaciones específicas, asegurando consistencia en el dominio.
 
 
-
 ##### 4.2.4.6.2. Bounded Context Database Design Diagram.
 
 El diseño de la base de datos para el **Booking Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional. 
 
-<img src="./images/c4-model/bd/booking_bd.png" alt="Booking BC Data Base Diagram"/><br>
+<img src="./images/c4-model/bc-component-diagram/booking_bd.png" alt="Booking BC Data Base Diagram"/><br>
 
 **Este diseño incluye las siguientes tablas principales:**
 
@@ -2544,385 +2543,6 @@ Voy a completar el análisis táctico de Domain-Driven Design para los bounded c
 
 
 El **Table Management Bounded Context** es responsable de gestionar la información y el estado de las mesas en las cafeterías. Este contexto se encarga de registrar, actualizar y consultar el estado de las mesas, así como su capacidad, ubicación dentro de la sede y otros atributos relevantes. Es el núcleo central que permite la visualización en tiempo real del estado de ocupación de las mesas para los usuarios.
-
-#### 4.2.2.1. Domain Layer
-
-La **Domain Layer** del Table Management Bounded Context encapsula la lógica de negocio relacionada con la gestión de mesas. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
-
-##### **Aggregates**
-1. **Table**
-   - **Propósito**: El agregado principal es la mesa (`Table`), que encapsula la lógica de negocio relacionada con la gestión de la mesa y su estado de ocupación.
-   - **Atributos**:
-     - `tableNumber`: Número identificativo de la mesa, representado como un objeto de valor `TableNumber`.
-     - `headquarterId`: Identificador de la sede a la que pertenece la mesa, representado como un objeto de valor `HeadquarterId`.
-     - `capacity`: Capacidad de la mesa (número de sillas), representada como un objeto de valor `Capacity`.
-     - `status`: Estado actual de la mesa, representado como un objeto de valor `TableStatus`.
-     - `location`: Ubicación física de la mesa dentro de la sede, representada como un objeto de valor `Location`.
-   - **Métodos**:
-     - `updateStatus(TableStatus status)`: Actualiza el estado de la mesa.
-     - `assignToHeadquarter(HeadquarterId headquarterId)`: Asigna la mesa a una sede específica.
-     - `changeCapacity(Capacity capacity)`: Modifica la capacidad de la mesa.
-     - `relocate(Location location)`: Actualiza la ubicación de la mesa dentro de la sede.
-   - **Características**:
-     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en las mesas.
-     - Gestiona la validación de estados y cambios según reglas de negocio.
-
-##### **Entities**
-1. **Chair**
-   - **Propósito**: La entidad `Chair` representa cada silla asociada a una mesa, con su estado de ocupación.
-   - **Atributos**:
-     - `id`: Identificador único de la silla.
-     - `chairNumber`: Número identificativo de la silla dentro de la mesa.
-     - `status`: Estado actual de la silla (ocupada o libre), representado como un objeto de valor `ChairStatus`.
-   - **Métodos**:
-     - `updateStatus(ChairStatus status)`: Actualiza el estado de la silla.
-     - `isOccupied()`: Verifica si la silla está ocupada.
-
-##### **Value Objects**
-1. **TableNumber**
-   - **Propósito**: Representa el número identificativo de una mesa.
-   - **Validaciones**:
-     - El número debe ser positivo.
-     - El número debe ser único dentro de una sede.
-
-2. **HeadquarterId**
-   - **Propósito**: Representa el identificador único de una sede.
-   - **Validaciones**:
-     - El identificador no puede ser nulo ni negativo.
-
-3. **Capacity**
-   - **Propósito**: Representa la capacidad de una mesa en términos de número de personas que pueden sentarse.
-   - **Validaciones**:
-     - La capacidad debe ser un número positivo.
-     - La capacidad máxima permitida es de 12 personas.
-
-4. **TableStatus**
-   - **Propósito**: Enumera los estados posibles de una mesa.
-   - **Valores**:
-     - `AVAILABLE`: La mesa está disponible para ser ocupada.
-     - `OCCUPIED`: La mesa está ocupada por comensales.
-     - `RESERVED`: La mesa está reservada para un futuro cercano.
-     - `MAINTENANCE`: La mesa está fuera de servicio temporalmente.
-
-5. **ChairStatus**
-   - **Propósito**: Enumera los estados posibles de una silla.
-   - **Valores**:
-     - `OCCUPIED`: La silla está ocupada por un comensal.
-     - `FREE`: La silla está libre.
-
-6. **Location**
-   - **Propósito**: Representa la ubicación física de una mesa dentro de la sede.
-   - **Atributos**:
-     - `zone`: Zona de la cafetería (interior, terraza, etc.).
-     - `coordinates`: Coordenadas relativas dentro del plano de la sede.
-   - **Validaciones**:
-     - Las coordenadas deben estar dentro de los límites del plano de la sede.
-
-#### **Commands**
-1. **CreateTableCommand**
-   - **Propósito**: Comando para crear una nueva mesa en una sede específica.
-   - **Atributos**:
-     - `tableNumber`: Número de la mesa.
-     - `headquarterId`: ID de la sede donde se ubicará la mesa.
-     - `capacity`: Capacidad de la mesa.
-     - `location`: Ubicación de la mesa dentro de la sede.
-
-2. **UpdateTableStatusCommand**
-   - **Propósito**: Comando para actualizar el estado de una mesa existente.
-   - **Atributos**:
-     - `tableId`: ID de la mesa a actualizar.
-     - `status`: Nuevo estado de la mesa.
-
-3. **DeleteTableCommand**
-   - **Propósito**: Comando para eliminar una mesa existente.
-   - **Atributos**:
-     - `tableId`: ID de la mesa a eliminar.
-     - `headquarterId`: ID de la sede a la que pertenece la mesa.
-
-#### **Queries**
-1. **GetTableByIdQuery**
-   - **Propósito**: Recupera una mesa específica por su ID.
-   - **Atributos**:
-     - `tableId`: ID de la mesa a consultar.
-
-2. **GetTablesByHeadquarterQuery**
-   - **Propósito**: Recupera todas las mesas asociadas a una sede específica.
-   - **Atributos**:
-     - `headquarterId`: ID de la sede a consultar.
-
-3. **GetTablesByStatusQuery**
-   - **Propósito**: Recupera todas las mesas que tienen un estado específico.
-   - **Atributos**:
-     - `status`: Estado de las mesas a consultar.
-     - `headquarterId`: ID de la sede a consultar.
-
-#### **Events**
-1. **TableCreatedEvent**
-   - **Propósito**: Evento que se dispara cuando se crea una nueva mesa.
-   - **Atributos**:
-     - `tableId`: ID de la mesa creada.
-     - `headquarterId`: ID de la sede donde se ubicó la mesa.
-
-2. **TableStatusChangedEvent**
-   - **Propósito**: Evento que se dispara cuando cambia el estado de una mesa.
-   - **Atributos**:
-     - `tableId`: ID de la mesa.
-     - `previousStatus`: Estado anterior de la mesa.
-     - `newStatus`: Nuevo estado de la mesa.
-     - `timestamp`: Momento en que ocurrió el cambio.
-
-#### 4.2.2.2. Interface Layer
-
-La **Interface Layer** del Table Management Bounded Context expone los puntos de entrada al sistema a través de controladores REST. Esta capa permite la interacción con las entidades del dominio mediante solicitudes HTTP, facilitando la comunicación entre los clientes y el sistema. Además, incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
-
-#### **Access Control Layer (ACL)**
-
-1. **TableManagementContextFacade**
-   - **Propósito**: Proporciona una interfaz simplificada para interactuar con el dominio del Table Management Bounded Context desde otros contextos. Permite consultar información sobre las mesas, como su disponibilidad, capacidad y ubicación.
-   - **Métodos principales**:
-     - `getTableStatus(Long tableId)`: Devuelve el estado actual de una mesa.
-     - `getTablesByStatus(Long headquarterId, String status)`: Devuelve las mesas de una sede con un estado específico.
-     - `existsTable(Long tableId)`: Verifica si una mesa existe en el sistema.
-   - **Dependencias**:
-     - `TableQueryService`: Servicio encargado de manejar las consultas relacionadas con las mesas.
-
-#### **Controllers**
-
-Los controladores son responsables de manejar las solicitudes HTTP y delegar la lógica de negocio a los servicios correspondientes. A continuación, se describen los principales controladores:
-
-1. **TableController**
-   - **Propósito**: Gestiona las operaciones relacionadas con las mesas.
-   - **Endpoints**:
-     - `POST /api/v1/tables`: Crea una nueva mesa.
-     - `GET /api/v1/tables/{tableId}`: Obtiene los detalles de una mesa específica por su ID.
-     - `GET /api/v1/tables`: Obtiene la lista de todas las mesas, con opción a filtrar por sede.
-     - `GET /api/v1/headquarters/{headquarterId}/tables`: Obtiene las mesas de una sede específica.
-     - `PUT /api/v1/tables/{tableId}/status`: Actualiza el estado de una mesa.
-     - `DELETE /api/v1/tables/{tableId}`: Elimina una mesa existente.
-   - **Dependencias**:
-     - `TableCommandService`: Servicio encargado de manejar los comandos relacionados con las mesas.
-     - `TableQueryService`: Servicio encargado de manejar las consultas relacionadas con las mesas.
-
-#### **Resources**
-
-Los recursos representan los datos que se exponen a través de la API REST. Estos recursos son utilizados para estructurar las respuestas de los controladores y asegurar una representación clara y consistente de los datos. A continuación, se describen los principales recursos:
-
-1. **CreateTableResource**
-   - **Propósito**: Representa los datos necesarios para crear una nueva mesa.
-   - **Atributos**:
-     - `tableNumber`: Número de la mesa.
-     - `headquarterId`: ID de la sede donde se ubicará la mesa.
-     - `capacity`: Capacidad de la mesa.
-     - `zone`: Zona de la cafetería donde se ubicará la mesa.
-     - `xPosition`: Coordenada X de la mesa en el plano.
-     - `yPosition`: Coordenada Y de la mesa en el plano.
-
-2. **TableResource**
-   - **Propósito**: Representa una mesa en el sistema.
-   - **Atributos**:
-     - `id`: ID único de la mesa.
-     - `tableNumber`: Número de la mesa.
-     - `headquarterId`: ID de la sede donde está ubicada la mesa.
-     - `capacity`: Capacidad de la mesa.
-     - `status`: Estado actual de la mesa.
-     - `zone`: Zona de la cafetería donde está ubicada la mesa.
-     - `position`: Coordenadas de la mesa en el plano.
-
-3. **UpdateTableStatusResource**
-   - **Propósito**: Representa los datos necesarios para actualizar el estado de una mesa.
-   - **Atributos**:
-     - `status`: Nuevo estado de la mesa.
-
-#### **Transformers**
-
-Los transformadores son responsables de convertir las entidades del dominio en recursos y viceversa. Esto asegura que los datos expuestos a través de la API REST sean consistentes y estén en el formato esperado. A continuación, se describen los principales transformadores:
-
-1. **CreateTableCommandFromResourceAssembler**
-   - **Propósito**: Convierte un recurso `CreateTableResource` en un comando `CreateTableCommand`.
-   - **Método principal**:
-     - `toCommandFromResource(CreateTableResource resource)`: Transforma los datos de creación de una mesa en un comando.
-
-2. **TableResourceFromEntityAssembler**
-   - **Propósito**: Convierte una entidad `Table` en un recurso `TableResource`.
-   - **Método principal**:
-     - `toResourceFromEntity(Table entity)`: Transforma una mesa del dominio en un recurso.
-
-3. **UpdateTableStatusCommandFromResourceAssembler**
-   - **Propósito**: Convierte un recurso `UpdateTableStatusResource` en un comando `UpdateTableStatusCommand`.
-   - **Método principal**:
-     - `toCommandFromResource(UpdateTableStatusResource resource, Long tableId)`: Transforma los datos de actualización de estado en un comando.
-
-#### 4.2.2.3. Application Layer
-
-La **Application Layer** del Table Management Bounded Context actúa como un intermediario entre la **Domain Layer** y las capas externas, como la **Interface Layer** y la **Infrastructure Layer**. Su propósito principal es coordinar las operaciones de negocio, manejar comandos y consultas, y orquestar la lógica de aplicación sin exponer directamente los detalles del dominio.
-
-#### **Command Services**
-
-Los servicios de comandos son responsables de ejecutar operaciones que modifican el estado del sistema. A continuación, se describen los principales servicios de comandos:
-
-1. **TableCommandServiceImpl**
-   - **Propósito**: Gestiona las operaciones relacionadas con la creación, actualización y eliminación de mesas.
-   - **Métodos principales**:
-     - `handle(CreateTableCommand command)`: Crea una nueva mesa validando que la sede exista y que no haya duplicados.
-     - `handle(UpdateTableStatusCommand command)`: Actualiza el estado de una mesa existente.
-     - `handle(DeleteTableCommand command)`: Elimina una mesa existente.
-   - **Validaciones**:
-     - Verifica que la sede exista utilizando el servicio externo `ExternalHeadquarterService`.
-     - Asegura que no existan mesas con el mismo número en la misma sede.
-     - Valida que la mesa exista antes de actualizar su estado o eliminarla.
-   - **Dependencias**:
-     - `TableRepository`: Persistencia de mesas.
-     - `ExternalHeadquarterService`: Verifica la existencia de la sede.
-
-#### **Query Services**
-
-Los servicios de consultas son responsables de recuperar información del sistema sin modificar su estado. A continuación, se describen los principales servicios de consultas:
-
-1. **TableQueryServiceImpl**
-   - **Propósito**: Gestiona las consultas relacionadas con las mesas.
-   - **Métodos principales**:
-     - `handle(GetTableByIdQuery query)`: Recupera una mesa específica por su ID.
-     - `handle(GetTablesByHeadquarterQuery query)`: Recupera todas las mesas de una sede específica.
-     - `handle(GetTablesByStatusQuery query)`: Recupera todas las mesas que tienen un estado específico en una sede determinada.
-   - **Dependencias**:
-     - `TableRepository`: Persistencia de mesas.
-
-#### **Event Handlers**
-
-Los manejadores de eventos son responsables de reaccionar a eventos específicos del sistema. A continuación, se describen los principales manejadores de eventos:
-
-1. **TableStatusChangedEventHandler**
-   - **Propósito**: Maneja el evento `TableStatusChangedEvent`, que se dispara cuando cambia el estado de una mesa.
-   - **Método principal**:
-     - `on(TableStatusChangedEvent event)`: Realiza acciones adicionales cuando cambia el estado de una mesa, como notificar a otros sistemas o actualizar estadísticas.
-   - **Dependencias**:
-     - `NotificationService`: Servicio para enviar notificaciones.
-     - `StatisticsService`: Servicio para actualizar estadísticas de uso de mesas.
-
-#### **Outbound Services (ACL)**
-
-Los servicios externos proporcionan funcionalidades auxiliares que no forman parte del dominio principal. A continuación, se describen los principales servicios externos:
-
-1. **ExternalHeadquarterService**
-   - **Propósito**: Interactúa con el Branching Bounded Context para verificar la existencia de sedes.
-   - **Método principal**:
-     - `existsHeadquarter(Long headquarterId)`: Verifica si una sede existe en el sistema.
-
-#### 4.2.2.4. Infrastructure Layer
-
-La **Infrastructure Layer** del Table Management Bounded Context proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema relacionadas con la gestión de mesas. Esta capa incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos. Su objetivo principal es garantizar que las operaciones de almacenamiento y recuperación de información sean eficientes, consistentes y seguras.
-
-#### **Persistencia (JPA Repositories)**
-
-1. **TableRepository**
-   - **Propósito**: Proporciona métodos para interactuar con la base de datos de mesas.
-   - **Métodos principales**:
-     - `findByHeadquarterId(Long headquarterId)`: Recupera todas las mesas de una sede específica.
-     - `findByHeadquarterIdAndStatus(Long headquarterId, TableStatus status)`: Recupera las mesas de una sede con un estado específico.
-     - `existsByHeadquarterIdAndTableNumber(Long headquarterId, Integer tableNumber)`: Verifica si existe una mesa con un número específico en una sede.
-   - **Características**:
-     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Table`.
-     - Facilita la recuperación de mesas según diferentes criterios de filtro.
-
-#### **Relaciones entre componentes**
-
-- **Persistencia**: El repositorio `TableRepository` proporciona acceso a los datos almacenados en la base de datos, permitiendo a las capas superiores (como la **Application Layer**) interactuar con las entidades del dominio.
-- **Validación**: Los métodos personalizados en `TableRepository` son utilizados para validar la existencia de mesas y recuperar información específica, asegurando la consistencia de los datos durante las operaciones de negocio.
-
-#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
-
-En esta sección se presenta el diagrama de componentes del **Table Management Bounded Context**, el cual detalla los principales módulos y sus interacciones dentro del contexto delimitado. Este diagrama sigue el enfoque del C4 Model para representar los componentes clave, como servicios de aplicación, controladores, repositorios y servicios externos, junto con sus relaciones.
-
-<img src="./images/c4-model/bc-component-diagram/IOT-TableManagement-BC-Component-Diagram.svg" alt="Table Management BC Component Diagram"/><br>
-
-El **Table Management Bounded Context** está compuesto por los siguientes módulos principales:
-
-1. **Application Layer**:
-   - Coordina las operaciones de negocio relacionadas con la gestión de mesas.
-   - Incluye servicios de comandos y consultas que interactúan con la **Domain Layer** y la **Infrastructure Layer**.
-   - Maneja eventos relacionados con cambios en el estado de las mesas.
-
-2. **Interface Layer**:
-   - Expone los puntos de entrada al sistema a través de controladores REST.
-   - Incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
-   - Proporciona una ACL (Access Control Layer) para facilitar la integración con otros contextos.
-
-3. **Domain Layer**:
-   - Encapsula la lógica de negocio relacionada con la gestión de mesas.
-   - Define los agregados, entidades y objetos de valor que representan los conceptos clave del dominio.
-   - Incluye eventos de dominio que representan cambios significativos en el estado del sistema.
-
-4. **Infrastructure Layer**:
-   - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
-   - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos.
-
-#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
-
-El diagrama de clases correspondiente a la **Domain Layer** del **Table Management Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio.
-
-<img src="./images/c4-model/class-diagram/table_management_domain_class_diagram.webp" alt="Table Management BC Domain Layer Class Diagram"/><br>
-
-**Elementos principales del diagrama:**
-
-1. **Aggregates**:
-   - `Table`: Agregado principal que encapsula la lógica de negocio relacionada con la gestión de mesas.
-     - **Atributos**:
-       - `tableNumber`: Número identificativo de la mesa.
-       - `headquarterId`: ID de la sede a la que pertenece la mesa.
-       - `capacity`: Capacidad de la mesa.
-       - `status`: Estado actual de la mesa.
-       - `location`: Ubicación física de la mesa dentro de la sede.
-     - **Métodos**:
-       - `updateStatus(TableStatus status)`: Actualiza el estado de la mesa.
-       - `assignToHeadquarter(HeadquarterId headquarterId)`: Asigna la mesa a una sede específica.
-       - `changeCapacity(Capacity capacity)`: Modifica la capacidad de la mesa.
-
-2. **Entities**:
-   - `Chair`: Entidad que representa cada silla asociada a una mesa.
-     - **Atributos**:
-       - `chairNumber`: Número identificativo de la silla dentro de la mesa.
-       - `status`: Estado actual de la silla.
-     - **Métodos**:
-       - `updateStatus(ChairStatus status)`: Actualiza el estado de la silla.
-       - `isOccupied()`: Verifica si la silla está ocupada.
-
-3. **Value Objects**:
-   - `TableNumber`: Representa el número identificativo de una mesa.
-   - `Capacity`: Representa la capacidad de una mesa.
-   - `TableStatus`: Enumera los estados posibles de una mesa.
-   - `ChairStatus`: Enumera los estados posibles de una silla.
-   - `Location`: Representa la ubicación física de una mesa dentro de la sede.
-   - `HeadquarterId`: Representa el identificador único de una sede.
-
-##### 4.2.2.6.2. Bounded Context Database Design Diagram.
-
-El diseño de la base de datos para el **Table Management Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional.
-
-<img src="./images/c4-model/bd/table_management_bd.png" alt="Table Management BC Data Base Diagram"/><br>
-
-**Este diseño incluye las siguientes tablas principales:**
-
-1. **Tables**:
-   - Representa las mesas en el sistema.
-   - **Atributos principales**:
-     - `id`: Identificador único de la mesa.
-     - `table_number`: Número de la mesa dentro de la sede.
-     - `headquarter_id`: Identificador de la sede a la que pertenece la mesa.
-     - `capacity`: Capacidad de la mesa en términos de personas.
-     - `status`: Estado actual de la mesa (AVAILABLE, OCCUPIED, RESERVED, MAINTENANCE).
-     - `zone`: Zona de la cafetería donde está ubicada la mesa.
-     - `x_position`: Coordenada X de la mesa en el plano.
-     - `y_position`: Coordenada Y de la mesa en el plano.
-
-2. **Chairs**:
-   - Representa las sillas asociadas a las mesas.
-   - **Atributos principales**:
-     - `id`: Identificador único de la silla.
-     - `table_id`: Identificador de la mesa a la que pertenece la silla.
-     - `chair_number`: Número de la silla dentro de la mesa.
-     - `status`: Estado actual de la silla (OCCUPIED, FREE).
 
 ### 4.2.5 Bounded Context: Menu Management Bounded Context
 
@@ -3386,7 +3006,7 @@ La **Infrastructure Layer** del Menu Management Bounded Context proporciona las 
 
 En esta sección se presenta el diagrama de componentes del **Menu Management Bounded Context**, el cual detalla los principales módulos y sus interacciones dentro del contexto delimitado. Este diagrama sigue el enfoque del C4 Model para representar los componentes clave, como servicios de aplicación, controladores, repositorios y servicios externos, junto con sus relaciones.
 
-<img src="./images/c4-model/bc-component-diagram/IOT-MenuManagement-BC-Component-Diagram.svg" alt="Menu Management BC Component Diagram"/><br>
+<img src="./images/c4-model/bc-component-diagram/IOT-MenuManagement-BC-Component-Diagram.png" alt="Menu Management BC Component Diagram"/><br>
 
 El **Menu Management Bounded Context** está compuesto por los siguientes módulos principales:
 
@@ -3415,7 +3035,7 @@ El **Menu Management Bounded Context** está compuesto por los siguientes módul
 
 El diagrama de clases correspondiente a la **Domain Layer** del **Menu Management Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio.
 
-<img src="./images/c4-model/class-diagram/menu_management_domain_class_diagram.webp" alt="Menu Management BC Domain Layer Class Diagram"/><br>
+<img src="./images/c4-model/bc-component-diagram/menu_management_domain_class_diagram.png" alt="Menu Management BC Domain Layer Class Diagram"/><br>
 
 **Elementos principales del diagrama:**
 
