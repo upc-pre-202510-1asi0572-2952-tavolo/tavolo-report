@@ -1362,6 +1362,391 @@ El diseño de la base de datos para el **IAM Bounded Context** refleja la estruc
      - `role_id`: Identificador del rol.
 
 Este diseño asegura que las operaciones relacionadas con la autenticación y la gestión de usuarios sean eficientes y consistentes, facilitando la integración con la lógica de negocio definida en la **Domain Layer**.
+Voy a completar el análisis táctico de Domain-Driven Design para los bounded contexts faltantes: Table Management, Menu Management y IoT Monitoring. Desarrollaré cada sección siguiendo la estructura que ya tiene tu informe.
+
+### 4.2.2 Bounded Context: Table Management Bounded Context
+
+El **Table Management Bounded Context** es responsable de gestionar la información y el estado de las mesas en las cafeterías. Este contexto se encarga de registrar, actualizar y consultar el estado de las mesas, así como su capacidad, ubicación dentro de la sede y otros atributos relevantes. Es el núcleo central que permite la visualización en tiempo real del estado de ocupación de las mesas para los usuarios.
+
+#### 4.2.2.1. Domain Layer
+
+La **Domain Layer** del Table Management Bounded Context encapsula la lógica de negocio relacionada con la gestión de mesas. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
+
+##### **Aggregates**
+1. **Table**
+   - **Propósito**: El agregado principal es la mesa (`Table`), que encapsula la lógica de negocio relacionada con la gestión de la mesa y su estado de ocupación.
+   - **Atributos**:
+     - `tableNumber`: Número identificativo de la mesa, representado como un objeto de valor `TableNumber`.
+     - `headquarterId`: Identificador de la sede a la que pertenece la mesa, representado como un objeto de valor `HeadquarterId`.
+     - `capacity`: Capacidad de la mesa (número de sillas), representada como un objeto de valor `Capacity`.
+     - `status`: Estado actual de la mesa, representado como un objeto de valor `TableStatus`.
+     - `location`: Ubicación física de la mesa dentro de la sede, representada como un objeto de valor `Location`.
+   - **Métodos**:
+     - `updateStatus(TableStatus status)`: Actualiza el estado de la mesa.
+     - `assignToHeadquarter(HeadquarterId headquarterId)`: Asigna la mesa a una sede específica.
+     - `changeCapacity(Capacity capacity)`: Modifica la capacidad de la mesa.
+     - `relocate(Location location)`: Actualiza la ubicación de la mesa dentro de la sede.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en las mesas.
+     - Gestiona la validación de estados y cambios según reglas de negocio.
+
+##### **Entities**
+1. **Chair**
+   - **Propósito**: La entidad `Chair` representa cada silla asociada a una mesa, con su estado de ocupación.
+   - **Atributos**:
+     - `id`: Identificador único de la silla.
+     - `chairNumber`: Número identificativo de la silla dentro de la mesa.
+     - `status`: Estado actual de la silla (ocupada o libre), representado como un objeto de valor `ChairStatus`.
+   - **Métodos**:
+     - `updateStatus(ChairStatus status)`: Actualiza el estado de la silla.
+     - `isOccupied()`: Verifica si la silla está ocupada.
+
+##### **Value Objects**
+1. **TableNumber**
+   - **Propósito**: Representa el número identificativo de una mesa.
+   - **Validaciones**:
+     - El número debe ser positivo.
+     - El número debe ser único dentro de una sede.
+
+2. **HeadquarterId**
+   - **Propósito**: Representa el identificador único de una sede.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
+
+3. **Capacity**
+   - **Propósito**: Representa la capacidad de una mesa en términos de número de personas que pueden sentarse.
+   - **Validaciones**:
+     - La capacidad debe ser un número positivo.
+     - La capacidad máxima permitida es de 12 personas.
+
+4. **TableStatus**
+   - **Propósito**: Enumera los estados posibles de una mesa.
+   - **Valores**:
+     - `AVAILABLE`: La mesa está disponible para ser ocupada.
+     - `OCCUPIED`: La mesa está ocupada por comensales.
+     - `RESERVED`: La mesa está reservada para un futuro cercano.
+     - `MAINTENANCE`: La mesa está fuera de servicio temporalmente.
+
+5. **ChairStatus**
+   - **Propósito**: Enumera los estados posibles de una silla.
+   - **Valores**:
+     - `OCCUPIED`: La silla está ocupada por un comensal.
+     - `FREE`: La silla está libre.
+
+6. **Location**
+   - **Propósito**: Representa la ubicación física de una mesa dentro de la sede.
+   - **Atributos**:
+     - `zone`: Zona de la cafetería (interior, terraza, etc.).
+     - `coordinates`: Coordenadas relativas dentro del plano de la sede.
+   - **Validaciones**:
+     - Las coordenadas deben estar dentro de los límites del plano de la sede.
+
+#### **Commands**
+1. **CreateTableCommand**
+   - **Propósito**: Comando para crear una nueva mesa en una sede específica.
+   - **Atributos**:
+     - `tableNumber`: Número de la mesa.
+     - `headquarterId`: ID de la sede donde se ubicará la mesa.
+     - `capacity`: Capacidad de la mesa.
+     - `location`: Ubicación de la mesa dentro de la sede.
+
+2. **UpdateTableStatusCommand**
+   - **Propósito**: Comando para actualizar el estado de una mesa existente.
+   - **Atributos**:
+     - `tableId`: ID de la mesa a actualizar.
+     - `status`: Nuevo estado de la mesa.
+
+3. **DeleteTableCommand**
+   - **Propósito**: Comando para eliminar una mesa existente.
+   - **Atributos**:
+     - `tableId`: ID de la mesa a eliminar.
+     - `headquarterId`: ID de la sede a la que pertenece la mesa.
+
+#### **Queries**
+1. **GetTableByIdQuery**
+   - **Propósito**: Recupera una mesa específica por su ID.
+   - **Atributos**:
+     - `tableId`: ID de la mesa a consultar.
+
+2. **GetTablesByHeadquarterQuery**
+   - **Propósito**: Recupera todas las mesas asociadas a una sede específica.
+   - **Atributos**:
+     - `headquarterId`: ID de la sede a consultar.
+
+3. **GetTablesByStatusQuery**
+   - **Propósito**: Recupera todas las mesas que tienen un estado específico.
+   - **Atributos**:
+     - `status`: Estado de las mesas a consultar.
+     - `headquarterId`: ID de la sede a consultar.
+
+#### **Events**
+1. **TableCreatedEvent**
+   - **Propósito**: Evento que se dispara cuando se crea una nueva mesa.
+   - **Atributos**:
+     - `tableId`: ID de la mesa creada.
+     - `headquarterId`: ID de la sede donde se ubicó la mesa.
+
+2. **TableStatusChangedEvent**
+   - **Propósito**: Evento que se dispara cuando cambia el estado de una mesa.
+   - **Atributos**:
+     - `tableId`: ID de la mesa.
+     - `previousStatus`: Estado anterior de la mesa.
+     - `newStatus`: Nuevo estado de la mesa.
+     - `timestamp`: Momento en que ocurrió el cambio.
+
+#### 4.2.2.2. Interface Layer
+
+La **Interface Layer** del Table Management Bounded Context expone los puntos de entrada al sistema a través de controladores REST. Esta capa permite la interacción con las entidades del dominio mediante solicitudes HTTP, facilitando la comunicación entre los clientes y el sistema. Además, incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+
+#### **Access Control Layer (ACL)**
+
+1. **TableManagementContextFacade**
+   - **Propósito**: Proporciona una interfaz simplificada para interactuar con el dominio del Table Management Bounded Context desde otros contextos. Permite consultar información sobre las mesas, como su disponibilidad, capacidad y ubicación.
+   - **Métodos principales**:
+     - `getTableStatus(Long tableId)`: Devuelve el estado actual de una mesa.
+     - `getTablesByStatus(Long headquarterId, String status)`: Devuelve las mesas de una sede con un estado específico.
+     - `existsTable(Long tableId)`: Verifica si una mesa existe en el sistema.
+   - **Dependencias**:
+     - `TableQueryService`: Servicio encargado de manejar las consultas relacionadas con las mesas.
+
+#### **Controllers**
+
+Los controladores son responsables de manejar las solicitudes HTTP y delegar la lógica de negocio a los servicios correspondientes. A continuación, se describen los principales controladores:
+
+1. **TableController**
+   - **Propósito**: Gestiona las operaciones relacionadas con las mesas.
+   - **Endpoints**:
+     - `POST /api/v1/tables`: Crea una nueva mesa.
+     - `GET /api/v1/tables/{tableId}`: Obtiene los detalles de una mesa específica por su ID.
+     - `GET /api/v1/tables`: Obtiene la lista de todas las mesas, con opción a filtrar por sede.
+     - `GET /api/v1/headquarters/{headquarterId}/tables`: Obtiene las mesas de una sede específica.
+     - `PUT /api/v1/tables/{tableId}/status`: Actualiza el estado de una mesa.
+     - `DELETE /api/v1/tables/{tableId}`: Elimina una mesa existente.
+   - **Dependencias**:
+     - `TableCommandService`: Servicio encargado de manejar los comandos relacionados con las mesas.
+     - `TableQueryService`: Servicio encargado de manejar las consultas relacionadas con las mesas.
+
+#### **Resources**
+
+Los recursos representan los datos que se exponen a través de la API REST. Estos recursos son utilizados para estructurar las respuestas de los controladores y asegurar una representación clara y consistente de los datos. A continuación, se describen los principales recursos:
+
+1. **CreateTableResource**
+   - **Propósito**: Representa los datos necesarios para crear una nueva mesa.
+   - **Atributos**:
+     - `tableNumber`: Número de la mesa.
+     - `headquarterId`: ID de la sede donde se ubicará la mesa.
+     - `capacity`: Capacidad de la mesa.
+     - `zone`: Zona de la cafetería donde se ubicará la mesa.
+     - `xPosition`: Coordenada X de la mesa en el plano.
+     - `yPosition`: Coordenada Y de la mesa en el plano.
+
+2. **TableResource**
+   - **Propósito**: Representa una mesa en el sistema.
+   - **Atributos**:
+     - `id`: ID único de la mesa.
+     - `tableNumber`: Número de la mesa.
+     - `headquarterId`: ID de la sede donde está ubicada la mesa.
+     - `capacity`: Capacidad de la mesa.
+     - `status`: Estado actual de la mesa.
+     - `zone`: Zona de la cafetería donde está ubicada la mesa.
+     - `position`: Coordenadas de la mesa en el plano.
+
+3. **UpdateTableStatusResource**
+   - **Propósito**: Representa los datos necesarios para actualizar el estado de una mesa.
+   - **Atributos**:
+     - `status`: Nuevo estado de la mesa.
+
+#### **Transformers**
+
+Los transformadores son responsables de convertir las entidades del dominio en recursos y viceversa. Esto asegura que los datos expuestos a través de la API REST sean consistentes y estén en el formato esperado. A continuación, se describen los principales transformadores:
+
+1. **CreateTableCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateTableResource` en un comando `CreateTableCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateTableResource resource)`: Transforma los datos de creación de una mesa en un comando.
+
+2. **TableResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Table` en un recurso `TableResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Table entity)`: Transforma una mesa del dominio en un recurso.
+
+3. **UpdateTableStatusCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `UpdateTableStatusResource` en un comando `UpdateTableStatusCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(UpdateTableStatusResource resource, Long tableId)`: Transforma los datos de actualización de estado en un comando.
+
+#### 4.2.2.3. Application Layer
+
+La **Application Layer** del Table Management Bounded Context actúa como un intermediario entre la **Domain Layer** y las capas externas, como la **Interface Layer** y la **Infrastructure Layer**. Su propósito principal es coordinar las operaciones de negocio, manejar comandos y consultas, y orquestar la lógica de aplicación sin exponer directamente los detalles del dominio.
+
+#### **Command Services**
+
+Los servicios de comandos son responsables de ejecutar operaciones que modifican el estado del sistema. A continuación, se describen los principales servicios de comandos:
+
+1. **TableCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación, actualización y eliminación de mesas.
+   - **Métodos principales**:
+     - `handle(CreateTableCommand command)`: Crea una nueva mesa validando que la sede exista y que no haya duplicados.
+     - `handle(UpdateTableStatusCommand command)`: Actualiza el estado de una mesa existente.
+     - `handle(DeleteTableCommand command)`: Elimina una mesa existente.
+   - **Validaciones**:
+     - Verifica que la sede exista utilizando el servicio externo `ExternalHeadquarterService`.
+     - Asegura que no existan mesas con el mismo número en la misma sede.
+     - Valida que la mesa exista antes de actualizar su estado o eliminarla.
+   - **Dependencias**:
+     - `TableRepository`: Persistencia de mesas.
+     - `ExternalHeadquarterService`: Verifica la existencia de la sede.
+
+#### **Query Services**
+
+Los servicios de consultas son responsables de recuperar información del sistema sin modificar su estado. A continuación, se describen los principales servicios de consultas:
+
+1. **TableQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con las mesas.
+   - **Métodos principales**:
+     - `handle(GetTableByIdQuery query)`: Recupera una mesa específica por su ID.
+     - `handle(GetTablesByHeadquarterQuery query)`: Recupera todas las mesas de una sede específica.
+     - `handle(GetTablesByStatusQuery query)`: Recupera todas las mesas que tienen un estado específico en una sede determinada.
+   - **Dependencias**:
+     - `TableRepository`: Persistencia de mesas.
+
+#### **Event Handlers**
+
+Los manejadores de eventos son responsables de reaccionar a eventos específicos del sistema. A continuación, se describen los principales manejadores de eventos:
+
+1. **TableStatusChangedEventHandler**
+   - **Propósito**: Maneja el evento `TableStatusChangedEvent`, que se dispara cuando cambia el estado de una mesa.
+   - **Método principal**:
+     - `on(TableStatusChangedEvent event)`: Realiza acciones adicionales cuando cambia el estado de una mesa, como notificar a otros sistemas o actualizar estadísticas.
+   - **Dependencias**:
+     - `NotificationService`: Servicio para enviar notificaciones.
+     - `StatisticsService`: Servicio para actualizar estadísticas de uso de mesas.
+
+#### **Outbound Services (ACL)**
+
+Los servicios externos proporcionan funcionalidades auxiliares que no forman parte del dominio principal. A continuación, se describen los principales servicios externos:
+
+1. **ExternalHeadquarterService**
+   - **Propósito**: Interactúa con el Branching Bounded Context para verificar la existencia de sedes.
+   - **Método principal**:
+     - `existsHeadquarter(Long headquarterId)`: Verifica si una sede existe en el sistema.
+
+#### 4.2.2.4. Infrastructure Layer
+
+La **Infrastructure Layer** del Table Management Bounded Context proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema relacionadas con la gestión de mesas. Esta capa incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos. Su objetivo principal es garantizar que las operaciones de almacenamiento y recuperación de información sean eficientes, consistentes y seguras.
+
+#### **Persistencia (JPA Repositories)**
+
+1. **TableRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de mesas.
+   - **Métodos principales**:
+     - `findByHeadquarterId(Long headquarterId)`: Recupera todas las mesas de una sede específica.
+     - `findByHeadquarterIdAndStatus(Long headquarterId, TableStatus status)`: Recupera las mesas de una sede con un estado específico.
+     - `existsByHeadquarterIdAndTableNumber(Long headquarterId, Integer tableNumber)`: Verifica si existe una mesa con un número específico en una sede.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Table`.
+     - Facilita la recuperación de mesas según diferentes criterios de filtro.
+
+#### **Relaciones entre componentes**
+
+- **Persistencia**: El repositorio `TableRepository` proporciona acceso a los datos almacenados en la base de datos, permitiendo a las capas superiores (como la **Application Layer**) interactuar con las entidades del dominio.
+- **Validación**: Los métodos personalizados en `TableRepository` son utilizados para validar la existencia de mesas y recuperar información específica, asegurando la consistencia de los datos durante las operaciones de negocio.
+
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del **Table Management Bounded Context**, el cual detalla los principales módulos y sus interacciones dentro del contexto delimitado. Este diagrama sigue el enfoque del C4 Model para representar los componentes clave, como servicios de aplicación, controladores, repositorios y servicios externos, junto con sus relaciones.
+
+<img src="./images/c4-model/bc-component-diagram/IOT-TableManagement-BC-Component-Diagram.png" alt="Table Management BC Component Diagram"/><br>
+
+El **Table Management Bounded Context** está compuesto por los siguientes módulos principales:
+
+1. **Application Layer**:
+   - Coordina las operaciones de negocio relacionadas con la gestión de mesas.
+   - Incluye servicios de comandos y consultas que interactúan con la **Domain Layer** y la **Infrastructure Layer**.
+   - Maneja eventos relacionados con cambios en el estado de las mesas.
+
+2. **Interface Layer**:
+   - Expone los puntos de entrada al sistema a través de controladores REST.
+   - Incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+   - Proporciona una ACL (Access Control Layer) para facilitar la integración con otros contextos.
+
+3. **Domain Layer**:
+   - Encapsula la lógica de negocio relacionada con la gestión de mesas.
+   - Define los agregados, entidades y objetos de valor que representan los conceptos clave del dominio.
+   - Incluye eventos de dominio que representan cambios significativos en el estado del sistema.
+
+4. **Infrastructure Layer**:
+   - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
+   - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos.
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases correspondiente a la **Domain Layer** del **Table Management Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio.
+
+<img src="./images/c4-model/bc-component-diagram/table_management_domain_class_diagram.png" alt="Table Management BC Domain Layer Class Diagram"/><br>
+
+**Elementos principales del diagrama:**
+
+1. **Aggregates**:
+   - `Table`: Agregado principal que encapsula la lógica de negocio relacionada con la gestión de mesas.
+     - **Atributos**:
+       - `tableNumber`: Número identificativo de la mesa.
+       - `headquarterId`: ID de la sede a la que pertenece la mesa.
+       - `capacity`: Capacidad de la mesa.
+       - `status`: Estado actual de la mesa.
+       - `location`: Ubicación física de la mesa dentro de la sede.
+     - **Métodos**:
+       - `updateStatus(TableStatus status)`: Actualiza el estado de la mesa.
+       - `assignToHeadquarter(HeadquarterId headquarterId)`: Asigna la mesa a una sede específica.
+       - `changeCapacity(Capacity capacity)`: Modifica la capacidad de la mesa.
+
+2. **Entities**:
+   - `Chair`: Entidad que representa cada silla asociada a una mesa.
+     - **Atributos**:
+       - `chairNumber`: Número identificativo de la silla dentro de la mesa.
+       - `status`: Estado actual de la silla.
+     - **Métodos**:
+       - `updateStatus(ChairStatus status)`: Actualiza el estado de la silla.
+       - `isOccupied()`: Verifica si la silla está ocupada.
+
+3. **Value Objects**:
+   - `TableNumber`: Representa el número identificativo de una mesa.
+   - `Capacity`: Representa la capacidad de una mesa.
+   - `TableStatus`: Enumera los estados posibles de una mesa.
+   - `ChairStatus`: Enumera los estados posibles de una silla.
+   - `Location`: Representa la ubicación física de una mesa dentro de la sede.
+   - `HeadquarterId`: Representa el identificador único de una sede.
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram.
+
+El diseño de la base de datos para el **Table Management Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional.
+
+<img src="./images/c4-model/bc-component-diagram/table_management_bd.png" alt="Table Management BC Data Base Diagram"/><br>
+
+**Este diseño incluye las siguientes tablas principales:**
+
+1. **Tables**:
+   - Representa las mesas en el sistema.
+   - **Atributos principales**:
+     - `id`: Identificador único de la mesa.
+     - `table_number`: Número de la mesa dentro de la sede.
+     - `headquarter_id`: Identificador de la sede a la que pertenece la mesa.
+     - `capacity`: Capacidad de la mesa en términos de personas.
+     - `status`: Estado actual de la mesa (AVAILABLE, OCCUPIED, RESERVED, MAINTENANCE).
+     - `zone`: Zona de la cafetería donde está ubicada la mesa.
+     - `x_position`: Coordenada X de la mesa en el plano.
+     - `y_position`: Coordenada Y de la mesa en el plano.
+
+2. **Chairs**:
+   - Representa las sillas asociadas a las mesas.
+   - **Atributos principales**:
+     - `id`: Identificador único de la silla.
+     - `table_id`: Identificador de la mesa a la que pertenece la silla.
+     - `chair_number`: Número de la silla dentro de la mesa.
+     - `status`: Estado actual de la silla (OCCUPIED, FREE).
+
 
 ### 4.2.3 Bounded Context: Branching Bounded Context
 
@@ -2155,6 +2540,1569 @@ El diseño de la base de datos para el **Booking Bounded Context** refleja la es
      - `booking_id`: Identificador de la reserva asociada.
      - `start_time`: Hora de inicio del slot reservado.
      - `end_time`: Hora de fin del slot reservado.
+Voy a completar el análisis táctico de Domain-Driven Design para los bounded contexts faltantes: Table Management, Menu Management y IoT Monitoring. Desarrollaré cada sección siguiendo la estructura que ya tiene tu informe.
+
+
+El **Table Management Bounded Context** es responsable de gestionar la información y el estado de las mesas en las cafeterías. Este contexto se encarga de registrar, actualizar y consultar el estado de las mesas, así como su capacidad, ubicación dentro de la sede y otros atributos relevantes. Es el núcleo central que permite la visualización en tiempo real del estado de ocupación de las mesas para los usuarios.
+
+#### 4.2.2.1. Domain Layer
+
+La **Domain Layer** del Table Management Bounded Context encapsula la lógica de negocio relacionada con la gestión de mesas. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
+
+##### **Aggregates**
+1. **Table**
+   - **Propósito**: El agregado principal es la mesa (`Table`), que encapsula la lógica de negocio relacionada con la gestión de la mesa y su estado de ocupación.
+   - **Atributos**:
+     - `tableNumber`: Número identificativo de la mesa, representado como un objeto de valor `TableNumber`.
+     - `headquarterId`: Identificador de la sede a la que pertenece la mesa, representado como un objeto de valor `HeadquarterId`.
+     - `capacity`: Capacidad de la mesa (número de sillas), representada como un objeto de valor `Capacity`.
+     - `status`: Estado actual de la mesa, representado como un objeto de valor `TableStatus`.
+     - `location`: Ubicación física de la mesa dentro de la sede, representada como un objeto de valor `Location`.
+   - **Métodos**:
+     - `updateStatus(TableStatus status)`: Actualiza el estado de la mesa.
+     - `assignToHeadquarter(HeadquarterId headquarterId)`: Asigna la mesa a una sede específica.
+     - `changeCapacity(Capacity capacity)`: Modifica la capacidad de la mesa.
+     - `relocate(Location location)`: Actualiza la ubicación de la mesa dentro de la sede.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en las mesas.
+     - Gestiona la validación de estados y cambios según reglas de negocio.
+
+##### **Entities**
+1. **Chair**
+   - **Propósito**: La entidad `Chair` representa cada silla asociada a una mesa, con su estado de ocupación.
+   - **Atributos**:
+     - `id`: Identificador único de la silla.
+     - `chairNumber`: Número identificativo de la silla dentro de la mesa.
+     - `status`: Estado actual de la silla (ocupada o libre), representado como un objeto de valor `ChairStatus`.
+   - **Métodos**:
+     - `updateStatus(ChairStatus status)`: Actualiza el estado de la silla.
+     - `isOccupied()`: Verifica si la silla está ocupada.
+
+##### **Value Objects**
+1. **TableNumber**
+   - **Propósito**: Representa el número identificativo de una mesa.
+   - **Validaciones**:
+     - El número debe ser positivo.
+     - El número debe ser único dentro de una sede.
+
+2. **HeadquarterId**
+   - **Propósito**: Representa el identificador único de una sede.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
+
+3. **Capacity**
+   - **Propósito**: Representa la capacidad de una mesa en términos de número de personas que pueden sentarse.
+   - **Validaciones**:
+     - La capacidad debe ser un número positivo.
+     - La capacidad máxima permitida es de 12 personas.
+
+4. **TableStatus**
+   - **Propósito**: Enumera los estados posibles de una mesa.
+   - **Valores**:
+     - `AVAILABLE`: La mesa está disponible para ser ocupada.
+     - `OCCUPIED`: La mesa está ocupada por comensales.
+     - `RESERVED`: La mesa está reservada para un futuro cercano.
+     - `MAINTENANCE`: La mesa está fuera de servicio temporalmente.
+
+5. **ChairStatus**
+   - **Propósito**: Enumera los estados posibles de una silla.
+   - **Valores**:
+     - `OCCUPIED`: La silla está ocupada por un comensal.
+     - `FREE`: La silla está libre.
+
+6. **Location**
+   - **Propósito**: Representa la ubicación física de una mesa dentro de la sede.
+   - **Atributos**:
+     - `zone`: Zona de la cafetería (interior, terraza, etc.).
+     - `coordinates`: Coordenadas relativas dentro del plano de la sede.
+   - **Validaciones**:
+     - Las coordenadas deben estar dentro de los límites del plano de la sede.
+
+#### **Commands**
+1. **CreateTableCommand**
+   - **Propósito**: Comando para crear una nueva mesa en una sede específica.
+   - **Atributos**:
+     - `tableNumber`: Número de la mesa.
+     - `headquarterId`: ID de la sede donde se ubicará la mesa.
+     - `capacity`: Capacidad de la mesa.
+     - `location`: Ubicación de la mesa dentro de la sede.
+
+2. **UpdateTableStatusCommand**
+   - **Propósito**: Comando para actualizar el estado de una mesa existente.
+   - **Atributos**:
+     - `tableId`: ID de la mesa a actualizar.
+     - `status`: Nuevo estado de la mesa.
+
+3. **DeleteTableCommand**
+   - **Propósito**: Comando para eliminar una mesa existente.
+   - **Atributos**:
+     - `tableId`: ID de la mesa a eliminar.
+     - `headquarterId`: ID de la sede a la que pertenece la mesa.
+
+#### **Queries**
+1. **GetTableByIdQuery**
+   - **Propósito**: Recupera una mesa específica por su ID.
+   - **Atributos**:
+     - `tableId`: ID de la mesa a consultar.
+
+2. **GetTablesByHeadquarterQuery**
+   - **Propósito**: Recupera todas las mesas asociadas a una sede específica.
+   - **Atributos**:
+     - `headquarterId`: ID de la sede a consultar.
+
+3. **GetTablesByStatusQuery**
+   - **Propósito**: Recupera todas las mesas que tienen un estado específico.
+   - **Atributos**:
+     - `status`: Estado de las mesas a consultar.
+     - `headquarterId`: ID de la sede a consultar.
+
+#### **Events**
+1. **TableCreatedEvent**
+   - **Propósito**: Evento que se dispara cuando se crea una nueva mesa.
+   - **Atributos**:
+     - `tableId`: ID de la mesa creada.
+     - `headquarterId`: ID de la sede donde se ubicó la mesa.
+
+2. **TableStatusChangedEvent**
+   - **Propósito**: Evento que se dispara cuando cambia el estado de una mesa.
+   - **Atributos**:
+     - `tableId`: ID de la mesa.
+     - `previousStatus`: Estado anterior de la mesa.
+     - `newStatus`: Nuevo estado de la mesa.
+     - `timestamp`: Momento en que ocurrió el cambio.
+
+#### 4.2.2.2. Interface Layer
+
+La **Interface Layer** del Table Management Bounded Context expone los puntos de entrada al sistema a través de controladores REST. Esta capa permite la interacción con las entidades del dominio mediante solicitudes HTTP, facilitando la comunicación entre los clientes y el sistema. Además, incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+
+#### **Access Control Layer (ACL)**
+
+1. **TableManagementContextFacade**
+   - **Propósito**: Proporciona una interfaz simplificada para interactuar con el dominio del Table Management Bounded Context desde otros contextos. Permite consultar información sobre las mesas, como su disponibilidad, capacidad y ubicación.
+   - **Métodos principales**:
+     - `getTableStatus(Long tableId)`: Devuelve el estado actual de una mesa.
+     - `getTablesByStatus(Long headquarterId, String status)`: Devuelve las mesas de una sede con un estado específico.
+     - `existsTable(Long tableId)`: Verifica si una mesa existe en el sistema.
+   - **Dependencias**:
+     - `TableQueryService`: Servicio encargado de manejar las consultas relacionadas con las mesas.
+
+#### **Controllers**
+
+Los controladores son responsables de manejar las solicitudes HTTP y delegar la lógica de negocio a los servicios correspondientes. A continuación, se describen los principales controladores:
+
+1. **TableController**
+   - **Propósito**: Gestiona las operaciones relacionadas con las mesas.
+   - **Endpoints**:
+     - `POST /api/v1/tables`: Crea una nueva mesa.
+     - `GET /api/v1/tables/{tableId}`: Obtiene los detalles de una mesa específica por su ID.
+     - `GET /api/v1/tables`: Obtiene la lista de todas las mesas, con opción a filtrar por sede.
+     - `GET /api/v1/headquarters/{headquarterId}/tables`: Obtiene las mesas de una sede específica.
+     - `PUT /api/v1/tables/{tableId}/status`: Actualiza el estado de una mesa.
+     - `DELETE /api/v1/tables/{tableId}`: Elimina una mesa existente.
+   - **Dependencias**:
+     - `TableCommandService`: Servicio encargado de manejar los comandos relacionados con las mesas.
+     - `TableQueryService`: Servicio encargado de manejar las consultas relacionadas con las mesas.
+
+#### **Resources**
+
+Los recursos representan los datos que se exponen a través de la API REST. Estos recursos son utilizados para estructurar las respuestas de los controladores y asegurar una representación clara y consistente de los datos. A continuación, se describen los principales recursos:
+
+1. **CreateTableResource**
+   - **Propósito**: Representa los datos necesarios para crear una nueva mesa.
+   - **Atributos**:
+     - `tableNumber`: Número de la mesa.
+     - `headquarterId`: ID de la sede donde se ubicará la mesa.
+     - `capacity`: Capacidad de la mesa.
+     - `zone`: Zona de la cafetería donde se ubicará la mesa.
+     - `xPosition`: Coordenada X de la mesa en el plano.
+     - `yPosition`: Coordenada Y de la mesa en el plano.
+
+2. **TableResource**
+   - **Propósito**: Representa una mesa en el sistema.
+   - **Atributos**:
+     - `id`: ID único de la mesa.
+     - `tableNumber`: Número de la mesa.
+     - `headquarterId`: ID de la sede donde está ubicada la mesa.
+     - `capacity`: Capacidad de la mesa.
+     - `status`: Estado actual de la mesa.
+     - `zone`: Zona de la cafetería donde está ubicada la mesa.
+     - `position`: Coordenadas de la mesa en el plano.
+
+3. **UpdateTableStatusResource**
+   - **Propósito**: Representa los datos necesarios para actualizar el estado de una mesa.
+   - **Atributos**:
+     - `status`: Nuevo estado de la mesa.
+
+#### **Transformers**
+
+Los transformadores son responsables de convertir las entidades del dominio en recursos y viceversa. Esto asegura que los datos expuestos a través de la API REST sean consistentes y estén en el formato esperado. A continuación, se describen los principales transformadores:
+
+1. **CreateTableCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateTableResource` en un comando `CreateTableCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateTableResource resource)`: Transforma los datos de creación de una mesa en un comando.
+
+2. **TableResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Table` en un recurso `TableResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Table entity)`: Transforma una mesa del dominio en un recurso.
+
+3. **UpdateTableStatusCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `UpdateTableStatusResource` en un comando `UpdateTableStatusCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(UpdateTableStatusResource resource, Long tableId)`: Transforma los datos de actualización de estado en un comando.
+
+#### 4.2.2.3. Application Layer
+
+La **Application Layer** del Table Management Bounded Context actúa como un intermediario entre la **Domain Layer** y las capas externas, como la **Interface Layer** y la **Infrastructure Layer**. Su propósito principal es coordinar las operaciones de negocio, manejar comandos y consultas, y orquestar la lógica de aplicación sin exponer directamente los detalles del dominio.
+
+#### **Command Services**
+
+Los servicios de comandos son responsables de ejecutar operaciones que modifican el estado del sistema. A continuación, se describen los principales servicios de comandos:
+
+1. **TableCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación, actualización y eliminación de mesas.
+   - **Métodos principales**:
+     - `handle(CreateTableCommand command)`: Crea una nueva mesa validando que la sede exista y que no haya duplicados.
+     - `handle(UpdateTableStatusCommand command)`: Actualiza el estado de una mesa existente.
+     - `handle(DeleteTableCommand command)`: Elimina una mesa existente.
+   - **Validaciones**:
+     - Verifica que la sede exista utilizando el servicio externo `ExternalHeadquarterService`.
+     - Asegura que no existan mesas con el mismo número en la misma sede.
+     - Valida que la mesa exista antes de actualizar su estado o eliminarla.
+   - **Dependencias**:
+     - `TableRepository`: Persistencia de mesas.
+     - `ExternalHeadquarterService`: Verifica la existencia de la sede.
+
+#### **Query Services**
+
+Los servicios de consultas son responsables de recuperar información del sistema sin modificar su estado. A continuación, se describen los principales servicios de consultas:
+
+1. **TableQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con las mesas.
+   - **Métodos principales**:
+     - `handle(GetTableByIdQuery query)`: Recupera una mesa específica por su ID.
+     - `handle(GetTablesByHeadquarterQuery query)`: Recupera todas las mesas de una sede específica.
+     - `handle(GetTablesByStatusQuery query)`: Recupera todas las mesas que tienen un estado específico en una sede determinada.
+   - **Dependencias**:
+     - `TableRepository`: Persistencia de mesas.
+
+#### **Event Handlers**
+
+Los manejadores de eventos son responsables de reaccionar a eventos específicos del sistema. A continuación, se describen los principales manejadores de eventos:
+
+1. **TableStatusChangedEventHandler**
+   - **Propósito**: Maneja el evento `TableStatusChangedEvent`, que se dispara cuando cambia el estado de una mesa.
+   - **Método principal**:
+     - `on(TableStatusChangedEvent event)`: Realiza acciones adicionales cuando cambia el estado de una mesa, como notificar a otros sistemas o actualizar estadísticas.
+   - **Dependencias**:
+     - `NotificationService`: Servicio para enviar notificaciones.
+     - `StatisticsService`: Servicio para actualizar estadísticas de uso de mesas.
+
+#### **Outbound Services (ACL)**
+
+Los servicios externos proporcionan funcionalidades auxiliares que no forman parte del dominio principal. A continuación, se describen los principales servicios externos:
+
+1. **ExternalHeadquarterService**
+   - **Propósito**: Interactúa con el Branching Bounded Context para verificar la existencia de sedes.
+   - **Método principal**:
+     - `existsHeadquarter(Long headquarterId)`: Verifica si una sede existe en el sistema.
+
+#### 4.2.2.4. Infrastructure Layer
+
+La **Infrastructure Layer** del Table Management Bounded Context proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema relacionadas con la gestión de mesas. Esta capa incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos. Su objetivo principal es garantizar que las operaciones de almacenamiento y recuperación de información sean eficientes, consistentes y seguras.
+
+#### **Persistencia (JPA Repositories)**
+
+1. **TableRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de mesas.
+   - **Métodos principales**:
+     - `findByHeadquarterId(Long headquarterId)`: Recupera todas las mesas de una sede específica.
+     - `findByHeadquarterIdAndStatus(Long headquarterId, TableStatus status)`: Recupera las mesas de una sede con un estado específico.
+     - `existsByHeadquarterIdAndTableNumber(Long headquarterId, Integer tableNumber)`: Verifica si existe una mesa con un número específico en una sede.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Table`.
+     - Facilita la recuperación de mesas según diferentes criterios de filtro.
+
+#### **Relaciones entre componentes**
+
+- **Persistencia**: El repositorio `TableRepository` proporciona acceso a los datos almacenados en la base de datos, permitiendo a las capas superiores (como la **Application Layer**) interactuar con las entidades del dominio.
+- **Validación**: Los métodos personalizados en `TableRepository` son utilizados para validar la existencia de mesas y recuperar información específica, asegurando la consistencia de los datos durante las operaciones de negocio.
+
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del **Table Management Bounded Context**, el cual detalla los principales módulos y sus interacciones dentro del contexto delimitado. Este diagrama sigue el enfoque del C4 Model para representar los componentes clave, como servicios de aplicación, controladores, repositorios y servicios externos, junto con sus relaciones.
+
+<img src="./images/c4-model/bc-component-diagram/IOT-TableManagement-BC-Component-Diagram.svg" alt="Table Management BC Component Diagram"/><br>
+
+El **Table Management Bounded Context** está compuesto por los siguientes módulos principales:
+
+1. **Application Layer**:
+   - Coordina las operaciones de negocio relacionadas con la gestión de mesas.
+   - Incluye servicios de comandos y consultas que interactúan con la **Domain Layer** y la **Infrastructure Layer**.
+   - Maneja eventos relacionados con cambios en el estado de las mesas.
+
+2. **Interface Layer**:
+   - Expone los puntos de entrada al sistema a través de controladores REST.
+   - Incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+   - Proporciona una ACL (Access Control Layer) para facilitar la integración con otros contextos.
+
+3. **Domain Layer**:
+   - Encapsula la lógica de negocio relacionada con la gestión de mesas.
+   - Define los agregados, entidades y objetos de valor que representan los conceptos clave del dominio.
+   - Incluye eventos de dominio que representan cambios significativos en el estado del sistema.
+
+4. **Infrastructure Layer**:
+   - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
+   - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos.
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases correspondiente a la **Domain Layer** del **Table Management Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio.
+
+<img src="./images/c4-model/class-diagram/table_management_domain_class_diagram.webp" alt="Table Management BC Domain Layer Class Diagram"/><br>
+
+**Elementos principales del diagrama:**
+
+1. **Aggregates**:
+   - `Table`: Agregado principal que encapsula la lógica de negocio relacionada con la gestión de mesas.
+     - **Atributos**:
+       - `tableNumber`: Número identificativo de la mesa.
+       - `headquarterId`: ID de la sede a la que pertenece la mesa.
+       - `capacity`: Capacidad de la mesa.
+       - `status`: Estado actual de la mesa.
+       - `location`: Ubicación física de la mesa dentro de la sede.
+     - **Métodos**:
+       - `updateStatus(TableStatus status)`: Actualiza el estado de la mesa.
+       - `assignToHeadquarter(HeadquarterId headquarterId)`: Asigna la mesa a una sede específica.
+       - `changeCapacity(Capacity capacity)`: Modifica la capacidad de la mesa.
+
+2. **Entities**:
+   - `Chair`: Entidad que representa cada silla asociada a una mesa.
+     - **Atributos**:
+       - `chairNumber`: Número identificativo de la silla dentro de la mesa.
+       - `status`: Estado actual de la silla.
+     - **Métodos**:
+       - `updateStatus(ChairStatus status)`: Actualiza el estado de la silla.
+       - `isOccupied()`: Verifica si la silla está ocupada.
+
+3. **Value Objects**:
+   - `TableNumber`: Representa el número identificativo de una mesa.
+   - `Capacity`: Representa la capacidad de una mesa.
+   - `TableStatus`: Enumera los estados posibles de una mesa.
+   - `ChairStatus`: Enumera los estados posibles de una silla.
+   - `Location`: Representa la ubicación física de una mesa dentro de la sede.
+   - `HeadquarterId`: Representa el identificador único de una sede.
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram.
+
+El diseño de la base de datos para el **Table Management Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional.
+
+<img src="./images/c4-model/bd/table_management_bd.png" alt="Table Management BC Data Base Diagram"/><br>
+
+**Este diseño incluye las siguientes tablas principales:**
+
+1. **Tables**:
+   - Representa las mesas en el sistema.
+   - **Atributos principales**:
+     - `id`: Identificador único de la mesa.
+     - `table_number`: Número de la mesa dentro de la sede.
+     - `headquarter_id`: Identificador de la sede a la que pertenece la mesa.
+     - `capacity`: Capacidad de la mesa en términos de personas.
+     - `status`: Estado actual de la mesa (AVAILABLE, OCCUPIED, RESERVED, MAINTENANCE).
+     - `zone`: Zona de la cafetería donde está ubicada la mesa.
+     - `x_position`: Coordenada X de la mesa en el plano.
+     - `y_position`: Coordenada Y de la mesa en el plano.
+
+2. **Chairs**:
+   - Representa las sillas asociadas a las mesas.
+   - **Atributos principales**:
+     - `id`: Identificador único de la silla.
+     - `table_id`: Identificador de la mesa a la que pertenece la silla.
+     - `chair_number`: Número de la silla dentro de la mesa.
+     - `status`: Estado actual de la silla (OCCUPIED, FREE).
+
+### 4.2.5 Bounded Context: Menu Management Bounded Context
+
+El **Menu Management Bounded Context** es responsable de gestionar la información de los menús disponibles en las cafeterías. Este contexto asegura que los productos, categorías y precios puedan ser registrados, actualizados y consultados de manera eficiente, permitiendo a los comensales visualizar el menú digital antes de acudir al establecimiento. Este contexto es clave para proporcionar una experiencia completa a los usuarios de la plataforma Tavolo.
+
+#### 4.2.5.1. Domain Layer
+
+La **Domain Layer** del Menu Management Bounded Context encapsula la lógica de negocio relacionada con la gestión de menús. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
+
+##### **Aggregates**
+1. **Menu**
+   - **Propósito**: El agregado principal es el menú (`Menu`), que encapsula la lógica de negocio relacionada con la gestión de productos disponibles en una sede específica.
+   - **Atributos**:
+     - `headquarterId`: Identificador de la sede a la que pertenece el menú, representado como un objeto de valor `HeadquarterId`.
+     - `name`: Nombre del menú, representado como un objeto de valor `MenuName`.
+     - `description`: Descripción del menú, representada como un objeto de valor `MenuDescription`.
+     - `categories`: Conjunto de categorías que componen el menú, representadas como una colección de entidades `Category`.
+   - **Métodos**:
+     - `addCategory(Category category)`: Agrega una nueva categoría al menú.
+     - `removeCategory(CategoryId categoryId)`: Elimina una categoría del menú.
+     - `updateName(MenuName name)`: Actualiza el nombre del menú.
+     - `updateDescription(MenuDescription description)`: Actualiza la descripción del menú.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en los menús.
+     - Gestiona la relación entre la sede y las categorías de productos, asegurando consistencia y validación.
+
+##### **Entities**
+1. **Category**
+   - **Propósito**: La entidad `Category` representa una categoría de productos dentro de un menú.
+   - **Atributos**:
+     - `id`: Identificador único de la categoría, representado como un objeto de valor `CategoryId`.
+     - `name`: Nombre de la categoría, representado como un objeto de valor `CategoryName`.
+     - `description`: Descripción de la categoría, representada como un objeto de valor `CategoryDescription`.
+     - `products`: Conjunto de productos que pertenecen a la categoría, representados como una colección de entidades `Product`.
+   - **Métodos**:
+     - `addProduct(Product product)`: Agrega un nuevo producto a la categoría.
+     - `removeProduct(ProductId productId)`: Elimina un producto de la categoría.
+     - `updateName(CategoryName name)`: Actualiza el nombre de la categoría.
+     - `updateDescription(CategoryDescription description)`: Actualiza la descripción de la categoría.
+
+2. **Product**
+   - **Propósito**: La entidad `Product` representa un producto dentro de una categoría del menú.
+   - **Atributos**:
+     - `id`: Identificador único del producto, representado como un objeto de valor `ProductId`.
+     - `name`: Nombre del producto, representado como un objeto de valor `ProductName`.
+     - `description`: Descripción del producto, representada como un objeto de valor `ProductDescription`.
+     - `price`: Precio del producto, representado como un objeto de valor `Money`.
+     - `imageUrl`: URL de la imagen del producto, representada como un objeto de valor `ImageUrl`.
+     - `availability`: Disponibilidad del producto, representada como un objeto de valor `Availability`.
+   - **Métodos**:
+     - `updateName(ProductName name)`: Actualiza el nombre del producto.
+     - `updateDescription(ProductDescription description)`: Actualiza la descripción del producto.
+     - `updatePrice(Money price)`: Actualiza el precio del producto.
+     - `updateImageUrl(ImageUrl imageUrl)`: Actualiza la URL de la imagen del producto.
+     - `updateAvailability(Availability availability)`: Actualiza la disponibilidad del producto.
+
+##### **Value Objects**
+1. **HeadquarterId**
+   - **Propósito**: Representa el identificador único de una sede.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
+
+2. **MenuName**
+   - **Propósito**: Representa el nombre de un menú.
+   - **Validaciones**:
+     - El nombre no puede ser nulo ni vacío.
+     - El nombre no puede exceder los 100 caracteres.
+
+3. **MenuDescription**
+   - **Propósito**: Representa la descripción de un menú.
+   - **Validaciones**:
+     - La descripción no puede exceder los 500 caracteres.
+
+4. **CategoryId**
+   - **Propósito**: Representa el identificador único de una categoría.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
+
+5. **CategoryName**
+   - **Propósito**: Representa el nombre de una categoría.
+   - **Validaciones**:
+     - El nombre no puede ser nulo ni vacío.
+     - El nombre no puede exceder los 50 caracteres.
+
+6. **CategoryDescription**
+   - **Propósito**: Representa la descripción de una categoría.
+   - **Validaciones**:
+     - La descripción no puede exceder los 200 caracteres.
+
+7. **ProductId**
+   - **Propósito**: Representa el identificador único de un producto.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
+
+8. **ProductName**
+   - **Propósito**: Representa el nombre de un producto.
+   - **Validaciones**:
+     - El nombre no puede ser nulo ni vacío.
+     - El nombre no puede exceder los 100 caracteres.
+
+9. **ProductDescription**
+   - **Propósito**: Representa la descripción de un producto.
+   - **Validaciones**:
+     - La descripción no puede exceder los 500 caracteres.
+
+10. **Money**
+    - **Propósito**: Representa un importe monetario con una divisa.
+    - **Atributos**:
+      - `amount`: Importe.
+      - `currency`: Divisa.
+    - **Validaciones**:
+      - El importe no puede ser negativo.
+      - La divisa debe ser válida según las divisas soportadas.
+
+11. **ImageUrl**
+    - **Propósito**: Representa la URL de una imagen.
+    - **Validaciones**:
+      - La URL debe ser válida.
+
+12. **Availability**
+    - **Propósito**: Enumera los estados posibles de disponibilidad de un producto.
+    - **Valores**:
+      - `AVAILABLE`: El producto está disponible para ser ordenado.
+      - `SOLD_OUT`: El producto está agotado temporalmente.
+      - `DISCONTINUED`: El producto ha sido descontinuado.
+
+#### **Commands**
+1. **CreateMenuCommand**
+   - **Propósito**: Comando para crear un nuevo menú para una sede específica.
+   - **Atributos**:
+     - `headquarterId`: ID de la sede.
+     - `name`: Nombre del menú.
+     - `description`: Descripción del menú.
+
+2. **AddCategoryCommand**
+   - **Propósito**: Comando para agregar una nueva categoría a un menú existente.
+   - **Atributos**:
+     - `menuId`: ID del menú.
+     - `name`: Nombre de la categoría.
+     - `description`: Descripción de la categoría.
+
+3. **AddProductCommand**
+   - **Propósito**: Comando para agregar un nuevo producto a una categoría existente.
+   - **Atributos**:
+     - `categoryId`: ID de la categoría.
+     - `name`: Nombre del producto.
+     - `description`: Descripción del producto.
+     - `price`: Precio del producto.
+     - `imageUrl`: URL de la imagen del producto.
+     - `availability`: Disponibilidad inicial del producto.
+
+#### **Queries**
+1. **GetMenuByIdQuery**
+   - **Propósito**: Recupera un menú específico por su ID.
+   - **Atributos**:
+     - `menuId`: ID del menú a consultar.
+
+2. **GetMenuByHeadquarterQuery**
+   - **Propósito**: Recupera el menú asociado a una sede específica.
+   - **Atributos**:
+     - `headquarterId`: ID de la sede a consultar.
+
+3. **GetCategoryByIdQuery**
+   - **Propósito**: Recupera una categoría específica por su ID.
+   - **Atributos**:
+     - `categoryId`: ID de la categoría a consultar.
+
+4. **GetProductByIdQuery**
+   - **Propósito**: Recupera un producto específico por su ID.
+   - **Atributos**:
+     - `productId`: ID del producto a consultar.
+
+#### **Events**
+1. **MenuCreatedEvent**
+   - **Propósito**: Evento que se dispara cuando se crea un nuevo menú.
+   - **Atributos**:
+     - `menuId`: ID del menú creado.
+     - `headquarterId`: ID de la sede asociada.
+
+2. **CategoryAddedEvent**
+   - **Propósito**: Evento que se dispara cuando se agrega una nueva categoría a un menú.
+   - **Atributos**:
+     - `menuId`: ID del menú.
+     - `categoryId`: ID de la categoría agregada.
+
+3. **ProductAddedEvent**
+   - **Propósito**: Evento que se dispara cuando se agrega un nuevo producto a una categoría.
+   - **Atributos**:
+     - `categoryId`: ID de la categoría.
+     - `productId`: ID del producto agregado.
+
+#### **Relaciones entre componentes**
+- El agregado `Menu` actúa como el núcleo del dominio, gestionando las relaciones con las entidades `Category` y, a través de ellas, con las entidades `Product`.
+- Las entidades `Category` y `Product` tienen sus propias identidades y ciclos de vida dentro del contexto.
+- Los objetos de valor encapsulan datos inmutables y validaciones específicas, asegurando consistencia en el dominio.
+- Los comandos, consultas y eventos permiten interactuar con el sistema de manera estructurada, facilitando la creación y gestión de menús, categorías y productos.
+
+#### 4.2.5.2. Interface Layer
+
+La **Interface Layer** del Menu Management Bounded Context expone los puntos de entrada al sistema a través de controladores REST. Esta capa permite la interacción con las entidades del dominio mediante solicitudes HTTP, facilitando la comunicación entre los clientes y el sistema. Además, incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+
+#### **Access Control Layer (ACL)**
+
+1. **MenuManagementContextFacade**
+   - **Propósito**: Proporciona una interfaz simplificada para interactuar con el dominio del Menu Management Bounded Context desde otros contextos. Permite consultar información sobre menús, categorías y productos.
+   - **Métodos principales**:
+     - `getMenuByHeadquarter(Long headquarterId)`: Obtiene el menú asociado a una sede específica.
+     - `existsMenu(Long menuId)`: Verifica si un menú existe en el sistema.
+   - **Dependencias**:
+     - `MenuQueryService`: Servicio encargado de manejar las consultas relacionadas con los menús.
+
+#### **Controllers**
+
+Los controladores son responsables de manejar las solicitudes HTTP y delegar la lógica de negocio a los servicios correspondientes. A continuación, se describen los principales controladores:
+
+1. **MenuController**
+   - **Propósito**: Gestiona las operaciones relacionadas con los menús.
+   - **Endpoints**:
+     - `POST /api/v1/menus`: Crea un nuevo menú.
+     - `GET /api/v1/menus/{menuId}`: Obtiene los detalles de un menú específico por su ID.
+     - `GET /api/v1/headquarters/{headquarterId}/menu`: Obtiene el menú asociado a una sede específica.
+   - **Dependencias**:
+     - `MenuCommandService`: Servicio encargado de manejar los comandos relacionados con los menús.
+     - `MenuQueryService`: Servicio encargado de manejar las consultas relacionadas con los menús.
+
+2. **CategoryController**
+   - **Propósito**: Gestiona las operaciones relacionadas con las categorías de los menús.
+   - **Endpoints**:
+     - `POST /api/v1/menus/{menuId}/categories`: Agrega una nueva categoría a un menú existente.
+     - `GET /api/v1/categories/{categoryId}`: Obtiene los detalles de una categoría específica por su ID.
+   - **Dependencias**:
+     - `CategoryCommandService`: Servicio encargado de manejar los comandos relacionados con las categorías.
+     - `CategoryQueryService`: Servicio encargado de manejar las consultas relacionadas con las categorías.
+
+3. **ProductController**
+   - **Propósito**: Gestiona las operaciones relacionadas con los productos de las categorías.
+   - **Endpoints**:
+     - `POST /api/v1/categories/{categoryId}/products`: Agrega un nuevo producto a una categoría existente.
+     - `GET /api/v1/products/{productId}`: Obtiene los detalles de un producto específico por su ID.
+     - `PUT /api/v1/products/{productId}/availability`: Actualiza la disponibilidad de un producto.
+   - **Dependencias**:
+     - `ProductCommandService`: Servicio encargado de manejar los comandos relacionados con los productos.
+     - `ProductQueryService`: Servicio encargado de manejar las consultas relacionadas con los productos.
+
+#### **Resources**
+
+Los recursos representan los datos que se exponen a través de la API REST. Estos recursos son utilizados para estructurar las respuestas de los controladores y asegurar una representación clara y consistente de los datos. A continuación, se describen los principales recursos:
+
+1. **CreateMenuResource**
+   - **Propósito**: Representa los datos necesarios para crear un nuevo menú.
+   - **Atributos**:
+     - `headquarterId`: ID de la sede asociada al menú.
+     - `name`: Nombre del menú.
+     - `description`: Descripción del menú.
+
+2. **MenuResource**
+   - **Propósito**: Representa un menú en el sistema, incluyendo sus categorías y productos.
+   - **Atributos**:
+     - `id`: ID único del menú.
+     - `headquarterId`: ID de la sede asociada.
+     - `name`: Nombre del menú.
+     - `description`: Descripción del menú.
+     - `categories`: Lista de categorías del menú.
+
+3. **CreateCategoryResource**
+   - **Propósito**: Representa los datos necesarios para crear una nueva categoría.
+   - **Atributos**:
+     - `name`: Nombre de la categoría.
+     - `description`: Descripción de la categoría.
+
+4. **CategoryResource**
+   - **Propósito**: Representa una categoría en el sistema, incluyendo sus productos.
+   - **Atributos**:
+     - `id`: ID único de la categoría.
+     - `name`: Nombre de la categoría.
+     - `description`: Descripción de la categoría.
+     - `products`: Lista de productos de la categoría.
+
+5. **CreateProductResource**
+   - **Propósito**: Representa los datos necesarios para crear un nuevo producto.
+   - **Atributos**:
+     - `name`: Nombre del producto.
+     - `description`: Descripción del producto.
+     - `price`: Precio del producto.
+     - `currency`: Moneda del precio.
+     - `imageUrl`: URL de la imagen del producto.
+     - `availability`: Disponibilidad inicial del producto.
+
+6. **ProductResource**
+   - **Propósito**: Representa un producto en el sistema.
+   - **Atributos**:
+     - `id`: ID único del producto.
+     - `name`: Nombre del producto.
+     - `description`: Descripción del producto.
+     - `price`: Precio del producto.
+     - `currency`: Moneda del precio.
+     - `imageUrl`: URL de la imagen del producto.
+     - `availability`: Disponibilidad actual del producto.
+
+#### **Transformers**
+
+Los transformadores son responsables de convertir las entidades del dominio en recursos y viceversa. Esto asegura que los datos expuestos a través de la API REST sean consistentes y estén en el formato esperado. A continuación, se describen los principales transformadores:
+
+1. **CreateMenuCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateMenuResource` en un comando `CreateMenuCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateMenuResource resource)`: Transforma los datos de creación de un menú en un comando.
+
+2. **MenuResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Menu` en un recurso `MenuResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Menu entity)`: Transforma un menú del dominio en un recurso.
+
+3. **CreateCategoryCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateCategoryResource` en un comando `AddCategoryCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateCategoryResource resource, Long menuId)`: Transforma los datos de creación de una categoría en un comando.
+
+4. **CategoryResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Category` en un recurso `CategoryResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Category entity)`: Transforma una categoría del dominio en un recurso.
+
+5. **CreateProductCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateProductResource` en un comando `AddProductCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateProductResource resource, Long categoryId)`: Transforma los datos de creación de un producto en un comando.
+
+6. **ProductResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Product` en un recurso `ProductResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Product entity)`: Transforma un producto del dominio en un recurso.
+
+#### 4.2.5.3. Application Layer
+
+La **Application Layer** del Menu Management Bounded Context actúa como un intermediario entre la **Domain Layer** y las capas externas, como la **Interface Layer** y la **Infrastructure Layer**. Su propósito principal es coordinar las operaciones de negocio, manejar comandos y consultas, y orquestar la lógica de aplicación sin exponer directamente los detalles del dominio.
+
+#### **Command Services**
+
+Los servicios de comandos son responsables de ejecutar operaciones que modifican el estado del sistema. A continuación, se describen los principales servicios de comandos:
+
+1. **MenuCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación y modificación de menús.
+   - **Métodos principales**:
+     - `handle(CreateMenuCommand command)`: Crea un nuevo menú para una sede específica.
+   - **Validaciones**:
+     - Verifica que la sede exista utilizando el servicio externo `ExternalHeadquarterService`.
+     - Asegura que no exista ya un menú para la sede especificada.
+   - **Dependencias**:
+     - `MenuRepository`: Persistencia de menús.
+     - `ExternalHeadquarterService`: Verifica la existencia de la sede.
+
+2. **CategoryCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación y modificación de categorías.
+   - **Métodos principales**:
+     - `handle(AddCategoryCommand command)`: Agrega una nueva categoría a un menú existente.
+   - **Validaciones**:
+     - Verifica que el menú exista.
+     - Asegura que no exista ya una categoría con el mismo nombre en el menú.
+   - **Dependencias**:
+     - `MenuRepository`: Persistencia de menús.
+     - `CategoryRepository`: Persistencia de categorías.
+
+3. **ProductCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación y modificación de productos.
+   - **Métodos principales**:
+     - `handle(AddProductCommand command)`: Agrega un nuevo producto a una categoría existente.
+     - `handle(UpdateProductAvailabilityCommand command)`: Actualiza la disponibilidad de un producto existente.
+   - **Validaciones**:
+     - Verifica que la categoría exista.
+     - Asegura que no exista ya un producto con el mismo nombre en la categoría.
+   - **Dependencias**:
+     - `CategoryRepository`: Persistencia de categorías.
+     - `ProductRepository`: Persistencia de productos.
+
+#### **Query Services**
+
+Los servicios de consultas son responsables de recuperar información del sistema sin modificar su estado. A continuación, se describen los principales servicios de consultas:
+
+1. **MenuQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con los menús.
+   - **Métodos principales**:
+     - `handle(GetMenuByIdQuery query)`: Recupera un menú específico por su ID.
+     - `handle(GetMenuByHeadquarterQuery query)`: Recupera el menú asociado a una sede específica.
+   - **Dependencias**:
+     - `MenuRepository`: Persistencia de menús.
+
+2. **CategoryQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con las categorías de los menús.
+   - **Métodos principales**:
+     - `handle(GetCategoryByIdQuery query)`: Recupera una categoría específica por su ID.
+   - **Dependencias**:
+     - `CategoryRepository`: Persistencia de categorías.
+
+3. **ProductQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con los productos de las categorías.
+   - **Métodos principales**:
+     - `handle(GetProductByIdQuery query)`: Recupera un producto específico por su ID.
+   - **Dependencias**:
+     - `ProductRepository`: Persistencia de productos.
+
+#### **Event Handlers**
+
+Los manejadores de eventos son responsables de reaccionar a eventos específicos del sistema. A continuación, se describen los principales manejadores de eventos:
+
+1. **MenuCreatedEventHandler**
+   - **Propósito**: Maneja el evento `MenuCreatedEvent`, que se dispara cuando se crea un nuevo menú.
+   - **Método principal**:
+     - `on(MenuCreatedEvent event)`: Realiza acciones adicionales cuando se crea un menú, como notificar a otros sistemas.
+   - **Dependencias**:
+     - `NotificationService`: Servicio para enviar notificaciones.
+
+#### **Outbound Services (ACL)**
+
+Los servicios externos proporcionan funcionalidades auxiliares que no forman parte del dominio principal. A continuación, se describen los principales servicios externos:
+
+1. **ExternalHeadquarterService**
+   - **Propósito**: Interactúa con el Branching Bounded Context para verificar la existencia de sedes.
+   - **Método principal**:
+     - `existsHeadquarter(Long headquarterId)`: Verifica si una sede existe en el sistema.
+
+#### 4.2.5.4. Infrastructure Layer
+
+La **Infrastructure Layer** del Menu Management Bounded Context proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema relacionadas con la gestión de menús, categorías y productos. Esta capa incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos. Su objetivo principal es garantizar que las operaciones de almacenamiento y recuperación de información sean eficientes, consistentes y seguras.
+
+#### **Persistencia (JPA Repositories)**
+
+1. **MenuRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de menús.
+   - **Métodos principales**:
+     - `findByHeadquarterId(HeadquarterId headquarterId)`: Recupera el menú asociado a una sede específica.
+     - `existsByHeadquarterId(HeadquarterId headquarterId)`: Verifica si existe un menú para una sede específica.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Menu`.
+     - Facilita la recuperación de menús según diferentes criterios de filtro.
+
+2. **CategoryRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de categorías.
+   - **Métodos principales**:
+     - `findByMenuIdAndName(Long menuId, CategoryName name)`: Recupera una categoría específica por su menú y nombre.
+     - `existsByMenuIdAndName(Long menuId, CategoryName name)`: Verifica si existe una categoría con un nombre específico en un menú.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Category`.
+     - Facilita la recuperación de categorías según diferentes criterios de filtro.
+
+3. **ProductRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de productos.
+   - **Métodos principales**:
+     - `findByCategoryIdAndName(Long categoryId, ProductName name)`: Recupera un producto específico por su categoría y nombre.
+     - `existsByCategoryIdAndName(Long categoryId, ProductName name)`: Verifica si existe un producto con un nombre específico en una categoría.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Product`.
+     - Facilita la recuperación de productos según diferentes criterios de filtro.
+
+#### **Relaciones entre componentes**
+
+- **Persistencia**: Los repositorios `MenuRepository`, `CategoryRepository` y `ProductRepository` proporcionan acceso a los datos almacenados en la base de datos, permitiendo a las capas superiores (como la **Application Layer**) interactuar con las entidades del dominio.
+- **Validación**: Los métodos personalizados en los repositorios son utilizados para validar la existencia y unicidad de menús, categorías y productos, asegurando la consistencia de los datos durante las operaciones de negocio.
+
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del **Menu Management Bounded Context**, el cual detalla los principales módulos y sus interacciones dentro del contexto delimitado. Este diagrama sigue el enfoque del C4 Model para representar los componentes clave, como servicios de aplicación, controladores, repositorios y servicios externos, junto con sus relaciones.
+
+<img src="./images/c4-model/bc-component-diagram/IOT-MenuManagement-BC-Component-Diagram.svg" alt="Menu Management BC Component Diagram"/><br>
+
+El **Menu Management Bounded Context** está compuesto por los siguientes módulos principales:
+
+1. **Application Layer**:
+   - Coordina las operaciones de negocio relacionadas con la gestión de menús, categorías y productos.
+   - Incluye servicios de comandos y consultas que interactúan con la **Domain Layer** y la **Infrastructure Layer**.
+   - Maneja eventos relacionados con la creación y modificación de menús, categorías y productos.
+
+2. **Interface Layer**:
+   - Expone los puntos de entrada al sistema a través de controladores REST.
+   - Incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+   - Proporciona una ACL (Access Control Layer) para facilitar la integración con otros contextos.
+
+3. **Domain Layer**:
+   - Encapsula la lógica de negocio relacionada con la gestión de menús, categorías y productos.
+   - Define los agregados, entidades y objetos de valor que representan los conceptos clave del dominio.
+   - Incluye eventos de dominio que representan cambios significativos en el estado del sistema.
+
+4. **Infrastructure Layer**:
+   - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
+   - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos.
+
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases correspondiente a la **Domain Layer** del **Menu Management Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio.
+
+<img src="./images/c4-model/class-diagram/menu_management_domain_class_diagram.webp" alt="Menu Management BC Domain Layer Class Diagram"/><br>
+
+**Elementos principales del diagrama:**
+
+1. **Aggregates**:
+   - `Menu`: Agregado principal que encapsula la lógica de negocio relacionada con la gestión de menús.
+     - **Atributos**:
+       - `headquarterId`: ID de la sede a la que pertenece el menú.
+       - `name`: Nombre del menú.
+       - `description`: Descripción del menú.
+       - `categories`: Conjunto de categorías que componen el menú.
+     - **Métodos**:
+       - `addCategory(Category category)`: Agrega una nueva categoría al menú.
+       - `removeCategory(CategoryId categoryId)`: Elimina una categoría del menú.
+       - `updateName(MenuName name)`: Actualiza el nombre del menú.
+       - `updateDescription(MenuDescription description)`: Actualiza la descripción del menú.
+
+2. **Entities**:
+   - `Category`: Entidad que representa una categoría de productos dentro de un menú.
+     - **Atributos**:
+       - `id`: ID único de la categoría.
+       - `name`: Nombre de la categoría.
+       - `description`: Descripción de la categoría.
+       - `products`: Conjunto de productos que pertenecen a la categoría.
+     - **Métodos**:
+       - `addProduct(Product product)`: Agrega un nuevo producto a la categoría.
+       - `removeProduct(ProductId productId)`: Elimina un producto de la categoría.
+       - `updateName(CategoryName name)`: Actualiza el nombre de la categoría.
+       - `updateDescription(CategoryDescription description)`: Actualiza la descripción de la categoría.
+
+   - `Product`: Entidad que representa un producto dentro de una categoría del menú.
+     - **Atributos**:
+       - `id`: ID único del producto.
+       - `name`: Nombre del producto.
+       - `description`: Descripción del producto.
+       - `price`: Precio del producto.
+       - `imageUrl`: URL de la imagen del producto.
+       - `availability`: Disponibilidad del producto.
+     - **Métodos**:
+       - `updateName(ProductName name)`: Actualiza el nombre del producto.
+       - `updateDescription(ProductDescription description)`: Actualiza la descripción del producto.
+       - `updatePrice(Money price)`: Actualiza el precio del producto.
+       - `updateImageUrl(ImageUrl imageUrl)`: Actualiza la URL de la imagen del producto.
+       - `updateAvailability(Availability availability)`: Actualiza la disponibilidad del producto.
+
+3. **Value Objects**:
+   - `HeadquarterId`: Representa el identificador único de una sede.
+   - `MenuName`: Representa el nombre de un menú.
+   - `MenuDescription`: Representa la descripción de un menú.
+   - `CategoryId`: Representa el identificador único de una categoría.
+   - `CategoryName`: Representa el nombre de una categoría.
+   - `CategoryDescription`: Representa la descripción de una categoría.
+   - `ProductId`: Representa el identificador único de un producto.
+   - `ProductName`: Representa el nombre de un producto.
+   - `ProductDescription`: Representa la descripción de un producto.
+   - `Money`: Representa un importe monetario con una divisa.
+   - `ImageUrl`: Representa la URL de una imagen.
+   - `Availability`: Enumera los estados posibles de disponibilidad de un producto.
+
+##### 4.2.5.6.2. Bounded Context Database Design Diagram.
+
+El diseño de la base de datos para el **Menu Management Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional.
+
+<img src="./images/c4-model/bd/menu_management_bd.png" alt="Menu Management BC Data Base Diagram"/><br>
+
+**Este diseño incluye las siguientes tablas principales:**
+
+1. **Menus**:
+   - Representa los menús disponibles en las sedes.
+   - **Atributos principales**:
+     - `id`: Identificador único del menú.
+     - `headquarter_id`: Identificador de la sede a la que pertenece el menú.
+     - `name`: Nombre del menú.
+     - `description`: Descripción del menú.
+
+2. **Categories**:
+   - Representa las categorías de productos dentro de los menús.
+   - **Atributos principales**:
+     - `id`: Identificador único de la categoría.
+     - `menu_id`: Identificador del menú al que pertenece la categoría.
+     - `name`: Nombre de la categoría.
+     - `description`: Descripción de la categoría.
+
+3. **Products**:
+   - Representa los productos disponibles en las categorías.
+   - **Atributos principales**:
+     - `id`: Identificador único del producto.
+     - `category_id`: Identificador de la categoría a la que pertenece el producto.
+     - `name`: Nombre del producto.
+     - `description`: Descripción del producto.
+     - `price_amount`: Importe del precio del producto.
+     - `price_currency`: Divisa del precio del producto.
+     - `image_url`: URL de la imagen del producto.
+     - `availability`: Disponibilidad del producto (AVAILABLE, SOLD_OUT, DISCONTINUED).
+
+### 4.2.6 Bounded Context: IoT Monitoring Bounded Context
+
+El **IoT Monitoring Bounded Context** es responsable de gestionar la interacción con los dispositivos IoT instalados en las cafeterías, como los sensores de peso en las sillas. Este contexto se encarga de recopilar, procesar e interpretar los datos enviados por estos dispositivos para determinar el estado de ocupación de las mesas en tiempo real. Además, proporciona mecanismos para la configuración y monitoreo de los dispositivos, asegurando su correcto funcionamiento y la precisión de los datos recopilados.
+
+## 4.2.6.1. Domain Layer
+
+La **Domain Layer** del IoT Monitoring Bounded Context encapsula la lógica de negocio relacionada con la gestión de dispositivos IoT y la interpretación de sus datos. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
+
+### **Aggregates**
+1. **IoTDevice**
+   - **Propósito**: El agregado principal es el dispositivo IoT (`IoTDevice`), que encapsula la lógica de negocio relacionada con la gestión de dispositivos físicos y sus registros de datos.
+   - **Atributos**:
+     - `deviceId`: Identificador único del dispositivo, representado como un objeto de valor `DeviceId`.
+     - `type`: Tipo de dispositivo IoT (sensor de peso, sensor de presencia, etc.), representado como un objeto de valor `DeviceType`.
+     - `status`: Estado actual del dispositivo, representado como un objeto de valor `DeviceStatus`.
+     - `location`: Ubicación del dispositivo en la sede, representada como un objeto de valor `DeviceLocation`.
+     - `configurationSettings`: Configuración del dispositivo, representada como un objeto de valor `ConfigurationSettings`.
+     - `dataReadings`: Conjunto de lecturas de datos del dispositivo, representadas como una colección de entidades `DataReading`.
+   - **Métodos**:
+     - `updateStatus(DeviceStatus status)`: Actualiza el estado del dispositivo.
+     - `updateConfiguration(ConfigurationSettings settings)`: Actualiza la configuración del dispositivo.
+     - `addDataReading(DataReading reading)`: Agrega una nueva lectura de datos del dispositivo.
+     - `getLatestReading()`: Obtiene la lectura más reciente del dispositivo.
+     - `isOccupied()`: Determina si la silla está ocupada basándose en las últimas lecturas.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en los dispositivos.
+     - Gestiona la relación entre el dispositivo físico y sus registros de datos, asegurando consistencia y validación.
+
+### **Entities**
+1. **DataReading**
+   - **Propósito**: La entidad `DataReading` representa una lectura de datos enviada por un dispositivo IoT.
+   - **Atributos**:
+     - `timestamp`: Momento exacto de la lectura, representado como un `Timestamp`.
+     - `value`: Valor de la lectura (por ejemplo, peso registrado), representado como un objeto de valor `ReadingValue`.
+     - `quality`: Calidad de la lectura (para detectar anomalías), representada como un objeto de valor `ReadingQuality`.
+   - **Métodos**:
+     - `isValidReading()`: Verifica si la lectura es válida según la calidad y el valor.
+     - `isOccupiedIndication()`: Determina si la lectura indica ocupación de la silla.
+
+2. **DeviceAssignment**
+   - **Propósito**: La entidad `DeviceAssignment` representa la asignación de un dispositivo IoT a una posición específica (mesa o silla).
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo asignado, representado como un objeto de valor `DeviceId`.
+     - `tableId`: Identificador de la mesa a la que está asignado el dispositivo, representado como un objeto de valor `TableId`.
+     - `chairNumber`: Número de la silla a la que está asignado el dispositivo (si aplica), representado como un objeto de valor `ChairNumber`.
+     - `assignmentDate`: Fecha de asignación, representada como un `Timestamp`.
+   - **Métodos**:
+     - `updateAssignment(TableId tableId, ChairNumber chairNumber)`: Actualiza la asignación del dispositivo.
+
+### **Value Objects**
+1. **DeviceId**
+   - **Propósito**: Representa el identificador único de un dispositivo IoT.
+   - **Validaciones**:
+     - El identificador debe seguir un formato específico.
+     - El identificador no puede ser nulo.
+
+2. **DeviceType**
+   - **Propósito**: Enumera los tipos posibles de dispositivos IoT utilizados en el sistema.
+   - **Valores**:
+     - `WEIGHT_SENSOR`: Sensor de peso para detectar ocupación.
+     - `PRESENCE_SENSOR`: Sensor de presencia para detectar movimiento.
+     - `GATEWAY`: Dispositivo que recolecta datos de múltiples sensores y los envía al sistema central.
+
+3. **DeviceStatus**
+   - **Propósito**: Enumera los estados posibles de un dispositivo IoT.
+   - **Valores**:
+     - `ACTIVE`: El dispositivo está operando correctamente.
+     - `INACTIVE`: El dispositivo está temporalmente fuera de servicio.
+     - `MAINTENANCE`: El dispositivo está en mantenimiento.
+     - `DISCONNECTED`: Se ha perdido la conexión con el dispositivo.
+     - `ERROR`: El dispositivo está reportando errores.
+
+4. **DeviceLocation**
+   - **Propósito**: Representa la ubicación física de un dispositivo IoT dentro de una sede.
+   - **Atributos**:
+     - `headquarterId`: Identificador de la sede donde está ubicado el dispositivo.
+     - `zoneId`: Zona específica dentro de la sede (por ejemplo, "terraza", "interior").
+     - `tableId`: Identificador de la mesa asociada (si aplica).
+     - `chairId`: Identificador de la silla asociada (si aplica).
+   - **Validaciones**:
+     - Los identificadores deben ser válidos.
+     - La ubicación debe ser coherente con la estructura de la sede.
+
+5. **ConfigurationSettings**
+   - **Propósito**: Representa la configuración técnica de un dispositivo IoT.
+   - **Atributos**:
+     - `samplingRate`: Frecuencia de muestreo (en segundos).
+     - `thresholdValue`: Valor umbral para determinar ocupación (en kg para sensores de peso).
+     - `calibrationFactor`: Factor de calibración para ajustar las lecturas.
+     - `batteryLevel`: Nivel de batería actual (porcentaje).
+   - **Validaciones**:
+     - La frecuencia de muestreo debe estar entre 1 y 60 segundos.
+     - El valor umbral debe ser apropiado según el tipo de sensor.
+     - El factor de calibración debe estar dentro de un rango válido.
+
+6. **ReadingValue**
+   - **Propósito**: Representa el valor medido por un sensor IoT.
+   - **Atributos**:
+     - `value`: Valor numérico de la lectura.
+     - `unit`: Unidad de medida (por ejemplo, "kg", "boolean").
+   - **Validaciones**:
+     - El valor debe estar dentro de los rangos esperados para el tipo de sensor.
+     - La unidad debe ser coherente con el tipo de sensor.
+
+7. **ReadingQuality**
+   - **Propósito**: Representa la calidad de una lectura de datos para detectar anomalías.
+   - **Atributos**:
+     - `qualityScore`: Puntuación de calidad (0-100).
+     - `noiseLevel`: Nivel de ruido detectado en la lectura.
+     - `isAnomalous`: Indicador de si la lectura es anómala.
+   - **Validaciones**:
+     - La puntuación de calidad debe estar entre 0 y 100.
+     - El nivel de ruido debe estar dentro de los rangos aceptables.
+
+8. **TableId**
+   - **Propósito**: Representa el identificador único de una mesa.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
+
+9. **ChairNumber**
+   - **Propósito**: Representa el número de una silla dentro de una mesa.
+   - **Validaciones**:
+     - El número debe ser positivo.
+
+### **Commands**
+1. **RegisterDeviceCommand**
+   - **Propósito**: Comando para registrar un nuevo dispositivo IoT en el sistema.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo.
+     - `type`: Tipo de dispositivo.
+     - `location`: Ubicación del dispositivo.
+     - `configurationSettings`: Configuración inicial del dispositivo.
+
+2. **AssignDeviceCommand**
+   - **Propósito**: Comando para asignar un dispositivo a una mesa o silla específica.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo.
+     - `tableId`: Identificador de la mesa.
+     - `chairNumber`: Número de la silla (si aplica).
+
+3. **UpdateDeviceStatusCommand**
+   - **Propósito**: Comando para actualizar el estado de un dispositivo.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo.
+     - `status`: Nuevo estado del dispositivo.
+
+4. **RecordDataReadingCommand**
+   - **Propósito**: Comando para registrar una nueva lectura de datos de un dispositivo.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo.
+     - `timestamp`: Momento de la lectura.
+     - `value`: Valor de la lectura.
+     - `quality`: Calidad de la lectura.
+
+### **Queries**
+1. **GetDeviceByIdQuery**
+   - **Propósito**: Recupera un dispositivo específico por su ID.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo a consultar.
+
+2. **GetDevicesByHeadquarterQuery**
+   - **Propósito**: Recupera todos los dispositivos asociados a una sede específica.
+   - **Atributos**:
+     - `headquarterId`: Identificador de la sede a consultar.
+
+3. **GetDevicesByStatusQuery**
+   - **Propósito**: Recupera todos los dispositivos que tienen un estado específico.
+   - **Atributos**:
+     - `status`: Estado de los dispositivos a consultar.
+
+4. **GetLatestReadingsQuery**
+   - **Propósito**: Recupera las lecturas más recientes de un dispositivo específico.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo.
+     - `count`: Número de lecturas a recuperar.
+
+### **Events**
+1. **DeviceRegisteredEvent**
+   - **Propósito**: Evento que se dispara cuando se registra un nuevo dispositivo IoT.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo registrado.
+     - `type`: Tipo del dispositivo.
+     - `location`: Ubicación del dispositivo.
+
+2. **DeviceStatusChangedEvent**
+   - **Propósito**: Evento que se dispara cuando cambia el estado de un dispositivo.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo.
+     - `previousStatus`: Estado anterior del dispositivo.
+     - `newStatus`: Nuevo estado del dispositivo.
+     - `timestamp`: Momento en que ocurrió el cambio.
+
+3. **OccupancyDetectedEvent**
+   - **Propósito**: Evento que se dispara cuando se detecta ocupación en una silla.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo que detectó la ocupación.
+     - `tableId`: Identificador de la mesa.
+     - `chairNumber`: Número de la silla.
+     - `timestamp`: Momento en que se detectó la ocupación.
+
+4. **OccupancyReleasedEvent**
+   - **Propósito**: Evento que se dispara cuando se deja de detectar ocupación en una silla.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo que detectó la liberación.
+     - `tableId`: Identificador de la mesa.
+     - `chairNumber`: Número de la silla.
+     - `timestamp`: Momento en que se detectó la liberación.
+
+## 4.2.6.2. Interface Layer
+
+La **Interface Layer** del IoT Monitoring Bounded Context expone los puntos de entrada al sistema a través de controladores REST y una ACL (Access Control Layer). Esta capa permite la interacción con las entidades del dominio mediante solicitudes HTTP y conexiones MQTT para dispositivos IoT, facilitando la comunicación entre los clientes, dispositivos y el sistema. Además, incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+
+### **Access Control Layer (ACL)**
+
+1. **IoTMonitoringContextFacade**
+   - **Propósito**: Proporciona una interfaz simplificada para interactuar con el dominio del IoT Monitoring Bounded Context desde otros contextos. Permite consultar información sobre el estado de ocupación de mesas y sillas basada en los datos de los sensores IoT.
+   - **Métodos principales**:
+     - `isTableOccupied(Long tableId)`: Indica si una mesa está ocupada según las lecturas de los sensores.
+     - `getOccupiedChairsCount(Long tableId)`: Devuelve el número de sillas ocupadas en una mesa específica.
+     - `getLatestOccupancyTimestamp(Long tableId)`: Devuelve el momento en que se detectó la última ocupación o liberación en una mesa.
+   - **Dependencias**:
+     - `DeviceQueryService`: Servicio encargado de manejar las consultas relacionadas con los dispositivos IoT.
+
+### **Controllers**
+
+Los controladores son responsables de manejar las solicitudes HTTP y delegar la lógica de negocio a los servicios correspondientes. A continuación, se describen los principales controladores:
+
+1. **DeviceController**
+   - **Propósito**: Gestiona las operaciones relacionadas con los dispositivos IoT.
+   - **Endpoints**:
+     - `POST /api/v1/iot/devices`: Registra un nuevo dispositivo IoT.
+     - `GET /api/v1/iot/devices/{deviceId}`: Obtiene los detalles de un dispositivo específico por su ID.
+     - `GET /api/v1/iot/devices`: Obtiene la lista de todos los dispositivos, con opción a filtrar por sede o estado.
+     - `PUT /api/v1/iot/devices/{deviceId}/status`: Actualiza el estado de un dispositivo.
+     - `POST /api/v1/iot/devices/{deviceId}/assignment`: Asigna un dispositivo a una mesa o silla específica.
+   - **Dependencias**:
+     - `DeviceCommandService`: Servicio encargado de manejar los comandos relacionados con los dispositivos.
+     - `DeviceQueryService`: Servicio encargado de manejar las consultas relacionadas con los dispositivos.
+
+2. **DataReadingController**
+   - **Propósito**: Gestiona las operaciones relacionadas con las lecturas de datos de los dispositivos IoT.
+   - **Endpoints**:
+     - `POST /api/v1/iot/readings`: Registra una nueva lectura de datos.
+     - `GET /api/v1/iot/devices/{deviceId}/readings`: Obtiene las lecturas de un dispositivo específico.
+     - `GET /api/v1/iot/tables/{tableId}/occupancy`: Obtiene el estado de ocupación de una mesa específica.
+   - **Dependencias**:
+     - `ReadingCommandService`: Servicio encargado de manejar los comandos relacionados con las lecturas de datos.
+     - `ReadingQueryService`: Servicio encargado de manejar las consultas relacionadas con las lecturas de datos.
+
+### **MQTT Controllers**
+
+1. **MqttDataReceiver**
+   - **Propósito**: Recibe los datos enviados por los dispositivos IoT a través del protocolo MQTT.
+   - **Tópicos**:
+     - `tavolo/devices/+/readings`: Tópico para recibir lecturas de datos de los dispositivos.
+     - `tavolo/devices/+/status`: Tópico para recibir actualizaciones de estado de los dispositivos.
+   - **Dependencias**:
+     - `ReadingCommandService`: Servicio encargado de manejar los comandos relacionados con las lecturas de datos.
+     - `DeviceCommandService`: Servicio encargado de manejar los comandos relacionados con los dispositivos.
+
+### **Resources**
+
+Los recursos representan los datos que se exponen a través de la API REST. Estos recursos son utilizados para estructurar las respuestas de los controladores y asegurar una representación clara y consistente de los datos. A continuación, se describen los principales recursos:
+
+1. **RegisterDeviceResource**
+   - **Propósito**: Representa los datos necesarios para registrar un nuevo dispositivo IoT.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo.
+     - `type`: Tipo de dispositivo.
+     - `headquarterId`: ID de la sede donde se ubicará el dispositivo.
+     - `zoneId`: Zona específica dentro de la sede.
+     - `tableId`: ID de la mesa asociada (si aplica).
+     - `chairNumber`: Número de la silla asociada (si aplica).
+     - `samplingRate`: Frecuencia de muestreo en segundos.
+     - `thresholdValue`: Valor umbral para determinar ocupación.
+     - `calibrationFactor`: Factor de calibración para las lecturas.
+
+2. **DeviceResource**
+   - **Propósito**: Representa un dispositivo IoT en el sistema.
+   - **Atributos**:
+     - `deviceId`: Identificador único del dispositivo.
+     - `type`: Tipo del dispositivo.
+     - `status`: Estado actual del dispositivo.
+     - `location`: Ubicación del dispositivo.
+     - `configurationSettings`: Configuración del dispositivo.
+     - `batteryLevel`: Nivel de batería actual.
+     - `lastConnectionTime`: Último momento en que el dispositivo se conectó al sistema.
+
+3. **AssignDeviceResource**
+   - **Propósito**: Representa los datos necesarios para asignar un dispositivo a una mesa o silla.
+   - **Atributos**:
+     - `tableId`: ID de la mesa.
+     - `chairNumber`: Número de la silla (si aplica).
+
+4. **UpdateDeviceStatusResource**
+   - **Propósito**: Representa los datos necesarios para actualizar el estado de un dispositivo.
+   - **Atributos**:
+     - `status`: Nuevo estado del dispositivo.
+
+5. **DataReadingResource**
+   - **Propósito**: Representa una lectura de datos de un dispositivo IoT.
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo.
+     - `timestamp`: Momento de la lectura.
+     - `value`: Valor de la lectura.
+     - `unit`: Unidad de medida.
+     - `qualityScore`: Puntuación de calidad.
+     - `isAnomalous`: Indicador de si la lectura es anómala.
+
+6. **TableOccupancyResource**
+   - **Propósito**: Representa el estado de ocupación de una mesa.
+   - **Atributos**:
+     - `tableId`: Identificador de la mesa.
+     - `isOccupied`: Indicador de si la mesa está ocupada.
+     - `occupiedChairsCount`: Número de sillas ocupadas.
+     - `totalChairsCount`: Número total de sillas.
+     - `lastOccupancyChange`: Último momento en que cambió el estado de ocupación.
+     - `chairsStatus`: Estado de cada silla (ocupada/libre).
+
+### **Transformers**
+
+Los transformadores son responsables de convertir las entidades del dominio en recursos y viceversa. Esto asegura que los datos expuestos a través de la API REST sean consistentes y estén en el formato esperado. A continuación, se describen los principales transformadores:
+
+1. **RegisterDeviceCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `RegisterDeviceResource` en un comando `RegisterDeviceCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(RegisterDeviceResource resource)`: Transforma los datos de registro de un dispositivo en un comando.
+
+2. **DeviceResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `IoTDevice` en un recurso `DeviceResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(IoTDevice entity)`: Transforma un dispositivo del dominio en un recurso.
+
+3. **AssignDeviceCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `AssignDeviceResource` en un comando `AssignDeviceCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(AssignDeviceResource resource, String deviceId)`: Transforma los datos de asignación de un dispositivo en un comando.
+
+4. **DataReadingResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `DataReading` en un recurso `DataReadingResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(DataReading entity)`: Transforma una lectura de datos del dominio en un recurso.
+
+5. **TableOccupancyResourceFromEntityAssembler**
+   - **Propósito**: Convierte información de ocupación de una mesa en un recurso `TableOccupancyResource`.
+   - **Método principal**:
+     - `toResourceFromEntities(List<IoTDevice> devices)`: Transforma la información de ocupación de una mesa en un recurso.
+
+## 4.2.6.3. Application Layer
+
+La **Application Layer** del IoT Monitoring Bounded Context actúa como un intermediario entre la **Domain Layer** y las capas externas, como la **Interface Layer** y la **Infrastructure Layer**. Su propósito principal es coordinar las operaciones de negocio, manejar comandos y consultas, y orquestar la lógica de aplicación sin exponer directamente los detalles del dominio.
+
+### **Command Services**
+
+Los servicios de comandos son responsables de ejecutar operaciones que modifican el estado del sistema. A continuación, se describen los principales servicios de comandos:
+
+1. **DeviceCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación, actualización y asignación de dispositivos IoT.
+   - **Métodos principales**:
+     - `handle(RegisterDeviceCommand command)`: Registra un nuevo dispositivo IoT en el sistema.
+     - `handle(AssignDeviceCommand command)`: Asigna un dispositivo a una mesa o silla específica.
+     - `handle(UpdateDeviceStatusCommand command)`: Actualiza el estado de un dispositivo existente.
+   - **Validaciones**:
+     - Verifica que el dispositivo no esté ya registrado.
+     - Valida que la mesa y la silla existan utilizando el servicio externo `ExternalTableService`.
+     - Asegura que el dispositivo exista antes de actualizarlo o asignarlo.
+   - **Dependencias**:
+     - `DeviceRepository`: Persistencia de dispositivos IoT.
+     - `DeviceAssignmentRepository`: Persistencia de las asignaciones de dispositivos.
+     - `ExternalTableService`: Verifica la existencia de mesas y sillas.
+
+2. **ReadingCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con el registro y procesamiento de lecturas de datos de los dispositivos IoT.
+   - **Métodos principales**:
+     - `handle(RecordDataReadingCommand command)`: Registra una nueva lectura de datos y procesa su significado para determinar ocupación.
+   - **Validaciones**:
+     - Verifica que el dispositivo exista.
+     - Valida que la lectura sea coherente con el tipo de dispositivo.
+     - Detecta anomalías en las lecturas.
+   - **Dependencias**:
+     - `DeviceRepository`: Recupera información del dispositivo.
+     - `DataReadingRepository`: Persistencia de lecturas de datos.
+     - `OccupancyDetectionService`: Servicio para interpretar las lecturas y determinar ocupación.
+
+### **Query Services**
+
+Los servicios de consultas son responsables de recuperar información del sistema sin modificar su estado. A continuación, se describen los principales servicios de consultas:
+
+1. **DeviceQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con los dispositivos IoT.
+   - **Métodos principales**:
+     - `handle(GetDeviceByIdQuery query)`: Recupera un dispositivo específico por su ID.
+     - `handle(GetDevicesByHeadquarterQuery query)`: Recupera todos los dispositivos asociados a una sede específica.
+     - `handle(GetDevicesByStatusQuery query)`: Recupera todos los dispositivos que tienen un estado específico.
+   - **Dependencias**:
+     - `DeviceRepository`: Persistencia de dispositivos IoT.
+
+2. **ReadingQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con las lecturas de datos de los dispositivos IoT.
+   - **Métodos principales**:
+     - `handle(GetLatestReadingsQuery query)`: Recupera las lecturas más recientes de un dispositivo específico.
+     - `getTableOccupancyStatus(Long tableId)`: Recupera el estado actual de ocupación de una mesa.
+   - **Dependencias**:
+     - `DataReadingRepository`: Persistencia de lecturas de datos.
+     - `DeviceRepository`: Recupera información de los dispositivos.
+     - `DeviceAssignmentRepository`: Recupera información de las asignaciones de dispositivos.
+
+### **Domain Services**
+
+1. **OccupancyDetectionService**
+   - **Propósito**: Analiza las lecturas de los sensores para determinar el estado de ocupación de mesas y sillas.
+   - **Métodos principales**:
+     - `interpretReading(DataReading reading, IoTDevice device)`: Interpreta una lectura para determinar si indica ocupación.
+     - `detectOccupancyChanges(IoTDevice device, DataReading newReading)`: Detecta cambios en el estado de ocupación basándose en las lecturas.
+   - **Dependencias**:
+     - `DeviceRepository`: Recupera información del dispositivo y sus lecturas anteriores.
+
+### **Event Handlers**
+
+1. **OccupancyDetectedEventHandler**
+   - **Propósito**: Maneja el evento `OccupancyDetectedEvent`, que se dispara cuando se detecta ocupación en una silla.
+   - **Método principal**:
+     - `on(OccupancyDetectedEvent event)`: Notifica al Table Management Bounded Context sobre el cambio en el estado de ocupación.
+   - **Dependencias**:
+     - `ExternalTableService`: Notifica al Table Management Bounded Context.
+
+2. **OccupancyReleasedEventHandler**
+   - **Propósito**: Maneja el evento `OccupancyReleasedEvent`, que se dispara cuando se deja de detectar ocupación en una silla.
+   - **Método principal**:
+     - `on(OccupancyReleasedEvent event)`: Notifica al Table Management Bounded Context sobre el cambio en el estado de ocupación.
+   - **Dependencias**:
+     - `ExternalTableService`: Notifica al Table Management Bounded Context.
+
+3. **DeviceStatusChangedEventHandler**
+   - **Propósito**: Maneja el evento `DeviceStatusChangedEvent`, que se dispara cuando cambia el estado de un dispositivo.
+   - **Método principal**:
+     - `on(DeviceStatusChangedEvent event)`: Registra el cambio de estado y activa alertas si es necesario.
+   - **Dependencias**:
+     - `AlertService`: Servicio para enviar alertas sobre problemas con los dispositivos.
+
+### **Outbound Services (ACL)**
+
+1. **ExternalTableService**
+   - **Propósito**: Interactúa con el Table Management Bounded Context para verificar la existencia de mesas y sillas, y actualizar su estado de ocupación.
+   - **Métodos principales**:
+     - `existsTable(Long tableId)`: Verifica si una mesa existe en el sistema.
+     - `existsChair(Long tableId, Integer chairNumber)`: Verifica si una silla existe en una mesa específica.
+     - `updateTableOccupancyStatus(Long tableId, Integer chairNumber, Boolean isOccupied)`: Actualiza el estado de ocupación de una silla en una mesa.
+   - **Dependencias**:
+     - API del Table Management Bounded Context.
+
+## 4.2.6.4. Infrastructure Layer
+
+La **Infrastructure Layer** del IoT Monitoring Bounded Context proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema relacionadas con la gestión de dispositivos IoT y sus lecturas de datos. Esta capa incluye repositorios para la persistencia de datos, adaptadores MQTT para la comunicación con dispositivos IoT, y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos y servicios de mensajería. Su objetivo principal es garantizar que las operaciones de almacenamiento, recuperación y procesamiento de información sean eficientes, consistentes y seguras.
+
+### **Persistencia (JPA Repositories)**
+
+1. **DeviceRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de dispositivos IoT.
+   - **Métodos principales**:
+     - `findByDeviceId(DeviceId deviceId)`: Recupera un dispositivo específico por su ID.
+     - `findByLocationHeadquarterId(Long headquarterId)`: Recupera todos los dispositivos asociados a una sede específica.
+     - `findByStatus(DeviceStatus status)`: Recupera todos los dispositivos que tienen un estado específico.
+     - `existsByDeviceId(DeviceId deviceId)`: Verifica si un dispositivo existe en el sistema.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `IoTDevice`.
+     - Facilita la recuperación de dispositivos según diferentes criterios de filtro.
+
+2. **DataReadingRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de lecturas de datos de los dispositivos IoT.
+   - **Métodos principales**:
+     - `findByDeviceIdOrderByTimestampDesc(DeviceId deviceId, Pageable pageable)`: Recupera las lecturas más recientes de un dispositivo específico.
+     - `findByDeviceIdAndTimestampBetween(DeviceId deviceId, Timestamp start, Timestamp end)`: Recupera las lecturas de un dispositivo en un rango de tiempo específico.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `DataReading`.
+     - Incluye métodos para consultas temporales y ordenadas.
+
+3. **DeviceAssignmentRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de asignaciones de dispositivos a mesas y sillas.
+   - **Métodos principales**:
+     - `findByDeviceId(DeviceId deviceId)`: Recupera la asignación actual de un dispositivo específico.
+     - `findByTableId(Long tableId)`: Recupera todas las asignaciones de dispositivos a una mesa específica.
+     - `findByTableIdAndChairNumber(Long tableId, Integer chairNumber)`: Recupera la asignación de un dispositivo a una silla específica en una mesa.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `DeviceAssignment`.
+     - Facilita la gestión de la relación entre dispositivos, mesas y sillas.
+
+### **MQTT Adapters**
+
+1. **MqttAdapter**
+   - **Propósito**: Proporciona una interfaz para la comunicación bidireccional con dispositivos IoT utilizando el protocolo MQTT.
+   - **Métodos principales**:
+     - `subscribe(String topic, MqttMessageHandler handler)`: Se suscribe a un tópico MQTT y registra un manejador para los mensajes recibidos.
+     - `publish(String topic, String payload)`: Publica un mensaje en un tópico MQTT.
+     - `connect()`: Establece la conexión con el broker MQTT.
+     - `disconnect()`: Cierra la conexión con el broker MQTT.
+   - **Características**:
+     - Implementa la lógica de conexión, desconexión y manejo de errores de comunicación.
+     - Proporciona abstracción sobre la biblioteca MQTT subyacente.
+
+2. **MqttMessageHandler**
+   - **Propósito**: Interfaz para manejar los mensajes recibidos a través de MQTT.
+   - **Métodos principales**:
+     - `handle(String topic, String payload)`: Procesa un mensaje recibido en un tópico específico.
+
+### **Message Converters**
+
+1. **JsonDeviceMessageConverter**
+   - **Propósito**: Convierte mensajes JSON recibidos de los dispositivos IoT en objetos del dominio.
+   - **Métodos principales**:
+     - `fromJson(String json)`: Convierte un mensaje JSON en un objeto `RecordDataReadingCommand`.
+     - `toJson(Object object)`: Convierte un objeto del dominio en un mensaje JSON.
+   - **Características**:
+     - Maneja la serialización y deserialización de mensajes JSON.
+     - Implementa validación básica de la estructura de los mensajes.
+
+### **External Services Adapters**
+
+1. **TableServiceAdapter**
+   - **Propósito**: Implementa el `ExternalTableService` para comunicarse con el Table Management Bounded Context.
+   - **Métodos principales**:
+     - `existsTable(Long tableId)`: Verifica si una mesa existe consultando la API del Table Management Bounded Context.
+     - `existsChair(Long tableId, Integer chairNumber)`: Verifica si una silla existe consultando la API del Table Management Bounded Context.
+     - `updateTableOccupancyStatus(Long tableId, Integer chairNumber, Boolean isOccupied)`: Actualiza el estado de ocupación utilizando la API del Table Management Bounded Context.
+   - **Características**:
+     - Implementa la lógica de comunicación HTTP con el otro contexto.
+     - Maneja errores de comunicación y reintentos.
+
+### **Alert Services**
+
+1. **AlertServiceImpl**
+   - **Propósito**: Implementa el servicio de alertas para notificar sobre problemas con los dispositivos IoT.
+   - **Métodos principales**:
+     - `sendDeviceDisconnectedAlert(IoTDevice device)`: Envía una alerta cuando un dispositivo se desconecta.
+     - `sendBatteryLowAlert(IoTDevice device)`: Envía una alerta cuando la batería de un dispositivo está baja.
+     - `sendAnomalyDetectedAlert(IoTDevice device, DataReading reading)`: Envía una alerta cuando se detecta una anomalía en las lecturas.
+   - **Características**:
+     - Utiliza diferentes canales para enviar alertas (correo electrónico, notificaciones push, etc.).
+     - Implementa políticas de agrupación y umbral para evitar alertas excesivas.
+
+## 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del **IoT Monitoring Bounded Context**, el cual detalla los principales 
+El **IoT Monitoring Bounded Context** es responsable de gestionar la interacción con los dispositivos IoT instalados en las cafeterías, como los sensores de peso en las sillas. Este contexto se encarga de recopilar, procesar e interpretar los datos enviados por estos dispositivos para determinar el estado de ocupación de las mesas en tiempo real. Además, proporciona mecanismos para la configuración y monitoreo de los dispositivos, asegurando su correcto funcionamiento y la precisión de los datos recopilados.
+
+#### 4.2.6.1. Domain Layer
+
+La **Domain Layer** del IoT Monitoring Bounded Context encapsula la lógica de negocio relacionada con la gestión de dispositivos IoT y la interpretación de sus datos. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
+
+##### **Aggregates**
+1. **IoTDevice**
+   - **Propósito**: El agregado principal es el dispositivo IoT (`IoTDevice`), que encapsula la lógica de negocio relacionada con la gestión de dispositivos físicos y sus registros de datos.
+   - **Atributos**:
+     - `deviceId`: Identificador único del dispositivo, representado como un objeto de valor `DeviceId`.
+     - `type`: Tipo de dispositivo IoT (sensor de peso, sensor de presencia, etc.), representado como un objeto de valor `DeviceType`.
+     - `status`: Estado actual del dispositivo, representado como un objeto de valor `DeviceStatus`.
+     - `location`: Ubicación del dispositivo en la sede, representada como un objeto de valor `DeviceLocation`.
+     - `configurationSettings`: Configuración del dispositivo, representada como un objeto de valor `ConfigurationSettings`.
+     - `dataReadings`: Conjunto de lecturas de datos del dispositivo, representadas como una colección de entidades `DataReading`.
+   - **Métodos**:
+     - `updateStatus(DeviceStatus status)`: Actualiza el estado del dispositivo.
+     - `updateConfiguration(ConfigurationSettings settings)`: Actualiza la configuración del dispositivo.
+     - `addDataReading(DataReading reading)`: Agrega una nueva lectura de datos del dispositivo.
+     - `getLatestReading()`: Obtiene la lectura más reciente del dispositivo.
+     - `isOccupied()`: Determina si la silla está ocupada basándose en las últimas lecturas.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en los dispositivos.
+     - Gestiona la relación entre el dispositivo físico y sus registros de datos, asegurando consistencia y validación.
+
+##### **Entities**
+1. **DataReading**
+   - **Propósito**: La entidad `DataReading` representa una lectura de datos enviada por un dispositivo IoT.
+   - **Atributos**:
+     - `timestamp`: Momento exacto de la lectura, representado como un `Timestamp`.
+     - `value`: Valor de la lectura (por ejemplo, peso registrado), representado como un objeto de valor `ReadingValue`.
+     - `quality`: Calidad de la lectura (para detectar anomalías), representada como un objeto de valor `ReadingQuality`.
+   - **Métodos**:
+     - `isValidReading()`: Verifica si la lectura es válida según la calidad y el valor.
+     - `isOccupiedIndication()`: Determina si la lectura indica ocupación de la silla.
+
+2. **DeviceAssignment**
+   - **Propósito**: La entidad `DeviceAssignment` representa la asignación de un dispositivo IoT a una posición específica (mesa o silla).
+   - **Atributos**:
+     - `deviceId`: Identificador del dispositivo asignado, representado como un objeto de valor `DeviceId`.
+     - `tableId`: Identificador de la mesa a la que está asignado el dispositivo, representado como un objeto de valor `TableId`.
+     - `chairNumber`: Número de la silla a la que está asignado el dispositivo (si aplica), representado como un objeto de valor `ChairNumber`.
+     - `assignmentDate`: Fecha de asignación, representada como un `Timestamp`.
+   - **Métodos**:
+     - `updateAssignment(TableId tableId, ChairNumber chairNumber)`: Actualiza la asignación del dispositivo.
+
+##### **Value Objects**
+1. **DeviceId**
+   - **Propósito**: Representa el identificador único de un
 
 # Capítulo V: Solution UI/UX Design
 ## 5.1. Style Guidelines
