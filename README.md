@@ -1122,8 +1122,7 @@ Este diagrama muestra que el sistema Tavolo está compuesto por cuatro contenedo
 
 #### 4.1.3.3. Software Architecture Deployment Diagrams.
 Este diagrama muestra que el sistema Tavolo se **despliega en tres entornos** principales: Microsoft Azure Cloud, Dispositivos Cliente y Cafeterías físicas. En Azure, el sistema utiliza App Service para alojar la aplicación web frontend (WebStorm), otro App Service para la API (Spring Boot/Java) con documentación Swagger, Azure Database for PostgreSQL para los datos, y Azure IoT Hub para gestionar comunicaciones con dispositivos IoT. En cada cafetería, se instalan sensores Arduino en las mesas que envían datos de ocupación a un Gateway Arduino local, el cual transmite esta información al IoT Hub en Azure. Todas las comunicaciones entre componentes **utilizan protocolos seguros** como HTTPS, MQTT/TLS o conexiones PostgreSQL.<br>
-<img src="./images/c4-model/deployment-c4.png" alt="Deploymet Context en C4"/>
-<br>
+<img src="./images/c4-model/deployment-c4.png" alt="Deploymet Context en C4"/><br>
 ## 4.2. Tactical-Level Domain-Driven Design
 
 ### 4.2.1. Bounded Context: Menu Management
