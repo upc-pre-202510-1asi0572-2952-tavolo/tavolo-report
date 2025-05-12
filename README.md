@@ -2189,9 +2189,50 @@ El diseño de la base de datos para el **Booking Bounded Context** refleja la es
 | Sprint 1 Velocity 	| 17 	|
 | Sum of Story Points 	| 81 	|
 
-#### 6.2.1.2. Aspect Leaders and Collaborators.
-#### 6.2.1.3. Sprint Backlog 1.
+#### 6.2.1.2. Aspect Leaders and Collaborators
 
+Para lograr una implementación eficiente del Sprint 1, se estableció una estructura clara de liderazgo y colaboración entre los miembros del equipo. Se identificaron cinco aspectos principales que abarcaron el alcance completo del sprint: Frontend Web Cliente, Frontend Web Administrador, Backend API, Testing & Documentación, y Landing Page. Esta organización permitió asegurar que cada área tuviera un responsable directo y colaboradores que apoyaron en tareas específicas.
+
+La matriz de liderazgo y colaboración (LACX) detalla cómo se distribuyeron las responsabilidades para cada aspecto del sprint:
+
+| Team Member<br>(Last Name, First Name) | GitHub Username | Frontend Web<br>Cliente<br>Leader (L) /<br>Collaborator (C) | Frontend Web<br>Administrador<br>Leader (L) /<br>Collaborator (C) | Backend API<br>Leader (L) /<br>Collaborator (C) | Testing &<br>Documentación<br>Leader (L) /<br>Collaborator (C) | Landing Page<br>Leader (L) /<br>Collaborator (C) |
+|--------------------------------------|----------------|--------------|---------------|----------|--------------|-------------|
+| Baldeon Fabian, Aldo Alberto | CodAress | L | C | C | | |
+| Cama Salvatierra, Jimena Tamara | aksonie | | L | | C | C |
+| Castillo Castillo, Jair Alexander | U202211390 | | C | C | L | |
+| La Torre Valle, Franz Jair | FranzJairLTV | C | | | C | L |
+| Quezada Portalatino, Barbara Susana | BarbaraQP15 | C | | L | | C |
+
+**Responsabilidades por aspecto:**
+
+1. **Frontend Web Cliente**:
+   - **Líder**: Baldeon Fabian, Aldo Alberto
+   - **Enfoque**: Implementación de interfaces para visualización de disponibilidad de mesas en tiempo real, registro e inicio de sesión de comensales, y proceso de reserva.
+   - **Tareas principales**: Desarrollo de componentes de visualización de mesas, formularios de autenticación y pantallas principales.
+
+2. **Frontend Web Administrador**:
+   - **Líder**: Cama Salvatierra, Jimena Tamara
+   - **Enfoque**: Desarrollo del panel administrativo con funcionalidades para gestión de sedes, visualización de reservas y configuración de mesas.
+   - **Tareas principales**: Implementación de pantallas de inicio del administrador, visualización de sedes asignadas y gestión de reservas.
+
+3. **Backend API**:
+   - **Líder**: Quezada Portalatino, Barbara Susana
+   - **Enfoque**: Desarrollo de la API RESTful con servicios para autenticación, gestión de mesas, reservas y operaciones administrativas.
+   - **Tareas principales**: Implementación de endpoints, integración con base de datos y lógica de negocio.
+
+4. **Testing & Documentación**:
+   - **Líder**: Castillo Castillo, Jair Alexander
+   - **Enfoque**: Diseño y ejecución de pruebas, documentación de servicios y evidencia de funcionamiento.
+   - **Tareas principales**: Creación de casos de prueba, documentación Swagger para la API y recopilación de evidencias.
+
+5. **Landing Page**:
+   - **Líder**: La Torre Valle, Franz Jair
+   - **Enfoque**: Diseño e implementación de la landing page promocional de Tavolo.
+   - **Tareas principales**: Desarrollo de secciones informativas, galería virtual y formulario de contacto.
+
+Esta organización permitió una clara asignación de responsabilidades, facilitó la comunicación entre subequipos y aseguró que todas las áreas del sprint contaran con el enfoque adecuado. Los líderes de cada aspecto coordinaron con sus colaboradores para definir tareas específicas y garantizar el cumplimiento de los criterios de aceptación de cada historia de usuario asignada.
+
+#### 6.2.1.3. Sprint Backlog 1
 
 | Sprint # 	| Sprint 1 	|  	|  	|  	|  	|  	|  	|
 |---	|---	|---	|---	|---	|---	|---	|---	|
