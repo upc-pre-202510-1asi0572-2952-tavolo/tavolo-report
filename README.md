@@ -1448,7 +1448,49 @@ El diseño implementa índices en los campos `sensor_id`, `mesa_id` y `timestamp
 | Sprint 1 Velocity 	| 17 	|
 | Sum of Story Points 	| 81 	|
 
-#### 6.2.1.2. Aspect Leaders and Collaborators.
+#### 6.2.1.2. Aspect Leaders and Collaborators
+
+Para lograr una implementación eficiente del Sprint 1, se estableció una estructura clara de liderazgo y colaboración entre los miembros del equipo. Se identificaron cinco aspectos principales que abarcaron el alcance completo del sprint: Frontend Web Cliente, Frontend Web Administrador, Backend API, Testing & Documentación, y Landing Page. Esta organización permitió asegurar que cada área tuviera un responsable directo y colaboradores que apoyaron en tareas específicas.
+
+La matriz de liderazgo y colaboración (LACX) detalla cómo se distribuyeron las responsabilidades para cada aspecto del sprint:
+
+| Team Member<br>(Last Name, First Name) | GitHub Username | Frontend Web<br>Cliente<br>Leader (L) /<br>Collaborator (C) | Frontend Web<br>Administrador<br>Leader (L) /<br>Collaborator (C) | Backend API<br>Leader (L) /<br>Collaborator (C) | Testing &<br>Documentación<br>Leader (L) /<br>Collaborator (C) | Landing Page<br>Leader (L) /<br>Collaborator (C) |
+|--------------------------------------|----------------|--------------|---------------|----------|--------------|-------------|
+| Baldeon Fabian, Aldo Alberto | CodAress | L | C | C | | |
+| Cama Salvatierra, Jimena Tamara | aksonie | | L | | C | C |
+| Castillo Castillo, Jair Alexander | U202211390 | | C | C | L | |
+| La Torre Valle, Franz Jair | FranzJairLTV | C | | | C | L |
+| Quezada Portalatino, Barbara Susana | BarbaraQP15 | C | | L | | C |
+
+**Responsabilidades por aspecto:**
+
+1. **Frontend Web Cliente**:
+   - **Líder**: Baldeon Fabian, Aldo Alberto
+   - **Enfoque**: Implementación de interfaces para visualización de disponibilidad de mesas en tiempo real, registro e inicio de sesión de comensales, y proceso de reserva.
+   - **Tareas principales**: Desarrollo de componentes de visualización de mesas, formularios de autenticación y pantallas principales.
+
+2. **Frontend Web Administrador**:
+   - **Líder**: Cama Salvatierra, Jimena Tamara
+   - **Enfoque**: Desarrollo del panel administrativo con funcionalidades para gestión de sedes, visualización de reservas y configuración de mesas.
+   - **Tareas principales**: Implementación de pantallas de inicio del administrador, visualización de sedes asignadas y gestión de reservas.
+
+3. **Backend API**:
+   - **Líder**: Quezada Portalatino, Barbara Susana
+   - **Enfoque**: Desarrollo de la API RESTful con servicios para autenticación, gestión de mesas, reservas y operaciones administrativas.
+   - **Tareas principales**: Implementación de endpoints, integración con base de datos y lógica de negocio.
+
+4. **Testing & Documentación**:
+   - **Líder**: Castillo Castillo, Jair Alexander
+   - **Enfoque**: Diseño y ejecución de pruebas, documentación de servicios y evidencia de funcionamiento.
+   - **Tareas principales**: Creación de casos de prueba, documentación Swagger para la API y recopilación de evidencias.
+
+5. **Landing Page**:
+   - **Líder**: La Torre Valle, Franz Jair
+   - **Enfoque**: Diseño e implementación de la landing page promocional de Tavolo.
+   - **Tareas principales**: Desarrollo de secciones informativas, galería virtual y formulario de contacto.
+
+Esta organización permitió una clara asignación de responsabilidades, facilitó la comunicación entre subequipos y aseguró que todas las áreas del sprint contaran con el enfoque adecuado. Los líderes de cada aspecto coordinaron con sus colaboradores para definir tareas específicas y garantizar el cumplimiento de los criterios de aceptación de cada historia de usuario asignada.
+
 #### 6.2.1.3. Sprint Backlog 1.
 
 
@@ -1492,6 +1534,33 @@ El diseño implementa índices en los campos `sensor_id`, `mesa_id` y `timestamp
 |  	|  	| TA2 	| Proteger rutas con roles 	| Validar acceso solo para administradores 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
 
 #### 6.2.1.4. Development Evidence for Sprint Review.
+
+En este primer sprint, el equipo ha logrado importantes avances en la implementación de los componentes esenciales de Tavolo. Se ha desarrollado con éxito la **landing page, el frontend web para comensales y administradores, así como el backend API** que soporta las funcionalidades principales del sistema.
+
+Entre los logros destacables se encuentran:
+
+- Implementación completa de la landing page con todas las secciones informativas y el formulario de contacto
+- Desarrollo del sistema de autenticación para comensales y administradores
+- Implementación del módulo de visualización de mesas en tiempo real
+- Desarrollo del sistema de reservas y visualización de reservas activas
+- Implementación del panel de administración para gestión de mesas y visualización de reservas
+
+A continuación, se presenta una tabla detallada de los commits más relevantes realizados en los diferentes repositorios durante el Sprint 1:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|---------------|---------------------|-------------------|
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-landing-page | main | a72e3b4 | feat: add landing page | Creación de estructura HTML base y estilos CSS para la landing page con las secciones principales | 10/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/auth | e23a9c1 | feat: sistema de autenticación | Implementación del login y registro para usuarios comensales y administradores con manejo de tokens y sesiones | 10/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/client-dashboard | f84b6d2 | feat: dashboard de comensal | Creación del panel principal para comensales con visualización de disponibilidad de mesas y menú | 12/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/booking-system | g59c7e3 | feat: sistema de reservas | Implementación del formulario de reserva y visualización de reservas activas para comensales | 13/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/admin-panel | h31d8f4 | feat: panel de administrador | Desarrollo del dashboard para administradores con funcionalidades de gestión de mesas y visualización de sede asignada | 14/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/table-management | i76e2a9 | feat: gestión de mesas | Implementación de funcionalidades para agregar y eliminar mesas desde el panel de administrador | 15/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/api-base | j42f1e5 | feat: estructura base de la API | Configuración inicial del proyecto Spring Boot con dependencias y estructura de paquetes | 10/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/auth-endpoints | k93g7h2 | feat: endpoints de autenticación | Implementación de servicios REST para registro e inicio de sesión con roles diferenciados | 11/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/table-endpoints | l28j5k6 | feat: endpoints para gestión de mesas | Desarrollo de servicios REST para crear, eliminar y consultar estado de mesas | 13/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/booking-endpoints | m67n4p9 | feat: endpoints para reservas | Implementación de servicios REST para realizar reservas y consultar reservas activas | 14/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/sede-endpoints | o15r3s8 | feat: endpoints para sedes | Desarrollo de servicios REST para consultar información de sedes y asignación a administradores | 15/05/2025 |
+
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
