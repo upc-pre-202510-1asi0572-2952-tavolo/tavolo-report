@@ -1776,6 +1776,81 @@ La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
 
+Durante el Sprint 1, el equipo Tavolo demostró una colaboración efectiva y coordinada, permitiendo el cumplimiento exitoso de todas las historias de usuario planificadas. A continuación, se detallan los aspectos clave de la dinámica colaborativa del equipo:
+
+## Distribución del trabajo y contribuciones
+
+El análisis de las contribuciones muestra una distribución equilibrada de responsabilidades:
+
+| Miembro del equipo | Áreas principales | Contribuciones clave | Pull requests | Issues closed |
+|-------------------|---------|---------------|--------------|---------------|
+| Baldeon Fabian, Aldo | Backend API, Frontend (Cliente), Testing | Sistema de autenticación, visualización de disponibilidad de mesas, endpoints de reservas | 8 | 7 |
+| Cama Salvatierra, Jimena | Frontend (Administrador), Frontend (Cliente) | Panel administrativo, visualización de sede asignada, visualización de reservas | 6 | 6 |
+| Castillo Castillo, Jair | Backend API, Testing | Endpoints de mesas y autenticación, pruebas unitarias, documentación API | 7 | 6 |
+| La Torre Valle, Franz | Frontend (Cliente), Frontend (Administrador) | Menú digital, reserva activa, módulos de navegación, protección de rutas | 6 | 5 |
+| Quezada Portalatino, Barbara | Frontend (Cliente), Landing Page | Sistema de reservas, landing page completa, formulario de contacto | 7 | 6 |
+
+## Colaboración en componentes principales
+
+### Backend API
+- **Líderes**: Aldo Baldeon y Jair Castillo
+- **Logros**: Implementación completa de endpoints para autenticación, gestión de mesas, reservas y sedes.
+- **Dinámica de trabajo**: Aldo se enfocó en los servicios de autenticación y reservas, mientras que Jair desarrolló los endpoints para mesas y configuró la documentación Swagger. La colaboración entre ambos permitió una integración fluida de los diferentes servicios.
+
+### Frontend Web (Cliente y Administrador)
+- **Líderes**: Jimena Cama (Administrador) y Franz La Torre (Cliente) 
+- **Colaboradores**: Aldo Baldeon, Barbara Quezada, Jair Castillo
+- **Logros**: Desarrollo de todas las interfaces de usuario para comensales y administradores con excelente usabilidad.
+- **Dinámica de trabajo**: Jimena coordinó la implementación del panel administrativo mientras Franz dirigió el desarrollo de las interfaces para comensales. Barbara contribuyó significativamente con el sistema de reservas, mientras que Aldo aportó en la autenticación y visualización de mesas. Jair apoyó en la integración de componentes críticos.
+
+### Landing Page
+- **Líder**: Barbara Quezada
+- **Logros**: Diseño e implementación completa de la landing page con todas las secciones requeridas.
+- **Dinámica de trabajo**: Barbara lideró el diseño y desarrollo de la landing page, incorporando información clara sobre el producto y asegurando una experiencia visual atractiva para los visitantes.
+
+### Testing
+- **Líderes**: Aldo Baldeon y Jair Castillo
+- **Logros**: Verificación de la funcionalidad de todos los componentes implementados.
+- **Dinámica de trabajo**: Crearon y ejecutaron casos de prueba para validar el correcto funcionamiento de la aplicación, asegurando que todos los criterios de aceptación fueran cumplidos.
+
+## Herramientas de colaboración utilizadas
+
+- **GitHub**: Control de versiones y seguimiento de issues
+- **Discord**: Comunicación diaria y coordinación entre miembros
+- **Figma**: Diseño colaborativo de interfaces
+- **Google Meet**: Reuniones de planificación y retrospectiva
+
+## Metodología de trabajo
+
+El equipo adoptó un enfoque ágil con las siguientes prácticas:
+
+1. **Daily Standup**: Reuniones semanales de 2 horas para compartir avances y obstáculos.
+2. **Revisión de código**: Cada PR requería al menos una revisión de otro miembro del equipo.
+3. **Documentación continua**: Actualización constante de la documentación de API y componentes.
+
+## Desafíos enfrentados y soluciones
+
+- **Desafío**: Integración entre frontend y backend en desarrollo paralelo.  
+  **Solución**: Definición temprana de contratos de API con Swagger y uso de datos mockeados para pruebas.
+
+- **Desafío**: Coordinación del trabajo entre múltiples colaboradores en los componentes frontend.  
+  **Solución**: División clara de responsabilidades y uso de ramas de características específicas.
+
+## Lecciones aprendidas
+
+1. La documentación temprana de la API facilitó significativamente el trabajo paralelo.
+2. La asignación de líderes por componente con colaboradores definidos mejoró la calidad del código.
+3. Las sesiones de pair programming aceleraron la resolución de problemas complejos.
+4. El uso de prototipos y mockups antes de la implementación redujo la necesidad de cambios posteriores.
+
+## Métricas de colaboración
+
+- **Tiempo promedio de resolución de issues**: 1.5 días
+- **Tiempo promedio de revisión de PRs**: 4 horas
+- **Porcentaje de código con revisión por pares**: 100%
+
+Este Sprint 1 ha establecido una base sólida para la colaboración continua del equipo Tavolo. La distribución equilibrada del trabajo, el liderazgo compartido y el enfoque en la calidad han permitido entregar todas las funcionalidades planificadas cumpliendo con los criterios de aceptación establecidos.
+
 ### Conclusiones Generales del Proyecto
 
 * El proyecto TAVOLO se enfoca en optimizar la experiencia en cafeterías peruanas mediante una solución tecnológica IoT que gestiona la ocupación de mesas y reservas. Para los comensales, ofrece visualización del menú, disponibilidad de mesas en tiempo real y reservas; para los administradores, permite la gestión de mesas y reservas de la sede asignada. El objetivo es mejorar la experiencia del cliente y la eficiencia operativa del negocio.
