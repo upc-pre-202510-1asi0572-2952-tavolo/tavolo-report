@@ -3367,6 +3367,80 @@ Por otro lado, el mockup de la landing page de Tavolo muestra una versión visua
 
 ## 5.4. Applications UX/UI Design
 ### 5.4.1. Applications Wireframes
+Esta sección presenta los wireframes de la aplicación web y móvil de Tavolo, diseñados para los dos perfiles de usuario: Clientes de establecimiento  y propietarios de cafeterías. Cada wireframe representa la estructura y jerarquía de los elementos antes de aplicar estilo visual o contenido final.
+
+Los primeros wireframes son compartidos por ambos usuarios ya que nos referimos al inicio de sesión y registro, estos representan las pantallas de acceso al sistema, con formularios simples y enfocados en la usabilidad. Se prioriza una navegación rápida y accesible para usuarios recurrentes y nuevos:
+
+![inicio_sesion_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/InicioSesion-Wireframe.png)
+![registrarse_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Registrarse-Wireframe.png)
+
+![inicio_sesion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/InicioSesion-Wireframe.png)
+![registrarse_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/Registrarse-Wireframe.png)
+
+**Clientes**
+- **Pantalla de inicio:**
+
+Muestra un resumen de reservas activas del cliente y acceso directo al menú del establecimiento. Está diseñada para brindar información clave de forma inmediata. 
+
+![home_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Inicio-Cliente-Wireframe.png)
+
+![home_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/home-cliente-wireframe.png)
+
+- **Menú digital:**
+
+Organizado por categorías. La estructura está pensada para facilitar la exploración y eventual selección en el pedido.
+
+![menu_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Menu-Cliente-Wireframe.png)
+
+![menu_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/menu-cliente-wireframe.png)
+
+- **Reservar mesa:**
+
+Incluye selector de sede, visualización de mesas disponibles, horarios, y acceso a un mapa con la ubicación exacta de la cafetería. Se destaca la usabilidad móvil responsive y la claridad en la disponibilidad visual.
+
+![sedes_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedes-Cliente-Wireframe.png)
+![mesas_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesas-Cliente-Wireframe.png)
+![reservarmesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesasReservar-Cliente-Wireframe.png)
+![reservacorrecta_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesasCorrecto-Cliente-Wireframe.png)
+![mapa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedes-VerMapa-Cliente-Wireframe.png)
+
+![buscar_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/buscar-cliente-wireframe.png)
+![detalle_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/detalle-cliente-wireframe.png)
+![reserva_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reserva-cliente-wireframe.png)
+![form_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/form-reserva-cliente-wireframe.png)
+
+**Propietarios**
+- **Pantalla de inicio:**
+
+Resume información clave de cada sede: mesas activas y reservas por horario. 
+
+![home_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Inicio-Propietario-Wireframe.png)
+
+![home_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/home-propietario-wireframe.png)
+
+- **Gestionar mesas:**
+
+Visualiza todas las mesas registradas por sede, permite su eliminación o la adición de nuevas con datos como zona, capacidad e identificador único.
+
+![gestion_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesas-Propietario-Wireframe.png)
+![mesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesa-Propietario-Wireframe.png)
+![agregarmesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesaCorrecto-Propietario-Wireframe.png)
+
+![gestion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-propietario-wireframe.png)
+![form_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-form-propietario-wireframe.png)
+![mesa_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-mesa-propietario-wireframe.png)
+
+- **Ver reservas:**
+
+Incluye filtros para buscar reservas por mesa o por cliente, optimizando la gestión diaria del flujo de comensales.
+
+![filtro_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedeFiltro-Propietario-Wireframe.png)
+![pormesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedePorMesa-Propietario-Wireframe.png)
+![persona_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedePorPersona-Propietario-Wireframe.png)
+
+![pormesa_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reservas-propietario-wireframe.png)
+![persona_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reservas-persona-propietario-wireframe.png)
+
 ### 5.4.2. Applications Wireflow Diagrams
 ### 5.4.3. Applications Mock-ups
 ### 5.4.4. Applications User Flow Diagrams
