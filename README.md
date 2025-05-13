@@ -1563,8 +1563,170 @@ A continuación, se presenta una tabla detallada de los commits más relevantes 
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 #### 6.2.1.6. Execution Evidence for Sprint Review.
+# 6.2.1.6. Execution Evidence for Sprint Review
+
+En este primer sprint, el equipo Tavolo ha logrado implementar con éxito los componentes fundamentales del sistema, creando una base sólida para el desarrollo futuro del proyecto. Se han completado todas las historias de usuario planificadas de la parte web, alcanzando las principales funcionalidades tanto para comensales como para administradores.
+
+- **Landing page completa** con información del producto, galería y formulario de contacto
+- **Sistema de autenticación** diferenciado para comensales y administradores
+- **Visualización de disponibilidad de mesas en tiempo real**
+- **Sistema de reservas** con confirmación y visualización de reservas activas
+- **Panel administrativo** para gestión de mesas y visualización de la sede asignada
+
+### Landing Page
+
+![Landing Page - Sección Principal](./images/execution-evidence/landing-main.png)<br>
+*Pantalla principal de la landing page mostrando la propuesta de valor de Tavolo*
+
+![Landing Page - Características](./images/execution-evidence/landing-features.png)<br>
+*Sección de características clave que destaca los beneficios principales del sistema*
+
+### Sistema para Comensales
+
+![Registro de Comensales](./images/execution-evidence/cliente-registro.png)<br>
+*Formulario de registro para nuevos comensales con validaciones*
+
+![Dashboard Comensales](./images/execution-evidence/cliente-dashboard.png)<br>
+*Panel principal del comensal mostrando las mesas disponibles en tiempo real*
+
+![Visualización de Reserva](./images/execution-evidence/cliente-reserva.png)<br>
+*Vista de la reserva activa para el comensal con detalles de sede y horario*
+
+### Panel de Administración
+
+![Login Administrador](./images/execution-evidence/admin-login.png)<br>
+*Pantalla de inicio de sesión exclusiva para administradores*
+
+![Panel Admin - Sede](./images/execution-evidence/admin-sede.png)<br>
+*Vista que muestra la sede asignada al administrador*
+
+![Gestión de Mesas](./images/execution-evidence/admin-mesas.png)<br>
+*Interfaz para agregar y eliminar mesas en la sede asignada*
+
+![Visualización de Reservas](./images/execution-evidence/admin-reservas.png)<br>
+*Panel para monitorear las reservas realizadas en la sede*
+
+### Video Explicativo
+El video muestra el flujo completo desde la landing page hasta las funcionalidades de reserva para comensales y gestión para administradores, demostrando la integración exitosa de todos los componentes desarrollados durante este sprint.<br>
+
+[**Video Demostración Sprint 1 - Tavolo**](https://www.youtube.com/watch?v=tavolo-sprint1-demo)
+
+El equipo ha completado el 100% de las historias de usuario planificadas para este sprint, cumpliendo con los criterios de aceptación establecidos. La aplicación es funcional en su estado actual y proporciona las funcionalidades básicas necesarias para la gestión de mesas y reservas. En los **próximos sprints** se agregarán características adicionales **como notificaciones, reportes estadísticos** y la integración completa con los sensores IoT físicos.
+
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+Durante este primer sprint, el equipo Tavolo ha implementado una estrategia de despliegue completa para asegurar que todos los componentes del sistema estén disponibles en entornos de producción. Se ha desplegado exitosamente la landing page, el backend API y la aplicación web frontend, utilizando servicios en la nube para garantizar disponibilidad, escalabilidad y seguridad.
+
+### Landing Page Deployment
+
+La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando la integración directa con nuestro repositorio para un flujo de trabajo simplificado y automático.
+<br>URL: https://upc-pre-202510-1asi0572-2952-tavolo.github.io/tavolo-landing-page/<br>
+
+#### Evidencia del despliegue
+![Landing Page 1](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+
+## Backend API Deployment
+
+La API de Tavolo fue desplegada en Microsoft Azure App Service, utilizando contenedores Docker para facilitar la portabilidad y la escalabilidad del servicio.
+
+### Creación del recurso en Azure
+
+![Creación de App Service](./images/deployment-evidence/azure-app-service-creation.png)
+
+*Proceso de creación del servicio en Azure App Service para alojar la API de Tavolo.*
+
+### Configuración de Docker
+
+![Configuración de Docker](./images/deployment-evidence/docker-config-backend.png)
+
+*Archivo Dockerfile utilizado para construir la imagen del backend con Spring Boot.*
+
+### Despliegue automático con GitHub Actions
+
+![GitHub Actions para Backend](./images/deployment-evidence/github-actions-backend.png)
+
+*Configuración del workflow de GitHub Actions para automatizar el despliegue del backend en Azure.*
+
+### API Swagger desplegada
+
+![Swagger UI](./images/deployment-evidence/swagger-api-deployed.png)
+
+*Documentación Swagger de la API desplegada y accesible en el entorno de Azure.*
+
+## Frontend Web Application Deployment
+
+La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting, que ofrece una plataforma eficiente para aplicaciones React con rápidos tiempos de carga y distribución global.
+
+### Preparación para el despliegue en Firebase
+
+![Configuración Firebase](./images/deployment-evidence/firebase-config-setup.png)
+
+*Preparación del proyecto React para su despliegue en Firebase Hosting.*
+
+### Configuración de variables de entorno
+
+![Variables de entorno](./images/deployment-evidence/firebase-env-variables.png)
+
+*Configuración de variables de entorno para conectar el frontend con la API backend desplegada en Azure.*
+
+### Estructura de despliegue planificada
+
+![Estructura de despliegue](./images/deployment-evidence/frontend-deployment-structure.png)
+
+*Estructura de archivos configurada para el despliegue en Firebase, que será implementada en el siguiente sprint.*
+
+## Base de datos PostgreSQL en Azure
+
+Para el almacenamiento persistente de datos, se configuró una instancia de Azure Database for PostgreSQL.
+
+### Creación del recurso de base de datos
+
+![Creación de base de datos](./images/deployment-evidence/azure-postgres-creation.png)
+
+*Proceso de creación de la base de datos PostgreSQL en Azure.*
+
+### Configuración de seguridad
+
+![Configuración de firewall](./images/deployment-evidence/postgres-firewall-rules.png)
+
+*Configuración de reglas de firewall para permitir conexiones seguras desde los servicios de Tavolo.*
+
+### Conexión con la API
+
+![Configuración de conexión](./images/deployment-evidence/database-connection-config.png)
+
+*Configuración de la conexión a la base de datos en el archivo application.properties del backend.*
+
+## IoT Hub para sensores
+
+Aunque la integración completa con los sensores IoT físicos está planificada para próximos sprints, se ha configurado el Azure IoT Hub para facilitar la futura incorporación de estos dispositivos.
+
+### Creación del IoT Hub
+
+![Creación de IoT Hub](./images/deployment-evidence/iot-hub-creation.png)
+
+*Proceso de creación del Azure IoT Hub para la gestión de dispositivos IoT.*
+
+### Configuración inicial de dispositivos
+
+![Registro de dispositivos](./images/deployment-evidence/iot-device-registration.png)
+
+*Configuración inicial para el registro de dispositivos Arduino que se utilizarán en las mesas.*
+
+## Resumen de URLs de despliegue
+
+El despliegue completo de la solución Tavolo incluye los siguientes entornos accesibles:
+
+| Componente | URL | Descripción |
+|------------|-----|-------------|
+| Landing Page | https://upc-pre-202510-1asi0572-2952-tavolo.github.io/tavolo-landing-page/ | Sitio informativo y promocional |
+| API Backend | https://tavolo-api.azurewebsites.net | Servicios REST para todas las funcionalidades |
+| Documentación API | https://tavolo-api.azurewebsites.net/swagger-ui.html | Documentación interactiva de la API |
+| Frontend Web (próximamente) | https://tavolo-app.web.app | Interfaz para comensales y administradores |
+
+Durante este sprint, se ha establecido una infraestructura robusta y escalable que permitirá el crecimiento continuo de la solución Tavolo en futuras iteraciones. El frontend web está preparado para su despliegue completo en Firebase en el siguiente sprint, manteniendo un proceso de despliegue eficiente y automatizado para todos los componentes del sistema.
+
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
 
 ### Conclusiones Generales del Proyecto
