@@ -3443,6 +3443,135 @@ Incluye filtros para buscar reservas por mesa o por cliente, optimizando la gest
 
 ### 5.4.2. Applications Wireflow Diagrams
 ### 5.4.3. Applications Mock-ups
+**Versión Web**
+
+La pantalla de inicio de sesión y registro son similares para ambos segmentos, allí el cliente o propietario ingresa sus credenciales para acceder al sistema o por el otro lado, puede llenar un formulario de creación de cuenta para nuevos usuarios, con campos de correo y contraseña.
+
+![iniciosesion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/InicioSesion-Mock-up.png)
+![registro_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Registrarse-Mock-up.png)
+
+**Cliente**
+
+- **Inicio:** Vista principal del cliente donde puede ver sus reservas activas, acceder al menú y ver las sedes disponibles.
+
+![inicio_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Inicio-Cliente-Mock-up.png)
+
+- **Menú:** Sección donde el cliente puede explorar las categorías de productos disponibles en la cafetería.
+
+![menu_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Menu-Cliente-Mock-up.png)
+
+- **Vista de reservas:** Panel donde el cliente puede revisar la lista de sedes e información básica de cada una.
+
+![reserva_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedes-Cliente-Mock-up.png)
+
+- **Detalle de la sede:** Información de la sede seleccionada, con dirección, horarios, contacto y acceso a las mesas disponibles con filtros de capacidad y zona. Además, muestra las mesas de la sede seleccionada, agrupadas por zonas, con su estado y horarios disponibles.
+
+![sede_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-Cliente-Mock-up.png)
+
+- **Reserva de mesa (pop-up):** Ventana emergente para seleccionar la hora de la reserva de la mesa elegida.
+
+![mesas_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-Reservar-Cliente-Mock-up.png)
+
+- **Confirmación de reserva:** Mensaje que confirma que la reserva fue realizada exitosamente.
+
+![confirmacion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-ReservaCorrecta-Cliente-Mock-up.png)
+
+- **Mapa de la sede (pop-up):** Muestra un mapa con la ubicación exacta de la sede seleccionada para facilitar la llegada del cliente.
+
+![mapa_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedes-VerMapa-Cliente-Mock-up.png)
+
+**Propietario**
+
+- **Inicio:** Muestra las sedes a cargo del propietario y el resumen de reservas por sede.
+
+![inicio_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Inicio-Propietario-Mock-up.png)
+
+- **Gestión de mesas:** Panel para ver todas las mesas de una sede, con opción de editar o eliminar cada una.
+
+![gestion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesas-Propietario-Mock-up.png)
+
+- **Agregar mesa (pop-up):** Ventana para añadir nuevas mesas especificando zona, capacidad e identificador.
+
+![agregar_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesasAgregar-Propietario-Mock-up.png)
+
+- **Confirmación de agregado:** Mensaje que informa que la mesa se añadió correctamente.
+
+![confirmacion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesas-AgregarCorrecto-Propietario-Mock-up.png)
+
+- **Vista de reservas por mesa:** Permite al propietario revisar las reservas filtradas por cada mesa, con su disponibilidad por horario.
+
+![filtro_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-Filtro-Propietario-Mock-up.png)
+![pormesa_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-PorMesa-Propietario-Mock-up.png)
+
+- **Vista de reservas por persona:** Muestra una lista de personas que han reservado, con los detalles y hora.
+
+![persona_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-PorPersona-Propietario-Mock-up.png)
+
+**Versión Móvil**
+
+La pantalla de inicio de sesión y registro son similares para ambos segmentos, allí el cliente o propietario ingresa sus credenciales para acceder al sistema o por el otro lado, puede llenar un formulario de creación de cuenta para nuevos usuarios, con campos de correo y contraseña.
+
+![iniciosesion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/InicioSesion-Mock-up.png)
+![registro_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/Registrarse-Mock-up.png)
+
+**Cliente**
+
+- **Inicio:** Muestra la reserva activa (si existe), y un acceso rápido a las sedes disponibles.
+
+![inicio_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/home-cliente-mock-up.png)
+
+- **Vista de sedes:** Despliega una lista de sedes con su descripción, dirección y número de mesas disponibles.
+
+![sedes_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/buscar-cliente-mock-up.png)
+
+- **Detalle de sede:** Muestra información general de la sede seleccionada (dirección, horario y contacto), incluye una sección donde se visualizan las mesas disponibles, agrupadas por zonas y con sus capacidades, las cuales son una lista ampliada de mesas con scroll para ver más opciones, incluyendo filtros de zona.
+
+![detalle_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-cliente-mock-up.png)
+![capacidad_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/filtro-capacidad-cliente-mock-up.png)
+![zona_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/filtro-zona-cliente-mock-up.png)
+
+- **Reserva de mesa (pop-up):** Selector de horario para la mesa elegida, mostrando disponibilidad por hora.
+
+![reserva_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-reserva-cliente-mock-up.png)
+
+- **Confirmación de reserva:** Mensaje que informa que la reserva fue realizada con éxito.
+
+![confirmacion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-reserva-exitosa-cliente-mock-up.png)
+
+- **Mapa de la sede (pop-up):** Ventana emergente que muestra un mapa con la ubicación de la sede.
+
+![mapa_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/mapa-cliente-mock-up.png)
+
+- **Menu:** Visualización de productos con nombre, tipo y precio (ej. cafés, postres, etc).
+
+![menu_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/menu-cliente-mock-up.png)
+
+**Propietario**
+
+- **Inicio:** Pantalla principal con vista de sedes administradas, cada una con datos clave y acceso a reservas.
+
+![inicio_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/home-propietario-mock-up.png)
+
+- **Gestión de mesas:** Lista de todas las mesas con capacidad, zona y botón de eliminación.
+
+![gestion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-propietario-mock-up.png)
+
+- **Agregar nueva mesa (pop-up):** Formulario para añadir una mesa, solicitando zona, capacidad e identificador.
+
+![form_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-form-propietario-mock-up.png)
+
+- **Confirmación de agregado:** Mensaje de éxito que confirma que la mesa fue registrada.
+
+![confirmacion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-mesa-propietario-mock-up.png)
+
+- **Detalle de sede:** El propietario puede visualizar cómo el cliente ve las opciones disponibles de reserva.
+
+![pormesa_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/reservas-propietario-mock-up.png)
+
+- **Detalle de reserva por persona:** Vista filtrada para ver las reservas agrupadas por nombre de cliente, fecha y mesa.
+
+![persona_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/reservas-personas-propietario-mock-up.png)
+
 ### 5.4.4. Applications User Flow Diagrams
 
 ## 5.5. Applications Prototyping
