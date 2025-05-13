@@ -1643,69 +1643,27 @@ El equipo ha completado el 100% de las historias de usuario planificadas para es
 
 Durante el Sprint 1, el equipo ha logrado documentar completamente los endpoints de la API de Tavolo utilizando Swagger. Esta documentación proporciona una referencia clara y accesible para desarrolladores frontend, facilitando la integración con los servicios backend. <br>
 
-| Categoría | Endpoint | Método HTTP | Descripción | Implementado por |
-|-----------|----------|-------------|-------------|------------------|
-| Autenticación | `/api/auth/login` | POST | Iniciar sesión (comensal o administrador) | Baldeon Fabian, Aldo Alberto |
-| Autenticación | `/api/auth/register` | POST | Registrar nuevo comensal | Baldeon Fabian, Aldo Alberto |
-| Autenticación | `/api/auth/register-admin` | POST | Registrar nuevo administrador | Baldeon Fabian, Aldo Alberto |
-| Mesas | `/api/tables` | GET | Obtener todas las mesas (filtrado por sede) | Castillo Castillo, Jair Alexander |
-| Mesas | `/api/tables/{id}` | GET | Obtener detalles de mesa específica | Castillo Castillo, Jair Alexander |
-| Mesas | `/api/tables` | POST | Crear nueva mesa | Castillo Castillo, Jair Alexander |
-| Mesas | `/api/tables/{id}` | DELETE | Eliminar mesa existente | Castillo Castillo, Jair Alexander |
-| Sedes | `/api/headquarters` | GET | Listar todas las sedes | Cama Salvatierra, Jimena Tamara |
-| Sedes | `/api/headquarters/{id}` | GET | Obtener detalles de sede específica | Cama Salvatierra, Jimena Tamara |
-| Sedes | `/api/headquarters/admin/{adminId}` | GET | Obtener sede asignada a administrador | Cama Salvatierra, Jimena Tamara |
-| Reservas | `/api/bookings` | GET | Listar todas las reservas (filtrado por usuario) | Quezada Portalatino, Barbara Susana |
-| Reservas | `/api/bookings/{id}` | GET | Obtener detalles de reserva específica | Quezada Portalatino, Barbara Susana |
-| Reservas | `/api/bookings` | POST | Crear nueva reserva | Quezada Portalatino, Barbara Susana |
-| Reservas | `/api/bookings/active/{userId}` | GET | Obtener reserva activa de un usuario | La Torre Valle, Franz Jair |
-
-
-### Modelos de datos
-
-Para dar soporte a los endpoints anteriores, se definieron modelos de datos claros y precisos, algunos de los cuales se presentan a continuación:
-
-#### Table (Mesa)
-
-```json
-{
-  "id": "string (UUID)",
-  "number": "integer",
-  "chairs": "integer",
-  "status": "enum (AVAILABLE, OCCUPIED, RESERVED, MAINTENANCE)",
-  "headquarterId": "string (UUID)"
-}
-```
-
-#### Booking (Reserva)
-
-```json
-{
-  "id": "string (UUID)",
-  "userId": "string (UUID)",
-  "tableId": "string (UUID)",
-  "startTime": "string (datetime)",
-  "endTime": "string (datetime)",
-  "status": "enum (CONFIRMED, CANCELED, COMPLETED)",
-  "guests": "integer",
-  "createdAt": "string (datetime)"
-}
-```
-
-#### User (Usuario)
-
-```json
-{
-  "id": "string (UUID)",
-  "name": "string",
-  "email": "string",
-  "role": "enum (CUSTOMER, ADMIN, SUPERADMIN)"
-}
-```
+| Categoría | Endpoint | Método HTTP | Descripción |
+|-----------|----------|-------------|-------------|
+| Autenticación | `/api/v1/authentication/sign-up` | POST | Registrar nuevo usuario |
+| Autenticación | `/api/v1/authentication/sign-in` | POST | Iniciar sesión de usuario |
+| Reservas | `/api/v1/bookings` | GET | Listar todas las reservas |
+| Reservas | `/api/v1/bookings` | POST | Crear nueva reserva |
+| Reservas | `/api/v1/bookings/{id}` | GET | Obtener detalles de reserva específica |
+| Reservas | `/api/v1/bookings/client/{clientId}` | GET | Obtener reservas de un cliente específico |
+| Sedes | `/api/v1/headquarters` | GET | Listar todas las sedes |
+| Sedes | `/api/v1/headquarters` | POST | Crear nueva sede |
+| Sedes | `/api/v1/headquarters/{headquarterId}` | GET | Obtener detalles de sede específica |
+| Roles | `/api/v1/roles` | GET | Listar todos los roles |
+| Usuarios | `/api/v1/users` | GET | Listar todos los usuarios |
+| Usuarios | `/api/v1/users/{userId}` | GET | Obtener detalles de usuario específico |
+| Mesas | `/api/v1/tables` | GET | Listar todas las mesas |
+| Mesas | `/api/v1/tables` | POST | Crear nueva mesa |
+| Mesas | `/api/v1/tables/{tableId}` | GET | Obtener detalles de mesa específica |
+| Mesas | `/api/v1/tables/{tableId}/schedule` | GET | Obtener horario de una mesa específica |
 
 ## Evidencia de pruebas realizadas
-
-Para verificar la funcionalidad de la API, se realizaron pruebas exhaustivas utilizando la interfaz Swagger. A continuación se muestran algunos ejemplos de estas pruebas:
+Para verificar la funcionalidad de la API, se realizaron pruebas exhaustivas utilizando la interfaz Swagger. A continuación se muestran algunos ejemplos de estas pruebas:<br>
 
 ![Prueba de login exitoso](./images/services-documentation/login-success-test.png)<br>
 *Ejecución exitosa de la autenticación de un administrador*
@@ -1719,7 +1677,7 @@ Para verificar la funcionalidad de la API, se realizaron pruebas exhaustivas uti
 
 ### Repositorio y commits relacionados
 
-Repositorio: https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend
+Repositorio: https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend <br>
 
 | Commit ID | Descripción | Autor | Fecha |
 |-----------|-------------|-------|-------|
@@ -1730,32 +1688,31 @@ Repositorio: https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backe
 | p45t7u9 | feature(shared): add add bounded context shared | Castillo Castillo, Jair Alexander | 12/05/2025 |
 
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
-Durante este primer sprint, el equipo Tavolo ha implementado una estrategia de despliegue completa para asegurar que todos los componentes del sistema estén disponibles en entornos de producción. Se ha desplegado exitosamente la landing page, el backend API y la aplicación web frontend, utilizando servicios en la nube para garantizar disponibilidad, escalabilidad y seguridad.
+Durante este primer sprint, el equipo Tavolo ha implementado una estrategia de despliegue completa para asegurar que todos los componentes del sistema estén disponibles en entornos de producción. Se ha desplegado exitosamente la landing page, el backend API y la aplicación web frontend, utilizando servicios en la nube para garantizar disponibilidad, escalabilidad y seguridad.<br>
 
 ### Landing Page Deployment
 
-La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando la integración directa con nuestro repositorio para un flujo de trabajo simplificado y automático.
+La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando la integración directa con nuestro repositorio para un flujo de trabajo simplificado y automático.<br>
 
 <br>URL: https://upc-pre-202510-1asi0572-2952-tavolo.github.io/tavolo-landing-page/<br>
 
 #### Evidencia del despliegue
-![Landing Page 1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing1.png?raw=true)
-![Landing Page 2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing2.png?raw=true)
-![Landing Page 3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing3.png?raw=true)
-![Landing Page 4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing4.png?raw=true)
+![Landing Page 1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing1.png?raw=true)<br>
+![Landing Page 2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing2.png?raw=true)<br>
+![Landing Page 3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing3.png?raw=true)<br>
+![Landing Page 4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing4.png?raw=true)<br>
 
 ### Backend API 
 
-La API de Tavolo fue desplegada **por ahora de manera local**, se ha probado todas las funcionalidades de la plataforma de manera existosa.
+La API de Tavolo fue desplegada **por ahora de manera local**, se ha probado todas las funcionalidades de la plataforma de manera existosa.<br>
 
 #### Evidencia del Swagger
-
-![Swagger UI](./images/deployment-evidence/swagger-api-deployed.png)
-
-
+![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger1.png?raw=true)<br>
+![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger2.png?raw=true)
+![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger3.png?raw=true) <br>
 ## Frontend Web Application
 
-La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting, que ofrece una plataforma eficiente para aplicaciones React con rápidos tiempos de carga y distribución global. Sin embargo, **por ahora** se maneja de **manera local**
+La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting, que ofrece una plataforma eficiente para aplicaciones React con rápidos tiempos de carga y distribución global. Sin embargo, **por ahora** se maneja de **manera local**<br>
 
 ### Evidencia de las pantallas
 
