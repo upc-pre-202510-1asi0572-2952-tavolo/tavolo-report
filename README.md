@@ -1432,6 +1432,26 @@ El diseño implementa índices en los campos `sensor_id`, `mesa_id` y `timestamp
 ### 6.1.3. Source Code Style Guide & Conventions
 ### 6.1.4. Software Deployment Configuration
 ## 6.2. Landing Page, Services & Applications Implementation.
+En esta sección se documenta el proceso completo de implementación, validación y despliegue de las diversas soluciones tecnológicas que conforman Tavolo. **Partiendo del Product Backlog establecido**, cada sprint representa una iteración enfocada en entregar incrementos funcionales del producto, demostrando así el avance progresivo en el desarrollo de la solución.
+
+La implementación de Tavolo comprende múltiples componentes interconectados:
+
+- **Landing Page**: La puerta de entrada informativa para potenciales usuarios, diseñada para comunicar claramente la propuesta de valor.
+- **Web Services (Backend API)**: El núcleo funcional que gestiona la lógica de negocio, procesamiento de datos y comunicación con los sensores IoT.
+- **Web Applications**: Interfaces para comensales y administradores que permiten interactuar con el sistema desde navegadores web.
+
+El desarrollo incremental se estructuró en sprints, cada uno con objetivos específicos y entregables definidos. Para cada sprint se documentan las siguientes etapas:
+
+1. Sprint Planning: Planificación detallada de las historias de usuario seleccionadas.
+2. Backlog y asignación de tareas: Distribución de responsabilidades entre los miembros del equipo.
+3. Development Evidence: Registro de los avances y contribuciones al código.
+4. Testing Suite: Validación funcional y técnica de los componentes implementados.
+5. Execution Evidence: Demostración del producto en funcionamiento.
+6. Services Documentation: Documentación técnica de las APIs y servicios.
+7. Deployment: Publicación de los componentes en sus respectivos entornos.
+8. Collaboration Insights: Análisis de la dinámica del equipo durante el sprint.
+
+A lo largo de este capítulo, se presenta una visión transparente del **proceso iterativo que llevó a la materialización de Tavolo** como una solución funcional.
 
 ### 6.2.1. Sprint 1
 #### 6.2.1.1. Sprint Planning 1.
@@ -1562,9 +1582,8 @@ A continuación, se presenta una tabla detallada de los commits más relevantes 
 | https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/sede-endpoints | o15r3s8 | feat: endpoints para sedes | Desarrollo de servicios REST para consultar información de sedes y asignación a administradores | 15/05/2025 |
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
-#### 6.2.1.6. Execution Evidence for Sprint Review.
-# 6.2.1.6. Execution Evidence for Sprint Review
 
+#### 6.2.1.6. Execution Evidence for Sprint Review.
 En este primer sprint, el equipo Tavolo ha logrado implementar con éxito los componentes fundamentales del sistema, creando una base sólida para el desarrollo futuro del proyecto. Se han completado todas las historias de usuario planificadas de la parte web, alcanzando las principales funcionalidades tanto para comensales como para administradores.
 
 - **Landing page completa** con información del producto, galería y formulario de contacto
@@ -1574,12 +1593,19 @@ En este primer sprint, el equipo Tavolo ha logrado implementar con éxito los co
 - **Panel administrativo** para gestión de mesas y visualización de la sede asignada
 
 ### Landing Page
-
-![Landing Page - Sección Principal](./images/execution-evidence/landing-main.png)<br>
+![Landing Page 1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing1.png?raw=true)
 *Pantalla principal de la landing page mostrando la propuesta de valor de Tavolo*
 
-![Landing Page - Características](./images/execution-evidence/landing-features.png)<br>
+![Landing Page 2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing2.png?raw=true)
+*Sección de qué es Tavolo y los servicios que ofrece*
+
+![Landing Page 3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing3.png?raw=true)
 *Sección de características clave que destaca los beneficios principales del sistema*
+
+![Landing Page 4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing4.png?raw=true)
+*Sección de formulario de contacto con el equipo de desarrollo de Tavolo*
+
+
 
 ### Sistema para Comensales
 
@@ -1614,6 +1640,94 @@ El video muestra el flujo completo desde la landing page hasta las funcionalidad
 El equipo ha completado el 100% de las historias de usuario planificadas para este sprint, cumpliendo con los criterios de aceptación establecidos. La aplicación es funcional en su estado actual y proporciona las funcionalidades básicas necesarias para la gestión de mesas y reservas. En los **próximos sprints** se agregarán características adicionales **como notificaciones, reportes estadísticos** y la integración completa con los sensores IoT físicos.
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 1, el equipo ha logrado documentar completamente los endpoints de la API de Tavolo utilizando Swagger. Esta documentación proporciona una referencia clara y accesible para desarrolladores frontend, facilitando la integración con los servicios backend. <br>
+
+| Categoría | Endpoint | Método HTTP | Descripción | Implementado por |
+|-----------|----------|-------------|-------------|------------------|
+| Autenticación | `/api/auth/login` | POST | Iniciar sesión (comensal o administrador) | Baldeon Fabian, Aldo Alberto |
+| Autenticación | `/api/auth/register` | POST | Registrar nuevo comensal | Baldeon Fabian, Aldo Alberto |
+| Autenticación | `/api/auth/register-admin` | POST | Registrar nuevo administrador | Baldeon Fabian, Aldo Alberto |
+| Mesas | `/api/tables` | GET | Obtener todas las mesas (filtrado por sede) | Castillo Castillo, Jair Alexander |
+| Mesas | `/api/tables/{id}` | GET | Obtener detalles de mesa específica | Castillo Castillo, Jair Alexander |
+| Mesas | `/api/tables` | POST | Crear nueva mesa | Castillo Castillo, Jair Alexander |
+| Mesas | `/api/tables/{id}` | DELETE | Eliminar mesa existente | Castillo Castillo, Jair Alexander |
+| Sedes | `/api/headquarters` | GET | Listar todas las sedes | Cama Salvatierra, Jimena Tamara |
+| Sedes | `/api/headquarters/{id}` | GET | Obtener detalles de sede específica | Cama Salvatierra, Jimena Tamara |
+| Sedes | `/api/headquarters/admin/{adminId}` | GET | Obtener sede asignada a administrador | Cama Salvatierra, Jimena Tamara |
+| Reservas | `/api/bookings` | GET | Listar todas las reservas (filtrado por usuario) | Quezada Portalatino, Barbara Susana |
+| Reservas | `/api/bookings/{id}` | GET | Obtener detalles de reserva específica | Quezada Portalatino, Barbara Susana |
+| Reservas | `/api/bookings` | POST | Crear nueva reserva | Quezada Portalatino, Barbara Susana |
+| Reservas | `/api/bookings/active/{userId}` | GET | Obtener reserva activa de un usuario | La Torre Valle, Franz Jair |
+
+
+### Modelos de datos
+
+Para dar soporte a los endpoints anteriores, se definieron modelos de datos claros y precisos, algunos de los cuales se presentan a continuación:
+
+#### Table (Mesa)
+
+```json
+{
+  "id": "string (UUID)",
+  "number": "integer",
+  "chairs": "integer",
+  "status": "enum (AVAILABLE, OCCUPIED, RESERVED, MAINTENANCE)",
+  "headquarterId": "string (UUID)"
+}
+```
+
+#### Booking (Reserva)
+
+```json
+{
+  "id": "string (UUID)",
+  "userId": "string (UUID)",
+  "tableId": "string (UUID)",
+  "startTime": "string (datetime)",
+  "endTime": "string (datetime)",
+  "status": "enum (CONFIRMED, CANCELED, COMPLETED)",
+  "guests": "integer",
+  "createdAt": "string (datetime)"
+}
+```
+
+#### User (Usuario)
+
+```json
+{
+  "id": "string (UUID)",
+  "name": "string",
+  "email": "string",
+  "role": "enum (CUSTOMER, ADMIN, SUPERADMIN)"
+}
+```
+
+## Evidencia de pruebas realizadas
+
+Para verificar la funcionalidad de la API, se realizaron pruebas exhaustivas utilizando la interfaz Swagger. A continuación se muestran algunos ejemplos de estas pruebas:
+
+![Prueba de login exitoso](./images/services-documentation/login-success-test.png)<br>
+*Ejecución exitosa de la autenticación de un administrador*
+
+![Prueba de obtención de mesas](./images/services-documentation/get-tables-test.png)<br>
+*Resultado de la consulta de mesas filtradas por sede*
+
+![Prueba de creación de reserva](./images/services-documentation/create-booking-test.png)<br>
+*Resultado exitoso de la creación de una nueva reserva*
+
+
+### Repositorio y commits relacionados
+
+Repositorio: https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend
+
+| Commit ID | Descripción | Autor | Fecha |
+|-----------|-------------|-------|-------|
+| c739042 | feat(booking): implementar endpoint para consultar reservas por ID | Baldeon Fabian, Aldo Alberto | 07/05/2025 |
+| l28j5k6 | feat(iam): implement user authentication and registration system | Castillo Castillo, Jair Alexander | 11/05/2025 |
+| m67n4p9 | feat: feat(booking,branching): implement reservation system with branch management | Baldeon Fabian, Aldo Alberto | 11/05/2025 |
+| o15r3s8 |feature(iam): add bounded context iam | Castillo Castillo, Jair Alexander| 12/05/2025 |
+| p45t7u9 | feature(shared): add add bounded context shared | Castillo Castillo, Jair Alexander | 12/05/2025 |
 
 #### 6.2.1.8. Software Deployment Evidence for Sprint Review.
 Durante este primer sprint, el equipo Tavolo ha implementado una estrategia de despliegue completa para asegurar que todos los componentes del sistema estén disponibles en entornos de producción. Se ha desplegado exitosamente la landing page, el backend API y la aplicación web frontend, utilizando servicios en la nube para garantizar disponibilidad, escalabilidad y seguridad.
