@@ -1583,6 +1583,58 @@ A continuación, se presenta una tabla detallada de los commits más relevantes 
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 
+En esta sección se presenta el conjunto de Unit Tests, Integration Tests y Acceptance Tests automatizados para los Web Services relacionados con los User Stories especificados en el Sprint.
+
+## Relación de Commits de Testing
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| tavolo-backend | feature/unit-tests | abc123 | Add unit tests for reservation service | Implemented tests for create, update and delete methods | 2023-10-15 |
+| tavolo-backend | feature/integration-tests | def456 | Add integration tests for reservation API | Testing the complete flow of reservation endpoints | 2023-10-16 |
+| tavolo-backend | feature/bdd-tests | ghi789 | Add BDD tests for reservation feature | Added Cucumber tests with Gherkin scenarios for reservation management | 2023-10-18 |
+
+## Unit Tests
+
+### TableCommandServiceTest
+
+Esta clase contiene pruebas unitarias para validar el comportamiento del servicio `TableCommandService`, responsable de gestionar las operaciones relacionadas con la creación de mesas en el sistema.
+
+![image](https://github.com/user-attachments/assets/fa0b9b7e-6d9f-4eff-ad26-ae8aab133c62)<br>
+
+Este test unitario valida:
+- La creación correcta de comandos para crear mesas
+- El comportamiento del servicio cuando verifica la existencia de una sede
+- El correcto guardado de la mesa en el repositorio
+- La devolución del resultado esperado
+
+## Integration Tests
+
+### TableCommandServiceIntegrationTest
+
+Esta clase de prueba integra los distintos componentes del sistema para validar el flujo completo de creación de mesas:
+
+![image](https://github.com/user-attachments/assets/48bcc1ee-2fd5-493f-b442-da53ec70b592)<br>
+
+Esta prueba de integración verifica:
+- El funcionamiento correcto del servicio en un entorno transaccional
+- La comunicación correcta entre los distintos componentes del sistema
+- La persistencia adecuada de los datos
+
+
+
+### Autenticacion (AuthFeature.feature)
+Feature: Autenticación de usuarios
+  Scenario: Registro exitoso de un nuevo usuario
+    Given el usuario proporciona datos válidos para registro
+    When se envía la solicitud de registro
+    Then el sistema crea el usuario y devuelve un estado 201
+  Scenario: Fallo en el registro por datos inválidos
+    Given el usuario proporciona datos inválidos
+    When se envía la solicitud de registro
+    Then el sistema devuelve un error de validación 
+
+
+
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 En este primer sprint, el equipo Tavolo ha logrado implementar con éxito los componentes fundamentales del sistema, creando una base sólida para el desarrollo futuro del proyecto. Se han completado todas las historias de usuario planificadas de la parte web, alcanzando las principales funcionalidades tanto para comensales como para administradores.
 
@@ -1665,14 +1717,14 @@ Durante el Sprint 1, el equipo ha logrado documentar completamente los endpoints
 ## Evidencia de pruebas realizadas
 Para verificar la funcionalidad de la API, se realizaron pruebas exhaustivas utilizando la interfaz Swagger. A continuación se muestran algunos ejemplos de estas pruebas:<br>
 
-![Prueba de login exitoso](./images/services-documentation/login-success-test.png)<br>
+![image](https://github.com/user-attachments/assets/0546bad5-cded-4323-af35-931a165282e8)<br>
 *Ejecución exitosa de la autenticación de un administrador*
 
-![Prueba de obtención de mesas](./images/services-documentation/get-tables-test.png)<br>
-*Resultado de la consulta de mesas filtradas por sede*
+![image](https://github.com/user-attachments/assets/d4766854-cecc-4d24-85d8-d450a3d7d075)<br>
+*Resultado de la creacion de sedes*
 
-![Prueba de creación de reserva](./images/services-documentation/create-booking-test.png)<br>
-*Resultado exitoso de la creación de una nueva reserva*
+![image](https://github.com/user-attachments/assets/7bc0d90a-9fa9-482c-a1c3-c4c7496c7a1b)<br>
+*Resultado exitoso de la creación de una mesa*
 
 
 ### Repositorio y commits relacionados
