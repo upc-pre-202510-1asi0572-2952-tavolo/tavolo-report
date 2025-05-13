@@ -1621,6 +1621,7 @@ Durante este primer sprint, el equipo Tavolo ha implementado una estrategia de d
 ### Landing Page Deployment
 
 La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando la integración directa con nuestro repositorio para un flujo de trabajo simplificado y automático.
+
 <br>URL: https://upc-pre-202510-1asi0572-2952-tavolo.github.io/tavolo-landing-page/<br>
 
 #### Evidencia del despliegue
@@ -1629,106 +1630,35 @@ La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando l
 ![Landing Page 3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing3.png?raw=true)
 ![Landing Page 4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing4.png?raw=true)
 
-## Backend API Deployment
+### Backend API 
 
-La API de Tavolo fue desplegada en Microsoft Azure App Service, utilizando contenedores Docker para facilitar la portabilidad y la escalabilidad del servicio.
+La API de Tavolo fue desplegada **por ahora de manera local**, se ha probado todas las funcionalidades de la plataforma de manera existosa.
 
-### Creación del recurso en Azure
-
-![Creación de App Service](./images/deployment-evidence/azure-app-service-creation.png)
-
-*Proceso de creación del servicio en Azure App Service para alojar la API de Tavolo.*
-
-### Configuración de Docker
-
-![Configuración de Docker](./images/deployment-evidence/docker-config-backend.png)
-
-*Archivo Dockerfile utilizado para construir la imagen del backend con Spring Boot.*
-
-### Despliegue automático con GitHub Actions
-
-![GitHub Actions para Backend](./images/deployment-evidence/github-actions-backend.png)
-
-*Configuración del workflow de GitHub Actions para automatizar el despliegue del backend en Azure.*
-
-### API Swagger desplegada
+#### Evidencia del Swagger
 
 ![Swagger UI](./images/deployment-evidence/swagger-api-deployed.png)
 
-*Documentación Swagger de la API desplegada y accesible en el entorno de Azure.*
 
-## Frontend Web Application Deployment
+## Frontend Web Application
 
-La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting, que ofrece una plataforma eficiente para aplicaciones React con rápidos tiempos de carga y distribución global.
+La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting, que ofrece una plataforma eficiente para aplicaciones React con rápidos tiempos de carga y distribución global. Sin embargo, **por ahora** se maneja de **manera local**
 
-### Preparación para el despliegue en Firebase
+### Evidencia de las pantallas
 
-![Configuración Firebase](./images/deployment-evidence/firebase-config-setup.png)
+#### Pantalla de Comensal <br>
+![Pantalla1]()
+![Pantalla2]()
+![Pantalla3]()
+![Pantalla4]()
+![Pantalla5]()
 
-*Preparación del proyecto React para su despliegue en Firebase Hosting.*
+#### Pantalla de Administrador <br>
+![Pantalla1]()
+![Pantalla2]()
+![Pantalla3]()
+![Pantalla4]()
+![Pantalla5]()
 
-### Configuración de variables de entorno
-
-![Variables de entorno](./images/deployment-evidence/firebase-env-variables.png)
-
-*Configuración de variables de entorno para conectar el frontend con la API backend desplegada en Azure.*
-
-### Estructura de despliegue planificada
-
-![Estructura de despliegue](./images/deployment-evidence/frontend-deployment-structure.png)
-
-*Estructura de archivos configurada para el despliegue en Firebase, que será implementada en el siguiente sprint.*
-
-## Base de datos PostgreSQL en Azure
-
-Para el almacenamiento persistente de datos, se configuró una instancia de Azure Database for PostgreSQL.
-
-### Creación del recurso de base de datos
-
-![Creación de base de datos](./images/deployment-evidence/azure-postgres-creation.png)
-
-*Proceso de creación de la base de datos PostgreSQL en Azure.*
-
-### Configuración de seguridad
-
-![Configuración de firewall](./images/deployment-evidence/postgres-firewall-rules.png)
-
-*Configuración de reglas de firewall para permitir conexiones seguras desde los servicios de Tavolo.*
-
-### Conexión con la API
-
-![Configuración de conexión](./images/deployment-evidence/database-connection-config.png)
-
-*Configuración de la conexión a la base de datos en el archivo application.properties del backend.*
-
-## IoT Hub para sensores
-
-Aunque la integración completa con los sensores IoT físicos está planificada para próximos sprints, se ha configurado el Azure IoT Hub para facilitar la futura incorporación de estos dispositivos.
-
-### Creación del IoT Hub
-
-![Creación de IoT Hub](./images/deployment-evidence/iot-hub-creation.png)
-
-*Proceso de creación del Azure IoT Hub para la gestión de dispositivos IoT.*
-
-### Configuración inicial de dispositivos
-
-![Registro de dispositivos](./images/deployment-evidence/iot-device-registration.png)
-
-*Configuración inicial para el registro de dispositivos Arduino que se utilizarán en las mesas.*
-
-## Resumen de URLs de despliegue
-
-El despliegue completo de la solución Tavolo incluye los siguientes entornos accesibles:
-
-| Componente | URL | Descripción |
-|------------|-----|-------------|
-| Landing Page | https://upc-pre-202510-1asi0572-2952-tavolo.github.io/tavolo-landing-page/ | Sitio informativo y promocional |
-| API Backend | https://tavolo-api.azurewebsites.net | Servicios REST para todas las funcionalidades |
-| Documentación API | https://tavolo-api.azurewebsites.net/swagger-ui.html | Documentación interactiva de la API |
-| Frontend Web (próximamente) | https://tavolo-app.web.app | Interfaz para comensales y administradores |
-
-Durante este sprint, se ha establecido una infraestructura robusta y escalable que permitirá el crecimiento continuo de la solución Tavolo en futuras iteraciones. El frontend web está preparado para su despliegue completo en Firebase en el siguiente sprint, manteniendo un proceso de despliegue eficiente y automatizado para todos los componentes del sistema.
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
 
