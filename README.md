@@ -49,22 +49,75 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
   <tbody>
     <tr>
       <td>0.1</td>
-      <td>1.1</td>
-      <td>-</td>
-      <td>-</td>
+      <td>18/04/2025</td>
+      <td>Equipo completo</td>
+      <td>Creación inicial del informe con la estructura base y distribución de responsabilidades</td>
     </tr>
-    
+    <tr>
+      <td>0.2</td>
+      <td>19/04/2025</td>
+      <td>Aldo Baldeon, Jair Castillo</td>
+      <td>Desarrollo del Capítulo I: Introducción, Startup Profile y Solution Profile</td>
+    </tr>
+    <tr>
+      <td>0.3</td>
+      <td>20/04/2025</td>
+      <td>Franz La Torre</td>
+      <td>Desarrollo del Capítulo II: Análisis competitivo y diseño de entrevistas</td>
+    </tr>
+    <tr>
+      <td>0.4</td>
+      <td>20/04/2025</td>
+      <td>Barbara Quezada, Jimena Cama</td>
+      <td>Desarrollo inicial del Capítulo IV: Bounded Contexts y Domain-Driven Design</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>21/04/2025</td>
+      <td>Jair Castillo, Aldo Baldeon</td>
+      <td>Desarrollo del Capítulo III: To-Be Scenario Mapping e Impact Mapping</td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>22/04/2025</td>
+      <td>Franz La Torre</td>
+      <td>Realización y documentación de entrevistas, desarrollo del Needfinding</td>
+    </tr>
+    <tr>
+      <td>0.7</td>
+      <td>23/04/2025</td>
+      <td>Equipo completo</td>
+      <td>Revisión general del documento e integración de todas las secciones</td>
+    </tr>
+    <tr>
+      <td>0.8</td>
+      <td>24/04/2025</td>
+      <td>Barbara Quezada, Jimena Cama</td>
+      <td>Finalización de diagramas C4 y mejora de los diagramas de clase del dominio</td>
+    </tr>
+    <tr>
+      <td>0.9</td>
+      <td>24/04/2025</td>
+      <td>Aldo Baldeon</td>
+      <td>Desarrollo del Product Backlog y mejora de las User Stories</td>
+    </tr>
+    <tr>
+      <td>1.0</td>
+      <td>25/04/2025</td>
+      <td>Equipo completo</td>
+      <td>Revisión final, corrección de errores y entrega del documento para TB1</td>
+    </tr>
   </tbody>
 </table>
+<br>
 
+# Project Report Collaboration Insights
 
-## Project Report Collaboration Insights
-
-Para desarrollar el proyecto, se empleó GitHub como herramienta para gestionar versiones y facilitar la colaboración en tiempo real. A continuación, se proporciona el enlace al repositorio del proyecto:
+<br>Para desarrollar el proyecto, se empleó GitHub como herramienta para gestionar versiones y facilitar la colaboración en tiempo real. A continuación, se proporciona el enlace al repositorio del proyecto:
 
 | **Descripción**            | **Enlace**                                                                 |
 | :-------------------------: | :------------------------------------------------------------------------: |
-| Repositorio del Proyecto    | https://github.com/IoT-Solutions-SW71-Grupo-4/HidroBots-Report.git         |
+| Repositorio del Proyecto    | https://github.com/orgs/upc-pre-202510-1asi0572-2952-tavolo/repositories         |
 | Link de la Organización     | https://github.com/upc-pre-202510-1asi0572-2952-tavolo                    |
 
 **TB1:**
@@ -73,25 +126,26 @@ Para el TB1, se asignaron responsabilidades específicas a cada integrante, las 
 
 | Miembro del Equipo | Tarea Asignada |
 |       :---:        |      :---:     |
-| Aldo Baldeon       |        -       |
-| Barbara Quezada    |        -       |
-| Franz La Torre     |        -       |
-| Jimena Cama        |        -       |
-| Jair Castillo      |        -       |
+| Aldo Baldeon       | Desarrollo del Capítulo I (Startup Profile, Solution Profile, análisis de antecedentes y problemática) y Capítulo III (To-Be Scenario Mapping, Product Backlog) |
+| Barbara Quezada    | Desarrollo del Capítulo IV (Arquitectura del software, diseño estratégico y táctico de Domain-Driven Design, C4 Model) |
+| Franz La Torre     | Desarrollo del Capítulo II (Análisis de competidores, Needfinding, diseño y análisis de entrevistas) |
+| Jimena Cama        | Desarrollo del Capítulo IV (Diagramas de clase, diagramas de componentes, diseño de BD) |
+| Jair Castillo      | Desarrollo del Capítulo I (Lean UX Process, Lean UX Canvas) y Capítulo III (User Stories, Impact Mapping) |
 
-Cabe destacar que, durante la creación del informe, se realizaron commits específicos para cada tarea asignada, lo que permitió garantizar un control de versiones y una colaboración efectiva en tiempo real.
+Cabe destacar que, durante la creación del informe, se realizaron commits específicos para cada tarea asignada, lo que permitió garantizar un control de versiones y una colaboración efectiva en tiempo real. El equipo mantuvo reuniones semanales de sincronización para asegurar la coherencia entre los diferentes capítulos y compartir avances.
 
 Miembros
 
-- Aldo Baldeon    (CodAress)
-- Barbara Quezada (BarbaraQP15)
-- Franz La Torre  (FranzJairLTV)
-- Jimena Cama     (aksonie)
-- Jair Castillo   (U202211390)
+- Aldo Baldeon    (CodAress) - Responsable del análisis de la solución y estructuración del producto
+- Barbara Quezada (BarbaraQP15) - Responsable del diseño arquitectónico y modelado estratégico
+- Franz La Torre  (FranzJairLTV) - Responsable de la investigación de usuarios y análisis competitivo
+- Jimena Cama     (aksonie) - Responsable del modelado técnico y representación de componentes
+- Jair Castillo   (U202211390) - Responsable del marco metodológico y especificación de historias
   
 El uso de GitHub ha permitido gestionar versiones y fomentar la colaboración en tiempo real, facilitando que los integrantes del equipo trabajen tanto de forma asincrónica como sincrónica en el proyecto. Asimismo, la metodología Gitflow ha posibilitado la creación de diversas ramas para el desarrollo de las tareas asignadas, promoviendo un trabajo autónomo y colaborativo entre los miembros.
 
-La rama "develop" se utilizó como un entorno para integrar las tareas de cada miembro de manera estructurada y organizada, mientras que la rama "main" se destinó a la entrega de la versión final del proyecto.
+La rama "develop" se utilizó como un entorno para integrar las tareas de cada miembro de manera estructurada y organizada, mientras que la rama "main" se destinó a la entrega de la versión final del proyecto. Esta estrategia permitió una revisión conjunta del contenido antes de su integración final, reduciendo errores y asegurando la calidad del informe presentado.
+
 
 # Contenido
 
@@ -193,14 +247,18 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
   - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
   - [6.1.2. Source Code Management](#612-source-code-management)
   - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide-conventions)
-  - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
+  - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration) 
 - [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
-- [6.3. Validation Interviews](#63-validation-interviews)
-- [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
-- [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistass)
-- [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
-- [6.4. Video About-the-Product](#64-video-about-the-product)
-
+  - [6.2.1. Sprint 1](#621-sprint-1)
+    - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
+    - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
+    - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
+    - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
+    - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
+    - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
+    - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
+    - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
+    - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
 
 ### [Conclusiones](#conclusiones)
 ### [Bibliografía](#bibliografía)
@@ -293,173 +351,15 @@ Brindar una solución tecnológica eficiente y accesible para la gestión de afo
 Consolidarse como la **solución de referencia en el Perú** para la digitalización de procesos de atención en cafeterías, mediante el uso de tecnología embebida, edge computing y sistemas en la nube, promoviendo una experiencia de consumo más ordenada, rápida y satisfactoria para los comensales, y una gestión más eficiente para los negocios del sector gastronómico.
 
 ### 1.1.2. Perfiles de integrantes del equipo  
+## 1.1.2. Perfiles de integrantes del equipo
 
-<table>
-  <tr align="center">
-    <td rowspan="4">
-      <img src="./images/profile_images/aldo_profile.jpg" alt="Aldo's profile image" min-width="400" max-width="900"/>
-    </td>
-    <td align="left">
-      <b>Nombre y Apellido:</b>
-      <br>            
-      Aldo Alberto Baldeon Fabian
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Código:</b>
-    <br>
-    U202122633
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Carrera:</b>
-    <br>
-    Ingeniería de Software
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Acerca de:</b>
-    <br>
-    Soy Aldo Alberto Baldeon Fabian, estudio la carrera de Ingeniería de Software en la UPC. Escogí esta carrera porque me interesó el desarrollo de aplicaciones. Soy responsable y me gusta trabajar en equipo. Poseo conocimientos básicos en C#, java, JavaScript, HTML y CSS. También, poseo conocimientos intermedios en C + +, SQL y MongoDB, además de contar con experiencia en Git y GitHub.
-    </td>
-  </tr>
-  </tr>
-
-  <tr align="center">
-    <td rowspan="4">
-      <img src="./images/profile_images/barbara_profile.jpg" alt="Barbara's profile image" min-width="400" max-width="900"/>
-    </td>
-    <td align="left">
-      <b>Nombre y Apellido:</b>
-      <br>            
-      Barbara Susana Quezada Portalatino
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Código:</b>
-    <br>
-    U202211800
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Carrera:</b>
-    <br>
-    Ingeniería de Software
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Acerca de:</b>
-    <br>
-    Barbara Susana Quezada Portalatino, cursando el séptimo ciclo de la carrera de software, trabajo mayormente bajo un rol de líder que me ayuda a poder organizar no solo la ideas de mi grupo sino que las ideas aterricen en la ejecución. Soy una persona muy disciplinada y detallista.
-    </td>
-  </tr>
-  </tr>
-   <tr align="center">
-    <td rowspan="4">
-      <img src="./images/profile_images/jimena_profile.jpg" alt="Jimena's profile image" min-width="400" max-width="900"/>
-    </td>
-    <td align="left">
-      <b>Nombre y Apellido:</b>
-      <br>            
-      Jimena Tamara Cama Salvatierra
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Código:</b>
-    <br>
-    U2022210778
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Carrera:</b>
-    <br>
-    Ingeniería de Software
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Acerca de:</b>
-    <br>
-     Soy estudiante de la carrera de Ingeniería de Software en la UPC y actualmente estoy cursando el 7mo ciclo. Me considero una persona curiosa, determinada y organizada. Con la experiencia en proyectos de startup y trabajos en equipo, trabajaré junto a mis compañeros para lograr un óptimo resultado del proyecto.
-    </td>
-  </tr>
-  </tr>
-
-<tr align="center">
-    <td rowspan="4">
-      <img src="./images/profile_images/jair_profile.jpg" alt="Jair's profile image" min-width="400" max-width="900"/>
-    </td>
-    <td align="left">
-      <b>Nombre y Apellido:</b>
-      <br>            
-      Jair Alexander Castillo Castillo
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Código:</b>
-    <br>
-    U202211390
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Carrera:</b>
-    <br>
-    Ingeniería de Software
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Acerca de:</b>
-    <br>
-    Soy estudiante de la carrera de Ingeniería de Software en la UPC y me encuentro en el 7to ciclo. Me considero una persona dedicada, comprensiva y metódica. Con mis habilidades de liderazgo y mi capacidad para trabajar en equipo en un ambiente de respeto, estoy segura de que podré dirigir la implementación de la startup de nuestro proyecto de manera exitosa.
-    </td>
-  </tr>
-  </tr>
-  
-<tr align="center">
-    <td rowspan="4">
-      <img src="./images/profile_images/franz_profile.jpg" alt="Franz's profile image" min-width="400" max-width="900"/>
-    </td>
-    <td align="left">
-      <b>Nombre y Apellido:</b>
-      <br>            
-      Franz Jair La Torre Valle
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Código:</b>
-    <br>
-    U202012378
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Carrera:</b>
-    <br>
-    Ingeniería de Software
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-    <b>Acerca de:</b>
-    <br>
-    Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Mi compromiso con el equipo se basa en mantener una participación activa en todas las actividades, estar siempre disponible para resolver dudas y contribuir de manera significativa al desarrollo del proyecto. Busco aportar con soluciones innovadoras, apoyo constante y un aprendizaje continuo para alcanzar los objetivos propuestos.
-    </td>
-  </tr>
-
-</table>
-
+| Foto | Información |
+|------|-------------|
+| ![Perfil de Aldo](./images/profile_images/aldo_profile.jpg) | **Nombre y Apellido:** Aldo Alberto Baldeon Fabian<br>**Código:** U202122633<br>**Carrera:** Ingeniería de Software<br>**Acerca de:** Soy Aldo Alberto Baldeon Fabian, estudio la carrera de Ingeniería de Software en la UPC. Escogí esta carrera porque me interesó el desarrollo de aplicaciones. Soy responsable y me gusta trabajar en equipo. Poseo conocimientos básicos en C#, java, JavaScript, HTML y CSS. También, poseo conocimientos intermedios en C + +, SQL y MongoDB, además de contar con experiencia en Git y GitHub. |
+| ![Perfil de Barbara](./images/profile_images/barbara_profile.jpg) | **Nombre y Apellido:** Barbara Susana Quezada Portalatino<br>**Código:** U202211800<br>**Carrera:** Ingeniería de Software<br>**Acerca de:** Barbara Susana Quezada Portalatino, cursando el séptimo ciclo de la carrera de software, trabajo mayormente bajo un rol de líder que me ayuda a poder organizar no solo la ideas de mi grupo sino que las ideas aterricen en la ejecución. Soy una persona muy disciplinada y detallista. |
+| ![Perfil de Jimena](./images/profile_images/jimena_profile.jpg) | **Nombre y Apellido:** Jimena Tamara Cama Salvatierra<br>**Código:** U2022210778<br>**Carrera:** Ingeniería de Software<br>**Acerca de:** Soy estudiante de la carrera de Ingeniería de Software en la UPC y actualmente estoy cursando el 7mo ciclo. Me considero una persona curiosa, determinada y organizada. Con la experiencia en proyectos de startup y trabajos en equipo, trabajaré junto a mis compañeros para lograr un óptimo resultado del proyecto. |
+| ![Perfil de Jair](./images/profile_images/jair_profile.jpg) | **Nombre y Apellido:** Jair Alexander Castillo Castillo<br>**Código:** U202211390<br>**Carrera:** Ingeniería de Software<br>**Acerca de:** Soy estudiante de la carrera de Ingeniería de Software en la UPC y me encuentro en el 7to ciclo. Me considero una persona dedicada, comprensiva y metódica. Con mis habilidades de liderazgo y mi capacidad para trabajar en equipo en un ambiente de respeto, estoy segura de que podré dirigir la implementación de la startup de nuestro proyecto de manera exitosa. |
+| ![Perfil de Franz](./images/profile_images/franz_profile.jpg) | **Nombre y Apellido:** Franz Jair La Torre Valle<br>**Código:** U202012378<br>**Carrera:** Ingeniería de Software<br>**Acerca de:** Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Mi compromiso con el equipo se basa en mantener una participación activa en todas las actividades, estar siempre disponible para resolver dudas y contribuir de manera significativa al desarrollo del proyecto. Busco aportar con soluciones innovadoras, apoyo constante y un aprendizaje continuo para alcanzar los objetivos propuestos. |
 
 ## 1.2. Solution Profile
 
@@ -782,41 +682,39 @@ Tavolo impulsa una estrategia de posicionamiento de marca basada en innovación 
 6. ¿Algo más que consideras importante para mejorar tu experiencia como cliente?
 
 ### 2.2.2. Registro de entrevistas
-### Propietarios de cafeterías
-**Entrevista #1**
+### Propietarios de cafeterías<br>
+**Entrevista #1**<br>
 **Link:** [https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing](https://drive.google.com/file/d/1QeR3Ds2W3V0-4MHyfneMgFkaFLi7aG39/view?usp=sharing) 
 <img src="images/entrevistas/entrevista_diego.jpg"><br>
-**Resumen:** 
-La persona entrevistada señala que es un cliente frecuente de diversas cafeterías, desde locales con propuestas culinarias elaboradas hasta las más conocidas franquicias. Si las circunstancias lo permiten, suele consultar si hay mesas libres antes de dirigirse al lugar, aunque reconoce que no siempre sigue esta práctica. Manifiesta un deseo por contar con herramientas que le permitan conocer la ocupación y otros datos de interés de antemano.
+**Entrevistado:** Diego Morales<br>
+**Duración:** 5:20<br>
+**Resumen:** La persona entrevistada señala que es un cliente frecuente de diversas cafeterías, desde locales con propuestas culinarias elaboradas hasta las más conocidas franquicias. Si las circunstancias lo permiten, suele consultar si hay mesas libres antes de dirigirse al lugar, aunque reconoce que no siempre sigue esta práctica. Manifiesta un deseo por contar con herramientas que le permitan conocer la ocupación y otros datos de interés de antemano.<br>
 
-**Entrevista #2**
+**Entrevista #2**<br>
+**Link:**[https://drive.google.com/file/d/1WTxiDxw4vaabZhFvibL8mHLINcrJR0_9/view?usp=sharing](https://drive.google.com/file/d/1WTxiDxw4vaabZhFvibL8mHLINcrJR0_9/view?usp=sharing)
+<img src="images/entrevistas/entrevista-barbara.png"><br>
+**Entrevistado:** Jenna Vasquez<br>
+**Duración:** 4:21<br>
+**Resumen:** En la entrevista, Jenna, dueña de una cafetería, destacó la necesidad crucial de implementar tecnología de fácil acceso y uso, específicamente sensores que no requieran una capacitación extensa del personal, lo que representaría un ahorro significativo de tiempo y recursos. Adicionalmente, expresó su frustración con el sistema actual de gestión manual de reservas, el cual es propenso a errores frecuentes que generan inconvenientes tanto para los clientes como para la operación del negocio, describiéndolo como un verdadero "dolor de cabeza". Jenna ve en una aplicación como TAVOLO una solución potencial que podría automatizar el proceso de reservas, reducir los errores humanos y aliviar la carga operativa de su personal.ReintentarClaude puede cometer errores. Verifique las respuestas.<br>
 
 ### Clientes de establecimiento
-**Entrevista #1**
-
-**Link:** [https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing](https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing) 
-
+**Entrevista #1**<br>
+**Link:** [https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing](https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing) <br>
 **Entrevistado:** Elias Yauri Paucar<br>
-**Duración:** 3:18
-
+**Duración:** 3:18<br>
 <img src="images/entrevistas/elias.png"><br>
-
-**Resumen:** El entrevistado indica que acostumbra visitar diferentes tipos de cafeterías, incluyendo tanto establecimientos gourmet como cadenas comerciales. Cuando tiene la opción, verifica la disponibilidad de espacio antes de ir, aunque no siempre lo hace. Expresa interés en poder acceder a información sobre disponibilidad y otros detalles similares. <br>Respecto a aplicaciones, valora principalmente tres aspectos: una interfaz intuitiva, facilidad de uso y funcionalidades relevantes. Finalmente, para el entrevistado es fundamental que la navegación dentro de la aplicación sea sencilla de comprender y que ofrezca una experiencia fluida.
+**Resumen:** El entrevistado indica que acostumbra visitar diferentes tipos de cafeterías, incluyendo tanto establecimientos gourmet como cadenas comerciales. Cuando tiene la opción, verifica la disponibilidad de espacio antes de ir, aunque no siempre lo hace. Expresa interés en poder acceder a información sobre disponibilidad y otros detalles similares. <br>Respecto a aplicaciones, valora principalmente tres aspectos: una interfaz intuitiva, facilidad de uso y funcionalidades relevantes. Finalmente, para el entrevistado es fundamental que la navegación dentro de la aplicación sea sencilla de comprender y que ofrezca una experiencia fluida.<br>
 
 **Entrevista #2**
-
 **Link:** [https://youtu.be/QGSisj7iF-k](https://youtu.be/QGSisj7iF-k)
-
 **Entrevistada:** Aleshka Fernández<br>
-**Duración:** 3:54
-
+**Duración:** 3:54<br>
 <img src="images/entrevistas/Aleshka.png"><br>
-
-**Resumen:** La entrevistada menciona que suele visitar cafeterías locales que ofrezcan cafés artesanales o exclusivos del establecimiento. Destaca que, cuando tiene poco tiempo, valora poder reservar sus lugares favoritos. También muestra interés en conocer el aforo en tiempo real. Le gustaría que la aplicación fuera intuitiva, atractiva y visualmente llamativa. Además, considera ideal que la app le sugiera las mejores cafeterías cercanas, según su ubicación y el tipo de cafetería que prefiere. También desea encontrar fácilmente un buscador dentro de la aplicación, dejar calificaciones sobre los lugares visitados y recibir recomendaciones de cafeterías similares en caso de que el tiempo de espera en su lugar habitual sea muy largo.
+**Resumen:** La entrevistada menciona que suele visitar cafeterías locales que ofrezcan cafés artesanales o exclusivos del establecimiento. Destaca que, cuando tiene poco tiempo, valora poder reservar sus lugares favoritos. También muestra interés en conocer el aforo en tiempo real. Le gustaría que la aplicación fuera intuitiva, atractiva y visualmente llamativa. Además, considera ideal que la app le sugiera las mejores cafeterías cercanas, según su ubicación y el tipo de cafetería que prefiere. También desea encontrar fácilmente un buscador dentro de la aplicación, dejar calificaciones sobre los lugares visitados y recibir recomendaciones de cafeterías similares en caso de que el tiempo de espera en su lugar habitual sea muy largo.<br>
 
 ### 2.2.3. Análisis de entrevistas
 ### Propietarios de cafeterías
-Los propietarios entrevistados son también usuarios frecuentes de cafeterías, lo que les permite empatizar con las necesidades del cliente. Aunque no siempre consultan la disponibilidad de mesas antes de asistir a un local, valoran contar con herramientas tecnológicas que les brinden información en tiempo real sobre la ocupación y otros datos operativos. Identifican como problemáticas la falta de visibilidad para anticiparse a la demanda y la toma de decisiones basada en intuiciones. Por ello, ven como una gran oportunidad integrar soluciones que mejoren la rotación de mesas, optimicen la operación y reduzcan el estrés, siempre y cuando sean fáciles de usar y autogestionables.
+Los propietarios entrevistados son también usuarios frecuentes de cafeterías, lo que les permite empatizar con las necesidades del cliente. Aunque no siempre consultan la disponibilidad de mesas antes de asistir a un local, valoran contar con herramientas tecnológicas que les brinden información en tiempo real sobre la ocupación y otros datos operativos. Identifican como problemáticas la falta de visibilidad para anticiparse a la demanda y la toma de decisiones basada en intuiciones. Por ello, ven como una gran oportunidad integrar soluciones que mejoren la rotación de mesas, optimicen la operación y reduzcan el estrés, siempre y cuando sean fáciles de usar y autogestionables.<br>
 
 ![Propietarios](./images/entrevistas/analisis_propietario.png)
 
@@ -917,7 +815,7 @@ Este mapeo “To-Be” presenta el escenario ideal posterior a la implementació
 
 | **Phases**                     | **Doing**                                                                                          | **Thinking**                                           | **Feeling**               |
 |-------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------|---------------------------|
-| **Registro del local**        | • Instala la app Tavolo.  <br> •Accede desde Tavolo.com   <br> • Crea su cuenta como dueño de local.  <br> • Registra su cafetería y sedes. | • “Qué bueno que puedo registrar todas mis sedes fácil.” <br> • “Ahora tengo visibilidad online.” | • Aliviado <br> • Organizado |
+| **Registro del local**        | • Instala la app Tavolo.  <br> • Crea su cuenta como dueño de local.  <br> • Registra su cafetería y sedes. | • “Qué bueno que puedo registrar todas mis sedes fácil.” <br> • “Ahora tengo visibilidad online.” | • Aliviado <br> • Organizado |
 | **Gestión del aforo**         | • Consulta la ocupación en tiempo real de su sede. <br> • Revisa cada sede desde su celular o computadora.                    | • “Qué fácil es ver cuántas mesas están ocupadas.” <br> • “Ya no dependo del personal para esto.” <br>• “Qué accesible que pueda ver desde cualquier dispositivo la app de Tavolo.” | • En control <br> • Eficiente  |
 | **Gestión del tiempo de espera** | • Ve cómo los clientes reservan online. <br> • Evita colas en la entrada.                             | • “Qué bueno que ya no hay filas innecesarias.” <br> • “Mis clientes llegan más contentos.”      | • Relajado <br> • Optimista   |
 | **Monitoreo de mesas**        | • Agrega o elimina mesas. <br> • Coordina instalación de sensores IoT.                              | • “Wow, es sencillo gestionar las mesas con ayuda.” <br> • “No imaginé tanta flexibilidad.”      | • Empoderado <br> • Innovador  |
@@ -933,43 +831,46 @@ Este mapeo “To-Be” presenta el escenario ideal posterior a la implementació
 
 
 ## 3.2. User Stories
-### Épicas de Tavolo
+### Épicas
 
-| Epic ID | Nombre |
-|---------|--------|
-| EPIC-LANDING-001 | Funcionalidades landing page |
-| EPIC-CLIENT-002 | Funcionalidades user comensal |
-| EPIC-ADMIN-003 | Funcionalidades user administrador |
-| EPIC-SUPERADMIN-004 | Funcionalidades user superadmin |
+| Epic ID 	| Name 	|
+|:---:	|:---:	|
+| EPIC-LANDING-001 	| Funcionalidades landing page 	|
+| EPIC-CLIENT-002 	| Funcionalidades user comensal 	|
+| EPIC-ADMIN-003 	| Funcionalidades user administrador 	|
+| EPIC-SUPERADMIN-004 	| Funcionalidades user superadmin 	|
+| EPIC-BOOKING-TECH 	| Funcionalidades de desarrolladores 	|
 
-| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
-|---|---|---|---|---|---|
-| US001 | Ver sección "¿Qué es Tavolo?" | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería. | EPIC-LANDING-001 | Visitante landing page | Escenario 1:<br>Dado que el visitante accede a la landing page,<br>Cuando hace scroll en "¿Qué es Tavolo?",<br>Entonces el sistema le muestra la sección donde se describe claramente el objetivo de la solución.<br><br>Escenario 2:<br>Dado que el visitante accede a la landing page,<br>Cuando hace click en "¿Qué es Tavolo?",<br>Entonces el sistema le muestra la sección donde se describe claramente el objetivo de la solución. |
-| US002 | Ver sección "Características clave" | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador. | EPIC-LANDING-001 | Visitante landing page | Escenario 1:<br>Dado que el usuario navega la landing,<br>Cuando cuando hace scroll a la sección "Características clave",<br>Entonces el sistema le muestra un resumen de las funcionalidades más importantes del sistema.<br><br>Escenario 2:<br>Dado que el visitante está en la landing,<br>Cuando da click sobre el botón "Características clave",<br>Entonces el sistema le muestra un resumen de las funcionalidades más importantes del sistema. |
-| US003 | Ver la galería virtual | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción. | EPIC-LANDING-001 | Visitante landing page | Escenario 1:<br>Dado que el usuario navega la landing,<br>Cuando cuando hace scroll a la sección "Galería Virtual"<br>Entonces visualiza el contenido visual ilustrativo del sistema en uso<br><br>Escenario 2:<br>Dado que el usuario navega la landing,<br>Cuando cuando hace click a la sección "Galería Virtual"<br>Entonces visualiza el contenido visual ilustrativo del sistema en uso |
-| US004 | Usar el formulario de contacto | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo. | EPIC-LANDING-001 | Visitante landing page | Escenario 1:<br>Dado que el visitante accede a "Contáctanos"<br>Cuando completa el formulario con sus datos<br>Entonces el sistema debe notificar al equipo de Tavolo<br><br>Escenario 2:<br>Dado que el visitante intenta enviar el formulario,<br>Cuando deja campos obligatorios vacíos,<br>Entonces el sistema debe mostrar mensajes de validación para completar la información. |
-| US005 | Ver menú digital de una sede | Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir. | EPIC-CLIENT-002 | Comensal | Escenario 1:<br>Dado que el comensal accede a la plataforma,<br>Cuando le da click a la sección "Menú",<br>Entonces el sistema debe mostrar el menú completo de la cafetería.<br><br>Escenario 2:<br>Dado que el comensal visualiza el menú,<br>Cuando selecciona una categoría como “Bebidas” o “Postres”,<br>Entonces el sistema filtra los productos mostrados según esa categoría. |
-| US006 | Visualizar reserva activa | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería. | EPIC-CLIENT-002 | Comensal | Escenario 1:<br>Dado que el comensal ha iniciado sesión en la plataforma<br>Y tiene al menos una reserva activa,<br>Cuando accede a la sección principal,<br>Entonces el sistema le muestra la información de la reserva actual incluyendo horario, sede y número de mesa.<br><br>Escenario 2:<br>Dado que el comensal visualiza su reserva,<br>Cuando esta ya ha expirado,<br>Entonces el sistema la remueve de la sección activa. |
-| US007 | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería. | EPIC-CLIENT-002 | Comensal | Escenario 1:<br>Dado que el comensal accede a la plataforma<br>Cuando le da click a la sección "Explorar Sedes"<br>Entonces el sistema debe mostrarle la información de la sedes con sus respectivos aforos disponibles<br><br>Escenario 2:<br>Dado que el comensal visualiza el estado de aforo de las sedes<br>Cuando hay una actualización desde los sensores<br>Entonces el sistema debe reflejar el nuevo estado en menos de 5 segundos<br><br>Escenario 3:<br>Dado que todas las mesas están ocupadas en una sede<br>Cuando el comensal visualiza la disponibilidad<br>Entonces el sistema debe informar que no hay mesas disponibles actualmente |
-| US008 | Reservar una mesa | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería. | EPIC-CLIENT-002 | Comensal | Escenario 1:<br>Dado que el comensal selecciona una sede en la sección "Explorar Sedes"<br>Cuando el comensal selecciona la hora aproximada de estadía<br>Y selecciona una mesa disponible<br>Entonces el sistema debe permitir realizar la reserva<br><br>Escenario 2:<br>Dado que el comensal ya tiene una reserva activa<br>Cuando intenta crear una nueva<br>Entonces el sistema debe evitarlo e informar que ya tiene una reserva activa |
-| US009 | Visualizar más sedes en un mapa | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano. | EPIC-CLIENT-002 | Comensal | Escenario 1:<br>Dado que el comensal quiere ver más sedes<br>Cuando le da click a la sección "Sedes"<br>Entonces el sistema debe mostrar todas las sedes de la cafetería<br><br>Escenario 2:<br>Dado que el comensal se encuentra en la sección "Sedes"<br>Y puede ver todas las sedes de la cafetería<br>Cuando le da click al botón de "Ver en mapa"<br>Entonces el sistema muestra un pop up con la dirección en un mapa interactivo |
-| US010 | Registro de cuenta de comensal | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de reserva y visualización de mesas. | EPIC-CLIENT-002 | Visitante | Escenario 1:<br>Dado que un visitante accede a la plataforma<br>Cuando completa el formulario de registro con nombre y contraseña<br>Y acepta los términos y condiciones<br>Entonces el sistema debe crear una cuenta nueva<br>Y permitir el acceso a las funcionalidades de comensal<br><br>Escenario 2:<br>Dado que un visitante intenta registrarse con un nombre de usuario ya usado,<br>Cuando envía el formulario,<br>Entonces el sistema debe impedir el registro y mostrar un mensaje de error indicando que el correo ya está registrado. |
-| US011 | Inicio de sesión de cuenta de comensal | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas y funcionalidades personalizadas. | EPIC-CLIENT-002 | Comensal | Escenario 1:<br>Dado que un comensal registrado accede a la pantalla de login<br>Cuando ingresa sus credenciales correctas (email y contraseña)<br>Entonces el sistema debe autenticarlo<br>Y redirigirlo al dashboard principal<br><br>Escenario 2:<br>Dado que un usuario ingresa credenciales incorrectas<br>Cuando intenta iniciar sesión<br>Entonces el sistema debe mostrar un mensaje de error<br>Y permitir reintentar |
-| US012 | Agregar nuevas mesas | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación. | EPIC-ADMIN-003 | Administrador | Escenario 1:<br>Dado que el admin accede al panel de su sede<br>Cuando le da click a la sección "Gestión de Mesas"<br>Y posteriormente a la opción "Agregar una nueva mesa"<br>Entonces el sistema le brinda un formulario simple de registro de mesa.<br>Escenario 2:<br>Dado que el admin ingresa los datos correctos de la mesa como su identificador y capacidad de sillas<br>Y le da click al botón "Guardar"<br>Entonces el sistema guarda con su identificador y capacidad de sillas la mesa registrada |
-| US013 | Visualizar reservas realizadas | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio. | EPIC-ADMIN-003 | Administrador | Escenario 1:<br>Dado que el administrador accede a su sede<br>Cuando le da clic a la sección "Visualizar Reservas"<br>Entonces el sistema debe mostrar las reservas con usuario, hora y mesa<br><br>Escenario 2:<br>Dado que el administrador ha filtrado por persona o mesa<br>Cuando aplica el filtro<br>Entonces el sistema debe mostrar solo las reservas que coinciden con los criterios seleccionados |
-| US014 | Ver la sede asignada | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta. | EPIC-ADMIN-003 | Administrador | Escenario 1:<br>Dado que el administrador inicia sesión<br>Cuando accede a su información<br>Entonces el sistema debe mostrar la sede asociada a su cuenta<br><br>Escenario 2:<br>Dado que el administrador tiene asignada una sede<br>Cuando intenta acceder a otra sede que no le corresponde<br>Entonces el sistema le impede el acceso |
-| US015 | Eliminar mesas | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas. | EPIC-ADMIN-003 | Administrador | Escenario 1:<br>Dado que el administrador ha iniciado sesión<br>Y se encuentra en la sección "Ver Mesas"<br>Cuando selecciona una mesa existente<br>Y confirma su eliminación<br>Entonces la mesa es eliminada del sistema<br>Y deja de aparecer en la lista<br><br>Escenario 2:<br>Dado que la mesa tiene una reserva activa<br>Cuando el administrador intenta eliminarla<br>Entonces el sistema debe impedir la eliminación<br>Y mostrar un mensaje indicando que no puede eliminar mesas con reservas activas |
-| US016 | Inicio de sesión de administrador | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas para acceder al panel de administración de mi sede. | EPIC-ADMIN-003 | Administrador | Escenario 1:<br>Dado que un administrador accede a la pantalla de login<br>Cuando ingresa sus credenciales válidas<br>Entonces el sistema debe autenticarlo<br>Y mostrar el panel de administración con las funcionalidades asociadas a su sede<br><br>Escenario 2:<br>Dado que un administrador ingresa credenciales incorrectas<br>Cuando intenta acceder<br>Entonces el sistema debe mostrar un mensaje de error<br>Y registrar el intento fallido por seguridad |
-| US017 | Resgistro de cuenta de administrador | Como superadministrador, quiero poder registrar administradores como administradores de una sede en el sistema Tavolo para poder acceder a las funcionalidades de ver reserva y la gestión de mesas. | EPIC-SUPERADMIN-004 | Superadmin | Escenario 1:<br>Dado que un superadmin se encuentra en su cuenta<br>Cuando se dirija a la seccion de "Administradores"<br>Y dan click a agregar administrador<br>Entonces pueden registrar un administrador y asignarle una sede<br><br>Escenario 2:<br>Dado que un superadmin ha registrado a un administrador<br>Cuando se dirije a la sección de "Administradores"<br>Entonces puede visualizar los administradores que han registrado |
-| US018 | Acceder a todos los módulos del sistema | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. | EPIC-SUPERADMIN-004 | Superadmin | Escenario 1:<br>Dado que el superadmin accede al sistema<br>Cuando desea visualizar sedes o usuarios<br>Entonces el sistema debe permitirle ver toda la información<br><br>Escenario 2:<br>Dado que el superadmin crea un nuevo admin o sede<br>Cuando registra los datos<br>Entonces el sistema debe almacenarlos y mostrar confirmación |
+<br>
 
-### Technical Stories <br>
-| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
-|---|---|---|---|---|---|
-| TAVOLO-TS001 | Implementar Endpoint para Obtener Mesas | Como Developer, quiero implementar un endpoint de API que permita a las aplicaciones frontend obtener la lista de mesas disponibles en una sede específica, para que los usuarios puedan ver el estado de ocupación. | EPIC-BOOKING-TECH | Developer | Escenario 1: Obtener mesas disponibles exitosamente<br>Dado que existe una sede con mesas registradas<br>Cuando un cliente solicita la lista de mesas para esa sede<br>Entonces el sistema responde con un código 200 OK y una lista de mesas con su estado de ocupación.<br>Escenario 2: Sede no encontrada<br>Dado que se solicita una sede que no existe<br>Cuando el sistema intenta obtener las mesas<br>Entonces el sistema responde con un código 404 Not Found. |
-| TAVOLO-TS002 | Procesar Datos de Sensor de Ocupación | Como Developer, quiero implementar la lógica de backend para recibir y procesar los datos de ocupación enviados por los sensores IoT, para que el sistema actualice el estado de las mesas en tiempo real. | EPIC-IOT-PROCESSING | Developer | Escenario 1: Datos de ocupación recibidos y procesados<br>Dado que el Edge API recibe datos de ocupación de un sensor<br>Cuando el backend procesa estos datos<br>Entonces el estado de la mesa correspondiente se actualiza en la base de datos.<br>Escenario 2: Datos inválidos recibidos<br>Dado que el Edge API recibe datos con formato inválido<br>Cuando el backend intenta procesarlos<br>Entonces el sistema registra un error y descarta los datos inválidos. |
-| TAVOLO-TS003 | Integrar con Google Maps API (Backend) | Como Developer, quiero implementar la integración con la API de Google Maps en el backend para obtener información geográfica de las sedes, para que las aplicaciones frontend puedan mostrar las ubicaciones en un mapa. | EPIC-BRANCHING-TECH | Developer | Escenario 1: Obtener coordenadas de sede exitosamente<br>Dado que se registra una nueva sede con una dirección válida<br>Cuando el backend llama a la API de Google Maps con la dirección<br>Entonces la API responde con las coordenadas geográficas correctas.<br>Escenario 2: Dirección inválida<br>Dado que se registra una sede con una dirección inválida<br>Cuando el backend llama a la API de Google Maps<br>Entonces el sistema responde con un error o datos de ubicación nulos. |
-| TAVOLO-TS004 | Implementar Lógica de Reserva de Mesa API | Como Developer, quiero implementar la lógica de backend para gestionar el proceso de reserva de mesas a través de la API, asegurando la disponibilidad y registrando la reserva correctamente. | EPIC-BOOKING-TECH | Developer | Escenario 1: Reserva de mesa exitosa<br>Dado que un usuario solicita reservar una mesa disponible<br>Cuando la lógica de reserva valida la disponibilidad y registra la reserva<br>Entonces la reserva se crea en la base de datos y el estado de la mesa se actualiza a "Reservado".<br>Escenario 2: Mesa no disponible<br>Dado que un usuario intenta reservar una mesa ya ocupada o reservada<br>Cuando la lógica de reserva valida la disponibilidad<br>Entonces el sistema rechaza la reserva y responde con un mensaje de error de disponibilidad. |
+| Story ID 	| Título 	| Descripción 	| Epic ID 	| Usuario 	| Criterios de aceptación 	|
+|---	|---	|---	|---	|---	|---	|
+| US001 	| Ver sección "¿Qué es Tavolo?" 	| Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería. 	| EPIC-LANDING-001 	| Visitante landing page 	| Escenario 1: Dado que el visitante accede a la landing page, Cuando hace scroll en "¿Qué es Tavolo?", Entonces el sistema le muestra la sección donde se describe claramente el objetivo de la solución.  Escenario 2: Dado que el visitante accede a la landing page, Cuando hace click en "¿Qué es Tavolo?", Entonces el sistema le muestra la sección donde se describe claramente el objetivo de la solución. 	|
+| US002 	| Ver sección "Características clave" 	| Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador. 	| EPIC-LANDING-001 	| Visitante landing page 	| Escenario 1: Dado que el usuario navega la landing, Cuando cuando hace scroll a la sección "Características clave", Entonces el sistema le muestra un resumen de las funcionalidades más importantes del sistema.  Escenario 2: Dado que el visitante está en la landing, Cuando da click sobre el botón "Características clave", Entonces el sistema le muestra un resumen de las funcionalidades más importantes del sistema. 	|
+| US003 	| Ver la galería virtual 	| Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción. 	| EPIC-LANDING-001 	| Visitante landing page 	| Escenario 1: Dado que el usuario navega la landing, Cuando cuando hace scroll a la sección "Galería Virtual" Entonces visualiza el contenido visual ilustrativo del sistema en uso  Escenario 2: Dado que el usuario navega la landing, Cuando cuando hace click a la sección "Galería Virtual" Entonces visualiza el contenido visual ilustrativo del sistema en uso 	|
+| US004 	| Usar el formulario de contacto 	| Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo. 	| EPIC-LANDING-001 	| Visitante landing page 	| Escenario 1: Dado que el visitante accede a "Contáctanos" Cuando completa el formulario con sus datos Entonces el sistema debe notificar al equipo de Tavolo  Escenario 2: Dado que el visitante intenta enviar el formulario, Cuando deja campos obligatorios vacíos, Entonces el sistema debe mostrar mensajes de validación para completar la información. 	|
+| US005 	| Ver menú digital de una sede 	| Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que el comensal accede a la app, Cuando le da click a la sección "Menú", Entonces el sistema debe mostrar el menú completo de la cafetería.  Escenario 2: Dado que el comensal visualiza el menú, Cuando selecciona una categoría como “Bebidas” o “Postres”, Entonces el sistema filtra los productos mostrados según esa categoría. 	|
+| US006 	| Visualizar reserva activa 	| Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que el comensal ha iniciado sesión en la aplicación y tiene al menos una reserva activa, Cuando accede a la sección principal, Entonces el sistema le muestra la información de la reserva actual incluyendo horario, sede y número de mesa.  Escenario 2: Dado que el comensal visualiza su reserva, Cuando esta ya ha expirado, Entonces el sistema la remueve de la sección activa. 	|
+| US007 	| Ver disponibilidad de mesas en tiempo real 	| Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que el comensal accede a la app Cuando le da click a la sección "Explorar Sedes" Entonces el sistema debe mostrarle la información de la sedes con sus respectivos aforos disponibles  Escenario 2: Dado que el comensal visualiza el estado de aforo de las sedes Cuando hay una actualización desde los sensores Entonces el sistema debe reflejar el nuevo estado en menos de 5 segundos  Escenario 3: Dado que todas las mesas están ocupadas en una sede Cuando el comensal visualiza la disponibilidad Entonces el sistema debe informar que no hay mesas disponibles actualmente 	|
+| US008 	| Reservar una mesa 	| Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que el comensal selecciona una sede en la sección "Explorar Sedes" Cuando el comensal selecciona la hora aproximada de estadía Y selecciona una mesa disponible Entonces el sistema debe permitir realizar la reserva  Escenario 2: Dado que el comensal ya tiene una reserva activa Cuando intenta crear una nueva Entonces el sistema debe evitarlo e informar que ya tiene una reserva activa 	|
+| US009 	| Visualizar más sedes en un mapa 	| Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que el comensal quiere ver más sedes Cuando le da click a la sección "Sedes" Entonces el sistema debe mostrar todas las sedes de la cafetería  Escenario 2: Dado que el comensal se encuentra en la sección "Sedes" Y puede ver todas las sedes de la cafetería Cuando le da click al botón de "Ver en mapa" Entonces el sistema muestra un pop up con la dirección en un mapa interactivo 	|
+| US010 	| Registro de cuenta de comensal 	| Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de reserva y visualización de mesas. 	| EPIC-CLIENT-002 	| Visitante 	| Escenario 1: Dado que un visitante accede a la aplicación Cuando completa el formulario de registro con nombre y contraseña Y acepta los términos y condiciones Entonces el sistema debe crear una cuenta nueva Y permitir el acceso a las funcionalidades de comensal  Escenario 2: Dado que un visitante intenta registrarse con un nombre de usuario ya usado, Cuando envía el formulario, Entonces el sistema debe impedir el registro y mostrar un mensaje de error indicando que el correo ya está registrado. 	|
+| US011 	| Inicio de sesión de cuenta de comensal 	| Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas y funcionalidades personalizadas. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que un comensal registrado accede a la pantalla de login Cuando ingresa sus credenciales correctas (email y contraseña) Entonces el sistema debe autenticarlo Y redirigirlo al dashboard principal  Escenario 2: Dado que un usuario ingresa credenciales incorrectas Cuando intenta iniciar sesión Entonces el sistema debe mostrar un mensaje de error Y permitir reintentar 	|
+| US012 	| Agregar nuevas mesas 	| Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación. 	| EPIC-ADMIN-003 	| Administrador 	| Escenario 1: Dado que el admin accede al panel de su sede Cuando le da click a la sección "Gestión de Mesas" Y posteriormente a la opción "Agregar una nueva mesa" Entonces el sistema le brinda un formulario simple de registro de mesa. Escenario 2: Dado que el admin ingresa los datos correctos de la mesa como su identificador y capacidad de sillas Y le da click al botón "Guardar" Entonces el sistema guarda con su identificador y capacidad de sillas la mesa registrada 	|
+| US013 	| Visualizar reservas realizadas 	| Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio. 	| EPIC-ADMIN-003 	| Administrador 	| Escenario 1: Dado que el administrador accede a su sede Cuando le da clic a la sección "Visualizar Reservas" Entonces el sistema debe mostrar las reservas con usuario, hora y mesa  Escenario 2: Dado que el administrador ha filtrado por persona o mesa Cuando aplica el filtro Entonces el sistema debe mostrar solo las reservas que coinciden con los criterios seleccionados 	|
+| US014 	| Ver la sede asignada 	| Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta. 	| EPIC-ADMIN-003 	| Administrador 	| Escenario 1: Dado que el administrador inicia sesión Cuando accede a su información Entonces el sistema debe mostrar la sede asociada a su cuenta  Escenario 2: Dado que el administrador tiene asignada una sede Cuando intenta acceder a otra sede que no le corresponde Entonces el sistema le impede el acceso 	|
+| US015 	| Eliminar mesas 	| Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas. 	| EPIC-ADMIN-003 	| Administrador 	| Escenario 1: Dado que el administrador ha iniciado sesión Y se encuentra en la sección "Ver Mesas" Cuando selecciona una mesa existente y confirma su eliminación Entonces la mesa es eliminada del sistema y deja de aparecer en la lista  Escenario 2: Dado que la mesa tiene una reserva activa Cuando el administrador intenta eliminarla Entonces el sistema debe impedir la eliminación y mostrar un mensaje indicando que no puede eliminar mesas con reservas activas 	|
+| US016 	| Inicio de sesión de administrador 	| Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas para acceder al panel de administración de mi sede. 	| EPIC-ADMIN-003 	| Administrador 	| Escenario 1: Dado que un administrador accede a la pantalla de login Cuando ingresa sus credenciales válidas Entonces el sistema debe autenticarlo Y mostrar el panel de administración con las funcionalidades asociadas a su sede  Escenario 2: Dado que un administrador ingresa credenciales incorrectas Cuando intenta acceder Entonces el sistema debe mostrar un mensaje de error Y registrar el intento fallido por seguridad 	|
+| US017 	| Resgistro de cuenta de administrador 	| Como superadministrador, quiero poder registrar administradores como administradores de una sede en el sistema Tavolo para poder acceder a las funcionalidades de ver reserva y la gestión de mesas. 	| EPIC-SUPERADMIN-004 	| Superadmin 	| Escenario 1: Dado que un superadmin se encuentra en su cuenta Cuando se dirija a la seccion de "Administradores" Y dan click a agregar administrador Entonces pueden registrar un administrador y asignarle una sede  Escenario 2: Dado que un superadmin ha registrado a un administrador Cuando se dirije a la sección de "Administradores" Entonces puede visualizar los administradores que han registrado 	|
+| US018 	| Acceder a todos los módulos del sistema 	| Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. 	| EPIC-SUPERADMIN-004 	| Superadmin 	| Escenario 1: Dado que el superadmin accede al sistema Cuando desea visualizar sedes o usuarios Entonces el sistema debe permitirle ver toda la información  Escenario 2: Dado que el superadmin crea un nuevo admin o sede Cuando registra los datos Entonces el sistema debe almacenarlos y mostrar confirmación 	|
+
+## Technical user stories
+| Story ID 	| Título 	| Descripción 	| Epic ID 	| Usuario 	| Criterios de aceptación 	|
+|---	|---	|---	|---	|---	|---	|
+| TAVOLO-TS001 	| Implementar Endpoint para Obtener Mesas 	| Como Developer, quiero implementar un endpoint de API que permita a las aplicaciones frontend obtener la lista de mesas disponibles en una sede específica, para que los usuarios puedan ver el estado de ocupación. 	| EPIC-BOOKING-TECH 	| Developer 	| Escenario 1: Obtener mesas disponibles exitosamente Dado que existe una sede con mesas registradas Cuando un cliente solicita la lista de mesas para esa sede Entonces el sistema responde con un código 200 OK y una lista de mesas con su estado de ocupación. Escenario 2: Sede no encontrada Dado que se solicita una sede que no existe Cuando el sistema intenta obtener las mesas Entonces el sistema responde con un código 404 Not Found. 	|
+| TAVOLO-TS002 	| Procesar Datos de Sensor de Ocupación 	| Como Developer, quiero implementar la lógica de backend para recibir y procesar los datos de ocupación enviados por los sensores IoT, para que el sistema actualice el estado de las mesas en tiempo real. 	| EPIC-IOT-PROCESSING 	| Developer 	| Escenario 1: Datos de ocupación recibidos y procesados Dado que el Edge API recibe datos de ocupación de un sensor Cuando el backend procesa estos datos Entonces el estado de la mesa correspondiente se actualiza en la base de datos. Escenario 2: Datos inválidos recibidos Dado que el Edge API recibe datos con formato inválido Cuando el backend intenta procesarlos Entonces el sistema registra un error y descarta los datos inválidos. 	|
+| TAVOLO-TS003 	| Integrar con Google Maps API (Backend) 	| Como Developer, quiero implementar la integración con la API de Google Maps en el backend para obtener información geográfica de las sedes, para que las aplicaciones frontend puedan mostrar las ubicaciones en un mapa. 	| EPIC-BRANCHING-TECH 	| Developer 	| Escenario 1: Obtener coordenadas de sede exitosamente Dado que se registra una nueva sede con una dirección válida Cuando el backend llama a la API de Google Maps con la dirección Entonces la API responde con las coordenadas geográficas correctas. Escenario 2: Dirección inválida Dado que se registra una sede con una dirección inválida Cuando el backend llama a la API de Google Maps Entonces el sistema responde con un error o datos de ubicación nulos. 	|
+| TAVOLO-TS004 	| Implementar Lógica de Reserva de Mesa API 	| Como Developer, quiero implementar la lógica de backend para gestionar el proceso de reserva de mesas a través de la API, asegurando la disponibilidad y registrando la reserva correctamente. 	| EPIC-BOOKING-TECH 	| Developer 	| Escenario 1: Reserva de mesa exitosa Dado que un usuario solicita reservar una mesa disponible Cuando la lógica de reserva valida la disponibilidad y registra la reserva Entonces la reserva se crea en la base de datos y el estado de la mesa se actualiza a "Reservado". Escenario 2: Mesa no disponible Dado que un usuario intenta reservar una mesa ya ocupada o reservada Cuando la lógica de reserva valida la disponibilidad Entonces el sistema rechaza la reserva y responde con un mensaje de error de disponibilidad. 	|
 
 ## 3.3. Impact mapping.
 <img src="./images/impact_mapping/Impact_Mapping.png" alt="Impact Mapping"/><br>
@@ -977,28 +878,26 @@ Este mapeo “To-Be” presenta el escenario ideal posterior a la implementació
 
 ## 3.4. Product Backlog.
 
-| #  | User Story Id | Título                                     | Descripción                                                                                                                                                                    | Story Points |
-|----|---------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-|  1 | US018         | Acceder a todos los módulos del sistema    | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins.                                                      |            8 |
-|  2 | US010         | Agregar nuevas mesas                       | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación.                                                                            |            8 |
-|  3 | US009         | Visualizar más sedes en un mapa            | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano.                                                                                    |            8 |
-|  4 | US008         | Reservar una mesa                          | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería.                                                                                     |            8 |
-|  5 | US007         | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería.                                                                        |            5 |
-|  6 | US015         | Eliminar mesas                             | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas.                     |            5 |
-|  7 | US010         | Registro de cuenta de comensal             | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de reserva y visualización de mesas.                      |            5 |
-|  8 | US011         | Inicio de sesión de cuenta de comensal     | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas y funcionalidades personalizadas.                                             |            5 |
-|  9 | US014         | Ver la sede asignada                       | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta.                                                                         |            5 |
-| 10 | US006         | Visualizar reserva activa                  | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería.    |            5 |
-| 11 | US016         | Inicio de sesión de administrador          | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas para acceder al panel de administración de mi sede.                            |            5 |
-| 12 | US017         | Registro de cuenta de administrador        | Como superadministrador, quiero poder registrar administradores para una sede específica en el sistema Tavolo para delegarles la gestión de mesas y reservas.                 |            5 |
-| 13 | US013         | Visualizar reservas realizadas             | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio.                                                                                |            3 |
-| 14 | US005         | Ver menú digital de una sede               | Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir.                                                              |            3 |
-| 15 | US004         | Usar el formulario de contacto             | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo.                                     |            3 |
-| 16 | US003         | Ver la galería virtual                     | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción.                                           |            2 |
-| 17 | US002         | Ver sección "Características clave"        | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador.                    |            2 |
-| 18 | US001         | Ver sección "¿Qué es Tavolo?"              | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería.   |            2 |
-| 19 | TAVOLO-TS001  | Implementar Endpoint para Obtener Mesas    | Como Developer, quiero implementar un endpoint de API que permita obtener la lista de mesas disponibles en una sede específica, para mostrar el estado de ocupación.           |            5 |
-| 20 | TAVOLO-TS002  | Procesar Datos de Sensor de Ocupación      | Como Developer, quiero implementar la lógica backend para recibir y procesar los datos enviados por los sensores IoT, para actualizar el estado de mesas en tiempo real.      |            8 |
+| # 	| Story ID 	| Título 	| Descripción 	| Story Points 	|
+|:---:	|---	|---	|---	|---	|
+| 1 	| US008 	| Reservar una mesa 	| Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería. 	| 13 	|
+| 2 	| US018 	| Acceder a todos los módulos del sistema 	| Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. 	| 13 	|
+| 3 	| US007 	| Ver disponibilidad de mesas en tiempo real 	| Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería. 	| 8 	|
+| 4 	| US012 	| Agregar nuevas mesas 	| Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación. 	| 5 	|
+| 5 	| US009 	| Visualizar más sedes en un mapa 	| Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano. 	| 5 	|
+| 6 	| US006 	| Visualizar reserva activa 	| Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería. 	| 5 	|
+| 7 	| US013 	| Visualizar reservas realizadas 	| Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio. 	| 5 	|
+| 8 	| US017 	| Resgistro de cuenta de administrador 	| Como superadministrador, quiero poder registrar administradores como administradores de una sede en el sistema Tavolo para poder acceder a las funcionalidades de ver reserva y la gestión de mesas. 	| 5 	|
+| 9 	| US005 	| Ver menú digital de una sede 	| Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir. 	| 3 	|
+| 10 	| US004 	| Usar el formulario de contacto 	| Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo. 	| 3 	|
+| 11 	| US014 	| Ver la sede asignada 	| Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta. 	| 3 	|
+| 12 	| US015 	| Eliminar mesas 	| Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas. 	| 3 	|
+| 13 	| US010 	| Registro de cuenta de comensal 	| Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de reserva y visualización de mesas. 	| 3 	|
+| 14 	| US011 	| Inicio de sesión de cuenta de comensal 	| Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas y funcionalidades personalizadas. 	| 3 	|
+| 15 	| US016 	| Inicio de sesión de administrador 	| Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas para acceder al panel de administración de mi sede. 	| 3 	|
+| 16 	| US001 	| Ver sección "¿Qué es Tavolo?" 	| Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería. 	| 2 	|
+| 17 	| US002 	| Ver sección "Características clave" 	| Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador. 	| 2 	|
+| 18 	| US003 	| Ver la galería virtual 	| Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción. 	| 2 	|
 
 
 # Capítulo IV: Solution Software Design
@@ -1504,3 +1403,121 @@ El diseño de la base de datos para el IoT Monitoring Bounded Context incluye:
    - `timestamp`: Momento exacto del evento.
 
 El diseño implementa índices en los campos `sensor_id`, `mesa_id` y `timestamp` para optimizar las consultas frecuentes sobre el estado actual e histórico de cada sensor.
+
+
+# Capítulo V: Solution UI/UX Design
+## 5.1. Style Guidelines
+### 5.1.1. General Style Guidelines
+### 5.1.2. Web, Mobile and IoT Style Guidelines
+## 5.2. Information Architecture
+### 5.2.1. Organization Systems
+### 5.2.2. Labeling Systems
+### 5.2.3. SEO Tags and Meta Tags
+### 5.2.4. Searching Systems
+### 5.2.5. Navigation Systems
+## 5.3. Landing Page UI Design
+### 5.3.1. Landing Page Wireframe
+### 5.3.2. Landing Page Mock-up
+## 5.4. Applications UX/UI Design
+### 5.4.1. Applications Wireframes
+### 5.4.2. Applications Wireflow Diagrams
+### 5.4.3. Applications Mock-ups
+### 5.4.4. Applications User Flow Diagrams
+## 5.5. Applications Prototyping
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+## 6.1. Software Configuration Management
+### 6.1.1. Software Development Environment Configuration
+### 6.1.2. Source Code Management
+### 6.1.3. Source Code Style Guide & Conventions
+### 6.1.4. Software Deployment Configuration
+## 6.2. Landing Page, Services & Applications Implementation.
+
+### 6.2.1. Sprint 1
+#### 6.2.1.1. Sprint Planning 1.
+| **Sprint #1** 	| Sprint 1 	|
+|---	|---	|
+| **Sprint Planning Background** 	|  	|
+| Date 	| 9/5/2025 	|
+| Time 	| 11:00 am 	|
+| Location 	| REunion virtual vía Discord 	|
+| Prepared By 	| Jimena Cama 	|
+| Attendees (to planning meeting) 	| - Baldeon Fabian, Aldo Alberto <br>        - Cama Salvatierra, Jimena Tamara <br>      - Castillo Castillo, Jair Alexander <br>    - La Torre Valle, Franz Jair <br>           - Quezada Portalatino, Barbara Susana 	|
+| **Sprint Goal & User Stories** 	|  	|
+| Sprint 1 Goal 	| En este sprint la meta a cumplir fue desarrollar el backend de la plataforma, la aplicación web funcional y la landing page. 	|
+| Sprint 1 Velocity 	| 17 	|
+| Sum of Story Points 	| 81 	|
+
+#### 6.2.1.2. Aspect Leaders and Collaborators.
+#### 6.2.1.3. Sprint Backlog 1.
+
+
+| Sprint # 	| Sprint 1 	|  	|  	|  	|  	|  	|  	|
+|---	|---	|---	|---	|---	|---	|---	|---	|
+| User Story 	|  	| Work-Item/Task 	|  	|  	|  	|  	|  	|
+| Id 	| Title 	| Id 	| Title 	| Description 	| Estimation (Hours) 	| Assigned To 	| Status 	|
+| US001 	| Ver sección "¿Qué es Tavolo?" 	| TA1 	| Crear componente informativo 	| Diseñar y codificar el componente de la sección “¿Qué es Tavolo?” 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+|  	|  	| TA2 	| Integrar contenido e imágenes 	| Subir textos e imágenes proporcionados al frontend 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+| US002 	| Ver sección "Características clave" 	| TA1 	| Crear layout de características 	| Maquetar y estilizar la sección de características 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+|  	|  	| TA2 	| Implementar íconos e interactividad 	| Asociar íconos representativos a cada característica con animaciones 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+| US003 	| Ver la galería virtual 	| TA1 	| Crear carrusel de imágenes 	| Implementar galería interactiva con carrusel 	| 1 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+|  	|  	| TA2 	| Integrar imágenes reales de sedes 	| Subir imágenes y validar visualización responsive 	| 1 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+| US004 	| Usar el formulario de contacto 	| TA1 	| Diseñar formulario 	| Maquetar campos necesarios y validaciones 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+|  	|  	| TA2 	| Configurar envío de datos 	| Configurar envío POST con mensajes de confirmación 	| 2 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+| US005 	| Ver menú digital de una sede 	| TA1 	| Crear vista para menú por sede 	| Diseñar vista filtrada por sede seleccionada 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+|  	|  	| TA2 	| Mostrar platos con categorías 	| Agregar cards por categoría con imagen, nombre y precio 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+| US006 	| Visualizar reserva activa 	| TA1 	| Crear vista de reservas activas 	| Mostrar reserva activa del usuario al iniciar sesión 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+|  	|  	| TA2 	| Agregar detalles de la reserva 	| Visualizar sede, horario, cantidad de personas y estado 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+| US007 	| Ver disponibilidad de mesas en tiempo real 	| TA1 	| Integrar disponibilidad con backend 	| Mostrar mesas libres en tiempo real según sede y horario 	| 4 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+|  	|  	| TA2 	| Mostrar visualmente mesas ocupadas/libres 	| Agregar colores o íconos para representar disponibilidad 	| 1 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+| US008 	| Reservar una mesa 	| TA1 	| Crear formulario de reserva 	| Formulario con sede, fecha, hora y cantidad de personas 	| 1 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+|  	|  	| TA2 	| Enviar reserva al backend 	| Conexión con API para guardar reserva y mostrar confirmación 	| 1/2 	| Quezada Portalatino, Barbara Susana 	| Done 	|
+| US010 	| Registro de cuenta de comensal 	| TA1 	| Maquetar formulario de registro 	| Campos: nombre, correo, contraseña 	| 1 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+|  	|  	| TA2 	| Validar datos e integrarlo con backend 	| Validar datos y enviar a API para crear cuenta 	| 1 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+| US011 	| Inicio de sesión de cuenta de comensal 	| TA1 	| Diseñar pantalla de login 	| Formulario de ingreso con validación 	| 2 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+|  	|  	| TA2 	| Manejo de sesión y redirección 	| Guardar token en localStorage y redirigir según rol 	| 2 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+| US012 	| Agregar nuevas mesas 	| TA1 	| Diseñar formulario de creación 	| Formulario para admins para añadir mesas 	| 2 	| Castillo Castillo, Jair Alexander 	| Done 	|
+|  	|  	| TA2 	| Enviar datos a backend 	| Validar y enviar datos de la nueva mesa al servidor 	| 2 	| Castillo Castillo, Jair Alexander 	| Done 	|
+| US013 	| Visualizar reservas realizadas 	| TA1 	| Listar reservas del comensal 	| Mostrar historial con fechas y estados 	| 2 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+|  	|  	| TA2 	| Agregar opciones de filtro por fecha/estado 	| Filtros por mes o estado (activa, cancelada, completada) 	| 1 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+| US014 	| Ver la sede asignada 	| TA1 	| Mostrar sede asignada en perfil 	| Mostrar sede que administra el usuario (admin) 	| 1/2 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+|  	|  	| TA2 	| Obtener sede desde el backend 	| Lógica para obtener sede del usuario y mostrarla 	| 1/2 	| Cama Salvatierra, Jimena Tamara 	| Done 	|
+| US015 	| Eliminar mesas 	| TA1 	| Crear botón de eliminación 	| Agregar ícono de papelera para eliminar mesa 	| 1 	| Castillo Castillo, Jair Alexander 	| Done 	|
+|  	|  	| TA2 	| Confirmar y eliminar en backend 	| Confirmación con modal y eliminación en API 	| 1 	| Castillo Castillo, Jair Alexander 	| Done 	|
+| US016 	| Inicio de sesión de administrador 	| TA1 	| Crear vista de login para admins 	| Vista distinta a la de comensales, con validación 	| 2 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+|  	|  	| TA2 	| Asignar token y redirigir a dashboard 	| Lógica de inicio de sesión y navegación hacia panel 	| 1 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+| US017 	| Registro de cuenta de administrador 	| TA1 	| Crear formulario con rol "admin" 	| Campos de registro con rol predefinido como admin 	| 1 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+|  	|  	| TA2 	| Validar correo corporativo 	| Validación de correo institucional para asegurar rol 	| 2 	| Baldeon Fabian, Aldo Alberto 	| Done 	|
+| US018 	| Acceder a todos los módulos del sistema 	| TA1 	| Mostrar menú de navegación 	| Menú para navegación entre módulos: reservas, mesas, reportes 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+|  	|  	| TA2 	| Proteger rutas con roles 	| Validar acceso solo para administradores 	| 2 	| La Torre Valle, Franz Jair 	| Done 	|
+
+#### 6.2.1.4. Development Evidence for Sprint Review.
+#### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+#### 6.2.1.6. Execution Evidence for Sprint Review.
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+#### 6.2.1.9. Team Collaboration Insights during Sprint.
+
+### Conclusiones Generales del Proyecto
+
+* El proyecto TAVOLO se enfoca en optimizar la experiencia en cafeterías peruanas mediante una solución tecnológica IoT que gestiona la ocupación de mesas y reservas. Para los comensales, ofrece visualización del menú, disponibilidad de mesas en tiempo real y reservas; para los administradores, permite la gestión de mesas y reservas de la sede asignada. El objetivo es mejorar la experiencia del cliente y la eficiencia operativa del negocio.
+* La investigación y análisis de requerimientos identificaron la problemática de la incertidumbre sobre la disponibilidad de mesas en cafeterías, especialmente en horas pico, lo que afecta la experiencia del cliente. Se definieron segmentos objetivo claros (comensales y administradores) y se analizaron competidores como Eat App y OpenTable, destacando la ventaja de TAVOLO en la detección automática de ocupación en tiempo real mediante sensores IoT.
+* El equipo demostró un liderazgo compartido y colaborativo, asumiendo responsabilidades específicas en cada capítulo y utilizando herramientas como GitHub y metodologías como Gitflow para una gestión eficiente del proyecto. Se establecieron metas claras, se planificaron tareas según las fortalezas individuales y se mantuvo una comunicación constante, lo que permitió cumplir los objetivos y fortalecer la cohesión del equipo.
+
+### Bibliografía
+1.  **Las MIPYME en cifras 2022:** Publicado por la Oficina General de Evaluación de Impacto y Estudios Económicos (OGEIEE) de Produce. ([Ver publicación](https://ogeiee.produce.gob.pe/index.php/en/shortcode/oee-documentos-publicaciones/publicaciones-anuales/item/1170-las-mipyme-en-cifras-2022))
+2.  **Memoria Institucional del Ministerio de la Producción 2022:** Documento oficial que resume las acciones y logros del ministerio en ese año. ([Ver Memoria](https://transparencia.produce.gob.pe/images/stories/Repositorio/transparencia/planeamiento/memoria-anual/2022.pdf))
+3.   **Informe de ComexPerú (basado en datos oficiales)**: Las micro y pequeñas empresas en el Perú Resultados en 2022. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
+   
+### Anexos
+* **Video de Exposicion TB1:** `https://drive.google.com/drive/u/0/folders/1YN0UBGC28osxHvRTsBrLSjwX2CAVLHlt`
+* **Repositorio del Proyecto en GitHub:** `https://github.com/orgs/upc-pre-202510-1asi0572-2952-tavolo/repositories`
+* **Organización del Proyecto en GitHub:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo`
+* **Informe del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report`
+* **Backend del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend`
+* **Landing Page del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-landing-page`
+* **Fronten Web del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web`
+* **Fronten Movil del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-mobile`
+* **Registro de Entrevista #1 (Propietarios/Cliente - Diego Morales/Elias Yauri Paucar):** `https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing`
+* **Registro de Entrevista #2 (Propietarios - Jenna Vasquez):** `https://drive.google.com/file/d/1WTxiDxw4vaabZhFvibL8mHLINcrJR0_9/view?usp=sharing`
+* **Registro de Entrevista #2 (Clientes - Aleshka Fernández):** `https://youtu.be/QGSisj7iF-k`
