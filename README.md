@@ -107,6 +107,30 @@ El objetivo de esta sección es resumir las modificaciones relevantes que se rea
       <td>Equipo completo</td>
       <td>Revisión final, corrección de errores y entrega del documento para TB1</td>
     </tr>
+    <tr>
+      <td>1.1</td>
+      <td>28/04/2025</td>
+      <td>Jimena Cama</td>
+      <td>Redacción de lineamientos de estilo (5.1), diseño de la Landing Page (wireframe y mock-up), prototipado de aplicaciones, y planificación del Sprint 1</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+      <td>30/04/2025</td>
+      <td>Jair Castillo</td>
+      <td>Gestión de la pantalla de Mesas y formulario (agregar/eliminar), desarrollo backend, documentación de testing, servicios y colaboración de equipo en el Sprint</td>
+    </tr>
+    <tr>
+      <td>1.3</td>
+      <td>02/05/2025</td>
+      <td>Barbara Quezada</td>
+      <td>Desarrollo de arquitectura de información, implementación de Landing Page, Servicios y Aplicaciones, despliegue del software y pantalla de ver sedes con formulario de reserva</td>
+    </tr>
+    <tr>
+      <td>1.4</td>
+      <td>03/05/2025</td>
+      <td>Franz La Torre</td>
+      <td>Diseño UX/UI de aplicaciones (wireframes, wireflows, mock-ups, user flows), configuración del entorno de desarrollo, gestión del código fuente y despliegue; implementación de pantalla menú</td>
+    </tr>
   </tbody>
 </table>
 <br>
