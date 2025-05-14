@@ -3442,6 +3442,24 @@ Incluye filtros para buscar reservas por mesa o por cliente, optimizando la gest
 ![persona_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reservas-persona-propietario-wireframe.png)
 
 ### 5.4.2. Applications Wireflow Diagrams
+Los diagramas de Wireflow desarrollados para Tavolo permiten visualizar de manera gráfica la transición entre pantallas dentro de la aplicación, integrando el diseño de la interfaz con el flujo de navegación esperado. Estos flujos representan acciones comunes tanto para el cliente como para el propietario, facilitando el análisis de usabilidad y asegurando la coherencia del diseño:
+
+- **Wireflow – Cliente (Web):** Desde el inicio de sesión o registro, el cliente puede ver sus reservas, acceder al menú, seleccionar una sede, consultar la disponibilidad de mesas, reservar y visualizar la ubicación en mapa.
+
+![wireflow1_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Cliente-Web.png)
+
+- **Wireflow – Propietario (Web):** Luego del acceso, el propietario puede gestionar mesas (añadir o eliminar), visualizar reservas por sede, mesa o persona, y mantener el control completo sobre la operatividad del local.
+
+![wireflow2_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Propietario-Web.png)
+
+- **Wireflow – Cliente (Mobile):** Similar al flujo web, adaptado a navegación móvil con vistas más compactas y controles táctiles.
+
+![wireflow1_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Cliente-Mobile.png)
+
+- **Wireflow – Propietario (Mobile):** Pensado para una gestión rápida desde dispositivos móviles, permite acceder a reservas, editar disponibilidad y revisar información clave en tiempo real.
+
+![wireflow2_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Propietario-Mobile.png)
+
 ### 5.4.3. Applications Mock-ups
 **Versión Web**
 
@@ -3573,6 +3591,32 @@ La pantalla de inicio de sesión y registro son similares para ambos segmentos, 
 ![persona_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/reservas-personas-propietario-mock-up.png)
 
 ### 5.4.4. Applications User Flow Diagrams
+Los diagramas de flujo de usuario permiten entender cómo los usuarios interactúan con la aplicación desde una perspectiva lógica, no visual. Estos diagramas incluyen decisiones condicionales, caminos alternativos y respuestas del sistema según la acción realizada por el usuario.
+
+- **User Flow – Cliente:**
+
+1. Inicia sesión o se registra
+2. Visualiza sus reservas o accede al menú
+3. Selecciona una sede
+4. Consulta mesas disponibles
+5. Selecciona mesa y hora
+6. Reserva
+7. Confirmación
+8. (Opcional) Consulta ubicación en mapa
+
+![userflow1_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Cliente-Web.png)
+![userflow1_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Cliente-Mobile.png)
+
+- **User Flow – Propietario:**
+
+1. Inicia sesión o se registra
+2. Visualiza su(s) sede(s)
+3. Gestiona mesas (añadir o eliminar)
+4. Consulta reservas por persona o por mesa
+5. Toma decisiones administrativas
+
+![userflow2_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Propietario-Web.png)
+![userflow2_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Propietario-Mobile.png)
 
 ## 5.5. Applications Prototyping
 
