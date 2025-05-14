@@ -132,6 +132,19 @@ Para el TB1, se asignaron responsabilidades específicas a cada integrante, las 
 | Jimena Cama        | Desarrollo del Capítulo IV (Diagramas de clase, diagramas de componentes, diseño de BD) |
 | Jair Castillo      | Desarrollo del Capítulo I (Lean UX Process, Lean UX Canvas) y Capítulo III (User Stories, Impact Mapping) |
 
+
+**TP:**
+
+Para el TP, se asignaron responsabilidades específicas a cada integrante, las cuales se detallan a continuación:
+| Miembro del Equipo       | Tareas Asignadas |
+|:------------------------:|:-----------------|
+| **Aldo Baldeon**         | Pantalla de Inicio de Sesión, Pantalla de Registro, Pantalla Ver Sedes (Lista y Mapa), Navigation Bar, Desarrollo Backend |
+| **Jimena Cama**          | Documentación del capítulo V (Style Guidelines, General Style Guidelines, Web, Mobile and IoT Style Guidelines, Landing Page UI Design, Landing Page Wireframe, Landing Page Mock-up, Applications Prototyping) y del capítulo VI (Sprint Planning, Sprint Backlog) |
+| **Jair Castillo**        | Documentación de capítulo VI(Testing Suite Evidence for Sprint Review, Services Documentation Evidence, Team Collaboration Insights, Pantalla Gestión de Mesas y Form (Agregar/Eliminar)) Desarrollo Backend |
+| **Barbara Quezada**      | Documentación del capítulo V (Organization Systems, Labeling Systems, SEO Tags, Searching Systems, Navigation Systems), Documentación del capítulo VI (Implementación de Landing Page, Servicios y Aplicaciones, Evidencias de Sprint, Development, Execution, Deployment), Pantalla Ver Sedes - Mesas y Formulario de Reserva |
+| **Franz La Torre**       | Documentación del capítulo V (Diseño UX/UI de Aplicaciones, Wireframes, Wireflow Diagrams, Mock-ups, User Flow Diagrams), Documentación del capítulo VI (Gestión de Configuración de Software, entorno de desarrollo, Control de versiones, Guías de estilo, Configuración de despliegue), Pantalla Menú |
+
+
 Cabe destacar que, durante la creación del informe, se realizaron commits específicos para cada tarea asignada, lo que permitió garantizar un control de versiones y una colaboración efectiva en tiempo real. El equipo mantuvo reuniones semanales de sincronización para asegurar la coherencia entre los diferentes capítulos y compartir avances.
 
 Miembros
@@ -284,7 +297,8 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
     </tr>
     <tr>
         <td rowspan="1"><b>Trabaja en equipo para proporcionar liderazgo en forma conjunta</b></td>
-        <td>TB1<br><br>
+        <td>
+            <b>TB1:</b><br>
             <b>Baldeon Fabian, Aldo Alberto</b><br>
             - He demostrado liderazgo colaborando activamente con Jair en el desarrollo del Capítulo I y en el diseño táctico de la solución. Asumí el liderazgo en la elaboración del perfil de la startup, la definición de los antecedentes, el desarrollo del Lean UX Process, y el diseño a nivel táctico del software con el enfoque de Domain-Driven Design. Esto ha permitido consolidar una visión común del proyecto.
             <br><br> 
@@ -300,14 +314,35 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
             <b>Quezada Portalatino, Barbara Susana</b><br>
             - He compartido el liderazgo del Capítulo IV con Jimena, asegurando que el diseño de alto nivel del sistema refleje la arquitectura definida y cumpla con las expectativas funcionales. También aporté activamente en la redacción del backlog y en las historias de usuario del sistema.
             <br><br>
+            <b>TP1:</b><br>
+            <b>Baldeon Fabian, Aldo Alberto</b><br>
+            - He trabajado en equipo asumiendo responsabilidades clave del frontend y backend, lo cual me permitió brindar liderazgo conjunto en el desarrollo de funcionalidades como el inicio de sesión, registro y navegación, asegurando cohesión entre el equipo técnico.
+            <br><br>
+            <b>Cama Salvatierra, Jimena Tamara</b><br>
+            - Asumí un rol de liderazgo dentro del equipo al desarrollar las directrices de estilo y prototipado de interfaces, guiando visualmente a los demás miembros para mantener la coherencia del diseño en todas las plataformas.
+            <br><br>
+            <b>Castillo Castillo, Jair Alexander</b><br>
+            - Participé de manera activa en el equipo asumiendo el liderazgo en aspectos técnicos como pruebas, documentación de servicios y la gestión del módulo de mesas, lo que fortaleció la estructura del desarrollo.
+            <br><br>
+            <b>La Torre Valle, Franz Jair</b><br>
+            - Aporté liderazgo en la definición de la experiencia de usuario, wireframes, flujos y configuración del entorno de desarrollo, asegurando que las decisiones técnicas se alinearan con los objetivos del equipo.
+            <br><br>
+            <b>Quezada Portalatino, Barbara Susana</b><br>
+            - Desde el área de arquitectura de la información y la implementación de la landing page y servicios, proporcioné liderazgo conjunto asegurando que los contenidos estuvieran correctamente estructurados y fueran accesibles.
+            <br><br>
         </td>
-        <td>TB1:
+        <td>
+            <b>TB1:</b><br>
             Hemos demostrado un liderazgo compartido al asumir responsabilidades clave en cada capítulo del proyecto, asegurando que cada integrante tome la iniciativa en distintas áreas. La colaboración entre Aldo y Jair en la introducción y conceptualización del problema, el liderazgo de Franz en la investigación de requerimientos, y la toma de decisiones técnicas y estratégicas por parte de Jimena y Bárbara reflejan un liderazgo distribuido y coherente. Esto ha permitido que el equipo avance con una visión unificada del proyecto y tome decisiones informadas en conjunto.
+            <br><br>
+            <b>TP1:</b><br>
+            Como equipo, ejercimos un liderazgo conjunto al asumir responsabilidades según nuestras fortalezas individuales, distribuyendo tareas de forma equitativa y coordinada. A lo largo del proyecto, tomamos decisiones colaborativas que permitieron mantener una visión unificada del sistema, y nos apoyamos mutuamente para superar obstáculos técnicos y organizativos. Esta dinámica nos permitió liderar desde distintos frentes del desarrollo —diseño, backend, frontend y gestión—, asegurando que todos los módulos avanzaran de forma integrada y con sentido de propósito común.
         </td>
     </tr>
     <tr>
         <td rowspan="1"><b>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</b></td>
-        <td>TB1<br><br>
+        <td>
+            <b>TB1:</b><br>
             <b>Baldeon Fabian, Aldo Alberto</b><br>
             - He contribuido a crear un entorno de trabajo participativo al compartir avances de forma constante, establecer cronogramas claros y ayudar a coordinar las entregas de los distintos capítulos. Me aseguré de cumplir los objetivos asignados dentro de los plazos, especialmente en los apartados de análisis y diseño de la solución.
             <br><br> 
@@ -323,9 +358,29 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
             <b>Quezada Portalatino, Barbara Susana</b><br>
             - Promoví la colaboración mediante la constante retroalimentación con el equipo y la organización de sesiones de revisión conjunta. Gracias a una planificación ordenada y objetiva, logré cumplir con todos los entregables asignados, manteniendo una sinergia adecuada con Jimena y el resto del equipo.
             <br><br>
+            <b>TP1:</b><br>
+            <b>Baldeon Fabian, Aldo Alberto</b><br>
+            - Contribuí activamente a un entorno colaborativo e inclusivo, proponiendo metas claras para el avance del desarrollo de pantallas y el backend, planificando tareas específicas y cumpliendo los entregables según lo definido en los sprints.
+            <br><br>
+            <b>Cama Salvatierra, Jimena Tamara</b><br>
+            - Fomenté un entorno colaborativo e inclusivo durante el diseño UX/UI, facilitando la planificación de tareas de diseño, estableciendo metas claras por sprint y asegurando que los entregables cumplan los estándares de calidad definidos.
+            <br><br>
+            <b>Castillo Castillo, Jair Alexander</b><br>
+            - Establecí y cumplí metas relacionadas al testing y documentación, planificando mis tareas de manera coordinada con el equipo, fomentando una colaboración efectiva que permitió lograr los objetivos del sprint.
+            <br><br>
+            <b>La Torre Valle, Franz Jair</b><br>
+            - Planifiqué y ejecuté tareas relacionadas a la configuración del software y estándares de código, promoviendo un entorno colaborativo, con comunicación clara y objetivos bien definidos, logrando avances significativos en los entregables del proyecto.
+            <br><br>
+            <b>Quezada Portalatino, Barbara Susana</b><br>
+            - Fui parte activa en la planificación de tareas y definición de objetivos del equipo, garantizando que tanto los sistemas de navegación como el contenido cumplieran con los estándares de calidad y usabilidad esperados.
+            <br><br>
         </td>
-        <td> TB1:
+        <td>
+            <b>TB1:</b><br>
             A lo largo del desarrollo del proyecto, hemos construido un entorno de trabajo colaborativo y respetuoso, donde cada voz ha sido escuchada y valorada. La planificación de tareas se realizó en base a las fortalezas individuales, estableciendo metas claras para cada entrega. La comunicación constante entre los miembros del grupo permitió resolver dudas, alinear criterios y asegurar el cumplimiento de los objetivos establecidos. Esta dinámica no solo optimizó la ejecución del proyecto, sino que fortaleció la cohesión del equipo.
+            <br><br>
+            <b>TP1:</b><br>
+            Durante todo el proyecto, generamos un ambiente de trabajo colaborativo e inclusivo, en el que todas las ideas fueron escuchadas y consideradas. Establecimos metas claras en cada sprint, planificamos tareas basadas en prioridades reales del sistema y mantuvimos una comunicación constante entre los miembros. Esta organización nos permitió cumplir con los objetivos trazados, mejorar la calidad del producto final y fortalecer nuestras habilidades para trabajar de forma efectiva como equipo multidisciplinario.
         </td>
     </tr>
 </table>
