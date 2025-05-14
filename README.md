@@ -1507,9 +1507,150 @@ El diseño implementa índices en los campos `sensor_id`, `mesa_id` y `timestamp
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management
 ### 6.1.1. Software Development Environment Configuration
+**Project Management:**
+
+- **WhatsApp:** Se utilizó WhatsApp como una herramienta de comunicación para mantener el contacto con los miembros del equipo, mandar recordatorios, realizar encuestas y colaborar en cierta medida.
+
+<img src="./images/tools/wtsp.png" alt="WhatsApp" width="150">
+
+- **Landing Page:** Para dar vida a la primera impresión de nuestra landing page, decidimos usar HTML, CSS y JavaScrip que son ampliamente conocidas y utilizadas en la creación de páginas web. Estas tecnologías permitieron crear una página atractiva, funcional y adaptada a las necesidades del proyecto.
+
+<img src="./images/tools/Landing.png" alt="Landing Page" width="150">
+
+
+**Requirements Management:**
+
+- **Trello:** Herramienta para la gestión ágil de tareas, empleada con enfoque Kanban. Se organizaron listas por etapas, lo que permitió un control visual y eficiente del progreso.
+
+<img src="./images/tools/Trello.png" alt="Trello" width="150">
+
+- **Lucidchart:** Utilizamos Lucidchart como herramienta para realizar diagramas y documentación.
+
+<img src="./images/tools/Lucidchart.png" alt="Lucidchart" width="150">
+
+
+**Product UX/UI Design:**  
+
+- **Figma:** Empleamos Figma para el diseño de la interfaz de usuario (UI) y la experiencia de usuario (UX) de la aplicación Tavolo. Figma permitió la creación de prototipos, wireframes y diseños visuales que guiarán el desarrollo del producto final.
+
+<img src="./images/tools/Figma.png" alt="Figma" width="150">
+
+- **UXPressia:** Utilizamos UXPressia como herramienta especializada en la creación de mapas de experiencia de usuario, perfiles de clientes y otros elementos relacionados con el diseño de UX. UXPressia nos permitió visualizar y comprender la experiencia del usuario en profundidad, ayudando a mejorar la usabilidad y el diseño de la aplicación.
+
+<img src="./images/tools/UXpressia.png" alt="UXpressia" width="150">
+
+- **Canva:** Incorporamos Canva en la etapa de diseño para la creación de recursos gráficos adicionales, como imágenes, gráficos y presentaciones, que mejoró la estética y la presentación del producto.
+
+<img src="./images/tools/Canva.png" alt="Canva" width="150">
+
+
+**Software Development:**
+
+- **IDE (Entorno de Desarrollo Integrado):** Utilizamos Visual Studio Code como nuestro IDE principal debido a su capacidad para facilitar el desarrollo web moderno y eficiente. Visual Studio Code ofrece soporte robusto para los lenguajes y tecnologías clave que utilizamos, como HTML, CSS, JavaScript y frameworks como Angular o Vue.js. Además, su interfaz intuitiva y extensibilidad mediante plugins nos permitió trabajar de manera más productiva, asegurando una codificación de calidad y una depuración eficaz.
+
+<img src="./images/tools/Visual.png" alt="Visual" width="150">
+
+- **HTML5:** HyperText Markup Language, o por sus siglas HTML, es un lenguaje de etiquetado para páginas web. Será empleado en el desarrollo del proyecto para la presentación del contenido en la aplicación.
+
+<img src="./images/tools/HTML.png" alt="HTML" width="150">
+
+- **CSS:** Cascading Style Sheets es un lenguaje que maneja el diseño y presentación de las páginas web, el cual va de la mano con HTML.
+
+<img src="./images/tools/CSS.png" alt="CSS" width="150">
+
+- **JavaScript:** Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico. Se utilizará para elaborar la interfaz de usuario dentro de la aplicación.
+
+<img src="./images/tools/JavaScript.png" alt="JavaScript" width="150">
+
+
+**Software Documentation:** 
+
+- **GitHub:** Empleamos GitHub como plataforma principal para la documentación del código y la colaboración en el desarrollo. Utilizamos el README.md para documentar el proceso de desarrollo.
+
+<img src="./images/tools/Github.png" alt="Github" width="150">
+
 ### 6.1.2. Source Code Management
+Para garantizar la eficiencia y evitar conflictos en el desarrollo de soluciones, los proyectos de Tavolo se gestionaron en una organización de GitHub. Dentro de esta organización, se encuentran los repositorios correspondientes a cada proyecto. Aquí están los enlaces a los repositorios:
+ 
+Landing page: https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-landing-page
+ 
+Report: https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report
+
+Web: https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web
+
+Backend: https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend
+
+En cuanto al manejo del Gitflow, fue de la siguiente forma: 
+ 
+En el desarrollo de Tavolo, cada cambio que se realizó en los archivos se marcó con un mensaje con el formato “Conventional Commits”. Esta práctica facilitó la identificación de los cambios realizados en cada commit, permitió un seguimiento más eficiente del proyecto. Además, este modelo incluye la rama develop y main, que contuvo las versiones finales y estables del proyecto. Para mantener una organización clara del proyecto, se creó una rama específica para cada integrante del equipo. Esto permitió un seguimiento más detallado y una mejor organización del código.
+
 ### 6.1.3. Source Code Style Guide & Conventions
+Nuestro equipo adoptó las siguientes convenciones y guías de estilo para garantizar un código fuente coherente, legible y mantenible en los diferentes lenguajes y tecnologías utilizados en nuestra solución
+
+**HTML:** 
+
+Para el lenguaje HTML, nos planteamos utilizar las convenciones descritas en la guía “HTML Style Guide and Coding Conventions”:
+
+* Usar nombres de elementos en minúsculas
+* Cerrar todos los elementos HTML
+* Usar nombres de atributos en minúsculas
+* Usar atributos en imágenes
+* Evitar líneas de código largas
+* Usar sintaxis simple para los enlaces para las hojas de estilo y para cargar script externos
+
+**CSS:** 
+
+Para el lenguaje CSS, utilizaremos las siguientes prácticas para alcanzar un código coherente, sostenible y ordenado:
+
+* Utilizar minúsculas y guiones para los nombres de propiedades
+* Utilizar un espacio después de los dos puntos y un punto y coma para separar pares propiedad-valor.
+* Agrupar reglas CSS relacionadas y separarlas con una línea en blanco.
+* Utilizar nombres de clases que sean descriptivos y reflejen el propósito del elemento.
+* Separar los nombres de las clases y ID con un guión
+
+**JavaScript:**
+
+Para el lenguaje JavaScript, seguimos las siguientes prácticas para escribir un código legible, eficiente y mantenible:
+
+* Las declaraciones de variables se realizaron al principio de su ámbito. 
+* Se prefirió el uso de const y let sobre var. 
+* Se incluyó comentarios descriptivos para explicar la funcionalidad de componentes, servicios y secciones complejas. 
+* Se aplicaron principios de programación reactiva y patrones de diseño adecuados para la construcción de la aplicación web.
+
+**Vue.js:**
+
+En el desarrollo frontend con Vue.js, seguimos las recomendaciones oficiales del Vue Style Guide:
+
+* Organización del componente .vue en orden: <template>, <script>, <style>.
+* Nombres de archivos coinciden con el nombre del componente.
+* Propiedades documentadas, tipadas y ordenadas.
+* Separación clara de lógica en métodos y componentes hijos.
+* Estilos scoped para evitar conflictos globales.
+
+**Java:**
+
+En la capa backend desarrollada con Java, seguimos las convenciones propuestas por la Guía oficial de estilo de Java de Oracle:
+
+* Uso de CamelCase para nombres de clases y métodos.
+* Un archivo .java por clase pública.
+* Bloques if, for, while siempre con llaves {} incluso para una sola línea.
+* Separación lógica del código en paquetes por funcionalidad: controller, service, repository, model.
+* Aplicación de principios SOLID para una arquitectura mantenible y escalable.
+
 ### 6.1.4. Software Deployment Configuration
+El despliegue del sistema Tavolo se realizará utilizando Microsoft Azure, una plataforma en la nube confiable y escalable que permite alojar tanto la aplicación web como la base de datos de forma segura y eficiente. A continuación, se detallan los pasos principales del proceso de despliegue:
+
+1. Crear los recursos en Azure como grupo de recursos, App Service (backend), Static Web App (landing page), y Azure SQL Database.
+2. Seleccionar entorno de ejecución en App Service.
+3. Publicar el backend desde GitHub o carga manual al App Service.
+4. Subir la landing page a Azure Static Web Apps.
+5. Configurar la cadena de conexión al servidor SQL.
+6. Ejecutar scripts de creación de tablas y relaciones.
+7. Activar HTTPS, definir reglas de firewall e IPs permitidas.
+8. Configurar roles y permisos en la base de datos.
+9. Usar Azure Monitor para registrar métricas y errores.
+10. Configurar escalado automático del App Service según demanda.
+
 ## 6.2. Landing Page, Services & Applications Implementation.
 En esta sección se documenta el proceso completo de implementación, validación y despliegue de las diversas soluciones tecnológicas que conforman Tavolo. **Partiendo del Product Backlog establecido**, cada sprint representa una iteración enfocada en entregar incrementos funcionales del producto, demostrando así el avance progresivo en el desarrollo de la solución.
 
