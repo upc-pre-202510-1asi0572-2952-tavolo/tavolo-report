@@ -284,24 +284,20 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
   - [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration)
   - [6.1.2. Source Code Management](#612-source-code-management)
   - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide-conventions)
-  - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration) 
+  - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
 - [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
-  - [6.2.1. Sprint 1](#621-sprint-1)
-    - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
-    - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
-    - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
-    - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
-    - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
-    - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
-    - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
-    - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
-    - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
+- [6.3. Validation Interviews](#63-validation-interviews)
+- [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+- [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistass)
+- [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+- [6.4. Video About-the-Product](#64-video-about-the-product)
+
 
 ### [Conclusiones](#conclusiones)
 ### [Bibliografía](#bibliografía)
 ### [Anexos](#anexos)
   
-  
+ 
 # Student Outcome
 
 El curso contribuye al cumplimiento del Student Outcome ABET:
@@ -408,6 +404,7 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
         </td>
     </tr>
 </table>
+
 
 # Capítulo I: Introducción
 
@@ -910,74 +907,89 @@ Este mapeo “To-Be” presenta el escenario ideal posterior a la implementació
 
 
 ## 3.2. User Stories
-### Épicas
+### Épicas de Tavolo
 
-| Epic ID 	| Name 	|
-|:---:	|:---:	|
-| EPIC-LANDING-001 	| Funcionalidades landing page 	|
-| EPIC-CLIENT-002 	| Funcionalidades user comensal 	|
-| EPIC-ADMIN-003 	| Funcionalidades user administrador 	|
-| EPIC-SUPERADMIN-004 	| Funcionalidades user superadmin 	|
-| EPIC-BOOKING-TECH 	| Funcionalidades de desarrolladores 	|
+| Epic ID | Nombre |
+|---------|--------|
+| EPIC-LANDING-001 | Funcionalidades landing page |
+| EPIC-CLIENT-002 | Funcionalidades user comensal |
+| EPIC-ADMIN-003 | Funcionalidades user administrador |
+| EPIC-SUPERADMIN-004 | Funcionalidades user superadmin |
 
-<br>
+### Landing Page (EPIC-LANDING-001)
 
-| Story ID 	| Título 	| Descripción 	| Epic ID 	| Usuario 	| Criterios de aceptación 	|
-|---	|---	|---	|---	|---	|---	|
-| US001 	| Ver sección "¿Qué es Tavolo?" 	| Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería. 	| EPIC-LANDING-001 	| Visitante landing page 	| Escenario 1: Dado que el visitante accede a la landing page, Cuando hace scroll en "¿Qué es Tavolo?", Entonces el sistema le muestra la sección donde se describe claramente el objetivo de la solución.  Escenario 2: Dado que el visitante accede a la landing page, Cuando hace click en "¿Qué es Tavolo?", Entonces el sistema le muestra la sección donde se describe claramente el objetivo de la solución. 	|
-| US002 	| Ver sección "Características clave" 	| Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador. 	| EPIC-LANDING-001 	| Visitante landing page 	| Escenario 1: Dado que el usuario navega la landing, Cuando cuando hace scroll a la sección "Características clave", Entonces el sistema le muestra un resumen de las funcionalidades más importantes del sistema.  Escenario 2: Dado que el visitante está en la landing, Cuando da click sobre el botón "Características clave", Entonces el sistema le muestra un resumen de las funcionalidades más importantes del sistema. 	|
-| US003 	| Ver la galería virtual 	| Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción. 	| EPIC-LANDING-001 	| Visitante landing page 	| Escenario 1: Dado que el usuario navega la landing, Cuando cuando hace scroll a la sección "Galería Virtual" Entonces visualiza el contenido visual ilustrativo del sistema en uso  Escenario 2: Dado que el usuario navega la landing, Cuando cuando hace click a la sección "Galería Virtual" Entonces visualiza el contenido visual ilustrativo del sistema en uso 	|
-| US004 	| Usar el formulario de contacto 	| Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo. 	| EPIC-LANDING-001 	| Visitante landing page 	| Escenario 1: Dado que el visitante accede a "Contáctanos" Cuando completa el formulario con sus datos Entonces el sistema debe notificar al equipo de Tavolo  Escenario 2: Dado que el visitante intenta enviar el formulario, Cuando deja campos obligatorios vacíos, Entonces el sistema debe mostrar mensajes de validación para completar la información. 	|
-| US005 	| Ver menú digital de una sede 	| Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que el comensal accede a la app, Cuando le da click a la sección "Menú", Entonces el sistema debe mostrar el menú completo de la cafetería.  Escenario 2: Dado que el comensal visualiza el menú, Cuando selecciona una categoría como “Bebidas” o “Postres”, Entonces el sistema filtra los productos mostrados según esa categoría. 	|
-| US006 	| Visualizar reserva activa 	| Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que el comensal ha iniciado sesión en la aplicación y tiene al menos una reserva activa, Cuando accede a la sección principal, Entonces el sistema le muestra la información de la reserva actual incluyendo horario, sede y número de mesa.  Escenario 2: Dado que el comensal visualiza su reserva, Cuando esta ya ha expirado, Entonces el sistema la remueve de la sección activa. 	|
-| US007 	| Ver disponibilidad de mesas en tiempo real 	| Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que el comensal accede a la app Cuando le da click a la sección "Explorar Sedes" Entonces el sistema debe mostrarle la información de la sedes con sus respectivos aforos disponibles  Escenario 2: Dado que el comensal visualiza el estado de aforo de las sedes Cuando hay una actualización desde los sensores Entonces el sistema debe reflejar el nuevo estado en menos de 5 segundos  Escenario 3: Dado que todas las mesas están ocupadas en una sede Cuando el comensal visualiza la disponibilidad Entonces el sistema debe informar que no hay mesas disponibles actualmente 	|
-| US008 	| Reservar una mesa 	| Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que el comensal selecciona una sede en la sección "Explorar Sedes" Cuando el comensal selecciona la hora aproximada de estadía Y selecciona una mesa disponible Entonces el sistema debe permitir realizar la reserva  Escenario 2: Dado que el comensal ya tiene una reserva activa Cuando intenta crear una nueva Entonces el sistema debe evitarlo e informar que ya tiene una reserva activa 	|
-| US009 	| Visualizar más sedes en un mapa 	| Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que el comensal quiere ver más sedes Cuando le da click a la sección "Sedes" Entonces el sistema debe mostrar todas las sedes de la cafetería  Escenario 2: Dado que el comensal se encuentra en la sección "Sedes" Y puede ver todas las sedes de la cafetería Cuando le da click al botón de "Ver en mapa" Entonces el sistema muestra un pop up con la dirección en un mapa interactivo 	|
-| US010 	| Registro de cuenta de comensal 	| Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de reserva y visualización de mesas. 	| EPIC-CLIENT-002 	| Visitante 	| Escenario 1: Dado que un visitante accede a la aplicación Cuando completa el formulario de registro con nombre y contraseña Y acepta los términos y condiciones Entonces el sistema debe crear una cuenta nueva Y permitir el acceso a las funcionalidades de comensal  Escenario 2: Dado que un visitante intenta registrarse con un nombre de usuario ya usado, Cuando envía el formulario, Entonces el sistema debe impedir el registro y mostrar un mensaje de error indicando que el correo ya está registrado. 	|
-| US011 	| Inicio de sesión de cuenta de comensal 	| Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas y funcionalidades personalizadas. 	| EPIC-CLIENT-002 	| Comensal 	| Escenario 1: Dado que un comensal registrado accede a la pantalla de login Cuando ingresa sus credenciales correctas (email y contraseña) Entonces el sistema debe autenticarlo Y redirigirlo al dashboard principal  Escenario 2: Dado que un usuario ingresa credenciales incorrectas Cuando intenta iniciar sesión Entonces el sistema debe mostrar un mensaje de error Y permitir reintentar 	|
-| US012 	| Agregar nuevas mesas 	| Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación. 	| EPIC-ADMIN-003 	| Administrador 	| Escenario 1: Dado que el admin accede al panel de su sede Cuando le da click a la sección "Gestión de Mesas" Y posteriormente a la opción "Agregar una nueva mesa" Entonces el sistema le brinda un formulario simple de registro de mesa. Escenario 2: Dado que el admin ingresa los datos correctos de la mesa como su identificador y capacidad de sillas Y le da click al botón "Guardar" Entonces el sistema guarda con su identificador y capacidad de sillas la mesa registrada 	|
-| US013 	| Visualizar reservas realizadas 	| Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio. 	| EPIC-ADMIN-003 	| Administrador 	| Escenario 1: Dado que el administrador accede a su sede Cuando le da clic a la sección "Visualizar Reservas" Entonces el sistema debe mostrar las reservas con usuario, hora y mesa  Escenario 2: Dado que el administrador ha filtrado por persona o mesa Cuando aplica el filtro Entonces el sistema debe mostrar solo las reservas que coinciden con los criterios seleccionados 	|
-| US014 	| Ver la sede asignada 	| Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta. 	| EPIC-ADMIN-003 	| Administrador 	| Escenario 1: Dado que el administrador inicia sesión Cuando accede a su información Entonces el sistema debe mostrar la sede asociada a su cuenta  Escenario 2: Dado que el administrador tiene asignada una sede Cuando intenta acceder a otra sede que no le corresponde Entonces el sistema le impede el acceso 	|
-| US015 	| Eliminar mesas 	| Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas. 	| EPIC-ADMIN-003 	| Administrador 	| Escenario 1: Dado que el administrador ha iniciado sesión Y se encuentra en la sección "Ver Mesas" Cuando selecciona una mesa existente y confirma su eliminación Entonces la mesa es eliminada del sistema y deja de aparecer en la lista  Escenario 2: Dado que la mesa tiene una reserva activa Cuando el administrador intenta eliminarla Entonces el sistema debe impedir la eliminación y mostrar un mensaje indicando que no puede eliminar mesas con reservas activas 	|
-| US016 	| Inicio de sesión de administrador 	| Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas para acceder al panel de administración de mi sede. 	| EPIC-ADMIN-003 	| Administrador 	| Escenario 1: Dado que un administrador accede a la pantalla de login Cuando ingresa sus credenciales válidas Entonces el sistema debe autenticarlo Y mostrar el panel de administración con las funcionalidades asociadas a su sede  Escenario 2: Dado que un administrador ingresa credenciales incorrectas Cuando intenta acceder Entonces el sistema debe mostrar un mensaje de error Y registrar el intento fallido por seguridad 	|
-| US017 	| Resgistro de cuenta de administrador 	| Como superadministrador, quiero poder registrar administradores como administradores de una sede en el sistema Tavolo para poder acceder a las funcionalidades de ver reserva y la gestión de mesas. 	| EPIC-SUPERADMIN-004 	| Superadmin 	| Escenario 1: Dado que un superadmin se encuentra en su cuenta Cuando se dirija a la seccion de "Administradores" Y dan click a agregar administrador Entonces pueden registrar un administrador y asignarle una sede  Escenario 2: Dado que un superadmin ha registrado a un administrador Cuando se dirije a la sección de "Administradores" Entonces puede visualizar los administradores que han registrado 	|
-| US018 	| Acceder a todos los módulos del sistema 	| Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. 	| EPIC-SUPERADMIN-004 	| Superadmin 	| Escenario 1: Dado que el superadmin accede al sistema Cuando desea visualizar sedes o usuarios Entonces el sistema debe permitirle ver toda la información  Escenario 2: Dado que el superadmin crea un nuevo admin o sede Cuando registra los datos Entonces el sistema debe almacenarlos y mostrar confirmación 	|
+| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
+|----------|--------|-------------|---------|---------|------------------------|
+| US001 | Ver sección "¿Qué es Tavolo?" | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería. | EPIC-LANDING-001 | Visitante landing page | **Escenario 1:**<br>Dado que el visitante accede a la landing page<br>Cuando hace scroll o clic en "¿Qué es Tavolo?"<br>Entonces el sistema le muestra la sección donde se describe claramente el objetivo de la solución |
+| US002 | Ver sección "Características clave" | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador. | EPIC-LANDING-001 | Visitante landing page | **Escenario 1:**<br>Dado que el usuario navega la landing<br>Cuando accede a la sección "Características clave"<br>Entonces el sistema le muestra un resumen de las funcionalidades más importantes del sistema |
+| US003 | Ver la galería virtual | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción. | EPIC-LANDING-001 | Visitante landing page | **Escenario 1:**<br>Dado que el usuario accede a la sección "Galería Virtual"<br>Cuando visualiza las imágenes o videos<br>Entonces el sistema le muestra el contenido visual ilustrativo del sistema en uso |
+| US004 | Usar el formulario de contacto | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo. | EPIC-LANDING-001 | Visitante landing page | **Escenario 1:**<br>Dado que el visitante accede a "Contáctanos"<br>Cuando completa el formulario con sus datos<br>Entonces el sistema debe notificar al equipo de Tavolo |
 
-## Technical user stories
-| Story ID 	| Título 	| Descripción 	| Epic ID 	| Usuario 	| Criterios de aceptación 	|
-|---	|---	|---	|---	|---	|---	|
-| TAVOLO-TS001 	| Implementar Endpoint para Obtener Mesas 	| Como Developer, quiero implementar un endpoint de API que permita a las aplicaciones frontend obtener la lista de mesas disponibles en una sede específica, para que los usuarios puedan ver el estado de ocupación. 	| EPIC-BOOKING-TECH 	| Developer 	| Escenario 1: Obtener mesas disponibles exitosamente Dado que existe una sede con mesas registradas Cuando un cliente solicita la lista de mesas para esa sede Entonces el sistema responde con un código 200 OK y una lista de mesas con su estado de ocupación. Escenario 2: Sede no encontrada Dado que se solicita una sede que no existe Cuando el sistema intenta obtener las mesas Entonces el sistema responde con un código 404 Not Found. 	|
-| TAVOLO-TS002 	| Procesar Datos de Sensor de Ocupación 	| Como Developer, quiero implementar la lógica de backend para recibir y procesar los datos de ocupación enviados por los sensores IoT, para que el sistema actualice el estado de las mesas en tiempo real. 	| EPIC-IOT-PROCESSING 	| Developer 	| Escenario 1: Datos de ocupación recibidos y procesados Dado que el Edge API recibe datos de ocupación de un sensor Cuando el backend procesa estos datos Entonces el estado de la mesa correspondiente se actualiza en la base de datos. Escenario 2: Datos inválidos recibidos Dado que el Edge API recibe datos con formato inválido Cuando el backend intenta procesarlos Entonces el sistema registra un error y descarta los datos inválidos. 	|
-| TAVOLO-TS003 	| Integrar con Google Maps API (Backend) 	| Como Developer, quiero implementar la integración con la API de Google Maps en el backend para obtener información geográfica de las sedes, para que las aplicaciones frontend puedan mostrar las ubicaciones en un mapa. 	| EPIC-BRANCHING-TECH 	| Developer 	| Escenario 1: Obtener coordenadas de sede exitosamente Dado que se registra una nueva sede con una dirección válida Cuando el backend llama a la API de Google Maps con la dirección Entonces la API responde con las coordenadas geográficas correctas. Escenario 2: Dirección inválida Dado que se registra una sede con una dirección inválida Cuando el backend llama a la API de Google Maps Entonces el sistema responde con un error o datos de ubicación nulos. 	|
-| TAVOLO-TS004 	| Implementar Lógica de Reserva de Mesa API 	| Como Developer, quiero implementar la lógica de backend para gestionar el proceso de reserva de mesas a través de la API, asegurando la disponibilidad y registrando la reserva correctamente. 	| EPIC-BOOKING-TECH 	| Developer 	| Escenario 1: Reserva de mesa exitosa Dado que un usuario solicita reservar una mesa disponible Cuando la lógica de reserva valida la disponibilidad y registra la reserva Entonces la reserva se crea en la base de datos y el estado de la mesa se actualiza a "Reservado". Escenario 2: Mesa no disponible Dado que un usuario intenta reservar una mesa ya ocupada o reservada Cuando la lógica de reserva valida la disponibilidad Entonces el sistema rechaza la reserva y responde con un mensaje de error de disponibilidad. 	|
+### Usuario Comensal (EPIC-CLIENT-002)
+
+| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
+|----------|--------|-------------|---------|---------|------------------------|
+| US005 | Ver menú digital de una sede | Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir. | EPIC-CLIENT-002 | Comensal | **Escenario 1:**<br>Dado que el comensal accede a la app<br>Cuando le da click a la sección "Menú"<br>Entonces el sistema debe mostrar el menú completo de la cafetería |
+| US006 | Visualizar reserva activa | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería. | EPIC-CLIENT-002 | Comensal | **Escenario 1:**<br>Dado que el comensal ha iniciado sesión en la aplicación<br>Y tiene al menos una reserva activa<br>Cuando accede a la sección principal<br>Entonces el sistema le muestra la información de la reserva actual incluyendo horario, sede y número de mesa |
+| US007 | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería. | EPIC-CLIENT-002 | Comensal | **Escenario 1:**<br>Dado que el comensal accede a la app<br>Cuando le da click a la sección "Explorar Sedes"<br>Entonces el sistema debe mostrarle la información de la sedes con sus respectivos aforos disponibles<br><br> **Escenario 2:**<br>Dado que el comensal visualiza el estado de aforo de las sedes<br>Cuando hay una actualización desde los sensores<br>Entonces el sistema debe reflejar el nuevo estado en menos de 5 segundos<br><br>**Escenario 3:**<br>Dado que todas las mesas están ocupadas en una sede<br>Cuando el comensal visualiza la disponibilidad<br>Entonces el sistema debe informar que no hay mesas disponibles actualmente |
+| US008 | Reservar una mesa | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería. | EPIC-CLIENT-002 | Comensal | **Escenario 1:**<br>Dado que el comensal selecciona una sede en la sección "Explorar Sedes"<br>Cuando el comensal selecciona la hora aproximada de estadía<br>Y selecciona una mesa disponible<br>Entonces el sistema debe permitir realizar la reserva<br><br>**Escenario 2:**<br>Dado que el comensal ya tiene una reserva activa<br>Cuando intenta crear una nueva<br>Entonces el sistema debe evitarlo e informar que ya tiene una reserva activa |
+| US009 | Visualizar más sedes en un mapa | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano. | EPIC-CLIENT-002 | Comensal | **Escenario 1:**<br>Dado que el comensal quiere ver más sedes<br>Cuando le da click a la sección "Explorar sedes" <br>Y tipea el nombre de la sede en el buscador<br>Entonces el sistema debe mostrar todas las sedes de la cafetería en el mapa interactivo |
+| US015 | Registro de cuenta de comensal | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de reserva y visualización de mesas. | EPIC-CLIENT-002 | Visitante | **Escenario 1:**<br>Dado que un visitante accede a la aplicación<br>Cuando completa el formulario de registro con nombre, correo y contraseña<br>Y acepta los términos y condiciones<br>Entonces el sistema debe crear una cuenta nueva<br>Y permitir el acceso a las funcionalidades de comensal |
+| US016 | Login de cuenta de comensal | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas y funcionalidades personalizadas. | EPIC-CLIENT-002 | Comensal registrado | **Escenario 1:**<br>Dado que un comensal registrado accede a la pantalla de login<br>Cuando ingresa sus credenciales correctas (email y contraseña)<br>Entonces el sistema debe autenticarlo<br>Y redirigirlo al dashboard principal<br><br>**Escenario 2:**<br>Dado que un usuario ingresa credenciales incorrectas<br>Cuando intenta iniciar sesión<br>Entonces el sistema debe mostrar un mensaje de error<br>Y permitir reintentar |
+
+### Usuario Administrador (EPIC-ADMIN-003)
+
+| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
+|----------|--------|-------------|---------|---------|------------------------|
+| US010 | Agregar nuevas mesas | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación. | EPIC-ADMIN-003 | Administrador | **Escenario 1:**<br>Dado que el admin accede al panel de su sede<br>Cuando le da click a la sección "Gestión de Mesas"<br>Y posteriormente a la opción "Agregar una nueva mesa" <br> Entonces el sistema le brinda un formulario simple de registro de mesa. <br>**Escenario 2:** <br> Dado que el admin ingresa los datos correctos de la mesa como su identificador y capacidad de sillas <br>Y le da click al botón "Guardar"<br>Entonces el sistema guarda con su identificador y capacidad de sillas la mesa registrada |
+| US011 | Visualizar reservas realizadas | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio. | EPIC-ADMIN-003 | Administrador | **Escenario 1:**<br>Dado que el admin accede a su sede<br>Cuando le da clic a la sección "Visualizar Reservas"<br>Entonces el sistema debe mostrar las reservas con usuario, fecha y hora |
+| US012 | Ver la sede asignada | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta. | EPIC-ADMIN-003 | Administrador | **Escenario 1:**<br>Dado que el admin inicia sesión<br>Cuando accede a su información<br>Entonces el sistema debe mostrar la sede asociada a su cuenta |
+| US013 | Eliminar mesas | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas. | EPIC-ADMIN-003 | Administrador | **Escenario 1:**<br>Dado que el administrador ha iniciado sesión<br>Y se encuentra en la sección "Ver Mesas"<br>Cuando selecciona una mesa existente y confirma su eliminación<br>Entonces la mesa es eliminada del sistema y deja de aparecer en la lista |
+| US017 | Login de administrador | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas para acceder al panel de administración de mi sede. | EPIC-ADMIN-003 | Administrador | **Escenario 1:**<br>Dado que un administrador accede a la pantalla de login<br>Cuando ingresa sus credenciales válidas<br>Entonces el sistema debe autenticarlo<br>Y mostrar el panel de administración con las funcionalidades asociadas a su sede<br><br>**Escenario 2:**<br>Dado que un administrador ingresa credenciales incorrectas<br>Cuando intenta acceder<br>Entonces el sistema debe mostrar un mensaje de error<br>Y registrar el intento fallido por seguridad |
+
+### Usuario Superadmin (EPIC-SUPERADMIN-004)
+
+| Story ID | Título | Descripción | Epic ID | Usuario | Criterios de aceptación |
+|----------|--------|-------------|---------|---------|------------------------|
+| US014 | Acceder a todos los módulos del sistema | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. | EPIC-SUPERADMIN-004 | Superadmin | **Escenario 1:**<br>Dado que el superadmin accede al sistema<br>Cuando desea visualizar sedes o usuarios<br>Entonces el sistema debe permitirle ver toda la información<br><br>**Escenario 2:**<br>Dado que el superadmin crea un nuevo admin o sede<br>Cuando registra los datos<br>Entonces el sistema debe almacenarlos y mostrar confirmación |
+
+### Technical Stories
+| Story ID    | Título                                     | Descripción                                                                                                                                                                                             | Epic ID            | Usuario   | Criterios de aceptación                                                                                                                                                                                                                                                                                                                                                        |
+| :---------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------- | :-------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TAVOLO-TS001 | Implementar Endpoint para Obtener Mesas    | Como Developer, quiero implementar un endpoint de API que permita a las aplicaciones frontend obtener la lista de mesas disponibles en una sede específica, para que los usuarios puedan ver el estado de ocupación. | EPIC-BOOKING-TECH     | Developer | **Escenario 1: Obtener mesas disponibles exitosamente**<br>Dado que existe una sede con mesas registradas<br>Cuando un cliente solicita la lista de mesas para esa sede<br>Entonces el sistema responde con un código 200 OK y una lista de mesas con su estado de ocupación.<br>**Escenario 2: Sede no encontrada**<br>Dado que se solicita una sede que no existe<br>Cuando el sistema intenta obtener las mesas<br>Entonces el sistema responde con un código 404 Not Found. |
+| TAVOLO-TS002 | Procesar Datos de Sensor de Ocupación      | Como Developer, quiero implementar la lógica de backend para recibir y procesar los datos de ocupación enviados por los sensores IoT, para que el sistema actualice el estado de las mesas en tiempo real.            | EPIC-IOT-PROCESSING     | Developer | **Escenario 1: Datos de ocupación recibidos y procesados**<br>Dado que el Edge API recibe datos de ocupación de un sensor<br>Cuando el backend procesa estos datos<br>Entonces el estado de la mesa correspondiente se actualiza en la base de datos.<br>**Escenario 2: Datos inválidos recibidos**<br>Dado que el Edge API recibe datos con formato inválido<br>Cuando el backend intenta procesarlos<br>Entonces el sistema registra un error y descarta los datos inválidos. |
+| TAVOLO-TS003 | Integrar con Google Maps API (Backend)   | Como Developer, quiero implementar la integración con la API de Google Maps en el backend para obtener información geográfica de las sedes, para que las aplicaciones frontend puedan mostrar las ubicaciones en un mapa.   | EPIC-BRANCHING-TECH      | Developer | **Escenario 1: Obtener coordenadas de sede exitosamente**<br>Dado que se registra una nueva sede con una dirección válida<br>Cuando el backend llama a la API de Google Maps con la dirección<br>Entonces la API responde con las coordenadas geográficas correctas.<br>**Escenario 2: Dirección inválida**<br>Dado que se registra una sede con una dirección inválida<br>Cuando el backend llama a la API de Google Maps<br>Entonces el sistema responde con un error o datos de ubicación nulos. |
+| TAVOLO-TS004 | Implementar Lógica de Reserva de Mesa API | Como Developer, quiero implementar la lógica de backend para gestionar el proceso de reserva de mesas a través de la API, asegurando la disponibilidad y registrando la reserva correctamente.                       | EPIC-BOOKING-TECH      | Developer | **Escenario 1: Reserva de mesa exitosa**<br>Dado que un usuario solicita reservar una mesa disponible<br>Cuando la lógica de reserva valida la disponibilidad y registra la reserva<br>Entonces la reserva se crea en la base de datos y el estado de la mesa se actualiza a "Reservado".<br>**Escenario 2: Mesa no disponible**<br>Dado que un usuario intenta reservar una mesa ya ocupada o reservada<br>Cuando la lógica de reserva valida la disponibilidad<br>Entonces el sistema rechaza la reserva y responde con un mensaje de error de disponibilidad.
 
 ## 3.3. Impact mapping.
 <img src="./images/impact_mapping/Impact_Mapping.png" alt="Impact Mapping"/><br>
 
 
+
 ## 3.4. Product Backlog.
-
-| # 	| Story ID 	| Título 	| Descripción 	| Story Points 	|
-|:---:	|---	|---	|---	|---	|
-| 1 	| US008 	| Reservar una mesa 	| Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería. 	| 13 	|
-| 2 	| US018 	| Acceder a todos los módulos del sistema 	| Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins. 	| 13 	|
-| 3 	| US007 	| Ver disponibilidad de mesas en tiempo real 	| Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería. 	| 8 	|
-| 4 	| US012 	| Agregar nuevas mesas 	| Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación. 	| 5 	|
-| 5 	| US009 	| Visualizar más sedes en un mapa 	| Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano. 	| 5 	|
-| 6 	| US006 	| Visualizar reserva activa 	| Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería. 	| 5 	|
-| 7 	| US013 	| Visualizar reservas realizadas 	| Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio. 	| 5 	|
-| 8 	| US017 	| Resgistro de cuenta de administrador 	| Como superadministrador, quiero poder registrar administradores como administradores de una sede en el sistema Tavolo para poder acceder a las funcionalidades de ver reserva y la gestión de mesas. 	| 5 	|
-| 9 	| US005 	| Ver menú digital de una sede 	| Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir. 	| 3 	|
-| 10 	| US004 	| Usar el formulario de contacto 	| Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo. 	| 3 	|
-| 11 	| US014 	| Ver la sede asignada 	| Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta. 	| 3 	|
-| 12 	| US015 	| Eliminar mesas 	| Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas. 	| 3 	|
-| 13 	| US010 	| Registro de cuenta de comensal 	| Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de reserva y visualización de mesas. 	| 3 	|
-| 14 	| US011 	| Inicio de sesión de cuenta de comensal 	| Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas y funcionalidades personalizadas. 	| 3 	|
-| 15 	| US016 	| Inicio de sesión de administrador 	| Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas para acceder al panel de administración de mi sede. 	| 3 	|
-| 16 	| US001 	| Ver sección "¿Qué es Tavolo?" 	| Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería. 	| 2 	|
-| 17 	| US002 	| Ver sección "Características clave" 	| Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador. 	| 2 	|
-| 18 	| US003 	| Ver la galería virtual 	| Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción. 	| 2 	|
-
+| #  | Story ID      | Título                                     | Descripción                                                                                                                                                                    | Story Points |
+|----|---------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| 1  | US014         | Acceder a todos los módulos del sistema    | Como superadmin, quiero tener acceso a todas las funcionalidades del sistema para realizar pruebas, crear sedes y admins.                                                          | 8            |
+| 2  | US010         | Agregar nuevas mesas                       | Como administrador de cafetería, quiero agregar mesas al sistema para gestionar mejor la ocupación.                                                                            | 8            |
+| 3  | US009         | Visualizar más sedes en un mapa            | Como comensal, quiero poder ver más sedes en el mapa para poder identificar el más cercano.                                                                                      | 8            |
+| 4  | US015         | Registro de cuenta de comensal             | Como visitante, quiero poder registrarme como comensal en el sistema Tavolo para poder acceder a las funcionalidades de Tavolo.                                                    | 5            |
+| 5  | US016         | Login de cuenta de comensal                | Como comensal registrado, quiero poder iniciar sesión en el sistema para acceder a mis reservas o visualizar la disponibilidad y el menú de una sede en específico.              | 5            |
+| 6  | US012         | Ver la sede asignada                       | Como administrador, quiero confirmar qué sede tengo asignada para asegurarme de gestionar la correcta.                                                                           | 5            |
+| 7  | US008         | Reservar una mesa                          | Como comensal, quiero reservar una mesa para asegurarme un lugar al llegar a la cafetería.                                                                                       | 5            |
+| 8  | US013         | Eliminar mesas                             | Como administrador, quiero poder eliminar mesas que ya no están en uso en mi sede, para mantener el sistema actualizado y evitar asignaciones incorrectas.                          | 5            |
+| 9  | US006         | Visualizar reserva activa                  | Como comensal, quiero poder visualizar mi reserva activa desde la aplicación, para confirmar los detalles de mi mesa y el horario reservado antes de llegar a la cafetería.        | 5            |
+| 10 | US007         | Ver disponibilidad de mesas en tiempo real | Como comensal, quiero conocer la disponibilidad de mesas para decidir que sede visitar de la cafetería.                                                                            | 5            |
+| 11 | US004         | Usar el formulario de contacto             | Como visitante interesado, quiero tener acceso a un formulario o medio de contacto en la landing para comunicarme con el equipo de Tavolo.                                          | 3            |
+| 12 | US005         | Ver menú digital de una sede               | Como comensal, quiero visualizar el menú de la cafetería para conocer los productos disponibles antes de asistir.                                                                | 3            |
+| 13 | US011         | Visualizar reservas realizadas             | Como administrador, quiero ver las reservas registradas en mi sede para planificar el servicio.                                                                                  | 3            |
+| 14 | US003         | Ver la galería virtual                     | Como visitante, quiero ver una galería virtual en la landing para visualizar cómo luce Tavolo, su interfaz y los sensores en acción.                                               | 2            |
+| 15 | US002         | Ver sección "Características clave"        | Como visitante, quiero revisar una lista de características principales de Tavolo para evaluar si cubre mis necesidades como usuario final o administrador.                        | 2            |
+| 16 | US001         | Ver sección "¿Qué es Tavolo?"              | Como visitante de la página, quiero entender qué es Tavolo desde la landing page para conocer su propósito y cómo puede ayudarme como comensal o administrador de cafetería.       | 2            |
+| 17 | US017         | Login de administrador                     | Como administrador, quiero poder iniciar sesión en el sistema con mis credenciales específicas como: usuario y contraseña, para acceder al panel de administración de mi sede.    | 2            |
+| 18 | TAVOLO-TS001 | Implementar Endpoint para Obtener Mesas | Como Developer, quiero implementar un endpoint de API que permita a las aplicaciones frontend obtener la lista de mesas disponibles en una sede específica, para que los usuarios puedan ver el estado de ocupación. | 5 |
+| 19 | TAVOLO-TS002 | Procesar Datos de Sensor de Ocupación | Como Developer, quiero implementar la lógica de backend para recibir y procesar los datos de ocupación enviados por los sensores IoT, para que el sistema actualice el estado de las mesas en tiempo real. | 5 |
+| 20 | TAVOLO-TS003 | Integrar con Google Maps API (Backend) | Como Developer, quiero implementar la integración con la API de Google Maps en el backend para obtener información geográfica de las sedes, para que las aplicaciones frontend puedan mostrar las ubicaciones en un mapa. | 5 |
+| 21 | TAVOLO-TS004 | Implementar Lógica de Reserva de Mesa API| Como Developer, quiero implementar la lógica de backend para gestionar el proceso de reserva de mesas a través de la API, asegurando la disponibilidad y registrando la reserva correctamente. | 5 |
 
 # Capítulo IV: Solution Software Design
 
@@ -1005,7 +1017,8 @@ Se diferenciaron los actores como: comensal, administrador, superadmin, visitant
 
 - Evidencia de lo relizado en la reunion
 
-<img src="images/event_storming/Event_storming.png">
+![image](https://github.com/user-attachments/assets/feab3a25-e18b-486b-aef5-5c6d58425142)
+
 
 #### 4.1.1.1 Candidate Context Discovery.
 Identificar contextos candidatos es un paso clave para gestionar la complejidad en el desarrollo de sistemas. Se trata de un análisis minucioso que busca entender los elementos centrales del sistema y sus interconexiones. A partir de ahí, se procede a agrupar estos elementos en 'contextos delimitados' lógicos y coherentes. Esta separación no solo facilita el diseño y la implementación, sino que también tiene como meta principal potenciar la escalabilidad, el desempeño y la mantenibilidad del sistema resultante.
@@ -1020,26 +1033,23 @@ Para analizar y diseñar sistemas de software, se usa el Modelado de Flujos de M
 #### 4.1.1.3 Bounded Context Canvases.
 
 ### Booking Management
-El Bounded Context de Booking Management gestiona todo el proceso de reservas de mesas en las cafeterías. Se encarga de la creación, modificación y cancelación de reservas, asegurando la correcta asignación de mesas disponibles a los comensales. Este contexto mantiene un registro de todas las reservas activas e históricas, gestiona los horarios de disponibilidad y se comunica con Table Management para actualizar el estado de las mesas reservadas.<br>
 <a href="https://ibb.co/ksNTRqh0"><img src="https://i.ibb.co/Ndcq8WLp/Bounded-Context-Canvases-Booking-Management.jpg" alt="Bounded-Context-Canvases-Booking-Management" border="0"></a>
 
 
 ### Table Management
-El Bounded Context de Table Management administra la información y el estado de las mesas en cada sede. Controla el inventario de mesas, sus características (capacidad, ubicación dentro del local) y su estado actual (disponible, ocupada, reservada, en mantenimiento). Este contexto recibe información del IoT Monitoring para actualizar el estado de ocupación en tiempo real y comparte esta información con el Booking Management para la gestión de reservas.<br>
 <a href="https://ibb.co/W4LMXJrP"><img src="https://i.ibb.co/q3vc8QHW/Bounded-Context-Canvases-Table-Management.jpg" alt="Bounded-Context-Canvases-Table-Management" border="0"></a>
 
 
 ### Menu Management
-El Bounded Context de Menu Management gestiona el catálogo de productos disponibles en cada cafetería. Permite a los administradores crear, actualizar y organizar los productos del menú por categorías, incluyendo precios, descripciones e imágenes. Este contexto proporciona la información de productos que los comensales pueden consultar desde la aplicación, facilitando la experiencia previa a la visita al establecimiento.<br>
 <a href="https://ibb.co/Cs0Yj13W"><img src="https://i.ibb.co/2YKCzn15/Bounded-Context-Canvases-Menu-Management.jpg" alt="Bounded-Context-Canvases-Menu-Management" border="0"></a>
 
+
+
 ### IoT Monitoring
-El Bounded Context de IoT Monitoring está especializado en la integración con los sensores físicos instalados en las mesas. Se encarga de recibir, procesar e interpretar los datos enviados por los sensores de peso para determinar la ocupación en tiempo real. Este contexto traduce las señales físicas a eventos de dominio que son consumidos por Table Management, permitiendo así la actualización automática del estado de las mesas sin intervención humana.<br>
 <a href="https://ibb.co/MxjxwgWw"><img src="https://i.ibb.co/Txnxjwpj/Bounded-Context-Canvases-Iot-Monitoring.jpg" alt="Bounded-Context-Canvases-Iot-Monitoring" border="0"></a><br>
 
 
 ### Headquarter Management
-El Bounded Context de Headquarter Management administra la información relacionada con las diferentes sedes de la cadena de cafeterías. Gestiona datos como ubicación geográfica, horarios de atención, información de contacto y configuraciones específicas de cada local. Este contexto proporciona información esencial a los otros bounded contexts, como los horarios que afectan a la disponibilidad de reservas o la ubicación que se muestra en los mapas para los comensales.<br>
 <a href="https://ibb.co/HTX3nqcQ"><img src="https://i.ibb.co/ZzN7WxQC/Bounded-Context-Canvases-Headquarter-Management.jpg" alt="Bounded-Context-Canvases-Headquarter-Management" border="0"></a><br>
 
 
@@ -1091,418 +1101,2630 @@ En esta sección, se presenta y explica la representación de la arquitectura de
 Este diagrama muestra que Tavolo opera en un ecosistema compuesto por tres tipos de usuarios (Comensales, Administradores de Cafeterías y Super Administradores) que interactúan directamente con el sistema principal Tavolo App. El sistema se conecta con un servicio externo: Google Maps API para mostrar ubicaciones de cafeterías. Los Comensales usan Tavolo para reservar mesas y consultar menús, los Administradores de Cafeterías proporcionan información sobre menús y gestionan sus mesas, mientras que los Super Administradores (equipo de desarrollo) mantienen y actualizan el sistema.<br>
 <img src="./images/c4-model/landscape-c41.png" alt="Landscape en C4"/><br>
 #### 4.1.3.2. Software Architecture Context Level Diagrams.
-Este diagrama muestra que el sistema Tavolo (representado como una única entidad) interactúa con tres tipos de usuarios: Comensales que utilizan el sistema para encontrar cafeterías, ver menús y realizar reservas; Administradores de Cafeterías que actualizan la información de menús y mesas; y Super Administradores que gestionan el mantenimiento general del sistema. Tavolo también se comunica con un sistema externo: Google Maps para mostrar ubicaciones geográficas de cafeterías<br>
-<img src="./images/c4-model/c4 model-tavolo.drawio.png" alt="System Context en C4"/><br>
-
+Este diagrama muestra que el sistema Tavolo (representado como una única entidad) interactúa con tres tipos de usuarios: Comensales que utilizan el sistema para encontrar cafeterías, ver menús y realizar reservas; Administradores de Cafeterías que actualizan la información de menús y mesas; y Super Administradores que gestionan el mantenimiento general del sistema. Tavolo también se comunica con dos sistemas externos: Google Maps para mostrar ubicaciones geográficas de cafeterías y un sistema de Sensores IoT que proporciona datos en tiempo real sobre la ocupación de mesas en los establecimientos.<br>
+<img src="./images/c4-model/structurizr-83807-SystemContext-001-001.png" alt="System Context en C4"/><br>
 #### 4.1.3.2. Software Architecture Container Level Diagrams.
-Este diagrama muestra que el sistema Tavolo está compuesto por cuatro contenedores principales: una **aplicación web** accesible desde navegadores, una **aplicación móvil** para dispositivos portátiles, una API que gestiona toda la lógica de negocio y una **base de datos** que almacena la información del sistema. Además, incluye un módulo de sensores encargado de procesar los datos provenientes de dispositivos Arduino ubicados en las mesas. <br>
-<img src="./images/c4-model/container-c4.jpg" alt="Container en C4"/><br>
-
+Este diagrama muestra que el sistema Tavolo está compuesto por cuatro contenedores principales: una aplicación web accesible desde navegadores, una aplicación móvil para dispositivos portátiles, una API que gestiona toda la lógica de negocio y una base de datos que almacena la información del sistema. Además, incluye un módulo de sensores encargado de procesar los datos provenientes de dispositivos Arduino ubicados en las mesas. Por último, la API también se conecta con Google Maps, una aplicación externa, permitiendo que el comensal acceda a un mapa interactivo con las ubicaciones de las distintas sedes de la cafetería.<br>
+<img src="./images/c4-model/container-c4.png" alt="Container en C4"/><br>
 #### 4.1.3.3. Software Architecture Deployment Diagrams.
-Este diagrama muestra que el sistema Tavolo se **despliega en tres entornos** principales: Microsoft Azure Cloud, Dispositivos Cliente y Cafeterías físicas. En Azure, el sistema utiliza App Service para alojar la aplicación web frontend (WebStorm), otro App Service para la API (Spring Boot/Java) con documentación Swagger, Azure Database for PostgreSQL para los datos, y Azure IoT Hub para gestionar comunicaciones con dispositivos IoT. En cada cafetería, se instalan sensores Arduino en las mesas que envían datos de ocupación a un Gateway Arduino local, el cual transmite esta información al IoT Hub en Azure. Todas las comunicaciones entre componentes **utilizan protocolos seguros** como HTTPS, MQTT/TLS o conexiones PostgreSQL.<br>
+Este diagrama muestra que el sistema Tavolo se despliega en tres entornos principales: Microsoft Azure Cloud, Dispositivos Cliente y Cafeterías físicas. En Azure, el sistema utiliza App Service para alojar la aplicación web frontend (WebStorm), otro App Service para la API (Spring Boot/Java) con documentación Swagger, Azure Database for PostgreSQL para los datos, y Azure IoT Hub para gestionar comunicaciones con dispositivos IoT. Los usuarios acceden al sistema a través de navegadores web o dispositivos Android. En cada cafetería, se instalan sensores Arduino en las mesas que envían datos de ocupación a un Gateway Arduino local, el cual transmite esta información al IoT Hub en Azure. Todas las comunicaciones entre componentes utilizan protocolos seguros como HTTPS, MQTT/TLS o conexiones PostgreSQL.<br>
 <img src="./images/c4-model/deployment-c4.png" alt="Deploymet Context en C4"/><br>
-## 4.2. Tactical-Level Domain-Driven Design
-
-### 4.2.1. Bounded Context: Menu Management
-Este contexto se encarga de la gestión del menú digital de las cafeterías. Permite al administrador crear, modificar y clasificar los productos que estarán disponibles para los comensales en cada sede.
-
-#### 4.2.1.1. Domain Layer.
- `Producto` (Entity)
-- Propósito: Representa un ítem del menú (comida o bebida).
-- Atributos:
-  - `productoId: ProductoId`
-  - `nombre: String`
-  - `descripcion: String`
-  - `precio: double`
-- Métodos:
-  - `updatePrecio(nuevoPrecio: double)`
-  - `updateDescripcion(nuevaDescripcion: String)`
-
- `Categoria` (Value Object)
-- Propósito: Clasifica un conjunto de productos.
-- Atributos:
-  - `productos: List<Producto>`
-  - `horario: String` (ej. desayuno, almuerzo)
-  - `visible: boolean`
-
- `Menu` (Aggregate Root)
-- Propósito: Actúa como agregado principal que agrupa productos y define operaciones sobre ellos.
-- Métodos:
-  - `crearProducto(command: CrearMenuCommand)`
-  - `actualizarProducto(command: ActualizarProductoCommand)`
-
-#### 4.2.1.2. Application Layer.
- `CrearMenu` (Command Handler)
-- Propósito: Ejecuta el proceso de creación de un nuevo producto en el menú.
- `AdministrarProductoCommandHandler` (Service)
-- Propósito: Apoya la orquestación de operaciones de mantenimiento del menú.
-- Métodos:
-  - `crearMenu()`
-  - `actualizarProducto()`
-
-#### 4.2.1.3. Interface Layer.
- `CrearMenuCommand` (Command)
-- Propósito: Representa la solicitud para agregar un nuevo producto al menú.
- `MenuController` (Controller)
-- Métodos:
-  - `crearMenu()`
-  - `actualizarProducto()`
 
 
-#### 4.2.1.4. Infrastructure Layer.
- `MenuRepository` (Interface)
-- Propósito: Contrato definido para almacenar objetos `Menu`.
-- Métodos:
-  - `save(menu: Menu)`
- `MenuRepositoryImpl` (Repository)
-- Propósito: Implementación concreta de `MenuRepository`, encargada de interactuar con la base de datos.
-- Métodos:
-  - `crearMenu()`
-  - `actualizarProducto()`
 
-### 4.2.2. Bounded Context: Table Management
-Este contexto se encarga del registro y configuración de las mesas en cada sede.
+## 4.2. Tactical-Level Domain-Driven-Design
 
-#### 4.2.2.1. Domain Layer.
- `Mesa` (Entity)
-- Atributos:
-  - `mesaId: UUID`
-  - `cantidadSillas: int`
-  - `estado: Estado`
-  - `sedeId: UUID`
-  - `reservaActiva: boolean`
- `Estado` (Value Object)
-- Atributos:
-  - `estadoId: UUID`
-  - `nombre: String`
+### 4.2.1 Bounded Context: IAM Bounded Context
 
-#### 4.2.2.2. Application Layer.
- `MesaService`
-- Métodos:
-  - `registrarMesa(command: RegistrarMesaCommand)`
-  - `cambiarEstadoMesa(command: CambiarEstadoCommand)`
+El **IAM (Identity and Access Management) Bounded Context** es responsable de gestionar la autenticación y la creación de usuarios en el sistema. Este contexto asegura que los usuarios puedan registrarse, iniciar sesión y gestionar sus credenciales de manera segura, cumpliendo con los estándares de seguridad y privacidad.
 
-#### 4.2.2.3. Interface Layer.
- `MesaController`
-- Métodos:
-  - `POST /mesas`
-  - `PUT /mesas/{id}/estado`
- `RegistrarMesaCommand`
+#### 4.2.1.1. Domain Layer
 
-#### 4.2.2.4. Infrastructure Layer.
- `MesaRepository`
-- Métodos:
-  - `save(mesa)`
-  - `findBySede(sedeId)`
+La **Domain Layer** del IAM Bounded Context encapsula la lógica de negocio relacionada con la autenticación y la gestión de usuarios. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
 
-### 4.2.3. Bounded Context: Headquarter Management
+##### **Aggregates**
+1. **User**
+   - **Propósito**: El agregado principal es el usuario (`User`), que encapsula la lógica de negocio relacionada con la autenticación y la gestión de roles.
+   - **Atributos**:
+     - `username`: Identificador único del usuario, validado para cumplir con restricciones de longitud y unicidad.
+     - `password`: Contraseña del usuario, almacenada de forma segura.
+     - `roles`: Conjunto de roles asociados al usuario, representados como una relación `ManyToMany` con la entidad `Role`.
+   - **Métodos**:
+     - `addRole(Role role)`: Agrega un rol al usuario.
+     - `addRoles(List<Role> roles)`: Agrega múltiples roles al usuario, validando que sean roles válidos.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en los usuarios.
+     - Gestiona la relación entre usuarios y roles, asegurando consistencia y validación.
 
-Administra la información de cada sede del negocio: ubicación, contacto y horarios.
+##### **Entities**
+1. **Role**
+   - **Propósito**: La entidad `Role` representa los roles que pueden ser asignados a los usuarios.
+   - **Atributos**:
+     - `id`: Identificador único del rol.
+     - `name`: Nombre del rol, representado como un valor enumerado (`Roles`).
+   - **Métodos**:
+     - `getDefaultRole()`: Devuelve el rol predeterminado (`ROLE_USER`).
+     - `toRoleFromName(String name)`: Convierte un nombre de rol en una instancia de `Role`.
+     - `validateRoleSet(List<Role> roles)`: Valida un conjunto de roles, asignando un rol predeterminado si el conjunto está vacío o es nulo.
+   - **Características**:
+     - Define una relación única entre los nombres de roles y sus representaciones en la base de datos.
+     - Facilita la validación y asignación de roles a los usuarios.
 
-#### 4.2.3.1. Domain Layer.
- `Sede` (Aggregate Root)
-- Atributos:
-  - `sedeId: UUID`
-  - `usuarioAdminId: UUID`
-  - `nombre: String`
-  - `latitud: double`
-  - `longitud: double`
-  - `telefono: String`
-  - `horaApertura: LocalTime`
-  - `horaCierre: LocalTime`
+##### **Value Objects**: 
+1. **Roles**
+   - **Propósito**: El objeto de valor `Roles` es una enumeración que define los roles disponibles en el sistema.
+   - **Valores**:
+     - `ROLE_ADMIN`: Rol de administrador.
+     - `ROLE_SUPERVISOR`: Rol de supervisor.
+     - `ROLE_USER`: Rol de usuario estándar.
+   - **Características**:
+     - Representa roles como valores inmutables, asegurando consistencia en su uso dentro del dominio.
 
-#### 4.2.3.2. Application Layer.
- `SedeService`
-- Métodos:
-  - `crearSede(command: CrearSedeCommand)`
-  - `editarHorario(command: EditarHorarioCommand)`
 
-#### 4.2.3.3. Interface Layer.
- `SedeController`
-- Métodos:
-  - `POST /sedes`
-  - `PUT /sedes/{id}/horarios`
+En conjunto, estos elementos permiten modelar de manera robusta y segura la lógica de negocio relacionada con la autenticación y la gestión de usuarios, asegurando que las reglas del dominio se cumplan de manera consistente.
 
-#### 4.2.3.4. Infrastructure Layer.
- `SedeRepository`
-- Métodos:
-  - `save(sede)`
-  - `findById(sedeId)`
+#### 4.2.1.2. Interface Layer
 
-Este contexto se encarga de monitorear la ocupación de las mesas mediante sensores.
+La **Interface Layer** del IAM Bounded Context expone los puntos de entrada al sistema a través de controladores REST. Estos controladores permiten la interacción con las entidades del dominio mediante solicitudes HTTP, facilitando la comunicación entre los clientes y el sistema. Además, esta capa incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
 
-#### 4.2.4.1. Domain Layer.
- `Sensor` (Entity)
-- Atributos:
-  - `sensorId: UUID`
-  - `mesaId: UUID`
-  - `estado: boolean` (ocupado/libre)
-  - `ultimaLectura: LocalDateTime`
+#### **Controllers**
 
-#### 4.2.4.2. Application Layer.
- `MonitoreoOcupacionService`
-- Métodos:
-  - `actualizarEstadoSensor(sensorId, estado)`
-  - `obtenerEstadoMesa(mesaId)`
+Los controladores son responsables de manejar las solicitudes HTTP y delegar la lógica de negocio a los servicios correspondientes. A continuación, se describen los principales controladores:
 
-#### 4.2.4.3. Interface Layer.
- `SensorController`
-- Métodos:
-  - `PUT /sensores/{id}`
-  - `GET /sensores/mesa/{mesaId}`
+1. **UsersController**
+   - **Propósito**: Gestiona las operaciones relacionadas con los usuarios.
+   - **Endpoints**:
+     - `GET /api/v1/users`: Obtiene la lista de todos los usuarios.
+     - `GET /api/v1/users/{userId}`: Obtiene los detalles de un usuario específico por su ID.
+   - **Dependencias**:
+     - `UserQueryService`: Servicio encargado de manejar las consultas relacionadas con los usuarios.
 
-#### 4.2.4.4. Infrastructure Layer.
- `SensorRepository`
-- Métodos:
-  - `save(sensor)`
-  - `findByMesaId(mesaId)`
+2. **RolesController**
+   - **Propósito**: Gestiona las operaciones relacionadas con los roles.
+   - **Endpoints**:
+     - `GET /api/v1/roles`: Obtiene la lista de todos los roles disponibles.
+   - **Dependencias**:
+     - `RoleQueryService`: Servicio encargado de manejar las consultas relacionadas con los roles.
 
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams.
+3. **AuthenticationController**
+   - **Propósito**: Gestiona las operaciones de autenticación y registro de usuarios.
+   - **Endpoints**:
+     - `POST /api/v1/authentication/sign-up`: Registra un nuevo usuario en el sistema.
+     - `POST /api/v1/authentication/sign-in`: Autentica a un usuario y genera un token de acceso.
+   - **Dependencias**:
+     - `UserCommandService`: Servicio encargado de manejar los comandos relacionados con los usuarios.
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams.
+#### **Resources**
 
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams.
+Los recursos representan los datos que se exponen a través de la API REST. Estos recursos son utilizados para estructurar las respuestas de los controladores y asegurar una representación clara y consistente de los datos. A continuación, se describen los principales recursos:
 
-##### 4.2.X.6.2. Bounded Context Database Design Diagram.
+1. **UserResource**
+   Representa un usuario en el sistema.
+   - **Atributos**:
+     - `id`: Identificador único del usuario.
+     - `username`: Nombre de usuario.
+     - `roles`: Lista de roles asociados al usuario.
 
-### 4.2.4. Bounded Context: IoT Monitoring (Mesa Ocupada)
-Este contexto se encarga de monitorear la ocupación de las mesas mediante sensores IoT, procesando los datos en tiempo real para determinar si una mesa está ocupada o disponible. La información generada es utilizada por el Table Management Bounded Context para actualizar el estado de las mesas en el sistema.
+1. **RoleResource**
+   Representa un rol en el sistema.
+   - **Atributos**:
+     - `id`: Identificador único del rol.
+     - `name`: Nombre del rol.
+
+2. **AuthenticatedUserResource**
+   Representa un usuario autenticado junto con su token de acceso.
+   - **Atributos**:
+     - `id`: Identificador único del usuario.
+     - `username`: Nombre de usuario.
+     - `token`: Token de acceso generado.
+
+3. **SignUpResource**
+   Representa los datos necesarios para registrar un nuevo usuario.
+   - **Atributos**:
+     - `username`: Nombre de usuario.
+     - `password`: Contraseña.
+     - `roles`: Lista de roles asignados al usuario.
+
+4. **SignInResource**
+   Representa los datos necesarios para autenticar a un usuario.
+   - **Atributos**:
+     - `username`: Nombre de usuario.
+     - `password`: Contraseña.
+
+#### **Transformers**
+
+Los transformadores son responsables de convertir las entidades del dominio en recursos y viceversa. Esto asegura que los datos expuestos a través de la API REST sean consistentes y estén en el formato esperado. A continuación, se describen los principales transformadores:
+
+1. **UserResourceFromEntityAssembler**
+   Convierte una entidad `User` en un recurso `UserResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(User entity)`: Transforma un usuario del dominio en un recurso.
+
+1. **RoleResourceFromEntityAssembler**
+   Convierte una entidad `Role` en un recurso `RoleResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Role entity)`: Transforma un rol del dominio en un recurso.
+
+1. **AuthenticatedUserResourceFromEntityAssembler**
+   Convierte una entidad `User` y un token en un recurso `AuthenticatedUserResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(User entity, String token)`: Transforma un usuario autenticado en un recurso.
+
+1. **SignUpCommandFromResourceAssembler**
+   Convierte un recurso `SignUpResource` en un comando `SignUpCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(SignUpResource resource)`: Transforma los datos de registro en un comando.
+
+1. **SignInCommandFromResourceAssembler**
+   Convierte un recurso `SignInResource` en un comando `SignInCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(SignInResource resource)`: Transforma los datos de inicio de sesión en un comando.
+
+#### **Relaciones entre componentes**
+
+- Los controladores utilizan los servicios de consulta (`UserQueryService`, `RoleQueryService`) y de comandos (`UserCommandService`) para delegar la lógica de negocio.
+- Los transformadores convierten las entidades del dominio en recursos para las respuestas HTTP y viceversa para las solicitudes entrantes.
+- Los recursos estructuran los datos expuestos a los clientes, asegurando una representación clara y consistente.
+
+Esta estructura asegura que la **Interface Layer** sea modular, reutilizable y fácil de mantener, facilitando la interacción entre los clientes y el sistema.
+
+#### 4.2.1.3 Application Layer
+
+La **Application Layer** del IAM Bounded Context actúa como un intermediario entre la **Domain Layer** y las capas externas, como la **Interface Layer** y la **Infrastructure Layer**. Su propósito principal es coordinar las operaciones de negocio, manejar comandos y consultas, y orquestar la lógica de aplicación sin exponer directamente los detalles del dominio.
+
+#### **Command Services**
+Los servicios de comandos son responsables de ejecutar operaciones que modifican el estado del sistema. A continuación, se describen los principales servicios de comandos:
+
+1. **RoleCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con los roles, como la creación inicial de roles en el sistema.
+   - **Métodos principales**:
+     - `handle(SeedRolesCommand command)`: Verifica si los roles predefinidos existen en el sistema y los crea si no están presentes.
+   - **Dependencias**:
+     - `RoleRepository`: Interactúa con la base de datos para verificar y guardar roles.
+
+2. **UserCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con los usuarios, como el registro y la autenticación.
+   - **Métodos principales**:
+     - `handle(SignUpCommand command)`: Registra un nuevo usuario en el sistema, asignándole roles y almacenando su contraseña de forma segura.
+     - `handle(SignInCommand command)`: Autentica a un usuario verificando sus credenciales y generando un token de acceso.
+   - **Dependencias**:
+     - `UserRepository`: Interactúa con la base de datos para guardar y recuperar usuarios.
+     - `HashingService`: Codifica y verifica contraseñas.
+     - `TokenService`: Genera y valida tokens de acceso.
+     - `RoleRepository`: Recupera roles asignados a los usuarios.
+
+#### **Query Services**
+Los servicios de consultas son responsables de recuperar información del sistema sin modificar su estado. A continuación, se describen los principales servicios de consultas:
+
+1. **RoleQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con los roles.
+   - **Métodos principales**:
+     - `handle(GetAllRolesQuery query)`: Recupera todos los roles disponibles en el sistema.
+     - `handle(GetRoleByNameQuery query)`: Recupera un rol específico por su nombre.
+   - **Dependencias**:
+     - `RoleRepository`: Interactúa con la base de datos para recuperar roles.
+
+2. **UserQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con los usuarios.
+   - **Métodos principales**:
+     - `handle(GetAllUsersQuery query)`: Recupera todos los usuarios registrados en el sistema.
+     - `handle(GetUserByIdQuery query)`: Recupera un usuario específico por su ID.
+     - `handle(GetUserByUsernameQuery query)`: Recupera un usuario específico por su nombre de usuario.
+   - **Dependencias**:
+     - `UserRepository`: Interactúa con la base de datos para recuperar usuarios.
+
+#### **Relaciones entre componentes**
+- Los **Command Services** interactúan con los repositorios para modificar el estado del sistema y con los servicios externos para operaciones auxiliares, como el hashing de contraseñas y la generación de tokens.
+- Los **Query Services** interactúan únicamente con los repositorios para recuperar información del sistema.
+
+Esta estructura asegura que la **Application Layer** sea modular, reutilizable y fácil de mantener, permitiendo una separación clara de responsabilidades y facilitando la evolución del sistema.
+
+#### 4.2.1.4. Infrastructure Layer 
+La **Infrastructure Layer** del IAM Bounded Context proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema. Esta capa incluye configuraciones de seguridad, servicios de hashing, manejo de tokens, repositorios para la persistencia de datos y componentes relacionados con la autorización y autenticación. Su objetivo principal es conectar la lógica de negocio con los recursos externos, como bases de datos, servicios de seguridad y APIs externas.
+
+#### **Persistencia (JPA Repositories)**
+
+1. **RoleRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de roles.
+   - **Métodos principales**:
+     - `findByName`: Busca un rol por su nombre.
+     - `existsByName`: Verifica si un rol existe en la base de datos.
+
+2. **UserRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de usuarios.
+   - **Métodos principales**:
+     - `findByUsername`: Busca un usuario por su nombre de usuario.
+     - `existsByUsername`: Verifica si un usuario existe en la base de datos.
+
+#### **Relaciones entre componentes**
+   - **Persistencia**: Los repositorios (`RoleRepository`, `UserRepository`) proporcionan acceso a los datos almacenados en la base de datos, permitiendo a las capas superiores interactuar con las entidades del dominio.
+
+Esta estructura asegura que la **Infrastructure Layer** sea modular, reutilizable y fácil de mantener, facilitando la integración con otros sistemas y servicios externos.
+
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del **IAM Bounded Context**, el cual detalla los principales módulos y sus interacciones dentro del contexto delimitado. Este diagrama sigue el enfoque del C4 Model para representar los componentes clave, como servicios de aplicación, controladores, repositorios y servicios externos, junto con sus relaciones.
+
+El propósito de este diagrama es proporcionar una visión clara y estructurada de cómo se organizan los componentes dentro del contexto, facilitando la comprensión de su arquitectura y permitiendo identificar puntos de integración y responsabilidades.
+
+El **IAM Bounded Context** está compuesto por los siguientes módulos principales:
+
+1. **Application Layer**:
+   - Coordina las operaciones de negocio relacionadas con la autenticación y la gestión de usuarios.
+   - Incluye servicios de comandos y consultas que interactúan con la **Domain Layer** y la **Infrastructure Layer**.
+   - Maneja eventos relacionados con el registro de usuarios, la asignación de roles y la autenticación.
+
+2. **Interface Layer**:
+   - Expone los puntos de entrada al sistema a través de controladores REST.
+   - Incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+   - Proporciona endpoints para operaciones como el registro de usuarios, la autenticación y la consulta de roles.
+
+3. **Domain Layer**:
+   - Encapsula la lógica de negocio relacionada con la autenticación y la gestión de usuarios.
+   - Define los agregados, entidades y objetos de valor que representan los conceptos clave del dominio, como usuarios, roles y permisos.
+   - Asegura que las reglas de negocio, como la validación de contraseñas y la asignación de roles, se cumplan de manera consistente.
+
+4. **Infrastructure Layer**:
+   - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
+   - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos y servicios de seguridad.
+   - Implementa servicios auxiliares como el hashing de contraseñas y la generación de tokens de autenticación.
+
+<img src="./images/c4-model/bc-component-diagram/IOT-IAM-BC-Component-Diagram.svg" alt="IAM BC Component Diagram"/><br>
+
+
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+En este apartado se presentan los diagramas que ofrecen un mayor nivel de detalle sobre la implementación de los componentes del **IAM Bounded Context**. Estos diagramas están diseñados para ilustrar cómo se estructuran las clases, interfaces y relaciones dentro de las capas del contexto, proporcionando una visión técnica que facilita el desarrollo, mantenimiento y evolución del sistema.
+
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases correspondiente a la **Domain Layer** del **IAM Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio. También se destacan las relaciones entre estos elementos, como asociaciones, composiciones y dependencias.
+
+<img src="./images/c4-model/class-diagram/IAM_domain_class_diagram.webp" alt="IAM BC Domain Layer Class Diagram"/><br>
+
+**Elementos principales del diagrama:**
+
+1. **Aggregates**:
+   - `User`: Agregado principal que encapsula la lógica de negocio relacionada con la autenticación y la gestión de usuarios. Incluye atributos como `username`, `password` y `roles`.
+     - **Atributos**:
+       - `username`: Identificador único del usuario.
+       - `password`: Contraseña almacenada de forma segura.
+       - `roles`: Lista de roles asignados al usuario.
+     - **Métodos**:
+       - `addRole(Role role)`: Agrega un rol al usuario.
+       - `addRoles(List<Role> roles)`: Agrega múltiples roles al usuario, validando que sean válidos.
+
+2. **Entities**:
+   - `Role`: Representa los roles que pueden ser asignados a los usuarios.
+     - **Atributos**:
+       - `id`: Identificador único del rol.
+       - `name`: Nombre del rol.
+     - **Métodos**:
+       - `getDefaultRole()`: Devuelve el rol predeterminado (`ROLE_USER`).
+       - `validateRoleSet(List<Role> roles)`: Valida un conjunto de roles asignados.
+
+3. **Value Objects**:
+   - `Roles`: Enumeración que define los roles disponibles en el sistema (`ROLE_ADMIN`, `ROLE_SUPERVISOR`, `ROLE_USER`).
+   - `Password`: Representa la contraseña del usuario, asegurando que cumpla con las políticas de seguridad.
+   - `Token`: Representa un token de autenticación generado para un usuario.
+
+**Relaciones destacadas:**
+- El agregado `User` gestiona las relaciones con la entidad `Role`, asegurando que los usuarios tengan roles válidos asignados.
+- Los objetos de valor encapsulan datos inmutables y validaciones específicas, como la seguridad de contraseñas y la unicidad de roles.
+- La entidad `Role` define los permisos y responsabilidades que pueden ser asignados a los usuarios.
+
+##### 4.2.1.6.2. Bounded Context Database Design Diagram.
+
+El diseño de la base de datos para el **IAM Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional. 
+
+<img src="./images/c4-model/bd/iam_bd.png" alt="IAM BC Data Base Diagram"/><br>
+
+**Este diseño incluye las siguientes tablas principales:**
+
+1. **Users**:
+   - Representa los usuarios registrados en el sistema.
+   - **Atributos principales**:
+     - `id`: Identificador único del usuario.
+     - `username`: Nombre de usuario único.
+     - `password`: Contraseña almacenada de forma segura.
+     - `created_at`: Fecha de creación del usuario.
+
+2. **Roles**:
+   - Representa los roles disponibles en el sistema.
+   - **Atributos principales**:
+     - `id`: Identificador único del rol.
+     - `name`: Nombre del rol.
+
+3. **UserRoles**:
+   - Representa la relación entre usuarios y roles.
+   - **Atributos principales**:
+     - `user_id`: Identificador del usuario.
+     - `role_id`: Identificador del rol.
+
+Este diseño asegura que las operaciones relacionadas con la autenticación y la gestión de usuarios sean eficientes y consistentes, facilitando la integración con la lógica de negocio definida en la **Domain Layer**.
+Voy a completar el análisis táctico de Domain-Driven Design para los bounded contexts faltantes: Table Management, Menu Management y IoT Monitoring. Desarrollaré cada sección siguiendo la estructura que ya tiene tu informe.
+
+### 4.2.2 Bounded Context: Table Management Bounded Context
+
+El **Table Management Bounded Context** es responsable de gestionar la información y el estado de las mesas en las cafeterías. Este contexto se encarga de registrar, actualizar y consultar el estado de las mesas, así como su capacidad, ubicación dentro de la sede y otros atributos relevantes. Es el núcleo central que permite la visualización en tiempo real del estado de ocupación de las mesas para los usuarios.
+
+#### 4.2.2.1. Domain Layer
+
+La **Domain Layer** del Table Management Bounded Context encapsula la lógica de negocio relacionada con la gestión de mesas. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
+
+##### **Aggregates**
+1. **Table**
+   - **Propósito**: El agregado principal es la mesa (`Table`), que encapsula la lógica de negocio relacionada con la gestión de la mesa y su estado de ocupación.
+   - **Atributos**:
+     - `tableNumber`: Número identificativo de la mesa, representado como un objeto de valor `TableNumber`.
+     - `headquarterId`: Identificador de la sede a la que pertenece la mesa, representado como un objeto de valor `HeadquarterId`.
+     - `capacity`: Capacidad de la mesa (número de sillas), representada como un objeto de valor `Capacity`.
+     - `status`: Estado actual de la mesa, representado como un objeto de valor `TableStatus`.
+     - `location`: Ubicación física de la mesa dentro de la sede, representada como un objeto de valor `Location`.
+   - **Métodos**:
+     - `updateStatus(TableStatus status)`: Actualiza el estado de la mesa.
+     - `assignToHeadquarter(HeadquarterId headquarterId)`: Asigna la mesa a una sede específica.
+     - `changeCapacity(Capacity capacity)`: Modifica la capacidad de la mesa.
+     - `relocate(Location location)`: Actualiza la ubicación de la mesa dentro de la sede.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en las mesas.
+     - Gestiona la validación de estados y cambios según reglas de negocio.
+
+##### **Entities**
+1. **Chair**
+   - **Propósito**: La entidad `Chair` representa cada silla asociada a una mesa, con su estado de ocupación.
+   - **Atributos**:
+     - `id`: Identificador único de la silla.
+     - `chairNumber`: Número identificativo de la silla dentro de la mesa.
+     - `status`: Estado actual de la silla (ocupada o libre), representado como un objeto de valor `ChairStatus`.
+   - **Métodos**:
+     - `updateStatus(ChairStatus status)`: Actualiza el estado de la silla.
+     - `isOccupied()`: Verifica si la silla está ocupada.
+
+##### **Value Objects**
+1. **TableNumber**
+   - **Propósito**: Representa el número identificativo de una mesa.
+   - **Validaciones**:
+     - El número debe ser positivo.
+     - El número debe ser único dentro de una sede.
+
+2. **HeadquarterId**
+   - **Propósito**: Representa el identificador único de una sede.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
+
+3. **Capacity**
+   - **Propósito**: Representa la capacidad de una mesa en términos de número de personas que pueden sentarse.
+   - **Validaciones**:
+     - La capacidad debe ser un número positivo.
+     - La capacidad máxima permitida es de 12 personas.
+
+4. **TableStatus**
+   - **Propósito**: Enumera los estados posibles de una mesa.
+   - **Valores**:
+     - `AVAILABLE`: La mesa está disponible para ser ocupada.
+     - `OCCUPIED`: La mesa está ocupada por comensales.
+     - `RESERVED`: La mesa está reservada para un futuro cercano.
+     - `MAINTENANCE`: La mesa está fuera de servicio temporalmente.
+
+5. **ChairStatus**
+   - **Propósito**: Enumera los estados posibles de una silla.
+   - **Valores**:
+     - `OCCUPIED`: La silla está ocupada por un comensal.
+     - `FREE`: La silla está libre.
+
+6. **Location**
+   - **Propósito**: Representa la ubicación física de una mesa dentro de la sede.
+   - **Atributos**:
+     - `zone`: Zona de la cafetería (interior, terraza, etc.).
+     - `coordinates`: Coordenadas relativas dentro del plano de la sede.
+   - **Validaciones**:
+     - Las coordenadas deben estar dentro de los límites del plano de la sede.
+
+#### **Commands**
+1. **CreateTableCommand**
+   - **Propósito**: Comando para crear una nueva mesa en una sede específica.
+   - **Atributos**:
+     - `tableNumber`: Número de la mesa.
+     - `headquarterId`: ID de la sede donde se ubicará la mesa.
+     - `capacity`: Capacidad de la mesa.
+     - `location`: Ubicación de la mesa dentro de la sede.
+
+2. **UpdateTableStatusCommand**
+   - **Propósito**: Comando para actualizar el estado de una mesa existente.
+   - **Atributos**:
+     - `tableId`: ID de la mesa a actualizar.
+     - `status`: Nuevo estado de la mesa.
+
+3. **DeleteTableCommand**
+   - **Propósito**: Comando para eliminar una mesa existente.
+   - **Atributos**:
+     - `tableId`: ID de la mesa a eliminar.
+     - `headquarterId`: ID de la sede a la que pertenece la mesa.
+
+#### **Queries**
+1. **GetTableByIdQuery**
+   - **Propósito**: Recupera una mesa específica por su ID.
+   - **Atributos**:
+     - `tableId`: ID de la mesa a consultar.
+
+2. **GetTablesByHeadquarterQuery**
+   - **Propósito**: Recupera todas las mesas asociadas a una sede específica.
+   - **Atributos**:
+     - `headquarterId`: ID de la sede a consultar.
+
+3. **GetTablesByStatusQuery**
+   - **Propósito**: Recupera todas las mesas que tienen un estado específico.
+   - **Atributos**:
+     - `status`: Estado de las mesas a consultar.
+     - `headquarterId`: ID de la sede a consultar.
+
+#### **Events**
+1. **TableCreatedEvent**
+   - **Propósito**: Evento que se dispara cuando se crea una nueva mesa.
+   - **Atributos**:
+     - `tableId`: ID de la mesa creada.
+     - `headquarterId`: ID de la sede donde se ubicó la mesa.
+
+2. **TableStatusChangedEvent**
+   - **Propósito**: Evento que se dispara cuando cambia el estado de una mesa.
+   - **Atributos**:
+     - `tableId`: ID de la mesa.
+     - `previousStatus`: Estado anterior de la mesa.
+     - `newStatus`: Nuevo estado de la mesa.
+     - `timestamp`: Momento en que ocurrió el cambio.
+
+#### 4.2.2.2. Interface Layer
+
+La **Interface Layer** del Table Management Bounded Context expone los puntos de entrada al sistema a través de controladores REST. Esta capa permite la interacción con las entidades del dominio mediante solicitudes HTTP, facilitando la comunicación entre los clientes y el sistema. Además, incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+
+#### **Access Control Layer (ACL)**
+
+1. **TableManagementContextFacade**
+   - **Propósito**: Proporciona una interfaz simplificada para interactuar con el dominio del Table Management Bounded Context desde otros contextos. Permite consultar información sobre las mesas, como su disponibilidad, capacidad y ubicación.
+   - **Métodos principales**:
+     - `getTableStatus(Long tableId)`: Devuelve el estado actual de una mesa.
+     - `getTablesByStatus(Long headquarterId, String status)`: Devuelve las mesas de una sede con un estado específico.
+     - `existsTable(Long tableId)`: Verifica si una mesa existe en el sistema.
+   - **Dependencias**:
+     - `TableQueryService`: Servicio encargado de manejar las consultas relacionadas con las mesas.
+
+#### **Controllers**
+
+Los controladores son responsables de manejar las solicitudes HTTP y delegar la lógica de negocio a los servicios correspondientes. A continuación, se describen los principales controladores:
+
+1. **TableController**
+   - **Propósito**: Gestiona las operaciones relacionadas con las mesas.
+   - **Endpoints**:
+     - `POST /api/v1/tables`: Crea una nueva mesa.
+     - `GET /api/v1/tables/{tableId}`: Obtiene los detalles de una mesa específica por su ID.
+     - `GET /api/v1/tables`: Obtiene la lista de todas las mesas, con opción a filtrar por sede.
+     - `GET /api/v1/headquarters/{headquarterId}/tables`: Obtiene las mesas de una sede específica.
+     - `PUT /api/v1/tables/{tableId}/status`: Actualiza el estado de una mesa.
+     - `DELETE /api/v1/tables/{tableId}`: Elimina una mesa existente.
+   - **Dependencias**:
+     - `TableCommandService`: Servicio encargado de manejar los comandos relacionados con las mesas.
+     - `TableQueryService`: Servicio encargado de manejar las consultas relacionadas con las mesas.
+
+#### **Resources**
+
+Los recursos representan los datos que se exponen a través de la API REST. Estos recursos son utilizados para estructurar las respuestas de los controladores y asegurar una representación clara y consistente de los datos. A continuación, se describen los principales recursos:
+
+1. **CreateTableResource**
+   - **Propósito**: Representa los datos necesarios para crear una nueva mesa.
+   - **Atributos**:
+     - `tableNumber`: Número de la mesa.
+     - `headquarterId`: ID de la sede donde se ubicará la mesa.
+     - `capacity`: Capacidad de la mesa.
+     - `zone`: Zona de la cafetería donde se ubicará la mesa.
+     - `xPosition`: Coordenada X de la mesa en el plano.
+     - `yPosition`: Coordenada Y de la mesa en el plano.
+
+2. **TableResource**
+   - **Propósito**: Representa una mesa en el sistema.
+   - **Atributos**:
+     - `id`: ID único de la mesa.
+     - `tableNumber`: Número de la mesa.
+     - `headquarterId`: ID de la sede donde está ubicada la mesa.
+     - `capacity`: Capacidad de la mesa.
+     - `status`: Estado actual de la mesa.
+     - `zone`: Zona de la cafetería donde está ubicada la mesa.
+     - `position`: Coordenadas de la mesa en el plano.
+
+3. **UpdateTableStatusResource**
+   - **Propósito**: Representa los datos necesarios para actualizar el estado de una mesa.
+   - **Atributos**:
+     - `status`: Nuevo estado de la mesa.
+
+#### **Transformers**
+
+Los transformadores son responsables de convertir las entidades del dominio en recursos y viceversa. Esto asegura que los datos expuestos a través de la API REST sean consistentes y estén en el formato esperado. A continuación, se describen los principales transformadores:
+
+1. **CreateTableCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateTableResource` en un comando `CreateTableCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateTableResource resource)`: Transforma los datos de creación de una mesa en un comando.
+
+2. **TableResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Table` en un recurso `TableResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Table entity)`: Transforma una mesa del dominio en un recurso.
+
+3. **UpdateTableStatusCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `UpdateTableStatusResource` en un comando `UpdateTableStatusCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(UpdateTableStatusResource resource, Long tableId)`: Transforma los datos de actualización de estado en un comando.
+
+#### 4.2.2.3. Application Layer
+
+La **Application Layer** del Table Management Bounded Context actúa como un intermediario entre la **Domain Layer** y las capas externas, como la **Interface Layer** y la **Infrastructure Layer**. Su propósito principal es coordinar las operaciones de negocio, manejar comandos y consultas, y orquestar la lógica de aplicación sin exponer directamente los detalles del dominio.
+
+#### **Command Services**
+
+Los servicios de comandos son responsables de ejecutar operaciones que modifican el estado del sistema. A continuación, se describen los principales servicios de comandos:
+
+1. **TableCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación, actualización y eliminación de mesas.
+   - **Métodos principales**:
+     - `handle(CreateTableCommand command)`: Crea una nueva mesa validando que la sede exista y que no haya duplicados.
+     - `handle(UpdateTableStatusCommand command)`: Actualiza el estado de una mesa existente.
+     - `handle(DeleteTableCommand command)`: Elimina una mesa existente.
+   - **Validaciones**:
+     - Verifica que la sede exista utilizando el servicio externo `ExternalHeadquarterService`.
+     - Asegura que no existan mesas con el mismo número en la misma sede.
+     - Valida que la mesa exista antes de actualizar su estado o eliminarla.
+   - **Dependencias**:
+     - `TableRepository`: Persistencia de mesas.
+     - `ExternalHeadquarterService`: Verifica la existencia de la sede.
+
+#### **Query Services**
+
+Los servicios de consultas son responsables de recuperar información del sistema sin modificar su estado. A continuación, se describen los principales servicios de consultas:
+
+1. **TableQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con las mesas.
+   - **Métodos principales**:
+     - `handle(GetTableByIdQuery query)`: Recupera una mesa específica por su ID.
+     - `handle(GetTablesByHeadquarterQuery query)`: Recupera todas las mesas de una sede específica.
+     - `handle(GetTablesByStatusQuery query)`: Recupera todas las mesas que tienen un estado específico en una sede determinada.
+   - **Dependencias**:
+     - `TableRepository`: Persistencia de mesas.
+
+#### **Event Handlers**
+
+Los manejadores de eventos son responsables de reaccionar a eventos específicos del sistema. A continuación, se describen los principales manejadores de eventos:
+
+1. **TableStatusChangedEventHandler**
+   - **Propósito**: Maneja el evento `TableStatusChangedEvent`, que se dispara cuando cambia el estado de una mesa.
+   - **Método principal**:
+     - `on(TableStatusChangedEvent event)`: Realiza acciones adicionales cuando cambia el estado de una mesa, como notificar a otros sistemas o actualizar estadísticas.
+   - **Dependencias**:
+     - `NotificationService`: Servicio para enviar notificaciones.
+     - `StatisticsService`: Servicio para actualizar estadísticas de uso de mesas.
+
+#### **Outbound Services (ACL)**
+
+Los servicios externos proporcionan funcionalidades auxiliares que no forman parte del dominio principal. A continuación, se describen los principales servicios externos:
+
+1. **ExternalHeadquarterService**
+   - **Propósito**: Interactúa con el Branching Bounded Context para verificar la existencia de sedes.
+   - **Método principal**:
+     - `existsHeadquarter(Long headquarterId)`: Verifica si una sede existe en el sistema.
+
+#### 4.2.2.4. Infrastructure Layer
+
+La **Infrastructure Layer** del Table Management Bounded Context proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema relacionadas con la gestión de mesas. Esta capa incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos. Su objetivo principal es garantizar que las operaciones de almacenamiento y recuperación de información sean eficientes, consistentes y seguras.
+
+#### **Persistencia (JPA Repositories)**
+
+1. **TableRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de mesas.
+   - **Métodos principales**:
+     - `findByHeadquarterId(Long headquarterId)`: Recupera todas las mesas de una sede específica.
+     - `findByHeadquarterIdAndStatus(Long headquarterId, TableStatus status)`: Recupera las mesas de una sede con un estado específico.
+     - `existsByHeadquarterIdAndTableNumber(Long headquarterId, Integer tableNumber)`: Verifica si existe una mesa con un número específico en una sede.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Table`.
+     - Facilita la recuperación de mesas según diferentes criterios de filtro.
+
+#### **Relaciones entre componentes**
+
+- **Persistencia**: El repositorio `TableRepository` proporciona acceso a los datos almacenados en la base de datos, permitiendo a las capas superiores (como la **Application Layer**) interactuar con las entidades del dominio.
+- **Validación**: Los métodos personalizados en `TableRepository` son utilizados para validar la existencia de mesas y recuperar información específica, asegurando la consistencia de los datos durante las operaciones de negocio.
+
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del **Table Management Bounded Context**, el cual detalla los principales módulos y sus interacciones dentro del contexto delimitado. Este diagrama sigue el enfoque del C4 Model para representar los componentes clave, como servicios de aplicación, controladores, repositorios y servicios externos, junto con sus relaciones.
+
+<img src="./images/c4-model/bc-component-diagram/IOT-TableManagement-BC-Component-Diagram.png" alt="Table Management BC Component Diagram"/><br>
+
+El **Table Management Bounded Context** está compuesto por los siguientes módulos principales:
+
+1. **Application Layer**:
+   - Coordina las operaciones de negocio relacionadas con la gestión de mesas.
+   - Incluye servicios de comandos y consultas que interactúan con la **Domain Layer** y la **Infrastructure Layer**.
+   - Maneja eventos relacionados con cambios en el estado de las mesas.
+
+2. **Interface Layer**:
+   - Expone los puntos de entrada al sistema a través de controladores REST.
+   - Incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+   - Proporciona una ACL (Access Control Layer) para facilitar la integración con otros contextos.
+
+3. **Domain Layer**:
+   - Encapsula la lógica de negocio relacionada con la gestión de mesas.
+   - Define los agregados, entidades y objetos de valor que representan los conceptos clave del dominio.
+   - Incluye eventos de dominio que representan cambios significativos en el estado del sistema.
+
+4. **Infrastructure Layer**:
+   - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
+   - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos.
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases correspondiente a la **Domain Layer** del **Table Management Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio.
+
+<img src="./images/c4-model/bc-component-diagram/table_management_domain_class_diagram.png" alt="Table Management BC Domain Layer Class Diagram"/><br>
+
+**Elementos principales del diagrama:**
+
+1. **Aggregates**:
+   - `Table`: Agregado principal que encapsula la lógica de negocio relacionada con la gestión de mesas.
+     - **Atributos**:
+       - `tableNumber`: Número identificativo de la mesa.
+       - `headquarterId`: ID de la sede a la que pertenece la mesa.
+       - `capacity`: Capacidad de la mesa.
+       - `status`: Estado actual de la mesa.
+       - `location`: Ubicación física de la mesa dentro de la sede.
+     - **Métodos**:
+       - `updateStatus(TableStatus status)`: Actualiza el estado de la mesa.
+       - `assignToHeadquarter(HeadquarterId headquarterId)`: Asigna la mesa a una sede específica.
+       - `changeCapacity(Capacity capacity)`: Modifica la capacidad de la mesa.
+
+2. **Entities**:
+   - `Chair`: Entidad que representa cada silla asociada a una mesa.
+     - **Atributos**:
+       - `chairNumber`: Número identificativo de la silla dentro de la mesa.
+       - `status`: Estado actual de la silla.
+     - **Métodos**:
+       - `updateStatus(ChairStatus status)`: Actualiza el estado de la silla.
+       - `isOccupied()`: Verifica si la silla está ocupada.
+
+3. **Value Objects**:
+   - `TableNumber`: Representa el número identificativo de una mesa.
+   - `Capacity`: Representa la capacidad de una mesa.
+   - `TableStatus`: Enumera los estados posibles de una mesa.
+   - `ChairStatus`: Enumera los estados posibles de una silla.
+   - `Location`: Representa la ubicación física de una mesa dentro de la sede.
+   - `HeadquarterId`: Representa el identificador único de una sede.
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram.
+
+El diseño de la base de datos para el **Table Management Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional.
+
+<img src="./images/c4-model/bc-component-diagram/table_management_bd.png" alt="Table Management BC Data Base Diagram"/><br>
+
+**Este diseño incluye las siguientes tablas principales:**
+
+1. **Tables**:
+   - Representa las mesas en el sistema.
+   - **Atributos principales**:
+     - `id`: Identificador único de la mesa.
+     - `table_number`: Número de la mesa dentro de la sede.
+     - `headquarter_id`: Identificador de la sede a la que pertenece la mesa.
+     - `capacity`: Capacidad de la mesa en términos de personas.
+     - `status`: Estado actual de la mesa (AVAILABLE, OCCUPIED, RESERVED, MAINTENANCE).
+     - `zone`: Zona de la cafetería donde está ubicada la mesa.
+     - `x_position`: Coordenada X de la mesa en el plano.
+     - `y_position`: Coordenada Y de la mesa en el plano.
+
+2. **Chairs**:
+   - Representa las sillas asociadas a las mesas.
+   - **Atributos principales**:
+     - `id`: Identificador único de la silla.
+     - `table_id`: Identificador de la mesa a la que pertenece la silla.
+     - `chair_number`: Número de la silla dentro de la mesa.
+     - `status`: Estado actual de la silla (OCCUPIED, FREE).
+
+
+### 4.2.3 Bounded Context: Branching Bounded Context
+
+El **Branching Bounded Context** es responsable de gestionar la información de las sedes (headquarters) del sistema Tavolo. Este contexto asegura que las sedes puedan ser registradas, actualizadas y gestionadas de manera eficiente, incluyendo detalles como horarios de atención, ubicación geográfica, información de contacto y dirección. Este contexto es clave para garantizar que las operaciones relacionadas con las sedes sean consistentes y cumplan con los estándares de calidad y precisión requeridos.
+
+#### 4.2.3.1. Domain Layer
+
+La **Domain Layer** del Branching Bounded Context encapsula la lógica de negocio relacionada con la gestión de sedes. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
+
+La **Domain Layer** del Branching Bounded Context encapsula la lógica de negocio relacionada con la gestión de sedes. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
+
+##### **Aggregates**
+1. **Headquarter**
+   - **Propósito**: El agregado principal es la sede (`Headquarter`), que encapsula la lógica de negocio relacionada con la gestión de información de las sedes.
+   - **Atributos**:
+     - `name`: Nombre de la sede, representado como un objeto de valor `NameHeadquarter`.
+     - `contactNumbers`: Números de contacto de la sede, representados como un objeto de valor `ContactNumbers`.
+     - `coordinates`: Coordenadas geográficas de la sede, representadas como un objeto de valor `Coordinates`.
+     - `schedule`: Horarios de atención de la sede, representados como una entidad `Schedule`.
+     - `address`: Dirección de la sede, representada como un objeto de valor `StreetAddress`.
+   - **Métodos**:
+     - `getOpeningTime()`: Devuelve la hora de apertura de la sede.
+     - `getClosingTime()`: Devuelve la hora de cierre de la sede.
+     - `getIntervalMinutes()`: Devuelve el intervalo de tiempo en minutos entre reservas.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en las sedes.
+     - Gestiona la relación entre los horarios, la dirección y los datos de contacto de la sede, asegurando consistencia y validación.
+
+##### **Entities**
+1. **Schedule**
+   - **Propósito**: Representa los horarios de atención de una sede.
+   - **Atributos**:
+     - `businessHours`: Horarios de apertura y cierre, representados como un objeto de valor `BusinessHours`.
+     - `intervalMinutes`: Intervalo de tiempo en minutos entre reservas.
+   - **Características**:
+     - Permite definir y validar los horarios de atención de la sede.
+     - Incluye validaciones para garantizar que los horarios sean consistentes (por ejemplo, la hora de apertura no puede ser posterior a la hora de cierre).
+
+##### **Value Objects**
+1. **BusinessHours**
+   - **Propósito**: Representa los horarios de apertura y cierre de una sede.
+   - **Atributos**:
+     - `openingTime`: Hora de apertura.
+     - `closingTime`: Hora de cierre.
+   - **Validaciones**:
+     - La hora de apertura no puede ser nula.
+     - La hora de cierre no puede ser nula.
+     - La hora de apertura no puede ser posterior a la hora de cierre.
+
+2. **ContactNumbers**
+   - **Propósito**: Representa los números de contacto de una sede.
+   - **Atributos**:
+     - `landlinePhone`: Número de teléfono fijo.
+     - `mobilePhone`: Número de teléfono móvil.
+   - **Validaciones**:
+     - Ambos números deben ser válidos y no nulos.
+
+3. **Coordinates**
+   - **Propósito**: Representa las coordenadas geográficas de una sede.
+   - **Atributos**:
+     - `latitude`: Latitud de la sede.
+     - `longitude`: Longitud de la sede.
+   - **Validaciones**:
+     - La latitud y la longitud no pueden ser nulas.
+
+4. **NameHeadquarter**
+   - **Propósito**: Representa el nombre de una sede.
+   - **Atributos**:
+     - `name`: Nombre de la sede.
+   - **Validaciones**:
+     - El nombre no puede ser nulo ni vacío.
+     - El nombre debe cumplir con un formato válido (solo letras y espacios).
+
+5. **StreetAddress**
+   - **Propósito**: Representa la dirección de una sede.
+   - **Atributos**:
+     - `street`: Calle.
+     - `number`: Número de la dirección.
+     - `city`: Ciudad.
+     - `postalCode`: Código postal.
+     - `country`: País.
+   - **Validaciones**:
+     - Los campos `street`, `city`, `postalCode` y `country` no pueden ser nulos ni vacíos.
+     - La calle debe cumplir con un formato válido (solo letras, espacios y puntos).
+
+
+#### **Relaciones entre componentes**
+- El agregado `Headquarter` actúa como el núcleo del dominio, gestionando las relaciones con los objetos de valor (`NameHeadquarter`, `ContactNumbers`, `Coordinates`, `StreetAddress`) y la entidad `Schedule`.
+- Los objetos de valor encapsulan datos inmutables y validaciones específicas, asegurando consistencia en el dominio.
+- La entidad `Schedule` permite modelar horarios complejos, incluyendo intervalos de tiempo entre reservas.
+
+Esta estructura asegura que la lógica de negocio relacionada con la gestión de sedes sea robusta, consistente y fácil de mantener, cumpliendo con los requisitos del sistema.
+
+#### 4.2.3.2. Interface Layer
+
+La **Interface Layer** del Branching Bounded Context expone los puntos de entrada al sistema a través de controladores REST y una ACL (Access Control Layer). Esta capa permite la interacción con las entidades del dominio mediante solicitudes HTTP, facilitando la comunicación entre los clientes y el sistema. Además, incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+
+#### **Access Control Layer (ACL)**
+
+1. **HeadquarterContextFacade**
+   - **Propósito**: Proporciona una interfaz simplificada para interactuar con el dominio del Branching Bounded Context desde otros contextos. Permite consultar información clave de las sedes, como horarios de apertura y cierre, intervalos de servicio y existencia de una sede.
+   - **Métodos principales**:
+     - `getOpeningTime(Long headquarterId)`: Devuelve la hora de apertura de una sede.
+     - `getClosingTime(Long headquarterId)`: Devuelve la hora de cierre de una sede.
+     - `getIntervalMinutes(Long headquarterId)`: Devuelve el intervalo de servicio en minutos de una sede.
+     - `existsHeadquarter(Long headquarterId)`: Verifica si una sede existe en el sistema.
+   - **Dependencias**:
+     - `HeadquarterQueryService`: Servicio encargado de manejar las consultas relacionadas con las sedes.
+
+
+#### **Controllers**
+
+Los controladores son responsables de manejar las solicitudes HTTP y delegar la lógica de negocio a los servicios correspondientes. A continuación, se describen los principales controladores:
+
+1. **HeadquarterController**
+   - **Propósito**: Gestiona las operaciones relacionadas con las sedes.
+   - **Endpoints**:
+     - `POST /api/v1/headquarters`: Crea una nueva sede.
+     - `GET /api/v1/headquarters/{headquarterId}`: Obtiene los detalles de una sede específica por su ID.
+     - `GET /api/v1/headquarters`: Obtiene la lista de todas las sedes.
+   - **Dependencias**:
+     - `HeadquarterCommandService`: Servicio encargado de manejar los comandos relacionados con las sedes.
+     - `HeadquarterQueryService`: Servicio encargado de manejar las consultas relacionadas con las sedes.
+
+
+#### **Resources**
+
+Los recursos representan los datos que se exponen a través de la API REST. Estos recursos son utilizados para estructurar las respuestas de los controladores y asegurar una representación clara y consistente de los datos. A continuación, se describen los principales recursos:
+
+1. **CreateHeadquarterResource**
+   - **Propósito**: Representa los datos necesarios para crear una nueva sede.
+   - **Atributos**:
+     - `name`: Nombre de la sede.
+     - `landlinePhone`: Número de teléfono fijo.
+     - `mobilePhone`: Número de teléfono móvil.
+     - `latitude`: Latitud de la sede.
+     - `longitude`: Longitud de la sede.
+     - `street`: Calle de la dirección.
+     - `number`: Número de la dirección.
+     - `city`: Ciudad.
+     - `postalCode`: Código postal.
+     - `country`: País.
+     - `openingTime`: Hora de apertura.
+     - `closingTime`: Hora de cierre.
+     - `intervalMinutes`: Intervalo de servicio en minutos.
+
+2. **HeadquarterResource**
+   - **Propósito**: Representa una sede en el sistema.
+   - **Atributos**:
+     - `id`: Identificador único de la sede.
+     - `name`: Nombre de la sede.
+     - `landlinePhone`: Número de teléfono fijo.
+     - `mobilePhone`: Número de teléfono móvil.
+     - `latitude`: Latitud de la sede.
+     - `longitude`: Longitud de la sede.
+     - `streetAddress`: Dirección completa de la sede.
+     - `openingTime`: Hora de apertura.
+     - `closingTime`: Hora de cierre.
+     - `intervalMinutes`: Intervalo de servicio en minutos.
+
+#### **Transformers**
+
+Los transformadores son responsables de convertir las entidades del dominio en recursos y viceversa. Esto asegura que los datos expuestos a través de la API REST sean consistentes y estén en el formato esperado. A continuación, se describen los principales transformadores:
+
+1. **CreateHeadquarterCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateHeadquarterResource` en un comando `CreateHeadquarterCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateHeadquarterResource resource)`: Transforma los datos de creación de una sede en un comando.
+
+2. **HeadquarterResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Headquarter` en un recurso `HeadquarterResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Headquarter entity)`: Transforma una sede del dominio en un recurso.
+
+#### **Relaciones entre componentes**
+
+- El **HeadquarterController** utiliza los servicios de comandos (`HeadquarterCommandService`) y consultas (`HeadquarterQueryService`) para delegar la lógica de negocio.
+- La **ACL (HeadquarterContextFacade)** proporciona una interfaz simplificada para consultar información clave de las sedes desde otros contextos.
+- Los transformadores convierten las entidades del dominio en recursos para las respuestas HTTP y viceversa para las solicitudes entrantes.
+- Los recursos estructuran los datos expuestos a los clientes, asegurando una representación clara y consistente.
+
+Esta estructura asegura que la **Interface Layer** sea modular, reutilizable y fácil de mantener, facilitando la interacción entre los clientes y el sistema.
+
+#### 4.2.3.4. Infrastructure Layer
+
+La **Infrastructure Layer** del Branching Bounded Context proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema relacionadas con la gestión de sedes. Esta capa incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos. Su objetivo principal es garantizar que las operaciones de almacenamiento y recuperación de información sean eficientes, consistentes y seguras.
+
+#### **Persistencia (JPA Repositories)**
+
+1. **HeadquarterRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de sedes.
+   - **Métodos principales**:
+     - `existsByName(NameHeadquarter name)`: Verifica si existe una sede con un nombre específico.
+     - `existsByCoordinates(Coordinates coordinates)`: Verifica si existe una sede en una ubicación geográfica específica.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre las entidades `Headquarter`.
+     - Facilita la validación de unicidad para nombres y coordenadas de sedes, asegurando que no haya duplicados en el sistema.
+
+
+#### **Relaciones entre componentes**
+
+- **Persistencia**: El repositorio `HeadquarterRepository` proporciona acceso a los datos almacenados en la base de datos, permitiendo a las capas superiores (como la **Application Layer**) interactuar con las entidades del dominio.
+- **Validación**: Los métodos `existsByName` y `existsByCoordinates` son utilizados para validar la unicidad de las sedes durante las operaciones de creación o actualización, asegurando la consistencia de los datos.
+
+
+La **Infrastructure Layer** del Branching Bounded Context asegura que las operaciones relacionadas con la persistencia de datos sean robustas y confiables. Al proporcionar un repositorio especializado para las sedes, esta capa facilita la integración con la base de datos y garantiza que las reglas de negocio, como la unicidad de nombres y ubicaciones, se cumplan de manera eficiente. Esta estructura modular y reutilizable permite que el sistema sea escalable y fácil de mantener.
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del **Branching Bounded Context**, el cual detalla los principales módulos y sus interacciones dentro del contexto delimitado. Este diagrama sigue el enfoque del C4 Model para representar los componentes clave, como servicios de aplicación, controladores, repositorios y servicios externos, junto con sus relaciones.
+
+El propósito de este diagrama es proporcionar una visión clara y estructurada de cómo se organizan los componentes dentro del contexto, facilitando la comprensión de su arquitectura y permitiendo identificar puntos de integración y responsabilidades. 
+
+<img src="./images/c4-model/bc-component-diagram/IOT-Braching-BC-Component-Diagram.svg" alt="Branching BC Component Diagram"/><br>
+
+El **Branching Bounded Context** está compuesto por los siguientes módulos principales:
+
+1. **Application Layer**:
+   - Coordina las operaciones de negocio relacionadas con la gestión de sedes.
+   - Incluye servicios de comandos y consultas que interactúan con la **Domain Layer** y la **Infrastructure Layer**.
+   - Maneja eventos relacionados con la creación y actualización de sedes.
+
+2. **Interface Layer**:
+   - Expone los puntos de entrada al sistema a través de controladores REST.
+   - Incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+
+3. **Domain Layer**:
+   - Encapsula la lógica de negocio relacionada con la gestión de sedes.
+   - Define los agregados, entidades y objetos de valor que representan los conceptos clave del dominio.
+
+4. **Infrastructure Layer**:
+   - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
+   - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos.
+
+
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+En este apartado se presentan los diagramas que ofrecen un mayor nivel de detalle sobre la implementación de los componentes del **Branching Bounded Context**. Estos diagramas están diseñados para ilustrar cómo se estructuran las clases, interfaces y relaciones dentro de las capas del contexto, proporcionando una visión técnica que facilita el desarrollo, mantenimiento y evolución del sistema.
+
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases correspondiente a la **Domain Layer** del **Branching Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio. También se destacan las relaciones entre estos elementos, como asociaciones, composiciones y dependencias.
+
+El objetivo de este diagrama es proporcionar una representación detallada de la lógica de negocio encapsulada en la capa del dominio, asegurando que las reglas del negocio estén claramente definidas y alineadas con los requisitos del sistema.
+
+<img src="./images/c4-model/class-diagram/branching_domain_class_diagram.webp" alt="Branching BC Domain Layer Class Diagram"/><br>
+
+**Elementos principales del diagrama:**
+
+1. **Aggregates**:
+   - `Headquarter`: Agregado principal que encapsula la lógica de negocio relacionada con la gestión de sedes. Incluye atributos como `name`, `contactNumbers`, `coordinates`, `schedule` y `address`.
+
+2. **Entities**:
+   - `Schedule`: Representa los horarios de atención de una sede, incluyendo atributos como `businessHours` e `intervalMinutes`.
+
+3. **Value Objects**:
+   - `NameHeadquarter`: Representa el nombre de una sede.
+   - `ContactNumbers`: Representa los números de contacto de una sede.
+   - `Coordinates`: Representa las coordenadas geográficas de una sede.
+   - `StreetAddress`: Representa la dirección de una sede.
+   - `BusinessHours`: Representa los horarios de apertura y cierre de una sede.
+
+**Relaciones destacadas:**
+- El agregado `Headquarter` actúa como el núcleo del dominio, gestionando las relaciones con los objetos de valor (`NameHeadquarter`, `ContactNumbers`, `Coordinates`, `StreetAddress`) y la entidad `Schedule`.
+- Los objetos de valor encapsulan datos inmutables y validaciones específicas, asegurando consistencia en el dominio.
+- La entidad `Schedule` permite modelar horarios complejos, incluyendo intervalos de tiempo entre reservas.
+
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram.
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram
+
+El diseño de la base de datos para el **Branching Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional. 
+
+<img src="./images/c4-model/bd/branching_bd.png" alt="Booking BC Data Base Diagram"/><br>
+
+
+**Este diseño incluye las siguientes tablas principales:**
+
+
+1. **Headquarters**
+   - **Propósito**: Representa las sedes registradas en el sistema.
+   - **Atributos principales**:
+     - `id`: Identificador único de la sede.
+     - `name`: Nombre de la sede.
+     - `landline_phone`: Número de teléfono fijo de la sede.
+     - `mobile_phone`: Número de teléfono móvil de la sede.
+     - `latitude`: Latitud de la ubicación de la sede.
+     - `longitude`: Longitud de la ubicación de la sede.
+     - `address_street`: Calle de la dirección de la sede.
+     - `address_number`: Número de la dirección.
+     - `address_city`: Ciudad donde se encuentra la sede.
+     - `address_postal_code`: Código postal de la sede.
+     - `address_country`: País donde se encuentra la sede.
+     - `schedule_id`: Relación con la tabla `Schedules`.
+
+2. **Schedules**
+   - **Propósito**: Representa los horarios de atención de las sedes.
+   - **Atributos principales**:
+     - `id`: Identificador único del horario.
+     - `opening_time`: Hora de apertura de la sede.
+     - `closing_time`: Hora de cierre de la sede.
+     - `interval_minutes`: Intervalo de tiempo en minutos entre reservas.
+
+Este diseño asegura que las operaciones relacionadas con la gestión de sedes sean eficientes y consistentes, facilitando la integración con la lógica de negocio definida en la **Domain Layer**.
+
+
+### 4.2.4 Bounded Context: Booking Bounded Context
+
+El **Booking Bounded Context** es responsable de gestionar las reservas de mesas en el sistema Tavolo. Este contexto asegura que los usuarios puedan realizar reservas de manera eficiente, gestionando la disponibilidad de mesas, horarios y slots de tiempo. Además, permite a los administradores supervisar y gestionar las reservas activas, asegurando que las operaciones relacionadas con las reservas sean consistentes y cumplan con los estándares de calidad y precisión requeridos.
 
 #### 4.2.4.1. Domain Layer
 
-`Sensor` (Entity)
-- Propósito: Representar un dispositivo físico de detección de peso instalado en una mesa.
-- Atributos:
-  - `sensorId: UUID` - Identificador único del sensor.
-  - `mesaId: UUID` - Identificador de la mesa a la que está asociado el sensor.
-  - `estado: boolean` - Estado actual del sensor (ocupado/libre).
-  - `ultimaLectura: LocalDateTime` - Momento en que se realizó la última lectura.
-  - `umbralPeso: double` - Valor mínimo de peso para considerar la mesa ocupada.
-  - `lecturasConsecutivas: int` - Número de lecturas con el mismo estado requeridas para confirmar un cambio.
+La **Domain Layer** del Booking Bounded Context encapsula la lógica de negocio relacionada con la gestión de reservas. En esta capa, se definen los elementos principales del dominio, como agregados, entidades, objetos de valor, comandos, consultas y eventos, que representan los conceptos clave del sistema.
 
-`LecturaSensor` (Value Object)
-- Propósito: Representar una medición individual realizada por el sensor.
-- Atributos:
-  - `valorPeso: double` - Valor numérico del peso detectado.
-  - `timestamp: LocalDateTime` - Momento exacto de la lectura.
-  - `estaOcupado: boolean` - Interpretación lógica del valor (ocupado o libre).
+#### **Aggregates**
 
-`EstadoSensor` (Enumeration)
-- Propósito: Definir los posibles estados de un sensor.
-- Valores:
-  - `OCUPADO` - El sensor detecta peso suficiente para considerar la mesa ocupada.
-  - `LIBRE` - El sensor no detecta peso o está por debajo del umbral.
-  - `MANTENIMIENTO` - El sensor está temporalmente fuera de servicio.
-  - `DESCONECTADO` - El sensor no está enviando datos al sistema.
+1. **Booking**
+   - **Propósito**: Representa una reserva realizada por un cliente para una mesa específica en una fecha y horario determinado.
+   - **Atributos**:
+     - `userId`: Identificador del cliente que realiza la reserva, representado como un objeto de valor `UserId`.
+     - `tableId`: Mesa reservada, representada como una referencia a la entidad `Table`.
+     - `bookingDate`: Fecha de la reserva.
+     - `bookingSlots`: Conjunto de intervalos de tiempo reservados, representados como una colección de entidades `BookingSlot`.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en las reservas.
+     - Gestiona la relación entre el cliente, la mesa y los slots reservados, asegurando consistencia y validación.
 
-`ConfiguracionSensor` (Value Object)
-- Propósito: Almacenar los parámetros de configuración del sensor.
-- Atributos:
-  - `frecuenciaLectura: int` - Intervalo en segundos entre lecturas.
-  - `umbralPeso: double` - Valor mínimo para detección de ocupación.
-  - `tiempoConfirmacion: int` - Tiempo mínimo para confirmar un cambio de estado.
+2. **Table**
+   - **Propósito**: Representa una mesa en una sede específica, incluyendo su disponibilidad y detalles.
+   - **Atributos**:
+     - `tableDetails`: Detalles de la mesa, como número de mesa y cantidad de asientos, representados como un objeto de valor `TableDetails`.
+     - `headquarterId`: Identificador de la sede a la que pertenece la mesa, representado como un objeto de valor `HeadquarterId`.
+     - `status`: Estado actual de la mesa (`AVAILABLE`, `RESERVED`, `OCCUPIED`), representado como un objeto de valor `TableStatus`.
+     - `availabilitySlots`: Conjunto de slots de disponibilidad generados para la mesa, representados como una colección de entidades `AvailabilitySlot`.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en las mesas.
+     - Gestiona la generación y actualización de slots de disponibilidad.
 
-`SensorActivado` (Domain Event)
-- Propósito: Evento que se dispara cuando un sensor es activado en el sistema.
-- Atributos:
-  - `sensorId: UUID` - Identificador del sensor activado.
-  - `mesaId: UUID` - Identificador de la mesa asociada.
-  - `timestamp: LocalDateTime` - Momento de la activación.
+#### **Entities**
 
-`CambioEstadoDetectado` (Domain Event)
-- Propósito: Evento que se dispara cuando un sensor detecta un cambio en la ocupación de una mesa.
-- Atributos:
-  - `sensorId: UUID` - Identificador del sensor que detectó el cambio.
-  - `mesaId: UUID` - Identificador de la mesa afectada.
-  - `estadoAnterior: EstadoSensor` - Estado previo al cambio.
-  - `estadoNuevo: EstadoSensor` - Estado detectado actualmente.
-  - `timestamp: LocalDateTime` - Momento en que se detectó el cambio.
+1. **AvailabilitySlot**
+   - **Propósito**: Representa un intervalo de tiempo disponible para una mesa en una fecha específica.
+   - **Atributos**:
+     - `dateOfSlot`: Fecha del slot.
+     - `timeInterval`: Intervalo de tiempo del slot, representado como un objeto de valor `TimeSlot`.
+     - `status`: Estado del slot (`AVAILABLE`, `RESERVED`), representado como un objeto de valor `ScheduleSlotStatus`.
+   - **Métodos**:
+     - `updateStatus(ScheduleSlotStatus status)`: Actualiza el estado del slot.
 
-#### 4.2.4.2. Application Layer
+2. **BookingSlot**
+   - **Propósito**: Representa un intervalo de tiempo reservado por un cliente.
+   - **Atributos**:
+     - `timeInterval`: Intervalo de tiempo reservado, representado como un objeto de valor `TimeSlot`.
 
-`MonitoreoOcupacionService` (Service)
-- Propósito: Orquestar la lógica de negocio relacionada con el monitoreo de ocupación.
-- Métodos:
-  - `actualizarEstadoSensor(UUID sensorId, boolean estado)` - Procesa una actualización de estado desde un sensor.
-  - `obtenerEstadoMesa(UUID mesaId)` - Recupera el estado actual de una mesa específica.
-  - `registrarNuevoSensor(UUID mesaId, ConfiguracionSensor configuracion)` - Añade un nuevo sensor al sistema.
-  - `calibrarSensor(UUID sensorId, double umbral)` - Ajusta la sensibilidad del sensor.
-  - `procesarLecturaCruda(UUID sensorId, double valorPeso)` - Interpreta los datos crudos del sensor.
+#### **Value Objects**
 
-`SensorCommandService` (Service)
-- Propósito: Manejar comandos específicos para los sensores.
-- Métodos:
-  - `activarSensor(UUID sensorId)` - Activa un sensor previamente registrado.
-  - `desactivarSensor(UUID sensorId)` - Pone un sensor en modo inactivo.
-  - `resetearSensor(UUID sensorId)` - Reinicia un sensor que presenta problemas.
-  - `actualizarConfiguracion(UUID sensorId, ConfiguracionSensor configuracion)` - Modifica parámetros del sensor.
+1. **UserId**
+   - **Propósito**: Representa el identificador único de un cliente.
+   - **Validaciones**:
+     - El identificador no puede ser negativo.
 
-`SensorQueryService` (Service)
-- Propósito: Manejar consultas relacionadas con los sensores.
-- Métodos:
-  - `obtenerHistorialLecturas(UUID sensorId, LocalDateTime inicio, LocalDateTime fin)` - Recupera lecturas históricas.
-  - `obtenerSensoresPorEstado(EstadoSensor estado)` - Lista sensores según su estado actual.
-  - `obtenerEstadisticasSensor(UUID sensorId)` - Genera métricas de funcionamiento del sensor.
+2. **HeadquarterId**
+   - **Propósito**: Representa el identificador único de una sede.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
 
-`CambioEstadoHandler` (Event Handler)
-- Propósito: Gestionar la reacción del sistema ante cambios de estado detectados.
-- Métodos:
-  - `on(CambioEstadoDetectado event)` - Reacciona a un evento de cambio de estado.
-  - `notificarTableManagement(UUID mesaId, boolean ocupada)` - Comunica el cambio al contexto de Table Management.
+3. **TableDetails**
+   - **Propósito**: Representa los detalles de una mesa, como su número y cantidad de asientos.
+   - **Validaciones**:
+     - El número de mesa no puede ser negativo.
+     - La cantidad de asientos debe ser mayor a cero.
 
-#### 4.2.4.3. Interface Layer
+4. **TableStatus**
+   - **Propósito**: Enumera los estados posibles de una mesa (`AVAILABLE`, `RESERVED`, `OCCUPIED`).
 
-`SensorController` (Controller)
-- Propósito: Exponer endpoints REST para interactuar con los sensores.
-- Métodos:
-  - `PUT /api/v1/sensores/{sensorId}/estado` - Actualiza el estado de un sensor específico.
-  - `GET /api/v1/sensores/mesa/{mesaId}` - Obtiene el estado del sensor asociado a una mesa.
-  - `POST /api/v1/sensores` - Registra un nuevo sensor en el sistema.
-  - `GET /api/v1/sensores/{sensorId}/historial` - Recupera el historial de lecturas de un sensor.
-  - `PUT /api/v1/sensores/{sensorId}/calibrar` - Ajusta la calibración del sensor.
-  - `GET /api/v1/sensores/estado/{estado}` - Lista sensores con un estado específico.
+5. **TimeSlot**
+   - **Propósito**: Representa un intervalo de tiempo con una hora de inicio y una hora de fin.
+   - **Validaciones**:
+     - La hora de inicio y la hora de fin no pueden ser nulas.
+     - La hora de inicio debe ser anterior a la hora de fin.
 
-`MqttGateway` (Gateway)
-- Propósito: Gestionar la comunicación vía MQTT con los dispositivos IoT físicos.
-- Métodos:
-  - `recibir(String topic, byte[] payload)` - Procesa mensajes recibidos de los sensores.
-  - `enviar(String topic, byte[] payload)` - Envía comandos o configuraciones a los sensores.
-  - `suscribir(String topic)` - Registra interés en un canal de comunicación específico.
+6. **ScheduleSlotStatus**
+   - **Propósito**: Enumera los estados posibles de un slot de disponibilidad (`AVAILABLE`, `RESERVED`).
 
-`EstadoSensorDto` (DTO)
-- Propósito: Transferir información del estado del sensor entre capas.
-- Atributos:
-  - `sensorId: UUID` - Identificador del sensor.
-  - `mesaId: UUID` - Identificador de la mesa asociada.
-  - `ocupada: boolean` - Estado de ocupación.
-  - `ultimaActualizacion: LocalDateTime` - Momento de la última actualización.
-  - `nivelBateria: int` - Nivel de batería del dispositivo (0-100%).
-  - `intensidadSenal: int` - Calidad de la conexión inalámbrica.
+7. **MaximumDuration**
+   - **Propósito**: Representa la duración máxima permitida para una reserva.
+   - **Validaciones**:
+     - La duración debe ser un número positivo.
+     - La duración no puede exceder las 5 horas.
 
-`SensorMapper` (Mapper)
-- Propósito: Transformar entre entidades de dominio y DTOs para la comunicación externa.
-- Métodos:
-  - `toDto(Sensor sensor)` - Convierte una entidad Sensor a DTO.
-  - `toEntity(EstadoSensorDto dto)` - Convierte un DTO a entidad Sensor.
+#### **Commands**
+
+1. **CreateBookingCommand**
+   - **Propósito**: Representa la solicitud para crear una nueva reserva.
+   - **Atributos**:
+     - `clientId`: Identificador del cliente.
+     - `tableId`: Identificador de la mesa.
+     - `bookingDate`: Fecha de la reserva.
+     - `slotIds`: Lista de identificadores de slots reservados.
+
+2. **CreateTableCommand**
+   - **Propósito**: Representa la solicitud para crear una nueva mesa.
+   - **Atributos**:
+     - `tableNumber`: Número de la mesa.
+     - `seats`: Cantidad de asientos.
+     - `headquartersId`: Identificador de la sede.
+
+3. **CreateTableScheduleCommand**
+   - **Propósito**: Representa la solicitud para generar los slots de disponibilidad de una mesa.
+   - **Atributos**:
+     - `tableId`: Identificador de la mesa.
+
+#### **Queries**
+
+1. **GetAllBookingsQuery**
+   - **Propósito**: Recupera todas las reservas registradas en el sistema.
+
+2. **GetAllTablesQuery**
+   - **Propósito**: Recupera todas las mesas registradas en el sistema.
+
+3. **GetBookingByIdQuery**
+   - **Propósito**: Recupera una reserva específica por su identificador.
+
+4. **GetTableByIdQuery**
+   - **Propósito**: Recupera una mesa específica por su identificador.
+
+5. **GetTableScheduleByIdAndDateQuery**
+   - **Propósito**: Recupera los slots de disponibilidad de una mesa para una fecha específica.
+
+#### **Events**
+
+1. **SingleTableAvailabilitySlotsGeneratedEvent**
+   - **Propósito**: Evento que se dispara cuando se generan los slots de disponibilidad para una mesa.
+   - **Atributos**:
+     - `tableId`: Identificador de la mesa.
+
+#### **Relaciones entre componentes**
+
+- El agregado `Booking` actúa como el núcleo del dominio, gestionando las relaciones con las entidades `BookingSlot` y `Table`.
+- El agregado `Table` gestiona la generación y actualización de los slots de disponibilidad (`AvailabilitySlot`).
+- Los objetos de valor encapsulan datos inmutables y validaciones específicas, asegurando consistencia en el dominio.
+- Los comandos y consultas permiten interactuar con el sistema de manera estructurada, facilitando la creación de reservas y la recuperación de información.
+- Los eventos aseguran que las operaciones críticas, como la generación de slots de disponibilidad, sean comunicadas de manera eficiente a otros componentes del sistema.
+
+Esta estructura asegura que la lógica de negocio relacionada con la gestión de reservas sea robusta, consistente y fácil de mantener, cumpliendo con los requisitos del sistema.
+
+#### 4.2.4.2. Interface Layer
+
+La **Interface Layer** del Booking Bounded Context expone los puntos de entrada al sistema a través de controladores REST. Esta capa permite la interacción con las entidades del dominio mediante solicitudes HTTP, facilitando la comunicación entre los clientes y el sistema. Además, incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+
+#### **Controllers**
+
+Los controladores son responsables de manejar las solicitudes HTTP y delegar la lógica de negocio a los servicios correspondientes. A continuación, se describen los principales controladores:
+
+1. **BookingController**
+   - **Propósito**: Gestiona las operaciones relacionadas con las reservas.
+   - **Endpoints**:
+     - `POST /api/v1/bookings`: Crea una nueva reserva.
+     - `GET /api/v1/bookings/{id}`: Obtiene los detalles de una reserva específica por su ID.
+     - `GET /api/v1/bookings`: Obtiene la lista de todas las reservas.
+   - **Dependencias**:
+     - `BookingCommandService`: Servicio encargado de manejar los comandos relacionados con las reservas.
+     - `BookingQueryService`: Servicio encargado de manejar las consultas relacionadas con las reservas.
+
+2. **TableController**
+   - **Propósito**: Gestiona las operaciones relacionadas con las mesas.
+   - **Endpoints**:
+     - `POST /api/v1/tables`: Crea una nueva mesa.
+     - `GET /api/v1/tables/{tableId}`: Obtiene los detalles de una mesa específica por su ID.
+     - `GET /api/v1/tables`: Obtiene la lista de todas las mesas.
+     - `GET /api/v1/tables/{tableId}/schedule`: Obtiene los slots de disponibilidad de una mesa para una fecha específica.
+   - **Dependencias**:
+     - `TableCommandService`: Servicio encargado de manejar los comandos relacionados con las mesas.
+     - `TableQueryService`: Servicio encargado de manejar las consultas relacionadas con las mesas.
+
+#### **Resources**
+
+Los recursos representan los datos que se exponen a través de la API REST. Estos recursos son utilizados para estructurar las respuestas de los controladores y asegurar una representación clara y consistente de los datos. A continuación, se describen los principales recursos:
+
+1. **AvailabilitySlotResource**
+   - **Propósito**: Representa un slot de disponibilidad de una mesa.
+   - **Atributos**:
+     - `id`: Identificador único del slot.
+     - `date`: Fecha del slot.
+     - `startTime`: Hora de inicio del slot.
+     - `endTime`: Hora de fin del slot.
+     - `status`: Estado del slot (`AVAILABLE`, `RESERVED`).
+
+2. **BookingResource**
+   - **Propósito**: Representa una reserva en el sistema.
+   - **Atributos**:
+     - `id`: Identificador único de la reserva.
+     - `clientId`: Identificador del cliente que realizó la reserva.
+     - `tableId`: Identificador de la mesa reservada.
+     - `bookingDate`: Fecha de la reserva.
+     - `bookingSlots`: Lista de slots reservados.
+
+3. **BookingSlotResource**
+   - **Propósito**: Representa un slot reservado por un cliente.
+   - **Atributos**:
+     - `startTime`: Hora de inicio del slot reservado.
+     - `endTime`: Hora de fin del slot reservado.
+
+4. **CreateBookingResource**
+   - **Propósito**: Representa los datos necesarios para crear una nueva reserva.
+   - **Atributos**:
+     - `clientId`: Identificador del cliente.
+     - `tableId`: Identificador de la mesa.
+     - `bookingDate`: Fecha de la reserva.
+     - `slotIds`: Lista de identificadores de slots reservados.
+
+5. **CreateTableResource**
+   - **Propósito**: Representa los datos necesarios para crear una nueva mesa.
+   - **Atributos**:
+     - `headquarterId`: Identificador de la sede a la que pertenece la mesa.
+     - `tableNumber`: Número de la mesa.
+     - `seats`: Cantidad de asientos.
+
+6. **TableResource**
+   - **Propósito**: Representa una mesa en el sistema.
+   - **Atributos**:
+     - `id`: Identificador único de la mesa.
+     - `headquarterId`: Identificador de la sede a la que pertenece la mesa.
+     - `tableNumber`: Número de la mesa.
+     - `seats`: Cantidad de asientos.
+     - `status`: Estado actual de la mesa (`AVAILABLE`, `RESERVED`, `OCCUPIED`).
+
+#### **Transformers**
+
+Los transformadores son responsables de convertir las entidades del dominio en recursos y viceversa. Esto asegura que los datos expuestos a través de la API REST sean consistentes y estén en el formato esperado. A continuación, se describen los principales transformadores:
+
+1. **AvailabilitySlotResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `AvailabilitySlot` en un recurso `AvailabilitySlotResource`.
+   - **Métodos principales**:
+     - `toResourceFromEntity(AvailabilitySlot entity)`: Transforma un slot de disponibilidad en un recurso.
+     - `toResourceListFromEntities(List<AvailabilitySlot> entities)`: Transforma una lista de slots de disponibilidad en una lista de recursos.
+
+2. **BookingResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Booking` en un recurso `BookingResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Booking booking)`: Transforma una reserva en un recurso.
+
+3. **CreateBookingCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateBookingResource` en un comando `CreateBookingCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateBookingResource resource)`: Transforma los datos de creación de una reserva en un comando.
+
+4. **CreateTableCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateTableResource` en un comando `CreateTableCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateTableResource resource)`: Transforma los datos de creación de una mesa en un comando.
+
+5. **TableResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Table` en un recurso `TableResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Table entity)`: Transforma una mesa en un recurso.
+
+#### **Relaciones entre componentes**
+
+- Los controladores (`BookingController`, `TableController`) utilizan los servicios de comandos y consultas para delegar la lógica de negocio.
+- Los transformadores convierten las entidades del dominio en recursos para las respuestas HTTP y viceversa para las solicitudes entrantes.
+- Los recursos estructuran los datos expuestos a los clientes, asegurando una representación clara y consistente.
+
+Esta estructura asegura que la **Interface Layer** sea modular, reutilizable y fácil de mantener, facilitando la interacción entre los clientes y el sistema.
+
+#### 4.2.4.3. Application Layer
+
+La **Application Layer** del Booking Bounded Context actúa como un intermediario entre la **Domain Layer** y las capas externas, como la **Interface Layer** y la **Infrastructure Layer**. Su propósito principal es coordinar las operaciones de negocio, manejar comandos y consultas, orquestar la lógica de aplicación y garantizar que las reglas del dominio se cumplan de manera consistente. Además, esta capa incluye manejadores de eventos y servicios externos (ACL) para interactuar con otros contextos delimitados.
+
+#### **Command Services**
+
+Los servicios de comandos son responsables de ejecutar operaciones que modifican el estado del sistema. A continuación, se describen los principales servicios de comandos:
+
+1. **BookingCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación de reservas.
+   - **Métodos principales**:
+     - `handle(CreateBookingCommand command)`: Crea una nueva reserva, validando la disponibilidad de los slots y asegurando que las reglas de negocio, como la duración máxima de la reserva, se cumplan.
+   - **Validaciones**:
+     - Verifica que el cliente exista utilizando el servicio externo `ExternalUserService`.
+     - Valida que los slots solicitados estén disponibles y sean consecutivos.
+     - Asegura que la duración total de la reserva no exceda las 2 horas.
+   - **Dependencias**:
+     - `BookingRepository`: Persistencia de reservas.
+     - `TableRepository`: Gestión de mesas y sus slots de disponibilidad.
+     - `ExternalUserService`: Verifica la existencia del cliente.
+
+2. **TableCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación de mesas y la generación de slots de disponibilidad.
+   - **Métodos principales**:
+     - `handle(CreateTableCommand command)`: Crea una nueva mesa en una sede específica, validando que la sede exista y que no haya duplicados.
+     - `handle(CreateTableScheduleCommand command)`: Genera los slots de disponibilidad para una mesa, basándose en los horarios y el intervalo de la sede.
+   - **Validaciones**:
+     - Verifica que la sede exista utilizando el servicio externo `ExternalHeadquarterService`.
+     - Asegura que no existan mesas duplicadas en la misma sede.
+   - **Dependencias**:
+     - `TableRepository`: Persistencia de mesas y sus slots de disponibilidad.
+     - `ExternalHeadquarterService`: Obtiene información de la sede, como horarios y intervalos.
+
+#### **Query Services**
+
+Los servicios de consultas son responsables de recuperar información del sistema sin modificar su estado. A continuación, se describen los principales servicios de consultas:
+
+1. **BookingQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con las reservas.
+   - **Métodos principales**:
+     - `handle(GetBookingByIdQuery query)`: Recupera una reserva específica por su ID.
+     - `handle(GetAllBookingsQuery query)`: Recupera todas las reservas registradas en el sistema.
+   - **Dependencias**:
+     - `BookingRepository`: Persistencia de reservas.
+
+2. **TableQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con las mesas y sus slots de disponibilidad.
+   - **Métodos principales**:
+     - `handle(GetTableByIdQuery query)`: Recupera una mesa específica por su ID.
+     - `handle(GetAllTablesQuery query)`: Recupera todas las mesas registradas en el sistema.
+     - `handle(GetTableScheduleByIdAndDateQuery query)`: Recupera los slots de disponibilidad de una mesa para una fecha específica.
+   - **Dependencias**:
+     - `TableRepository`: Persistencia de mesas y sus slots de disponibilidad.
+
+
+#### **Event Handlers**
+
+Los manejadores de eventos son responsables de reaccionar a eventos específicos del sistema. A continuación, se describe el principal manejador de eventos:
+
+1. **SingleTableAvailabilitySlotsGeneratedEventHandler**
+   - **Propósito**: Maneja el evento `SingleTableAvailabilitySlotsGeneratedEvent`, que se dispara cuando se generan los slots de disponibilidad para una mesa.
+   - **Método principal**:
+     - `on(SingleTableAvailabilitySlotsGeneratedEvent event)`: Genera los slots de disponibilidad para una mesa específica.
+   - **Dependencias**:
+     - `TableCommandService`: Servicio encargado de manejar los comandos relacionados con las mesas.
+
+#### **Outbound Services (ACL)**
+
+Los servicios externos proporcionan funcionalidades auxiliares que no forman parte del dominio principal. A continuación, se describen los principales servicios externos:
+
+1. **ExternalHeadquarterService**
+   - **Propósito**: Interactúa con el Branching Bounded Context para obtener información de las sedes.
+   - **Métodos principales**:
+     - `getHeadquarterOpeningTime(Long headquarterId)`: Obtiene la hora de apertura de una sede.
+     - `getHeadquarterClosingTime(Long headquarterId)`: Obtiene la hora de cierre de una sede.
+     - `getHeadquarterIntervalMinutes(Long headquarterId)`: Obtiene el intervalo de servicio en minutos de una sede.
+     - `existsHeadquarter(Long headquarterId)`: Verifica si una sede existe.
+
+2. **ExternalUserService**
+   - **Propósito**: Interactúa con el IAM Bounded Context para verificar la existencia de usuarios.
+   - **Método principal**:
+     - `existUserById(Long userId)`: Verifica si un usuario existe en el sistema.
+
+#### **Relaciones entre componentes**
+
+- Los **Command Services** interactúan con los repositorios para modificar el estado del sistema y con los servicios externos (ACL) para validar información de otros contextos.
+- Los **Query Services** interactúan únicamente con los repositorios para recuperar información del sistema.
+- Los **Event Handlers** reaccionan a eventos del dominio para ejecutar lógica adicional, como la generación de slots de disponibilidad.
+- Los **Outbound Services** (ACL) permiten la integración con otros contextos delimitados, como el Branching Bounded Context y el IAM Bounded Context.
+
+La **Application Layer** del Booking Bounded Context asegura que las operaciones relacionadas con la gestión de reservas y mesas sean robustas, consistentes y fáciles de mantener. Al coordinar la lógica de negocio, manejar eventos y facilitar la integración con otros contextos, esta capa garantiza que las reglas del dominio se cumplan de manera eficiente y que el sistema sea escalable y extensible.
 
 #### 4.2.4.4. Infrastructure Layer
 
-`SensorRepository` (Repository Interface)
-- Propósito: Definir el contrato para la persistencia de sensores.
-- Métodos:
-  - `save(Sensor sensor)` - Guarda o actualiza un sensor.
-  - `findByMesaId(UUID mesaId)` - Recupera un sensor por la mesa asociada.
-  - `findById(UUID sensorId)` - Recupera un sensor por su identificador.
-  - `findByEstado(EstadoSensor estado)` - Lista sensores según su estado.
-  - `deleteById(UUID sensorId)` - Elimina un sensor del sistema.
+La **Infrastructure Layer** del Booking Bounded Context proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema relacionadas con la gestión de reservas y mesas. Esta capa incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos. Su objetivo principal es garantizar que las operaciones de almacenamiento y recuperación de información sean eficientes, consistentes y seguras.
 
-`LecturaRepository` (Repository Interface)
-- Propósito: Gestionar la persistencia de las lecturas individuales de los sensores.
-- Métodos:
-  - `saveAll(List<LecturaSensor> lecturas)` - Guarda múltiples lecturas en lote.
-  - `findBySensorIdBetween(UUID sensorId, LocalDateTime inicio, LocalDateTime fin)` - Recupera lecturas de un período.
-  - `deleteOlderThan(LocalDateTime threshold)` - Elimina lecturas antiguas para mantenimiento.
+#### **Persistencia (JPA Repositories)**
 
-`MqttSensorAdapter` (Adapter)
-- Propósito: Implementar la comunicación específica con los sensores mediante MQTT.
-- Métodos:
-  - `configurarConexion(String brokerUrl, String clientId)` - Establece parámetros de conexión.
-  - `procesarMensajeEntrada(String topic, MqttMessage message)` - Maneja mensajes entrantes.
-  - `enviarComandoASensor(UUID sensorId, String comando, Object payload)` - Envía instrucciones a un sensor.
+1. **BookingRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de reservas.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre las entidades `Booking`.
+     - Facilita la persistencia y recuperación de reservas, asegurando que las operaciones relacionadas con las reservas sean eficientes y confiables.
 
-`SensorDataCache` (Cache)
-- Propósito: Almacenar temporalmente datos de sensores para acceso rápido y reducir consultas a la base de datos.
-- Métodos:
-  - `getEstado(UUID mesaId)` - Recupera rápidamente el estado actual de una mesa.
-  - `actualizarEstado(UUID mesaId, boolean ocupada)` - Actualiza el caché con nueva información.
-  - `invalidarEntrada(UUID mesaId)` - Marca una entrada como inválida para forzar recarga.
+2. **TableRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de mesas y sus slots de disponibilidad.
+   - **Métodos principales**:
+     - `existsByHeadquarterIdAndTableDetails_TableNumber(HeadquarterId headquarterId, Integer tableDetails_tableNumber)`: Verifica si existe una mesa con un número específico en una sede.
+     - `findAvailabilitySlotsByTableIdAndDate(Long tableId, LocalDate date)`: Recupera los slots de disponibilidad de una mesa para una fecha específica.
+     - `findByIdWithSlotsForUpdate(Long id)`: Recupera una mesa junto con sus slots de disponibilidad utilizando un bloqueo pesimista para evitar modificaciones concurrentes.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Table`.
+     - Incluye consultas personalizadas para manejar la relación entre mesas y sus slots de disponibilidad.
+     - Utiliza un bloqueo pesimista (`PESSIMISTIC_WRITE`) para garantizar la consistencia de los datos durante las operaciones críticas, como la creación de reservas.
+
+#### **Relaciones entre componentes**
+
+- **Persistencia**: Los repositorios `BookingRepository` y `TableRepository` proporcionan acceso a los datos almacenados en la base de datos, permitiendo a las capas superiores (como la **Application Layer**) interactuar con las entidades del dominio.
+- **Validación**: Los métodos personalizados en `TableRepository` son utilizados para validar la existencia de mesas y recuperar información específica, como los slots de disponibilidad, asegurando la consistencia de los datos durante las operaciones de negocio.
+
+La **Infrastructure Layer** del Booking Bounded Context asegura que las operaciones relacionadas con la persistencia de datos sean robustas y confiables. Al proporcionar repositorios especializados para las reservas y mesas, esta capa facilita la integración con la base de datos y garantiza que las reglas de negocio, como la validación de slots de disponibilidad y la unicidad de mesas, se cumplan de manera eficiente. Esta estructura modular y reutilizable permite que el sistema sea escalable y fácil de mantener.
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-<img src="./images/c4-model/bc-component-diagram/IOT-Monitoring-BC-Component-Diagram.png" alt="IoT Monitoring BC Component Diagram"/>
+En esta sección se presenta el diagrama de componentes del **Booking Bounded Context**, el cual detalla los principales módulos y sus interacciones dentro del contexto delimitado. Este diagrama sigue el enfoque del C4 Model para representar los componentes clave, como servicios de aplicación, controladores, repositorios y servicios externos, junto con sus relaciones.
 
-El diagrama muestra la arquitectura de componentes del IoT Monitoring Bounded Context, ilustrando:
+El propósito de este diagrama es proporcionar una visión clara y estructurada de cómo se organizan los componentes dentro del contexto, facilitando la comprensión de su arquitectura y permitiendo identificar puntos de integración y responsabilidades.
 
-1. **Interface Layer**: Incluye SensorController que expone endpoints REST y MqttGateway que se comunica con los dispositivos físicos.
+<img src="./images/c4-model/bc-component-diagram/IOT-Booking-BC-Component-Diagram.png" alt="Booking BC Component Diagram"/><br>
 
-2. **Application Layer**: Contiene los servicios MonitoreoOcupacionService, SensorCommandService y SensorQueryService que implementan la lógica de negocio.
+El **Booking Bounded Context** está compuesto por los siguientes módulos principales:
 
-3. **Domain Layer**: Define las entidades principales como Sensor, LecturaSensor y los eventos de dominio.
+1. **Application Layer**:
+   - Coordina las operaciones de negocio relacionadas con la gestión de reservas y mesas.
+   - Incluye servicios de comandos y consultas que interactúan con la **Domain Layer** y la **Infrastructure Layer**.
+   - Maneja eventos relacionados con la creación de reservas y la generación de slots de disponibilidad.
 
-4. **Infrastructure Layer**: Incluye los repositorios para persistencia y adaptadores para la comunicación IoT.
+2. **Interface Layer**:
+   - Expone los puntos de entrada al sistema a través de controladores REST.
+   - Incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
 
-5. **Integración**: Muestra la comunicación con el Table Management Bounded Context mediante eventos.
+3. **Domain Layer**:
+   - Encapsula la lógica de negocio relacionada con la gestión de reservas y mesas.
+   - Define los agregados, entidades y objetos de valor que representan los conceptos clave del dominio.
+
+4. **Infrastructure Layer**:
+   - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
+   - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos.
+
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 
+En este apartado se presentan los diagramas que ofrecen un mayor nivel de detalle sobre la implementación de los componentes del **Booking Bounded Context**. Estos diagramas están diseñados para ilustrar cómo se estructuran las clases, interfaces y relaciones dentro de las capas del contexto, proporcionando una visión técnica que facilita el desarrollo, mantenimiento y evolución del sistema.
+
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img src="./images/c4-model/bc-component-diagram/iot_monitoring_domain_class_diagram.png" alt="IoT Monitoring Domain Layer Class Diagram"/>
+El diagrama de clases correspondiente a la **Domain Layer** del **Booking Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio. También se destacan las relaciones entre estos elementos, como asociaciones, composiciones y dependencias.
 
-El diagrama de clases de dominio ilustra la estructura del IoT Monitoring Bounded Context, mostrando:
+<img src="./images/c4-model/bc-component-diagram/booking_domain_class_diagram.png" alt="Booking BC Domain Layer Class Diagram"/><br>
 
-- **Entidad Sensor**: Componente central que representa el dispositivo físico.
-- **Value Objects**: ConfiguracionSensor y LecturaSensor encapsulan conceptos inmutables.
-- **Enumeraciones**: EstadoSensor define los posibles estados de operación.
-- **Eventos de Dominio**: CambioEstadoDetectado y SensorActivado representan sucesos importantes.
-- **Relaciones**: Muestran cómo se conectan estos componentes para formar el modelo de dominio completo.
+**Elementos principales del diagrama:**
 
-##### 4.2.4.6.2. Bounded Context Database Design Diagram
+1. **Aggregates**:
+   - `Booking`: Agregado principal que encapsula la lógica de negocio relacionada con las reservas. Incluye atributos como `userId`, `tableId`, `bookingDate` y `bookingSlots`.
+   - `Table`: Agregado que representa una mesa en una sede específica, incluyendo su disponibilidad y detalles.
 
-<img src="./images/c4-model/bc-component-diagram/iot_monitoring_bd.jpg" alt="IoT Monitoring Database Design"/>
+2. **Entities**:
+   - `AvailabilitySlot`: Representa un intervalo de tiempo disponible para una mesa en una fecha específica.
+   - `BookingSlot`: Representa un intervalo de tiempo reservado por un cliente.
 
-El diseño de la base de datos para el IoT Monitoring Bounded Context incluye:
+3. **Value Objects**:
+   - `UserId`: Representa el identificador único de un cliente.
+   - `HeadquarterId`: Representa el identificador único de una sede.
+   - `TableDetails`: Representa los detalles de una mesa, como su número y cantidad de asientos.
+   - `TimeSlot`: Representa un intervalo de tiempo con una hora de inicio y una hora de fin.
+   - `TableStatus`: Enumera los estados posibles de una mesa (`AVAILABLE`, `RESERVED`, `OCCUPIED`).
+   - `ScheduleSlotStatus`: Enumera los estados posibles de un slot de disponibilidad (`AVAILABLE`, `RESERVED`).
 
-1. **Tabla Sensores**: Almacena información de los sensores físicos.
-   - `sensor_id` (PK): Identificador único del sensor.
-   - `mesa_id`: Relación con la mesa asociada.
-   - `estado`: Estado actual del sensor (ocupado/libre/mantenimiento).
-   - `ultima_lectura`: Timestamp de la última actualización.
-   - `umbral_peso`: Valor de calibración.
-   - `configuracion_id`: Relación con la configuración aplicada.
+**Relaciones destacadas:**
+- El agregado `Booking` gestiona las relaciones con las entidades `BookingSlot` y `Table`.
+- El agregado `Table` gestiona la generación y actualización de los slots de disponibilidad (`AvailabilitySlot`).
+- Los objetos de valor encapsulan datos inmutables y validaciones específicas, asegurando consistencia en el dominio.
 
-2. **Tabla Lecturas**: Registra el historial de mediciones de cada sensor.
-   - `lectura_id` (PK): Identificador único de la lectura.
-   - `sensor_id` (FK): Sensor que generó la lectura.
-   - `valor_peso`: Medición numérica obtenida.
-   - `timestamp`: Momento exacto de la lectura.
-   - `ocupado`: Interpretación booleana del valor.
 
-3. **Tabla ConfiguracionSensores**: Almacena parámetros de operación de los sensores.
-   - `configuracion_id` (PK): Identificador único de la configuración.
-   - `frecuencia_lectura`: Intervalo entre lecturas en segundos.
-   - `umbral_peso`: Nivel mínimo para considerar ocupación.
-   - `tiempo_confirmacion`: Tiempo requerido para confirmar cambios.
+##### 4.2.4.6.2. Bounded Context Database Design Diagram.
 
-4. **Tabla EventosSensor**: Registra eventos significativos para análisis y auditoría.
-   - `evento_id` (PK): Identificador único del evento.
-   - `sensor_id` (FK): Sensor relacionado.
-   - `tipo_evento`: Categoría del evento (activación, cambio estado, error).
-   - `descripcion`: Detalles adicionales del evento.
-   - `timestamp`: Momento exacto del evento.
+El diseño de la base de datos para el **Booking Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional. 
 
-El diseño implementa índices en los campos `sensor_id`, `mesa_id` y `timestamp` para optimizar las consultas frecuentes sobre el estado actual e histórico de cada sensor.
+<img src="./images/c4-model/bc-component-diagram/booking_bd.png" alt="Booking BC Data Base Diagram"/><br>
+
+**Este diseño incluye las siguientes tablas principales:**
+
+1. **Bookings**:
+   - Representa las reservas realizadas por los clientes.
+   - Atributos principales:
+     - `id`: Identificador único de la reserva.
+     - `user_id`: Identificador del cliente que realizó la reserva.
+     - `table_id`: Identificador de la mesa reservada.
+     - `booking_date`: Fecha de la reserva.
+
+2. **Tables**:
+   - Representa las mesas disponibles en las sedes.
+   - Atributos principales:
+     - `id`: Identificador único de la mesa.
+     - `headquarter_id`: Identificador de la sede a la que pertenece la mesa.
+     - `table_number`: Número de la mesa.
+     - `seats`: Cantidad de asientos.
+     - `status`: Estado actual de la mesa.
+
+3. **AvailabilitySlots**:
+   - Representa los slots de disponibilidad de las mesas.
+   - Atributos principales:
+     - `id`: Identificador único del slot.
+     - `table_id`: Identificador de la mesa asociada.
+     - `date_of_slot`: Fecha del slot.
+     - `start_time`: Hora de inicio del slot.
+     - `end_time`: Hora de fin del slot.
+     - `status`: Estado del slot (`AVAILABLE`, `RESERVED`).
+
+4. **BookingSlots**:
+   - Representa los slots reservados por los clientes.
+   - Atributos principales:
+     - `id`: Identificador único del slot reservado.
+     - `booking_id`: Identificador de la reserva asociada.
+     - `start_time`: Hora de inicio del slot reservado.
+     - `end_time`: Hora de fin del slot reservado.
+Voy a completar el análisis táctico de Domain-Driven Design para los bounded contexts faltantes: Table Management, Menu Management y IoT Monitoring. Desarrollaré cada sección siguiendo la estructura que ya tiene tu informe.
+
+
+El **Table Management Bounded Context** es responsable de gestionar la información y el estado de las mesas en las cafeterías. Este contexto se encarga de registrar, actualizar y consultar el estado de las mesas, así como su capacidad, ubicación dentro de la sede y otros atributos relevantes. Es el núcleo central que permite la visualización en tiempo real del estado de ocupación de las mesas para los usuarios.
+
+### 4.2.5 Bounded Context: Menu Management Bounded Context
+
+El **Menu Management Bounded Context** es responsable de gestionar la información de los menús disponibles en las cafeterías. Este contexto asegura que los productos, categorías y precios puedan ser registrados, actualizados y consultados de manera eficiente, permitiendo a los comensales visualizar el menú digital antes de acudir al establecimiento. Este contexto es clave para proporcionar una experiencia completa a los usuarios de la plataforma Tavolo.
+
+#### 4.2.5.1. Domain Layer
+
+La **Domain Layer** del Menu Management Bounded Context encapsula la lógica de negocio relacionada con la gestión de menús. En esta capa, se definen los elementos principales del dominio, como agregados, entidades y objetos de valor, que representan los conceptos clave del sistema.
+
+##### **Aggregates**
+1. **Menu**
+   - **Propósito**: El agregado principal es el menú (`Menu`), que encapsula la lógica de negocio relacionada con la gestión de productos disponibles en una sede específica.
+   - **Atributos**:
+     - `headquarterId`: Identificador de la sede a la que pertenece el menú, representado como un objeto de valor `HeadquarterId`.
+     - `name`: Nombre del menú, representado como un objeto de valor `MenuName`.
+     - `description`: Descripción del menú, representada como un objeto de valor `MenuDescription`.
+     - `categories`: Conjunto de categorías que componen el menú, representadas como una colección de entidades `Category`.
+   - **Métodos**:
+     - `addCategory(Category category)`: Agrega una nueva categoría al menú.
+     - `removeCategory(CategoryId categoryId)`: Elimina una categoría del menú.
+     - `updateName(MenuName name)`: Actualiza el nombre del menú.
+     - `updateDescription(MenuDescription description)`: Actualiza la descripción del menú.
+   - **Características**:
+     - Extiende `AuditableAbstractAggregateRoot`, lo que permite auditar cambios en los menús.
+     - Gestiona la relación entre la sede y las categorías de productos, asegurando consistencia y validación.
+
+##### **Entities**
+1. **Category**
+   - **Propósito**: La entidad `Category` representa una categoría de productos dentro de un menú.
+   - **Atributos**:
+     - `id`: Identificador único de la categoría, representado como un objeto de valor `CategoryId`.
+     - `name`: Nombre de la categoría, representado como un objeto de valor `CategoryName`.
+     - `description`: Descripción de la categoría, representada como un objeto de valor `CategoryDescription`.
+     - `products`: Conjunto de productos que pertenecen a la categoría, representados como una colección de entidades `Product`.
+   - **Métodos**:
+     - `addProduct(Product product)`: Agrega un nuevo producto a la categoría.
+     - `removeProduct(ProductId productId)`: Elimina un producto de la categoría.
+     - `updateName(CategoryName name)`: Actualiza el nombre de la categoría.
+     - `updateDescription(CategoryDescription description)`: Actualiza la descripción de la categoría.
+
+2. **Product**
+   - **Propósito**: La entidad `Product` representa un producto dentro de una categoría del menú.
+   - **Atributos**:
+     - `id`: Identificador único del producto, representado como un objeto de valor `ProductId`.
+     - `name`: Nombre del producto, representado como un objeto de valor `ProductName`.
+     - `description`: Descripción del producto, representada como un objeto de valor `ProductDescription`.
+     - `price`: Precio del producto, representado como un objeto de valor `Money`.
+     - `imageUrl`: URL de la imagen del producto, representada como un objeto de valor `ImageUrl`.
+     - `availability`: Disponibilidad del producto, representada como un objeto de valor `Availability`.
+   - **Métodos**:
+     - `updateName(ProductName name)`: Actualiza el nombre del producto.
+     - `updateDescription(ProductDescription description)`: Actualiza la descripción del producto.
+     - `updatePrice(Money price)`: Actualiza el precio del producto.
+     - `updateImageUrl(ImageUrl imageUrl)`: Actualiza la URL de la imagen del producto.
+     - `updateAvailability(Availability availability)`: Actualiza la disponibilidad del producto.
+
+##### **Value Objects**
+1. **HeadquarterId**
+   - **Propósito**: Representa el identificador único de una sede.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
+
+2. **MenuName**
+   - **Propósito**: Representa el nombre de un menú.
+   - **Validaciones**:
+     - El nombre no puede ser nulo ni vacío.
+     - El nombre no puede exceder los 100 caracteres.
+
+3. **MenuDescription**
+   - **Propósito**: Representa la descripción de un menú.
+   - **Validaciones**:
+     - La descripción no puede exceder los 500 caracteres.
+
+4. **CategoryId**
+   - **Propósito**: Representa el identificador único de una categoría.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
+
+5. **CategoryName**
+   - **Propósito**: Representa el nombre de una categoría.
+   - **Validaciones**:
+     - El nombre no puede ser nulo ni vacío.
+     - El nombre no puede exceder los 50 caracteres.
+
+6. **CategoryDescription**
+   - **Propósito**: Representa la descripción de una categoría.
+   - **Validaciones**:
+     - La descripción no puede exceder los 200 caracteres.
+
+7. **ProductId**
+   - **Propósito**: Representa el identificador único de un producto.
+   - **Validaciones**:
+     - El identificador no puede ser nulo ni negativo.
+
+8. **ProductName**
+   - **Propósito**: Representa el nombre de un producto.
+   - **Validaciones**:
+     - El nombre no puede ser nulo ni vacío.
+     - El nombre no puede exceder los 100 caracteres.
+
+9. **ProductDescription**
+   - **Propósito**: Representa la descripción de un producto.
+   - **Validaciones**:
+     - La descripción no puede exceder los 500 caracteres.
+
+10. **Money**
+    - **Propósito**: Representa un importe monetario con una divisa.
+    - **Atributos**:
+      - `amount`: Importe.
+      - `currency`: Divisa.
+    - **Validaciones**:
+      - El importe no puede ser negativo.
+      - La divisa debe ser válida según las divisas soportadas.
+
+11. **ImageUrl**
+    - **Propósito**: Representa la URL de una imagen.
+    - **Validaciones**:
+      - La URL debe ser válida.
+
+12. **Availability**
+    - **Propósito**: Enumera los estados posibles de disponibilidad de un producto.
+    - **Valores**:
+      - `AVAILABLE`: El producto está disponible para ser ordenado.
+      - `SOLD_OUT`: El producto está agotado temporalmente.
+      - `DISCONTINUED`: El producto ha sido descontinuado.
+
+#### **Commands**
+1. **CreateMenuCommand**
+   - **Propósito**: Comando para crear un nuevo menú para una sede específica.
+   - **Atributos**:
+     - `headquarterId`: ID de la sede.
+     - `name`: Nombre del menú.
+     - `description`: Descripción del menú.
+
+2. **AddCategoryCommand**
+   - **Propósito**: Comando para agregar una nueva categoría a un menú existente.
+   - **Atributos**:
+     - `menuId`: ID del menú.
+     - `name`: Nombre de la categoría.
+     - `description`: Descripción de la categoría.
+
+3. **AddProductCommand**
+   - **Propósito**: Comando para agregar un nuevo producto a una categoría existente.
+   - **Atributos**:
+     - `categoryId`: ID de la categoría.
+     - `name`: Nombre del producto.
+     - `description`: Descripción del producto.
+     - `price`: Precio del producto.
+     - `imageUrl`: URL de la imagen del producto.
+     - `availability`: Disponibilidad inicial del producto.
+
+#### **Queries**
+1. **GetMenuByIdQuery**
+   - **Propósito**: Recupera un menú específico por su ID.
+   - **Atributos**:
+     - `menuId`: ID del menú a consultar.
+
+2. **GetMenuByHeadquarterQuery**
+   - **Propósito**: Recupera el menú asociado a una sede específica.
+   - **Atributos**:
+     - `headquarterId`: ID de la sede a consultar.
+
+3. **GetCategoryByIdQuery**
+   - **Propósito**: Recupera una categoría específica por su ID.
+   - **Atributos**:
+     - `categoryId`: ID de la categoría a consultar.
+
+4. **GetProductByIdQuery**
+   - **Propósito**: Recupera un producto específico por su ID.
+   - **Atributos**:
+     - `productId`: ID del producto a consultar.
+
+#### **Events**
+1. **MenuCreatedEvent**
+   - **Propósito**: Evento que se dispara cuando se crea un nuevo menú.
+   - **Atributos**:
+     - `menuId`: ID del menú creado.
+     - `headquarterId`: ID de la sede asociada.
+
+2. **CategoryAddedEvent**
+   - **Propósito**: Evento que se dispara cuando se agrega una nueva categoría a un menú.
+   - **Atributos**:
+     - `menuId`: ID del menú.
+     - `categoryId`: ID de la categoría agregada.
+
+3. **ProductAddedEvent**
+   - **Propósito**: Evento que se dispara cuando se agrega un nuevo producto a una categoría.
+   - **Atributos**:
+     - `categoryId`: ID de la categoría.
+     - `productId`: ID del producto agregado.
+
+#### **Relaciones entre componentes**
+- El agregado `Menu` actúa como el núcleo del dominio, gestionando las relaciones con las entidades `Category` y, a través de ellas, con las entidades `Product`.
+- Las entidades `Category` y `Product` tienen sus propias identidades y ciclos de vida dentro del contexto.
+- Los objetos de valor encapsulan datos inmutables y validaciones específicas, asegurando consistencia en el dominio.
+- Los comandos, consultas y eventos permiten interactuar con el sistema de manera estructurada, facilitando la creación y gestión de menús, categorías y productos.
+
+#### 4.2.5.2. Interface Layer
+
+La **Interface Layer** del Menu Management Bounded Context expone los puntos de entrada al sistema a través de controladores REST. Esta capa permite la interacción con las entidades del dominio mediante solicitudes HTTP, facilitando la comunicación entre los clientes y el sistema. Además, incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+
+#### **Access Control Layer (ACL)**
+
+1. **MenuManagementContextFacade**
+   - **Propósito**: Proporciona una interfaz simplificada para interactuar con el dominio del Menu Management Bounded Context desde otros contextos. Permite consultar información sobre menús, categorías y productos.
+   - **Métodos principales**:
+     - `getMenuByHeadquarter(Long headquarterId)`: Obtiene el menú asociado a una sede específica.
+     - `existsMenu(Long menuId)`: Verifica si un menú existe en el sistema.
+   - **Dependencias**:
+     - `MenuQueryService`: Servicio encargado de manejar las consultas relacionadas con los menús.
+
+#### **Controllers**
+
+Los controladores son responsables de manejar las solicitudes HTTP y delegar la lógica de negocio a los servicios correspondientes. A continuación, se describen los principales controladores:
+
+1. **MenuController**
+   - **Propósito**: Gestiona las operaciones relacionadas con los menús.
+   - **Endpoints**:
+     - `POST /api/v1/menus`: Crea un nuevo menú.
+     - `GET /api/v1/menus/{menuId}`: Obtiene los detalles de un menú específico por su ID.
+     - `GET /api/v1/headquarters/{headquarterId}/menu`: Obtiene el menú asociado a una sede específica.
+   - **Dependencias**:
+     - `MenuCommandService`: Servicio encargado de manejar los comandos relacionados con los menús.
+     - `MenuQueryService`: Servicio encargado de manejar las consultas relacionadas con los menús.
+
+2. **CategoryController**
+   - **Propósito**: Gestiona las operaciones relacionadas con las categorías de los menús.
+   - **Endpoints**:
+     - `POST /api/v1/menus/{menuId}/categories`: Agrega una nueva categoría a un menú existente.
+     - `GET /api/v1/categories/{categoryId}`: Obtiene los detalles de una categoría específica por su ID.
+   - **Dependencias**:
+     - `CategoryCommandService`: Servicio encargado de manejar los comandos relacionados con las categorías.
+     - `CategoryQueryService`: Servicio encargado de manejar las consultas relacionadas con las categorías.
+
+3. **ProductController**
+   - **Propósito**: Gestiona las operaciones relacionadas con los productos de las categorías.
+   - **Endpoints**:
+     - `POST /api/v1/categories/{categoryId}/products`: Agrega un nuevo producto a una categoría existente.
+     - `GET /api/v1/products/{productId}`: Obtiene los detalles de un producto específico por su ID.
+     - `PUT /api/v1/products/{productId}/availability`: Actualiza la disponibilidad de un producto.
+   - **Dependencias**:
+     - `ProductCommandService`: Servicio encargado de manejar los comandos relacionados con los productos.
+     - `ProductQueryService`: Servicio encargado de manejar las consultas relacionadas con los productos.
+
+#### **Resources**
+
+Los recursos representan los datos que se exponen a través de la API REST. Estos recursos son utilizados para estructurar las respuestas de los controladores y asegurar una representación clara y consistente de los datos. A continuación, se describen los principales recursos:
+
+1. **CreateMenuResource**
+   - **Propósito**: Representa los datos necesarios para crear un nuevo menú.
+   - **Atributos**:
+     - `headquarterId`: ID de la sede asociada al menú.
+     - `name`: Nombre del menú.
+     - `description`: Descripción del menú.
+
+2. **MenuResource**
+   - **Propósito**: Representa un menú en el sistema, incluyendo sus categorías y productos.
+   - **Atributos**:
+     - `id`: ID único del menú.
+     - `headquarterId`: ID de la sede asociada.
+     - `name`: Nombre del menú.
+     - `description`: Descripción del menú.
+     - `categories`: Lista de categorías del menú.
+
+3. **CreateCategoryResource**
+   - **Propósito**: Representa los datos necesarios para crear una nueva categoría.
+   - **Atributos**:
+     - `name`: Nombre de la categoría.
+     - `description`: Descripción de la categoría.
+
+4. **CategoryResource**
+   - **Propósito**: Representa una categoría en el sistema, incluyendo sus productos.
+   - **Atributos**:
+     - `id`: ID único de la categoría.
+     - `name`: Nombre de la categoría.
+     - `description`: Descripción de la categoría.
+     - `products`: Lista de productos de la categoría.
+
+5. **CreateProductResource**
+   - **Propósito**: Representa los datos necesarios para crear un nuevo producto.
+   - **Atributos**:
+     - `name`: Nombre del producto.
+     - `description`: Descripción del producto.
+     - `price`: Precio del producto.
+     - `currency`: Moneda del precio.
+     - `imageUrl`: URL de la imagen del producto.
+     - `availability`: Disponibilidad inicial del producto.
+
+6. **ProductResource**
+   - **Propósito**: Representa un producto en el sistema.
+   - **Atributos**:
+     - `id`: ID único del producto.
+     - `name`: Nombre del producto.
+     - `description`: Descripción del producto.
+     - `price`: Precio del producto.
+     - `currency`: Moneda del precio.
+     - `imageUrl`: URL de la imagen del producto.
+     - `availability`: Disponibilidad actual del producto.
+
+#### **Transformers**
+
+Los transformadores son responsables de convertir las entidades del dominio en recursos y viceversa. Esto asegura que los datos expuestos a través de la API REST sean consistentes y estén en el formato esperado. A continuación, se describen los principales transformadores:
+
+1. **CreateMenuCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateMenuResource` en un comando `CreateMenuCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateMenuResource resource)`: Transforma los datos de creación de un menú en un comando.
+
+2. **MenuResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Menu` en un recurso `MenuResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Menu entity)`: Transforma un menú del dominio en un recurso.
+
+3. **CreateCategoryCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateCategoryResource` en un comando `AddCategoryCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateCategoryResource resource, Long menuId)`: Transforma los datos de creación de una categoría en un comando.
+
+4. **CategoryResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Category` en un recurso `CategoryResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Category entity)`: Transforma una categoría del dominio en un recurso.
+
+5. **CreateProductCommandFromResourceAssembler**
+   - **Propósito**: Convierte un recurso `CreateProductResource` en un comando `AddProductCommand`.
+   - **Método principal**:
+     - `toCommandFromResource(CreateProductResource resource, Long categoryId)`: Transforma los datos de creación de un producto en un comando.
+
+6. **ProductResourceFromEntityAssembler**
+   - **Propósito**: Convierte una entidad `Product` en un recurso `ProductResource`.
+   - **Método principal**:
+     - `toResourceFromEntity(Product entity)`: Transforma un producto del dominio en un recurso.
+
+#### 4.2.5.3. Application Layer
+
+La **Application Layer** del Menu Management Bounded Context actúa como un intermediario entre la **Domain Layer** y las capas externas, como la **Interface Layer** y la **Infrastructure Layer**. Su propósito principal es coordinar las operaciones de negocio, manejar comandos y consultas, y orquestar la lógica de aplicación sin exponer directamente los detalles del dominio.
+
+#### **Command Services**
+
+Los servicios de comandos son responsables de ejecutar operaciones que modifican el estado del sistema. A continuación, se describen los principales servicios de comandos:
+
+1. **MenuCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación y modificación de menús.
+   - **Métodos principales**:
+     - `handle(CreateMenuCommand command)`: Crea un nuevo menú para una sede específica.
+   - **Validaciones**:
+     - Verifica que la sede exista utilizando el servicio externo `ExternalHeadquarterService`.
+     - Asegura que no exista ya un menú para la sede especificada.
+   - **Dependencias**:
+     - `MenuRepository`: Persistencia de menús.
+     - `ExternalHeadquarterService`: Verifica la existencia de la sede.
+
+2. **CategoryCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación y modificación de categorías.
+   - **Métodos principales**:
+     - `handle(AddCategoryCommand command)`: Agrega una nueva categoría a un menú existente.
+   - **Validaciones**:
+     - Verifica que el menú exista.
+     - Asegura que no exista ya una categoría con el mismo nombre en el menú.
+   - **Dependencias**:
+     - `MenuRepository`: Persistencia de menús.
+     - `CategoryRepository`: Persistencia de categorías.
+
+3. **ProductCommandServiceImpl**
+   - **Propósito**: Gestiona las operaciones relacionadas con la creación y modificación de productos.
+   - **Métodos principales**:
+     - `handle(AddProductCommand command)`: Agrega un nuevo producto a una categoría existente.
+     - `handle(UpdateProductAvailabilityCommand command)`: Actualiza la disponibilidad de un producto existente.
+   - **Validaciones**:
+     - Verifica que la categoría exista.
+     - Asegura que no exista ya un producto con el mismo nombre en la categoría.
+   - **Dependencias**:
+     - `CategoryRepository`: Persistencia de categorías.
+     - `ProductRepository`: Persistencia de productos.
+
+#### **Query Services**
+
+Los servicios de consultas son responsables de recuperar información del sistema sin modificar su estado. A continuación, se describen los principales servicios de consultas:
+
+1. **MenuQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con los menús.
+   - **Métodos principales**:
+     - `handle(GetMenuByIdQuery query)`: Recupera un menú específico por su ID.
+     - `handle(GetMenuByHeadquarterQuery query)`: Recupera el menú asociado a una sede específica.
+   - **Dependencias**:
+     - `MenuRepository`: Persistencia de menús.
+
+2. **CategoryQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con las categorías de los menús.
+   - **Métodos principales**:
+     - `handle(GetCategoryByIdQuery query)`: Recupera una categoría específica por su ID.
+   - **Dependencias**:
+     - `CategoryRepository`: Persistencia de categorías.
+
+3. **ProductQueryServiceImpl**
+   - **Propósito**: Gestiona las consultas relacionadas con los productos de las categorías.
+   - **Métodos principales**:
+     - `handle(GetProductByIdQuery query)`: Recupera un producto específico por su ID.
+   - **Dependencias**:
+     - `ProductRepository`: Persistencia de productos.
+
+#### **Event Handlers**
+
+Los manejadores de eventos son responsables de reaccionar a eventos específicos del sistema. A continuación, se describen los principales manejadores de eventos:
+
+1. **MenuCreatedEventHandler**
+   - **Propósito**: Maneja el evento `MenuCreatedEvent`, que se dispara cuando se crea un nuevo menú.
+   - **Método principal**:
+     - `on(MenuCreatedEvent event)`: Realiza acciones adicionales cuando se crea un menú, como notificar a otros sistemas.
+   - **Dependencias**:
+     - `NotificationService`: Servicio para enviar notificaciones.
+
+#### **Outbound Services (ACL)**
+
+Los servicios externos proporcionan funcionalidades auxiliares que no forman parte del dominio principal. A continuación, se describen los principales servicios externos:
+
+1. **ExternalHeadquarterService**
+   - **Propósito**: Interactúa con el Branching Bounded Context para verificar la existencia de sedes.
+   - **Método principal**:
+     - `existsHeadquarter(Long headquarterId)`: Verifica si una sede existe en el sistema.
+
+#### 4.2.5.4. Infrastructure Layer
+
+La **Infrastructure Layer** del Menu Management Bounded Context proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema relacionadas con la gestión de menús, categorías y productos. Esta capa incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos. Su objetivo principal es garantizar que las operaciones de almacenamiento y recuperación de información sean eficientes, consistentes y seguras.
+
+#### **Persistencia (JPA Repositories)**
+
+1. **MenuRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de menús.
+   - **Métodos principales**:
+     - `findByHeadquarterId(HeadquarterId headquarterId)`: Recupera el menú asociado a una sede específica.
+     - `existsByHeadquarterId(HeadquarterId headquarterId)`: Verifica si existe un menú para una sede específica.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Menu`.
+     - Facilita la recuperación de menús según diferentes criterios de filtro.
+
+2. **CategoryRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de categorías.
+   - **Métodos principales**:
+     - `findByMenuIdAndName(Long menuId, CategoryName name)`: Recupera una categoría específica por su menú y nombre.
+     - `existsByMenuIdAndName(Long menuId, CategoryName name)`: Verifica si existe una categoría con un nombre específico en un menú.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Category`.
+     - Facilita la recuperación de categorías según diferentes criterios de filtro.
+
+3. **ProductRepository**
+   - **Propósito**: Proporciona métodos para interactuar con la base de datos de productos.
+   - **Métodos principales**:
+     - `findByCategoryIdAndName(Long categoryId, ProductName name)`: Recupera un producto específico por su categoría y nombre.
+     - `existsByCategoryIdAndName(Long categoryId, ProductName name)`: Verifica si existe un producto con un nombre específico en una categoría.
+   - **Características**:
+     - Extiende `JpaRepository`, lo que permite realizar operaciones CRUD sobre las entidades `Product`.
+     - Facilita la recuperación de productos según diferentes criterios de filtro.
+
+#### **Relaciones entre componentes**
+
+- **Persistencia**: Los repositorios `MenuRepository`, `CategoryRepository` y `ProductRepository` proporcionan acceso a los datos almacenados en la base de datos, permitiendo a las capas superiores (como la **Application Layer**) interactuar con las entidades del dominio.
+- **Validación**: Los métodos personalizados en los repositorios son utilizados para validar la existencia y unicidad de menús, categorías y productos, asegurando la consistencia de los datos durante las operaciones de negocio.
+
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del **Menu Management Bounded Context**, el cual detalla los principales módulos y sus interacciones dentro del contexto delimitado. Este diagrama sigue el enfoque del C4 Model para representar los componentes clave, como servicios de aplicación, controladores, repositorios y servicios externos, junto con sus relaciones.
+
+<img src="./images/c4-model/bc-component-diagram/IOT-MenuManagement-BC-Component-Diagram.png" alt="Menu Management BC Component Diagram"/><br>
+
+El **Menu Management Bounded Context** está compuesto por los siguientes módulos principales:
+
+1. **Application Layer**:
+   - Coordina las operaciones de negocio relacionadas con la gestión de menús, categorías y productos.
+   - Incluye servicios de comandos y consultas que interactúan con la **Domain Layer** y la **Infrastructure Layer**.
+   - Maneja eventos relacionados con la creación y modificación de menús, categorías y productos.
+
+2. **Interface Layer**:
+   - Expone los puntos de entrada al sistema a través de controladores REST.
+   - Incluye recursos y transformadores que aseguran una representación adecuada de los datos y su conversión entre las capas de la aplicación.
+   - Proporciona una ACL (Access Control Layer) para facilitar la integración con otros contextos.
+
+3. **Domain Layer**:
+   - Encapsula la lógica de negocio relacionada con la gestión de menús, categorías y productos.
+   - Define los agregados, entidades y objetos de valor que representan los conceptos clave del dominio.
+   - Incluye eventos de dominio que representan cambios significativos en el estado del sistema.
+
+4. **Infrastructure Layer**:
+   - Proporciona las implementaciones técnicas necesarias para soportar las operaciones del sistema.
+   - Incluye repositorios para la persistencia de datos y componentes que conectan la lógica de negocio con los recursos externos, como bases de datos.
+
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases correspondiente a la **Domain Layer** del **Menu Management Bounded Context** incluye las clases principales, como agregados, entidades y objetos de valor, así como las interfaces y enumeraciones que definen el comportamiento del dominio.
+
+<img src="./images/c4-model/bc-component-diagram/menu_management_domain_class_diagram.png" alt="Menu Management BC Domain Layer Class Diagram"/><br>
+
+**Elementos principales del diagrama:**
+
+1. **Aggregates**:
+   - `Menu`: Agregado principal que encapsula la lógica de negocio relacionada con la gestión de menús.
+     - **Atributos**:
+       - `headquarterId`: ID de la sede a la que pertenece el menú.
+       - `name`: Nombre del menú.
+       - `description`: Descripción del menú.
+       - `categories`: Conjunto de categorías que componen el menú.
+     - **Métodos**:
+       - `addCategory(Category category)`: Agrega una nueva categoría al menú.
+       - `removeCategory(CategoryId categoryId)`: Elimina una categoría del menú.
+       - `updateName(MenuName name)`: Actualiza el nombre del menú.
+       - `updateDescription(MenuDescription description)`: Actualiza la descripción del menú.
+
+2. **Entities**:
+   - `Category`: Entidad que representa una categoría de productos dentro de un menú.
+     - **Atributos**:
+       - `id`: ID único de la categoría.
+       - `name`: Nombre de la categoría.
+       - `description`: Descripción de la categoría.
+       - `products`: Conjunto de productos que pertenecen a la categoría.
+     - **Métodos**:
+       - `addProduct(Product product)`: Agrega un nuevo producto a la categoría.
+       - `removeProduct(ProductId productId)`: Elimina un producto de la categoría.
+       - `updateName(CategoryName name)`: Actualiza el nombre de la categoría.
+       - `updateDescription(CategoryDescription description)`: Actualiza la descripción de la categoría.
+
+   - `Product`: Entidad que representa un producto dentro de una categoría del menú.
+     - **Atributos**:
+       - `id`: ID único del producto.
+       - `name`: Nombre del producto.
+       - `description`: Descripción del producto.
+       - `price`: Precio del producto.
+       - `imageUrl`: URL de la imagen del producto.
+       - `availability`: Disponibilidad del producto.
+     - **Métodos**:
+       - `updateName(ProductName name)`: Actualiza el nombre del producto.
+       - `updateDescription(ProductDescription description)`: Actualiza la descripción del producto.
+       - `updatePrice(Money price)`: Actualiza el precio del producto.
+       - `updateImageUrl(ImageUrl imageUrl)`: Actualiza la URL de la imagen del producto.
+       - `updateAvailability(Availability availability)`: Actualiza la disponibilidad del producto.
+
+3. **Value Objects**:
+   - `HeadquarterId`: Representa el identificador único de una sede.
+   - `MenuName`: Representa el nombre de un menú.
+   - `MenuDescription`: Representa la descripción de un menú.
+   - `CategoryId`: Representa el identificador único de una categoría.
+   - `CategoryName`: Representa el nombre de una categoría.
+   - `CategoryDescription`: Representa la descripción de una categoría.
+   - `ProductId`: Representa el identificador único de un producto.
+   - `ProductName`: Representa el nombre de un producto.
+   - `ProductDescription`: Representa la descripción de un producto.
+   - `Money`: Representa un importe monetario con una divisa.
+   - `ImageUrl`: Representa la URL de una imagen.
+   - `Availability`: Enumera los estados posibles de disponibilidad de un producto.
+
+##### 4.2.5.6.2. Bounded Context Database Design Diagram.
+
+El diseño de la base de datos para el **Menu Management Bounded Context** refleja la estructura del dominio, asegurando que las entidades y relaciones definidas en la **Domain Layer** se representen de manera eficiente en el modelo relacional.
+
+<img src="./images/c4-model/bc-component-diagram/menu_management_bd.jpg" alt="Menu Management BC Data Base Diagram"/><br>
+
+**Este diseño incluye las siguientes tablas principales:**
+
+1. **Menus**:
+   - Representa los menús disponibles en las sedes.
+   - **Atributos principales**:
+     - `id`: Identificador único del menú.
+     - `headquarter_id`: Identificador de la sede a la que pertenece el menú.
+     - `name`: Nombre del menú.
+     - `description`: Descripción del menú.
+
+2. **Categories**:
+   - Representa las categorías de productos dentro de los menús.
+   - **Atributos principales**:
+     - `id`: Identificador único de la categoría.
+     - `menu_id`: Identificador del menú al que pertenece la categoría.
+     - `name`: Nombre de la categoría.
+     - `description`: Descripción de la categoría.
+
+3. **Products**:
+   - Representa los productos disponibles en las categorías.
+   - **Atributos principales**:
+     - `id`: Identificador único del producto.
+     - `category_id`: Identificador de la categoría a la que pertenece el producto.
+     - `name`: Nombre del producto.
+     - `description`: Descripción del producto.
+     - `price_amount`: Importe del precio del producto.
+     - `price_currency`: Divisa del precio del producto.
+     - `image_url`: URL de la imagen del producto.
+     - `availability`: Disponibilidad del producto (AVAILABLE, SOLD_OUT, DISCONTINUED).
+
+### 4.2.6 Bounded Context: IoT Monitoring Bounded Context
+
+El **IoT Monitoring Bounded Context** es responsable de gestionar la interacción con los dispositivos IoT instalados en las cafeterías, como los sensores de peso en las sillas. Este contexto se encarga de recopilar, procesar e interpretar los datos enviados por estos dispositivos para determinar el estado de ocupación de las mesas en tiempo real. Además, proporciona mecanismos para la configuración y monitoreo de los dispositivos, asegurando su correcto funcionamiento y la precisión de los datos recopilados.
 
 
 # Capítulo V: Solution UI/UX Design
 ## 5.1. Style Guidelines
 ### 5.1.1. General Style Guidelines
+
+En esta sección definimos los principios visuales y de interacción que rigen toda la experiencia Tavolo, asegurando coherencia entre plataformas. Establecemos una identidad visual clara mediante el uso de paleta de colores, tipografía, iconografía, espaciado y tono comunicacional unificado.
+
+![general_style_guideline](https://raw.githubusercontent.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/refs/heads/feature/chapter-5/images/style_guideline/general_style.png)
+
+
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
-## 5.2. Information Architecture
-### 5.2.1. Organization Systems
-### 5.2.2. Labeling Systems
-### 5.2.3. SEO Tags and Meta Tags
-### 5.2.4. Searching Systems
-### 5.2.5. Navigation Systems
+
+Diseñamos interfaces web centradas en la claridad y eficiencia, priorizando la experiencia del usuario en pantallas grandes. Aplicamos estructuras responsivas, patrones de navegación consistentes y un uso óptimo del grid para garantizar accesibilidad y fluidez en entornos de escritorio.
+
+![web_style](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/style_guideline/web_style.png?raw=true)
+
+
+Adaptamos la experiencia Tavolo a dispositivos móviles optimizando la usabilidad táctil, la jerarquía visual y la agilidad en la navegación. Nos enfocamos en gestos intuitivos, tiempos de carga mínimos y transiciones suaves entre pantallas, respetando las limitaciones y ventajas del entorno móvil.
+
+![mobile_style](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/style_guideline/mobile_style.png?raw=true)
+
+
+Extendemos nuestros lineamientos a dispositivos IoT garantizando interfaces funcionales y simples. Diseñamos visuales claras y compactas, con códigos de color efectivos y elementos visuales que facilitan la comprensión.
+
+![iot_style](https://raw.githubusercontent.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/refs/heads/feature/chapter-5/images/style_guideline/IOT_style.png)
+
+# 5.2. Information Architecture
+
+## 5.2.1. Organization Systems
+
+Para Tavolo, hemos implementado sistemas de organización que facilitan la navegación y acceso a la información tanto para comensales como para administradores. Estos sistemas están diseñados para proporcionar una experiencia de usuario intuitiva y eficiente.
+![Diagrama de Organization System de Tavolo](https://raw.githubusercontent.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/feature/chapter-5/images/chapter-5/organization-system-iot.drawio.png)
+<br>
+### Sistema jerárquico
+
+Organizamos la información en Tavolo siguiendo una estructura jerárquica clara:
+
+**Para comensales:**
+<br>El proceso comienza en la Landing Page, donde los usuarios son redirigidos a la aplicación web o móvil según su preferencia. Una vez allí, los comensales pueden registrarse o iniciar sesión con sus credenciales, accediendo a un panel principal que les muestra información relevante como reservas activas, sedes disponibles y menús de productos, incluyendo opciones de café y sandwiches. Para realizar una reserva, los comensales seleccionan una sede, visualizan las mesas disponibles y completan un formulario con los detalles de su reserva, como fecha, hora y número de personas. Además, pueden ubicar la sede en un mapa integrado para mayor comodidad.<br>
+
+**Para administradores:**
+<br>Por otro lado, los administradores acceden a un panel de gestión después de iniciar sesión. Desde allí, pueden administrar las mesas de las sedes, agregando nuevas o eliminando las existentes mediante un formulario sencillo. También tienen acceso a información detallada de las sedes y pueden visualizar las reservas de diferentes maneras: por mesa, por persona o en una lista completa. Esto les permite mantener un control eficiente sobre las operaciones del establecimiento.<br>
+
+### Sistema secuencial
+
+También implementamos una organización secuencial para procesos específicos:
+
+**Proceso de reserva:**
+1. Selección de sede
+2. Visualización de mesas disponibles
+3. Selección de mesa
+4. Selección de fecha y hora
+5. Confirmación de reserva
+
+**Proceso de gestión de mesas:**
+1. Visualización del inventario actual de las mesas
+2. Selección de acción (agregar/eliminar)
+3. Introducción de datos de la mesa
+4. Confirmación de la operación
+
+
+## 5.2.2. Labeling Systems
+Antes de implementar las etiquetas en nuestra plataforma, determinamos qué requisitos necesitamos cumplir. Las etiquetas nos permiten agregar información contextual a diferentes elementos de la plataforma Tavolo. A continuación, se detalla el sistema de etiquetado implementado:<br>
+
+### Etiquetas para mesas
+
+| Etiqueta | Descripción |
+|----------|-------------|
+| [DISPONIBLE] | Mesa que puede ser reservada en este momento |
+| [OCUPADA] | Mesa actualmente en uso por comensales |
+
+### Etiquetas para reservas
+
+| Etiqueta | Descripción |
+|----------|-------------|
+| [ACTIVA] | Reserva en curso (dentro del rango horario seleccionado) |
+
+### Etiquetas para productos en menú
+
+| Etiqueta | Descripción |
+|----------|-------------|
+| [CAFÉ] | Bebidas de café |
+| [REPOSTERÍA] | Pasteles, galletas y postres |
+| [SANDWICH] | Opciones de sándwiches y bocadillos |
+
+### Etiquetas para notificaciones de sistema
+
+| Etiqueta | Descripción |
+|----------|-------------|
+| [ÉXITO] | Confirmación de operación completada exitosamente |
+| [ERROR] | Problema durante una operación |
+
+Este sistema de etiquetas proporciona contexto visual inmediato y mejora la comprensión de la información presentada tanto para comensales como para administradores.<br>
+
+## 5.2.3. SEO Tags and Meta Tags
+
+La implementación adecuada de etiquetas SEO es crucial para mejorar la visibilidad de Tavolo en los motores de búsqueda. A continuación, detallamos las principales etiquetas implementadas:
+
+### Título
+Indica el tema de la página, debe ser corto y descriptivo, manteniéndose entre 55-60 caracteres.
+```html
+<title>Tavolo - Sistema de Gestión de Reservas y Ocupación para Cafeterías</title>
+```
+
+### Descripción
+Breve descripción del propósito de la plataforma.
+```html
+<meta name="description" content="Tavolo optimiza la experiencia en cafeterías con tecnología IoT, visualización en tiempo real de mesas disponibles y reservas digitales. ¡Mejora la experiencia de tus clientes!"/>
+```
+
+### Robots
+Indican a los motores de búsqueda qué hacer con la página.
+```html
+<meta name="robots" content="index, follow">
+```
+
+### Tipo de contenido
+Útil para que los motores de búsqueda identifiquen el idioma de la página.
+```html
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+```
+
+### Viewport Meta Tag
+Crucial para asegurar que el contenido se vea bien en dispositivos móviles.
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+### Open Graph Tags
+Para mejorar la apariencia cuando se comparte en redes sociales.
+```html
+<meta property="og:title" content="Tavolo - Gestión Inteligente para Cafeterías">
+<meta property="og:description" content="Sistema IoT para optimizar la ocupación de mesas en cafeterías">
+<meta property="og:image" content="https://tavolo.com/images/tavolo-preview.jpg">
+<meta property="og:url" content="https://tavolo.com">
+<meta property="og:type" content="website">
+```
+
+### Keywords
+Aunque tienen menor importancia actualmente, aún pueden ser útiles.
+```html
+<meta name="keywords" content="reservas cafeterías, mesas disponibles, IoT cafeterías, gestión restaurantes, sistema reservas tiempo real, ocupación mesas">
+```
+
+## 5.2.4. Searching Systems
+
+El sistema de búsqueda propuesto para Tavolo permitirá a los usuarios encontrar fácilmente información relevante según sus necesidades específicas. Este sistema está diseñado para facilitar tanto a comensales como a administradores la localización de sedes, reservas y disponibilidad de mesas.
+
+### Sistema de búsqueda para comensales
+
+| Nombre del filtro | Descripción |
+|-------------------|-------------|
+| Ubicación | El usuario podrá filtrar cafeterías por distrito o zona de la ciudad |
+| Disponibilidad inmediata | Muestra sólo las cafeterías con mesas disponibles en el momento actual |
+| Capacidad | Permite filtrar por mesas disponibles con capacidad específica (2, 4, 6 personas) |
+| Horario de atención | Filtra por cafeterías abiertas en un rango horario específico |
+| Distancia | Ordena los resultados desde la ubicación actual del usuario |
+
+### Sistema de búsqueda para administradores
+
+| Nombre del filtro | Descripción |
+|-------------------|-------------|
+| Búsqueda por número de mesa | Permite encontrar rápidamente información de una mesa específica |
+| Búsqueda por nombre de cliente | Localiza reservas realizadas por un cliente específico |
+| Historial de reservas | Busca en el histórico de reservas completadas |
+
+### Características adicionales del sistema de búsqueda
+
+- **Búsqueda en tiempo real**: Los resultados se actualizan automáticamente cada 10 segundos.
+- **Historial de búsquedas**: Mantiene un registro de búsquedas recientes.
+
+Este sistema de búsqueda está diseñado para ser intuitivo y proporcionar resultados precisos, mejorando así la experiencia del usuario y la eficiencia operativa de la plataforma Tavolo.
+
+## 5.2.5. Navigation Systems
+
+El sistema de navegación de la plataforma Tavolo guiará a los usuarios a través de las distintas secciones y pantallas, proporcionándoles acceso intuitivo a todas las funcionalidades. A continuación, se detallan los elementos que facilitan la navegación de los usuarios:
+
+### Navegación global
+
+| Nombre | Descripción |
+|--------|-------------|
+| Inicio | Página principal que muestra un resumen de la información relevante según el tipo de usuario |
+| Perfil | Permite al usuario gestionar su información personal y preferencias |
+
+### Navegación para comensales
+
+| Nombre | Descripción |
+|--------|-------------|
+| Explorar sedes | Muestra todas las cafeterías disponibles con información sobre su ubicación y disponibilidad |
+| Mis reservas | Permite al usuario ver sus reservas activas y su historial de reservas anteriores |
+| Ver menú | Acceso a los menús digitales de las diferentes cafeterías |
+| Mapa | Visualización geográfica de las sedes en un mapa interactivo |
+
+### Navegación para administradores
+
+| Nombre | Descripción |
+|--------|-------------|
+| Dashboard | Panel principal con indicadores clave sobre la operación de la sede |
+| Gestión de mesas | Interfaz para agregar, eliminar o modificar mesas en la sede asignada |
+| Reservas | Visualización y gestión de las reservas actuales y futuras |
+
+### Elementos de navegación
+
+- **Menú principal**: Barra de navegación fija en la parte superior que contiene los enlaces principales.
+- **Menú lateral desplegable**: Para acceso a funciones secundarias y configuraciones.
+- **Botones de acción flotantes**: Para acciones principales como "Realizar reserva" o "Agregar mesa".
+- **Gestos táctiles**: En la versión móvil, se implementan gestos como deslizar para ver más opciones o pinchar para ampliar el mapa.
+
+### Patrones de navegación
+
+- **Hub and spoke**: La pantalla principal actúa como centro desde donde se accede a las diferentes funcionalidades.
+- **Navegación por pestañas**: Para alternar entre diferentes vistas de una misma categoría.
+- **Navegación jerárquica**: Para profundizar en detalles (sede → mesas → reservas).
+- **Desplazamiento infinito**: En listados de sedes o mesas para cargar más resultados al desplazarse.
+
+Este sistema de navegación está diseñado para ser consistente, intuitivo y adaptable a diferentes dispositivos, asegurando que los usuarios puedan encontrar rápidamente la información o funcionalidad que necesitan sin esfuerzo excesivo.
+
 ## 5.3. Landing Page UI Design
 ### 5.3.1. Landing Page Wireframe
+
+En esta sección representamos una estructura funcional preliminar que organiza los principales bloques de contenido sin detalles visuales. Su objetivo es definir la jerarquía informativa y el flujo de navegación del usuario. Este diseño inicial se enfoca en la lógica y disposición del contenido, sin aplicar aún colores, imágenes o estilos gráficos.
+
+![landing_page_wireframe](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/landing_page/LandingPage-Wireframe.png?raw=true)
+
 ### 5.3.2. Landing Page Mock-up
+
+Por otro lado, el mockup de la landing page de Tavolo muestra una versión visual refinada y casi final del diseño. Siguiendo el General Style Guidelines, respetamos la paleta de colores, la tipografía, etc. El contenido está organizado de manera clara y atractiva, destacando el valor principal de Tavolo: permitir a los usuarios monitorear el aforo en tiempo real y reservar su lugar en cafeterías de forma inteligente. Las secciones explican detalladamente cómo funciona la aplicación, sus beneficios para los usuarios y cafeterías, e incluyen botones de llamado a la acción, un tour virtual y un formulario de contacto. Este mockup transmite una experiencia profesional, acogedora y tecnológica.
+
+![landing_page_mockup](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/landing_page/LandingPage-Mockups.png?raw=true)
+
 ## 5.4. Applications UX/UI Design
 ### 5.4.1. Applications Wireframes
+Esta sección presenta los wireframes de la aplicación web y móvil de Tavolo, diseñados para los dos perfiles de usuario: Clientes de establecimiento  y propietarios de cafeterías. Cada wireframe representa la estructura y jerarquía de los elementos antes de aplicar estilo visual o contenido final.
+
+Los primeros wireframes son compartidos por ambos usuarios ya que nos referimos al inicio de sesión y registro, estos representan las pantallas de acceso al sistema, con formularios simples y enfocados en la usabilidad. Se prioriza una navegación rápida y accesible para usuarios recurrentes y nuevos:
+
+![inicio_sesion_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/InicioSesion-Wireframe.png?raw=true)
+
+![registrarse_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Registrarse-Wireframe.png?raw=true)
+
+![inicio_sesion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/InicioSesion-Wireframe.png?raw=true)
+![registrarse_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/Registrarse-Wireframe.png?raw=true)
+
+**Clientes**
+- **Pantalla de inicio:**
+
+Muestra un resumen de reservas activas del cliente y acceso directo al menú del establecimiento. Está diseñada para brindar información clave de forma inmediata.
+
+![home_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/home-cliente-wireframe.png?raw=true)
+
+![home_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Inicio-Cliente-Wireframe.png?raw=true)
+
+- **Menú digital:**
+
+Organizado por categorías. La estructura está pensada para facilitar la exploración y eventual selección en el pedido.
+
+![menu_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Menu-Cliente-Wireframe.png?raw=true)
+
+![menu_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/menu-cliente-wireframe.png?raw=true)
+
+- **Reservar mesa:**
+
+Incluye selector de sede, visualización de mesas disponibles, horarios, y acceso a un mapa con la ubicación exacta de la cafetería. Se destaca la usabilidad móvil responsive y la claridad en la disponibilidad visual.
+
+![sedes_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedes-Cliente-Wireframe.png?raw=true)
+![mesas_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesas-Cliente-Wireframe.png?raw=true)
+![reservarmesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesasReservar-Cliente-Wireframe.png?raw=true)
+![reservacorrecta_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesasCorrecto-Cliente-Wireframe.png?raw=true)
+![mapa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedes-VerMapa-Cliente-Wireframe.png?raw=true)
+
+![buscar_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/buscar-cliente-wireframe.png?raw=true)
+![detalle_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/detalle-cliente-wireframe.png?raw=true)
+![reserva_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reserva-cliente-wireframe.png?raw=true)
+![form_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/form-reserva-cliente-wireframe.png?raw=true)
+
+**Propietarios**
+- **Pantalla de inicio:**
+
+Resume información clave de cada sede: mesas activas y reservas por horario. 
+
+![home_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Inicio-Propietario-Wireframe.png?raw=true)
+
+![home_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/home-propietario-wireframe.png?raw=true)
+
+- **Gestionar mesas:**
+
+Visualiza todas las mesas registradas por sede, permite su eliminación o la adición de nuevas con datos como zona, capacidad e identificador único.
+
+![gestion_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesas-Propietario-Wireframe.png?raw=true)
+![mesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesa-Propietario-Wireframe.png?raw=true)
+![agregarmesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesaCorrecto-Propietario-Wireframe.png?raw=true)
+
+![gestion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-propietario-wireframe.png?raw=true)
+![form_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-form-propietario-wireframe.png?raw=true)
+![mesa_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-mesa-propietario-wireframe.png?raw=true)
+
+- **Ver reservas:**
+
+Incluye filtros para buscar reservas por mesa o por cliente, optimizando la gestión diaria del flujo de comensales.
+
+![filtro_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedeFiltro-Propietario-Wireframe.png?raw=true)
+![pormesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedePorMesa-Propietario-Wireframe.png?raw=true)
+![persona_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedePorPersona-Propietario-Wireframe.png?raw=true)
+
+![pormesa_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reservas-propietario-wireframe.png?raw=true)
+![persona_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reservas-persona-propietario-wireframe.png?raw=true)
+
 ### 5.4.2. Applications Wireflow Diagrams
+Los diagramas de Wireflow desarrollados para Tavolo permiten visualizar de manera gráfica la transición entre pantallas dentro de la aplicación, integrando el diseño de la interfaz con el flujo de navegación esperado. Estos flujos representan acciones comunes tanto para el cliente como para el propietario, facilitando el análisis de usabilidad y asegurando la coherencia del diseño:
+
+- **Wireflow – Cliente (Web):** Desde el inicio de sesión o registro, el cliente puede ver sus reservas, acceder al menú, seleccionar una sede, consultar la disponibilidad de mesas, reservar y visualizar la ubicación en mapa.
+
+![wireflow1_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Cliente-Web.png?raw=true)
+
+- **Wireflow – Propietario (Web):** Luego del acceso, el propietario puede gestionar mesas (añadir o eliminar), visualizar reservas por sede, mesa o persona, y mantener el control completo sobre la operatividad del local.
+
+![wireflow2_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Propietario-Web.png?raw=true)
+
+- **Wireflow – Cliente (Mobile):** Similar al flujo web, adaptado a navegación móvil con vistas más compactas y controles táctiles.
+
+![wireflow1_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Cliente-Mobile.png?raw=true)
+
+- **Wireflow – Propietario (Mobile):** Pensado para una gestión rápida desde dispositivos móviles, permite acceder a reservas, editar disponibilidad y revisar información clave en tiempo real.
+
+![wireflow2_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Propietario-Mobile.png?raw=true)
+
 ### 5.4.3. Applications Mock-ups
+**Versión Web**
+
+La pantalla de inicio de sesión y registro son similares para ambos segmentos, allí el cliente o propietario ingresa sus credenciales para acceder al sistema o por el otro lado, puede llenar un formulario de creación de cuenta para nuevos usuarios, con campos de correo y contraseña.
+
+![iniciosesion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/InicioSesion-Mock-up.png?raw=true)
+![registro_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Registrarse-Mock-up.png?raw=true)
+
+**Cliente**
+
+- **Inicio:** Vista principal del cliente donde puede ver sus reservas activas, acceder al menú y ver las sedes disponibles.
+
+![inicio_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Inicio-Cliente-Mock-up.png?raw=true)
+
+- **Menú:** Sección donde el cliente puede explorar las categorías de productos disponibles en la cafetería.
+
+![menu_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Menu-Cliente-Mock-up.png?raw=true)
+
+- **Vista de reservas:** Panel donde el cliente puede revisar la lista de sedes e información básica de cada una.
+
+![reserva_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedes-Cliente-Mock-up.png?raw=true)
+
+- **Detalle de la sede:** Información de la sede seleccionada, con dirección, horarios, contacto y acceso a las mesas disponibles con filtros de capacidad y zona. Además, muestra las mesas de la sede seleccionada, agrupadas por zonas, con su estado y horarios disponibles.
+
+![sede_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-Cliente-Mock-up.png?raw=true)
+
+- **Reserva de mesa (pop-up):** Ventana emergente para seleccionar la hora de la reserva de la mesa elegida.
+
+![mesas_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-Reservar-Cliente-Mock-up.png?raw=true)
+
+- **Confirmación de reserva:** Mensaje que confirma que la reserva fue realizada exitosamente.
+
+![confirmacion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-ReservaCorrecta-Cliente-Mock-up.png?raw=true)
+
+- **Mapa de la sede (pop-up):** Muestra un mapa con la ubicación exacta de la sede seleccionada para facilitar la llegada del cliente.
+
+![mapa_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedes-VerMapa-Cliente-Mock-up.png?raw=true)
+
+**Propietario**
+
+- **Inicio:** Muestra las sedes a cargo del propietario y el resumen de reservas por sede.
+
+![inicio_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Inicio-Propietario-Mock-up.png?raw=true)
+
+- **Gestión de mesas:** Panel para ver todas las mesas de una sede, con opción de editar o eliminar cada una.
+
+![gestion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesas-Propietario-Mock-up.png?raw=true)
+
+- **Agregar mesa (pop-up):** Ventana para añadir nuevas mesas especificando zona, capacidad e identificador.
+
+![agregar_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesasAgregar-Propietario-Mock-up.png?raw=true)
+
+- **Confirmación de agregado:** Mensaje que informa que la mesa se añadió correctamente.
+
+![confirmacion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesas-AgregarCorrecto-Propietario-Mock-up.png?raw=true)
+
+- **Vista de reservas por mesa:** Permite al propietario revisar las reservas filtradas por cada mesa, con su disponibilidad por horario.
+
+![filtro_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-Filtro-Propietario-Mock-up.png?raw=true)
+![pormesa_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-PorMesa-Propietario-Mock-up.png?raw=true)
+
+- **Vista de reservas por persona:** Muestra una lista de personas que han reservado, con los detalles y hora.
+
+![persona_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-PorPersona-Propietario-Mock-up.png?raw=true)
+
+**Versión Móvil**
+
+La pantalla de inicio de sesión y registro son similares para ambos segmentos, allí el cliente o propietario ingresa sus credenciales para acceder al sistema o por el otro lado, puede llenar un formulario de creación de cuenta para nuevos usuarios, con campos de correo y contraseña.
+
+![iniciosesion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/InicioSesion-Mock-up.png?raw=true)
+![registro_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/Registrarse-Mock-up.png?raw=true)
+
+**Cliente**
+
+- **Inicio:** Muestra la reserva activa (si existe), y un acceso rápido a las sedes disponibles.
+
+![inicio_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/home-cliente-mock-up.png?raw=true)
+
+- **Vista de sedes:** Despliega una lista de sedes con su descripción, dirección y número de mesas disponibles.
+
+![sedes_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/buscar-cliente-mock-up.png?raw=true)
+
+- **Detalle de sede:** Muestra información general de la sede seleccionada (dirección, horario y contacto), incluye una sección donde se visualizan las mesas disponibles, agrupadas por zonas y con sus capacidades, las cuales son una lista ampliada de mesas con scroll para ver más opciones, incluyendo filtros de zona.
+
+![detalle_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-cliente-mock-up.png?raw=true)
+![capacidad_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/filtro-capacidad-cliente-mock-up.png?raw=true)
+![zona_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/filtro-zona-cliente-mock-up.png?raw=true)
+
+- **Reserva de mesa (pop-up):** Selector de horario para la mesa elegida, mostrando disponibilidad por hora.
+
+![reserva_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-reserva-cliente-mock-up.png?raw=true)
+
+- **Confirmación de reserva:** Mensaje que informa que la reserva fue realizada con éxito.
+
+![confirmacion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-reserva-exitosa-cliente-mock-up.png?raw=true)
+
+- **Mapa de la sede (pop-up):** Ventana emergente que muestra un mapa con la ubicación de la sede.
+
+![mapa_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/mapa-cliente-mock-up.png?raw=true)
+
+- **Menu:** Visualización de productos con nombre, tipo y precio (ej. cafés, postres, etc).
+
+![menu_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/menu-cliente-mock-up.png?raw=true)
+
+**Propietario**
+
+- **Inicio:** Pantalla principal con vista de sedes administradas, cada una con datos clave y acceso a reservas.
+
+![inicio_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/home-propietario-mock-up.png?raw=true)
+
+- **Gestión de mesas:** Lista de todas las mesas con capacidad, zona y botón de eliminación.
+
+![gestion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-propietario-mock-up.png?raw=true)
+
+- **Agregar nueva mesa (pop-up):** Formulario para añadir una mesa, solicitando zona, capacidad e identificador.
+
+![form_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-form-propietario-mock-up.png?raw=true)
+
+- **Confirmación de agregado:** Mensaje de éxito que confirma que la mesa fue registrada.
+
+![confirmacion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-mesa-propietario-mock-up.png?raw=true)
+
+- **Detalle de sede:** El propietario puede visualizar cómo el cliente ve las opciones disponibles de reserva.
+
+![pormesa_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/reservas-propietario-mock-up.png?raw=true)
+
+- **Detalle de reserva por persona:** Vista filtrada para ver las reservas agrupadas por nombre de cliente, fecha y mesa.
+
+![persona_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/reservas-personas-propietario-mock-up.png?raw=true)
+
 ### 5.4.4. Applications User Flow Diagrams
+Los diagramas de flujo de usuario permiten entender cómo los usuarios interactúan con la aplicación desde una perspectiva lógica, no visual. Estos diagramas incluyen decisiones condicionales, caminos alternativos y respuestas del sistema según la acción realizada por el usuario.
+
+- **User Flow – Cliente:**
+
+1. Inicia sesión o se registra
+2. Visualiza sus reservas o accede al menú
+3. Selecciona una sede
+4. Consulta mesas disponibles
+5. Selecciona mesa y hora
+6. Reserva
+7. Confirmación
+8. (Opcional) Consulta ubicación en mapa
+
+![userflow1_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Cliente-Web.png?raw=true)
+
+![userflow1_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Cliente-Mobile.png?raw=true)
+
+- **User Flow – Propietario:**
+
+1. Inicia sesión o se registra
+2. Visualiza su(s) sede(s)
+3. Gestiona mesas (añadir o eliminar)
+4. Consulta reservas por persona o por mesa
+5. Toma decisiones administrativas
+
+![userflow2_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Propietario-Web.png?raw=true)
+![userflow2_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Propietario-Mobile.png?raw=true)
+
 ## 5.5. Applications Prototyping
+
+**Web application prototyping**
+- Clientes<br>
+Se diseñaron prototipos que permiten a los clientes explorar restaurantes, realizar reservas de mesas, y visualizar menús digitales desde la plataforma web, con una interfaz intuitiva enfocada en la experiencia de usuario.<br>
+![web_prototype_cliente](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/prototyping/mobile_cliente.png?raw=true)
+
+Video explicación: <br>
+[https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing](https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)
+
+- Administradores<br>
+Se diseñó una interfaz administrativa que facilita la gestión de reservas, control de disponibilidad de mesas y configuración de menús, permitiendo a cada sede de una cafetería tener un control completo desde la web.<br>
+![web_prototype_administrador](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/prototyping/web_administrador.png?raw=true)
+
+Video explicación: <br>
+[https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link](https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link)
+
+
+**Mobile application prototyping**
+- Clientes<br>
+Se desarrollaron prototipos móviles que permiten a los usuarios buscar restaurantes cercanos, reservar mesas fácilmente, ver recomendaciones personalizadas y acceder a menús interactivos, priorizando la usabilidad en dispositivos móviles.<br>
+![mobile_prototype_cliente](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/prototyping/mobile_cliente.png?raw=true)
+
+Video explicación:<br>
+[https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link](https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link)
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management
@@ -2075,18 +4297,19 @@ El equipo adoptó un enfoque ágil con las siguientes prácticas:
 
 Este Sprint 1 ha establecido una base sólida para la colaboración continua del equipo Tavolo. La distribución equilibrada del trabajo, el liderazgo compartido y el enfoque en la calidad han permitido entregar todas las funcionalidades planificadas cumpliendo con los criterios de aceptación establecidos.
 
-### Conclusiones Generales del Proyecto
+
+# Conclusiones Generales del Proyecto
 
 * El proyecto TAVOLO se enfoca en optimizar la experiencia en cafeterías peruanas mediante una solución tecnológica IoT que gestiona la ocupación de mesas y reservas. Para los comensales, ofrece visualización del menú, disponibilidad de mesas en tiempo real y reservas; para los administradores, permite la gestión de mesas y reservas de la sede asignada. El objetivo es mejorar la experiencia del cliente y la eficiencia operativa del negocio.
 * La investigación y análisis de requerimientos identificaron la problemática de la incertidumbre sobre la disponibilidad de mesas en cafeterías, especialmente en horas pico, lo que afecta la experiencia del cliente. Se definieron segmentos objetivo claros (comensales y administradores) y se analizaron competidores como Eat App y OpenTable, destacando la ventaja de TAVOLO en la detección automática de ocupación en tiempo real mediante sensores IoT.
 * El equipo demostró un liderazgo compartido y colaborativo, asumiendo responsabilidades específicas en cada capítulo y utilizando herramientas como GitHub y metodologías como Gitflow para una gestión eficiente del proyecto. Se establecieron metas claras, se planificaron tareas según las fortalezas individuales y se mantuvo una comunicación constante, lo que permitió cumplir los objetivos y fortalecer la cohesión del equipo.
 
-### Bibliografía
+# Bibliografía
 1.  **Las MIPYME en cifras 2022:** Publicado por la Oficina General de Evaluación de Impacto y Estudios Económicos (OGEIEE) de Produce. ([Ver publicación](https://ogeiee.produce.gob.pe/index.php/en/shortcode/oee-documentos-publicaciones/publicaciones-anuales/item/1170-las-mipyme-en-cifras-2022))
 2.  **Memoria Institucional del Ministerio de la Producción 2022:** Documento oficial que resume las acciones y logros del ministerio en ese año. ([Ver Memoria](https://transparencia.produce.gob.pe/images/stories/Repositorio/transparencia/planeamiento/memoria-anual/2022.pdf))
 3.   **Informe de ComexPerú (basado en datos oficiales)**: Las micro y pequeñas empresas en el Perú Resultados en 2022. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
    
-### Anexos
+# Anexos
 * **Video de Exposicion TB1:** `https://drive.google.com/drive/u/0/folders/1YN0UBGC28osxHvRTsBrLSjwX2CAVLHlt`
 * **Repositorio del Proyecto en GitHub:** `https://github.com/orgs/upc-pre-202510-1asi0572-2952-tavolo/repositories`
 * **Organización del Proyecto en GitHub:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo`
@@ -2098,3 +4321,10 @@ Este Sprint 1 ha establecido una base sólida para la colaboración continua del
 * **Registro de Entrevista #1 (Propietarios/Cliente - Diego Morales/Elias Yauri Paucar):** `https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing`
 * **Registro de Entrevista #2 (Propietarios - Jenna Vasquez):** `https://drive.google.com/file/d/1WTxiDxw4vaabZhFvibL8mHLINcrJR0_9/view?usp=sharing`
 * **Registro de Entrevista #2 (Clientes - Aleshka Fernández):** `https://youtu.be/QGSisj7iF-k`
+* **Video prototyping web cliente:** [https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing](https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)
+* **Video prototyping web administrador:**[https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link](https://drive.google.com/file/d/1kcd_FJJk4l8dhdRntgm0UZbYrUqKcuO6/view?usp=drive_link)
+* **Video prototyping mobile cliente:**[https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link](https://drive.google.com/file/d/1H52_e9udVbAItnnXDAsrhZpsWwABIuJw/view?usp=drive_link)
+
+* **Diagrama de Organization System:**[https://drive.google.com/file/d/1OKUWtDfdjzkCRD_nNvbWuFwYXwBbUShL/view?usp=sharing](https://drive.google.com/file/d/1OKUWtDfdjzkCRD_nNvbWuFwYXwBbUShL/view?usp=sharing)
+
+* **Diagrama de C4**[https://drive.google.com/file/d/1C4Bcv6pZgL29nQ34p1o3DiLyqJqWyyxY/view?usp=sharing](https://drive.google.com/file/d/1C4Bcv6pZgL29nQ34p1o3DiLyqJqWyyxY/view?usp=sharing)
