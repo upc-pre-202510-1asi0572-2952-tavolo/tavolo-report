@@ -1621,7 +1621,7 @@ Para el lenguaje JavaScript, seguimos las siguientes prácticas para escribir un
 
 En el desarrollo frontend con Vue.js, seguimos las recomendaciones oficiales del Vue Style Guide:
 
-* Organización del componente .vue en orden: <template>, <script>, <style>.
+* Organización del componente .vue en orden: template, script, style.
 * Nombres de archivos coinciden con el nombre del componente.
 * Propiedades documentadas, tipadas y ordenadas.
 * Separación clara de lógica en métodos y componentes hijos.
