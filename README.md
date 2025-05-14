@@ -1879,21 +1879,23 @@ En este primer sprint, el equipo Tavolo ha logrado implementar con éxito los co
 
 ### Sistema para Comensales
 
-![Registro de Comensales](./images/execution-evidence/cliente-registro.png)<br>
+![Registro de Comensales](./images/Execution_Evidence/Registro_de_Comensales.png)<br>
 
-![Dashboard Comensales](./images/execution-evidence/cliente-dashboard.png)<br>
+![Dashboard Comensales](./images/Execution_Evidence/Dashboard_Comensales.png)<br>
 
-![Visualización de Reserva](./images/execution-evidence/cliente-reserva.png)<br>
+![Visualización de Reserva](./images/Execution_Evidence/Visualización_de_Reserva.png)<br>
 
 ### Panel de Administración
 
-![Login Administrador](./images/execution-evidence/admin-login.png)<br>
+![Login Administrador](./images/Execution_Evidence/Login_Administrador.png)<br>
 
-![Panel Admin - Sede](./images/execution-evidence/admin-sede.png)<br>
+![Panel Admin - Sede](./images/Execution_Evidence/Panel_Admin-Sede.png)<br>
 
-![Gestión de Mesas](./images/execution-evidence/admin-mesas.png)<br>
+![Gestión de Mesas](./images/Execution_Evidence/Gestión_de_Mesas.jpeg)<br>
 
-![Visualización de Reservas](./images/execution-evidence/admin-reservas.png)<br>
+![Gestión de Mesas 2](./images/Execution_Evidence/Gestión_de_Mesas2.jpeg)<br>
+
+![Visualización de Reservas](./images/Execution_Evidence/Visualización_de_Reservas.png)<br>
 
 ### Video Explicativo
 El video muestra el flujo completo desde la landing page hasta las funcionalidades de reserva para comensales y gestión para administradores, demostrando la integración exitosa de todos los componentes desarrollados durante este sprint.<br>
