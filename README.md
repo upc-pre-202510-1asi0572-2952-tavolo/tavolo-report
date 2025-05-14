@@ -3371,224 +3371,225 @@ Esta sección presenta los wireframes de la aplicación web y móvil de Tavolo, 
 
 Los primeros wireframes son compartidos por ambos usuarios ya que nos referimos al inicio de sesión y registro, estos representan las pantallas de acceso al sistema, con formularios simples y enfocados en la usabilidad. Se prioriza una navegación rápida y accesible para usuarios recurrentes y nuevos:
 
-![inicio_sesion_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/InicioSesion-Wireframe.png)
-![registrarse_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Registrarse-Wireframe.png)
+![inicio_sesion_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/InicioSesion-Wireframe.png?raw=true)
 
-![inicio_sesion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/InicioSesion-Wireframe.png)
-![registrarse_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/Registrarse-Wireframe.png)
+![registrarse_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Registrarse-Wireframe.png?raw=true)
+
+![inicio_sesion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/InicioSesion-Wireframe.png?raw=true)
+![registrarse_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/Registrarse-Wireframe.png?raw=true)
 
 **Clientes**
 - **Pantalla de inicio:**
 
-Muestra un resumen de reservas activas del cliente y acceso directo al menú del establecimiento. Está diseñada para brindar información clave de forma inmediata. 
+Muestra un resumen de reservas activas del cliente y acceso directo al menú del establecimiento. Está diseñada para brindar información clave de forma inmediata.
 
-![home_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Inicio-Cliente-Wireframe.png)
+![home_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/home-cliente-wireframe.png?raw=true)
 
-![home_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/home-cliente-wireframe.png)
+![home_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Inicio-Cliente-Wireframe.png?raw=true)
 
 - **Menú digital:**
 
 Organizado por categorías. La estructura está pensada para facilitar la exploración y eventual selección en el pedido.
 
-![menu_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Menu-Cliente-Wireframe.png)
+![menu_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Menu-Cliente-Wireframe.png?raw=true)
 
-![menu_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/menu-cliente-wireframe.png)
+![menu_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/menu-cliente-wireframe.png?raw=true)
 
 - **Reservar mesa:**
 
 Incluye selector de sede, visualización de mesas disponibles, horarios, y acceso a un mapa con la ubicación exacta de la cafetería. Se destaca la usabilidad móvil responsive y la claridad en la disponibilidad visual.
 
-![sedes_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedes-Cliente-Wireframe.png)
-![mesas_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesas-Cliente-Wireframe.png)
-![reservarmesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesasReservar-Cliente-Wireframe.png)
-![reservacorrecta_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesasCorrecto-Cliente-Wireframe.png)
-![mapa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedes-VerMapa-Cliente-Wireframe.png)
+![sedes_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedes-Cliente-Wireframe.png?raw=true)
+![mesas_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesas-Cliente-Wireframe.png?raw=true)
+![reservarmesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesasReservar-Cliente-Wireframe.png?raw=true)
+![reservacorrecta_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedesMesasCorrecto-Cliente-Wireframe.png?raw=true)
+![mapa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/VerSedes-VerMapa-Cliente-Wireframe.png?raw=true)
 
-![buscar_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/buscar-cliente-wireframe.png)
-![detalle_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/detalle-cliente-wireframe.png)
-![reserva_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reserva-cliente-wireframe.png)
-![form_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/form-reserva-cliente-wireframe.png)
+![buscar_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/buscar-cliente-wireframe.png?raw=true)
+![detalle_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/detalle-cliente-wireframe.png?raw=true)
+![reserva_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reserva-cliente-wireframe.png?raw=true)
+![form_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/form-reserva-cliente-wireframe.png?raw=true)
 
 **Propietarios**
 - **Pantalla de inicio:**
 
 Resume información clave de cada sede: mesas activas y reservas por horario. 
 
-![home_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Inicio-Propietario-Wireframe.png)
+![home_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Inicio-Propietario-Wireframe.png?raw=true)
 
-![home_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/home-propietario-wireframe.png)
+![home_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/home-propietario-wireframe.png?raw=true)
 
 - **Gestionar mesas:**
 
 Visualiza todas las mesas registradas por sede, permite su eliminación o la adición de nuevas con datos como zona, capacidad e identificador único.
 
-![gestion_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesas-Propietario-Wireframe.png)
-![mesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesa-Propietario-Wireframe.png)
-![agregarmesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesaCorrecto-Propietario-Wireframe.png)
+![gestion_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesas-Propietario-Wireframe.png?raw=true)
+![mesa_wireframe_web](hhttps://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesa-Propietario-Wireframe.png?raw=true)
+![agregarmesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesaCorrecto-Propietario-Wireframe.png?raw=true)
 
-![gestion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-propietario-wireframe.png)
-![form_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-form-propietario-wireframe.png)
-![mesa_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-mesa-propietario-wireframe.png)
+![gestion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-propietario-wireframe.png?raw=true)
+![form_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-form-propietario-wireframe.png?raw=true)
+![mesa_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-mesa-propietario-wireframe.png?raw=true)
 
 - **Ver reservas:**
 
 Incluye filtros para buscar reservas por mesa o por cliente, optimizando la gestión diaria del flujo de comensales.
 
-![filtro_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedeFiltro-Propietario-Wireframe.png)
-![pormesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedePorMesa-Propietario-Wireframe.png)
-![persona_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedePorPersona-Propietario-Wireframe.png)
+![filtro_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedeFiltro-Propietario-Wireframe.png?raw=true)
+![pormesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedePorMesa-Propietario-Wireframe.png?raw=true)
+![persona_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/PerfilSedePorPersona-Propietario-Wireframe.png?raw=true)
 
-![pormesa_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reservas-propietario-wireframe.png)
-![persona_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reservas-persona-propietario-wireframe.png)
+![pormesa_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reservas-propietario-wireframe.png?raw=true)
+![persona_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/reservas-persona-propietario-wireframe.png?raw=true)
 
 ### 5.4.2. Applications Wireflow Diagrams
 Los diagramas de Wireflow desarrollados para Tavolo permiten visualizar de manera gráfica la transición entre pantallas dentro de la aplicación, integrando el diseño de la interfaz con el flujo de navegación esperado. Estos flujos representan acciones comunes tanto para el cliente como para el propietario, facilitando el análisis de usabilidad y asegurando la coherencia del diseño:
 
 - **Wireflow – Cliente (Web):** Desde el inicio de sesión o registro, el cliente puede ver sus reservas, acceder al menú, seleccionar una sede, consultar la disponibilidad de mesas, reservar y visualizar la ubicación en mapa.
 
-![wireflow1_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Cliente-Web.png)
+![wireflow1_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Cliente-Web.png?raw=true)
 
 - **Wireflow – Propietario (Web):** Luego del acceso, el propietario puede gestionar mesas (añadir o eliminar), visualizar reservas por sede, mesa o persona, y mantener el control completo sobre la operatividad del local.
 
-![wireflow2_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Propietario-Web.png)
+![wireflow2_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Propietario-Web.png?raw=true)
 
 - **Wireflow – Cliente (Mobile):** Similar al flujo web, adaptado a navegación móvil con vistas más compactas y controles táctiles.
 
-![wireflow1_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Cliente-Mobile.png)
+![wireflow1_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Cliente-Mobile.png?raw=true)
 
 - **Wireflow – Propietario (Mobile):** Pensado para una gestión rápida desde dispositivos móviles, permite acceder a reservas, editar disponibilidad y revisar información clave en tiempo real.
 
-![wireflow2_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Propietario-Mobile.png)
+![wireflow2_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/Wireflow-Propietario-Mobile.png?raw=true)
 
 ### 5.4.3. Applications Mock-ups
 **Versión Web**
 
 La pantalla de inicio de sesión y registro son similares para ambos segmentos, allí el cliente o propietario ingresa sus credenciales para acceder al sistema o por el otro lado, puede llenar un formulario de creación de cuenta para nuevos usuarios, con campos de correo y contraseña.
 
-![iniciosesion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/InicioSesion-Mock-up.png)
-![registro_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Registrarse-Mock-up.png)
+![iniciosesion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/InicioSesion-Mock-up.png?raw=true)
+![registro_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Registrarse-Mock-up.png?raw=true)
 
 **Cliente**
 
 - **Inicio:** Vista principal del cliente donde puede ver sus reservas activas, acceder al menú y ver las sedes disponibles.
 
-![inicio_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Inicio-Cliente-Mock-up.png)
+![inicio_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Inicio-Cliente-Mock-up.png?raw=true)
 
 - **Menú:** Sección donde el cliente puede explorar las categorías de productos disponibles en la cafetería.
 
-![menu_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Menu-Cliente-Mock-up.png)
+![menu_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Menu-Cliente-Mock-up.png?raw=true)
 
 - **Vista de reservas:** Panel donde el cliente puede revisar la lista de sedes e información básica de cada una.
 
-![reserva_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedes-Cliente-Mock-up.png)
+![reserva_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedes-Cliente-Mock-up.png?raw=true)
 
 - **Detalle de la sede:** Información de la sede seleccionada, con dirección, horarios, contacto y acceso a las mesas disponibles con filtros de capacidad y zona. Además, muestra las mesas de la sede seleccionada, agrupadas por zonas, con su estado y horarios disponibles.
 
-![sede_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-Cliente-Mock-up.png)
+![sede_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-Cliente-Mock-up.png?raw=true)
 
 - **Reserva de mesa (pop-up):** Ventana emergente para seleccionar la hora de la reserva de la mesa elegida.
 
-![mesas_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-Reservar-Cliente-Mock-up.png)
+![mesas_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-Reservar-Cliente-Mock-up.png?raw=true)
 
 - **Confirmación de reserva:** Mensaje que confirma que la reserva fue realizada exitosamente.
 
-![confirmacion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-ReservaCorrecta-Cliente-Mock-up.png)
+![confirmacion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedesMesas-ReservaCorrecta-Cliente-Mock-up.png?raw=true)
 
 - **Mapa de la sede (pop-up):** Muestra un mapa con la ubicación exacta de la sede seleccionada para facilitar la llegada del cliente.
 
-![mapa_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedes-VerMapa-Cliente-Mock-up.png)
+![mapa_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/VerSedes-VerMapa-Cliente-Mock-up.png?raw=true)
 
 **Propietario**
 
 - **Inicio:** Muestra las sedes a cargo del propietario y el resumen de reservas por sede.
 
-![inicio_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Inicio-Propietario-Mock-up.png)
+![inicio_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/Inicio-Propietario-Mock-up.png?raw=true)
 
 - **Gestión de mesas:** Panel para ver todas las mesas de una sede, con opción de editar o eliminar cada una.
 
-![gestion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesas-Propietario-Mock-up.png)
+![gestion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesas-Propietario-Mock-up.png?raw=true)
 
 - **Agregar mesa (pop-up):** Ventana para añadir nuevas mesas especificando zona, capacidad e identificador.
 
-![agregar_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesasAgregar-Propietario-Mock-up.png)
+![agregar_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesasAgregar-Propietario-Mock-up.png?raw=true)
 
 - **Confirmación de agregado:** Mensaje que informa que la mesa se añadió correctamente.
 
-![confirmacion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesas-AgregarCorrecto-Propietario-Mock-up.png)
+![confirmacion_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/GestionMesas-AgregarCorrecto-Propietario-Mock-up.png?raw=true)
 
 - **Vista de reservas por mesa:** Permite al propietario revisar las reservas filtradas por cada mesa, con su disponibilidad por horario.
 
-![filtro_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-Filtro-Propietario-Mock-up.png)
-![pormesa_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-PorMesa-Propietario-Mock-up.png)
+![filtro_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-Filtro-Propietario-Mock-up.png?raw=true)
+![pormesa_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-PorMesa-Propietario-Mock-up.png?raw=true)
 
 - **Vista de reservas por persona:** Muestra una lista de personas que han reservado, con los detalles y hora.
 
-![persona_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-PorPersona-Propietario-Mock-up.png)
+![persona_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_web/PerfilSede-PorPersona-Propietario-Mock-up.png?raw=true)
 
 **Versión Móvil**
 
 La pantalla de inicio de sesión y registro son similares para ambos segmentos, allí el cliente o propietario ingresa sus credenciales para acceder al sistema o por el otro lado, puede llenar un formulario de creación de cuenta para nuevos usuarios, con campos de correo y contraseña.
 
-![iniciosesion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/InicioSesion-Mock-up.png)
-![registro_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/Registrarse-Mock-up.png)
+![iniciosesion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/InicioSesion-Mock-up.png?raw=true)
+![registro_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/Registrarse-Mock-up.png?raw=true)
 
 **Cliente**
 
 - **Inicio:** Muestra la reserva activa (si existe), y un acceso rápido a las sedes disponibles.
 
-![inicio_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/home-cliente-mock-up.png)
+![inicio_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/home-cliente-mock-up.png?raw=true)
 
 - **Vista de sedes:** Despliega una lista de sedes con su descripción, dirección y número de mesas disponibles.
 
-![sedes_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/buscar-cliente-mock-up.png)
+![sedes_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/buscar-cliente-mock-up.png?raw=true)
 
 - **Detalle de sede:** Muestra información general de la sede seleccionada (dirección, horario y contacto), incluye una sección donde se visualizan las mesas disponibles, agrupadas por zonas y con sus capacidades, las cuales son una lista ampliada de mesas con scroll para ver más opciones, incluyendo filtros de zona.
 
-![detalle_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-cliente-mock-up.png)
-![capacidad_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/filtro-capacidad-cliente-mock-up.png)
-![zona_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/filtro-zona-cliente-mock-up.png)
+![detalle_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-cliente-mock-up.png?raw=true)
+![capacidad_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/filtro-capacidad-cliente-mock-up.png?raw=true)
+![zona_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/filtro-zona-cliente-mock-up.png?raw=true)
 
 - **Reserva de mesa (pop-up):** Selector de horario para la mesa elegida, mostrando disponibilidad por hora.
 
-![reserva_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-reserva-cliente-mock-up.png)
+![reserva_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-reserva-cliente-mock-up.png?raw=true)
 
 - **Confirmación de reserva:** Mensaje que informa que la reserva fue realizada con éxito.
 
-![confirmacion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-reserva-exitosa-cliente-mock-up.png)
+![confirmacion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/detalle-reserva-exitosa-cliente-mock-up.png?raw=true)
 
 - **Mapa de la sede (pop-up):** Ventana emergente que muestra un mapa con la ubicación de la sede.
 
-![mapa_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/mapa-cliente-mock-up.png)
+![mapa_mock-up_mobile](hthttps://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/mapa-cliente-mock-up.png?raw=true)
 
 - **Menu:** Visualización de productos con nombre, tipo y precio (ej. cafés, postres, etc).
 
-![menu_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/menu-cliente-mock-up.png)
+![menu_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/menu-cliente-mock-up.png?raw=true)
 
 **Propietario**
 
 - **Inicio:** Pantalla principal con vista de sedes administradas, cada una con datos clave y acceso a reservas.
 
-![inicio_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/home-propietario-mock-up.png)
+![inicio_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/home-propietario-mock-up.png?raw=true)
 
 - **Gestión de mesas:** Lista de todas las mesas con capacidad, zona y botón de eliminación.
 
-![gestion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-propietario-mock-up.png)
+![gestion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-propietario-mock-up.png?raw=true)
 
 - **Agregar nueva mesa (pop-up):** Formulario para añadir una mesa, solicitando zona, capacidad e identificador.
 
-![form_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-form-propietario-mock-up.png)
+![form_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-form-propietario-mock-up.png?raw=true)
 
 - **Confirmación de agregado:** Mensaje de éxito que confirma que la mesa fue registrada.
 
-![confirmacion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-mesa-propietario-mock-up.png)
+![confirmacion_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/gestion-mesa-propietario-mock-up.png?raw=true)
 
 - **Detalle de sede:** El propietario puede visualizar cómo el cliente ve las opciones disponibles de reserva.
 
-![pormesa_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/reservas-propietario-mock-up.png)
+![pormesa_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/reservas-propietario-mock-up.png?raw=true)
 
 - **Detalle de reserva por persona:** Vista filtrada para ver las reservas agrupadas por nombre de cliente, fecha y mesa.
 
-![persona_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/reservas-personas-propietario-mock-up.png)
+![persona_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/reservas-personas-propietario-mock-up.png?raw=true)
 
 ### 5.4.4. Applications User Flow Diagrams
 Los diagramas de flujo de usuario permiten entender cómo los usuarios interactúan con la aplicación desde una perspectiva lógica, no visual. Estos diagramas incluyen decisiones condicionales, caminos alternativos y respuestas del sistema según la acción realizada por el usuario.
@@ -3604,8 +3605,8 @@ Los diagramas de flujo de usuario permiten entender cómo los usuarios interact�
 7. Confirmación
 8. (Opcional) Consulta ubicación en mapa
 
-![userflow1_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Cliente-Web.png)
-![userflow1_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Cliente-Mobile.png)
+![userflow1_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Cliente-Web.png?raw=true)
+![userflow1_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Cliente-Mobile.png?raw=true)
 
 - **User Flow – Propietario:**
 
@@ -3615,8 +3616,8 @@ Los diagramas de flujo de usuario permiten entender cómo los usuarios interact�
 4. Consulta reservas por persona o por mesa
 5. Toma decisiones administrativas
 
-![userflow2_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Propietario-Web.png)
-![userflow2_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Propietario-Mobile.png)
+![userflow2_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Propietario-Web.png?raw=true)
+![userflow2_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Propietario-Mobile.png?raw=true)
 
 ## 5.5. Applications Prototyping
 
