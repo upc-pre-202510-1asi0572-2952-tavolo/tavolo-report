@@ -1982,18 +1982,20 @@ La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting
 ### Evidencia de las pantallas
 
 #### Pantalla de Comensal <br>
-![Pantalla1]()
-![Pantalla2]()
-![Pantalla3]()
-![Pantalla4]()
-![Pantalla5]()
+![Pantalla1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Visualización_de_Reserva.png)
+![Pantalla2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Menu.png)
+![Pantalla3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Dashboard_Comensales.png)
+![Pantalla4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/HorasMesas.png)
+![Pantalla5](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Confirmacion.png)
+![Pantalla6](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Mapa.png)
 
 #### Pantalla de Administrador <br>
-![Pantalla1]()
-![Pantalla2]()
-![Pantalla3]()
-![Pantalla4]()
-![Pantalla5]()
+![Pantalla1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Panel_Admin-Sede.png)
+![Pantalla2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Gestión_de_Mesas.jpeg)
+![Pantalla3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Gestión_de_Mesas2.jpeg)
+![Pantalla4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/ConfirmacionAdmin.png)
+![Pantalla5](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/FiltroMesa.png)
+![Pantalla6](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/FiltroPersona.png)
 
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
