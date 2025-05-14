@@ -1725,43 +1725,34 @@ En este primer sprint, el equipo Tavolo ha logrado implementar con éxito los co
 
 ### Landing Page
 ![Landing Page 1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing1.png?raw=true)
-*Pantalla principal de la landing page mostrando la propuesta de valor de Tavolo*
+
 
 ![Landing Page 2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing2.png?raw=true)
-*Sección de qué es Tavolo y los servicios que ofrece*
 
 ![Landing Page 3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing3.png?raw=true)
-*Sección de características clave que destaca los beneficios principales del sistema*
+
 
 ![Landing Page 4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing4.png?raw=true)
-*Sección de formulario de contacto con el equipo de desarrollo de Tavolo*
 
 
 
 ### Sistema para Comensales
 
 ![Registro de Comensales](./images/execution-evidence/cliente-registro.png)<br>
-*Formulario de registro para nuevos comensales con validaciones*
 
 ![Dashboard Comensales](./images/execution-evidence/cliente-dashboard.png)<br>
-*Panel principal del comensal mostrando las mesas disponibles en tiempo real*
 
 ![Visualización de Reserva](./images/execution-evidence/cliente-reserva.png)<br>
-*Vista de la reserva activa para el comensal con detalles de sede y horario*
 
 ### Panel de Administración
 
 ![Login Administrador](./images/execution-evidence/admin-login.png)<br>
-*Pantalla de inicio de sesión exclusiva para administradores*
 
 ![Panel Admin - Sede](./images/execution-evidence/admin-sede.png)<br>
-*Vista que muestra la sede asignada al administrador*
 
 ![Gestión de Mesas](./images/execution-evidence/admin-mesas.png)<br>
-*Interfaz para agregar y eliminar mesas en la sede asignada*
 
 ![Visualización de Reservas](./images/execution-evidence/admin-reservas.png)<br>
-*Panel para monitorear las reservas realizadas en la sede*
 
 ### Video Explicativo
 El video muestra el flujo completo desde la landing page hasta las funcionalidades de reserva para comensales y gestión para administradores, demostrando la integración exitosa de todos los componentes desarrollados durante este sprint.<br>
