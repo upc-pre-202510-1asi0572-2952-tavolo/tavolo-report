@@ -3559,7 +3559,7 @@ La pantalla de inicio de sesión y registro son similares para ambos segmentos, 
 
 - **Mapa de la sede (pop-up):** Ventana emergente que muestra un mapa con la ubicación de la sede.
 
-![mapa_mock-up_mobile](hthttps://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/mapa-cliente-mock-up.png?raw=true)
+![mapa_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/mock-ups_mobile/mapa-cliente-mock-up.png?raw=true)
 
 - **Menu:** Visualización de productos con nombre, tipo y precio (ej. cafés, postres, etc).
 
@@ -3606,6 +3606,7 @@ Los diagramas de flujo de usuario permiten entender cómo los usuarios interact�
 8. (Opcional) Consulta ubicación en mapa
 
 ![userflow1_mock-up_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Cliente-Web.png?raw=true)
+
 ![userflow1_mock-up_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/mock-ups/Mock-up-Cliente-Mobile.png?raw=true)
 
 - **User Flow – Propietario:**
