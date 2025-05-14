@@ -3141,7 +3141,7 @@ El **IoT Monitoring Bounded Context** es responsable de gestionar la interacció
 
 En esta sección definimos los principios visuales y de interacción que rigen toda la experiencia Tavolo, asegurando coherencia entre plataformas. Establecemos una identidad visual clara mediante el uso de paleta de colores, tipografía, iconografía, espaciado y tono comunicacional unificado.
 
-![general_style_guideline](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/style_guideline/general_style.png?raw=true)
+![general_style_guideline](https://raw.githubusercontent.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/refs/heads/feature/chapter-5/images/style_guideline/general_style.png)
 
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
@@ -3158,7 +3158,7 @@ Adaptamos la experiencia Tavolo a dispositivos móviles optimizando la usabilida
 
 Extendemos nuestros lineamientos a dispositivos IoT garantizando interfaces funcionales y simples. Diseñamos visuales claras y compactas, con códigos de color efectivos y elementos visuales que facilitan la comprensión.
 
-![iot_style](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/style_guideline/IOT_style.png?raw=true)
+![iot_style](https://raw.githubusercontent.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/refs/heads/feature/chapter-5/images/style_guideline/IOT_style.png)
 
 # 5.2. Information Architecture
 
@@ -3424,7 +3424,7 @@ Resume información clave de cada sede: mesas activas y reservas por horario.
 Visualiza todas las mesas registradas por sede, permite su eliminación o la adición de nuevas con datos como zona, capacidad e identificador único.
 
 ![gestion_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesas-Propietario-Wireframe.png?raw=true)
-![mesa_wireframe_web](hhttps://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesa-Propietario-Wireframe.png?raw=true)
+![mesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesa-Propietario-Wireframe.png?raw=true)
 ![agregarmesa_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/GestionMesasAgregarMesaCorrecto-Propietario-Wireframe.png?raw=true)
 
 ![gestion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/gestion-propietario-wireframe.png?raw=true)
