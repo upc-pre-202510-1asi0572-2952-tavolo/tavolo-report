@@ -3439,7 +3439,7 @@ Los primeros wireframes son compartidos por ambos usuarios ya que nos referimos 
 
 ![registrarse_wireframe_web](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_web/Registrarse-Wireframe.png?raw=true)
 
-![inicio_sesion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/InicioSesion-Wireframe.png?raw=true)
+![inicio_sesion_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/InicioSesion-Wireframe.png)
 ![registrarse_wireframe_mobile](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-5/images/wireframes/wireframes_mobile/Registrarse-Wireframe.png?raw=true)
 
 **Clientes**
@@ -4070,26 +4070,25 @@ En este primer sprint, el equipo Tavolo ha logrado implementar con éxito los co
 - **Sistema de reservas** con confirmación y visualización de reservas activas
 - **Panel administrativo** para gestión de mesas y visualización de la sede asignada
 
+<!--![Landing Page 1](./images/deployment/landing1.png)-->
+
 ### Landing Page
-![Landing Page 1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing1.png?raw=true)
-
-
-![Landing Page 2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing2.png?raw=true)
-
-![Landing Page 3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing3.png?raw=true)
-
-
-![Landing Page 4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing4.png?raw=true)
-
-
+![Landing Page 1](./images/deployment/landing1.png)
+<br>
+![Landing Page 2](./images/deployment/landing2.png)
+<br>
+![Landing Page 3](./images/deployment/landing3.png)
+<br>
+![Landing Page 4](./images/deployment/landing4.png)
+<br>
 
 ### Sistema para Comensales
-
-![Registro de Comensales](./images/Execution_Evidence/Registro_de_Comensales.png)<br>
-
-![Dashboard Comensales](./images/Execution_Evidence/Dashboard_Comensales.png)<br>
-
-![Visualización de Reserva](./images/Execution_Evidence/Visualización_de_Reserva.png)<br>
+![Registro de Comensales](./images/Execution_Evidence/Registro_de_Comensales.png)
+<br>
+![Dashboard Comensales](./images/Execution_Evidence/Dashboard_Comensales.png)
+<br>
+![Visualización de Reserva](./images/Execution_Evidence/Visualización_de_Reserva.png)
+<br>
 
 ### Panel de Administración
 
@@ -4099,14 +4098,14 @@ En este primer sprint, el equipo Tavolo ha logrado implementar con éxito los co
 
 ![Gestión de Mesas](./images/Execution_Evidence/Gestión_de_Mesas.jpeg)<br>
 
-![Gestión de Mesas 2](./images/Execution_Evidence/Gestión_de_Mesas2.jpeg)<br>
+![Gestión de Mesas2](./images/Execution_Evidence/Gestión_de_Mesas2.jpeg)<br>
 
 ![Visualización de Reservas](./images/Execution_Evidence/Visualización_de_Reservas.png)<br>
 
 ### Video Explicativo
 El video muestra el flujo completo desde la landing page hasta las funcionalidades de reserva para comensales y gestión para administradores, demostrando la integración exitosa de todos los componentes desarrollados durante este sprint.<br>
 
-[**Video Demostración Sprint 1 - Tavolo**](https://www.youtube.com/watch?v=tavolo-sprint1-demo)
+[**Video Demostración Sprint 1 - Tavolo**](https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)
 
 El equipo ha completado el 100% de las historias de usuario planificadas para este sprint, cumpliendo con los criterios de aceptación establecidos. La aplicación es funcional en su estado actual y proporciona las funcionalidades básicas necesarias para la gestión de mesas y reservas. En los **próximos sprints** se agregarán características adicionales **como notificaciones, reportes estadísticos** y la integración completa con los sensores IoT físicos.
 
