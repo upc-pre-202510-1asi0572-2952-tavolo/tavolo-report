@@ -286,6 +286,24 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
   - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide-conventions)
   - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
 - [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
+  - [6.2.1. Sprint 1](#621-sprint-1)
+    - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
+    - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
+    - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
+    - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
+    - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
+    - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
+    - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
+    - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
+    - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
+  - [6.2.2. Sprint 2](###622-sprint-2)
+    - [6.2.2.1. Sprint Planning 2.](####6221-sprint-planning-2)
+    - [6.2.2.2. Aspect Leaders and Collaborators.](####6222-aspect-leaders-and-collaborators)
+    - [6.2.2.3. Sprint Backlog 2.](####6223-sprint-backlog-2)
+    - [6.2.2.4. Development Evidence for Sprint Review.](####6224-development-evidence-for-sprint-review)
+    - [6.2.2.5. Testing Suite Evidence for Sprint Review.](####6225-testing-suite-evidence-for-sprint-review)
+    - [6.2.2.6. Execution Evidence for Sprint Review.](####6226-execution-evidence-for-sprint-review)
+    - [6.2.2.7. Services Documentation Evidence for Sprint Review.](####6227-services-documentation-evidence-for-sprint-review)
 - [6.3. Validation Interviews](#63-validation-interviews)
 - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
 - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistass)
@@ -4279,6 +4297,22 @@ El equipo adoptó un enfoque ágil con las siguientes prácticas:
 - **Porcentaje de código con revisión por pares**: 100%
 
 Este Sprint 1 ha establecido una base sólida para la colaboración continua del equipo Tavolo. La distribución equilibrada del trabajo, el liderazgo compartido y el enfoque en la calidad han permitido entregar todas las funcionalidades planificadas cumpliendo con los criterios de aceptación establecidos.
+
+### 6.2.2. Sprint 2
+#### 6.2.2.1.Sprint Planning 2.
+#### 6.2.2.2.Aspect Leaders and Collaborators.
+#### 6.2.2.3.Sprint Backlog 2.
+#### 6.2.2.4.Development Evidence for Sprint Review.
+#### 6.2.2.5.Testing Suite Evidence for Sprint Review.
+#### 6.2.2.6.Execution Evidence for Sprint Review.
+#### 6.2.2.7.Services Documentation Evidence for Sprint Review.
+#### 6.2.2.8.Software Deployment Evidence for Sprint Review.
+#### 6.2.2.9.Team Collaboration Insights during Sprint.
+## 6.3. Validation Interviews.
+### 6.3.1. Diseño de Entrevistas.
+### 6.3.2. Registro de Entrevistas.
+### 6.3.3. Evaluaciones según heurísticas.
+## 6.4. Video About-the-Product.
 
 
 # Conclusiones Generales del Proyecto
