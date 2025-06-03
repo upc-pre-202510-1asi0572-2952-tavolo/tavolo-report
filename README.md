@@ -4310,6 +4310,19 @@ Este Sprint 1 ha establecido una base sólida para la colaboración continua del
 #### 6.2.2.9.Team Collaboration Insights during Sprint.
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.
+
+**Segmento clientes**
+- ¿Te resultó fácil navegar por el menú desde la app? ¿Hubo algo que te confundiera o faltara?
+- ¿Cómo fue tu experiencia haciendo una reserva? ¿Pudiste entender qué mesas y horarios estaban disponibles?
+- ¿Qué tan útil te pareció poder revisar o cancelar tu reserva desde la app?
+- ¿Qué mejorarías o agregarías para que la app sea más útil para ti al visitar una cafetería?
+
+**Segmento administradores**
+- ¿Qué tan clara y práctica te resultó la función para agregar, editar o eliminar mesas?
+- ¿Qué tal te pareció la visualización de reservas y disponibilidad de mesas?
+- ¿Qué funcionalidades sientes que hacen falta o podrían mejorarse para facilitar tu trabajo diario?
+
+
 ### 6.3.2. Registro de Entrevistas.
 ### 6.3.3. Evaluaciones según heurísticas.
 ## 6.4. Video About-the-Product.
