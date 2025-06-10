@@ -4300,7 +4300,74 @@ Este Sprint 1 ha establecido una base sólida para la colaboración continua del
 
 ### 6.2.2. Sprint 2
 #### 6.2.2.1.Sprint Planning 2.
+
+|            Sprint #1            |                                                                               Sprint 1                                                                              |
+|:-------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Sprint Planning Background      |                                                                                                                                                                     |
+| Date                            | 10/6/2025                                                                                                                                                           |
+| Time                            | 5:00 pm                                                                                                                                                             |
+| Location                        | Reunión virtual vía Discord                                                                                                                                         |
+| Prepared By                     | Jimena Cama                                                                                                                                                         |
+| Attendees (to planning meeting) | - Baldeon Fabian, Aldo Alberto <br> - Cama Salvatierra, Jimena Tamara <br> - Castillo Castillo, Jair Alexander <br> - La Torre Valle, Franz Jair <br> - Quezada Portalatino, Barbara Susana |
+| Sprint Goal & User Stories      |                                                                                                                                                                     |
+| Sprint 1 Goal                   | En este sprint la meta a cumplir fue desarrollar el backend de la plataforma, la aplicación web funcional y la landing page.                                        |
+| Sprint 1 Velocity               | 15                                                                                                                                                                  |
+| Sum of Story Points             |                                                                                                                                                                     |
+
 #### 6.2.2.2.Aspect Leaders and Collaborators.
+
+Para lograr una implementación eficiente del Sprint 2, se estableció una estructura clara de liderazgo y colaboración entre los miembros del equipo. Se identificaron cinco aspectos principales que abarcaron el alcance completo del sprint: Frontend Web Superadministrador, Frontend Movil Cliente, Embedded aplication y el Edge. Esta organización permitió asegurar que cada área tuviera un responsable directo y colaboradores que apoyaron en tareas específicas.
+
+La matriz de liderazgo y colaboración (LACX) detalla cómo se distribuyeron las responsabilidades para cada aspecto del sprint:
+| Team Member | GitHub Username | Frontend Web<br>Superadministrador<br>Leader (L) / Collaborator (C) | Frontend Móvil<br>Cliente<br>Leader (L) / Collaborator (C) | Embedded<br>Application<br>Leader (L) / Collaborator (C) | Edge<br>Leader (L) / Collaborator (C) |
+| -------------------------------------- | --------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------- |
+| Baldeon Fabian, Aldo Alberto           | CodAress        |                                                                     | C                                                          | L                                                        | L                                     |
+| Cama Salvatierra, Jimena Tamara        | aksonie         | L                                                                   | C                                                          | C                                                        | C                                     |
+| Castillo Castillo, Jair Alexander      | U202211390      |                                                                     | C                                                          | C                                                        | C                                     |
+| La Torre Valle, Franz Jair             | FranzJairLTV    |                                                                     | C                                                          | C                                                        | C                                     |
+| Quezada Portalatino, Barbara Susana    | BarbaraQP15     |                                                                     | L                                                          | C                                                        | C                                     |
+
+**Responsabilidades por aspecto:**
+
+- Frontend Web Superadministrador:
+
+Líder: Cama Salvatierra, Jimena Tamara
+
+Enfoque: Desarrollo del dashboard para la gestión y administración del sistema desde el perfil superadministrador.
+
+Tareas principales: Implementación de interfaces para la supervisión general, manejo de usuarios y configuraciones avanzadas.
+
+- Frontend Móvil Cliente:
+
+Líder: Baldeon Fabian, Aldo Alberto
+
+Enfoque: Implementación de la app móvil para clientes, incluyendo filtros de mesas, reservas, formularios de reserva y menús.
+
+Tareas principales: Desarrollo de pantallas para búsqueda de mesas, detalle de sedes, formulario de reservas y navegación en la app.
+
+Colaboradores: Cama Salvatierra, Jimena Tamara; Castillo Castillo, Jair Alexander; La Torre Valle, Franz Jair; Quezada Portalatino, Barbara Susana.
+
+- Embedded Application:
+
+Líder: Baldeon Fabian, Aldo Alberto
+
+Enfoque: Desarrollo del sistema embebido que interactúa con el entorno físico y la aplicación móvil/web.
+
+Tareas principales: Implementación de lógica para dispositivos integrados, comunicación con backend y manejo de eventos en tiempo real.
+
+Colaboradores: Cama Salvatierra, Jimena Tamara; Castillo Castillo, Jair Alexander; La Torre Valle, Franz Jair; Quezada Portalatino, Barbara Susana.
+
+- Edge:
+
+Líder: Baldeon Fabian, Aldo Alberto
+
+Enfoque: Soporte y tareas específicas relacionadas con el procesamiento en borde (edge computing) para optimización y rapidez.
+
+Tareas principales: Implementación de funcionalidades de procesamiento local y sincronización con la nube.
+
+Colaboradores: Cama Salvatierra, Jimena Tamara; Castillo Castillo, Jair Alexander; La Torre Valle, Franz Jair; Quezada Portalatino, Barbara Susana.
+
+
 #### 6.2.2.3.Sprint Backlog 2.
 #### 6.2.2.4.Development Evidence for Sprint Review.
 #### 6.2.2.5.Testing Suite Evidence for Sprint Review.
