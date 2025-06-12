@@ -4391,6 +4391,23 @@ Colaboradores: Cama Salvatierra, Jimena Tamara; Castillo Castillo, Jair Alexande
 
 
 ### 6.3.2. Registro de Entrevistas.
+
+#### Propietarios de cafeterias
+
+**Entrevista #1**<br>
+**Entrevistado:** Diego Salinas<br>
+**Duración:** 3:18<br>
+**Link**: [https://drive.google.com/file/d/1Q9JL3E64J4BqAubMJNZ6rc8pWE4OEuIU/view?usp=sharing](https://drive.google.com/file/d/1Q9JL3E64J4BqAubMJNZ6rc8pWE4OEuIU/view?usp=sharing)
+
+![entrevista_propietario_diego](images/entrevistas/entrevista_propietario.png)
+
+
+
+#### Clientes de cafeterias
+
+
+
+
 ### 6.3.3. Evaluaciones según heurísticas.
 ## 6.4. Video About-the-Product.
 
