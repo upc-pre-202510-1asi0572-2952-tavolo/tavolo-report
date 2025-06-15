@@ -4401,6 +4401,13 @@ Colaboradores: Cama Salvatierra, Jimena Tamara; Castillo Castillo, Jair Alexande
 
 ![entrevista_propietario_diego](images/entrevistas/entrevista_propietario.png)
 
+**Entrevista #2**<br>
+**Entrevistado:** Franchesko Montesinos<br>
+**Duración:** 3:36<br>
+**Link**: [https://drive.google.com/file/d/1BakcVds5atZrFJ7rZIf7gbyW3izZaHkM/view?usp=sharing](https://drive.google.com/file/d/1BakcVds5atZrFJ7rZIf7gbyW3izZaHkM/view?usp=sharing)
+
+![evidencia-entrevista-Francesko.png](images/entrevistas/evidencia-entrevista-Francesko.png)
+
 
 
 #### Clientes de cafeterias
