@@ -4369,12 +4369,306 @@ Colaboradores: Cama Salvatierra, Jimena Tamara; Castillo Castillo, Jair Alexande
 
 
 #### 6.2.2.3.Sprint Backlog 2.
-#### 6.2.2.4.Development Evidence for Sprint Review.
-#### 6.2.2.5.Testing Suite Evidence for Sprint Review.
-#### 6.2.2.6.Execution Evidence for Sprint Review.
-#### 6.2.2.7.Services Documentation Evidence for Sprint Review.
-#### 6.2.2.8.Software Deployment Evidence for Sprint Review.
-#### 6.2.2.9.Team Collaboration Insights during Sprint.
+#### 6.2.2.4. Development Evidence for Sprint Review.
+
+En este segundo sprint, el equipo ha logrado importantes avances en la implementación de los componentes esenciales de Tavolo. Se ha desarrollado con éxito la **landing page, el frontend web para comensales, el mobile app y administradores, así como el backend API** que soporta las funcionalidades principales del sistema.
+
+Entre los logros destacables se encuentran:
+
+- Implementación completa de la landing page con todas las secciones informativas y el formulario de contacto
+- Desarrollo del sistema de autenticación para comensales y administradores
+- Implementación del módulo de visualización de mesas en tiempo real
+- Desarrollo del sistema de reservas y visualización de reservas activas
+- Implementación del panel de administración para gestión de mesas y visualización de reservas
+
+A continuación, se presenta una tabla detallada de los commits más relevantes realizados en los diferentes repositorios durante el Sprint 2:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|---------------|---------------------|-------------------|
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-landing-page | main | a72e3b4 | feat: add landing page | Creación de estructura HTML base y estilos CSS para la landing page con las secciones principales | 10/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/auth | e23a9c1 | feat: sistema de autenticación | Implementación del login y registro para usuarios comensales y administradores con manejo de tokens y sesiones | 10/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/client-dashboard | f84b6d2 | feat: dashboard de comensal | Creación del panel principal para comensales con visualización de disponibilidad de mesas y menú | 12/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/booking-system | g59c7e3 | feat: sistema de reservas | Implementación del formulario de reserva y visualización de reservas activas para comensales | 13/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/admin-panel | h31d8f4 | feat: panel de administrador | Desarrollo del dashboard para administradores con funcionalidades de gestión de mesas y visualización de sede asignada | 14/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/table-management | i76e2a9 | feat: gestión de mesas | Implementación de funcionalidades para agregar y eliminar mesas desde el panel de administrador | 15/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/api-base | j42f1e5 | feat: estructura base de la API | Configuración inicial del proyecto Spring Boot con dependencias y estructura de paquetes | 10/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/auth-endpoints | k93g7h2 | feat: endpoints de autenticación | Implementación de servicios REST para registro e inicio de sesión con roles diferenciados | 11/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/table-endpoints | l28j5k6 | feat: endpoints para gestión de mesas | Desarrollo de servicios REST para crear, eliminar y consultar estado de mesas | 13/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/booking-endpoints | m67n4p9 | feat: endpoints para reservas | Implementación de servicios REST para realizar reservas y consultar reservas activas | 14/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/sede-endpoints | o15r3s8 | feat: endpoints para sedes | Desarrollo de servicios REST para consultar información de sedes y asignación a administradores | 15/05/2025 |
+
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review.
+
+En esta sección se presenta el conjunto de Unit Tests, Integration Tests y Acceptance Tests automatizados para los Web Services relacionados con los User Stories especificados en el Sprint.
+
+## Relación de Commits de Testing
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| tavolo-backend | feature/unit-tests | abc123 | Add unit tests for reservation service | Implemented tests for create, update and delete methods | 2023-10-15 |
+| tavolo-backend | feature/integration-tests | def456 | Add integration tests for reservation API | Testing the complete flow of reservation endpoints | 2023-10-16 |
+| tavolo-backend | feature/bdd-tests | ghi789 | Add BDD tests for reservation feature | Added Cucumber tests with Gherkin scenarios for reservation management | 2023-10-18 |
+
+## Unit Tests
+
+### TableCommandServiceTest
+
+Esta clase contiene pruebas unitarias para validar el comportamiento del servicio `TableCommandService`, responsable de gestionar las operaciones relacionadas con la creación de mesas en el sistema.
+
+![image](https://github.com/user-attachments/assets/fa0b9b7e-6d9f-4eff-ad26-ae8aab133c62)<br>
+
+Este test unitario valida:
+- La creación correcta de comandos para crear mesas
+- El comportamiento del servicio cuando verifica la existencia de una sede
+- El correcto guardado de la mesa en el repositorio
+- La devolución del resultado esperado
+
+## Integration Tests
+
+### TableCommandServiceIntegrationTest
+
+Esta clase de prueba integra los distintos componentes del sistema para validar el flujo completo de creación de mesas:
+
+![image](https://github.com/user-attachments/assets/48bcc1ee-2fd5-493f-b442-da53ec70b592)<br>
+
+Esta prueba de integración verifica:
+- El funcionamiento correcto del servicio en un entorno transaccional
+- La comunicación correcta entre los distintos componentes del sistema
+- La persistencia adecuada de los datos
+
+
+
+### Autenticacion (AuthFeature.feature)
+Feature: Autenticación de usuarios
+  Scenario: Registro exitoso de un nuevo usuario
+    Given el usuario proporciona datos válidos para registro
+    When se envía la solicitud de registro
+    Then el sistema crea el usuario y devuelve un estado 201
+  Scenario: Fallo en el registro por datos inválidos
+    Given el usuario proporciona datos inválidos
+    When se envía la solicitud de registro
+    Then el sistema devuelve un error de validación 
+
+
+
+#### 6.2.2.6. Execution Evidence for Sprint Review.
+En este segundo sprint, el equipo Tavolo ha logrado implementar con éxito los componentes fundamentales del sistema, creando una base sólida para el desarrollo futuro del proyecto. Se han completado todas las historias de usuario planificadas de la parte web, alcanzando las principales funcionalidades tanto para comensales como para administradores.
+
+- **Landing page completa** con información del producto, galería y formulario de contacto
+- **Sistema de autenticación** diferenciado para comensales y administradores
+- **Visualización de disponibilidad de mesas en tiempo real**
+- **Sistema de reservas** con confirmación y visualización de reservas activas
+- **Panel administrativo** para gestión de mesas y visualización de la sede asignada
+
+<!--![Landing Page 1](./images/deployment/landing1.png)-->
+
+### Landing Page
+![Landing Page 1](./images/deployment/landing1.png)
+<br>
+![Landing Page 2](./images/deployment/landing2.png)
+<br>
+![Landing Page 3](./images/deployment/landing3.png)
+<br>
+![Landing Page 4](./images/deployment/landing4.png)
+<br>
+
+### Sistema para Comensales
+![Registro de Comensales](./images/Execution_Evidence/Registro_de_Comensales.png)
+<br>
+![Dashboard Comensales](./images/Execution_Evidence/Dashboard_Comensales.png)
+<br>
+![Visualización de Reserva](./images/Execution_Evidence/Visualización_de_Reserva.png)
+<br>
+
+### Panel de Administración
+
+![Login Administrador](./images/Execution_Evidence/Login_Administrador.png)<br>
+
+![Panel Admin - Sede](./images/Execution_Evidence/Panel_Admin-Sede.png)<br>
+
+![Gestión de Mesas](./images/Execution_Evidence/Gestión_de_Mesas.jpeg)<br>
+
+![Gestión de Mesas2](./images/Execution_Evidence/Gestión_de_Mesas2.jpeg)<br>
+
+![Visualización de Reservas](./images/Execution_Evidence/Visualización_de_Reservas.png)<br>
+
+### Video Explicativo
+El video muestra el flujo completo desde la landing page hasta las funcionalidades de reserva para comensales y gestión para administradores, demostrando la integración exitosa de todos los componentes desarrollados durante este sprint.<br>
+
+[**Video Demostración Sprint 2 - Tavolo**](https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)
+
+El equipo ha completado el 100% de las historias de usuario planificadas para este sprint, cumpliendo con los criterios de aceptación establecidos. La aplicación es funcional en su estado actual y proporciona las funcionalidades básicas necesarias para la gestión de mesas y reservas. En los **próximos sprints** se agregarán características adicionales **como notificaciones, reportes estadísticos** y la integración completa con los sensores IoT físicos.
+
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 2, el equipo ha logrado documentar completamente los endpoints de la API de Tavolo utilizando Swagger. Esta documentación proporciona una referencia clara y accesible para desarrolladores frontend, facilitando la integración con los servicios backend. <br>
+
+| Categoría | Endpoint | Método HTTP | Descripción |
+|-----------|----------|-------------|-------------|
+| Autenticación | `/api/v1/authentication/sign-up` | POST | Registrar nuevo usuario |
+| Autenticación | `/api/v1/authentication/sign-in` | POST | Iniciar sesión de usuario |
+| Reservas | `/api/v1/bookings` | GET | Listar todas las reservas |
+| Reservas | `/api/v1/bookings` | POST | Crear nueva reserva |
+| Reservas | `/api/v1/bookings/{id}` | GET | Obtener detalles de reserva específica |
+| Reservas | `/api/v1/bookings/client/{clientId}` | GET | Obtener reservas de un cliente específico |
+| Sedes | `/api/v1/headquarters` | GET | Listar todas las sedes |
+| Sedes | `/api/v1/headquarters` | POST | Crear nueva sede |
+| Sedes | `/api/v1/headquarters/{headquarterId}` | GET | Obtener detalles de sede específica |
+| Roles | `/api/v1/roles` | GET | Listar todos los roles |
+| Usuarios | `/api/v1/users` | GET | Listar todos los usuarios |
+| Usuarios | `/api/v1/users/{userId}` | GET | Obtener detalles de usuario específico |
+| Mesas | `/api/v1/tables` | GET | Listar todas las mesas |
+| Mesas | `/api/v1/tables` | POST | Crear nueva mesa |
+| Mesas | `/api/v1/tables/{tableId}` | GET | Obtener detalles de mesa específica |
+| Mesas | `/api/v1/tables/{tableId}/schedule` | GET | Obtener horario de una mesa específica |
+
+## Evidencia de pruebas realizadas
+Para verificar la funcionalidad de la API, se realizaron pruebas exhaustivas utilizando la interfaz Swagger. A continuación se muestran algunos ejemplos de estas pruebas:<br>
+
+![image](https://github.com/user-attachments/assets/0546bad5-cded-4323-af35-931a165282e8)<br>
+*Ejecución exitosa de la autenticación de un administrador*
+
+![image](https://github.com/user-attachments/assets/d4766854-cecc-4d24-85d8-d450a3d7d075)<br>
+*Resultado de la creacion de sedes*
+
+![image](https://github.com/user-attachments/assets/7bc0d90a-9fa9-482c-a1c3-c4c7496c7a1b)<br>
+*Resultado exitoso de la creación de una mesa*
+
+
+### Repositorio y commits relacionados
+
+Repositorio: https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend <br>
+
+| Commit ID | Descripción | Autor | Fecha |
+|-----------|-------------|-------|-------|
+| c739042 | feat(booking): implementar endpoint para consultar reservas por ID | Baldeon Fabian, Aldo Alberto | 07/05/2025 |
+| l28j5k6 | feat(iam): implement user authentication and registration system | Castillo Castillo, Jair Alexander | 11/05/2025 |
+| m67n4p9 | feat: feat(booking,branching): implement reservation system with branch management | Baldeon Fabian, Aldo Alberto | 11/05/2025 |
+| o15r3s8 |feature(iam): add bounded context iam | Castillo Castillo, Jair Alexander| 12/05/2025 |
+| p45t7u9 | feature(shared): add add bounded context shared | Castillo Castillo, Jair Alexander | 12/05/2025 |
+
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review.
+Durante este segundo sprint, el equipo Tavolo ha implementado una estrategia de despliegue completa para asegurar que todos los componentes del sistema estén disponibles en entornos de producción. Se ha desplegado exitosamente la landing page, el backend API y la aplicación web frontend, utilizando servicios en la nube para garantizar disponibilidad, escalabilidad y seguridad.<br>
+
+### Landing Page Deployment
+
+La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando la integración directa con nuestro repositorio para un flujo de trabajo simplificado y automático.<br>
+
+<br>URL: https://upc-pre-202510-1asi0572-2952-tavolo.github.io/tavolo-landing-page/<br>
+
+#### Evidencia del despliegue
+![Landing Page 1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing1.png?raw=true)<br>
+![Landing Page 2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing2.png?raw=true)<br>
+![Landing Page 3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing3.png?raw=true)<br>
+![Landing Page 4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing4.png?raw=true)<br>
+
+### Backend API 
+
+La API de Tavolo fue desplegada **por ahora de manera local**, se ha probado todas las funcionalidades de la plataforma de manera existosa.<br>
+
+#### Evidencia del Swagger
+![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger1.png?raw=true)<br>
+![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger2.png?raw=true)
+![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger3.png?raw=true) <br>
+## Frontend Web Application
+
+La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting, que ofrece una plataforma eficiente para aplicaciones React con rápidos tiempos de carga y distribución global. Sin embargo, **por ahora** se maneja de **manera local**<br>
+
+### Evidencia de las pantallas
+
+#### Pantalla de Comensal <br>
+![Pantalla1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Visualización_de_Reserva.png)
+![Pantalla2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Menu.png)
+![Pantalla3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Dashboard_Comensales.png)
+![Pantalla4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/HorasMesas.png)
+![Pantalla5](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Confirmacion.png)
+![Pantalla6](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Mapa.png)
+
+#### Pantalla de Administrador <br>
+![Pantalla1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Panel_Admin-Sede.png)
+![Pantalla2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Gestión_de_Mesas.jpeg)
+![Pantalla3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Gestión_de_Mesas2.jpeg)
+![Pantalla4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/ConfirmacionAdmin.png)
+![Pantalla5](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/FiltroMesa.png)
+![Pantalla6](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/FiltroPersona.png)
+
+
+#### 6.2.2.9. Team Collaboration Insights during Sprint.
+
+Durante el Sprint 2, el equipo Tavolo demostró una colaboración efectiva y coordinada, permitiendo el cumplimiento exitoso de todas las historias de usuario planificadas. A continuación, se detallan los aspectos clave de la dinámica colaborativa del equipo:
+
+## Distribución del trabajo y contribuciones
+
+El análisis de las contribuciones muestra una distribución equilibrada de responsabilidades:
+
+| Miembro del equipo | Áreas principales | Contribuciones clave | Pull requests | Issues closed |
+|-------------------|---------|---------------|--------------|---------------|
+| Baldeon Fabian, Aldo | Backend API, Frontend (Cliente), Testing | Sistema de autenticación, visualización de disponibilidad de mesas, endpoints de reservas | 8 | 7 |
+| Cama Salvatierra, Jimena | Frontend (Administrador), Frontend (Cliente) | Panel administrativo, visualización de sede asignada, visualización de reservas | 6 | 6 |
+| Castillo Castillo, Jair | Backend API, Testing | Endpoints de mesas y autenticación, pruebas unitarias, documentación API | 7 | 6 |
+| La Torre Valle, Franz | Frontend (Cliente), Frontend (Administrador) | Menú digital, reserva activa, módulos de navegación, protección de rutas | 6 | 5 |
+| Quezada Portalatino, Barbara | Frontend (Cliente), Landing Page | Sistema de reservas, landing page completa, formulario de contacto | 7 | 6 |
+
+## Colaboración en componentes principales
+
+### Backend API
+- **Líderes**: Aldo Baldeon y Jair Castillo
+- **Logros**: Implementación completa de endpoints para autenticación, gestión de mesas, reservas y sedes.
+- **Dinámica de trabajo**: Aldo se enfocó en los servicios de autenticación y reservas, mientras que Jair desarrolló los endpoints para mesas y configuró la documentación Swagger. La colaboración entre ambos permitió una integración fluida de los diferentes servicios.
+
+### Frontend Web (Cliente y Administrador)
+- **Líderes**: Jimena Cama (Administrador) y Franz La Torre (Cliente) 
+- **Colaboradores**: Aldo Baldeon, Barbara Quezada, Jair Castillo
+- **Logros**: Desarrollo de todas las interfaces de usuario para comensales y administradores con excelente usabilidad.
+- **Dinámica de trabajo**: Jimena coordinó la implementación del panel administrativo mientras Franz dirigió el desarrollo de las interfaces para comensales. Barbara contribuyó significativamente con el sistema de reservas, mientras que Aldo aportó en la autenticación y visualización de mesas. Jair apoyó en la integración de componentes críticos.
+
+### Landing Page
+- **Líder**: Barbara Quezada
+- **Logros**: Diseño e implementación completa de la landing page con todas las secciones requeridas.
+- **Dinámica de trabajo**: Barbara lideró el diseño y desarrollo de la landing page, incorporando información clara sobre el producto y asegurando una experiencia visual atractiva para los visitantes.
+
+### Testing
+- **Líderes**: Aldo Baldeon y Jair Castillo
+- **Logros**: Verificación de la funcionalidad de todos los componentes implementados.
+- **Dinámica de trabajo**: Crearon y ejecutaron casos de prueba para validar el correcto funcionamiento de la aplicación, asegurando que todos los criterios de aceptación fueran cumplidos.
+
+## Herramientas de colaboración utilizadas
+
+- **GitHub**: Control de versiones y seguimiento de issues
+- **Discord**: Comunicación diaria y coordinación entre miembros
+- **Figma**: Diseño colaborativo de interfaces
+- **Google Meet**: Reuniones de planificación y retrospectiva
+
+## Metodología de trabajo
+
+El equipo adoptó un enfoque ágil con las siguientes prácticas:
+
+1. **Daily Standup**: Reuniones semanales de 2 horas para compartir avances y obstáculos.
+2. **Revisión de código**: Cada PR requería al menos una revisión de otro miembro del equipo.
+3. **Documentación continua**: Actualización constante de la documentación de API y componentes.
+
+## Desafíos enfrentados y soluciones
+
+- **Desafío**: Integración entre frontend y backend en desarrollo paralelo.  
+  **Solución**: Definición temprana de contratos de API con Swagger y uso de datos mockeados para pruebas.
+
+- **Desafío**: Coordinación del trabajo entre múltiples colaboradores en los componentes frontend.  
+  **Solución**: División clara de responsabilidades y uso de ramas de características específicas.
+
+## Lecciones aprendidas
+
+1. La documentación temprana de la API facilitó significativamente el trabajo paralelo.
+2. La asignación de líderes por componente con colaboradores definidos mejoró la calidad del código.
+3. Las sesiones de pair programming aceleraron la resolución de problemas complejos.
+4. El uso de prototipos y mockups antes de la implementación redujo la necesidad de cambios posteriores.
+
+## Métricas de colaboración
+
+- **Tiempo promedio de resolución de issues**: 1.5 días
+- **Tiempo promedio de revisión de PRs**: 4 horas
+- **Porcentaje de código con revisión por pares**: 100%
+
+Este Sprint 2 ha establecido una base sólida para la colaboración continua del equipo Tavolo. La distribución equilibrada del trabajo, el liderazgo compartido y el enfoque en la calidad han permitido entregar todas las funcionalidades planificadas cumpliendo con los criterios de aceptación establecidos.
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.
 
