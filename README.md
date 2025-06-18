@@ -4714,14 +4714,14 @@ Este Sprint 2 ha establecido una base sólida para la colaboración continua del
 
 En este video demostrativo presentamos Tavolo, nuestra plataforma integral para gestión de cafeterías. El contenido muestra:
 
+![VideoAboutThProduct](/images/video-about-the-product.png)
+<br>Enlace: 
+[Video About The Product de Tavolo](https://drive.google.com/file/d/1JMYA8vJc6BDFxX0ZL9tl0Fy3lKO5bwHQ/view?usp=sharing)
 - **Experiencia del Comensal**: Ver las sedes, navegación por el menú digital y realización de reservas.
 - **Panel del Supervisor**: Gestión de mesas activas y monitoreo de reservas.
 - **Herramientas del Administrador**: Dashboard con la creacióny gestión de supervisores y gestión del menú.
 
 El video demuestra cómo estas tres interfaces interactúan en tiempo real para optimizar la operación de las cafeterías, desde que un cliente realiza una reserva hasta que se refleja en los reportes de gestión de reservas de un supervisor.
-
-
-[Enlace al video](https://www.youtube.com/watch?v=TU_VIDEO_ID)
 
 # Conclusiones Generales del Proyecto
 
