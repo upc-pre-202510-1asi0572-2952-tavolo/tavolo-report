@@ -4714,7 +4714,108 @@ Este Sprint 2 ha establecido una base sólida para la colaboración continua del
 ![evidencia-entrevista-Jenna](/images/entrevistas/evidencia-Jenna.png)
 
 
-### 6.3.3. Evaluaciones según heurísticas.
+### 6.3.3. Evaluaciones según heurísticas
+
+#### UX Heuristics & Principles Evaluation
+Usability – Inclusive Design – Information Architecture
+
+#### SITE o APP A EVALUAR:
+Tavolo (Aplicación Web y Móvil)
+
+#### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+1. Navegación y visualización de sedes para comensales
+2. Gestión de mesas por parte del supervisor
+3. Filtrado de reservas por mesa
+4. Asignación de supervisores a sedes por parte del administrador
+5. Acciones de cancelar y agregar elementos en diversas secciones
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+1. Inicio Sesión
+2. Configuración de la cuenta
+
+#### ESCALA DE SEVERIDAD:
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | Problema cosmético: no afecta significativamente la funcionalidad, pero reduce la calidad de la experiencia de usuario. |
+| 2 | Problema menor: causa cierta confusión o frustración, pero los usuarios pueden adaptarse rápidamente. |
+| 3 | Problema importante: genera confusión significativa, aumenta la probabilidad de errores y afecta la eficiencia de uso. |
+| 4 | Problema crítico: impide que los usuarios completen tareas fundamentales o causa errores graves en el sistema. |
+
+#### TABLA RESUMEN:
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---|----------|---------------------|----------------------------------|
+| 1 | Falta de imágenes referenciales en la vista de sedes para comensales | 2 | Coincidencia entre el sistema y el mundo real |
+| 2 | Imposibilidad de editar detalles de mesas creadas por el supervisor | 3 | Control y libertad del usuario |
+| 3 | Filtro de reserva por mesa no implementado como lista | 2 | Flexibilidad y eficiencia de uso |
+| 4 | Botones con degradado de colores tierra dificultan la lectura en la pantalla de asignación de supervisores | 3 | Visibilidad del estado del sistema |
+| 5 | Botones de acción (cancelar/agregar) con colores poco diferenciados | 2 | Prevención de errores |
+
+#### DESCRIPCIÓN DE PROBLEMAS:
+
+##### PROBLEMA #1: Falta de imágenes referenciales en la vista de sedes
+- Severidad: 2
+- Heurística violada: Coincidencia entre el sistema y el mundo real
+
+- Problema:
+La vista de sedes no incluye imágenes referenciales de cada establecimiento, lo que dificulta a los comensales reconocer visualmente el lugar al que desean asistir. Los usuarios necesitan asociar la información textual con un referente visual para tomar decisiones más rápidas e informadas.
+
+![prom5](/images/heuristicas/pb5.png)
+
+- Recomendación:
+Implementar un carrusel de imágenes o al menos una imagen destacada para cada sede, con dimensiones estandarizadas (16:9) y optimizadas para carga rápida. La imagen debe mostrar claramente la fachada o interior del establecimiento para facilitar el reconocimiento visual.
+
+##### PROBLEMA #2: Imposibilidad de editar detalles de mesas creadas
+- Severidad: 3
+- Heurística violada: Control y libertad del usuario
+
+- Problema:
+Los supervisores no pueden editar los detalles de las mesas una vez que han sido creadas en el sistema. Esto obliga a eliminar y recrear mesas cuando se requiere realizar cambios simples, generando ineficiencia y potencial pérdida de información relacionada con esas mesas.
+
+![prom1](/images/heuristicas/pb1.jpg)
+
+- Recomendación:
+Añadir una funcionalidad de edición accesible mediante un botón o menú contextual en cada mesa. Esta función debe permitir modificar los atributos clave como capacidad, ubicación, estado y características especiales, manteniendo el historial de cambios para auditoría.
+
+##### PROBLEMA #3: Filtro de reserva por mesa no implementado como lista
+- Severidad: 2
+- Heurística violada: Flexibilidad y eficiencia de uso
+
+- Problema:
+El filtro de reserva por mesa utiliza un formato que no es intuitivo para los usuarios, dificultando la rápida localización de reservas específicas. Los usuarios esperan un formato de lista desplegable que les permita seleccionar fácilmente entre las opciones disponibles.
+
+![prom2](/images/heuristicas/pb2.png)
+
+- Recomendación:
+Reemplazar el filtro actual por una lista desplegable organizada numéricamente (o por zona si aplica), que permita selección múltiple y búsqueda rápida. Incluir una opción "Todas las mesas" al inicio de la lista para facilitar la visualización completa.
+
+##### PROBLEMA #4: Botones con degradado difíciles de leer
+- Severidad: 3
+- Heurística violada: Visibilidad del estado del sistema
+
+- Problema:
+En la pantalla de asignación de supervisores a sedes, los botones utilizan colores tierra con efectos de degradado que reducen significativamente el contraste entre el texto y el fondo, dificultando su lectura y reconocimiento, especialmente para usuarios con problemas visuales.
+
+![prom3](/images/heuristicas/pb3.png)
+
+- Recomendación:
+Rediseñar los botones utilizando colores sólidos con alto contraste entre el texto y el fondo. Mantener la paleta de colores corporativa pero eliminar los degradados. Asegurar que cumplen con las pautas WCAG 2.1 de accesibilidad (ratio de contraste mínimo de 4.5:1).
+
+##### PROBLEMA #5: Botones de acción con colores poco diferenciados
+- Severidad: 2
+- Heurística violada: Prevención de errores
+
+- Problema:
+Los botones de acción crítica como "Cancelar" y "Agregar" utilizan colores tierra similares entre sí, lo que no sigue las convenciones esperadas por los usuarios y aumenta la probabilidad de errores al no distinguir claramente entre acciones positivas y negativas.
+
+![prom4](/images/heuristicas/pb4.png)
+
+- Recomendación:
+Implementar un código de colores consistente y convencional: verde puro (#00B050 o similar) para acciones positivas como "Agregar" o "Confirmar", y rojo puro (#FF0000 o similar) para acciones negativas como "Cancelar" o "Eliminar". Mantener este esquema en toda la aplicación para reforzar la consistencia.
+
 ## 6.4. Video About-the-Product
 
 En este video demostrativo presentamos Tavolo, nuestra plataforma integral para gestión de cafeterías. El contenido muestra:
