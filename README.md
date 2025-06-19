@@ -4369,6 +4369,297 @@ Colaboradores: Cama Salvatierra, Jimena Tamara; Castillo Castillo, Jair Alexande
 
 
 #### 6.2.2.3.Sprint Backlog 2.
+<table>
+    <tr align="center">
+        <td colspan="2"><strong>Sprint #</strong></td>
+        <td colspan="6"><strong>Sprint 2</strong></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2"><strong>User Story</strong></td>
+        <td colspan="6"><strong>Work-Item / Task</strong></td>
+    </tr>
+    <tr align="center">
+        <td><strong>Id</strong></td>
+        <td><strong>Title</strong></td>
+        <td><strong>Id</strong></td>
+        <td><strong>Title</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Estimation (Hours)</strong></td>
+        <td><strong>Assigned to</strong></td>
+        <td><strong>Status (To do / In process / To review / Done)</strong></td>
+    </tr>
+    <tr align="center">
+        <td>US001</td>
+        <td>Ver sección "¿Qué es Tavolo?"</td>
+        <td>TA1</td>
+        <td>Crear componente móvil informativo</td>
+        <td>Mostrar texto informativo desde app Flutter</td>
+        <td>2</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Cargar contenido desde API</td>
+        <td>Conectar con backend para cargar descripción</td>
+        <td>2</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US002</td>
+        <td>Ver sección "Características clave"</td>
+        <td>TA1</td>
+        <td>Mostrar características en app</td>
+        <td>Lista con íconos y descripciones desde backend</td>
+        <td>3</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Agregar navegación a cada módulo</td>
+        <td>Botones que redirigen a pantallas relevantes</td>
+        <td>2</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US003</td>
+        <td>Ver la galería virtual</td>
+        <td>TA1</td>
+        <td>Implementar galería en Flutter</td>
+        <td>Carrusel de imágenes de sedes desde API</td>
+        <td>3</td>
+        <td>Cama Salvatierra, Jimena</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Optimizar carga desde backend</td>
+        <td>Endpoint optimizado para envío de imágenes</td>
+        <td>2</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US005</td>
+        <td>Ver menú digital de una sede</td>
+        <td>TA1</td>
+        <td>Diseñar pantalla mobile del menú</td>
+        <td>Mostrar platos por categoría en Flutter</td>
+        <td>2</td>
+        <td>La Torre Valle, Franz</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Optimizar endpoint de menú</td>
+        <td>Agregar filtros por sede y categoría</td>
+        <td>2</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US006</td>
+        <td>Visualizar reserva activa</td>
+        <td>TA1</td>
+        <td>Mostrar reserva al iniciar en app</td>
+        <td>Leer reserva desde backend y mostrar detalles</td>
+        <td>3</td>
+        <td>La Torre Valle, Franz</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Conexión en tiempo real (polling)</td>
+        <td>Verificar estado activo periódicamente</td>
+        <td>2</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US007</td>
+        <td>Ver disponibilidad de mesas en tiempo real</td>
+        <td>TA1</td>
+        <td>Integración con microcontrolador</td>
+        <td>Recepción en backend de estados vía MQTT</td>
+        <td>4</td>
+        <td>Castillo Castillo, Jair</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Visualización embebida en app Flutter</td>
+        <td>Mostrar íconos de disponibilidad en pantalla</td>
+        <td>3</td>
+        <td>Castillo Castillo, Jair</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US008</td>
+        <td>Reservar una mesa</td>
+        <td>TA1</td>
+        <td>Diseñar formulario en Flutter</td>
+        <td>Interfaz para elegir sede, fecha y personas</td>
+        <td>2</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Conectar con backend para crear reserva</td>
+        <td>POST a API y confirmación visual</td>
+        <td>2</td>
+        <td>La Torre Valle, Franz</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US009</td>
+        <td>Visualizar más sedes en un mapa</td>
+        <td>TA1</td>
+        <td>Crear vista de sedes en app móvil</td>
+        <td>Mostrar lista de sedes disponibles con nombre y dirección</td>
+        <td>3</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Implementar mapa interactivo</td>
+        <td>Al presionar "Ver en mapa", abrir modal con ubicación vía API de mapas</td>
+        <td>3</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA3</td>
+        <td>Conectar con backend para obtener sedes</td>
+        <td>Endpoint que devuelva lista actualizada de sedes activas</td>
+        <td>2</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US010</td>
+        <td>Registro de cuenta de comensal</td>
+        <td>TA1</td>
+        <td>Vista de registro en app móvil</td>
+        <td>Campos y validaciones en Flutter</td>
+        <td>2</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Validar datos desde backend</td>
+        <td>Evitar duplicidad y errores comunes</td>
+        <td>2</td>
+        <td>Castillo Castillo, Jair</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US011</td>
+        <td>Inicio de sesión de cuenta de comensal</td>
+        <td>TA1</td>
+        <td>Implementar login móvil</td>
+        <td>Lógica y guardado de token local</td>
+        <td>3</td>
+        <td>Castillo Castillo, Jair</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Validar credenciales en backend</td>
+        <td>Envío seguro de usuario y password</td>
+        <td>3</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US013</td>
+        <td>Visualizar reservas realizadas</td>
+        <td>TA1</td>
+        <td>Lista de historial de reservas</td>
+        <td>Mostrar reservas pasadas en app</td>
+        <td>3</td>
+        <td>Cama Salvatierra, Jimena</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Agregar filtros por estado y fecha</td>
+        <td>Dropdowns y chips para filtrar</td>
+        <td>2</td>
+        <td>Cama Salvatierra, Jimena</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US014</td>
+        <td>Ver la sede asignada</td>
+        <td>TA1</td>
+        <td>Mostrar sede en perfil móvil</td>
+        <td>Vista en Flutter para administradores</td>
+        <td>2</td>
+        <td>Cama Salvatierra, Jimena</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Obtener sede desde backend</td>
+        <td>Consulta protegida según token</td>
+        <td>2</td>
+        <td>Cama Salvatierra, Jimena</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US018</td>
+        <td>Acceder a todos los módulos del sistema</td>
+        <td>TA1</td>
+        <td>Menú de navegación en app móvil</td>
+        <td>Drawer o barra inferior para navegar entre módulos</td>
+        <td>2</td>
+        <td>La Torre Valle, Franz</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Control de accesos desde backend</td>
+        <td>Middleware según roles y permisos</td>
+        <td>3</td>
+        <td>La Torre Valle, Franz</td>
+        <td>Done</td>
+    </tr>
+</table>
+
 #### 6.2.2.4. Development Evidence for Sprint Review.
 
 En este segundo sprint, el equipo ha logrado importantes avances en la implementación de los componentes esenciales de Tavolo. Se ha desarrollado con éxito la **landing page, el frontend web para comensales, el mobile app y administradores, así como el backend API** que soporta las funcionalidades principales del sistema.
