@@ -4708,10 +4708,10 @@ Este Sprint 2 ha establecido una base sólida para la colaboración continua del
 
 **Entrevista #1**<br>
 **Entrevistado:** Jenna Portalatino<br>
-**Duración:** 3:45<br>
-**Link**: []()
+**Duración:** 6:33<br>
+**Link**: [https://drive.google.com/file/d/1BRU-wJSo4vY4o1B6tNWp8De5KIxhHKAv/view?usp=sharing](https://drive.google.com/file/d/1BRU-wJSo4vY4o1B6tNWp8De5KIxhHKAv/view?usp=sharing)
 
-![evidencia-entrevista-Jenna](/images/entrevistas/evidencia-Jenna.png)
+![evidencia-entrevista-Jenna](/images/entrevistas/evidencia-entrevista-jenna.png)
 
 
 ### 6.3.3. Evaluaciones según heurísticas
