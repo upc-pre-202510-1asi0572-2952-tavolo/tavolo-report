@@ -5125,11 +5125,15 @@ El video demuestra cómo estas tres interfaces interactúan en tiempo real para 
 * El proyecto TAVOLO se enfoca en optimizar la experiencia en cafeterías peruanas mediante una solución tecnológica IoT que gestiona la ocupación de mesas y reservas. Para los comensales, ofrece visualización del menú, disponibilidad de mesas en tiempo real y reservas; para los administradores, permite la gestión de mesas y reservas de la sede asignada. El objetivo es mejorar la experiencia del cliente y la eficiencia operativa del negocio.
 * La investigación y análisis de requerimientos identificaron la problemática de la incertidumbre sobre la disponibilidad de mesas en cafeterías, especialmente en horas pico, lo que afecta la experiencia del cliente. Se definieron segmentos objetivo claros (comensales y administradores) y se analizaron competidores como Eat App y OpenTable, destacando la ventaja de TAVOLO en la detección automática de ocupación en tiempo real mediante sensores IoT.
 * El equipo demostró un liderazgo compartido y colaborativo, asumiendo responsabilidades específicas en cada capítulo y utilizando herramientas como GitHub y metodologías como Gitflow para una gestión eficiente del proyecto. Se establecieron metas claras, se planificaron tareas según las fortalezas individuales y se mantuvo una comunicación constante, lo que permitió cumplir los objetivos y fortalecer la cohesión del equipo.
+* El desarrollo de la app móvil consideró principios de usabilidad y experiencia de usuario (UX), permitiendo una navegación intuitiva, rápida y accesible. Esto garantiza que los comensales puedan interactuar con el sistema sin necesidad de asistencia técnica, lo que refuerza su autonomía y satisfacción.
+* TAVOLO fue diseñado con una arquitectura modular que permite escalar a múltiples sedes y escenarios de uso. Su backend en Java (Spring Boot), combinado con una app Flutter, una app web y dispositivos embebidos, proporciona una base tecnológica sólida adaptable a restaurantes, coworkings y otros negocios con gestión de espacios.
 
 # Bibliografía
 1.  **Las MIPYME en cifras 2022:** Publicado por la Oficina General de Evaluación de Impacto y Estudios Económicos (OGEIEE) de Produce. ([Ver publicación](https://ogeiee.produce.gob.pe/index.php/en/shortcode/oee-documentos-publicaciones/publicaciones-anuales/item/1170-las-mipyme-en-cifras-2022))
 2.  **Memoria Institucional del Ministerio de la Producción 2022:** Documento oficial que resume las acciones y logros del ministerio en ese año. ([Ver Memoria](https://transparencia.produce.gob.pe/images/stories/Repositorio/transparencia/planeamiento/memoria-anual/2022.pdf))
-3.   **Informe de ComexPerú (basado en datos oficiales)**: Las micro y pequeñas empresas en el Perú Resultados en 2022. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
+3.   **Informe de ComexPerú (basado en datos oficiales):** Las micro y pequeñas empresas en el Perú Resultados en 2022. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
+4.   **Google Developers:** Material Design Guidelines. Guía oficial para la creación de interfaces centradas en la experiencia del usuario. ([Ver guía](https://m3.material.io/))
+5.   **IoT For All:** Using Microcontrollers and Sensors in Smart Environments. Artículo técnico sobre aplicaciones de sensores IoT en espacios físicos. ([Ver artículo](https://www.iotforall.com))
    
 # Anexos
 * **Video de Exposicion TB1:** `https://drive.google.com/drive/u/0/folders/1YN0UBGC28osxHvRTsBrLSjwX2CAVLHlt`
@@ -5138,8 +5142,8 @@ El video demuestra cómo estas tres interfaces interactúan en tiempo real para 
 * **Informe del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report`
 * **Backend del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend`
 * **Landing Page del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-landing-page`
-* **Fronten Web del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web`
-* **Fronten Movil del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-mobile`
+* **Frontend Web del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web`
+* **Frontend Movil del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-mobile`
 * **Registro de Entrevista #1 (Propietarios/Cliente - Diego Morales/Elias Yauri Paucar):** `https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing`
 * **Registro de Entrevista #2 (Propietarios - Jenna Vasquez):** `https://drive.google.com/file/d/1WTxiDxw4vaabZhFvibL8mHLINcrJR0_9/view?usp=sharing`
 * **Registro de Entrevista #2 (Clientes - Aleshka Fernández):** `https://youtu.be/QGSisj7iF-k`
@@ -5150,3 +5154,6 @@ El video demuestra cómo estas tres interfaces interactúan en tiempo real para 
 * **Diagrama de Organization System:**[https://drive.google.com/file/d/1OKUWtDfdjzkCRD_nNvbWuFwYXwBbUShL/view?usp=sharing](https://drive.google.com/file/d/1OKUWtDfdjzkCRD_nNvbWuFwYXwBbUShL/view?usp=sharing)
 
 * **Diagrama de C4**[https://drive.google.com/file/d/1C4Bcv6pZgL29nQ34p1o3DiLyqJqWyyxY/view?usp=sharing](https://drive.google.com/file/d/1C4Bcv6pZgL29nQ34p1o3DiLyqJqWyyxY/view?usp=sharing)
+* **Registro de Entrevista de Validación #1 (Propietarios - Franchesko Montesinos):** `https://drive.google.com/file/d/1BakcVds5atZrFJ7rZIf7gbyW3izZaHkM/view`
+* **Registro de Entrevista de Validación #1 (Clientes - Jenna Portalatino):** `https://drive.google.com/file/d/1BRU-wJSo4vY4o1B6tNWp8De5KIxhHKAv/view`
+* **Registro de Entrevista de Validación #2 (Propietarios - Diego Salinas):** `https://drive.google.com/file/d/1Q9JL3E64J4BqAubMJNZ6rc8pWE4OEuIU/view`
