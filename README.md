@@ -4301,7 +4301,7 @@ Este Sprint 1 ha establecido una base sólida para la colaboración continua del
 ### 6.2.2. Sprint 2
 #### 6.2.2.1.Sprint Planning 2.
 
-|            Sprint #1            |                                                                               Sprint 1                                                                              |
+|            Sprint #2            |                                                                               Sprint 2                                                                              |
 |:-------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Sprint Planning Background      |                                                                                                                                                                     |
 | Date                            | 10/6/2025                                                                                                                                                           |
@@ -4310,8 +4310,8 @@ Este Sprint 1 ha establecido una base sólida para la colaboración continua del
 | Prepared By                     | Jimena Cama                                                                                                                                                         |
 | Attendees (to planning meeting) | - Baldeon Fabian, Aldo Alberto <br> - Cama Salvatierra, Jimena Tamara <br> - Castillo Castillo, Jair Alexander <br> - La Torre Valle, Franz Jair <br> - Quezada Portalatino, Barbara Susana |
 | Sprint Goal & User Stories      |                                                                                                                                                                     |
-| Sprint 1 Goal                   | En este sprint la meta a cumplir fue desarrollar el backend de la plataforma, la aplicación web funcional y la landing page.                                        |
-| Sprint 1 Velocity               | 15                                                                                                                                                                  |
+| Sprint 2 Goal                   | En este sprint la meta a cumplir fue desarrollar el backend de la plataforma, la aplicación web funcional y la landing page.                                        |
+| Sprint 2 Velocity               | 15                                                                                                                                                                  |
 | Sum of Story Points             |                                                                                                                                                                     |
 
 #### 6.2.2.2.Aspect Leaders and Collaborators.
@@ -4741,7 +4741,6 @@ Feature: Autenticación de usuarios
     Then el sistema devuelve un error de validación 
 
 
-
 #### 6.2.2.6. Execution Evidence for Sprint Review.
 En este segundo sprint, el equipo Tavolo ha logrado implementar con éxito los componentes fundamentales del sistema, creando una base sólida para el desarrollo futuro del proyecto. Se han completado todas las historias de usuario planificadas de la parte web, alcanzando las principales funcionalidades tanto para comensales como para administradores.
 
@@ -4855,15 +4854,21 @@ La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando l
 
 ### Backend API 
 
-La API de Tavolo fue desplegada **por ahora de manera local**, se ha probado todas las funcionalidades de la plataforma de manera existosa.<br>
+La API de Tavolo fue desplegada en render, se ha probado todas las funcionalidades de la plataforma de manera existosa.<br>
+
+<br> URL: https://tavolo-backend.onrender.com/swagger-ui/index.html <br>
 
 #### Evidencia del Swagger
 ![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger1.png?raw=true)<br>
 ![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger2.png?raw=true)
 ![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger3.png?raw=true) <br>
+
+
 ## Frontend Web Application
 
-La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting, que ofrece una plataforma eficiente para aplicaciones React con rápidos tiempos de carga y distribución global. Sin embargo, **por ahora** se maneja de **manera local**<br>
+La aplicación web de Tavolo se preparó para ser desplegada en Render, que ofrece una plataforma eficiente para aplicaciones React con rápidos tiempos de carga y distribución global.<br>
+
+<br> URL: https://tavolo-web-develop.onrender.com/sign-in  <br>
 
 ### Evidencia de las pantallas
 
