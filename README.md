@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
     <h3>Universidad Peruana de Ciencias Aplicadas</h3>
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
     <strong>Ingeniería de Software - 7mo Ciclo</strong><br>
@@ -4205,21 +4205,21 @@ La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting
 ### Evidencia de las pantallas
 
 #### Pantalla de Comensal <br>
-![Pantalla1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Visualización_de_Reserva.png)
-![Pantalla2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Menu.png)
-![Pantalla3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Dashboard_Comensales.png)
-![Pantalla4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/HorasMesas.png)
-![Pantalla5](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Confirmacion.png)
-![Pantalla6](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Mapa.png)
+![alt text](images/Execution_Evidence/Visualización_de_Reserva.png)
+![alt text](images/Execution_Evidence/Menu.png)
+![alt text](images/Execution_Evidence/Dashboard_Comensales.png)
+![alt text](images/Execution_Evidence/HorasMesas.png)
+![alt text](images/Execution_Evidence/Confirmacion.png)
+![alt text](images/Execution_Evidence/Mapa.png)
 
 #### Pantalla de Administrador <br>
-![Pantalla1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Panel_Admin-Sede.png)
-![Pantalla2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Gestión_de_Mesas.jpeg)
-![Pantalla3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Gestión_de_Mesas2.jpeg)
-![Pantalla4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/ConfirmacionAdmin.png)
-![Pantalla5](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/FiltroMesa.png)
-![Pantalla6](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/FiltroPersona.png)
 
+![alt text](images/Execution_Evidence/Panel_Admin-Sede.png)
+![alt text](images/Execution_Evidence/Gestión_de_Mesas.jpeg)
+![alt text](images/Execution_Evidence/Gestión_de_Mesas2.jpeg)
+![alt text](images/Execution_Evidence/ConfirmacionAdmin.png)
+![alt text](images/Execution_Evidence/FiltroMesa.png)
+![alt text](images/Execution_Evidence/FiltroPersona.png)
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
 
@@ -4854,39 +4854,66 @@ La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando l
 
 ### Backend API 
 
-La API de Tavolo fue desplegada en render, se ha probado todas las funcionalidades de la plataforma de manera existosa.<br>
-
+La API de Tavolo fue desplegada en render, se ha probado todas las funcionalidades de la plataforma de manera existosa.
 <br> URL: https://tavolo-backend.onrender.com/swagger-ui/index.html <br>
 
 #### Evidencia del Swagger
-![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger1.png?raw=true)<br>
+![Swagger UI](<images/evidencias/backenddesplegado evidence.jpg>)
 ![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger2.png?raw=true)
-![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger3.png?raw=true) <br>
+![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger3.png?raw=true)
+![Swagger UI](images/evidencias/evidenciabackend.jpg)<br>
 
 
 ## Frontend Web Application
 
-La aplicación web de Tavolo se preparó para ser desplegada en Render, que ofrece una plataforma eficiente para aplicaciones React con rápidos tiempos de carga y distribución global.<br>
-
-<br> URL: https://tavolo-web-develop.onrender.com/sign-in  <br>
+La aplicación web de Tavolo se preparó para ser desplegada en Render, que ofrece una plataforma eficiente para aplicaciones Vuejs con rápidos tiempos de carga y distribución global.
+<br> URL: https://tavolo-web-develop.onrender.com  <br>
 
 ### Evidencia de las pantallas
 
 #### Pantalla de Comensal <br>
-![Pantalla1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Visualización_de_Reserva.png)
-![Pantalla2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Menu.png)
-![Pantalla3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Dashboard_Comensales.png)
-![Pantalla4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/HorasMesas.png)
-![Pantalla5](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Confirmacion.png)
-![Pantalla6](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Mapa.png)
+![alt text](images/Execution_Evidence/Visualización_de_Reserva.png)
+![alt text](images/Execution_Evidence/Menu.png)
+![alt text](images/Execution_Evidence/Dashboard_Comensales.png)
+![alt text](images/Execution_Evidence/HorasMesas.png)
+![alt text](images/Execution_Evidence/Confirmacion.png)
+![alt text](images/Execution_Evidence/Mapa.png)
 
 #### Pantalla de Administrador <br>
-![Pantalla1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Panel_Admin-Sede.png)
-![Pantalla2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Gestión_de_Mesas.jpeg)
-![Pantalla3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Gestión_de_Mesas2.jpeg)
-![Pantalla4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/ConfirmacionAdmin.png)
-![Pantalla5](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/FiltroMesa.png)
-![Pantalla6](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/FiltroPersona.png)
+
+![alt text](images/Execution_Evidence/Panel_Admin-Sede.png)
+![alt text](images/Execution_Evidence/Gestión_de_Mesas.jpeg)
+![alt text](images/Execution_Evidence/Gestión_de_Mesas2.jpeg)
+![alt text](images/Execution_Evidence/ConfirmacionAdmin.png)
+![alt text](images/Execution_Evidence/FiltroMesa.png)
+![alt text](images/Execution_Evidence/FiltroPersona.png)
+
+### Pantalla Superadministrador <br>
+
+![alt text](images/Execution_Evidence/super_admin_inicio.png)
+![alt text](images/Execution_Evidence/menu-admin.png)
+![alt text](images/Execution_Evidence/superadmin-dashboard.png)
+![alt text](images/Execution_Evidence/superadmin-crear-sede.png)
+![alt text](images/Execution_Evidence/superadmin-agregar-supervisor.png)
+![alt text](images/Execution_Evidence/superadmin-asignar-supervisor-sede.png)
+
+
+## Mobile Application
+
+#### Pantalla de Comensal <br>
+
+![alt text](images/Execution_Evidence/mobile-inicio.jpg)
+![alt text](images/Execution_Evidence/mobile-mapa.jpg)
+![alt text](images/Execution_Evidence/mobile-sede-detail.jpg)
+![alt text](images/Execution_Evidence/mobile-sedes.jpg)
+
+## Edge API
+
+El API Edge desplegada en Azure sirve como punto de entrada a las integraciones con nuestro sistema embedded, gestionando y enroutando solicitudes externas de forma segura y eficiente
+
+<br> URL: https://tavolo-edge.canadacentral.cloudapp.azure.com/api/docs/ <br>
+
+![edge-api](images/evidencias/edge-api-evidence.png)
 
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
@@ -5007,8 +5034,7 @@ Este Sprint 2 ha establecido una base sólida para la colaboración continua del
 **Duración:** 6:33<br>
 **Link**: [https://drive.google.com/file/d/1BRU-wJSo4vY4o1B6tNWp8De5KIxhHKAv/view?usp=sharing](https://drive.google.com/file/d/1BRU-wJSo4vY4o1B6tNWp8De5KIxhHKAv/view?usp=sharing)
 
-![evidencia-entrevista-Jenna](/images/entrevistas/evidencia-entrevista-jenna.png)
-
+![evidencia-entrevista-jenna](images/entrevistas/evidencia-entrevista-jenna.png)
 
 ### 6.3.3. Evaluaciones según heurísticas
 
@@ -5059,7 +5085,7 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 - Problema:
 La vista de sedes no incluye imágenes referenciales de cada establecimiento, lo que dificulta a los comensales reconocer visualmente el lugar al que desean asistir. Los usuarios necesitan asociar la información textual con un referente visual para tomar decisiones más rápidas e informadas.
 
-![prom5](/images/heuristicas/pb5.png)
+![alt text](images/heuristicas/pb5.png)
 
 - Recomendación:
 Implementar un carrusel de imágenes o al menos una imagen destacada para cada sede, con dimensiones estandarizadas (16:9) y optimizadas para carga rápida. La imagen debe mostrar claramente la fachada o interior del establecimiento para facilitar el reconocimiento visual.
@@ -5071,7 +5097,7 @@ Implementar un carrusel de imágenes o al menos una imagen destacada para cada s
 - Problema:
 Los supervisores no pueden editar los detalles de las mesas una vez que han sido creadas en el sistema. Esto obliga a eliminar y recrear mesas cuando se requiere realizar cambios simples, generando ineficiencia y potencial pérdida de información relacionada con esas mesas.
 
-![prom1](/images/heuristicas/pb1.jpg)
+![alt text](images/heuristicas/pb1.jpg)
 
 - Recomendación:
 Añadir una funcionalidad de edición accesible mediante un botón o menú contextual en cada mesa. Esta función debe permitir modificar los atributos clave como capacidad, ubicación, estado y características especiales, manteniendo el historial de cambios para auditoría.
@@ -5083,7 +5109,7 @@ Añadir una funcionalidad de edición accesible mediante un botón o menú conte
 - Problema:
 El filtro de reserva por mesa utiliza un formato que no es intuitivo para los usuarios, dificultando la rápida localización de reservas específicas. Los usuarios esperan un formato de lista desplegable que les permita seleccionar fácilmente entre las opciones disponibles.
 
-![prom2](/images/heuristicas/pb2.png)
+![alt text](images/heuristicas/pb2.png)
 
 - Recomendación:
 Reemplazar el filtro actual por una lista desplegable organizada numéricamente (o por zona si aplica), que permita selección múltiple y búsqueda rápida. Incluir una opción "Todas las mesas" al inicio de la lista para facilitar la visualización completa.
@@ -5095,7 +5121,7 @@ Reemplazar el filtro actual por una lista desplegable organizada numéricamente 
 - Problema:
 En la pantalla de asignación de supervisores a sedes, los botones utilizan colores tierra con efectos de degradado que reducen significativamente el contraste entre el texto y el fondo, dificultando su lectura y reconocimiento, especialmente para usuarios con problemas visuales.
 
-![prom3](/images/heuristicas/pb3.png)
+![alt text](images/heuristicas/pb3.png)
 
 - Recomendación:
 Rediseñar los botones utilizando colores sólidos con alto contraste entre el texto y el fondo. Mantener la paleta de colores corporativa pero eliminar los degradados. Asegurar que cumplen con las pautas WCAG 2.1 de accesibilidad (ratio de contraste mínimo de 4.5:1).
@@ -5107,7 +5133,7 @@ Rediseñar los botones utilizando colores sólidos con alto contraste entre el t
 - Problema:
 Los botones de acción crítica como "Cancelar" y "Agregar" utilizan colores tierra similares entre sí, lo que no sigue las convenciones esperadas por los usuarios y aumenta la probabilidad de errores al no distinguir claramente entre acciones positivas y negativas.
 
-![prom4](/images/heuristicas/pb4.png)
+![alt text](images/heuristicas/pb4.png)
 
 - Recomendación:
 Implementar un código de colores consistente y convencional: verde puro (#00B050 o similar) para acciones positivas como "Agregar" o "Confirmar", y rojo puro (#FF0000 o similar) para acciones negativas como "Cancelar" o "Eliminar". Mantener este esquema en toda la aplicación para reforzar la consistencia.
@@ -5116,7 +5142,8 @@ Implementar un código de colores consistente y convencional: verde puro (#00B05
 
 En este video demostrativo presentamos Tavolo, nuestra plataforma integral para gestión de cafeterías. El contenido muestra:
 
-![VideoAboutThProduct](/images/video-about-the-product.png)
+![alt text](images/video-about-the-product.png)
+
 <br>Enlace: 
 [Video About The Product de Tavolo](https://drive.google.com/file/d/1JMYA8vJc6BDFxX0ZL9tl0Fy3lKO5bwHQ/view?usp=sharing)
 - **Experiencia del Comensal**: Ver las sedes, navegación por el menú digital y realización de reservas.
