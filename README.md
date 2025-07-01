@@ -304,6 +304,16 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
     - [6.2.2.5. Testing Suite Evidence for Sprint Review.](####6225-testing-suite-evidence-for-sprint-review)
     - [6.2.2.6. Execution Evidence for Sprint Review.](####6226-execution-evidence-for-sprint-review)
     - [6.2.2.7. Services Documentation Evidence for Sprint Review.](####6227-services-documentation-evidence-for-sprint-review)
+  - [6.2.3. Sprint 3](#623-sprint-3)
+    - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
+    - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
+    - [6.2.3.3. Sprint Backlog 3](#6233-sprint-backlog-3)
+    - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
+    - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
+    - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
+    - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
+    - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
+    - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
 - [6.3. Validation Interviews](#63-validation-interviews)
 - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
 - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistass)
@@ -4992,6 +5002,20 @@ El equipo adoptó un enfoque ágil con las siguientes prácticas:
 - **Porcentaje de código con revisión por pares**: 100%
 
 Este Sprint 2 ha establecido una base sólida para la colaboración continua del equipo Tavolo. La distribución equilibrada del trabajo, el liderazgo compartido y el enfoque en la calidad han permitido entregar todas las funcionalidades planificadas cumpliendo con los criterios de aceptación establecidos.
+
+
+### 6.2.3. Sprint 3
+#### 6.2.3.1.Sprint Planning 3.
+#### 6.2.3.2.Aspect Leaders and Collaborators.
+#### 6.2.3.3.Sprint Backlog 3.
+#### 6.2.3.4.Development Evidence for Sprint Review.
+#### 6.2.3.5.Testing Suite Evidence for Sprint Review.
+#### 6.2.3.6.Execution Evidence for Sprint Review.
+#### 6.2.3.7.Services Documentation Evidence for Sprint Review.
+#### 6.2.3.8.Software Deployment Evidence for Sprint Review.
+#### 6.2.3.9.Team Collaboration Insights during Sprint.
+
+
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.
 
@@ -5005,6 +5029,8 @@ Este Sprint 2 ha establecido una base sólida para la colaboración continua del
 - ¿Qué tan clara y práctica te resultó la función para agregar, editar o eliminar mesas?
 - ¿Qué tal te pareció la visualización de reservas y disponibilidad de mesas?
 - ¿Qué funcionalidades sientes que hacen falta o podrían mejorarse para facilitar tu trabajo diario?
+
+
 
 
 ### 6.3.2. Registro de Entrevistas.
