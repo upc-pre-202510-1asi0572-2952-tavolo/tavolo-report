@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
     <h3>Universidad Peruana de Ciencias Aplicadas</h3>
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
     <strong>Ingeniería de Software - 7mo Ciclo</strong><br>
@@ -286,6 +286,24 @@ La rama "develop" se utilizó como un entorno para integrar las tareas de cada m
   - [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide-conventions)
   - [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
 - [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
+  - [6.2.1. Sprint 1](#621-sprint-1)
+    - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
+    - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
+    - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
+    - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
+    - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
+    - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
+    - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
+    - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
+    - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
+  - [6.2.2. Sprint 2](###622-sprint-2)
+    - [6.2.2.1. Sprint Planning 2.](####6221-sprint-planning-2)
+    - [6.2.2.2. Aspect Leaders and Collaborators.](####6222-aspect-leaders-and-collaborators)
+    - [6.2.2.3. Sprint Backlog 2.](####6223-sprint-backlog-2)
+    - [6.2.2.4. Development Evidence for Sprint Review.](####6224-development-evidence-for-sprint-review)
+    - [6.2.2.5. Testing Suite Evidence for Sprint Review.](####6225-testing-suite-evidence-for-sprint-review)
+    - [6.2.2.6. Execution Evidence for Sprint Review.](####6226-execution-evidence-for-sprint-review)
+    - [6.2.2.7. Services Documentation Evidence for Sprint Review.](####6227-services-documentation-evidence-for-sprint-review)
 - [6.3. Validation Interviews](#63-validation-interviews)
 - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
 - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistass)
@@ -4187,21 +4205,21 @@ La aplicación web de Tavolo se preparó para ser desplegada en Firebase Hosting
 ### Evidencia de las pantallas
 
 #### Pantalla de Comensal <br>
-![Pantalla1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Visualización_de_Reserva.png)
-![Pantalla2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Menu.png)
-![Pantalla3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Dashboard_Comensales.png)
-![Pantalla4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/HorasMesas.png)
-![Pantalla5](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Confirmacion.png)
-![Pantalla6](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Mapa.png)
+![alt text](images/Execution_Evidence/Visualización_de_Reserva.png)
+![alt text](images/Execution_Evidence/Menu.png)
+![alt text](images/Execution_Evidence/Dashboard_Comensales.png)
+![alt text](images/Execution_Evidence/HorasMesas.png)
+![alt text](images/Execution_Evidence/Confirmacion.png)
+![alt text](images/Execution_Evidence/Mapa.png)
 
 #### Pantalla de Administrador <br>
-![Pantalla1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Panel_Admin-Sede.png)
-![Pantalla2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Gestión_de_Mesas.jpeg)
-![Pantalla3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/Gestión_de_Mesas2.jpeg)
-![Pantalla4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/ConfirmacionAdmin.png)
-![Pantalla5](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/FiltroMesa.png)
-![Pantalla6](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/Execution_Evidence/FiltroPersona.png)
 
+![alt text](images/Execution_Evidence/Panel_Admin-Sede.png)
+![alt text](images/Execution_Evidence/Gestión_de_Mesas.jpeg)
+![alt text](images/Execution_Evidence/Gestión_de_Mesas2.jpeg)
+![alt text](images/Execution_Evidence/ConfirmacionAdmin.png)
+![alt text](images/Execution_Evidence/FiltroMesa.png)
+![alt text](images/Execution_Evidence/FiltroPersona.png)
 
 #### 6.2.1.9. Team Collaboration Insights during Sprint.
 
@@ -4280,17 +4298,874 @@ El equipo adoptó un enfoque ágil con las siguientes prácticas:
 
 Este Sprint 1 ha establecido una base sólida para la colaboración continua del equipo Tavolo. La distribución equilibrada del trabajo, el liderazgo compartido y el enfoque en la calidad han permitido entregar todas las funcionalidades planificadas cumpliendo con los criterios de aceptación establecidos.
 
+### 6.2.2. Sprint 2
+#### 6.2.2.1.Sprint Planning 2.
+
+|            Sprint #2            |                                                                               Sprint 2                                                                              |
+|:-------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Sprint Planning Background      |                                                                                                                                                                     |
+| Date                            | 10/6/2025                                                                                                                                                           |
+| Time                            | 5:00 pm                                                                                                                                                             |
+| Location                        | Reunión virtual vía Discord                                                                                                                                         |
+| Prepared By                     | Jimena Cama                                                                                                                                                         |
+| Attendees (to planning meeting) | - Baldeon Fabian, Aldo Alberto <br> - Cama Salvatierra, Jimena Tamara <br> - Castillo Castillo, Jair Alexander <br> - La Torre Valle, Franz Jair <br> - Quezada Portalatino, Barbara Susana |
+| Sprint Goal & User Stories      |                                                                                                                                                                     |
+| Sprint 2 Goal                   | En este sprint la meta a cumplir fue desarrollar el backend de la plataforma, la aplicación web funcional y la landing page.                                        |
+| Sprint 2 Velocity               | 15                                                                                                                                                                  |
+| Sum of Story Points             |                                                                                                                                                                     |
+
+#### 6.2.2.2.Aspect Leaders and Collaborators.
+
+Para lograr una implementación eficiente del Sprint 2, se estableció una estructura clara de liderazgo y colaboración entre los miembros del equipo. Se identificaron cinco aspectos principales que abarcaron el alcance completo del sprint: Frontend Web Superadministrador, Frontend Movil Cliente, Embedded aplication y el Edge. Esta organización permitió asegurar que cada área tuviera un responsable directo y colaboradores que apoyaron en tareas específicas.
+
+La matriz de liderazgo y colaboración (LACX) detalla cómo se distribuyeron las responsabilidades para cada aspecto del sprint:
+| Team Member | GitHub Username | Frontend Web<br>Superadministrador<br>Leader (L) / Collaborator (C) | Frontend Móvil<br>Cliente<br>Leader (L) / Collaborator (C) | Embedded<br>Application<br>Leader (L) / Collaborator (C) | Edge<br>Leader (L) / Collaborator (C) |
+| -------------------------------------- | --------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------- |
+| Baldeon Fabian, Aldo Alberto           | CodAress        |                                                                     | C                                                          | L                                                        | L                                     |
+| Cama Salvatierra, Jimena Tamara        | aksonie         | L                                                                   | C                                                          | C                                                        | C                                     |
+| Castillo Castillo, Jair Alexander      | U202211390      |                                                                     | C                                                          | C                                                        | C                                     |
+| La Torre Valle, Franz Jair             | FranzJairLTV    |                                                                     | C                                                          | C                                                        | C                                     |
+| Quezada Portalatino, Barbara Susana    | BarbaraQP15     |                                                                     | L                                                          | C                                                        | C                                     |
+
+**Responsabilidades por aspecto:**
+
+- Frontend Web Superadministrador:
+
+Líder: Cama Salvatierra, Jimena Tamara
+
+Enfoque: Desarrollo del dashboard para la gestión y administración del sistema desde el perfil superadministrador.
+
+Tareas principales: Implementación de interfaces para la supervisión general, manejo de usuarios y configuraciones avanzadas.
+
+- Frontend Móvil Cliente:
+
+Líder: Baldeon Fabian, Aldo Alberto
+
+Enfoque: Implementación de la app móvil para clientes, incluyendo filtros de mesas, reservas, formularios de reserva y menús.
+
+Tareas principales: Desarrollo de pantallas para búsqueda de mesas, detalle de sedes, formulario de reservas y navegación en la app.
+
+Colaboradores: Cama Salvatierra, Jimena Tamara; Castillo Castillo, Jair Alexander; La Torre Valle, Franz Jair; Quezada Portalatino, Barbara Susana.
+
+- Embedded Application:
+
+Líder: Baldeon Fabian, Aldo Alberto
+
+Enfoque: Desarrollo del sistema embebido que interactúa con el entorno físico y la aplicación móvil/web.
+
+Tareas principales: Implementación de lógica para dispositivos integrados, comunicación con backend y manejo de eventos en tiempo real.
+
+Colaboradores: Cama Salvatierra, Jimena Tamara; Castillo Castillo, Jair Alexander; La Torre Valle, Franz Jair; Quezada Portalatino, Barbara Susana.
+
+- Edge:
+
+Líder: Baldeon Fabian, Aldo Alberto
+
+Enfoque: Soporte y tareas específicas relacionadas con el procesamiento en borde (edge computing) para optimización y rapidez.
+
+Tareas principales: Implementación de funcionalidades de procesamiento local y sincronización con la nube.
+
+Colaboradores: Cama Salvatierra, Jimena Tamara; Castillo Castillo, Jair Alexander; La Torre Valle, Franz Jair; Quezada Portalatino, Barbara Susana.
+
+
+#### 6.2.2.3.Sprint Backlog 2.
+<table>
+    <tr align="center">
+        <td colspan="2"><strong>Sprint #</strong></td>
+        <td colspan="6"><strong>Sprint 2</strong></td>
+    </tr>
+    <tr align="center">
+        <td colspan="2"><strong>User Story</strong></td>
+        <td colspan="6"><strong>Work-Item / Task</strong></td>
+    </tr>
+    <tr align="center">
+        <td><strong>Id</strong></td>
+        <td><strong>Title</strong></td>
+        <td><strong>Id</strong></td>
+        <td><strong>Title</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>Estimation (Hours)</strong></td>
+        <td><strong>Assigned to</strong></td>
+        <td><strong>Status (To do / In process / To review / Done)</strong></td>
+    </tr>
+    <tr align="center">
+        <td>US001</td>
+        <td>Ver sección "¿Qué es Tavolo?"</td>
+        <td>TA1</td>
+        <td>Crear componente móvil informativo</td>
+        <td>Mostrar texto informativo desde app Flutter</td>
+        <td>2</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Cargar contenido desde API</td>
+        <td>Conectar con backend para cargar descripción</td>
+        <td>2</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US002</td>
+        <td>Ver sección "Características clave"</td>
+        <td>TA1</td>
+        <td>Mostrar características en app</td>
+        <td>Lista con íconos y descripciones desde backend</td>
+        <td>3</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Agregar navegación a cada módulo</td>
+        <td>Botones que redirigen a pantallas relevantes</td>
+        <td>2</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US003</td>
+        <td>Ver la galería virtual</td>
+        <td>TA1</td>
+        <td>Implementar galería en Flutter</td>
+        <td>Carrusel de imágenes de sedes desde API</td>
+        <td>3</td>
+        <td>Cama Salvatierra, Jimena</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Optimizar carga desde backend</td>
+        <td>Endpoint optimizado para envío de imágenes</td>
+        <td>2</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US005</td>
+        <td>Ver menú digital de una sede</td>
+        <td>TA1</td>
+        <td>Diseñar pantalla mobile del menú</td>
+        <td>Mostrar platos por categoría en Flutter</td>
+        <td>2</td>
+        <td>La Torre Valle, Franz</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Optimizar endpoint de menú</td>
+        <td>Agregar filtros por sede y categoría</td>
+        <td>2</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US006</td>
+        <td>Visualizar reserva activa</td>
+        <td>TA1</td>
+        <td>Mostrar reserva al iniciar en app</td>
+        <td>Leer reserva desde backend y mostrar detalles</td>
+        <td>3</td>
+        <td>La Torre Valle, Franz</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Conexión en tiempo real (polling)</td>
+        <td>Verificar estado activo periódicamente</td>
+        <td>2</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US007</td>
+        <td>Ver disponibilidad de mesas en tiempo real</td>
+        <td>TA1</td>
+        <td>Integración con microcontrolador</td>
+        <td>Recepción en backend de estados vía MQTT</td>
+        <td>4</td>
+        <td>Castillo Castillo, Jair</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Visualización embebida en app Flutter</td>
+        <td>Mostrar íconos de disponibilidad en pantalla</td>
+        <td>3</td>
+        <td>Castillo Castillo, Jair</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US008</td>
+        <td>Reservar una mesa</td>
+        <td>TA1</td>
+        <td>Diseñar formulario en Flutter</td>
+        <td>Interfaz para elegir sede, fecha y personas</td>
+        <td>2</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Conectar con backend para crear reserva</td>
+        <td>POST a API y confirmación visual</td>
+        <td>2</td>
+        <td>La Torre Valle, Franz</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US009</td>
+        <td>Visualizar más sedes en un mapa</td>
+        <td>TA1</td>
+        <td>Crear vista de sedes en app móvil</td>
+        <td>Mostrar lista de sedes disponibles con nombre y dirección</td>
+        <td>3</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Implementar mapa interactivo</td>
+        <td>Al presionar "Ver en mapa", abrir modal con ubicación vía API de mapas</td>
+        <td>3</td>
+        <td>Quezada Portalatino, Barbara</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA3</td>
+        <td>Conectar con backend para obtener sedes</td>
+        <td>Endpoint que devuelva lista actualizada de sedes activas</td>
+        <td>2</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US010</td>
+        <td>Registro de cuenta de comensal</td>
+        <td>TA1</td>
+        <td>Vista de registro en app móvil</td>
+        <td>Campos y validaciones en Flutter</td>
+        <td>2</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Validar datos desde backend</td>
+        <td>Evitar duplicidad y errores comunes</td>
+        <td>2</td>
+        <td>Castillo Castillo, Jair</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US011</td>
+        <td>Inicio de sesión de cuenta de comensal</td>
+        <td>TA1</td>
+        <td>Implementar login móvil</td>
+        <td>Lógica y guardado de token local</td>
+        <td>3</td>
+        <td>Castillo Castillo, Jair</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Validar credenciales en backend</td>
+        <td>Envío seguro de usuario y password</td>
+        <td>3</td>
+        <td>Baldeon Fabian, Aldo</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US013</td>
+        <td>Visualizar reservas realizadas</td>
+        <td>TA1</td>
+        <td>Lista de historial de reservas</td>
+        <td>Mostrar reservas pasadas en app</td>
+        <td>3</td>
+        <td>Cama Salvatierra, Jimena</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Agregar filtros por estado y fecha</td>
+        <td>Dropdowns y chips para filtrar</td>
+        <td>2</td>
+        <td>Cama Salvatierra, Jimena</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US014</td>
+        <td>Ver la sede asignada</td>
+        <td>TA1</td>
+        <td>Mostrar sede en perfil móvil</td>
+        <td>Vista en Flutter para administradores</td>
+        <td>2</td>
+        <td>Cama Salvatierra, Jimena</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Obtener sede desde backend</td>
+        <td>Consulta protegida según token</td>
+        <td>2</td>
+        <td>Cama Salvatierra, Jimena</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td>US018</td>
+        <td>Acceder a todos los módulos del sistema</td>
+        <td>TA1</td>
+        <td>Menú de navegación en app móvil</td>
+        <td>Drawer o barra inferior para navegar entre módulos</td>
+        <td>2</td>
+        <td>La Torre Valle, Franz</td>
+        <td>Done</td>
+    </tr>
+    <tr align="center">
+        <td></td>
+        <td></td>
+        <td>TA2</td>
+        <td>Control de accesos desde backend</td>
+        <td>Middleware según roles y permisos</td>
+        <td>3</td>
+        <td>La Torre Valle, Franz</td>
+        <td>Done</td>
+    </tr>
+</table>
+
+#### 6.2.2.4. Development Evidence for Sprint Review.
+
+En este segundo sprint, el equipo ha logrado importantes avances en la implementación de los componentes esenciales de Tavolo. Se ha desarrollado con éxito la **landing page, el frontend web para comensales, el mobile app y administradores, así como el backend API** que soporta las funcionalidades principales del sistema.
+
+Entre los logros destacables se encuentran:
+
+- Implementación completa de la landing page con todas las secciones informativas y el formulario de contacto
+- Desarrollo del sistema de autenticación para comensales y administradores
+- Implementación del módulo de visualización de mesas en tiempo real
+- Desarrollo del sistema de reservas y visualización de reservas activas
+- Implementación del panel de administración para gestión de mesas y visualización de reservas
+
+A continuación, se presenta una tabla detallada de los commits más relevantes realizados en los diferentes repositorios durante el Sprint 2:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|---------------|---------------------|-------------------|
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-landing-page | main | a72e3b4 | feat: add landing page | Creación de estructura HTML base y estilos CSS para la landing page con las secciones principales | 10/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/auth | e23a9c1 | feat: sistema de autenticación | Implementación del login y registro para usuarios comensales y administradores con manejo de tokens y sesiones | 10/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/client-dashboard | f84b6d2 | feat: dashboard de comensal | Creación del panel principal para comensales con visualización de disponibilidad de mesas y menú | 12/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/booking-system | g59c7e3 | feat: sistema de reservas | Implementación del formulario de reserva y visualización de reservas activas para comensales | 13/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/admin-panel | h31d8f4 | feat: panel de administrador | Desarrollo del dashboard para administradores con funcionalidades de gestión de mesas y visualización de sede asignada | 14/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/table-management | i76e2a9 | feat: gestión de mesas | Implementación de funcionalidades para agregar y eliminar mesas desde el panel de administrador | 15/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/api-base | j42f1e5 | feat: estructura base de la API | Configuración inicial del proyecto Spring Boot con dependencias y estructura de paquetes | 10/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/auth-endpoints | k93g7h2 | feat: endpoints de autenticación | Implementación de servicios REST para registro e inicio de sesión con roles diferenciados | 11/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/table-endpoints | l28j5k6 | feat: endpoints para gestión de mesas | Desarrollo de servicios REST para crear, eliminar y consultar estado de mesas | 13/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/booking-endpoints | m67n4p9 | feat: endpoints para reservas | Implementación de servicios REST para realizar reservas y consultar reservas activas | 14/05/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/sede-endpoints | o15r3s8 | feat: endpoints para sedes | Desarrollo de servicios REST para consultar información de sedes y asignación a administradores | 15/05/2025 |
+
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review.
+
+En esta sección se presenta el conjunto de Unit Tests, Integration Tests y Acceptance Tests automatizados para los Web Services relacionados con los User Stories especificados en el Sprint.
+
+## Relación de Commits de Testing
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| tavolo-backend | feature/unit-tests | abc123 | Add unit tests for reservation service | Implemented tests for create, update and delete methods | 2023-10-15 |
+| tavolo-backend | feature/integration-tests | def456 | Add integration tests for reservation API | Testing the complete flow of reservation endpoints | 2023-10-16 |
+| tavolo-backend | feature/bdd-tests | ghi789 | Add BDD tests for reservation feature | Added Cucumber tests with Gherkin scenarios for reservation management | 2023-10-18 |
+
+## Unit Tests
+
+### TableCommandServiceTest
+
+Esta clase contiene pruebas unitarias para validar el comportamiento del servicio `TableCommandService`, responsable de gestionar las operaciones relacionadas con la creación de mesas en el sistema.
+
+![image](https://github.com/user-attachments/assets/fa0b9b7e-6d9f-4eff-ad26-ae8aab133c62)<br>
+
+Este test unitario valida:
+- La creación correcta de comandos para crear mesas
+- El comportamiento del servicio cuando verifica la existencia de una sede
+- El correcto guardado de la mesa en el repositorio
+- La devolución del resultado esperado
+
+## Integration Tests
+
+### TableCommandServiceIntegrationTest
+
+Esta clase de prueba integra los distintos componentes del sistema para validar el flujo completo de creación de mesas:
+
+![image](https://github.com/user-attachments/assets/48bcc1ee-2fd5-493f-b442-da53ec70b592)<br>
+
+Esta prueba de integración verifica:
+- El funcionamiento correcto del servicio en un entorno transaccional
+- La comunicación correcta entre los distintos componentes del sistema
+- La persistencia adecuada de los datos
+
+
+
+### Autenticacion (AuthFeature.feature)
+Feature: Autenticación de usuarios
+  Scenario: Registro exitoso de un nuevo usuario
+    Given el usuario proporciona datos válidos para registro
+    When se envía la solicitud de registro
+    Then el sistema crea el usuario y devuelve un estado 201
+  Scenario: Fallo en el registro por datos inválidos
+    Given el usuario proporciona datos inválidos
+    When se envía la solicitud de registro
+    Then el sistema devuelve un error de validación 
+
+
+#### 6.2.2.6. Execution Evidence for Sprint Review.
+En este segundo sprint, el equipo Tavolo ha logrado implementar con éxito los componentes fundamentales del sistema, creando una base sólida para el desarrollo futuro del proyecto. Se han completado todas las historias de usuario planificadas de la parte web, alcanzando las principales funcionalidades tanto para comensales como para administradores.
+
+- **Landing page completa** con información del producto, galería y formulario de contacto
+- **Sistema de autenticación** diferenciado para comensales y administradores
+- **Visualización de disponibilidad de mesas en tiempo real**
+- **Sistema de reservas** con confirmación y visualización de reservas activas
+- **Panel administrativo** para gestión de mesas y visualización de la sede asignada
+
+<!--![Landing Page 1](./images/deployment/landing1.png)-->
+
+### Landing Page
+![Landing Page 1](./images/deployment/landing1.png)
+<br>
+![Landing Page 2](./images/deployment/landing2.png)
+<br>
+![Landing Page 3](./images/deployment/landing3.png)
+<br>
+![Landing Page 4](./images/deployment/landing4.png)
+<br>
+
+### Sistema para Comensales
+![Registro de Comensales](./images/Execution_Evidence/Registro_de_Comensales.png)
+<br>
+![Dashboard Comensales](./images/Execution_Evidence/Dashboard_Comensales.png)
+<br>
+![Visualización de Reserva](./images/Execution_Evidence/Visualización_de_Reserva.png)
+<br>
+
+### Panel de Administración
+
+![Login Administrador](./images/Execution_Evidence/Login_Administrador.png)<br>
+
+![Panel Admin - Sede](./images/Execution_Evidence/Panel_Admin-Sede.png)<br>
+
+![Gestión de Mesas](./images/Execution_Evidence/Gestión_de_Mesas.jpeg)<br>
+
+![Gestión de Mesas2](./images/Execution_Evidence/Gestión_de_Mesas2.jpeg)<br>
+
+![Visualización de Reservas](./images/Execution_Evidence/Visualización_de_Reservas.png)<br>
+
+### Video Explicativo
+El video muestra el flujo completo desde la landing page hasta las funcionalidades de reserva para comensales y gestión para administradores, demostrando la integración exitosa de todos los componentes desarrollados durante este sprint.<br>
+
+[**Video Demostración Sprint 2 - Tavolo**](https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)
+
+El equipo ha completado el 100% de las historias de usuario planificadas para este sprint, cumpliendo con los criterios de aceptación establecidos. La aplicación es funcional en su estado actual y proporciona las funcionalidades básicas necesarias para la gestión de mesas y reservas. En los **próximos sprints** se agregarán características adicionales **como notificaciones, reportes estadísticos** y la integración completa con los sensores IoT físicos.
+
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 2, el equipo ha logrado documentar completamente los endpoints de la API de Tavolo utilizando Swagger. Esta documentación proporciona una referencia clara y accesible para desarrolladores frontend, facilitando la integración con los servicios backend. <br>
+
+| Categoría | Endpoint | Método HTTP | Descripción |
+|-----------|----------|-------------|-------------|
+| Autenticación | `/api/v1/authentication/sign-up` | POST | Registrar nuevo usuario |
+| Autenticación | `/api/v1/authentication/sign-in` | POST | Iniciar sesión de usuario |
+| Reservas | `/api/v1/bookings` | GET | Listar todas las reservas |
+| Reservas | `/api/v1/bookings` | POST | Crear nueva reserva |
+| Reservas | `/api/v1/bookings/{id}` | GET | Obtener detalles de reserva específica |
+| Reservas | `/api/v1/bookings/client/{clientId}` | GET | Obtener reservas de un cliente específico |
+| Sedes | `/api/v1/headquarters` | GET | Listar todas las sedes |
+| Sedes | `/api/v1/headquarters` | POST | Crear nueva sede |
+| Sedes | `/api/v1/headquarters/{headquarterId}` | GET | Obtener detalles de sede específica |
+| Roles | `/api/v1/roles` | GET | Listar todos los roles |
+| Usuarios | `/api/v1/users` | GET | Listar todos los usuarios |
+| Usuarios | `/api/v1/users/{userId}` | GET | Obtener detalles de usuario específico |
+| Mesas | `/api/v1/tables` | GET | Listar todas las mesas |
+| Mesas | `/api/v1/tables` | POST | Crear nueva mesa |
+| Mesas | `/api/v1/tables/{tableId}` | GET | Obtener detalles de mesa específica |
+| Mesas | `/api/v1/tables/{tableId}/schedule` | GET | Obtener horario de una mesa específica |
+
+## Evidencia de pruebas realizadas
+Para verificar la funcionalidad de la API, se realizaron pruebas exhaustivas utilizando la interfaz Swagger. A continuación se muestran algunos ejemplos de estas pruebas:<br>
+
+![image](https://github.com/user-attachments/assets/0546bad5-cded-4323-af35-931a165282e8)<br>
+*Ejecución exitosa de la autenticación de un administrador*
+
+![image](https://github.com/user-attachments/assets/d4766854-cecc-4d24-85d8-d450a3d7d075)<br>
+*Resultado de la creacion de sedes*
+
+![image](https://github.com/user-attachments/assets/7bc0d90a-9fa9-482c-a1c3-c4c7496c7a1b)<br>
+*Resultado exitoso de la creación de una mesa*
+
+
+### Repositorio y commits relacionados
+
+Repositorio: https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend <br>
+
+| Commit ID | Descripción | Autor | Fecha |
+|-----------|-------------|-------|-------|
+| c739042 | feat(booking): implementar endpoint para consultar reservas por ID | Baldeon Fabian, Aldo Alberto | 07/05/2025 |
+| l28j5k6 | feat(iam): implement user authentication and registration system | Castillo Castillo, Jair Alexander | 11/05/2025 |
+| m67n4p9 | feat: feat(booking,branching): implement reservation system with branch management | Baldeon Fabian, Aldo Alberto | 11/05/2025 |
+| o15r3s8 |feature(iam): add bounded context iam | Castillo Castillo, Jair Alexander| 12/05/2025 |
+| p45t7u9 | feature(shared): add add bounded context shared | Castillo Castillo, Jair Alexander | 12/05/2025 |
+
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review.
+Durante este segundo sprint, el equipo Tavolo ha implementado una estrategia de despliegue completa para asegurar que todos los componentes del sistema estén disponibles en entornos de producción. Se ha desplegado exitosamente la landing page, el backend API y la aplicación web frontend, utilizando servicios en la nube para garantizar disponibilidad, escalabilidad y seguridad.<br>
+
+### Landing Page Deployment
+
+La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando la integración directa con nuestro repositorio para un flujo de trabajo simplificado y automático.<br>
+
+<br>URL: https://upc-pre-202510-1asi0572-2952-tavolo.github.io/tavolo-landing-page/<br>
+
+#### Evidencia del despliegue
+![Landing Page 1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing1.png?raw=true)<br>
+![Landing Page 2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing2.png?raw=true)<br>
+![Landing Page 3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing3.png?raw=true)<br>
+![Landing Page 4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing4.png?raw=true)<br>
+
+### Backend API 
+
+La API de Tavolo fue desplegada en render, se ha probado todas las funcionalidades de la plataforma de manera existosa.
+<br> URL: https://tavolo-backend.onrender.com/swagger-ui/index.html <br>
+
+#### Evidencia del Swagger
+![Swagger UI](<images/evidencias/backenddesplegado evidence.jpg>)
+![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger2.png?raw=true)
+![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger3.png?raw=true)
+![Swagger UI](images/evidencias/evidenciabackend.jpg)<br>
+
+
+## Frontend Web Application
+
+La aplicación web de Tavolo se preparó para ser desplegada en Render, que ofrece una plataforma eficiente para aplicaciones Vuejs con rápidos tiempos de carga y distribución global.
+<br> URL: https://tavolo-web-develop.onrender.com  <br>
+
+### Evidencia de las pantallas
+
+#### Pantalla de Comensal <br>
+![alt text](images/Execution_Evidence/Visualización_de_Reserva.png)
+![alt text](images/Execution_Evidence/Menu.png)
+![alt text](images/Execution_Evidence/Dashboard_Comensales.png)
+![alt text](images/Execution_Evidence/HorasMesas.png)
+![alt text](images/Execution_Evidence/Confirmacion.png)
+![alt text](images/Execution_Evidence/Mapa.png)
+
+#### Pantalla de Administrador <br>
+
+![alt text](images/Execution_Evidence/Panel_Admin-Sede.png)
+![alt text](images/Execution_Evidence/Gestión_de_Mesas.jpeg)
+![alt text](images/Execution_Evidence/Gestión_de_Mesas2.jpeg)
+![alt text](images/Execution_Evidence/ConfirmacionAdmin.png)
+![alt text](images/Execution_Evidence/FiltroMesa.png)
+![alt text](images/Execution_Evidence/FiltroPersona.png)
+
+### Pantalla Superadministrador <br>
+
+![alt text](images/Execution_Evidence/super_admin_inicio.png)
+![alt text](images/Execution_Evidence/menu-admin.png)
+![alt text](images/Execution_Evidence/superadmin-dashboard.png)
+![alt text](images/Execution_Evidence/superadmin-crear-sede.png)
+![alt text](images/Execution_Evidence/superadmin-agregar-supervisor.png)
+![alt text](images/Execution_Evidence/superadmin-asignar-supervisor-sede.png)
+
+
+## Mobile Application
+
+#### Pantalla de Comensal <br>
+
+![alt text](images/Execution_Evidence/mobile-inicio.jpg)
+![alt text](images/Execution_Evidence/mobile-mapa.jpg)
+![alt text](images/Execution_Evidence/mobile-sede-detail.jpg)
+![alt text](images/Execution_Evidence/mobile-sedes.jpg)
+
+## Edge API
+
+El API Edge desplegada en Azure sirve como punto de entrada a las integraciones con nuestro sistema embedded, gestionando y enroutando solicitudes externas de forma segura y eficiente
+
+<br> URL: https://tavolo-edge.canadacentral.cloudapp.azure.com/api/docs/ <br>
+
+![edge-api](images/evidencias/edge-api-evidence.png)
+
+
+#### 6.2.2.9. Team Collaboration Insights during Sprint.
+
+Durante el Sprint 2, el equipo Tavolo demostró una colaboración efectiva y coordinada, permitiendo el cumplimiento exitoso de todas las historias de usuario planificadas. A continuación, se detallan los aspectos clave de la dinámica colaborativa del equipo:
+
+## Distribución del trabajo y contribuciones
+
+El análisis de las contribuciones muestra una distribución equilibrada de responsabilidades:
+
+| Miembro del equipo | Áreas principales | Contribuciones clave | Pull requests | Issues closed |
+|-------------------|---------|---------------|--------------|---------------|
+| Baldeon Fabian, Aldo | Backend API, Frontend (Cliente), Testing | Sistema de autenticación, visualización de disponibilidad de mesas, endpoints de reservas | 8 | 7 |
+| Cama Salvatierra, Jimena | Frontend (Administrador), Frontend (Cliente) | Panel administrativo, visualización de sede asignada, visualización de reservas | 6 | 6 |
+| Castillo Castillo, Jair | Backend API, Testing | Endpoints de mesas y autenticación, pruebas unitarias, documentación API | 7 | 6 |
+| La Torre Valle, Franz | Frontend (Cliente), Frontend (Administrador) | Menú digital, reserva activa, módulos de navegación, protección de rutas | 6 | 5 |
+| Quezada Portalatino, Barbara | Frontend (Cliente), Landing Page | Sistema de reservas, landing page completa, formulario de contacto | 7 | 6 |
+
+## Colaboración en componentes principales
+
+### Backend API
+- **Líderes**: Aldo Baldeon y Jair Castillo
+- **Logros**: Implementación completa de endpoints para autenticación, gestión de mesas, reservas y sedes.
+- **Dinámica de trabajo**: Aldo se enfocó en los servicios de autenticación y reservas, mientras que Jair desarrolló los endpoints para mesas y configuró la documentación Swagger. La colaboración entre ambos permitió una integración fluida de los diferentes servicios.
+
+### Frontend Web (Cliente y Administrador)
+- **Líderes**: Jimena Cama (Administrador) y Franz La Torre (Cliente) 
+- **Colaboradores**: Aldo Baldeon, Barbara Quezada, Jair Castillo
+- **Logros**: Desarrollo de todas las interfaces de usuario para comensales y administradores con excelente usabilidad.
+- **Dinámica de trabajo**: Jimena coordinó la implementación del panel administrativo mientras Franz dirigió el desarrollo de las interfaces para comensales. Barbara contribuyó significativamente con el sistema de reservas, mientras que Aldo aportó en la autenticación y visualización de mesas. Jair apoyó en la integración de componentes críticos.
+
+### Landing Page
+- **Líder**: Barbara Quezada
+- **Logros**: Diseño e implementación completa de la landing page con todas las secciones requeridas.
+- **Dinámica de trabajo**: Barbara lideró el diseño y desarrollo de la landing page, incorporando información clara sobre el producto y asegurando una experiencia visual atractiva para los visitantes.
+
+### Testing
+- **Líderes**: Aldo Baldeon y Jair Castillo
+- **Logros**: Verificación de la funcionalidad de todos los componentes implementados.
+- **Dinámica de trabajo**: Crearon y ejecutaron casos de prueba para validar el correcto funcionamiento de la aplicación, asegurando que todos los criterios de aceptación fueran cumplidos.
+
+## Herramientas de colaboración utilizadas
+
+- **GitHub**: Control de versiones y seguimiento de issues
+- **Discord**: Comunicación diaria y coordinación entre miembros
+- **Figma**: Diseño colaborativo de interfaces
+- **Google Meet**: Reuniones de planificación y retrospectiva
+
+## Metodología de trabajo
+
+El equipo adoptó un enfoque ágil con las siguientes prácticas:
+
+1. **Daily Standup**: Reuniones semanales de 2 horas para compartir avances y obstáculos.
+2. **Revisión de código**: Cada PR requería al menos una revisión de otro miembro del equipo.
+3. **Documentación continua**: Actualización constante de la documentación de API y componentes.
+
+## Desafíos enfrentados y soluciones
+
+- **Desafío**: Integración entre frontend y backend en desarrollo paralelo.  
+  **Solución**: Definición temprana de contratos de API con Swagger y uso de datos mockeados para pruebas.
+
+- **Desafío**: Coordinación del trabajo entre múltiples colaboradores en los componentes frontend.  
+  **Solución**: División clara de responsabilidades y uso de ramas de características específicas.
+
+## Lecciones aprendidas
+
+1. La documentación temprana de la API facilitó significativamente el trabajo paralelo.
+2. La asignación de líderes por componente con colaboradores definidos mejoró la calidad del código.
+3. Las sesiones de pair programming aceleraron la resolución de problemas complejos.
+4. El uso de prototipos y mockups antes de la implementación redujo la necesidad de cambios posteriores.
+
+## Métricas de colaboración
+
+- **Tiempo promedio de resolución de issues**: 1.5 días
+- **Tiempo promedio de revisión de PRs**: 4 horas
+- **Porcentaje de código con revisión por pares**: 100%
+
+Este Sprint 2 ha establecido una base sólida para la colaboración continua del equipo Tavolo. La distribución equilibrada del trabajo, el liderazgo compartido y el enfoque en la calidad han permitido entregar todas las funcionalidades planificadas cumpliendo con los criterios de aceptación establecidos.
+## 6.3. Validation Interviews.
+### 6.3.1. Diseño de Entrevistas.
+
+**Segmento clientes**
+- ¿Te resultó fácil navegar por el menú desde la app? ¿Hubo algo que te confundiera o faltara?
+- ¿Cómo fue tu experiencia haciendo una reserva? ¿Pudiste entender qué mesas y horarios estaban disponibles?
+- ¿Qué tan útil te pareció poder revisar o cancelar tu reserva desde la app?
+- ¿Qué mejorarías o agregarías para que la app sea más útil para ti al visitar una cafetería?
+
+**Segmento administradores**
+- ¿Qué tan clara y práctica te resultó la función para agregar, editar o eliminar mesas?
+- ¿Qué tal te pareció la visualización de reservas y disponibilidad de mesas?
+- ¿Qué funcionalidades sientes que hacen falta o podrían mejorarse para facilitar tu trabajo diario?
+
+
+### 6.3.2. Registro de Entrevistas.
+
+#### Propietarios de cafeterias
+
+**Entrevista #1**<br>
+**Entrevistado:** Diego Salinas<br>
+**Duración:** 3:18<br>
+**Link**: [https://drive.google.com/file/d/1Q9JL3E64J4BqAubMJNZ6rc8pWE4OEuIU/view?usp=sharing](https://drive.google.com/file/d/1Q9JL3E64J4BqAubMJNZ6rc8pWE4OEuIU/view?usp=sharing)
+
+![entrevista_propietario_diego](images/entrevistas/entrevista_propietario.png)
+
+**Entrevista #2**<br>
+**Entrevistado:** Franchesko Montesinos<br>
+**Duración:** 3:36<br>
+**Link**: [https://drive.google.com/file/d/1BakcVds5atZrFJ7rZIf7gbyW3izZaHkM/view?usp=sharing](https://drive.google.com/file/d/1BakcVds5atZrFJ7rZIf7gbyW3izZaHkM/view?usp=sharing)
+
+![evidencia-entrevista-Francesko.png](images/entrevistas/evidencia-entrevista-Francesko.png)
+
+
+
+#### Clientes de cafeterias
+
+**Entrevista #1**<br>
+**Entrevistado:** Jenna Portalatino<br>
+**Duración:** 6:33<br>
+**Link**: [https://drive.google.com/file/d/1BRU-wJSo4vY4o1B6tNWp8De5KIxhHKAv/view?usp=sharing](https://drive.google.com/file/d/1BRU-wJSo4vY4o1B6tNWp8De5KIxhHKAv/view?usp=sharing)
+
+![evidencia-entrevista-jenna](images/entrevistas/evidencia-entrevista-jenna.png)
+
+### 6.3.3. Evaluaciones según heurísticas
+
+#### UX Heuristics & Principles Evaluation
+Usability – Inclusive Design – Information Architecture
+
+#### SITE o APP A EVALUAR:
+Tavolo (Aplicación Web y Móvil)
+
+#### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+1. Navegación y visualización de sedes para comensales
+2. Gestión de mesas por parte del supervisor
+3. Filtrado de reservas por mesa
+4. Asignación de supervisores a sedes por parte del administrador
+5. Acciones de cancelar y agregar elementos en diversas secciones
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+1. Inicio Sesión
+2. Configuración de la cuenta
+
+#### ESCALA DE SEVERIDAD:
+Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+|-------|-------------|
+| 1 | Problema cosmético: no afecta significativamente la funcionalidad, pero reduce la calidad de la experiencia de usuario. |
+| 2 | Problema menor: causa cierta confusión o frustración, pero los usuarios pueden adaptarse rápidamente. |
+| 3 | Problema importante: genera confusión significativa, aumenta la probabilidad de errores y afecta la eficiencia de uso. |
+| 4 | Problema crítico: impide que los usuarios completen tareas fundamentales o causa errores graves en el sistema. |
+
+#### TABLA RESUMEN:
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+|---|----------|---------------------|----------------------------------|
+| 1 | Falta de imágenes referenciales en la vista de sedes para comensales | 2 | Coincidencia entre el sistema y el mundo real |
+| 2 | Imposibilidad de editar detalles de mesas creadas por el supervisor | 3 | Control y libertad del usuario |
+| 3 | Filtro de reserva por mesa no implementado como lista | 2 | Flexibilidad y eficiencia de uso |
+| 4 | Botones con degradado de colores tierra dificultan la lectura en la pantalla de asignación de supervisores | 3 | Visibilidad del estado del sistema |
+| 5 | Botones de acción (cancelar/agregar) con colores poco diferenciados | 2 | Prevención de errores |
+
+#### DESCRIPCIÓN DE PROBLEMAS:
+
+##### PROBLEMA #1: Falta de imágenes referenciales en la vista de sedes
+- Severidad: 2
+- Heurística violada: Coincidencia entre el sistema y el mundo real
+
+- Problema:
+La vista de sedes no incluye imágenes referenciales de cada establecimiento, lo que dificulta a los comensales reconocer visualmente el lugar al que desean asistir. Los usuarios necesitan asociar la información textual con un referente visual para tomar decisiones más rápidas e informadas.
+
+![alt text](images/heuristicas/pb5.png)
+
+- Recomendación:
+Implementar un carrusel de imágenes o al menos una imagen destacada para cada sede, con dimensiones estandarizadas (16:9) y optimizadas para carga rápida. La imagen debe mostrar claramente la fachada o interior del establecimiento para facilitar el reconocimiento visual.
+
+##### PROBLEMA #2: Imposibilidad de editar detalles de mesas creadas
+- Severidad: 3
+- Heurística violada: Control y libertad del usuario
+
+- Problema:
+Los supervisores no pueden editar los detalles de las mesas una vez que han sido creadas en el sistema. Esto obliga a eliminar y recrear mesas cuando se requiere realizar cambios simples, generando ineficiencia y potencial pérdida de información relacionada con esas mesas.
+
+![alt text](images/heuristicas/pb1.jpg)
+
+- Recomendación:
+Añadir una funcionalidad de edición accesible mediante un botón o menú contextual en cada mesa. Esta función debe permitir modificar los atributos clave como capacidad, ubicación, estado y características especiales, manteniendo el historial de cambios para auditoría.
+
+##### PROBLEMA #3: Filtro de reserva por mesa no implementado como lista
+- Severidad: 2
+- Heurística violada: Flexibilidad y eficiencia de uso
+
+- Problema:
+El filtro de reserva por mesa utiliza un formato que no es intuitivo para los usuarios, dificultando la rápida localización de reservas específicas. Los usuarios esperan un formato de lista desplegable que les permita seleccionar fácilmente entre las opciones disponibles.
+
+![alt text](images/heuristicas/pb2.png)
+
+- Recomendación:
+Reemplazar el filtro actual por una lista desplegable organizada numéricamente (o por zona si aplica), que permita selección múltiple y búsqueda rápida. Incluir una opción "Todas las mesas" al inicio de la lista para facilitar la visualización completa.
+
+##### PROBLEMA #4: Botones con degradado difíciles de leer
+- Severidad: 3
+- Heurística violada: Visibilidad del estado del sistema
+
+- Problema:
+En la pantalla de asignación de supervisores a sedes, los botones utilizan colores tierra con efectos de degradado que reducen significativamente el contraste entre el texto y el fondo, dificultando su lectura y reconocimiento, especialmente para usuarios con problemas visuales.
+
+![alt text](images/heuristicas/pb3.png)
+
+- Recomendación:
+Rediseñar los botones utilizando colores sólidos con alto contraste entre el texto y el fondo. Mantener la paleta de colores corporativa pero eliminar los degradados. Asegurar que cumplen con las pautas WCAG 2.1 de accesibilidad (ratio de contraste mínimo de 4.5:1).
+
+##### PROBLEMA #5: Botones de acción con colores poco diferenciados
+- Severidad: 2
+- Heurística violada: Prevención de errores
+
+- Problema:
+Los botones de acción crítica como "Cancelar" y "Agregar" utilizan colores tierra similares entre sí, lo que no sigue las convenciones esperadas por los usuarios y aumenta la probabilidad de errores al no distinguir claramente entre acciones positivas y negativas.
+
+![alt text](images/heuristicas/pb4.png)
+
+- Recomendación:
+Implementar un código de colores consistente y convencional: verde puro (#00B050 o similar) para acciones positivas como "Agregar" o "Confirmar", y rojo puro (#FF0000 o similar) para acciones negativas como "Cancelar" o "Eliminar". Mantener este esquema en toda la aplicación para reforzar la consistencia.
+
+## 6.4. Video About-the-Product
+
+En este video demostrativo presentamos Tavolo, nuestra plataforma integral para gestión de cafeterías. El contenido muestra:
+
+![alt text](images/video-about-the-product.png)
+
+<br>Enlace: 
+[Video About The Product de Tavolo](https://drive.google.com/file/d/1JMYA8vJc6BDFxX0ZL9tl0Fy3lKO5bwHQ/view?usp=sharing)
+- **Experiencia del Comensal**: Ver las sedes, navegación por el menú digital y realización de reservas.
+- **Panel del Supervisor**: Gestión de mesas activas y monitoreo de reservas.
+- **Herramientas del Administrador**: Dashboard con la creacióny gestión de supervisores y gestión del menú.
+
+El video demuestra cómo estas tres interfaces interactúan en tiempo real para optimizar la operación de las cafeterías, desde que un cliente realiza una reserva hasta que se refleja en los reportes de gestión de reservas de un supervisor.
 
 # Conclusiones Generales del Proyecto
 
 * El proyecto TAVOLO se enfoca en optimizar la experiencia en cafeterías peruanas mediante una solución tecnológica IoT que gestiona la ocupación de mesas y reservas. Para los comensales, ofrece visualización del menú, disponibilidad de mesas en tiempo real y reservas; para los administradores, permite la gestión de mesas y reservas de la sede asignada. El objetivo es mejorar la experiencia del cliente y la eficiencia operativa del negocio.
 * La investigación y análisis de requerimientos identificaron la problemática de la incertidumbre sobre la disponibilidad de mesas en cafeterías, especialmente en horas pico, lo que afecta la experiencia del cliente. Se definieron segmentos objetivo claros (comensales y administradores) y se analizaron competidores como Eat App y OpenTable, destacando la ventaja de TAVOLO en la detección automática de ocupación en tiempo real mediante sensores IoT.
 * El equipo demostró un liderazgo compartido y colaborativo, asumiendo responsabilidades específicas en cada capítulo y utilizando herramientas como GitHub y metodologías como Gitflow para una gestión eficiente del proyecto. Se establecieron metas claras, se planificaron tareas según las fortalezas individuales y se mantuvo una comunicación constante, lo que permitió cumplir los objetivos y fortalecer la cohesión del equipo.
+* El desarrollo de la app móvil consideró principios de usabilidad y experiencia de usuario (UX), permitiendo una navegación intuitiva, rápida y accesible. Esto garantiza que los comensales puedan interactuar con el sistema sin necesidad de asistencia técnica, lo que refuerza su autonomía y satisfacción.
+* TAVOLO fue diseñado con una arquitectura modular que permite escalar a múltiples sedes y escenarios de uso. Su backend en Java (Spring Boot), combinado con una app Flutter, una app web y dispositivos embebidos, proporciona una base tecnológica sólida adaptable a restaurantes, coworkings y otros negocios con gestión de espacios.
 
 # Bibliografía
 1.  **Las MIPYME en cifras 2022:** Publicado por la Oficina General de Evaluación de Impacto y Estudios Económicos (OGEIEE) de Produce. ([Ver publicación](https://ogeiee.produce.gob.pe/index.php/en/shortcode/oee-documentos-publicaciones/publicaciones-anuales/item/1170-las-mipyme-en-cifras-2022))
 2.  **Memoria Institucional del Ministerio de la Producción 2022:** Documento oficial que resume las acciones y logros del ministerio en ese año. ([Ver Memoria](https://transparencia.produce.gob.pe/images/stories/Repositorio/transparencia/planeamiento/memoria-anual/2022.pdf))
-3.   **Informe de ComexPerú (basado en datos oficiales)**: Las micro y pequeñas empresas en el Perú Resultados en 2022. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
+3.   **Informe de ComexPerú (basado en datos oficiales):** Las micro y pequeñas empresas en el Perú Resultados en 2022. ([Ver Informe Comex](https://www.comexperu.org.pe/upload/articles/reportes/reporte-mypes-2022.pdf))
+4.   **Google Developers:** Material Design Guidelines. Guía oficial para la creación de interfaces centradas en la experiencia del usuario. ([Ver guía](https://m3.material.io/))
+5.   **IoT For All:** Using Microcontrollers and Sensors in Smart Environments. Artículo técnico sobre aplicaciones de sensores IoT en espacios físicos. ([Ver artículo](https://www.iotforall.com))
    
 # Anexos
 * **Video de Exposicion TB1:** `https://drive.google.com/drive/u/0/folders/1YN0UBGC28osxHvRTsBrLSjwX2CAVLHlt`
@@ -4299,8 +5174,8 @@ Este Sprint 1 ha establecido una base sólida para la colaboración continua del
 * **Informe del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report`
 * **Backend del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend`
 * **Landing Page del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-landing-page`
-* **Fronten Web del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web`
-* **Fronten Movil del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-mobile`
+* **Frontend Web del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web`
+* **Frontend Movil del Proyecto:** `https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-mobile`
 * **Registro de Entrevista #1 (Propietarios/Cliente - Diego Morales/Elias Yauri Paucar):** `https://drive.google.com/file/d/1CVDQx8Ue15xk7yt8oukkN1S87bAc7TeB/view?usp=sharing`
 * **Registro de Entrevista #2 (Propietarios - Jenna Vasquez):** `https://drive.google.com/file/d/1WTxiDxw4vaabZhFvibL8mHLINcrJR0_9/view?usp=sharing`
 * **Registro de Entrevista #2 (Clientes - Aleshka Fernández):** `https://youtu.be/QGSisj7iF-k`
@@ -4311,3 +5186,6 @@ Este Sprint 1 ha establecido una base sólida para la colaboración continua del
 * **Diagrama de Organization System:**[https://drive.google.com/file/d/1OKUWtDfdjzkCRD_nNvbWuFwYXwBbUShL/view?usp=sharing](https://drive.google.com/file/d/1OKUWtDfdjzkCRD_nNvbWuFwYXwBbUShL/view?usp=sharing)
 
 * **Diagrama de C4**[https://drive.google.com/file/d/1C4Bcv6pZgL29nQ34p1o3DiLyqJqWyyxY/view?usp=sharing](https://drive.google.com/file/d/1C4Bcv6pZgL29nQ34p1o3DiLyqJqWyyxY/view?usp=sharing)
+* **Registro de Entrevista de Validación #1 (Propietarios - Franchesko Montesinos):** `https://drive.google.com/file/d/1BakcVds5atZrFJ7rZIf7gbyW3izZaHkM/view`
+* **Registro de Entrevista de Validación #1 (Clientes - Jenna Portalatino):** `https://drive.google.com/file/d/1BRU-wJSo4vY4o1B6tNWp8De5KIxhHKAv/view`
+* **Registro de Entrevista de Validación #2 (Propietarios - Diego Salinas):** `https://drive.google.com/file/d/1Q9JL3E64J4BqAubMJNZ6rc8pWE4OEuIU/view`
