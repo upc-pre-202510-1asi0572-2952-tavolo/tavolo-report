@@ -5328,10 +5328,10 @@ Durante el Sprint 3, el equipo Tavolo experimentó su mayor desafío colaborativ
 | Miembro del equipo | Áreas principales | Contribuciones clave | Pull requests | Issues closed | Participación hardware |
 |-------------------|---------|---------------|--------------|---------------|---------------------|
 | Baldeon Fabian, Aldo | IoT Hardware Leader, Embedded Software | Diseño del circuito, firmware ESP32, integración con backend | 12 | 10 | Líder en montaje |
-| Cama Salvatierra, Jimena | Mobile App IoT, Hardware Assembly | Notificaciones push móviles, optimización para datos IoT | 8 | 7 | Colaboradora activa |
+| Cama Salvatierra, Jimena | Hardware Assembly | Notificaciones push móviles, optimización para datos IoT | 8 | 7 | Colaboradora activa |
 | Castillo Castillo, Jair | Backend IoT API, Hardware Assembly | Endpoints IoT, WebSocket real-time, documentación API | 10 | 9 | Colaboradora activa |
-| La Torre Valle, Franz | Frontend IoT Integration, Hardware Assembly | Dashboard tiempo real, visualización datos sensores | 7 | 6 | Colaboradora activa |
-| Quezada Portalatino, Barbara | Frontend Updates, Hardware Assembly | Sistema notificaciones web, UX para datos IoT | 6 | 5 | Colaboradora activa |
+| La Torre Valle, Franz | Hardware Assembly | Dashboard tiempo real, visualización datos sensores | 7 | 6 | Colaboradora activa |
+| Quezada Portalatino, Barbara | Hardware Assembly | Sistema notificaciones web, UX para datos IoT | 6 | 5 | Colaboradora activa |
 
 ### Herramientas de Colaboración Especializadas
 
@@ -5343,16 +5343,37 @@ Durante el Sprint 3, el equipo Tavolo experimentó su mayor desafío colaborativ
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.
 
+Para las entrevistas de validación del Sprint 3, se diseñaron preguntas específicas que evalúan tanto las funcionalidades existentes como las nuevas implementaciones del sistema IoT y las mejoras realizadas en este sprint.
+
 **Segmento clientes**
-- ¿Te resultó fácil navegar por el menú desde la app? ¿Hubo algo que te confundiera o faltara?
+
+**Navegación y Usabilidad General:**
 - ¿Cómo fue tu experiencia haciendo una reserva? ¿Pudiste entender qué mesas y horarios estaban disponibles?
 - ¿Qué tan útil te pareció poder revisar o cancelar tu reserva desde la app?
-- ¿Qué mejorarías o agregarías para que la app sea más útil para ti al visitar una cafetería?
+
+**Funcionalidades IoT y Tiempo Real:**
+- ¿Notaste que el estado de las mesas se actualiza automáticamente? ¿Qué te pareció esta funcionalidad?
+- ¿Qué opinas sobre poder ver el estado real de ocupación de las mesas antes de llegar a la cafetería?
+- ¿Te generó más confianza saber que la información de disponibilidad viene directamente de sensores en las mesas?
+
+**Aplicación Móvil Mejorada:**
+- ¿Pudiste acceder fácilmente a todas las funciones desde tu teléfono?
+
 
 **Segmento administradores**
+
+**Gestión de Mesas y Operaciones:**
 - ¿Qué tan clara y práctica te resultó la función para agregar, editar o eliminar mesas?
-- ¿Qué tal te pareció la visualización de reservas y disponibilidad de mesas?
-- ¿Qué funcionalidades sientes que hacen falta o podrían mejorarse para facilitar tu trabajo diario?
+
+**Sistema IoT y Monitoreo en Tiempo Real:**
+- ¿Qué opinas sobre recibir datos automáticos del estado de las mesas a través de sensores?
+- ¿Te resultó útil poder ver el estado real de ocupación sin tener que verificar físicamente cada mesa?
+
+**Dashboard y Reportes:**
+- ¿Te gustaría tener acceso a más estadísticas o reportes sobre el uso de las mesas?
+
+**Eficiencia Operativa:**
+- ¿Recomendarías este sistema a otros administradores de cafeterías? ¿Por qué?
 
 
 ### 6.3.2. Registro de Entrevistas.
@@ -5391,18 +5412,14 @@ Durante el Sprint 3, el equipo Tavolo experimentó su mayor desafío colaborativ
 
 ### 6.3.3. Evaluaciones según heurísticas
 
-
 ## 6.4. Video About-the-Product
 
 En este video demostrativo presentamos Tavolo, nuestra plataforma integral para gestión de cafeterías. El contenido muestra:
 
-![alt text](images/video-about-the-product.png)
+![alt text](images/video-about-the-product1.png)
 
 <br>Enlace: 
-[Video About The Product de Tavolo](https://drive.google.com/file/d/1JMYA8vJc6BDFxX0ZL9tl0Fy3lKO5bwHQ/view?usp=sharing)
-- **Experiencia del Comensal**: Ver las sedes, navegación por el menú digital y realización de reservas.
-- **Panel del Supervisor**: Gestión de mesas activas y monitoreo de reservas.
-- **Herramientas del Administrador**: Dashboard con la creacióny gestión de supervisores y gestión del menú.
+[Video About The Product de Tavolo]()
 
 El video demuestra cómo estas tres interfaces interactúan en tiempo real para optimizar la operación de las cafeterías, desde que un cliente realiza una reserva hasta que se refleja en los reportes de gestión de reservas de un supervisor.
 
