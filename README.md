@@ -5147,10 +5147,8 @@ En este tercer sprint, el equipo Tavolo logró un hito fundamental: la implement
 **Logros destacables del Sprint 3:**
 
 - **Implementación del dispositivo IoT físico** basado en ESP32 con LEDs indicadores tricolor y botones de control
-- **Desarrollo del firmware embebido** para comunicación WiFi y manejo de sensores en tiempo real
 - **Integración completa con el ecosistema backend** mediante nuevos endpoints especializados para IoT
 - **Actualización de las aplicaciones frontend** para mostrar datos de sensores en tiempo real
-- **Sistema de notificaciones push** para cambios de estado de mesas
 - **Pruebas exhaustivas de la comunicación** entre dispositivo físico y plataforma digital
 
 ### Dispositivo IoT Físico Implementado
@@ -5171,30 +5169,13 @@ El dispositivo se basó en el modelo de simulación Wokwi desarrollado previamen
 - Comunicación bidireccional con el sistema backend
 - Actualización en tiempo real del estado en todas las interfaces
 
-A continuación, se presenta la tabla de commits más relevantes del Sprint 3:
-
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-|------------|--------|-----------|---------------|---------------------|-------------------|
-| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-embedded | main | a1b2c3d | feat: implement ESP32 base firmware | Configuración inicial del proyecto ESP32 con WiFi y comunicación HTTP | 16/06/2025 |
-| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-embedded | feature/led-control | e4f5g6h | feat: add LED indicator system | Implementación del control tricolor de LEDs para estados de mesa | 17/06/2025 |
-| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-embedded | feature/button-input | i7j8k9l | feat: implement button interrupt handling | Sistema de manejo de botones con interrupciones para eventos de ocupación | 18/06/2025 |
-| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-embedded | feature/http-client | m0n1o2p | feat: add HTTP client for backend communication | Cliente HTTP para envío de datos de sensores al backend | 19/06/2025 |
-| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/iot-endpoints | q3r4s5t | feat: add IoT device endpoints | Nuevos endpoints para recibir y procesar datos de dispositivos IoT | 19/06/2025 |
-| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/real-time-updates | u6v7w8x | feat: implement real-time table status updates | Sistema de actualización en tiempo real del estado de mesas desde sensores | 20/06/2025 |
-| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/iot-integration | y9z0a1b | feat: integrate IoT data visualization | Actualización de interfaces para mostrar datos en tiempo real de sensores | 21/06/2025 |
-| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-mobile | feature/push-notifications | c2d3e4f | feat: add push notification system | Sistema de notificaciones push para cambios de estado de mesas | 22/06/2025 |
-| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-embedded | feature/final-integration | g5h6i7j | feat: complete device integration with backend | Integración final del dispositivo con el ecosistema completo | 23/06/2025 |
-
 #### 6.2.3.5.Testing Suite Evidence for Sprint Review.
 
 Durante el Sprint 3, se implementó una suite de pruebas especializada para validar la funcionalidad del dispositivo IoT y su integración con el sistema completo. Las pruebas se realizaron físicamente con el dispositivo, abarcando desde el nivel de hardware hasta la integración end-to-end, ejecutándose directamente en las ramas de desarrollo correspondientes.
 
-## Relación de Commits de Testing
-
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |------------|--------|-----------|----------------|---------------------|---------------------|
 | tavolo-embedded | main | abc123 | Add hardware validation tests | Implementación de pruebas para validación física del circuito y componentes | 2025-06-20 |
-| tavolo-backend | feature/iot-integration | def456 | Add IoT endpoint integration tests | Pruebas de integración para endpoints de dispositivos IoT con hardware real | 2025-06-21 |
 | tavolo-embedded | feature/http-client | ghi789 | Add end-to-end IoT communication tests | Pruebas completas de comunicación dispositivo físico-backend-frontend | 2025-06-22 | y probando la conexion con todo el ecosistema, no se necesito la creacion de ramas
 
 
@@ -5210,46 +5191,11 @@ En este tercer sprint, el equipo Tavolo ha logrado la implementación exitosa de
 - **Actualización automática** del estado de mesas en todas las interfaces
 - **Dashboard mejorado** con datos en tiempo real de sensores IoT
 
-### Dispositivo IoT Físico - Montaje y Funcionamiento
-
-El equipo colaboró en el montaje del dispositivo físico basado en el modelo Wokwi previamente diseñado:
-
 ![Dispositivo ESP32 Montado](./images/Execution_Evidence/dispositivo-esp32-fisico.jpg)
 *Dispositivo ESP32 completamente montado con LEDs indicadores y botones de control*
 
 ![Circuito en Funcionamiento](./images/Execution_Evidence/circuito-funcionando.jpg)
 *LEDs indicadores mostrando diferentes estados: libre (verde), ocupada (rojo), reservada (azul)*
-
-### Comunicación IoT en Tiempo Real
-
-![Monitor Serial ESP32](./images/Execution_Evidence/monitor-serial-esp32.jpg)
-*Monitor serial mostrando la comunicación exitosa entre ESP32 y el servidor backend*
-
-![Datos IoT en Backend](./images/Execution_Evidence/iot-data-backend.jpg)
-*Endpoint del backend recibiendo datos del dispositivo IoT en tiempo real*
-
-### Interfaces Actualizadas con Datos IoT
-
-#### Dashboard Administrador con IoT
-![Dashboard IoT Admin](./images/Execution_Evidence/dashboard-iot-admin.jpg)
-*Panel de administrador mostrando estado de mesas actualizado automáticamente desde sensores*
-
-![Estado Mesas Tiempo Real](./images/Execution_Evidence/mesas-tiempo-real.jpg)
-*Visualización en tiempo real del estado de mesas con datos provenientes del dispositivo IoT*
-
-#### Aplicación Móvil con Notificaciones IoT
-![App Móvil IoT](./images/Execution_Evidence/mobile-iot-notifications.jpg)
-*Aplicación móvil recibiendo notificaciones push cuando cambia el estado de las mesas*
-
-![Mapa Tiempo Real](./images/Execution_Evidence/mapa-tiempo-real-iot.jpg)
-*Mapa de la cafetería actualizado en tiempo real con datos de ocupación*
-
-
-### Video Demostrativo Completo
-
-El video muestra la integración completa del sistema IoT con el ecosistema Tavolo, desde la detección física hasta la actualización en todas las interfaces:
-
-[**Video Demostración Sprint 3 - Sistema IoT Completo**](https://drive.google.com/file/d/1XYZ123ABC456DEF789/view?usp=sharing)
 
 
 #### 6.2.3.7.Services Documentation Evidence for Sprint Review.
@@ -5262,13 +5208,6 @@ Todos los endpoints existentes de los sprints anteriores se mantuvieron completa
 | Reservas | `/api/v1/bookings` | GET | Filtra por estado real de ocupación IoT |
 | Sedes | `/api/v1/headquarters/{headquarterId}/tables` | GET | Muestra estado IoT de todas las mesas |
 
-
-### Repositorio y Commits Relacionados
-
-| Repository | Commit ID | Descripción | Autor | Fecha |
-|------------|-----------|-------------|-------|-------|
-| tavolo-backend | i7j8k9l | feat(iot): add device data processing and validation | Aldo Baldeon | 21/06/2025 |
-| tavolo-embedded | m0n1o2p | feat(esp32): implement HTTP client for API communication | Aldo Baldeon | 22/06/2025 |
 
 La documentación completa de la API IoT está disponible en: 
 **URL Swagger**: https://tavolo-backend.onrender.com/swagger-ui/index.html#/IoT
@@ -5309,15 +5248,6 @@ El sistema Tavolo ahora opera con la siguiente infraestructura desplegada:
 
 #### 5. Mobile Application 
 - Disponible a través de u celular Android
-
-### Evidencia del Dispositivo IoT Físico Desplegado
-
-#### Hardware Assembly Evidence
-![Dispositivo Montado](./images/deployment/esp32-device-assembled.jpg)
-*Dispositivo ESP32 completamente montado y funcional con todos los componentes*
-
-
-El Sprint 3 ha culminado exitosamente con un ecosistema completo desplegado y funcionando, donde dispositivos IoT físicos, aplicaciones web y móviles, y servicios backend trabajar en conjunto para ofrecer la experiencia completa de Tavolo.
 
 #### 6.2.3.9.Team Collaboration Insights during Sprint.
 
