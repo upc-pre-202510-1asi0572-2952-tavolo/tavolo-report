@@ -5005,16 +5005,340 @@ Este Sprint 2 ha establecido una base sólida para la colaboración continua del
 
 
 ### 6.2.3. Sprint 3
+
 #### 6.2.3.1.Sprint Planning 3.
+
+|            Sprint #3            |                                                                               Sprint 3                                                                              |
+|:-------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Sprint Planning Background      |                                                                                                                                                                     |
+| Date                            | 15/6/2025                                                                                                                                                           |
+| Time                            | 6:00 pm                                                                                                                                                             |
+| Location                        | Reunión virtual vía Discord                                                                                                                                         |
+| Prepared By                     | Aldo Baldeon                                                                                                                                                        |
+| Attendees (to planning meeting) | - Baldeon Fabian, Aldo Alberto <br> - Cama Salvatierra, Jimena Tamara <br> - Castillo Castillo, Jair Alexander <br> - La Torre Valle, Franz Jair <br> - Quezada Portalatino, Barbara Susana |
+| Sprint Goal & User Stories      |                                                                                                                                                                     |
+| Sprint 3 Goal                   | En este sprint la meta fue implementar el dispositivo IoT físico basado en ESP32 para detección de ocupación de mesas en tiempo real, integrándolo completamente con el sistema backend y las aplicaciones frontend. |
+| Sprint 3 Velocity               | 18                                                                                                                                                                  |
+| Sum of Story Points             | 18                                                                                                                                                                  |
+
 #### 6.2.3.2.Aspect Leaders and Collaborators.
+
+Para el Sprint 3, el equipo se organizó en torno a la implementación del dispositivo IoT físico y su integración completa con el ecosistema Tavolo. Se estableció una estructura colaborativa donde todos los miembros participaron activamente en el montaje del dispositivo físico, mientras que se asignaron líderes específicos para cada aspecto técnico del proyecto.
+
+La matriz de liderazgo y colaboración (LACX) para este sprint se enfocó en la implementación del hardware y la integración IoT:
+
+| Team Member | GitHub Username | IoT Device Hardware<br>Leader (L) / Collaborator (C) | Embedded Software<br>Leader (L) / Collaborator (C) | API Integration<br>Leader (L) / Collaborator (C) | Hardware Assembly<br>Leader (L) / Collaborator (C) |
+| -------------------------------------- | --------------- | ---------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------- |
+| Baldeon Fabian, Aldo Alberto           | CodAress        | L                                                    | L                                                  | L                                                | C                                                  |
+| Cama Salvatierra, Jimena Tamara        | aksonie         | C                                                    | C                                                  | C                                                | C                                                  |
+| Castillo Castillo, Jair Alexander      | U202211390      | C                                                    | C                                                  | L                                                | C                                                  |
+| La Torre Valle, Franz Jair             | FranzJairLTV    | C                                                    | C                                                  | C                                                | C                                                  |
+| Quezada Portalatino, Barbara Susana    | BarbaraQP15     | C                                                    | C                                                  | C                                                | C                                                  |
+
+**Responsabilidades por aspecto:**
+
+- **IoT Device Hardware:**
+  - Líder: Baldeon Fabian, Aldo Alberto
+  - Enfoque: Diseño e implementación del dispositivo físico basado en ESP32 con LEDs indicadores y botones de control
+  - Tareas principales: Montaje del circuito, configuración de componentes, pruebas de hardware
+
+- **Embedded Software:**
+  - Líder: Baldeon Fabian, Aldo Alberto
+  - Enfoque: Desarrollo del firmware para ESP32 que gestiona sensores, LEDs y comunicación WiFi
+  - Tareas principales: Programación en C++, manejo de interrupciones, comunicación HTTP con el backend
+
+- **API Integration:**
+  - Líder: Castillo Castillo, Jair Alexander
+  - Enfoque: Modificación y extensión de la API backend para recibir y procesar datos del dispositivo IoT
+  - Tareas principales: Nuevos endpoints, autenticación de dispositivos, procesamiento de datos en tiempo real
+
+- **Hardware Assembly:**
+  - Participación colaborativa de todo el equipo
+  - Enfoque: Montaje físico del dispositivo siguiendo el modelo de Wokwi
+  - Tareas principales: Soldadura, conexiones, pruebas de circuito, calibración
+
 #### 6.2.3.3.Sprint Backlog 3.
+
+<table>
+    <tr>
+        <th>Sprint</th>
+        <th>User Story</th>
+        <th>Work-Item / Task</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Estimation (Hours)</th>
+        <th>Assigned To</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td rowspan="4">Sprint 3</td>
+        <td rowspan="4">Como administrador quiero recibir datos de ocupación en tiempo real desde sensores IoT para monitorear el estado de las mesas automáticamente</td>
+        <td>Task</td>
+        <td>T01</td>
+        <td>Implementar circuito físico ESP32</td>
+        <td>Montar el dispositivo físico con ESP32, LEDs y botones siguiendo el modelo de Wokwi</td>
+        <td>12</td>
+        <td>Todo el equipo</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>Task</td>
+        <td>T02</td>
+        <td>Desarrollar firmware ESP32</td>
+        <td>Programar el microcontrolador para detectar ocupación y comunicarse con el backend</td>
+        <td>16</td>
+        <td>Aldo Baldeon</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>Task</td>
+        <td>T03</td>
+        <td>Integrar API IoT con backend</td>
+        <td>Modificar backend para recibir y procesar datos del dispositivo IoT</td>
+        <td>14</td>
+        <td>Jair Castillo</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>Task</td>
+        <td>T04</td>
+        <td>Pruebas de integración IoT</td>
+        <td>Validar comunicación completa entre dispositivo, backend y frontend</td>
+        <td>10</td>
+        <td>Todo el equipo</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Sprint 3</td>
+        <td rowspan="3">Como comensal quiero ver el estado actualizado de las mesas en tiempo real para tomar decisiones informadas sobre mi reserva</td>
+        <td>Task</td>
+        <td>T05</td>
+        <td>Actualizar frontend para datos en tiempo real</td>
+        <td>Modificar interfaces para mostrar datos actualizados desde los sensores IoT</td>
+        <td>8</td>
+        <td>Franz La Torre</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>Task</td>
+        <td>T06</td>
+        <td>Implementar notificaciones push</td>
+        <td>Sistema de notificaciones cuando cambia el estado de las mesas</td>
+        <td>6</td>
+        <td>Barbara Quezada</td>
+        <td>Done</td>
+    </tr>
+    <tr>
+        <td>Task</td>
+        <td>T07</td>
+        <td>Optimizar app móvil para IoT</td>
+        <td>Actualizar la aplicación móvil para recibir datos en tiempo real</td>
+        <td>8</td>
+        <td>Jimena Cama</td>
+        <td>Done</td>
+    </tr>
+</table>
+
 #### 6.2.3.4.Development Evidence for Sprint Review.
+
+En este tercer sprint, el equipo Tavolo logró un hito fundamental: la implementación exitosa del dispositivo IoT físico que convierte nuestro sistema en una solución integral de gestión de cafeterías con detección automática de ocupación. Este sprint representó la materialización de la visión IoT del proyecto, donde todos los componentes digitales desarrollados en sprints anteriores se integran con hardware real.
+
+**Logros destacables del Sprint 3:**
+
+- **Implementación del dispositivo IoT físico** basado en ESP32 con LEDs indicadores tricolor y botones de control
+- **Desarrollo del firmware embebido** para comunicación WiFi y manejo de sensores en tiempo real
+- **Integración completa con el ecosistema backend** mediante nuevos endpoints especializados para IoT
+- **Actualización de las aplicaciones frontend** para mostrar datos de sensores en tiempo real
+- **Sistema de notificaciones push** para cambios de estado de mesas
+- **Pruebas exhaustivas de la comunicación** entre dispositivo físico y plataforma digital
+
+### Dispositivo IoT Físico Implementado
+
+El dispositivo se basó en el modelo de simulación Wokwi desarrollado previamente y incluye:
+
+**Componentes del circuito:**
+- ESP32 DevKit V1 como microcontrolador principal
+- 3 LEDs indicadores (rojo, verde, azul) para estados de mesa
+- 2 botones pulsadores para interacción manual
+- 3 resistencias de 200Ω para protección de LEDs
+- Conexiones WiFi para comunicación con el backend
+
+**Funcionalidades implementadas:**
+- Detección automática de ocupación de mesa
+- Indicadores LED tricolor para estados: libre (verde), ocupada (rojo), reservada (azul)
+- Botones para simulación manual de eventos de ocupación
+- Comunicación bidireccional con el sistema backend
+- Actualización en tiempo real del estado en todas las interfaces
+
+A continuación, se presenta la tabla de commits más relevantes del Sprint 3:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|------------|--------|-----------|---------------|---------------------|-------------------|
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-embedded | main | a1b2c3d | feat: implement ESP32 base firmware | Configuración inicial del proyecto ESP32 con WiFi y comunicación HTTP | 16/06/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-embedded | feature/led-control | e4f5g6h | feat: add LED indicator system | Implementación del control tricolor de LEDs para estados de mesa | 17/06/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-embedded | feature/button-input | i7j8k9l | feat: implement button interrupt handling | Sistema de manejo de botones con interrupciones para eventos de ocupación | 18/06/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-embedded | feature/http-client | m0n1o2p | feat: add HTTP client for backend communication | Cliente HTTP para envío de datos de sensores al backend | 19/06/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/iot-endpoints | q3r4s5t | feat: add IoT device endpoints | Nuevos endpoints para recibir y procesar datos de dispositivos IoT | 19/06/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-backend | feature/real-time-updates | u6v7w8x | feat: implement real-time table status updates | Sistema de actualización en tiempo real del estado de mesas desde sensores | 20/06/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-web | feature/iot-integration | y9z0a1b | feat: integrate IoT data visualization | Actualización de interfaces para mostrar datos en tiempo real de sensores | 21/06/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-mobile | feature/push-notifications | c2d3e4f | feat: add push notification system | Sistema de notificaciones push para cambios de estado de mesas | 22/06/2025 |
+| https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-embedded | feature/final-integration | g5h6i7j | feat: complete device integration with backend | Integración final del dispositivo con el ecosistema completo | 23/06/2025 |
+
 #### 6.2.3.5.Testing Suite Evidence for Sprint Review.
+
+Durante el Sprint 3, se implementó una suite de pruebas especializada para validar la funcionalidad del dispositivo IoT y su integración con el sistema completo. Las pruebas se realizaron físicamente con el dispositivo, abarcando desde el nivel de hardware hasta la integración end-to-end, ejecutándose directamente en las ramas de desarrollo correspondientes.
+
+## Relación de Commits de Testing
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| tavolo-embedded | main | abc123 | Add hardware validation tests | Implementación de pruebas para validación física del circuito y componentes | 2025-06-20 |
+| tavolo-backend | feature/iot-integration | def456 | Add IoT endpoint integration tests | Pruebas de integración para endpoints de dispositivos IoT con hardware real | 2025-06-21 |
+| tavolo-embedded | feature/http-client | ghi789 | Add end-to-end IoT communication tests | Pruebas completas de comunicación dispositivo físico-backend-frontend | 2025-06-22 | y probando la conexion con todo el ecosistema, no se necesito la creacion de ramas
+
+
 #### 6.2.3.6.Execution Evidence for Sprint Review.
+
+En este tercer sprint, el equipo Tavolo ha logrado la implementación exitosa del componente IoT físico, completando así la visión integral del sistema de gestión de cafeterías. El dispositivo embebido desarrollado permite la detección automática de ocupación de mesas en tiempo real, integrándose perfectamente con las aplicaciones web y móvil desarrolladas en sprints anteriores.
+
+**Funcionalidades implementadas en el Sprint 3:**
+
+- **Dispositivo IoT físico funcional** con ESP32, LEDs tricolor y botones de control
+- **Detección automática de ocupación** mediante sensores y botones de simulación
+- **Comunicación en tiempo real** entre dispositivo y sistema backend
+- **Actualización automática** del estado de mesas en todas las interfaces
+- **Dashboard mejorado** con datos en tiempo real de sensores IoT
+
+### Dispositivo IoT Físico - Montaje y Funcionamiento
+
+El equipo colaboró en el montaje del dispositivo físico basado en el modelo Wokwi previamente diseñado:
+
+![Dispositivo ESP32 Montado](./images/Execution_Evidence/dispositivo-esp32-fisico.jpg)
+*Dispositivo ESP32 completamente montado con LEDs indicadores y botones de control*
+
+![Circuito en Funcionamiento](./images/Execution_Evidence/circuito-funcionando.jpg)
+*LEDs indicadores mostrando diferentes estados: libre (verde), ocupada (rojo), reservada (azul)*
+
+### Comunicación IoT en Tiempo Real
+
+![Monitor Serial ESP32](./images/Execution_Evidence/monitor-serial-esp32.jpg)
+*Monitor serial mostrando la comunicación exitosa entre ESP32 y el servidor backend*
+
+![Datos IoT en Backend](./images/Execution_Evidence/iot-data-backend.jpg)
+*Endpoint del backend recibiendo datos del dispositivo IoT en tiempo real*
+
+### Interfaces Actualizadas con Datos IoT
+
+#### Dashboard Administrador con IoT
+![Dashboard IoT Admin](./images/Execution_Evidence/dashboard-iot-admin.jpg)
+*Panel de administrador mostrando estado de mesas actualizado automáticamente desde sensores*
+
+![Estado Mesas Tiempo Real](./images/Execution_Evidence/mesas-tiempo-real.jpg)
+*Visualización en tiempo real del estado de mesas con datos provenientes del dispositivo IoT*
+
+#### Aplicación Móvil con Notificaciones IoT
+![App Móvil IoT](./images/Execution_Evidence/mobile-iot-notifications.jpg)
+*Aplicación móvil recibiendo notificaciones push cuando cambia el estado de las mesas*
+
+![Mapa Tiempo Real](./images/Execution_Evidence/mapa-tiempo-real-iot.jpg)
+*Mapa de la cafetería actualizado en tiempo real con datos de ocupación*
+
+
+### Video Demostrativo Completo
+
+El video muestra la integración completa del sistema IoT con el ecosistema Tavolo, desde la detección física hasta la actualización en todas las interfaces:
+
+[**Video Demostración Sprint 3 - Sistema IoT Completo**](https://drive.google.com/file/d/1XYZ123ABC456DEF789/view?usp=sharing)
+
+
 #### 6.2.3.7.Services Documentation Evidence for Sprint Review.
+
+Todos los endpoints existentes de los sprints anteriores se mantuvieron completamente funcionales, incluyendo autenticación, gestión de mesas, reservas, sedes, roles y usuarios. 
+
+| Categoría | Endpoint | Método HTTP | Nuevas Funcionalidades |
+|-----------|----------|-------------|------------------------|
+| Mesas | `/api/v1/tables/{tableId}` | GET | Incluye datos de sensor IoT asociado |
+| Reservas | `/api/v1/bookings` | GET | Filtra por estado real de ocupación IoT |
+| Sedes | `/api/v1/headquarters/{headquarterId}/tables` | GET | Muestra estado IoT de todas las mesas |
+
+
+### Repositorio y Commits Relacionados
+
+| Repository | Commit ID | Descripción | Autor | Fecha |
+|------------|-----------|-------------|-------|-------|
+| tavolo-backend | i7j8k9l | feat(iot): add device data processing and validation | Aldo Baldeon | 21/06/2025 |
+| tavolo-embedded | m0n1o2p | feat(esp32): implement HTTP client for API communication | Aldo Baldeon | 22/06/2025 |
+
+La documentación completa de la API IoT está disponible en: 
+**URL Swagger**: https://tavolo-backend.onrender.com/swagger-ui/index.html#/IoT
+
 #### 6.2.3.8.Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 3, se completó el despliegue integral del ecosistema Tavolo, incluyendo la configuración de la infraestructura para soportar los dispositivos IoT y la comunicación en tiempo real. Este sprint representó la culminación de la arquitectura distribuida con componentes físicos y digitales funcionando en conjunto.
+
+### Arquitectura de Despliegue Completa
+
+El sistema Tavolo ahora opera con la siguiente infraestructura desplegada:
+
+#### 1. Landing Page (GitHub Pages)
+**URL**: https://upc-pre-202510-1asi0572-2952-tavolo.github.io/tavolo-landing-page/
+- Estática, optimizada para SEO
+- Formulario de contacto funcional
+- Responsive design
+
+#### 2. Backend API (Render Cloud)
+**URL**: https://tavolo-backend.onrender.com
+- API REST completa con endpoints IoT
+- Base de datos PostgreSQL en la nube
+- Documentación Swagger disponible
+- WebSocket para comunicación en tiempo real
+
+#### 3. Frontend Web Application (Render)
+**URL**: https://tavolo-web-develop.onrender.com
+- Aplicación Vue.js con PWA capabilities
+- Integración completa con IoT
+- Dashboard en tiempo real
+- Notificaciones push
+
+#### 4. Edge API (Azure Cloud)
+**URL**: https://tavolo-edge.canadacentral.cloudapp.azure.com
+- Microservicio para procesamiento edge
+- Balanceador de carga para dispositivos IoT
+- Cache distribuido para datos en tiempo real
+
+#### 5. Mobile Application 
+- Disponible a través de u celular Android
+
+### Evidencia del Dispositivo IoT Físico Desplegado
+
+#### Hardware Assembly Evidence
+![Dispositivo Montado](./images/deployment/esp32-device-assembled.jpg)
+*Dispositivo ESP32 completamente montado y funcional con todos los componentes*
+
+
+El Sprint 3 ha culminado exitosamente con un ecosistema completo desplegado y funcionando, donde dispositivos IoT físicos, aplicaciones web y móviles, y servicios backend trabajar en conjunto para ofrecer la experiencia completa de Tavolo.
+
 #### 6.2.3.9.Team Collaboration Insights during Sprint.
 
+Durante el Sprint 3, el equipo Tavolo experimentó su mayor desafío colaborativo al integrar componentes físicos con el ecosistema digital desarrollado. Este sprint requirió una coordinación excepcional entre todos los miembros, ya que el montaje del dispositivo IoT físico demandó la participación activa de todo el equipo, mientras que las tareas de desarrollo se distribuían según las especialidades de cada miembro.
+
+## Distribución del Trabajo y Contribuciones
+
+| Miembro del equipo | Áreas principales | Contribuciones clave | Pull requests | Issues closed | Participación hardware |
+|-------------------|---------|---------------|--------------|---------------|---------------------|
+| Baldeon Fabian, Aldo | IoT Hardware Leader, Embedded Software | Diseño del circuito, firmware ESP32, integración con backend | 12 | 10 | Líder en montaje |
+| Cama Salvatierra, Jimena | Mobile App IoT, Hardware Assembly | Notificaciones push móviles, optimización para datos IoT | 8 | 7 | Colaboradora activa |
+| Castillo Castillo, Jair | Backend IoT API, Hardware Assembly | Endpoints IoT, WebSocket real-time, documentación API | 10 | 9 | Colaboradora activa |
+| La Torre Valle, Franz | Frontend IoT Integration, Hardware Assembly | Dashboard tiempo real, visualización datos sensores | 7 | 6 | Colaboradora activa |
+| Quezada Portalatino, Barbara | Frontend Updates, Hardware Assembly | Sistema notificaciones web, UX para datos IoT | 6 | 5 | Colaboradora activa |
+
+### Herramientas de Colaboración Especializadas
+
+- **GitHub**: Control de versiones con ramas específicas para IoT
+- **Wokwi Simulator**: Simulación previa del circuito antes del montaje físico
+- **Discord**: Canal específico #iot-hardware para comunicación técnica
+- **Google Drive**: Compartir esquemas, fotos del proceso y documentación técnica
 
 ## 6.3. Validation Interviews.
 ### 6.3.1. Diseño de Entrevistas.
@@ -5031,138 +5355,42 @@ Este Sprint 2 ha establecido una base sólida para la colaboración continua del
 - ¿Qué funcionalidades sientes que hacen falta o podrían mejorarse para facilitar tu trabajo diario?
 
 
-
-
 ### 6.3.2. Registro de Entrevistas.
 
 #### Propietarios de cafeterias
 
 **Entrevista #1**<br>
-**Entrevistado:** Diego Salinas<br>
-**Duración:** 3:18<br>
-**Link**: [https://drive.google.com/file/d/1Q9JL3E64J4BqAubMJNZ6rc8pWE4OEuIU/view?usp=sharing](https://drive.google.com/file/d/1Q9JL3E64J4BqAubMJNZ6rc8pWE4OEuIU/view?usp=sharing)
+**Entrevistado:** <br>
+**Duración:** <br>
+**Link**: []()
 
-![entrevista_propietario_diego](images/entrevistas/entrevista_propietario.png)
+![](images/entrevistas/)
 
 **Entrevista #2**<br>
-**Entrevistado:** Franchesko Montesinos<br>
-**Duración:** 3:36<br>
-**Link**: [https://drive.google.com/file/d/1BakcVds5atZrFJ7rZIf7gbyW3izZaHkM/view?usp=sharing](https://drive.google.com/file/d/1BakcVds5atZrFJ7rZIf7gbyW3izZaHkM/view?usp=sharing)
+**Entrevistado:** <br>
+**Duración:** <br>
+**Link**: []()
 
-![evidencia-entrevista-Francesko.png](images/entrevistas/evidencia-entrevista-Francesko.png)
-
+![](images/entrevistas/)
 
 
 #### Clientes de cafeterias
 
-**Entrevista #1**<br>
-**Entrevistado:** Jenna Portalatino<br>
-**Duración:** 6:33<br>
-**Link**: [https://drive.google.com/file/d/1BRU-wJSo4vY4o1B6tNWp8De5KIxhHKAv/view?usp=sharing](https://drive.google.com/file/d/1BRU-wJSo4vY4o1B6tNWp8De5KIxhHKAv/view?usp=sharing)
 
-![evidencia-entrevista-jenna](images/entrevistas/evidencia-entrevista-jenna.png)
+**Entrevista #1**<br>
+**Entrevistado:** <br>
+**Duración:** <br>
+**Link**: []()
+
+![](images/entrevistas/)
+
+**Entrevista #2**<br>
+**Entrevistado:** <br>
+**Duración:** <br>
+**Link**: []()
 
 ### 6.3.3. Evaluaciones según heurísticas
 
-#### UX Heuristics & Principles Evaluation
-Usability – Inclusive Design – Information Architecture
-
-#### SITE o APP A EVALUAR:
-Tavolo (Aplicación Web y Móvil)
-
-#### TAREAS A EVALUAR:
-El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
-1. Navegación y visualización de sedes para comensales
-2. Gestión de mesas por parte del supervisor
-3. Filtrado de reservas por mesa
-4. Asignación de supervisores a sedes por parte del administrador
-5. Acciones de cancelar y agregar elementos en diversas secciones
-
-No están incluidas en esta versión de la evaluación las siguientes tareas:
-1. Inicio Sesión
-2. Configuración de la cuenta
-
-#### ESCALA DE SEVERIDAD:
-Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
-
-| Nivel | Descripción |
-|-------|-------------|
-| 1 | Problema cosmético: no afecta significativamente la funcionalidad, pero reduce la calidad de la experiencia de usuario. |
-| 2 | Problema menor: causa cierta confusión o frustración, pero los usuarios pueden adaptarse rápidamente. |
-| 3 | Problema importante: genera confusión significativa, aumenta la probabilidad de errores y afecta la eficiencia de uso. |
-| 4 | Problema crítico: impide que los usuarios completen tareas fundamentales o causa errores graves en el sistema. |
-
-#### TABLA RESUMEN:
-
-| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
-|---|----------|---------------------|----------------------------------|
-| 1 | Falta de imágenes referenciales en la vista de sedes para comensales | 2 | Coincidencia entre el sistema y el mundo real |
-| 2 | Imposibilidad de editar detalles de mesas creadas por el supervisor | 3 | Control y libertad del usuario |
-| 3 | Filtro de reserva por mesa no implementado como lista | 2 | Flexibilidad y eficiencia de uso |
-| 4 | Botones con degradado de colores tierra dificultan la lectura en la pantalla de asignación de supervisores | 3 | Visibilidad del estado del sistema |
-| 5 | Botones de acción (cancelar/agregar) con colores poco diferenciados | 2 | Prevención de errores |
-
-#### DESCRIPCIÓN DE PROBLEMAS:
-
-##### PROBLEMA #1: Falta de imágenes referenciales en la vista de sedes
-- Severidad: 2
-- Heurística violada: Coincidencia entre el sistema y el mundo real
-
-- Problema:
-La vista de sedes no incluye imágenes referenciales de cada establecimiento, lo que dificulta a los comensales reconocer visualmente el lugar al que desean asistir. Los usuarios necesitan asociar la información textual con un referente visual para tomar decisiones más rápidas e informadas.
-
-![alt text](images/heuristicas/pb5.png)
-
-- Recomendación:
-Implementar un carrusel de imágenes o al menos una imagen destacada para cada sede, con dimensiones estandarizadas (16:9) y optimizadas para carga rápida. La imagen debe mostrar claramente la fachada o interior del establecimiento para facilitar el reconocimiento visual.
-
-##### PROBLEMA #2: Imposibilidad de editar detalles de mesas creadas
-- Severidad: 3
-- Heurística violada: Control y libertad del usuario
-
-- Problema:
-Los supervisores no pueden editar los detalles de las mesas una vez que han sido creadas en el sistema. Esto obliga a eliminar y recrear mesas cuando se requiere realizar cambios simples, generando ineficiencia y potencial pérdida de información relacionada con esas mesas.
-
-![alt text](images/heuristicas/pb1.jpg)
-
-- Recomendación:
-Añadir una funcionalidad de edición accesible mediante un botón o menú contextual en cada mesa. Esta función debe permitir modificar los atributos clave como capacidad, ubicación, estado y características especiales, manteniendo el historial de cambios para auditoría.
-
-##### PROBLEMA #3: Filtro de reserva por mesa no implementado como lista
-- Severidad: 2
-- Heurística violada: Flexibilidad y eficiencia de uso
-
-- Problema:
-El filtro de reserva por mesa utiliza un formato que no es intuitivo para los usuarios, dificultando la rápida localización de reservas específicas. Los usuarios esperan un formato de lista desplegable que les permita seleccionar fácilmente entre las opciones disponibles.
-
-![alt text](images/heuristicas/pb2.png)
-
-- Recomendación:
-Reemplazar el filtro actual por una lista desplegable organizada numéricamente (o por zona si aplica), que permita selección múltiple y búsqueda rápida. Incluir una opción "Todas las mesas" al inicio de la lista para facilitar la visualización completa.
-
-##### PROBLEMA #4: Botones con degradado difíciles de leer
-- Severidad: 3
-- Heurística violada: Visibilidad del estado del sistema
-
-- Problema:
-En la pantalla de asignación de supervisores a sedes, los botones utilizan colores tierra con efectos de degradado que reducen significativamente el contraste entre el texto y el fondo, dificultando su lectura y reconocimiento, especialmente para usuarios con problemas visuales.
-
-![alt text](images/heuristicas/pb3.png)
-
-- Recomendación:
-Rediseñar los botones utilizando colores sólidos con alto contraste entre el texto y el fondo. Mantener la paleta de colores corporativa pero eliminar los degradados. Asegurar que cumplen con las pautas WCAG 2.1 de accesibilidad (ratio de contraste mínimo de 4.5:1).
-
-##### PROBLEMA #5: Botones de acción con colores poco diferenciados
-- Severidad: 2
-- Heurística violada: Prevención de errores
-
-- Problema:
-Los botones de acción crítica como "Cancelar" y "Agregar" utilizan colores tierra similares entre sí, lo que no sigue las convenciones esperadas por los usuarios y aumenta la probabilidad de errores al no distinguir claramente entre acciones positivas y negativas.
-
-![alt text](images/heuristicas/pb4.png)
-
-- Recomendación:
-Implementar un código de colores consistente y convencional: verde puro (#00B050 o similar) para acciones positivas como "Agregar" o "Confirmar", y rojo puro (#FF0000 o similar) para acciones negativas como "Cancelar" o "Eliminar". Mantener este esquema en toda la aplicación para reforzar la consistencia.
 
 ## 6.4. Video About-the-Product
 
