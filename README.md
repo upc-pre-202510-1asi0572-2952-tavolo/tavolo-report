@@ -5193,8 +5193,8 @@ En este video demostrativo presentamos Tavolo, nuestra plataforma integral para 
 
 ![alt text](images/video-about-the-product.png)
 
-<br>Enlace: 
-[Video About The Product de Tavolo](https://drive.google.com/file/d/1JMYA8vJc6BDFxX0ZL9tl0Fy3lKO5bwHQ/view?usp=sharing)
+<br>Enlace:
+[https://drive.google.com/file/d/1JMYA8vJc6BDFxX0ZL9tl0Fy3lKO5bwHQ/view?usp=sharing](https://drive.google.com/file/d/1JMYA8vJc6BDFxX0ZL9tl0Fy3lKO5bwHQ/view?usp=sharing)
 - **Experiencia del Comensal**: Ver las sedes, navegación por el menú digital y realización de reservas.
 - **Panel del Supervisor**: Gestión de mesas activas y monitoreo de reservas.
 - **Herramientas del Administrador**: Dashboard con la creacióny gestión de supervisores y gestión del menú.
