@@ -998,6 +998,11 @@ Este mapeo “To-Be” presenta el escenario ideal posterior a la implementació
 | TAVOLO-TS002 	| Procesar Datos de Sensor de Ocupación 	| Como Developer, quiero implementar la lógica de backend para recibir y procesar los datos de ocupación enviados por los sensores IoT, para que el sistema actualice el estado de las mesas en tiempo real. 	| EPIC-IOT-PROCESSING 	| Developer 	| Escenario 1: Datos de ocupación recibidos y procesados<br>Dado que el Edge API recibe datos de ocupación de un sensor<br>Cuando el backend procesa estos datos<br>Entonces el estado de la mesa correspondiente se actualiza en la base de datos.<br>Escenario 2: Datos inválidos recibidos<br>Dado que el Edge API recibe datos con formato inválido<br>Cuando el backend intenta procesarlos<br>Entonces el sistema registra un error y descarta los datos inválidos. 	|
 | TAVOLO-TS003 	| Integrar con Google Maps API (Backend) 	| Como Developer, quiero implementar la integración con la API de Google Maps en el backend para obtener información geográfica de las sedes, para que las aplicaciones frontend puedan mostrar las ubicaciones en un mapa. 	| EPIC-BRANCHING-TECH 	| Developer 	| Escenario 1: Obtener coordenadas de sede exitosamente<br>Dado que se registra una nueva sede con una dirección válida<br>Cuando el backend llama a la API de Google Maps con la dirección<br>Entonces la API responde con las coordenadas geográficas correctas.<br>Escenario 2: Dirección inválida<br>Dado que se registra una sede con una dirección inválida<br>Cuando el backend llama a la API de Google Maps<br>Entonces el sistema responde con un error o datos de ubicación nulos. 	|
 | TAVOLO-TS004 	| Implementar Lógica de Reserva de Mesa API 	| Como Developer, quiero implementar la lógica de backend para gestionar el proceso de reserva de mesas a través de la API, asegurando la disponibilidad y registrando la reserva correctamente. 	| EPIC-BOOKING-TECH 	| Developer 	| Escenario 1: Reserva de mesa exitosa<br>Dado que un usuario solicita reservar una mesa disponible<br>Cuando la lógica de reserva valida la disponibilidad y registra la reserva<br>Entonces la reserva se crea en la base de datos y el estado de la mesa se actualiza a "Reservado".<br>Escenario 2: Mesa no disponible<br>Dado que un usuario intenta reservar una mesa ya ocupada o reservada<br>Cuando la lógica de reserva valida la disponibilidad<br>Entonces el sistema rechaza la reserva y responde con un mensaje de error de disponibilidad. 	|
+| TAVOLO-TS005 | Implementar Firmware para Dispositivo IoT  | Como developer, quiero desarrollar el firmware para el dispositivo IoT que detecta la ocupación de mesas, para transmitir datos al Edge API.    | EPIC-IOT-DEVICE     | Developer | Escenario 1: Lectura de sensor correcta<br>Dado que el dispositivo está conectado correctamente<br>Cuando el sensor detecta presencia<br>Entonces el firmware genera un paquete de datos con el estado de ocupación y lo transmite al Edge API.<br><br>Escenario 2: Fallo de lectura del sensor<br>Dado un fallo de hardware<br>Cuando se intenta leer el sensor<br>Entonces el firmware registra el error sin transmitir datos. |
+| TAVOLO-TS006 | Integrar Firmware con Plataforma Embebida  | Como Developer, quiero integrar el firmware en la plataforma embebida para que pueda iniciar, procesar datos y comunicarse vía red con el Edge. | EPIC-IOT-DEVICE     | Developer | Escenario 1: Inicio correcto del sistema<br>Dado que el sistema embebido arranca con configuración válida<br>Cuando se enciende el dispositivo<br>Entonces el sistema inicializa sensores y red sin errores.<br><br>Escenario 2: Error de red<br>Dado que la conexión de red falla<br>Cuando el sistema intenta establecer conexión<br>Entonces se lanza un mensaje de error y se reinicia el intento.                           |
+| TAVOLO-TS007 | Implementar Recepción de Datos en Edge API | Como Developer, quiero implementar la lógica en el Edge API que reciba los datos enviados por los sensores IoT, para enviarlos al backend.           | EPIC-IOT-PROCESSING | Developer      | Escenario 1: Datos recibidos correctamente<br>Dado que un dispositivo IoT transmite datos válidos<br>Cuando el Edge API recibe el paquete<br>Entonces lo reenvía al backend y responde con un 200 OK.<br><br>Escenario 2: Datos con formato incorrecto<br>Dado que se recibe un paquete con formato inválido<br>Cuando se intenta procesarlo<br>Entonces el sistema registra el error y descarta el paquete.                     |
+| TAVOLO-TS008 | Simular Sensores en Wokwi                  | Como Developer, quiero simular el comportamiento del dispositivo IoT en Wokwi, para validar la lectura del sensor y la comunicación con el Edge API.     | EPIC-IOT-DEVICE     | Developer    | Escenario 1: Simulación de detección de ocupación<br>Dado que se ejecuta el circuito simulado en Wokwi<br>Cuando un peso es detectado por el sensor virtual<br>Entonces el sistema envía correctamente el estado al Edge API simulado.<br><br>Escenario 2: Sensor inactivo<br>Dado que el sensor no detecta peso<br>Cuando se revisa el estado<br>Entonces no se envía ninguna actualización.                            |
+
 
 ## 3.3. Impact mapping.
 <img src="./images/impact_mapping/Impact_Mapping.png" alt="Impact Mapping"/><br>
@@ -4783,8 +4788,6 @@ En este segundo sprint, el equipo Tavolo ha logrado implementar con éxito los c
 - **Sistema de reservas** con confirmación y visualización de reservas activas
 - **Panel administrativo** para gestión de mesas y visualización de la sede asignada
 
-<!--![Landing Page 1](./images/deployment/landing1.png)-->
-
 ### Landing Page
 ![Landing Page 1](./images/deployment/landing1.png)
 <br>
@@ -4818,7 +4821,7 @@ En este segundo sprint, el equipo Tavolo ha logrado implementar con éxito los c
 ### Video Explicativo
 El video muestra el flujo completo desde la landing page hasta las funcionalidades de reserva para comensales y gestión para administradores, demostrando la integración exitosa de todos los componentes desarrollados durante este sprint.<br>
 
-[**Video Demostración Sprint 2 - Tavolo**](https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)
+Link: [https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)](https://drive.google.com/file/d/1FppOgE1BkcIITFJZ26mgpkJoDlqalVaq/view?usp=sharing)
 
 El equipo ha completado el 100% de las historias de usuario planificadas para este sprint, cumpliendo con los criterios de aceptación establecidos. La aplicación es funcional en su estado actual y proporciona las funcionalidades básicas necesarias para la gestión de mesas y reservas. En los **próximos sprints** se agregarán características adicionales **como notificaciones, reportes estadísticos** y la integración completa con los sensores IoT físicos.
 
@@ -4880,10 +4883,13 @@ La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando l
 <br>URL: https://upc-pre-202510-1asi0572-2952-tavolo.github.io/tavolo-landing-page/<br>
 
 #### Evidencia del despliegue
-![Landing Page 1](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing1.png?raw=true)<br>
-![Landing Page 2](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing2.png?raw=true)<br>
-![Landing Page 3](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing3.png?raw=true)<br>
-![Landing Page 4](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/landing4.png?raw=true)<br>
+![Landing Page 1](./images/deployment/landing1.png)
+<br>
+![Landing Page 2](./images/deployment/landing2.png)
+<br>
+![Landing Page 3](./images/deployment/landing3.png)
+<br>
+![Landing Page 4](./images/deployment/landing4.png)
 
 ### Backend API 
 
@@ -4891,16 +4897,16 @@ La API de Tavolo fue desplegada en render, se ha probado todas las funcionalidad
 <br> URL: https://tavolo-backend.onrender.com/swagger-ui/index.html <br>
 
 #### Evidencia del Swagger
-![Swagger UI](<images/evidencias/backenddesplegado evidence.jpg>)
-![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger2.png?raw=true)
-![Swagger UI](https://github.com/upc-pre-202510-1asi0572-2952-tavolo/tavolo-report/blob/feature/chapter-6/images/deployment/swagger3.png?raw=true)
-![Swagger UI](images/evidencias/evidenciabackend.jpg)<br>
+![alt text](<images/evidencias/backenddesplegado evidence.jpg>)
+![alt text](images/deployment/swagger2.png)
+![alt text](images/deployment/swagger3.png)
+![alt text](images/evidencias/evidenciabackend.jpg)<br>
 
 
 ## Frontend Web Application
 
 La aplicación web de Tavolo se preparó para ser desplegada en Render, que ofrece una plataforma eficiente para aplicaciones Vuejs con rápidos tiempos de carga y distribución global.
-<br> URL: https://tavolo-web-develop.onrender.com  <br>
+<br> URL: [https://tavolo-web-develop.onrender.com](https://tavolo-web-develop.onrender.com)  <br>
 
 ### Evidencia de las pantallas
 
@@ -4953,6 +4959,9 @@ El API Edge desplegada en Azure sirve como punto de entrada a las integraciones 
 
 Durante el Sprint 2, el equipo Tavolo demostró una colaboración efectiva y coordinada, permitiendo el cumplimiento exitoso de todas las historias de usuario planificadas. A continuación, se detallan los aspectos clave de la dinámica colaborativa del equipo:
 
+![alt text](images/evidencias/github_evidencia_sprint_2.png)
+
+
 ## Distribución del trabajo y contribuciones
 
 El análisis de las contribuciones muestra una distribución equilibrada de responsabilidades:
@@ -4995,48 +5004,315 @@ El análisis de las contribuciones muestra una distribución equilibrada de resp
 - **Figma**: Diseño colaborativo de interfaces
 - **Google Meet**: Reuniones de planificación y retrospectiva
 
-## Metodología de trabajo
 
-El equipo adoptó un enfoque ágil con las siguientes prácticas:
 
-1. **Daily Standup**: Reuniones semanales de 2 horas para compartir avances y obstáculos.
-2. **Revisión de código**: Cada PR requería al menos una revisión de otro miembro del equipo.
-3. **Documentación continua**: Actualización constante de la documentación de API y componentes.
-
-## Desafíos enfrentados y soluciones
-
-- **Desafío**: Integración entre frontend y backend en desarrollo paralelo.  
-  **Solución**: Definición temprana de contratos de API con Swagger y uso de datos mockeados para pruebas.
-
-- **Desafío**: Coordinación del trabajo entre múltiples colaboradores en los componentes frontend.  
-  **Solución**: División clara de responsabilidades y uso de ramas de características específicas.
-
-## Lecciones aprendidas
-
-1. La documentación temprana de la API facilitó significativamente el trabajo paralelo.
-2. La asignación de líderes por componente con colaboradores definidos mejoró la calidad del código.
-3. Las sesiones de pair programming aceleraron la resolución de problemas complejos.
-4. El uso de prototipos y mockups antes de la implementación redujo la necesidad de cambios posteriores.
-
-## Métricas de colaboración
-
-- **Tiempo promedio de resolución de issues**: 1.5 días
-- **Tiempo promedio de revisión de PRs**: 4 horas
-- **Porcentaje de código con revisión por pares**: 100%
-
-Este Sprint 2 ha establecido una base sólida para la colaboración continua del equipo Tavolo. La distribución equilibrada del trabajo, el liderazgo compartido y el enfoque en la calidad han permitido entregar todas las funcionalidades planificadas cumpliendo con los criterios de aceptación establecidos.
 
 
 ### 6.2.3. Sprint 3
 #### 6.2.3.1.Sprint Planning 3.
+
+|            Sprint #3            |                                                                               Sprint 3                                                                              |
+|:-------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Sprint Planning Background      |                                                                                                                                                                     |
+| Date                            | 29/6/2025                                                                                                                                                           |
+| Time                            | 9:00 AM pm                                                                                                                                                             |
+| Location                        | Reunión virtual vía Discord                                                                                                                                         |
+| Prepared By                     | Jimena Cama                                                                                                                                                         |
+| Attendees (to planning meeting) | - Baldeon Fabian, Aldo Alberto <br> - Cama Salvatierra, Jimena Tamara <br> - Castillo Castillo, Jair Alexander <br> - La Torre Valle, Franz Jair <br> - Quezada Portalatino, Barbara Susana |
+| Sprint Goal & User Stories      |                                                                                                                                                                     |
+| Sprint 2 Goal                   | En este sprint la meta a cumplir fue implementar y configurar el iot device                                        |
+| Sprint 2 Velocity               | 31                                                                                                                                                                  |
+| Sum of Story Points             |       
+
+
 #### 6.2.3.2.Aspect Leaders and Collaborators.
+
+Para lograr una implementación eficiente del Sprint 3, se estableció una estructura clara de liderazgo y colaboración entre los miembros del equipo. Se identificaron 3 aspectos principales que abarcaron el alcance completo del sprint: Mejoras del Frontend Web, Mejoras del Frontend Movil Cliente, IOT device. Esta organización permitió asegurar que cada área tuviera un responsable directo y colaboradores que apoyaron en tareas específicas.
+
+La matriz de liderazgo y colaboración (LACX) detalla cómo se distribuyeron las responsabilidades para cada aspecto del sprint:
+
+| Team Member                         | GitHub Username | Frontend Web Superadministrador Leader (L) / Collaborator (C) | Frontend Móvil Cliente Leader (L) / Collaborator (C) | IOT device Leader (L) / Collaborator (C) |
+|-------------------------------------|-----------------|---------------------------------------------------------------|------------------------------------------------------|------------------------------------------|
+| Baldeon Fabian, Aldo Alberto        | CodAress        | C                                                             | C                                                    | L                                        |
+| Cama Salvatierra, Jimena Tamara     | aksonie         | L                                                             | C                                                    | C                                        |
+| Castillo Castillo, Jair Alexander   | U202211390      | C                                                             | C                                                    | C                                        |
+| La Torre Valle, Franz Jair          | FranzJairLTV    | C                                                             | C                                                    | C                                        |
+| Quezada Portalatino, Barbara Susana | BarbaraQP15     | C                                                             | L                                                    | C                                        |
+
+**Responsabilidades por aspecto:**
+
+- Frontend Web Superadministrador:
+
+Líder: Cama Salvatierra, Jimena Tamara
+
+Enfoque: Mejoras en la optimización, la omologalización de colores en el perfil del superadministrador, administrador y el comensal.
+
+- Frontend Móvil Cliente:
+
+Líder: Quezada Portalatino, Barbara
+
+Enfoque: Mehoras en la app móvil para clientes, incluyendo filtros de mesas, reservas, formularios de reserva y menús.
+
+- IOT device:
+
+Líder: Baldeon Fabian, Aldo Alberto
+
+Enfoque: Armado del dispositivo IOT e implementación con el sistema.
+
+
 #### 6.2.3.3.Sprint Backlog 3.
+
+| Sprint #       | Sprint 3                                   |                    |                                 |                                                                  |                        |                              |            |   |
+| -------------- | ------------------------------------------ | ------------------ | ------------------------------- | ---------------------------------------------------------------- | ---------------------- | ---------------------------- | ---------- | - |
+| **User Story** |                                            | **Work-Item/Task** |                                 |                                                                  |                        |                              |            |   |
+| **Id**         | **Title**                                  | **Id**             | **Title**                       | **Description**                                                  | **Estimation (Hours)** | **Assigned To**              | **Status** |   |
+| TAVOLO-TS005   | Implementar Firmware para Dispositivo IoT  | TA1           | Lectura del sensor infrarrojo   | Programar rutina que lea estado de ocupación desde el sensor     | 4                      | Baldeon Fabian, Aldo         | Done       |   |
+|                |                                            | TA2           | Envío de datos al Edge API      | Programar envío del estado de la mesa al servidor mediante Wi-Fi | 5                      | Cama Salvatierra, Jimena     | Done       |   |
+| TAVOLO-TS006   | Integrar Firmware con Plataforma Embebida  | TA1           | Inicialización de hardware      | Configurar puertos y periféricos en plataforma embebida          | 3                      | Castillo Castillo, Jair      | Done       |   |
+|                |                                            | TA2           | Manejo de red y reconexión      | Agregar lógica de conexión y reconexión automática a red         | 4                      | La Torre Valle, Franz        | Done       |   |
+| TAVOLO-TS007   | Implementar Recepción de Datos en Edge API | TA1           | Endpoint de recepción IoT       | Crear endpoint en el Edge API para recibir los datos de sensores | 4                      | Quezada Portalatino, Barbara | Done       |   |
+|                |                                            | TA2           | Validación de formato de datos  | Validar y registrar datos entrantes desde dispositivos IoT       | 4                      | Cama Salvatierra, Jimena     | Done       |   |
+| TAVOLO-TS008   | Simular Sensores en Wokwi                  | TA1           | Crear circuito virtual en Wokwi | Diseñar y simular circuito con sensor de ocupación en Wokwi      | 3                      | Castillo Castillo, Jair      | Done       |   |
+|                |                                            | TA2           | Pruebas de envío de datos       | Validar que datos simulados lleguen al Edge API correctamente    | 4                      | Quezada Portalatino, Barbara | Done       |   |
+
+
 #### 6.2.3.4.Development Evidence for Sprint Review.
+
+En este tercer sprint, el equipo se enfocó en el desarrollo e integración de los componentes IoT del sistema Tavolo, esenciales para ofrecer monitoreo en tiempo real del estado de las mesas mediante sensores físicos y simulaciones. Se trabajó sobre el firmware del dispositivo, el edge computing, la validación de datos en backend, y la simulación de hardware con Wokwi.
+
+Entre los logros más importantes se encuentran:
+
+- Desarrollo del firmware base para los sensores de ocupación con conexión Wi-Fi
+- Integración del firmware en plataforma embebida con manejo de errores y reconexión
+- Implementación del servicio Edge API para recepción y validación de datos en tiempo real
+- Simulación funcional del sistema IoT en Wokwi para pruebas remotas
+- Validación completa de la cadena de envío de datos desde sensor físico/simulado hasta backend
+
+A continuación, se presenta una tabla con los commits más relevantes realizados durante este sprint:
+
+| Repository                                                                                                                                                       | Branch                      | Commit Id | Commit Message                   | Commit Message Body                                                                  | Commited on (Date) |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | --------- | -------------------------------- | ------------------------------------------------------------------------------------ | ------------------ |
+| []()             | main                        | p91c6d3   | feat: agregar firmware base      | Lectura de sensor IR, conexión Wi-Fi y envío de datos de ocupación al Edge API       | 29/06/2025         |
+| []()             | integration/embedded        | q38e7b2   | feat: integración embebida       | Inicialización de periféricos, manejo de red y lógica de reconexión automática       | 01/07/2025         |
+| []()                 | feature/receive-sensor-data | r82d1a4   | feat: recepción de datos IoT     | Endpoint REST en Node.js para recepción y validación de datos desde dispositivos IoT | 02/07/2025         |
+| []()                 | feature/data-validation     | s60f3k7   | feat: validación de datos        | Manejo de errores para paquetes inválidos e integración con el backend principal     | 02/07/2025         |
+| []() | simulation/main             | t93e4z8   | feat: simulación sensor IR       | Simulación del circuito IoT con sensor IR y envío de datos mediante Wokwi            | 03/07/2025         |
+| []() | simulation/test             | u48t9b1   | test: validación de comunicación | Validación de envío exitoso desde entorno Wokwi hacia Edge API en pruebas locales    | 04/06/2025         |
+
+
 #### 6.2.3.5.Testing Suite Evidence for Sprint Review.
+
+En esta sección se presenta el conjunto de Unit Tests, Integration Tests y Acceptance Tests automatizados para los Web Services relacionados con los User Stories especificados en el Sprint.
+
+**Relación de Commits de Testing**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+|------------|--------|-----------|----------------|---------------------|---------------------|
+| tavolo-backend | feature/unit-tests | abc123 | Add unit tests for reservation service | Implemented tests for create, update and delete methods | 2023-10-15 |
+| tavolo-backend | feature/integration-tests | def456 | Add integration tests for reservation API | Testing the complete flow of reservation endpoints | 2023-10-16 |
+| tavolo-backend | feature/bdd-tests | ghi789 | Add BDD tests for reservation feature | Added Cucumber tests with Gherkin scenarios for reservation management | 2023-10-18 |
+
+**Unit Tests**
+
+**TableCommandServiceTest**
+
+Esta clase contiene pruebas unitarias para validar el comportamiento del servicio `TableCommandService`, responsable de gestionar las operaciones relacionadas con la creación de mesas en el sistema.
+
+![image](https://github.com/user-attachments/assets/fa0b9b7e-6d9f-4eff-ad26-ae8aab133c62)<br>
+
+Este test unitario valida:
+- La creación correcta de comandos para crear mesas
+- El comportamiento del servicio cuando verifica la existencia de una sede
+- El correcto guardado de la mesa en el repositorio
+- La devolución del resultado esperado
+
+**Integration Tests**
+
+**TableCommandServiceIntegrationTest**
+
+Esta clase de prueba integra los distintos componentes del sistema para validar el flujo completo de creación de mesas:
+
+![image](https://github.com/user-attachments/assets/48bcc1ee-2fd5-493f-b442-da53ec70b592)<br>
+
+Esta prueba de integración verifica:
+- El funcionamiento correcto del servicio en un entorno transaccional
+- La comunicación correcta entre los distintos componentes del sistema
+- La persistencia adecuada de los datos
+
+
+
+### Autenticacion (AuthFeature.feature)
+Feature: Autenticación de usuarios
+  Scenario: Registro exitoso de un nuevo usuario
+    Given el usuario proporciona datos válidos para registro
+    When se envía la solicitud de registro
+    Then el sistema crea el usuario y devuelve un estado 201
+  Scenario: Fallo en el registro por datos inválidos
+    Given el usuario proporciona datos inválidos
+    When se envía la solicitud de registro
+    Then el sistema devuelve un error de validación 
+
+
 #### 6.2.3.6.Execution Evidence for Sprint Review.
+
+En este tercer sprint, el equipo Tavolo ha logrado implementar con éxito los componentes tecnológicos clave del sistema IoT, permitiendo que el ecosistema de reservas funcione de manera integrada con sensores físicos y simulaciones. Estas funcionalidades permiten detectar y actualizar en tiempo real el estado de ocupación de las mesas, conectando el hardware embebido con la lógica del backend y la experiencia de usuario en frontend.
+
+Se completaron todas las historias de usuario técnicas planificadas, consolidando así la base del sistema inteligente de monitoreo de mesas.
+
+Entre los principales avances se encuentran:
+
+- Desarrollo del firmware para sensores físicos que detectan ocupación y transmiten datos por Wi-Fi
+- Integración embebida con inicialización de periféricos, manejo de red y reconexión automática
+- Implementación del Edge API, que recibe, valida y reenvía los datos de ocupación al backend
+- Simulación completa en Wokwi del circuito con sensor IR, permitiendo validaciones sin hardware físico
+- Cadena de comunicación validada desde el sensor hasta el backend, permitiendo actualizaciones en tiempo real del estado de las mesas
+
+
 #### 6.2.3.7.Services Documentation Evidence for Sprint Review.
+
+
+
 #### 6.2.3.8.Software Deployment Evidence for Sprint Review.
+
+Durante este segundo sprint, el equipo Tavolo ha implementado una estrategia de despliegue completa para asegurar que todos los componentes del sistema estén disponibles en entornos de producción. Se ha desplegado exitosamente la landing page, el backend API y la aplicación web frontend, utilizando servicios en la nube para garantizar disponibilidad, escalabilidad y seguridad.<br>
+
+### Landing Page Deployment
+
+La landing page de Tavolo fue desplegada utilizando GitHub Pages, aprovechando la integración directa con nuestro repositorio para un flujo de trabajo simplificado y automático.<br>
+
+<br>URL: https://upc-pre-202510-1asi0572-2952-tavolo.github.io/tavolo-landing-page/<br>
+
+#### Evidencia del despliegue
+![Landing Page 1](./images/deployment/landing1.png)
+<br>
+![Landing Page 2](./images/deployment/landing2.png)
+<br>
+![Landing Page 3](./images/deployment/landing3.png)
+<br>
+![Landing Page 4](./images/deployment/landing4.png)
+
+### Backend API 
+
+La API de Tavolo fue desplegada en render, se ha probado todas las funcionalidades de la plataforma de manera existosa.
+<br> URL: [https://tavolo-backend.onrender.com/swagger-ui/index.html](https://tavolo-backend.onrender.com/swagger-ui/index.html) <br>
+
+#### Evidencia del Swagger
+![alt text](<images/evidencias/backenddesplegado evidence.jpg>)
+![alt text](images/deployment/swagger2.png)
+![alt text](images/deployment/swagger3.png)
+![alt text](images/evidencias/evidenciabackend.jpg)<br>
+
+
+## Frontend Web Application
+
+La aplicación web de Tavolo se preparó para ser desplegada en Render, que ofrece una plataforma eficiente para aplicaciones Vuejs con rápidos tiempos de carga y distribución global.
+<br> URL: [https://tavolo-web-develop.onrender.com](https://tavolo-web-develop.onrender.com)  <br>
+
+### Evidencia de las pantallas
+
+#### Pantalla de Comensal <br>
+![alt text](images/Execution_Evidence/Visualización_de_Reserva.png)
+![alt text](images/Execution_Evidence/Menu.png)
+![alt text](images/Execution_Evidence/Dashboard_Comensales.png)
+![alt text](images/Execution_Evidence/HorasMesas.png)
+![alt text](images/Execution_Evidence/Confirmacion.png)
+![alt text](images/Execution_Evidence/Mapa.png)
+
+#### Pantalla de Administrador <br>
+
+![alt text](images/Execution_Evidence/Panel_Admin-Sede.png)
+![alt text](images/Execution_Evidence/Gestión_de_Mesas.jpeg)
+![alt text](images/Execution_Evidence/Gestión_de_Mesas2.jpeg)
+![alt text](images/Execution_Evidence/ConfirmacionAdmin.png)
+![alt text](images/Execution_Evidence/FiltroMesa.png)
+![alt text](images/Execution_Evidence/FiltroPersona.png)
+
+### Pantalla Superadministrador <br>
+
+![alt text](images/Execution_Evidence/super_admin_inicio.png)
+![alt text](images/Execution_Evidence/menu-admin.png)
+![alt text](images/Execution_Evidence/superadmin-dashboard.png)
+![alt text](images/Execution_Evidence/superadmin-crear-sede.png)
+![alt text](images/Execution_Evidence/superadmin-agregar-supervisor.png)
+![alt text](images/Execution_Evidence/superadmin-asignar-supervisor-sede.png)
+
+
+## Mobile Application
+
+#### Pantalla de Comensal <br>
+
+![alt text](images/Execution_Evidence/mobile-inicio.jpg)
+![alt text](images/Execution_Evidence/mobile-mapa.jpg)
+![alt text](images/Execution_Evidence/mobile-sede-detail.jpg)
+![alt text](images/Execution_Evidence/mobile-sedes.jpg)
+
+## Edge API
+
+El API Edge desplegada en Azure sirve como punto de entrada a las integraciones con nuestro sistema embedded, gestionando y enroutando solicitudes externas de forma segura y eficiente
+
+<br> URL: https://tavolo-edge.canadacentral.cloudapp.azure.com/api/docs/ <br>
+
+![edge-api](images/evidencias/edge-api-evidence.png)
+
+
 #### 6.2.3.9.Team Collaboration Insights during Sprint.
+
+Durante el Sprint 3, el equipo Tavolo demostró una excelente capacidad técnica y colaborativa al abordar la integración del sistema IoT con el ecosistema del proyecto. Se completaron todas las historias de usuario técnicas planificadas, permitiendo la conexión fluida entre sensores físicos/simulados, el Edge API y el backend del sistema.
+
+![alt text](images/evidencias/github_evidencias.png)
+
+
+**Distribución del trabajo y contribuciones**
+
+La carga de trabajo fue distribuida estratégicamente de acuerdo a las especialidades y fortalezas del equipo:
+
+| Miembro del equipo           | Áreas principales             | Contribuciones clave                                                   | Pull requests | Issues closed |
+| ---------------------------- | ----------------------------- | ---------------------------------------------------------------------- | ------------- | ------------- |
+| Baldeon Fabian, Aldo         | Firmware IoT, Edge API        | Lógica de lectura de sensor IR, envío de datos, validación en Edge API | 5             | 5             |
+| Cama Salvatierra, Jimena     | Edge API, Validación de datos | Endpoint de recepción de datos IoT, manejo de errores                  | 4             | 4             |
+| Castillo Castillo, Jair      | Simulación en Wokwi, Firmware | Simulación del dispositivo en Wokwi, estructura del firmware base      | 4             | 3             |
+| La Torre Valle, Franz        | Embebido e integración Wi-Fi  | Inicialización de red y lógica de reconexión embebida                  | 4             | 3             |
+| Quezada Portalatino, Barbara | Simulación y pruebas          | Pruebas integradas del sistema IoT y conexión Wokwi-Edge API           | 3             | 3             |
+
+**Colaboración en componentes principales**
+
+Firmware IoT
+- Líder: Aldo Baldeon
+- Logros: Desarrollo de lógica para lectura del sensor IR y envío de datos vía Wi-Fi.
+- Dinámica: Aldo se encargó de la estructura general y Jair contribuyó con pruebas iniciales y ajustes para la simulación.
+
+Plataforma Embebida
+- Líder: Franz La Torre
+- Logros: Inicialización de periféricos, gestión de red y lógica de reconexión.
+- Dinámica: Franz trabajó sobre el entorno físico embebido, mientras Aldo y Jair validaban el mismo comportamiento en simulación.
+
+Edge API
+- Líder: Jimena Cama
+- Colaboradores: Aldo Baldeon
+- Logros: Implementación del endpoint que recibe los datos desde los dispositivos y validación de su formato.
+- Dinámica: Jimena desarrolló la lógica de recepción y Aldo agregó manejo de errores y reenvío al backend.
+
+Simulación con Wokwi
+- Líder: Jair Castillo
+- Colaboradora: Barbara Quezada
+- Logros: Creación del circuito simulado en Wokwi que replicó el funcionamiento del sensor físico.
+- Dinámica: Jair armó la simulación y Barbara se encargó de ejecutar pruebas y verificar la comunicación con el Edge API.
+
+<br>
+
+**Herramientas de colaboración utilizadas**
+
+- GitHub: Versionamiento, ramas por historia técnica y revisión de código.
+- Discord: Comunicación diaria en canales específicos por componente.
+- Wokwi: Simulación de hardware sin necesidad de dispositivos físicos.
+- Postman: Pruebas de endpoints del Edge API.
+- Google Meet: Sesiones de integración y resolución de errores en conjunto.
+
+**Metodología de trabajo**
+El equipo mantuvo su enfoque ágil, aplicando buenas prácticas de colaboración técnica:
+- Reuniones semanales técnicas para sincronizar hardware y software.
+- Revisión obligatoria de PRs por un segundo integrante con experiencia en el módulo.
+- Mockeo de datos en etapas intermedias para avanzar en paralelo con componentes dependientes.
 
 
 ## 6.3. Validation Interviews.
