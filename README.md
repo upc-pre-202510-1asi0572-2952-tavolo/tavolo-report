@@ -5170,6 +5170,16 @@ Entre los principales avances se encuentran:
 
 #### 6.2.3.7.Services Documentation Evidence for Sprint Review.
 
+Durante el Sprint 3, se documentó y validó la funcionalidad de los servicios que permiten la integración del sistema IoT con el backend, específicamente desde el dispositivo físico o simulado, pasando por el Edge API, hasta la actualización del estado de las mesas. Se realizaron pruebas funcionales directas y se documentaron mediante capturas de pantalla.
+
+| Categoría         | Endpoint                             | Método HTTP | Descripción                                                                |
+| ----------------- | ------------------------------------ | ----------- | -------------------------------------------------------------------------- |
+| Sensor IoT → Edge | `/api/v1/edge/sensor-data`           | POST        | Recibe datos de ocupación desde los sensores IoT                           |
+| Edge → Backend    | `/api/v1/tables/{tableId}/occupancy` | PATCH       | Actualiza el estado de ocupación de una mesa en base a los datos recibidos |
+
+
+**Evidencia de pruebas realizadas**
+
 ![alt text](images/evidencias/iot_device.jpg)
 
 ![alt text](images/evidencias/iotdevice_2.jpg)
