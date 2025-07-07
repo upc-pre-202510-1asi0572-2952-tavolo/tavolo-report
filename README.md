@@ -5170,7 +5170,9 @@ Entre los principales avances se encuentran:
 
 #### 6.2.3.7.Services Documentation Evidence for Sprint Review.
 
+![alt text](images/evidencias/iot_device.jpg)
 
+![alt text](images/evidencias/iotdevice_2.jpg)
 
 #### 6.2.3.8.Software Deployment Evidence for Sprint Review.
 
@@ -5254,6 +5256,12 @@ El API Edge desplegada en Azure sirve como punto de entrada a las integraciones 
 
 ![edge-api](images/evidencias/edge-api-evidence.png)
 
+
+## IOT device
+
+![alt text](images/evidencias/iot_device.jpg)
+
+![alt text](images/evidencias/iotdevice_2.jpg)
 
 #### 6.2.3.9.Team Collaboration Insights during Sprint.
 
@@ -5476,6 +5484,14 @@ En este video demostrativo presentamos Tavolo, nuestra plataforma integral para 
 - **Herramientas del Administrador**: Dashboard con la creacióny gestión de supervisores y gestión del menú.
 
 El video demuestra cómo estas tres interfaces interactúan en tiempo real para optimizar la operación de las cafeterías, desde que un cliente realiza una reserva hasta que se refleja en los reportes de gestión de reservas de un supervisor.
+
+# Video About The Team
+Este video presenta al equipo de desarrollo detrás del proyecto TAVOLO. A lo largo del video se muestran momentos clave del trabajo colaborativo, incluyendo reuniones de planificación, implementación del frontend y backend, así como etapas de integración y pruebas del sistema.
+
+El objetivo del video es evidenciar la coordinación del equipo, la distribución de roles, el uso de metodologías ágiles y el compromiso con el diseño e implementación de un sistema funcional, escalable y centrado en el usuario. También refleja cómo se aplicaron herramientas y buenas prácticas en entornos reales de desarrollo, fortaleciendo tanto las competencias técnicas como las habilidades de trabajo en equipo.
+
+![alt text](images/evidencias/video-about-the-team.png)
+
 
 # Conclusiones Generales del Proyecto
 
