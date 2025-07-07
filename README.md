@@ -401,6 +401,22 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
             <b>Quezada Portalatino, Barbara Susana</b><br>
             - Desde el área de arquitectura de la información y la implementación de la landing page y servicios, proporcioné liderazgo conjunto asegurando que los contenidos estuvieran correctamente estructurados y fueran accesibles.
             <br><br>
+            <b>TF:</b><br>
+            <b>Baldeon Fabian, Aldo Alberto</b><br>
+            - Asumí el liderazgo en el desarrollo del dispositivo IoT y su integración con la embedded application, coordinando aspectos técnicos complejos de hardware y software. Mi participación fue clave para conectar el sistema físico con las aplicaciones digitales, asegurando una funcionalidad integral del ecosistema TAVOLO.
+            <br><br>
+            <b>Cama Salvatierra, Jimena Tamara</b><br>
+            - Lideré el desarrollo del simulador Wokwi de referencia y contribuí activamente en la documentación de evidencias de los avances del sprint. Mi liderazgo técnico permitió crear prototipos virtuales que validaran el funcionamiento del sistema IoT antes de la implementación física.
+            <br><br>
+            <b>Castillo Castillo, Jair Alexander</b><br>
+            - Ejercí liderazgo en las mejoras del backend y en la documentación comprehensiva de evidencias de la aplicación y avances del sprint. Mi enfoque metodológico aseguró que todas las funcionalidades del sistema estuvieran debidamente documentadas y optimizadas para el despliegue final.
+            <br><br>
+            <b>La Torre Valle, Franz Jair</b><br>
+            - Proporcioné liderazgo en la documentación de evidencias de los avances del sprint, asegurando que todos los desarrollos y mejoras implementadas fueran registrados de manera clara y estructurada para facilitar la evaluación final del proyecto.
+            <br><br>
+            <b>Quezada Portalatino, Barbara Susana</b><br>
+            - Lideré las mejoras en la mobile application y la documentación de evidencias de los avances del sprint. Mi liderazgo se enfocó en optimizar la experiencia del usuario final y garantizar que todas las funcionalidades móviles cumplieran con los estándares de calidad establecidos.
+            <br><br>
         </td>
         <td>
             <b>TB1:</b><br>
@@ -408,6 +424,9 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
             <br><br>
             <b>TP1:</b><br>
             Como equipo, ejercimos un liderazgo conjunto al asumir responsabilidades según nuestras fortalezas individuales, distribuyendo tareas de forma equitativa y coordinada. A lo largo del proyecto, tomamos decisiones colaborativas que permitieron mantener una visión unificada del sistema, y nos apoyamos mutuamente para superar obstáculos técnicos y organizativos. Esta dinámica nos permitió liderar desde distintos frentes del desarrollo —diseño, backend, frontend y gestión—, asegurando que todos los módulos avanzaran de forma integrada y con sentido de propósito común.
+            <br><br>
+            <b>TF:</b><br>
+            En el trabajo final, consolidamos nuestro liderazgo conjunto al integrar exitosamente todas las capas del sistema TAVOLO: IoT, embedded application, mobile application y backend. Cada miembro lideró aspectos críticos del proyecto final, desde el desarrollo de hardware hasta la optimización de software, demostrando capacidad de coordinar sistemas complejos y multidisciplinarios. La integración de tecnologías emergentes como dispositivos IoT con aplicaciones tradicionales requirió un liderazgo técnico distribuido que nos permitió alcanzar una solución integral y funcional.
         </td>
     </tr>
     <tr>
@@ -445,6 +464,22 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
             <b>Quezada Portalatino, Barbara Susana</b><br>
             - Fui parte activa en la planificación de tareas y definición de objetivos del equipo, garantizando que tanto los sistemas de navegación como el contenido cumplieran con los estándares de calidad y usabilidad esperados.
             <br><br>
+            <b>TF:</b><br>
+            <b>Baldeon Fabian, Aldo Alberto</b><br>
+            - Establecí metas específicas para la integración del dispositivo IoT con la embedded application, planificando meticulosamente las tareas de desarrollo de hardware y creando un entorno colaborativo donde todos los miembros pudieran contribuir al desarrollo del sistema físico del proyecto.
+            <br><br>
+            <b>Cama Salvatierra, Jimena Tamara</b><br>
+            - Creé un ambiente inclusivo durante el desarrollo del simulador Wokwi, estableciendo objetivos claros de prototipado y documentación. Mi planificación permitió que el equipo validara conceptos técnicos de manera colaborativa antes de la implementación final.
+            <br><br>
+            <b>Castillo Castillo, Jair Alexander</b><br>
+            - Planifiqué y coordiné las mejoras del backend con el equipo, estableciendo metas de optimización y documentación comprehensiva. Fomenté un entorno colaborativo que permitió cumplir todos los objetivos de mejora y documentación del sistema.
+            <br><br>
+            <b>La Torre Valle, Franz Jair</b><br>
+            - Establecí objetivos claros para la documentación de evidencias del sprint final, creando un entorno organizativo que facilitó la recopilación y presentación estructurada de todos los avances y logros del proyecto.
+            <br><br>
+            <b>Quezada Portalatino, Barbara Susana</b><br>
+            - Planifiqué las mejoras de la mobile application estableciendo metas de usabilidad y funcionalidad, coordinando con el equipo para asegurar que todos los objetivos de optimización fueran cumplidos dentro de los plazos establecidos.
+            <br><br>
         </td>
         <td>
             <b>TB1:</b><br>
@@ -452,6 +487,9 @@ conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el l
             <br><br>
             <b>TP1:</b><br>
             Durante todo el proyecto, generamos un ambiente de trabajo colaborativo e inclusivo, en el que todas las ideas fueron escuchadas y consideradas. Establecimos metas claras en cada sprint, planificamos tareas basadas en prioridades reales del sistema y mantuvimos una comunicación constante entre los miembros. Esta organización nos permitió cumplir con los objetivos trazados, mejorar la calidad del producto final y fortalecer nuestras habilidades para trabajar de forma efectiva como equipo multidisciplinario.
+            <br><br>
+            <b>TF:</b><br>
+            En el trabajo final, creamos un entorno altamente colaborativo e inclusivo que nos permitió integrar exitosamente tecnologías complejas como IoT, embedded systems y mobile applications. Establecimos metas ambiciosas pero alcanzables para cada componente del sistema, planificamos tareas interdependientes entre hardware y software, y mantuvimos una comunicación constante para resolver desafíos técnicos. Esta colaboración nos permitió cumplir con todos los objetivos del proyecto final, entregando un sistema integral que demuestra dominio técnico en múltiples áreas de la ingeniería de software e IoT.
         </td>
     </tr>
 </table>
@@ -5501,7 +5539,7 @@ Este video presenta al equipo de desarrollo detrás del proyecto TAVOLO. A lo la
 El objetivo del video es evidenciar la coordinación del equipo, la distribución de roles, el uso de metodologías ágiles y el compromiso con el diseño e implementación de un sistema funcional, escalable y centrado en el usuario. También refleja cómo se aplicaron herramientas y buenas prácticas en entornos reales de desarrollo, fortaleciendo tanto las competencias técnicas como las habilidades de trabajo en equipo.
 
 ![alt text](images/evidencias/video-about-the-team.png)
-
+URL: https://drive.google.com/drive/folders/1VYeEGqoOieqeOqG50VXfjBA683Rjtipl?usp=sharing 
 
 # Conclusiones Generales del Proyecto
 
