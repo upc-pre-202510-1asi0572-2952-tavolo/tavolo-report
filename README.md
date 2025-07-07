@@ -168,6 +168,29 @@ Para el TP, se asignaron responsabilidades específicas a cada integrante, las c
 | **Barbara Quezada**      | Documentación del capítulo V (Organization Systems, Labeling Systems, SEO Tags, Searching Systems, Navigation Systems), Documentación del capítulo VI (Implementación de Landing Page, Servicios y Aplicaciones, Evidencias de Sprint, Development, Execution, Deployment), Pantalla Ver Sedes - Mesas y Formulario de Reserva |
 | **Franz La Torre**       | Documentación del capítulo V (Diseño UX/UI de Aplicaciones, Wireframes, Wireflow Diagrams, Mock-ups, User Flow Diagrams), Documentación del capítulo VI (Gestión de Configuración de Software, entorno de desarrollo, Control de versiones, Guías de estilo, Configuración de despliegue), Pantalla Menú |
 
+**TB2:**
+
+Para el TB2, se asignaron responsabilidades específicas a cada integrante, las cuales se detallan a continuación:
+
+| Miembro del Equipo | Tarea Asignada |
+|       :---:        |      :---:     |
+| Aldo Baldeon       | Implementación del embedded app y evidencias en documentación de la app |
+| Barbara Quezada    | Desarrollo de la mobile app, pantalla del comensal (inicio, reservar, ver sedes, ver menú) y evidencias en documentación de la app|
+| Franz La Torre     | Desarrollo de la mobile app, pantalla del comensal (er menú) y evidencias en documentación de la app |
+| Jimena Cama        | Implementación de dashboard del administrador e implementación de mejoras, evidencias en documentación de la aplicación web |
+| Jair Castillo      | Mejora del backend y evidencias en documentación de la app |
+
+**TF:**
+
+Para el TF, se asignaron responsabilidades específicas a cada integrante, las cuales se detallan a continuación:
+
+| Miembro del Equipo | Tarea Asignada |
+|       :---:        |      :---:     |
+| Aldo Baldeon       | Desarrollo del iot  e implementación con la embedded application |
+| Barbara Quezada    | Mejoras en el mobile application y documentación de evidencia de los avances en el sprint |
+| Franz La Torre     | Documentación de evidencia de los avances en el sprint |
+| Jimena Cama        | Desarrollo del wokwi de referencia y documentación de evidencia de los avances en el sprint |
+| Jair Castillo      | Mejora del backend, evidencias en documentación de la app y documentación de evidencia de los avances en el sprint |
 
 Cabe destacar que, durante la creación del informe, se realizaron commits específicos para cada tarea asignada, lo que permitió garantizar un control de versiones y una colaboración efectiva en tiempo real. El equipo mantuvo reuniones semanales de sincronización para asegurar la coherencia entre los diferentes capítulos y compartir avances.
 
